@@ -1,0 +1,100 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { useState, type FormEvent } from "react";
+import { PageHeader } from "@/components/page-header";
+import { useI18n } from "@/lib/i18n";
+
+export const Route = createFileRoute("/contacto")({
+  head: () => ({
+    meta: [
+      { title: "Contacto · Holistic-o" },
+      {
+        name: "description",
+        content:
+          "Escribe a Holistic-o si tienes una duda antes de reservar tu sesión de hipnosis en Sueca.",
+      },
+      { property: "og:title", content: "Contacto · Holistic-o" },
+      {
+        property: "og:description",
+        content: "Resolvemos tus dudas con calma antes de reservar.",
+      },
+    ],
+  }),
+  component: ContactPage,
+});
+
+function ContactPage() {
+  const { t } = useI18n();
+  const [sent, setSent] = useState(false);
+
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setSent(true);
+  };
+
+  return (
+    <>
+      <PageHeader eyebrow={t.tagline} title={t.contact.title} intro={t.contact.intro} />
+
+      <section className="container-page grid gap-12 py-16 md:py-20 lg:grid-cols-[3fr_2fr]">
+        <form onSubmit={onSubmit} className="grid gap-5">
+          <div className="grid gap-2">
+            <label htmlFor="name" className="text-sm">
+              {t.contact.name}
+            </label>
+            <input
+              id="name"
+              required
+              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+            />
+          </div>
+          <div className="grid gap-2">
+            <label htmlFor="email" className="text-sm">
+              {t.contact.email}
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+            />
+          </div>
+          <div className="grid gap-2">
+            <label htmlFor="message" className="text-sm">
+              {t.contact.message}
+            </label>
+            <textarea
+              id="message"
+              rows={6}
+              required
+              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+            />
+          </div>
+          <label className="flex items-start gap-3 text-sm text-muted-foreground">
+            <input type="checkbox" required className="mt-1 accent-[var(--primary)]" />
+            {t.contact.consent}
+          </label>
+          <button
+            type="submit"
+            className="w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            {t.contact.send}
+          </button>
+          {sent && <p className="text-sm text-primary">{t.contact.sent}</p>}
+          <p className="text-xs text-muted-foreground">{t.contact.note}</p>
+        </form>
+
+        <aside className="h-fit rounded-2xl border border-border bg-card p-7">
+          <h2 className="text-2xl">{t.contact.infoTitle}</h2>
+          <ul className="mt-5 grid gap-3 text-sm text-muted-foreground">
+            <li>{t.contact.area}</li>
+            <li>{t.contact.languages}</li>
+            <li>{t.contact.hours}</li>
+          </ul>
+          <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
+            {t.footer.disclaimer}
+          </p>
+        </aside>
+      </section>
+    </>
+  );
+}
