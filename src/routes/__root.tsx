@@ -15,7 +15,7 @@ import { I18nProvider } from "@/lib/i18n";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const preloadReloadKey = "holistic-o:preload-reload-url";
+const preloadReloadKey = "hipnosis-espana:preload-reload-url";
 
 if (typeof window !== "undefined") {
   window.addEventListener("vite:preloadError", (event) => {
@@ -100,13 +100,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Holistic-o · Hipnosis para el cambio personal" },
+      { title: "Hipnosis España · Hipnosis para el cambio personal" },
       {
         name: "description",
         content:
           "Acompañamiento con hipnosis aplicada al desarrollo personal en Sueca.",
       },
-      { name: "author", content: "Holistic-o" },
+      { name: "author", content: "Hipnosis España" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

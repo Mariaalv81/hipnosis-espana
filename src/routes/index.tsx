@@ -6,13 +6,13 @@ import linenImage from "@/assets/texture-linen.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hipnosis España · Holistic-o" },
+      { title: "Hipnosis España · Hipnosis para el cambio personal" },
       {
         name: "description",
         content:
           "Sesiones de hipnosis para el cambio personal en Sueca. Un espacio sereno para trabajar hábitos, calma y confianza.",
       },
-      { property: "og:title", content: "Hipnosis España · Holistic-o" },
+      { property: "og:title", content: "Hipnosis España · Hipnosis para el cambio personal" },
       {
         property: "og:description",
         content:

@@ -12,13 +12,13 @@ const smokingMailto = (subject: string) =>
 export const Route = createFileRoute("/reservar")({
   head: () => ({
     meta: [
-      { title: "Reservar una sesión · Holistic-o" },
+      { title: "Reservar una sesión · Hipnosis España" },
       {
         name: "description",
         content:
           "Reserva tu sesión de hipnosis con Maria Cabo en Sueca: 60 € la hora o programa de tres sesiones por 300 €.",
       },
-      { property: "og:title", content: "Reservar una sesión · Holistic-o" },
+      { property: "og:title", content: "Reservar una sesión · Hipnosis España" },
       {
         property: "og:description",
         content: "Da el primer paso hacia el cambio que quieres producir.",

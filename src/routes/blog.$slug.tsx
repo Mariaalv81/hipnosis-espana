@@ -13,12 +13,12 @@ export const Route = createFileRoute("/blog/$slug")({
 
     return {
       meta: [
-        { title: `${title} · Holistic-o` },
+        { title: `${title} · Hipnosis España` },
         {
           name: "description",
           content: description,
         },
-        { property: "og:title", content: `${title} · Holistic-o` },
+        { property: "og:title", content: `${title} · Hipnosis España` },
         {
           property: "og:description",
           content: description,

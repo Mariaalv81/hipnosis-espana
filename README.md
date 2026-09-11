@@ -1,6 +1,6 @@
 # Hipnosis España
 
-Portal de hipnosis de Holistic-o.
+Portal independiente de hipnosis para Maria Cabo.
 
 ## Development
 

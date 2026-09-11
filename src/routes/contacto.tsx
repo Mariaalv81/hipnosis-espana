@@ -6,13 +6,13 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto · Holistic-o" },
+      { title: "Contacto · Hipnosis España" },
       {
         name: "description",
         content:
-          "Escribe a Holistic-o si tienes una duda antes de reservar tu sesión de hipnosis en Sueca.",
+          "Escribe a Hipnosis España si tienes una duda antes de reservar tu sesión de hipnosis en Sueca.",
       },
-      { property: "og:title", content: "Contacto · Holistic-o" },
+      { property: "og:title", content: "Contacto · Hipnosis España" },
       {
         property: "og:description",
         content: "Resolvemos tus dudas con calma antes de reservar.",

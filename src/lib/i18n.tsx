@@ -11,7 +11,7 @@ export const LANGS: { code: Lang; label: string }[] = [
 type Dict = typeof es;
 
 const es = {
-  brand: "Holistic-o",
+  brand: "Hipnosis España",
   tagline: "Hipnosis aplicada al desarrollo personal",
   nav: {
     home: "Inicio",
@@ -303,7 +303,7 @@ const es = {
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: Maria Cabo (Holistic-o). Domicilio, NIF y datos de contacto pendientes de confirmar. El contenido de esta web es informativo y no constituye asesoramiento sanitario.",
+        text: "Titular del sitio: Maria Cabo (Hipnosis España). Domicilio, NIF y datos de contacto pendientes de confirmar. El contenido de esta web es informativo y no constituye asesoramiento sanitario.",
       },
       {
         title: "Privacidad",
@@ -322,7 +322,7 @@ const es = {
   footer: {
     rights: "Todos los derechos reservados.",
     disclaimer:
-      "Holistic-o ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
+      "Hipnosis España ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
     legal: "Información legal",
   },
   common: {
@@ -337,7 +337,7 @@ const es = {
 };
 
 const va: Dict = {
-  brand: "Holistic-o",
+  brand: "Hipnosis España",
   tagline: "Hipnosi aplicada al desenvolupament personal",
   nav: {
     home: "Inici",
@@ -628,7 +628,7 @@ const va: Dict = {
     sections: [
       {
         title: "Avís legal",
-        text: "Titular del lloc: Maria Cabo (Holistic-o). Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
+        text: "Titular del lloc: Maria Cabo (Hipnosis España). Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
       },
       {
         title: "Privacitat",
@@ -647,7 +647,7 @@ const va: Dict = {
   footer: {
     rights: "Tots els drets reservats.",
     disclaimer:
-      "Holistic-o oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
+      "Hipnosis España oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
     legal: "Informació legal",
   },
   common: {
@@ -662,7 +662,7 @@ const va: Dict = {
 };
 
 const en: Dict = {
-  brand: "Holistic-o",
+  brand: "Hipnosis España",
   tagline: "Hypnosis for personal development",
   nav: {
     home: "Home",
@@ -950,7 +950,7 @@ const en: Dict = {
     sections: [
       {
         title: "Legal notice",
-        text: "Site owner: Maria Cabo (Holistic-o). Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
+        text: "Site owner: Maria Cabo (Hipnosis España). Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
       },
       {
         title: "Privacy",
@@ -969,7 +969,7 @@ const en: Dict = {
   footer: {
     rights: "All rights reserved.",
     disclaimer:
-      "Holistic-o offers personal development support. It is not a healthcare service and does not replace medical or psychological care.",
+      "Hipnosis España offers personal development support. It is not a healthcare service and does not replace medical or psychological care.",
     legal: "Legal information",
   },
   common: {

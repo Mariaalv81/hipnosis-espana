@@ -8,7 +8,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border/60 bg-muted/60">
       <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="font-serif text-xl text-primary">Holistic-o</p>
+          <p className="font-serif text-xl text-primary">{t.brand}</p>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t.tagline}</p>
         </div>
 
@@ -42,7 +42,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border/60">
         <div className="container-page py-5 text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Holistic-o. {t.footer.rights}
+          © {new Date().getFullYear()} {t.brand}. {t.footer.rights}
         </div>
       </div>
     </footer>

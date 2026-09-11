@@ -65,7 +65,7 @@ const es: BlogPostContent = {
     },
     {
       type: "p",
-      text: "En Holistic-o la entendemos como una herramienta de acompañamiento para el desarrollo personal: un espacio para explorar recursos, ampliar perspectivas y favorecer cambios que tengan sentido para ti.",
+      text: "En Hipnosis España la entendemos como una herramienta de acompañamiento para el desarrollo personal: un espacio para explorar recursos, ampliar perspectivas y favorecer cambios que tengan sentido para ti.",
     },
     {
       type: "quote",
@@ -199,7 +199,7 @@ const va: BlogPostContent = {
     },
     {
       type: "p",
-      text: "En Holistic-o l'entenem com una ferramenta d'acompanyament per al desenvolupament personal: un espai per a explorar recursos, ampliar perspectives i afavorir canvis que tinguen sentit per a tu.",
+      text: "En Hipnosis España l'entenem com una ferramenta d'acompanyament per al desenvolupament personal: un espai per a explorar recursos, ampliar perspectives i afavorir canvis que tinguen sentit per a tu.",
     },
     {
       type: "quote",
@@ -264,7 +264,7 @@ const en: BlogPostContent = {
     },
     {
       type: "p",
-      text: "At Holistic-o we understand it as a support tool for personal development: a space to explore resources, widen perspectives and encourage changes that make sense to you.",
+      text: "At Hipnosis España we understand it as a support tool for personal development: a space to explore resources, widen perspectives and encourage changes that make sense to you.",
     },
     {
       type: "quote",

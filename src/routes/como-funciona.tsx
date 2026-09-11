@@ -5,13 +5,13 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/como-funciona")({
   head: () => ({
     meta: [
-      { title: "Cómo funciona una sesión de hipnosis · Holistic-o" },
+      { title: "Cómo funciona una sesión de hipnosis · Hipnosis España" },
       {
         name: "description",
         content:
           "Qué es y qué no es la hipnosis, el recorrido paso a paso de una sesión y los límites del acompañamiento.",
       },
-      { property: "og:title", content: "Cómo funciona · Holistic-o" },
+      { property: "og:title", content: "Cómo funciona · Hipnosis España" },
       {
         property: "og:description",
         content: "El recorrido paso a paso de una sesión de hipnosis, con límites claros y honestos.",

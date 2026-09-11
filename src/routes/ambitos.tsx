@@ -6,13 +6,13 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/ambitos")({
   head: () => ({
     meta: [
-      { title: "Ámbitos de acompañamiento · Holistic-o" },
+      { title: "Ámbitos de acompañamiento · Hipnosis España" },
       {
         name: "description",
         content:
           "Objetivos de desarrollo personal que pueden explorarse con hipnosis, desde un enfoque no clínico y con límites claros.",
       },
-      { property: "og:title", content: "Ámbitos de acompañamiento · Holistic-o" },
+      { property: "og:title", content: "Ámbitos de acompañamiento · Hipnosis España" },
       {
         property: "og:description",
         content:
