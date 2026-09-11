@@ -121,14 +121,14 @@ function HypnosisPage() {
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {t.journal.posts.map((post, i) =>
-            i === 0 ? (
+            post.slug ? (
               <Link
                 key={post.title}
                 to="/blog/$slug"
-                params={{ slug: "que-es-la-hipnosis" }}
+                params={{ slug: post.slug }}
                 className="rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)]"
               >
-                <p className="eyebrow">{t.journal.latest}</p>
+                <p className="eyebrow">{i === 0 ? t.journal.latest : t.journal.readPost}</p>
                 <h3 className="mt-3 text-xl leading-snug">{post.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
                 <span className="mt-5 inline-block text-sm text-primary underline underline-offset-4">

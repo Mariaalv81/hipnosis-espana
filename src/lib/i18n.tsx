@@ -160,7 +160,8 @@ const es = {
         note: "Es un acompañamiento de desarrollo personal, no un tratamiento clínico de la autoestima.",
       },
     ],
-    closing: "Si tienes dudas sobre si este acompañamiento encaja contigo, escríbeme antes de reservar.",
+    closing:
+      "Si tienes dudas sobre si este acompañamiento encaja contigo, escríbeme antes de reservar.",
     cta: "Resolver una duda",
   },
   sessions: {
@@ -223,6 +224,13 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+        title: "¿Qué ocurre en el cerebro durante la hipnosis?",
+        excerpt:
+          "La ciencia ha observado cambios en la atención y la comunicación entre redes cerebrales, sin apagar la mente racional.",
+      },
+      {
+        slug: "que-es-la-hipnosis",
         title: "¿Qué es realmente la hipnosis?",
         excerpt:
           "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención.",
@@ -351,9 +359,18 @@ const va: Dict = {
     ctaPrimary: "Reservar una sessió",
     ctaSecondary: "Com funciona",
     pillars: [
-      { title: "Explicació clara", text: "Sabràs què és i què no és la hipnosi abans de decidir res." },
-      { title: "Presència humana", text: "Un acompanyament tranquil, sense llenguatge clínic ni promeses." },
-      { title: "Límits honestos", text: "Desenvolupament personal, no atenció sanitària ni tractament." },
+      {
+        title: "Explicació clara",
+        text: "Sabràs què és i què no és la hipnosi abans de decidir res.",
+      },
+      {
+        title: "Presència humana",
+        text: "Un acompanyament tranquil, sense llenguatge clínic ni promeses.",
+      },
+      {
+        title: "Límits honestos",
+        text: "Desenvolupament personal, no atenció sanitària ni tractament.",
+      },
     ],
     forWhomTitle: "En què sol ajudar",
     areasTitle: "Explora possibles objectius",
@@ -382,10 +399,22 @@ const va: Dict = {
       "La hipnosi és un estat d'atenció concentrada i relaxació en què resulta més fàcil treballar amb la imaginació, els hàbits i la manera de respondre a certes situacions. No perds el control, no t'adorms i no fas res que no vulgues fer.",
     stepsTitle: "El recorregut, pas a pas",
     steps: [
-      { title: "1 · Conversa inicial", text: "Parlem del que vols canviar, de la teua situació i de si este acompanyament és adequat per a tu." },
-      { title: "2 · Objectiu concret", text: "Definim un objectiu observable i realista, amb la part que depén de mi i la que depén de tu." },
-      { title: "3 · Sessió d'hipnosi", text: "Un procés guiat, tranquil i consentit en tot moment. Recordaràs el viscut i podràs parar quan vulgues." },
-      { title: "4 · Entre sessions", text: "Xicotetes pràctiques per a sostindre el canvi en el dia a dia, sense sobrecarregar la teua agenda." },
+      {
+        title: "1 · Conversa inicial",
+        text: "Parlem del que vols canviar, de la teua situació i de si este acompanyament és adequat per a tu.",
+      },
+      {
+        title: "2 · Objectiu concret",
+        text: "Definim un objectiu observable i realista, amb la part que depén de mi i la que depén de tu.",
+      },
+      {
+        title: "3 · Sessió d'hipnosi",
+        text: "Un procés guiat, tranquil i consentit en tot moment. Recordaràs el viscut i podràs parar quan vulgues.",
+      },
+      {
+        title: "4 · Entre sessions",
+        text: "Xicotetes pràctiques per a sostindre el canvi en el dia a dia, sense sobrecarregar la teua agenda.",
+      },
     ],
     mythsTitle: "El que no és",
     myths: [
@@ -406,16 +435,56 @@ const va: Dict = {
     notice:
       "Este acompanyament no és atenció sanitària ni teràpia psicològica. No tracta trastorns, no realitza diagnòstics i no substituïx professionals de la salut. Si el que necessites requerix atenció clínica, t'ho diré amb claredat i t'orientaré cap al recurs adequat.",
     items: [
-      { title: "Pors i fòbies", text: "Podem explorar com preparar-te davant de situacions que t'inquieten i practicar recursos de calma, atenció i confiança per a afrontar-les al teu ritme.", note: "No substituïx l'avaluació ni el tractament psicològic d'una fòbia o un trastorn d'ansietat." },
-      { title: "Ansietat i estrès quotidià", text: "Un espai per a treballar la tensió del dia a dia, recuperar pauses i assajar formes més conscients de respondre davant de moments exigents.", note: "Davant d'un malestar intens, persistent o que interferisca en la teua vida, és important consultar amb un professional sanitari." },
-      { title: "Deixar de fumar", text: "Un procés estructurat per a acompanyar la teua decisió, reforçar els motius personals i preparar hàbits que ajuden a sostindre el canvi.", note: "És suport al canvi d'hàbits; no substituïx l'atenció mèdica ni el tractament d'una dependència." },
-      { title: "Control de pes", text: "Podem revisar la relació amb les rutines, la motivació i els hàbits quotidians per a acompanyar objectius de benestar acordats amb tu.", note: "No és un servici de nutrició ni aborda trastorns de la conducta alimentària." },
-      { title: "Canvis i estats de dol", text: "Un acompanyament seré per a transitar pèrdues o canvis vitals, donant espai al que estàs vivint i als recursos que t'ajuden a avançar.", note: "No substituïx l'atenció psicològica quan el dol és molt intens, es prolonga o compromet el teu benestar." },
-      { title: "Estudi i concentració", text: "Podem treballar la preparació, el focus i les rutines d'estudi per a afrontar reptes acadèmics amb més claredat i continuïtat.", note: "No substituïx una avaluació de dificultats d'aprenentatge o atenció." },
-      { title: "Patrons de conducta", text: "Identifiquem respostes repetides que ja no et servixen i assagem alternatives xicotetes, concretes i coherents amb el canvi que busques.", note: "No és tractament de trastorns de conducta ni de salut mental." },
-      { title: "Millora d'hàbits", text: "Un espai per a definir un hàbit realista, reconéixer què el dificulta i reforçar accions sostenibles en el teu dia a dia.", note: "El ritme i els resultats depenen de molts factors; no es garantixen canvis concrets." },
-      { title: "Benestar emocional", text: "Podem cultivar recursos personals de calma, presència i autocura per a relacionar-te amb les emocions d'una manera més conscient.", note: "No substituïx la intervenció psicològica o psiquiàtrica quan és necessària." },
-      { title: "Autoconfiança", text: "Treballem objectius concrets, diàleg intern i preparació per a expressar-te, decidir o afrontar situacions que t'importen.", note: "És un acompanyament de desenvolupament personal, no un tractament clínic de l'autoestima." },
+      {
+        title: "Pors i fòbies",
+        text: "Podem explorar com preparar-te davant de situacions que t'inquieten i practicar recursos de calma, atenció i confiança per a afrontar-les al teu ritme.",
+        note: "No substituïx l'avaluació ni el tractament psicològic d'una fòbia o un trastorn d'ansietat.",
+      },
+      {
+        title: "Ansietat i estrès quotidià",
+        text: "Un espai per a treballar la tensió del dia a dia, recuperar pauses i assajar formes més conscients de respondre davant de moments exigents.",
+        note: "Davant d'un malestar intens, persistent o que interferisca en la teua vida, és important consultar amb un professional sanitari.",
+      },
+      {
+        title: "Deixar de fumar",
+        text: "Un procés estructurat per a acompanyar la teua decisió, reforçar els motius personals i preparar hàbits que ajuden a sostindre el canvi.",
+        note: "És suport al canvi d'hàbits; no substituïx l'atenció mèdica ni el tractament d'una dependència.",
+      },
+      {
+        title: "Control de pes",
+        text: "Podem revisar la relació amb les rutines, la motivació i els hàbits quotidians per a acompanyar objectius de benestar acordats amb tu.",
+        note: "No és un servici de nutrició ni aborda trastorns de la conducta alimentària.",
+      },
+      {
+        title: "Canvis i estats de dol",
+        text: "Un acompanyament seré per a transitar pèrdues o canvis vitals, donant espai al que estàs vivint i als recursos que t'ajuden a avançar.",
+        note: "No substituïx l'atenció psicològica quan el dol és molt intens, es prolonga o compromet el teu benestar.",
+      },
+      {
+        title: "Estudi i concentració",
+        text: "Podem treballar la preparació, el focus i les rutines d'estudi per a afrontar reptes acadèmics amb més claredat i continuïtat.",
+        note: "No substituïx una avaluació de dificultats d'aprenentatge o atenció.",
+      },
+      {
+        title: "Patrons de conducta",
+        text: "Identifiquem respostes repetides que ja no et servixen i assagem alternatives xicotetes, concretes i coherents amb el canvi que busques.",
+        note: "No és tractament de trastorns de conducta ni de salut mental.",
+      },
+      {
+        title: "Millora d'hàbits",
+        text: "Un espai per a definir un hàbit realista, reconéixer què el dificulta i reforçar accions sostenibles en el teu dia a dia.",
+        note: "El ritme i els resultats depenen de molts factors; no es garantixen canvis concrets.",
+      },
+      {
+        title: "Benestar emocional",
+        text: "Podem cultivar recursos personals de calma, presència i autocura per a relacionar-te amb les emocions d'una manera més conscient.",
+        note: "No substituïx la intervenció psicològica o psiquiàtrica quan és necessària.",
+      },
+      {
+        title: "Autoconfiança",
+        text: "Treballem objectius concrets, diàleg intern i preparació per a expressar-te, decidir o afrontar situacions que t'importen.",
+        note: "És un acompanyament de desenvolupament personal, no un tractament clínic de l'autoestima.",
+      },
     ],
     closing: "Si dubtes de si este acompanyament encaixa amb tu, escriu-me abans de reservar.",
     cta: "Resoldre un dubte",
@@ -479,9 +548,28 @@ const va: Dict = {
     intro:
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
-      { title: "Què és realment la hipnosi?", excerpt: "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció." },
-      { title: "Expectatives realistes: què depén de cada part", excerpt: "Què puc aportar jo, què aportes tu i per què eixa frontera fa que el procés funcione millor." },
-      { title: "Com es construïx un hàbit", excerpt: "El paper de la repetició, del context i de la imaginació guiada al sostindre un canvi." },
+      {
+        slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+        title: "Què ocorre en el cervell durant la hipnosi?",
+        excerpt:
+          "La ciència ha observat canvis en l'atenció i la comunicació entre xarxes cerebrals, sense apagar la ment racional.",
+      },
+      {
+        slug: "que-es-la-hipnosis",
+        title: "Què és realment la hipnosi?",
+        excerpt:
+          "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
+      },
+      {
+        title: "Expectatives realistes: què depén de cada part",
+        excerpt:
+          "Què puc aportar jo, què aportes tu i per què eixa frontera fa que el procés funcione millor.",
+      },
+      {
+        title: "Com es construïx un hàbit",
+        excerpt:
+          "El paper de la repetició, del context i de la imaginació guiada al sostindre un canvi.",
+      },
     ],
     soon: "Pròximament",
     latest: "Últim article",
@@ -491,12 +579,30 @@ const va: Dict = {
   faq: {
     title: "Preguntes freqüents",
     items: [
-      { q: "Perdré el control?", a: "No. En hipnosi mantens la consciència i el control. Pots parlar, moure't i detindre la sessió quan vulgues." },
-      { q: "Açò és una teràpia psicològica?", a: "No. És acompanyament de desenvolupament personal. No hi ha diagnòstic ni tractament de trastorns, i no substituïx l'atenció sanitària." },
-      { q: "Quantes sessions necessite?", a: "Depén de l'objectiu. Moltes persones treballen amb sessions soltes; per a deixar de fumar el recorregut és de tres sessions." },
-      { q: "I si no em passa res durant la sessió?", a: "Cada persona viu l'experiència a la seua manera. Adaptem l'enfocament i, si no és la ferramenta adequada per a tu, t'ho diré." },
-      { q: "És confidencial?", a: "Sí. El que compartixes queda entre nosaltres i es recullen les mínimes dades necessàries per a gestionar la cita." },
-      { q: "Quin preu té?", a: "La sessió individual són 60 € l'hora. El programa per a deixar de fumar són 300 € i inclou tres sessions." },
+      {
+        q: "Perdré el control?",
+        a: "No. En hipnosi mantens la consciència i el control. Pots parlar, moure't i detindre la sessió quan vulgues.",
+      },
+      {
+        q: "Açò és una teràpia psicològica?",
+        a: "No. És acompanyament de desenvolupament personal. No hi ha diagnòstic ni tractament de trastorns, i no substituïx l'atenció sanitària.",
+      },
+      {
+        q: "Quantes sessions necessite?",
+        a: "Depén de l'objectiu. Moltes persones treballen amb sessions soltes; per a deixar de fumar el recorregut és de tres sessions.",
+      },
+      {
+        q: "I si no em passa res durant la sessió?",
+        a: "Cada persona viu l'experiència a la seua manera. Adaptem l'enfocament i, si no és la ferramenta adequada per a tu, t'ho diré.",
+      },
+      {
+        q: "És confidencial?",
+        a: "Sí. El que compartixes queda entre nosaltres i es recullen les mínimes dades necessàries per a gestionar la cita.",
+      },
+      {
+        q: "Quin preu té?",
+        a: "La sessió individual són 60 € l'hora. El programa per a deixar de fumar són 300 € i inclou tres sessions.",
+      },
     ],
   },
   contact: {
@@ -520,10 +626,22 @@ const va: Dict = {
     intro:
       "Esborrany de textos legals pendent de revisió. Falten dades identificatives, adreça i proveïdors definitius.",
     sections: [
-      { title: "Avís legal", text: "Titular del lloc: Maria Cabo (Holistic-o). Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari." },
-      { title: "Privacitat", text: "Les dades que facilites s'utilitzen únicament per a respondre la teua consulta i gestionar la cita. No es recullen dades de salut a través de la web. Pots exercir els teus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació escrivint a l'adreça de contacte." },
-      { title: "Galetes", text: "La web no utilitza galetes de perfilat. Si en el futur s'afig analítica, es demanarà el teu consentiment previ amb opció de rebuig igual de senzilla." },
-      { title: "Condicions del servici", text: "El servici s'adreça a persones majors de 18 anys i consistix en acompanyament de desenvolupament personal mitjançant hipnosi. Condicions de canvi, cancel·lació i reemborsament pendents de definir." },
+      {
+        title: "Avís legal",
+        text: "Titular del lloc: Maria Cabo (Holistic-o). Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
+      },
+      {
+        title: "Privacitat",
+        text: "Les dades que facilites s'utilitzen únicament per a respondre la teua consulta i gestionar la cita. No es recullen dades de salut a través de la web. Pots exercir els teus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació escrivint a l'adreça de contacte.",
+      },
+      {
+        title: "Galetes",
+        text: "La web no utilitza galetes de perfilat. Si en el futur s'afig analítica, es demanarà el teu consentiment previ amb opció de rebuig igual de senzilla.",
+      },
+      {
+        title: "Condicions del servici",
+        text: "El servici s'adreça a persones majors de 18 anys i consistix en acompanyament de desenvolupament personal mitjançant hipnosi. Condicions de canvi, cancel·lació i reemborsament pendents de definir.",
+      },
     ],
   },
   footer: {
@@ -566,8 +684,14 @@ const en: Dict = {
     ctaPrimary: "Book a session",
     ctaSecondary: "How it works",
     pillars: [
-      { title: "Clear explanation", text: "You'll know what hypnosis is and isn't before deciding anything." },
-      { title: "A human presence", text: "Calm support, with no clinical language and no promises." },
+      {
+        title: "Clear explanation",
+        text: "You'll know what hypnosis is and isn't before deciding anything.",
+      },
+      {
+        title: "A human presence",
+        text: "Calm support, with no clinical language and no promises.",
+      },
       { title: "Honest limits", text: "Personal development, not healthcare or treatment." },
     ],
     forWhomTitle: "What it often helps with",
@@ -597,10 +721,22 @@ const en: Dict = {
       "Hypnosis is a state of focused attention and relaxation in which it becomes easier to work with imagination, habits and the way you respond to certain situations. You don't lose control, you don't fall asleep, and you never do anything you don't want to do.",
     stepsTitle: "The journey, step by step",
     steps: [
-      { title: "1 · First conversation", text: "We talk about what you want to change, your situation, and whether this support is right for you." },
-      { title: "2 · A concrete goal", text: "Together we define an observable, realistic goal, clarifying what depends on me and what depends on you." },
-      { title: "3 · The hypnosis session", text: "A guided, calm and fully consented process. You'll remember it and can stop whenever you wish." },
-      { title: "4 · Between sessions", text: "Small practices to sustain the change in daily life, without overloading your schedule." },
+      {
+        title: "1 · First conversation",
+        text: "We talk about what you want to change, your situation, and whether this support is right for you.",
+      },
+      {
+        title: "2 · A concrete goal",
+        text: "Together we define an observable, realistic goal, clarifying what depends on me and what depends on you.",
+      },
+      {
+        title: "3 · The hypnosis session",
+        text: "A guided, calm and fully consented process. You'll remember it and can stop whenever you wish.",
+      },
+      {
+        title: "4 · Between sessions",
+        text: "Small practices to sustain the change in daily life, without overloading your schedule.",
+      },
     ],
     mythsTitle: "What it is not",
     myths: [
@@ -621,18 +757,59 @@ const en: Dict = {
     notice:
       "This support is not healthcare or psychological therapy. It does not treat disorders, provide diagnoses or replace health professionals. If your needs call for clinical care, I will tell you clearly and guide you towards the right resource.",
     items: [
-      { title: "Fears and phobias", text: "We can explore how to prepare for situations that worry you and practise resources for calm, attention and confidence at your own pace.", note: "It does not replace the assessment or psychological treatment of a phobia or anxiety disorder." },
-      { title: "Everyday anxiety and stress", text: "A space to work with day-to-day tension, recover pauses and rehearse more conscious ways of responding during demanding moments.", note: "For intense, persistent distress or distress that affects daily life, it is important to consult a health professional." },
-      { title: "Stopping smoking", text: "A structured process to support your decision, strengthen your personal reasons and prepare habits that help sustain change.", note: "This supports habit change; it does not replace medical care or treatment for dependence." },
-      { title: "Weight management", text: "We can look at routines, motivation and daily habits to support wellbeing goals agreed with you.", note: "It is not a nutrition service and does not address eating disorders." },
-      { title: "Changes and grief", text: "Calm support for moving through losses or life changes, making room for what you are living through and the resources that help you move forward.", note: "It does not replace psychological support when grief is very intense, prolonged or affecting your wellbeing." },
-      { title: "Study and concentration", text: "We can work on preparation, focus and study routines to meet academic challenges with more clarity and consistency.", note: "It does not replace an assessment for learning or attention difficulties." },
-      { title: "Behaviour patterns", text: "We identify repeated responses that no longer serve you and rehearse small, concrete alternatives aligned with the change you are looking for.", note: "It is not treatment for behavioural or mental-health disorders." },
-      { title: "Habit building", text: "A space to define a realistic habit, recognise what makes it difficult and reinforce sustainable actions in everyday life.", note: "Pace and results depend on many factors; specific changes cannot be guaranteed." },
-      { title: "Emotional wellbeing", text: "We can cultivate personal resources for calm, presence and self-care, so you can relate to emotions more consciously.", note: "It does not replace psychological or psychiatric care when that is needed." },
-      { title: "Self-confidence", text: "We work on specific goals, inner dialogue and preparation to express yourself, decide or face situations that matter to you.", note: "It is personal-development support, not clinical treatment for self-esteem." },
+      {
+        title: "Fears and phobias",
+        text: "We can explore how to prepare for situations that worry you and practise resources for calm, attention and confidence at your own pace.",
+        note: "It does not replace the assessment or psychological treatment of a phobia or anxiety disorder.",
+      },
+      {
+        title: "Everyday anxiety and stress",
+        text: "A space to work with day-to-day tension, recover pauses and rehearse more conscious ways of responding during demanding moments.",
+        note: "For intense, persistent distress or distress that affects daily life, it is important to consult a health professional.",
+      },
+      {
+        title: "Stopping smoking",
+        text: "A structured process to support your decision, strengthen your personal reasons and prepare habits that help sustain change.",
+        note: "This supports habit change; it does not replace medical care or treatment for dependence.",
+      },
+      {
+        title: "Weight management",
+        text: "We can look at routines, motivation and daily habits to support wellbeing goals agreed with you.",
+        note: "It is not a nutrition service and does not address eating disorders.",
+      },
+      {
+        title: "Changes and grief",
+        text: "Calm support for moving through losses or life changes, making room for what you are living through and the resources that help you move forward.",
+        note: "It does not replace psychological support when grief is very intense, prolonged or affecting your wellbeing.",
+      },
+      {
+        title: "Study and concentration",
+        text: "We can work on preparation, focus and study routines to meet academic challenges with more clarity and consistency.",
+        note: "It does not replace an assessment for learning or attention difficulties.",
+      },
+      {
+        title: "Behaviour patterns",
+        text: "We identify repeated responses that no longer serve you and rehearse small, concrete alternatives aligned with the change you are looking for.",
+        note: "It is not treatment for behavioural or mental-health disorders.",
+      },
+      {
+        title: "Habit building",
+        text: "A space to define a realistic habit, recognise what makes it difficult and reinforce sustainable actions in everyday life.",
+        note: "Pace and results depend on many factors; specific changes cannot be guaranteed.",
+      },
+      {
+        title: "Emotional wellbeing",
+        text: "We can cultivate personal resources for calm, presence and self-care, so you can relate to emotions more consciously.",
+        note: "It does not replace psychological or psychiatric care when that is needed.",
+      },
+      {
+        title: "Self-confidence",
+        text: "We work on specific goals, inner dialogue and preparation to express yourself, decide or face situations that matter to you.",
+        note: "It is personal-development support, not clinical treatment for self-esteem.",
+      },
     ],
-    closing: "If you are unsure whether this support is a good fit for you, write to me before booking.",
+    closing:
+      "If you are unsure whether this support is a good fit for you, write to me before booking.",
     cta: "Ask a question",
   },
   sessions: {
@@ -694,9 +871,27 @@ const en: Dict = {
     intro:
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
-      { title: "What is hypnosis, really?", excerpt: "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention." },
-      { title: "Realistic expectations: who brings what", excerpt: "What I bring, what you bring, and why that boundary makes the process work better." },
-      { title: "How a habit is built", excerpt: "The role of repetition, context and guided imagination in sustaining change." },
+      {
+        slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+        title: "What happens in the brain during hypnosis?",
+        excerpt:
+          "Science has observed changes in attention and communication between brain networks, without switching off rational thought.",
+      },
+      {
+        slug: "que-es-la-hipnosis",
+        title: "What is hypnosis, really?",
+        excerpt:
+          "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
+      },
+      {
+        title: "Realistic expectations: who brings what",
+        excerpt:
+          "What I bring, what you bring, and why that boundary makes the process work better.",
+      },
+      {
+        title: "How a habit is built",
+        excerpt: "The role of repetition, context and guided imagination in sustaining change.",
+      },
     ],
     soon: "Coming soon",
     latest: "Latest article",
@@ -706,12 +901,30 @@ const en: Dict = {
   faq: {
     title: "Frequently asked questions",
     items: [
-      { q: "Will I lose control?", a: "No. In hypnosis you stay aware and in control. You can talk, move and stop the session whenever you want." },
-      { q: "Is this psychological therapy?", a: "No. It is personal development support. There is no diagnosis or treatment of disorders, and it doesn't replace healthcare." },
-      { q: "How many sessions do I need?", a: "It depends on the goal. Many people work with single sessions; the stop-smoking journey is three sessions." },
-      { q: "What if nothing happens during the session?", a: "Everyone experiences it differently. We adapt the approach, and if it isn't the right tool for you, I'll tell you." },
-      { q: "Is it confidential?", a: "Yes. What you share stays between us, and only the minimum data needed to manage the appointment is collected." },
-      { q: "How much does it cost?", a: "An individual session is €60 per hour. The stop-smoking programme is €300 and includes three sessions." },
+      {
+        q: "Will I lose control?",
+        a: "No. In hypnosis you stay aware and in control. You can talk, move and stop the session whenever you want.",
+      },
+      {
+        q: "Is this psychological therapy?",
+        a: "No. It is personal development support. There is no diagnosis or treatment of disorders, and it doesn't replace healthcare.",
+      },
+      {
+        q: "How many sessions do I need?",
+        a: "It depends on the goal. Many people work with single sessions; the stop-smoking journey is three sessions.",
+      },
+      {
+        q: "What if nothing happens during the session?",
+        a: "Everyone experiences it differently. We adapt the approach, and if it isn't the right tool for you, I'll tell you.",
+      },
+      {
+        q: "Is it confidential?",
+        a: "Yes. What you share stays between us, and only the minimum data needed to manage the appointment is collected.",
+      },
+      {
+        q: "How much does it cost?",
+        a: "An individual session is €60 per hour. The stop-smoking programme is €300 and includes three sessions.",
+      },
     ],
   },
   contact: {
@@ -735,10 +948,22 @@ const en: Dict = {
     intro:
       "Draft legal texts pending review. Identification details, address and final providers are still missing.",
     sections: [
-      { title: "Legal notice", text: "Site owner: Maria Cabo (Holistic-o). Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice." },
-      { title: "Privacy", text: "The data you provide is used only to answer your enquiry and manage your appointment. No health data is collected through the website. You can exercise your rights of access, rectification, erasure, objection, portability and restriction by writing to the contact address." },
-      { title: "Cookies", text: "This site uses no profiling cookies. If analytics are added later, consent will be requested first, with refusal just as easy." },
-      { title: "Terms of service", text: "The service is for adults over 18 and consists of personal development support through hypnosis. Change, cancellation and refund terms are still to be defined." },
+      {
+        title: "Legal notice",
+        text: "Site owner: Maria Cabo (Holistic-o). Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
+      },
+      {
+        title: "Privacy",
+        text: "The data you provide is used only to answer your enquiry and manage your appointment. No health data is collected through the website. You can exercise your rights of access, rectification, erasure, objection, portability and restriction by writing to the contact address.",
+      },
+      {
+        title: "Cookies",
+        text: "This site uses no profiling cookies. If analytics are added later, consent will be requested first, with refusal just as easy.",
+      },
+      {
+        title: "Terms of service",
+        text: "The service is for adults over 18 and consists of personal development support through hypnosis. Change, cancellation and refund terms are still to be defined.",
+      },
     ],
   },
   footer: {

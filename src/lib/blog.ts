@@ -7,12 +7,17 @@ export type BlogBlock = {
 
 export type BlogPostContent = {
   slug: string;
+  title: string;
+  excerpt: string;
   date: string;
   blocks: BlogBlock[];
 };
 
 const es: BlogPostContent = {
   slug: "que-es-la-hipnosis",
+  title: "¿Qué es realmente la hipnosis?",
+  excerpt:
+    "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención.",
   date: "2026-09-10",
   blocks: [
     {
@@ -73,8 +78,80 @@ const es: BlogPostContent = {
   ],
 };
 
+const esBrain: BlogPostContent = {
+  slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+  title: "¿Qué ocurre en el cerebro durante la hipnosis?",
+  excerpt:
+    "La ciencia ha observado cambios en la atención y la comunicación entre redes cerebrales, sin apagar la mente racional.",
+  date: "2026-09-11",
+  blocks: [
+    {
+      type: "lead",
+      text: "La ciencia ha observado cambios en la atención y la comunicación entre redes cerebrales. Pero no existe un botón que apague la mente racional.",
+    },
+    {
+      type: "p",
+      text: "La hipnosis puede parecer una experiencia muy subjetiva: cerrar los ojos, escuchar una voz y concentrarse en imágenes o sensaciones. Sin embargo, la investigación científica lleva décadas estudiando qué sucede en el cerebro durante este estado.",
+    },
+    {
+      type: "p",
+      text: "Los estudios de neuroimagen muestran que la hipnosis se asocia con cambios en la actividad y la comunicación de distintas redes cerebrales. Estos cambios no son idénticos en todas las personas ni significan que una parte del cerebro se desconecte.",
+    },
+    { type: "h2", text: "La atención cambia de dirección" },
+    {
+      type: "p",
+      text: "Nuestro cerebro recibe una enorme cantidad de información. Constantemente decide qué merece atención y qué puede quedar en segundo plano.",
+    },
+    {
+      type: "p",
+      text: "Durante la hipnosis, la atención puede concentrarse con mayor intensidad en una experiencia interna. Algunas investigaciones han observado modificaciones en redes relacionadas con la selección de estímulos relevantes, el pensamiento sobre uno mismo y el control de la atención.",
+    },
+    {
+      type: "p",
+      text: "Dicho de forma sencilla: el cerebro puede cambiar la manera en que distribuye sus recursos entre lo que ocurre fuera y lo que estamos experimentando por dentro.",
+    },
+    { type: "h2", text: "¿Por qué la imaginación puede sentirse tan real?" },
+    {
+      type: "p",
+      text: "Imagina que muerdes un limón. Tal vez notes cómo salivas o cómo cambia la sensación en tu boca, aunque no haya ningún limón delante.",
+    },
+    {
+      type: "p",
+      text: "La imaginación puede activar procesos cerebrales y respuestas corporales relacionados con experiencias reales. Durante la hipnosis, las sugestiones y las imágenes mentales pueden adquirir una especial intensidad, lo que ayuda a explicar por qué algunas personas experimentan cambios en sus sensaciones, percepciones o respuestas emocionales.",
+    },
+    {
+      type: "p",
+      text: "Esto no significa que imaginar algo sea exactamente igual que vivirlo, ni que todas las sugestiones produzcan el mismo efecto.",
+    },
+    { type: "h2", text: "¿Se puede cambiar el cerebro?" },
+    {
+      type: "p",
+      text: "El cerebro tiene capacidad de aprender y adaptarse a lo largo de la vida. A esta propiedad la llamamos neuroplasticidad.",
+    },
+    {
+      type: "p",
+      text: "La hipnosis puede facilitar experiencias de aprendizaje y ensayo mental que contribuyan a un proceso de cambio. Sin embargo, no es correcto afirmar que una sesión reprograma el cerebro o crea automáticamente nuevas conexiones permanentes.",
+    },
+    {
+      type: "p",
+      text: "Los cambios duraderos suelen necesitar práctica, repetición y experiencias que se integren en la vida cotidiana.",
+    },
+    {
+      type: "quote",
+      text: "La hipnosis no activa poderes ocultos del cerebro. Utiliza capacidades humanas reales, como la atención, la imaginación y el aprendizaje, de una manera particular.",
+    },
+    {
+      type: "note",
+      text: "La investigación sobre los mecanismos neuronales de la hipnosis continúa evolucionando. Este artículo ofrece una explicación divulgativa y no constituye asesoramiento sanitario.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
+  title: "Què és realment la hipnosi?",
+  excerpt:
+    "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
   date: "2026-09-10",
   blocks: [
     {
@@ -137,6 +214,9 @@ const va: BlogPostContent = {
 
 const en: BlogPostContent = {
   slug: "que-es-la-hipnosis",
+  title: "What is hypnosis, really?",
+  excerpt:
+    "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
   date: "2026-09-10",
   blocks: [
     {
@@ -197,9 +277,15 @@ const en: BlogPostContent = {
   ],
 };
 
-const postsByLang: Record<Lang, BlogPostContent> = { es, va, en };
+const postsByLang: Record<Lang, BlogPostContent[]> = {
+  es: [esBrain, es],
+  va: [va],
+  en: [en],
+};
 
 export function getBlogPost(slug: string, lang: Lang): BlogPostContent | undefined {
-  const post = postsByLang[lang];
-  return post.slug === slug ? post : postsByLang.es.slug === slug ? postsByLang.es : undefined;
+  return (
+    postsByLang[lang].find((post) => post.slug === slug) ??
+    postsByLang.es.find((post) => post.slug === slug)
+  );
 }

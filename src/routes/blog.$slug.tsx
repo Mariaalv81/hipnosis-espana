@@ -6,18 +6,22 @@ import { getBlogPost, type BlogBlock } from "@/lib/blog";
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
     const post = getBlogPost(params.slug, "es");
+    const title = post?.title ?? "Blog";
+    const description =
+      post?.excerpt ??
+      "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.";
+
     return {
       meta: [
-        { title: `${post ? "¿Qué es realmente la hipnosis?" : "Blog"} · Holistic-o` },
+        { title: `${title} · Holistic-o` },
         {
           name: "description",
-          content:
-            "No es dormir, perder el control ni dejar la mente en blanco. Un texto sereno sobre lo que es realmente la hipnosis.",
+          content: description,
         },
-        { property: "og:title", content: "¿Qué es realmente la hipnosis? · Holistic-o" },
+        { property: "og:title", content: `${title} · Holistic-o` },
         {
           property: "og:description",
-          content: "No es dormir, perder el control ni dejar la mente en blanco.",
+          content: description,
         },
         { property: "og:type", content: "article" },
       ],
@@ -27,7 +31,10 @@ export const Route = createFileRoute("/blog/$slug")({
   notFoundComponent: () => (
     <section className="container-page py-24 text-center">
       <p className="text-muted-foreground">Artículo no encontrado.</p>
-      <Link to="/blog" className="mt-4 inline-block text-sm text-primary underline underline-offset-4">
+      <Link
+        to="/blog"
+        className="mt-4 inline-block text-sm text-primary underline underline-offset-4"
+      >
         Volver al blog
       </Link>
     </section>
@@ -72,6 +79,7 @@ function BlogPostPage() {
   const { slug } = Route.useParams();
   const { t, lang } = useI18n();
   const post = getBlogPost(slug, lang);
+  const listingPost = t.journal.posts.find((item) => item.slug === slug);
 
   if (!post) throw notFound();
 
@@ -93,11 +101,9 @@ function BlogPostPage() {
           </Link>
           <p className="eyebrow mt-8">{t.tagline}</p>
           <h1 className="mt-4 text-4xl leading-tight md:text-5xl">
-            {t.journal.posts[0]?.title}
+            {listingPost?.title ?? post.title}
           </h1>
-          <p className="mt-5 text-sm text-muted-foreground">
-            Maria Cabo · {date}
-          </p>
+          <p className="mt-5 text-sm text-muted-foreground">Maria Cabo · {date}</p>
         </div>
       </section>
 
