@@ -6,12 +6,7 @@ const SCRIPT_ID = "google-calendar-scheduling-button-script";
 const STYLESHEET_ID = "google-calendar-scheduling-button-styles";
 
 type SchedulingButton = {
-  load: (options: {
-    url: string;
-    color: string;
-    label: string;
-    target: HTMLDivElement;
-  }) => void;
+  load: (options: { url: string; color: string; label: string; target: HTMLDivElement }) => void;
 };
 
 declare global {
@@ -27,9 +22,13 @@ function loadSchedulingScript(): Promise<void> {
     const existingScript = document.getElementById(SCRIPT_ID) as HTMLScriptElement | null;
     if (existingScript) {
       existingScript.addEventListener("load", () => resolve(), { once: true });
-      existingScript.addEventListener("error", () => reject(new Error("Calendar script failed to load")), {
-        once: true,
-      });
+      existingScript.addEventListener(
+        "error",
+        () => reject(new Error("Calendar script failed to load")),
+        {
+          once: true,
+        },
+      );
       return;
     }
 

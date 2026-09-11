@@ -103,8 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Hipnosis España · Hipnosis para el cambio personal" },
       {
         name: "description",
-        content:
-          "Acompañamiento con hipnosis aplicada al desarrollo personal en Sueca.",
+        content: "Acompañamiento con hipnosis aplicada al desarrollo personal en Sueca.",
       },
       { name: "author", content: "Hipnosis España" },
       { property: "og:type", content: "website" },

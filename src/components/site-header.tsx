@@ -63,11 +63,7 @@ export function SiteHeader() {
             {t.nav.book}
           </Link>
 
-          <button
-            className="lg:hidden"
-            aria-label="Menu"
-            onClick={() => setOpen((o) => !o)}
-          >
+          <button className="lg:hidden" aria-label="Menu" onClick={() => setOpen((o) => !o)}>
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>

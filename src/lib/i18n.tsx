@@ -213,10 +213,41 @@ const es = {
     title: "Eventos y talleres",
     intro:
       "Encuentros introductorios y talleres en grupo para conocer el trabajo sin empezar por una sesión individual.",
+    badge: "Encuentro gratuito",
+    dateLabel: "Fecha",
+    timeLabel: "Hora",
+    placeLabel: "Lugar",
+    place: "Sueca · Centro Sanar",
+    items: [
+      {
+        date: "14 sept",
+        time: "18:00",
+        title: "Tabaquismo",
+        text: "Un encuentro para comprender cómo se sostienen los automatismos del tabaco y cómo puede acompañarse el cambio con hipnosis.",
+      },
+      {
+        date: "21 sept",
+        time: "18:00",
+        title: "Ansiedad, miedos y fobias",
+        text: "Una introducción serena a recursos de atención, calma y preparación interna ante situaciones que generan tensión.",
+      },
+      {
+        date: "28 sept",
+        time: "18:00",
+        title: "Estudio y exámenes",
+        text: "Una sesión grupal para explorar foco, confianza y ensayo mental antes de retos académicos o pruebas importantes.",
+      },
+      {
+        date: "5 oct",
+        time: "18:00",
+        title: "Hábitos y control del peso",
+        text: "Un espacio para hablar de motivación, repetición y relación con las rutinas cotidianas desde un enfoque no clínico.",
+      },
+    ],
     empty: "Ahora mismo no hay fechas abiertas.",
     emptyText:
       "Estoy preparando el calendario de talleres. Si quieres que te avise cuando se publiquen, escríbeme y te lo cuento.",
-    cta: "Avísame de las próximas fechas",
+    cta: "Quiero asistir",
   },
   journal: {
     title: "Blog",
@@ -538,10 +569,41 @@ const va: Dict = {
     title: "Esdeveniments i tallers",
     intro:
       "Trobades introductòries i tallers en grup per a conéixer el treball sense començar per una sessió individual.",
+    badge: "Trobada gratuïta",
+    dateLabel: "Data",
+    timeLabel: "Hora",
+    placeLabel: "Lloc",
+    place: "Sueca · Centre Sanar",
+    items: [
+      {
+        date: "14 set",
+        time: "18:00",
+        title: "Tabaquisme",
+        text: "Una trobada per a comprendre com se sostenen els automatismes del tabac i com pot acompanyar-se el canvi amb hipnosi.",
+      },
+      {
+        date: "21 set",
+        time: "18:00",
+        title: "Ansietat, pors i fòbies",
+        text: "Una introducció serena a recursos d'atenció, calma i preparació interna davant situacions que generen tensió.",
+      },
+      {
+        date: "28 set",
+        time: "18:00",
+        title: "Estudi i exàmens",
+        text: "Una sessió grupal per a explorar focus, confiança i assaig mental abans de reptes acadèmics o proves importants.",
+      },
+      {
+        date: "5 oct",
+        time: "18:00",
+        title: "Hàbits i control del pes",
+        text: "Un espai per a parlar de motivació, repetició i relació amb les rutines quotidianes des d'un enfocament no clínic.",
+      },
+    ],
     empty: "Ara mateix no hi ha dates obertes.",
     emptyText:
       "Estic preparant el calendari de tallers. Si vols que t'avise quan es publiquen, escriu-me i t'ho conte.",
-    cta: "Avisa'm de les pròximes dates",
+    cta: "Vull assistir",
   },
   journal: {
     title: "Blog",
@@ -861,10 +923,41 @@ const en: Dict = {
     title: "Events and workshops",
     intro:
       "Introductory gatherings and group workshops, if you'd rather not start with a one-to-one session.",
+    badge: "Free gathering",
+    dateLabel: "Date",
+    timeLabel: "Time",
+    placeLabel: "Place",
+    place: "Sueca · Centro Sanar",
+    items: [
+      {
+        date: "14 Sept",
+        time: "18:00",
+        title: "Smoking",
+        text: "A gathering to understand how smoking automatisms are maintained and how hypnosis can support change.",
+      },
+      {
+        date: "21 Sept",
+        time: "18:00",
+        title: "Anxiety, fears and phobias",
+        text: "A calm introduction to attention, grounding and inner preparation for situations that create tension.",
+      },
+      {
+        date: "28 Sept",
+        time: "18:00",
+        title: "Study and exams",
+        text: "A group session to explore focus, confidence and mental rehearsal before academic challenges or important tests.",
+      },
+      {
+        date: "5 Oct",
+        time: "18:00",
+        title: "Habits and weight management",
+        text: "A space to talk about motivation, repetition and everyday routines from a non-clinical perspective.",
+      },
+    ],
     empty: "There are no open dates right now.",
     emptyText:
       "The workshop calendar is being prepared. Write to me if you'd like to hear when dates are published.",
-    cta: "Let me know about upcoming dates",
+    cta: "I want to attend",
   },
   journal: {
     title: "Blog",

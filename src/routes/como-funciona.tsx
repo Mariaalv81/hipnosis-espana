@@ -14,7 +14,8 @@ export const Route = createFileRoute("/como-funciona")({
       { property: "og:title", content: "Cómo funciona · Hipnosis España" },
       {
         property: "og:description",
-        content: "El recorrido paso a paso de una sesión de hipnosis, con límites claros y honestos.",
+        content:
+          "El recorrido paso a paso de una sesión de hipnosis, con límites claros y honestos.",
       },
     ],
   }),
