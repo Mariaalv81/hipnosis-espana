@@ -255,6 +255,12 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "por-que-cuesta-cambiar-un-habito",
+        title: "¿Por qué nos cuesta tanto cambiar un hábito?",
+        excerpt:
+          "Porque saber lo que queremos hacer y conseguir hacerlo no siempre son la misma cosa.",
+      },
+      {
         slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
         title: "¿Qué ocurre en el cerebro durante la hipnosis?",
         excerpt:
@@ -270,11 +276,6 @@ const es = {
         title: "Expectativas realistas: qué depende de cada parte",
         excerpt:
           "Qué puedo aportar yo, qué aportas tú y por qué esa frontera hace que el proceso funcione mejor.",
-      },
-      {
-        title: "Cómo se construye un hábito",
-        excerpt:
-          "El papel de la repetición, del contexto y de la imaginación guiada al sostener un cambio.",
       },
     ],
     soon: "Próximamente",
@@ -611,6 +612,11 @@ const va: Dict = {
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
       {
+        slug: "por-que-cuesta-cambiar-un-habito",
+        title: "Per què ens costa tant canviar un hàbit?",
+        excerpt: "Perquè saber què volem fer i aconseguir fer-ho no sempre són la mateixa cosa.",
+      },
+      {
         slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
         title: "Què ocorre en el cervell durant la hipnosi?",
         excerpt:
@@ -626,11 +632,6 @@ const va: Dict = {
         title: "Expectatives realistes: què depén de cada part",
         excerpt:
           "Què puc aportar jo, què aportes tu i per què eixa frontera fa que el procés funcione millor.",
-      },
-      {
-        title: "Com es construïx un hàbit",
-        excerpt:
-          "El paper de la repetició, del context i de la imaginació guiada al sostindre un canvi.",
       },
     ],
     soon: "Pròximament",
@@ -965,6 +966,12 @@ const en: Dict = {
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
       {
+        slug: "por-que-cuesta-cambiar-un-habito",
+        title: "Why is changing a habit so hard?",
+        excerpt:
+          "Because knowing what we want to do and actually doing it are not always the same thing.",
+      },
+      {
         slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
         title: "What happens in the brain during hypnosis?",
         excerpt:
@@ -980,10 +987,6 @@ const en: Dict = {
         title: "Realistic expectations: who brings what",
         excerpt:
           "What I bring, what you bring, and why that boundary makes the process work better.",
-      },
-      {
-        title: "How a habit is built",
-        excerpt: "The role of repetition, context and guided imagination in sustaining change.",
       },
     ],
     soon: "Coming soon",

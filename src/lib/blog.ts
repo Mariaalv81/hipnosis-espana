@@ -147,6 +147,70 @@ const esBrain: BlogPostContent = {
   ],
 };
 
+const esHabit: BlogPostContent = {
+  slug: "por-que-cuesta-cambiar-un-habito",
+  title: "¿Por qué nos cuesta tanto cambiar un hábito?",
+  excerpt: "Porque saber lo que queremos hacer y conseguir hacerlo no siempre son la misma cosa.",
+  date: "2026-09-12",
+  blocks: [
+    {
+      type: "lead",
+      text: "Porque saber lo que queremos hacer y conseguir hacerlo no siempre son la misma cosa.",
+    },
+    {
+      type: "p",
+      text: "Sé que debería dejar de hacerlo, pero vuelvo a caer. Es una frase que aparece en muchos contextos: mirar el móvil sin parar, posponer una tarea, comer por aburrimiento o reaccionar de la misma manera ante una situación que nos incomoda.",
+    },
+    {
+      type: "p",
+      text: "A menudo interpretamos estas repeticiones como falta de voluntad. Sin embargo, los hábitos tienen mucho que ver con la manera en que nuestro cerebro aprende.",
+    },
+    { type: "h2", text: "El cerebro busca ahorrar esfuerzo" },
+    {
+      type: "p",
+      text: "Cuando repetimos una conducta en un contexto parecido, el cerebro va aprendiendo una secuencia. Con el tiempo, esa respuesta puede necesitar cada vez menos deliberación consciente.",
+    },
+    {
+      type: "p",
+      text: "Es útil: no tenemos que pensar cada mañana cómo lavarnos los dientes o cómo atarnos los zapatos. El problema aparece cuando un automatismo que antes nos ayudaba deja de encajar con lo que queremos.",
+    },
+    {
+      type: "p",
+      text: "Un hábito puede seguir una secuencia sencilla: señal, conducta y consecuencia.",
+    },
+    {
+      type: "p",
+      text: "Por ejemplo, sentir estrés puede llevarnos a revisar el móvil. Durante unos minutos encontramos distracción o alivio. Esa consecuencia hace más probable que repitamos la conducta la próxima vez que aparezca el estrés.",
+    },
+    { type: "h2", text: "¿Por qué no basta con decidir cambiar?" },
+    {
+      type: "p",
+      text: "Porque una decisión consciente puede competir con una respuesta que hemos practicado cientos de veces. Además, el cansancio, las emociones, el entorno y la facilidad de acceso a una conducta influyen en lo que hacemos.",
+    },
+    {
+      type: "p",
+      text: "Esto no significa que no tengamos capacidad de elección. Significa que cambiar suele requerir algo más que repetirnos mañana lo haré diferente.",
+    },
+    { type: "h2", text: "Crear una respuesta nueva" },
+    {
+      type: "p",
+      text: "Una manera de trabajar un hábito es identificar qué lo activa, qué función cumple y qué alternativa podría responder mejor a esa necesidad.",
+    },
+    {
+      type: "p",
+      text: "No se trata únicamente de eliminar una conducta, sino de construir una respuesta que podamos practicar en situaciones reales. Cuanto más concreta, accesible y repetida sea, más oportunidades tendrá de consolidarse.",
+    },
+    {
+      type: "p",
+      text: "La hipnosis puede complementar este proceso ayudando a explorar los desencadenantes, ensayar mentalmente alternativas y reforzar objetivos personales. Pero el aprendizaje continúa fuera de la sesión.",
+    },
+    {
+      type: "quote",
+      text: "Cambiar un hábito no es una lucha contra nuestro cerebro. Es enseñarle, poco a poco, una forma diferente de responder.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment la hipnosi?",
@@ -278,7 +342,7 @@ const en: BlogPostContent = {
 };
 
 const postsByLang: Record<Lang, BlogPostContent[]> = {
-  es: [esBrain, es],
+  es: [esHabit, esBrain, es],
   va: [va],
   en: [en],
 };

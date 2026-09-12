@@ -24,7 +24,7 @@ function BlogIndexPage() {
         >
           <div className="relative bg-secondary/60 p-10 md:col-span-2 md:p-12">
             <p className="eyebrow">{t.journal.latest}</p>
-            <p className="mt-6 font-serif text-5xl leading-none text-primary md:text-6xl">02</p>
+            <p className="mt-6 font-serif text-5xl leading-none text-primary md:text-6xl">03</p>
             <span className="absolute -bottom-10 -right-10 size-40 rounded-full border border-accent/40" />
             <span className="absolute -bottom-6 -right-6 size-24 rounded-full bg-accent/15" />
           </div>
