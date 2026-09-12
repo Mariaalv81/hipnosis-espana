@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
+import { siteSettings } from "@/content/site-settings";
+import { useI18n } from "@/lib/i18n";
 
-const SCHEDULE_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QapkMqcpGMND3W8pdGkUjG-QYMfHYue-CgTFVCy50llHRrsr4TZ8i0M_ZzfMRZTqoy1QvtLQJ?gv=true";
 const SCRIPT_ID = "google-calendar-scheduling-button-script";
 const STYLESHEET_ID = "google-calendar-scheduling-button-styles";
 
@@ -43,6 +43,7 @@ function loadSchedulingScript(): Promise<void> {
 }
 
 export function CalendarButton({ className = "" }: { className?: string }) {
+  const { t } = useI18n();
   const targetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -62,9 +63,9 @@ export function CalendarButton({ className = "" }: { className?: string }) {
       .then(() => {
         if (cancelled) return;
         window.calendar?.schedulingButton?.load({
-          url: SCHEDULE_URL,
+          url: siteSettings.calendarScheduleUrl,
           color: "#33503a",
-          label: "Reserva una sesión",
+          label: t.common.bookCalendar,
           target,
         });
       })
@@ -74,7 +75,7 @@ export function CalendarButton({ className = "" }: { className?: string }) {
       cancelled = true;
       target.innerHTML = "";
     };
-  }, []);
+  }, [t.common.bookCalendar]);
 
   return <div ref={targetRef} className={`calendar-button ${className}`} />;
 }

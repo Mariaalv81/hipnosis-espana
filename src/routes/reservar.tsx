@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarButton } from "@/components/calendar-button";
 import { PageHeader } from "@/components/page-header";
+import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
-const SMOKING_EMAIL = "maria.a.cabo@gmail.com";
 
 const smokingMailto = (subject: string) =>
-  `mailto:${SMOKING_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-    `Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nMejor horario para la entrevista de 20 minutos: `,
-  )}`;
+  `mailto:${siteSettings.smokingProgramEmail}?subject=${encodeURIComponent(
+    subject,
+  )}&body=${encodeURIComponent(siteSettings.smokingProgramEmailBody)}`;
 
 export const Route = createFileRoute("/reservar")({
   head: () => ({

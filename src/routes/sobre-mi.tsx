@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
-import linenImage from "@/assets/texture-linen.jpg";
+import linenImage from "@/assets/images/texture-linen.jpg";
 
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({

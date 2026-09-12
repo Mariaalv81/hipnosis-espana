@@ -1,7 +1,7 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import { getBlogPost, type BlogBlock } from "@/lib/blog";
+import { getBlogPost, type BlogBlock } from "@/content/blog-posts";
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
