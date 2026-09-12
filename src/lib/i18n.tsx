@@ -255,6 +255,12 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "como-es-una-sesion-de-hipnosis",
+        title: "¿Cómo es una sesión de hipnosis?",
+        excerpt:
+          "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+      },
+      {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
         title: "Hipnosis y cambio de hábitos: ¿cómo puede ayudar?",
         excerpt:
@@ -618,6 +624,12 @@ const va: Dict = {
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
       {
+        slug: "como-es-una-sesion-de-hipnosis",
+        title: "Com és una sessió d'hipnosi?",
+        excerpt:
+          "Una sessió és un espai de col·laboració, no una experiència en què una altra persona pren el control.",
+      },
+      {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
         title: "Hipnosi i canvi d'hàbits: com pot ajudar?",
         excerpt:
@@ -977,6 +989,12 @@ const en: Dict = {
     intro:
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
+      {
+        slug: "como-es-una-sesion-de-hipnosis",
+        title: "What is a hypnosis session like?",
+        excerpt:
+          "A session is a collaborative space, not an experience where someone else takes control.",
+      },
       {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
         title: "Hypnosis and habit change: how can it help?",

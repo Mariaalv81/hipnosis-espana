@@ -277,6 +277,76 @@ const esHypnosisHabits: BlogPostContent = {
   ],
 };
 
+const esHypnosisSession: BlogPostContent = {
+  slug: "como-es-una-sesion-de-hipnosis",
+  title: "¿Cómo es una sesión de hipnosis?",
+  excerpt:
+    "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+  date: "2026-09-12",
+  blocks: [
+    {
+      type: "lead",
+      text: "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+    },
+    {
+      type: "p",
+      text: "Si nunca has probado la hipnosis, es normal preguntarte qué sucede exactamente. ¿Tendré que cerrar los ojos? ¿Me quedaré dormido? ¿Recordaré lo que ha pasado?",
+    },
+    {
+      type: "p",
+      text: "Aunque cada profesional tiene su manera de trabajar, una sesión suele seguir un proceso sencillo.",
+    },
+    { type: "h2", text: "Primero, una conversación" },
+    {
+      type: "p",
+      text: "Antes de comenzar, hablamos sobre lo que te gustaría explorar, tus objetivos y las circunstancias que rodean aquello que quieres trabajar.",
+    },
+    {
+      type: "p",
+      text: "Esta conversación permite adaptar el acompañamiento a tu experiencia y resolver cualquier duda. No se trata de aplicar el mismo ejercicio a todas las personas.",
+    },
+    { type: "h2", text: "Después, la experiencia de hipnosis" },
+    {
+      type: "p",
+      text: "El profesional puede guiarte mediante la voz, ejercicios de atención, imágenes mentales, metáforas o sugestiones. Puedes estar sentado cómodamente y, si lo deseas, cerrar los ojos.",
+    },
+    {
+      type: "p",
+      text: "Algunas personas sienten una relajación profunda; otras experimentan mayor concentración sin sentirse especialmente relajadas. Ambas experiencias pueden ser compatibles con la hipnosis.",
+    },
+    {
+      type: "p",
+      text: "Puedes escuchar, moverte, hablar y comunicar lo que necesites. No pierdes tu voluntad ni estás obligado a seguir una sugerencia.",
+    },
+    { type: "h2", text: "¿Recordaré lo que ha ocurrido?" },
+    {
+      type: "p",
+      text: "Habitualmente, las personas recuerdan la sesión o buena parte de ella. La experiencia puede variar, pero la hipnosis no implica necesariamente amnesia ni pérdida de conciencia.",
+    },
+    {
+      type: "p",
+      text: "Al terminar, dedicamos un tiempo a comentar cómo ha sido la experiencia y qué aprendizajes o acciones pueden resultar útiles.",
+    },
+    { type: "h2", text: "¿Cuántas sesiones necesito?" },
+    {
+      type: "p",
+      text: "Depende del objetivo, de la persona y del contexto. No existe un número universal ni sería responsable prometer un resultado concreto antes de conocer cada situación.",
+    },
+    {
+      type: "p",
+      text: "En Hipnosis España trabajamos desde un enfoque de desarrollo personal, con respeto por el ritmo individual y sin promesas de cambios milagrosos.",
+    },
+    {
+      type: "quote",
+      text: "La hipnosis es una experiencia en la que participas activamente. El proceso se construye contigo, no sobre ti.",
+    },
+    {
+      type: "note",
+      text: "La hipnosis no sustituye la atención médica, psicológica o psiquiátrica cuando esta es necesaria.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment la hipnosi?",
@@ -408,7 +478,7 @@ const en: BlogPostContent = {
 };
 
 const postsByLang: Record<Lang, BlogPostContent[]> = {
-  es: [esHypnosisHabits, esHabit, esBrain, es],
+  es: [esHypnosisSession, esHypnosisHabits, esHabit, esBrain, es],
   va: [va],
   en: [en],
 };
