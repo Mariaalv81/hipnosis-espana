@@ -211,6 +211,72 @@ const esHabit: BlogPostContent = {
   ],
 };
 
+const esHypnosisHabits: BlogPostContent = {
+  slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+  title: "Hipnosis y cambio de hábitos: ¿cómo puede ayudar?",
+  excerpt:
+    "La hipnosis no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
+  date: "2026-09-12",
+  blocks: [
+    {
+      type: "lead",
+      text: "La hipnosis no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
+    },
+    {
+      type: "p",
+      text: "Muchas personas llegan a la hipnosis buscando cambiar algo que llevan tiempo intentando modificar. A veces han comprendido perfectamente el problema, pero sienten que una parte de su comportamiento sigue funcionando en automático.",
+    },
+    {
+      type: "p",
+      text: "La hipnosis puede ofrecer un espacio de atención concentrada para explorar esos patrones y trabajar con nuevas posibilidades.",
+    },
+    { type: "h2", text: "Observar lo que ocurre antes del hábito" },
+    {
+      type: "p",
+      text: "Un hábito no aparece de la nada. Suele estar relacionado con situaciones, emociones, sensaciones o pensamientos que lo desencadenan.",
+    },
+    {
+      type: "p",
+      text: "Durante el trabajo con hipnosis se pueden explorar esas asociaciones y prestar atención a lo que sucede antes de la conducta. Comprender su función ayuda a plantear alternativas más ajustadas a la persona.",
+    },
+    { type: "h2", text: "Ensayar una respuesta diferente" },
+    {
+      type: "p",
+      text: "Imagina que quieres reaccionar con más calma cuando aparece una situación que normalmente te genera tensión. Durante una sesión puedes visualizar ese momento, conectar con recursos personales y ensayar mentalmente otra manera de responder.",
+    },
+    {
+      type: "p",
+      text: "El ensayo mental no sustituye la experiencia real, pero puede formar parte del aprendizaje. La hipnosis puede facilitar que esa práctica sea más absorbente y significativa.",
+    },
+    { type: "h2", text: "Las sugestiones y el cambio" },
+    {
+      type: "p",
+      text: "Las sugestiones son propuestas que invitan a experimentar una sensación, una perspectiva o una respuesta diferente. Pueden utilizarse para reforzar objetivos, conectar con recursos o imaginar nuevas posibilidades.",
+    },
+    {
+      type: "p",
+      text: "No funcionan como órdenes mágicas. Su efecto depende de la persona, del contexto, de sus expectativas y de la manera en que se integran en un proceso de cambio.",
+    },
+    { type: "h2", text: "Lo importante sucede también fuera de la sesión" },
+    {
+      type: "p",
+      text: "Los hábitos se construyen en la vida cotidiana, por lo que los cambios duraderos suelen necesitar práctica. La hipnosis puede acompañar ese proceso, pero no reemplaza las acciones concretas, la repetición ni el apoyo profesional adecuado cuando sea necesario.",
+    },
+    {
+      type: "p",
+      text: "La evidencia sobre hipnosis y hábitos es variable según el objetivo. No existe una garantía de resultados ni un número de sesiones válido para todo el mundo.",
+    },
+    {
+      type: "quote",
+      text: "La idea no es forzar a la mente a cambiar, sino crear experiencias que faciliten nuevas formas de aprender y actuar.",
+    },
+    {
+      type: "note",
+      text: "En Hipnosis España ofrecemos acompañamiento para el desarrollo personal. No realizamos diagnóstico ni tratamiento de trastornos médicos o psicológicos.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment la hipnosi?",
@@ -342,7 +408,7 @@ const en: BlogPostContent = {
 };
 
 const postsByLang: Record<Lang, BlogPostContent[]> = {
-  es: [esHabit, esBrain, es],
+  es: [esHypnosisHabits, esHabit, esBrain, es],
   va: [va],
   en: [en],
 };

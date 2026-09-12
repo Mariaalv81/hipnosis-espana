@@ -255,6 +255,12 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+        title: "Hipnosis y cambio de hábitos: ¿cómo puede ayudar?",
+        excerpt:
+          "La hipnosis no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
+      },
+      {
         slug: "por-que-cuesta-cambiar-un-habito",
         title: "¿Por qué nos cuesta tanto cambiar un hábito?",
         excerpt:
@@ -612,6 +618,12 @@ const va: Dict = {
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
       {
+        slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+        title: "Hipnosi i canvi d'hàbits: com pot ajudar?",
+        excerpt:
+          "La hipnosi no esborra un hàbit. Pot ajudar-nos a assajar i reforçar noves maneres de respondre.",
+      },
+      {
         slug: "por-que-cuesta-cambiar-un-habito",
         title: "Per què ens costa tant canviar un hàbit?",
         excerpt: "Perquè saber què volem fer i aconseguir fer-ho no sempre són la mateixa cosa.",
@@ -965,6 +977,12 @@ const en: Dict = {
     intro:
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
+      {
+        slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+        title: "Hypnosis and habit change: how can it help?",
+        excerpt:
+          "Hypnosis does not erase a habit. It can help us rehearse and strengthen new ways of responding.",
+      },
       {
         slug: "por-que-cuesta-cambiar-un-habito",
         title: "Why is changing a habit so hard?",
