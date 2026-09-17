@@ -16,7 +16,7 @@ export const Route = createFileRoute("/reservar")({
       {
         name: "description",
         content:
-          "Reserva tu sesión de hipnosis con Maria Cabo en Sueca: 60 € la hora o programa de tres sesiones por 300 €.",
+          "Reserva tu sesión de hipnosis con Maria Cabo en Sueca: 70 € la hora o programa de tres sesiones por 300 €.",
       },
       { property: "og:title", content: "Reservar una sesión · Hipnosis España" },
       {
@@ -33,7 +33,7 @@ function BookPage() {
 
   return (
     <>
-      <PageHeader eyebrow={t.tagline} title={t.nav.book} intro={t.common.bookSoon} />
+      <PageHeader eyebrow={t.tagline} title={t.nav.book} intro={t.common.bookIntro} />
 
       <section className="container-page grid gap-6 py-16 md:grid-cols-2 md:py-20">
         {t.sessions.items.map((item, i) => (
@@ -63,9 +63,9 @@ function BookPage() {
       </section>
 
       <section className="container-page pb-24">
-        <div className="rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
+          <div className="rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl">{t.home.finalTitle}</h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm opacity-90">{t.common.bookSoon}</p>
+          <p className="mx-auto mt-4 max-w-xl text-sm opacity-90">{t.home.finalText}</p>
           <Link
             to="/contacto"
             className="mt-8 inline-block rounded-full bg-background px-6 py-3 text-sm text-foreground transition-opacity hover:opacity-90"

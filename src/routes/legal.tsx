@@ -8,15 +8,13 @@ export const Route = createFileRoute("/legal")({
       { title: "Información legal · Hipnosis España" },
       {
         name: "description",
-        content:
-          "Aviso legal, privacidad, cookies y condiciones del servicio de Hipnosis España (borrador pendiente de revisión).",
+        content: "Aviso legal, privacidad, cookies y condiciones del servicio de Hipnosis España.",
       },
       { property: "og:title", content: "Información legal · Hipnosis España" },
       {
         property: "og:description",
         content: "Aviso legal, privacidad, cookies y condiciones del servicio.",
       },
-      { name: "robots", content: "noindex" },
     ],
   }),
   component: LegalPage,

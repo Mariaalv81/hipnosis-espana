@@ -324,7 +324,7 @@ const es = {
     consent: "He leído y acepto la política de privacidad.",
     send: "Enviar mensaje",
     sent: "Gracias, he recibido tu mensaje. Te responderé en breve.",
-    note: "Formulario de muestra: aún no envía correos. Cuando quieras lo conectamos.",
+    note: "Envía tu mensaje y te responderé en breve. Si prefieres, también puedes reservar directamente en el calendario.",
     infoTitle: "Datos",
     area: "Sueca · despacho independiente dentro del Centro Sanar",
     languages: "Sesiones en castellano e inglés",
@@ -333,23 +333,23 @@ const es = {
   legal: {
     title: "Información legal",
     intro:
-      "Borrador de textos legales pendiente de revisión. Faltan datos identificativos, dirección y proveedores definitivos.",
+      "Información legal y de privacidad relacionada con Hipnosis España. Para cualquier aclaración o consulta legal, escríbeme a través del formulario de contacto.",
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: Maria Cabo (Hipnosis España). Domicilio, NIF y datos de contacto pendientes de confirmar. El contenido de esta web es informativo y no constituye asesoramiento sanitario.",
+        text: "Titular del sitio: Maria Cabo (Hipnosis España). El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
       },
       {
         title: "Privacidad",
-        text: "Los datos que facilites se usan únicamente para responder a tu consulta y gestionar la cita. No se recogen datos de salud a través de la web. Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación escribiendo a la dirección de contacto.",
+        text: "Los datos que facilites se usarán únicamente para responder a tu consulta y gestionar la cita. No se recogen datos de salud a través de la web. Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación escribiendo al email de contacto.",
       },
       {
         title: "Cookies",
-        text: "La web no utiliza cookies de perfilado. Si en el futuro se añade analítica, se pedirá tu consentimiento previo con opción de rechazo igual de sencilla.",
+        text: "La web no utiliza cookies de perfilado. Si en el futuro se añade analítica, se solicitará el consentimiento previo y se ofrecerá una opción de rechazo.",
       },
       {
         title: "Condiciones del servicio",
-        text: "El servicio se dirige a personas mayores de 18 años y consiste en acompañamiento de desarrollo personal mediante hipnosis. Condiciones de cambio, cancelación y reembolso pendientes de definir.",
+        text: "El servicio se dirige a personas mayores de 18 años y consiste en acompañamiento de desarrollo personal mediante hipnosis. Información detallada sobre cancelaciones y reembolsos está disponible a petición; escríbeme para recibir las condiciones completas.",
       },
     ],
   },
@@ -361,7 +361,8 @@ const es = {
   },
   common: {
     bookNow: "Reservar una sesión",
-    bookSoon: "Las reservas online estarán disponibles pronto. Escríbeme mientras tanto.",
+    bookSoon: "Reserva directamente en el calendario o escríbeme si prefieres consultarlo.",
+    bookIntro: "Reserva directamente en el calendario o escríbeme si prefieres consultarlo.",
     contactMe: "Escríbeme",
     draft: "Contenido provisional pendiente de tus datos definitivos.",
     bookCalendar: "Reservar en el calendario",

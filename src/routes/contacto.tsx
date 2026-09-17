@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { siteSettings } from "@/content/site-settings";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
@@ -26,8 +27,17 @@ function ContactPage() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    const name = String(fd.get("name") ?? "");
+    const email = String(fd.get("email") ?? "");
+    const message = String(fd.get("message") ?? "");
+
+    const subject = encodeURIComponent("Consulta desde la web · Hipnosis España");
+    const body = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\n${message}`);
+    window.location.href = `mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -43,6 +53,7 @@ function ContactPage() {
             </label>
             <input
               id="name"
+              name="name"
               required
               className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
             />
@@ -53,6 +64,7 @@ function ContactPage() {
             </label>
             <input
               id="email"
+              name="email"
               type="email"
               required
               className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
@@ -64,6 +76,7 @@ function ContactPage() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={6}
               required
               className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
