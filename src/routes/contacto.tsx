@@ -27,18 +27,33 @@ function ContactPage() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const fd = new FormData(form);
-    const name = String(fd.get("name") ?? "");
-    const email = String(fd.get("email") ?? "");
-    const message = String(fd.get("message") ?? "");
+    const payload = {
+      name: String(fd.get('name') ?? ''),
+      email: String(fd.get('email') ?? ''),
+      message: String(fd.get('message') ?? ''),
+      website: String(fd.get('website') ?? ''), // honeypot
+    };
 
-    const subject = encodeURIComponent("Consulta desde la web · Hipnosis España");
-    const body = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\n${message}`);
-    window.location.href = `mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`;
-    setSent(true);
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) throw new Error('Error enviando el mensaje');
+      setSent(true);
+    } catch (err) {
+      // Fallback: open mailto if serverless not configured
+      const subject = encodeURIComponent('Consulta desde la web · Hipnosis España');
+      const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\n\n${payload.message}`);
+      window.location.href = `mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`;
+      setSent(true);
+    }
   };
 
   return (
@@ -47,6 +62,8 @@ function ContactPage() {
 
       <section className="container-page grid gap-12 py-16 md:py-20 lg:grid-cols-[3fr_2fr]">
         <form onSubmit={onSubmit} className="grid gap-5">
+          {/* Honeypot field to trap bots - keep it hidden */}
+          <input type="text" name="website" style={{ display: 'none' }} aria-hidden />
           <div className="grid gap-2">
             <label htmlFor="name" className="text-sm">
               {t.contact.name}
