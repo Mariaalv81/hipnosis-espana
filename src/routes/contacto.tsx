@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { siteSettings } from "@/content/site-settings";
@@ -36,9 +36,20 @@ function ContactPage() {
       email: String(fd.get('email') ?? ''),
       message: String(fd.get('message') ?? ''),
       website: String(fd.get('website') ?? ''), // honeypot
+      recaptchaToken: undefined as string | undefined,
     };
-
     try {
+      // If reCAPTCHA site key is provided, execute and include token
+      const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
+      if (siteKey && (window as any).grecaptcha) {
+        try {
+          const token = await (window as any).grecaptcha.execute(siteKey, { action: 'contact' });
+          payload.recaptchaToken = token;
+        } catch (err) {
+          // ignore token errors and continue without it
+        }
+      }
+
       const res = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -55,6 +66,20 @@ function ContactPage() {
       setSent(true);
     }
   };
+
+  useEffect(() => {
+    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
+    if (!siteKey) return;
+
+    // load reCAPTCHA v3 script
+    const id = 'recaptcha-script';
+    if (document.getElementById(id)) return;
+    const s = document.createElement('script');
+    s.id = id;
+    s.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    s.async = true;
+    document.head.appendChild(s);
+  }, []);
 
   return (
     <>
