@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import fetch from 'node-fetch';
+import { google } from 'googleapis';
 
-// Lightweight, dependency-free SendGrid call if @sendgrid/mail not installed.
 async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: string; subject: string; text: string }) {
   const apiKey = process.env.SENDGRID_API_KEY;
   if (!apiKey) throw new Error('SENDGRID_API_KEY not set');
@@ -26,6 +26,33 @@ async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: 
     const body = await res.text();
     throw new Error(`SendGrid error: ${res.status} ${body}`);
   }
+}
+
+async function appendToSheet({ sheetId, name, email, message }: { sheetId: string; name: string; email: string; message: string }) {
+  const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  let privateKey = process.env.GOOGLE_PRIVATE_KEY;
+
+  if (!clientEmail || !privateKey) throw new Error('Google service account not configured');
+  if (privateKey.includes('\\n')) privateKey = privateKey.replace(/\\n/g, '\n');
+
+  const jwtClient = new google.auth.JWT({
+    email: clientEmail,
+    key: privateKey,
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  });
+
+  await jwtClient.authorize();
+
+  const sheets = google.sheets({ version: 'v4', auth: jwtClient });
+
+  const values = [[new Date().toISOString(), name, email, message]];
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId: sheetId,
+    range: 'Sheet1!A:D',
+    valueInputOption: 'RAW',
+    requestBody: { values },
+  });
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -56,7 +83,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
-    // Prepare email
+    // If Google Sheet configured, append row there
+    const sheetId = process.env.SHEET_ID;
+    if (sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+      await appendToSheet({ sheetId, name, email, message });
+      return res.status(200).json({ ok: true, via: 'sheets' });
+    }
+
+    // Otherwise fallback to SendGrid
     const to = process.env.CONTACT_EMAIL || process.env.SENDGRID_TO;
     const from = process.env.SENDGRID_FROM || (process.env.CONTACT_EMAIL || 'no-reply@example.com');
 
@@ -67,7 +101,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     await sendViaSendGrid({ to, from, subject, text });
 
-    return res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true, via: 'sendgrid' });
   } catch (err: any) {
     console.error('send-email error', err);
     return res.status(500).json({ ok: false, error: err.message || 'Server error' });
