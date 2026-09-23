@@ -26,6 +26,7 @@ export const Route = createFileRoute("/contacto")({
 function ContactPage() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
+  const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -59,11 +60,12 @@ function ContactPage() {
       if (!res.ok) throw new Error('Error enviando el mensaje');
       setSent(true);
     } catch (err) {
-      // Fallback: open mailto if serverless not configured
+      // Fallback: provide mailto link for user to click instead of auto-opening
+      console.error('send-email failed, falling back to mailto', err);
       const subject = encodeURIComponent('Consulta desde la web · Hipnosis España');
       const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\n\n${payload.message}`);
-      window.location.href = `mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`;
-      setSent(true);
+      setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
+      // do not auto-navigate; show message to user
     }
   };
 
@@ -135,6 +137,16 @@ function ContactPage() {
             {t.contact.send}
           </button>
           {sent && <p className="text-sm text-primary">{t.contact.sent}</p>}
+          {mailtoLink && (
+            <p className="mt-3">
+              <a
+                href={mailtoLink}
+                className="inline-block rounded-full border border-border bg-card px-4 py-2 text-sm transition-colors hover:bg-muted"
+              >
+                Enviar por correo
+              </a>
+            </p>
+          )}
           <p className="text-xs text-muted-foreground">{t.contact.note}</p>
         </form>
 
