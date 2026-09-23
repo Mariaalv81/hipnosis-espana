@@ -28,7 +28,7 @@ async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: 
   }
 }
 
-async function appendToSheet({ sheetId, name, email, message }: { sheetId: string; name: string; email: string; message: string }) {
+async function appendToSheet({ sheetId, name, email, phone, message }: { sheetId: string; name: string; email: string; phone?: string; message: string }) {
   const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   let privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
@@ -45,11 +45,11 @@ async function appendToSheet({ sheetId, name, email, message }: { sheetId: strin
 
   const sheets = google.sheets({ version: 'v4', auth: jwtClient });
 
-  const values = [[new Date().toISOString(), name, email, message]];
+  const values = [[new Date().toISOString(), name, email, phone ?? '', message]];
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: sheetId,
-    range: 'Sheet1!A:D',
+    range: 'Sheet1!A:E',
     valueInputOption: 'RAW',
     requestBody: { values },
   });
@@ -59,7 +59,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).send({ ok: false, error: 'Method not allowed' });
 
   try {
-    const { name, email, message, website, recaptchaToken } = req.body || {};
+    const { name, email, phone, message, website, recaptchaToken } = req.body || {};
 
     // Honeypot: if website field (hidden) is filled, likely spam
     if (website) return res.status(400).json({ ok: false, error: 'Spam detected' });
@@ -86,7 +86,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // If Google Sheet configured, append row there
     const sheetId = process.env.SHEET_ID;
     if (sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
-      await appendToSheet({ sheetId, name, email, message });
+      await appendToSheet({ sheetId, name, email, phone, message });
       return res.status(200).json({ ok: true, via: 'sheets' });
     }
 

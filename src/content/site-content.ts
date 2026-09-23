@@ -318,6 +318,7 @@ const es = {
     title: "Contacto",
     intro:
       "Si tienes una duda antes de reservar, escríbeme y te respondo con calma. No hace falta que expliques nada que no quieras contar.",
+    phone: "Teléfono",
     name: "Nombre",
     email: "Correo electrónico",
     message: "Tu mensaje",

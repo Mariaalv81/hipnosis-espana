@@ -115,6 +115,17 @@ function ContactPage() {
             />
           </div>
           <div className="grid gap-2">
+            <label htmlFor="phone" className="text-sm">
+              {t.contact.phone}
+            </label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+            />
+          </div>
+          <div className="grid gap-2">
             <label htmlFor="message" className="text-sm">
               {t.contact.message}
             </label>
