@@ -35,6 +35,7 @@ function ContactPage() {
     const payload = {
       name: String(fd.get('name') ?? ''),
       email: String(fd.get('email') ?? ''),
+      phone: String(fd.get('phone') ?? ''),
       message: String(fd.get('message') ?? ''),
       website: String(fd.get('website') ?? ''), // honeypot
       recaptchaToken: undefined as string | undefined,
@@ -63,7 +64,7 @@ function ContactPage() {
       // Fallback: provide mailto link for user to click instead of auto-opening
       console.error('send-email failed, falling back to mailto', err);
       const subject = encodeURIComponent('Consulta desde la web · Hipnosis España');
-      const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\n\n${payload.message}`);
+      const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\nTeléfono: ${payload.phone}\n\n${payload.message}`);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
       // do not auto-navigate; show message to user
     }
