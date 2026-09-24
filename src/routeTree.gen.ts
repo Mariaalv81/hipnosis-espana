@@ -14,6 +14,7 @@ import { Route as AmbitosRouteImport } from './routes/ambitos'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as EmpresasRouteImport } from './routes/empresas'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as LegalRouteImport } from './routes/legal'
@@ -46,6 +47,11 @@ const ComoFuncionaRoute = ComoFuncionaRouteImport.update({
 const ContactoRoute = ContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmpresasRoute = EmpresasRouteImport.update({
+  id: '/empresas',
+  path: '/empresas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventosRoute = EventosRouteImport.update({
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/empresas': typeof EmpresasRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -109,6 +116,7 @@ export interface FileRoutesByTo {
   '/ambitos': typeof AmbitosRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/empresas': typeof EmpresasRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -125,6 +133,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/empresas': typeof EmpresasRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -142,6 +151,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/como-funciona'
     | '/contacto'
+    | '/empresas'
     | '/eventos'
     | '/faq'
     | '/legal'
@@ -156,6 +166,7 @@ export interface FileRouteTypes {
     | '/ambitos'
     | '/como-funciona'
     | '/contacto'
+    | '/empresas'
     | '/eventos'
     | '/faq'
     | '/legal'
@@ -171,6 +182,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/como-funciona'
     | '/contacto'
+    | '/empresas'
     | '/eventos'
     | '/faq'
     | '/legal'
@@ -187,6 +199,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   ComoFuncionaRoute: typeof ComoFuncionaRoute
   ContactoRoute: typeof ContactoRoute
+  EmpresasRoute: typeof EmpresasRoute
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
   LegalRoute: typeof LegalRoute
@@ -230,6 +243,13 @@ declare module '@tanstack/react-router' {
       path: '/contacto'
       fullPath: '/contacto'
       preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/empresas': {
+      id: '/empresas'
+      path: '/empresas'
+      fullPath: '/empresas'
+      preLoaderRoute: typeof EmpresasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/eventos': {
@@ -309,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   ComoFuncionaRoute: ComoFuncionaRoute,
   ContactoRoute: ContactoRoute,
+  EmpresasRoute: EmpresasRoute,
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
   LegalRoute: LegalRoute,
