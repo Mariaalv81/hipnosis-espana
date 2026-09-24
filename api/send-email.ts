@@ -1,5 +1,31 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import fetch from 'node-fetch';
+import fs from 'fs';
+import path from 'path';
+
+// Load .env.local into process.env for local dev (keeps production unchanged)
+function loadLocalEnv() {
+  try {
+    const p = path.resolve(process.cwd(), '.env.local');
+    if (!fs.existsSync(p)) return;
+    const txt = fs.readFileSync(p, 'utf8');
+    for (const line of txt.split(/\r?\n/)) {
+      const m = line.match(/^\s*([A-Za-z0-9_]+)=(.*)$/);
+      if (!m) continue;
+      const k = m[1];
+      let v = m[2] || '';
+      // strip surrounding quotes if present
+      if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
+        v = v.slice(1, -1);
+      }
+      if (!process.env[k]) process.env[k] = v;
+    }
+  } catch (e) {
+    // ignore
+  }
+}
+
+loadLocalEnv();
 import { google } from 'googleapis';
 
 async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: string; subject: string; text: string }) {
@@ -85,7 +111,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // If Google Sheet configured, append row there
     const sheetId = process.env.SHEET_ID;
-    if (sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+    const hasGoogle = Boolean(sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY);
+    console.log('env presence:', {
+      sheetId: !!sheetId,
+      googleEmail: !!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+      googleKey: !!process.env.GOOGLE_PRIVATE_KEY,
+      contactEmail: !!process.env.CONTACT_EMAIL,
+      sendgridTo: !!process.env.SENDGRID_TO,
+    });
+
+    if (hasGoogle) {
       await appendToSheet({ sheetId, name, email, phone, message });
       return res.status(200).json({ ok: true, via: 'sheets' });
     }
