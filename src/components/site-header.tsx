@@ -10,6 +10,7 @@ export function SiteHeader() {
   const links = [
     { to: "/como-funciona", label: t.nav.how },
     { to: "/ambitos", label: t.nav.areas },
+    { to: "/empresas", label: t.nav.companies },
     { to: "/sesiones", label: t.nav.sessions },
     { to: "/sobre-mi", label: t.nav.about },
     { to: "/eventos", label: t.nav.events },
