@@ -3,6 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import heroJpg from "@/assets/images/hero-room.jpg";
 import heroWebp from "@/assets/images/hero-room.webp";
 import heroAvif from "@/assets/images/hero-room.avif";
+import attachedHero from "@/assets/images/hero-attached.jpg";
 import linenImage from "@/assets/images/texture-linen.jpg";
 
 export const Route = createFileRoute("/")({
@@ -64,7 +65,7 @@ function HypnosisPage() {
               <source srcSet={heroAvif} type="image/avif" />
               <source srcSet={heroWebp} type="image/webp" />
               <img
-                src={heroJpg}
+                src={attachedHero}
                 alt="Fotografía natural relacionada con la hipnosis"
                 width={1600}
                 height={1200}
