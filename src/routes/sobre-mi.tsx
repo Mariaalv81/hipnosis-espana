@@ -7,13 +7,13 @@ import linenImage from "@/assets/images/texture-linen.jpg";
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({
     meta: [
-      { title: "Sobre Maria Cabo · Hipnosis España" },
+      { title: "Sobre Maria Cabo · María Cabo" },
       {
         name: "description",
         content:
           "Maria Cabo acompaña con hipnosis a personas adultas que buscan un cambio concreto, con lenguaje sencillo y expectativas realistas.",
       },
-      { property: "og:title", content: "Sobre Maria Cabo · Hipnosis España" },
+      { property: "og:title", content: "Sobre Maria Cabo · María Cabo" },
       {
         property: "og:description",
         content: "Una manera de trabajar tranquila, curiosa y honesta.",

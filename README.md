@@ -1,4 +1,4 @@
-# Hipnosis España
+# María Cabo
 
 Portal independiente de hipnosis para Maria Cabo.
 

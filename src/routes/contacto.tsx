@@ -7,13 +7,13 @@ import { siteSettings } from "@/content/site-settings";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto · Hipnosis España" },
+      { title: "Contacto · María Cabo" },
       {
         name: "description",
         content:
-          "Escribe a Hipnosis España si tienes una duda antes de reservar tu sesión de hipnosis en Sueca.",
+          "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
       },
-      { property: "og:title", content: "Contacto · Hipnosis España" },
+      { property: "og:title", content: "Contacto · María Cabo" },
       {
         property: "og:description",
         content: "Resolvemos tus dudas con calma antes de reservar.",
@@ -63,7 +63,7 @@ function ContactPage() {
     } catch (err) {
       // Fallback: provide mailto link for user to click instead of auto-opening
       console.error('send-email failed, falling back to mailto', err);
-      const subject = encodeURIComponent('Consulta desde la web · Hipnosis España');
+      const subject = encodeURIComponent('Consulta desde la web · María Cabo');
       const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\nTeléfono: ${payload.phone}\n\n${payload.message}`);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
       // do not auto-navigate; show message to user

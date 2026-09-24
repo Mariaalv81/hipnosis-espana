@@ -8,17 +8,17 @@ import linenImage from "@/assets/images/texture-linen.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hipnosis España · Hipnosis para el cambio personal" },
+        { title: "María Cabo · Hipnosis para el cambio personal" },
       {
         name: "description",
-        content:
-          "Sesiones de hipnosis para el cambio personal en Sueca. Un espacio sereno para trabajar hábitos, calma y confianza.",
+         content:
+           "Sesiones para el desarrollo personal en Sueca. Un espacio sereno para trabajar hábitos, calma y confianza.",
       },
-      { property: "og:title", content: "Hipnosis España · Hipnosis para el cambio personal" },
+        { property: "og:title", content: "María Cabo · Hipnosis para el cambio personal" },
       {
         property: "og:description",
-        content:
-          "Acompañamiento con hipnosis para personas adultas, con criterio, cercanía y expectativas honestas.",
+         content:
+           "Acompañamiento para personas adultas, con criterio, cercanía y expectativas honestas.",
       },
     ],
   }),

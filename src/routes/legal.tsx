@@ -5,12 +5,12 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/legal")({
   head: () => ({
     meta: [
-      { title: "Información legal · Hipnosis España" },
+      { title: "Información legal · María Cabo" },
       {
         name: "description",
-        content: "Aviso legal, privacidad, cookies y condiciones del servicio de Hipnosis España.",
+        content: "Aviso legal, privacidad, cookies y condiciones del servicio de María Cabo.",
       },
-      { property: "og:title", content: "Información legal · Hipnosis España" },
+      { property: "og:title", content: "Información legal · María Cabo" },
       {
         property: "og:description",
         content: "Aviso legal, privacidad, cookies y condiciones del servicio.",

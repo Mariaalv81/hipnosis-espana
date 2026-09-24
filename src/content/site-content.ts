@@ -1,7 +1,7 @@
 import type { Lang } from "@/lib/i18n";
 
 const es = {
-  brand: "Hipnosis España",
+  brand: "María Cabo",
   tagline: "Hipnosis aplicada al desarrollo personal",
   nav: {
     home: "Inicio",
@@ -335,11 +335,11 @@ const es = {
   legal: {
     title: "Información legal",
     intro:
-      "Información legal y de privacidad relacionada con Hipnosis España. Para cualquier aclaración o consulta legal, escríbeme a través del formulario de contacto.",
+      "Información legal y de privacidad relacionada con María Cabo. Para cualquier aclaración o consulta legal, escríbeme a través del formulario de contacto.",
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: Maria Cabo (Hipnosis España). El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
+        text: "Titular del sitio: Maria Cabo. El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
       },
       {
         title: "Privacidad",
@@ -358,7 +358,7 @@ const es = {
   footer: {
     rights: "Todos los derechos reservados.",
     disclaimer:
-      "Hipnosis España ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
+      "María Cabo ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
     legal: "Información legal",
   },
   common: {
@@ -376,7 +376,7 @@ const es = {
 export type Dict = typeof es;
 
 const va: Dict = {
-  brand: "Hipnosis España",
+  brand: "María Cabo",
   tagline: "Hipnosi aplicada al desenvolupament personal",
   nav: {
     home: "Inici",
@@ -711,7 +711,7 @@ const va: Dict = {
     sections: [
       {
         title: "Avís legal",
-        text: "Titular del lloc: Maria Cabo (Hipnosis España). Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
+        text: "Titular del lloc: Maria Cabo. Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
       },
       {
         title: "Privacitat",
@@ -730,7 +730,7 @@ const va: Dict = {
   footer: {
     rights: "Tots els drets reservats.",
     disclaimer:
-      "Hipnosis España oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
+      "María Cabo oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
     legal: "Informació legal",
   },
   common: {
@@ -745,7 +745,7 @@ const va: Dict = {
 };
 
 const en: Dict = {
-  brand: "Hipnosis España",
+  brand: "María Cabo",
   tagline: "Hypnosis for personal development",
   nav: {
     home: "Home",
@@ -1079,7 +1079,7 @@ const en: Dict = {
     sections: [
       {
         title: "Legal notice",
-        text: "Site owner: Maria Cabo (Hipnosis España). Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
+        text: "Site owner: Maria Cabo. Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
       },
       {
         title: "Privacy",
@@ -1098,7 +1098,7 @@ const en: Dict = {
   footer: {
     rights: "All rights reserved.",
     disclaimer:
-      "Hipnosis España offers personal development support. It is not a healthcare service and does not replace medical or psychological care.",
+      "María Cabo offers personal development support. It is not a healthcare service and does not replace medical or psychological care.",
     legal: "Legal information",
   },
   common: {

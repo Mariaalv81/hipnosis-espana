@@ -6,13 +6,13 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/eventos")({
   head: () => ({
     meta: [
-      { title: "Eventos y talleres · Hipnosis España" },
+      { title: "Eventos y talleres · María Cabo" },
       {
         name: "description",
         content:
           "Encuentros introductorios y talleres de grupo sobre hipnosis y cambio personal en Sueca.",
       },
-      { property: "og:title", content: "Eventos y talleres · Hipnosis España" },
+      { property: "og:title", content: "Eventos y talleres · María Cabo" },
       {
         property: "og:description",
         content: "Conoce el trabajo en grupo antes de empezar con una sesión individual.",
