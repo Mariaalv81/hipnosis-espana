@@ -3,6 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import heroJpg from "@/assets/images/oficina.jpg";
 import heroWebp from "@/assets/images/oficina.webp";
 import heroAvif from "@/assets/images/oficina.avif";
+import procesoJpg from "@/assets/images/proceso.jpg";
 
 export const Route = createFileRoute("/empresas")({
   head: () => ({
@@ -176,9 +177,9 @@ function EmpresasPage() {
           <h3 className="eyebrow">CÓMO ES UNA SESIÓN O TALLER</h3>
           <div className="mt-6">
             <picture>
-              <source srcSet={"/assets/proceso.avif"} type="image/avif" />
-              <source srcSet={"/assets/proceso.webp"} type="image/webp" />
-              <img src={"/assets/proceso.jpg"} alt="Proceso: definimos objetivo, explicamos, practicamos, trasladamos al trabajo" className="w-full rounded-2xl object-cover" loading="lazy" />
+              <source srcSet={procesoJpg.replace(/\.jpg$/, ".avif")} type="image/avif" />
+              <source srcSet={procesoJpg.replace(/\.jpg$/, ".webp")} type="image/webp" />
+              <img src={procesoJpg} alt="Proceso: definimos objetivo, explicamos, practicamos, trasladamos al trabajo" className="w-full rounded-2xl object-cover" loading="lazy" />
             </picture>
           </div>
         </div>
