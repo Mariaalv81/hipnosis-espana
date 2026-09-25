@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import mcLogoBlack from "@/assets/images/mc-negro-web.png";
 
 export function SiteFooter() {
   const { t } = useI18n();
@@ -8,7 +9,26 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border/60 bg-muted/60">
       <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="font-serif text-xl text-primary">{t.brand}</p>
+          <div className="flex items-center gap-3">
+            <img
+              src={mcLogoBlack}
+              alt=""
+              className="h-12 w-auto object-contain"
+              width={278}
+              height={292}
+              loading="lazy"
+            />
+            <p
+              className="text-[0.78rem] uppercase leading-none text-foreground/80"
+              style={{
+                fontFamily: '"Helvetica Neue", Inter, Arial, sans-serif',
+                fontWeight: 300,
+                letterSpacing: "0.12em",
+              }}
+            >
+              MARÍA CABO
+            </p>
+          </div>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t.tagline}</p>
         </div>
 

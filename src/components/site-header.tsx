@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { LANGS, useI18n } from "@/lib/i18n";
+import mcLogoBlack from "@/assets/images/mc-negro-web.png";
 
 export function SiteHeader() {
   const { t, lang, setLang } = useI18n();
@@ -22,8 +23,29 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="font-serif text-xl tracking-tight text-primary">
-          {t.brand}
+        <Link
+          to="/"
+          aria-label="María Cabo — Inicio"
+          className="flex shrink-0 items-center gap-3 transition-opacity hover:opacity-90"
+        >
+          <img
+            src={mcLogoBlack}
+            alt=""
+            className="h-9 w-auto object-contain md:h-11"
+            width={278}
+            height={292}
+          />
+          <span
+            aria-hidden="true"
+            className="hidden text-[0.78rem] uppercase leading-none text-foreground/80 sm:inline-block"
+            style={{
+              fontFamily: '"Helvetica Neue", Inter, Arial, sans-serif',
+              fontWeight: 300,
+              letterSpacing: "0.12em",
+            }}
+          >
+            MARÍA CABO
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
