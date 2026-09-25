@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
-import heroJpg from "@/assets/images/hero-room.jpg";
-import heroWebp from "@/assets/images/hero-room.webp";
-import heroAvif from "@/assets/images/hero-room.avif";
+import heroJpg from "@/assets/images/oficina.jpg";
+import heroWebp from "@/assets/images/oficina.webp";
+import heroAvif from "@/assets/images/oficina.avif";
 
 export const Route = createFileRoute("/empresas")({
   head: () => ({
@@ -28,7 +28,7 @@ function EmpresasPage() {
       <section className="relative overflow-hidden">
         <div className="container-page grid items-center gap-8 py-12 md:py-20 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
-            <h1 className="text-3xl md:text-4xl">DESARROLLO PROFESIONAL PARA PERSONAS QUE QUIEREN RENDIR MEJOR</h1>
+            <h1 className="text-3xl md:text-4xl">DESARROLLO PROFESIONAL</h1>
             <p className="mt-4 text-base text-muted-foreground md:text-lg">
               Atención, confianza, aprendizaje y cambio de hábitos aplicados al entorno profesional.
             </p>
