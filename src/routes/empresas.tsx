@@ -131,37 +131,47 @@ function EmpresasPage() {
       {/* Confidencialidad y consentimiento */}
       <section className="container-page py-12 md:py-16">
         <h3 className="eyebrow">CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS</h3>
-        <div className="mt-4 prose max-w-none text-sm text-muted-foreground">
-          <p>
-            Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La
-            empresa puede participar en la definición del <strong>objetivo general del programa</strong>, pero el
-            contenido de las conversaciones y de las sesiones no se comparte con la organización.
-          </p>
-          <p>
-            El trabajo parte siempre del <strong>consentimiento del empleado</strong>. La hipnosis no se utiliza para
-            modificar sus valores, su personalidad, sus opiniones ni para inducir comportamientos que no desea. Al
-            contrario: es una herramienta orientada a ayudar a la persona a desarrollar un mayor control sobre
-            determinadas respuestas automáticas, emociones o hábitos que ella misma quiere cambiar.
-          </p>
-          <p>
-            Los objetivos deben, por tanto, tener sentido para ambas partes: pueden favorecer el desarrollo
-            profesional y, al mismo tiempo, representar una mejora real para la persona.
-          </p>
-          <p>
-            <strong>Por ejemplo:</strong> una empresa quiere promocionar a un empleado a un puesto que implica viajar
-            con mayor frecuencia, pero esa persona tiene un miedo intenso a volar. La empresa y el empleado pueden
-            acordar que trabajar ese miedo sería beneficioso para su nueva responsabilidad. A partir de ahí, las
-            sesiones y conversaciones se mantienen de forma privada, y el proceso solo se realiza si el empleado desea
-            trabajar ese objetivo y da su consentimiento.
-          </p>
-          <p>
-            La finalidad no es cambiar quién es la persona, sino ayudarla a disponer de <strong>más recursos y más
-            capacidad de elección frente a respuestas que actualmente la limitan</strong>.
-          </p>
-        </div>
 
-        <div className="mt-6 rounded-lg border border-border/60 bg-card p-4">
-          <p className="m-0 text-sm font-semibold">La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.</p>
+        <div className="mt-6 grid gap-8 md:grid-cols-2 items-start">
+          <div className="prose max-w-none text-sm text-muted-foreground">
+            <p>
+              Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La
+              empresa puede participar en la definición del <strong>objetivo general del programa</strong>, pero el
+              contenido de las conversaciones y de las sesiones no se comparte con la organización.
+            </p>
+            <p>
+              El trabajo parte siempre del <strong>consentimiento del empleado</strong>. La hipnosis no se utiliza para
+              modificar sus valores, su personalidad, sus opiniones ni para inducir comportamientos que no desea. Al
+              contrario: es una herramienta orientada a ayudar a la persona a desarrollar un mayor control sobre
+              determinadas respuestas automáticas, emociones o hábitos que ella misma quiere cambiar.
+            </p>
+            <p>
+              Los objetivos deben, por tanto, tener sentido para ambas partes: pueden favorecer el desarrollo
+              profesional y, al mismo tiempo, representar una mejora real para la persona.
+            </p>
+            <p>
+              <strong>Por ejemplo:</strong> una empresa quiere promocionar a un empleado a un puesto que implica viajar
+              con mayor frecuencia, pero esa persona tiene un miedo intenso a volar. La empresa y el empleado pueden
+              acordar que trabajar ese miedo sería beneficioso para su nueva responsabilidad. A partir de ahí, las
+              sesiones y conversaciones se mantienen de forma privada, y el proceso solo se realiza si el empleado desea
+              trabajar ese objetivo y da su consentimiento.
+            </p>
+            <p>
+              La finalidad no es cambiar quién es la persona, sino ayudarla a disponer de <strong>más recursos y más
+              capacidad de elección frente a respuestas que actualmente la limitan</strong>.
+            </p>
+          </div>
+
+          <aside className="rounded-2xl border border-border/60 bg-card p-6">
+            <h4 className="text-lg font-semibold">Principios clave</h4>
+            <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-2">
+              <li><strong>Privacidad:</strong> las sesiones se mantienen confidenciales.</li>
+              <li><strong>Consentimiento:</strong> la persona decide participar libremente.</li>
+              <li><strong>Objetivos compartidos:</strong> la empresa y el empleado acuerdan el objetivo general.</li>
+            </ul>
+
+            <div className="mt-6 rounded-md bg-muted/10 p-4 text-sm font-semibold">La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.</div>
+          </aside>
         </div>
       </section>
 
