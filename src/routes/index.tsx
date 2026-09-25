@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
          content:
-           "Sesiones para el desarrollo personal en Sueca. Un espacio sereno para trabajar hábitos, calma y confianza.",
+           "Sesiones para el desarrollo personal. Un espacio sereno para trabajar hábitos, calma y confianza.",
       },
         { property: "og:title", content: "María Cabo · Hipnosis para el cambio personal" },
       {
