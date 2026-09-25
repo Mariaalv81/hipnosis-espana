@@ -5,6 +5,7 @@ import heroWebp from "@/assets/images/maria-cabo.webp";
 import heroAvif from "@/assets/images/maria-cabo.avif";
 import attachedHero from "@/assets/images/maria-cabo.jpg";
 import linenImage from "@/assets/images/texture-linen.jpg";
+import sessionMaria from "@/assets/images/sesion_maria_cabo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -182,7 +183,7 @@ function HypnosisPage() {
             <div className="mt-6"><Link to="/sobre-mi" className="text-sm text-primary underline">CONOCERME</Link></div>
           </div>
           <div>
-            <img src="sesion_maria_cabo.jpg" alt="María Cabo" className="rounded-3xl object-cover" loading="lazy" />
+            <img src={sessionMaria} alt="María Cabo" className="rounded-3xl object-cover" loading="lazy" />
           </div>
         </div>
       </section>
