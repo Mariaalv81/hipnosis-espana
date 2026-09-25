@@ -130,10 +130,11 @@ function EmpresasPage() {
 
       {/* Confidencialidad y consentimiento */}
       <section className="container-page py-12 md:py-16">
-        <h3 className="eyebrow">CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS</h3>
+        <h2 className="text-3xl md:text-4xl">CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS</h2>
 
-        <div className="mt-6 grid gap-8 md:grid-cols-2 items-start">
-          <div className="prose max-w-none text-sm text-muted-foreground">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 items-start">
+          {/* Cuadro principal: texto maquetado */}
+          <div className="rounded-2xl border border-border/60 bg-card p-6 prose max-w-none text-sm text-muted-foreground">
             <p>
               Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La
               empresa puede participar en la definición del <strong>objetivo general del programa</strong>, pero el
@@ -149,17 +150,22 @@ function EmpresasPage() {
               Los objetivos deben, por tanto, tener sentido para ambas partes: pueden favorecer el desarrollo
               profesional y, al mismo tiempo, representar una mejora real para la persona.
             </p>
-            <p>
-              <strong>Por ejemplo:</strong> una empresa quiere promocionar a un empleado a un puesto que implica viajar
-              con mayor frecuencia, pero esa persona tiene un miedo intenso a volar. La empresa y el empleado pueden
-              acordar que trabajar ese miedo sería beneficioso para su nueva responsabilidad. A partir de ahí, las
-              sesiones y conversaciones se mantienen de forma privada, y el proceso solo se realiza si el empleado desea
-              trabajar ese objetivo y da su consentimiento.
-            </p>
-            <p>
-              La finalidad no es cambiar quién es la persona, sino ayudarla a disponer de <strong>más recursos y más
-              capacidad de elección frente a respuestas que actualmente la limitan</strong>.
-            </p>
+          </div>
+
+          {/* Cuadro ejemplo */}
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-muted/5 to-muted/10 p-6">
+            <h4 className="text-lg font-semibold">Ejemplo</h4>
+            <div className="mt-3 text-sm text-muted-foreground">
+              <p>
+                <strong>Por ejemplo:</strong> una empresa quiere promocionar a un empleado a un puesto que implica viajar
+                con mayor frecuencia, pero esa persona tiene un miedo intenso a volar. La empresa y el empleado pueden
+                acordar que trabajar ese miedo sería beneficioso para su nueva responsabilidad. A partir de ahí, las
+                sesiones y conversaciones se mantienen de forma privada, y el proceso solo se realiza si el empleado desea
+                trabajar ese objetivo y da su consentimiento.
+              </p>
+            </div>
+
+            <div className="mt-3 rounded-md bg-muted/10 p-3 text-lg font-semibold">La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.</div>
           </div>
 
           <aside className="rounded-2xl border border-border/60 bg-card p-6">
