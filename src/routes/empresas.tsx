@@ -170,24 +170,17 @@ function EmpresasPage() {
         </div>
       </section>
 
-      {/* Cómo es una sesión / proceso */}
+      {/* Cómo es una sesión / proceso (infografía) */}
       <section className="bg-muted/60 py-12 md:py-16">
         <div className="container-page">
           <h3 className="eyebrow">CÓMO ES UNA SESIÓN O TALLER</h3>
-          <ol className="mt-6 list-decimal list-inside space-y-4 text-sm text-muted-foreground">
-            <li>
-              <strong>DEFINIMOS EL OBJETIVO.</strong> Hablamos con la organización para entender la situación y el resultado esperado.
-            </li>
-            <li>
-              <strong>EXPLICAMOS CÓMO FUNCIONA.</strong> Qué es la hipnosis, qué se puede esperar y qué no ocurre durante el proceso.
-            </li>
-            <li>
-              <strong>PRACTICAMOS.</strong> Ejercicios de atención, visualizaciones y preparación mental adecuados al objetivo.
-            </li>
-            <li>
-              <strong>LO TRASLADAMOS AL TRABAJO REAL.</strong> Buscamos que las herramientas se utilicen en situaciones profesionales concretas.
-            </li>
-          </ol>
+          <div className="mt-6">
+            <picture>
+              <source srcSet={"/assets/proceso.avif"} type="image/avif" />
+              <source srcSet={"/assets/proceso.webp"} type="image/webp" />
+              <img src={"/assets/proceso.jpg"} alt="Proceso: definimos objetivo, explicamos, practicamos, trasladamos al trabajo" className="w-full rounded-2xl object-cover" loading="lazy" />
+            </picture>
+          </div>
         </div>
       </section>
 
