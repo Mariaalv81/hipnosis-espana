@@ -116,31 +116,31 @@
     height: 1px;
     background: var(--accent);
   }
+
+
+  color: #6C6459;
 }
 
-.calendar-button + .qxCTlb {
-  border: 0 !important;
-  border-radius: 9999px !important;
-  padding: 0.75rem 1.5rem !important;
-  background-color: var(--primary) !important;
-  color: var(--primary-foreground) !important;
-  font-family: var(--font-sans) !important;
-  font-size: 0.875rem !important;
-  font-weight: 400 !important;
-  line-height: 1.25rem !important;
-  letter-spacing: 0 !important;
-  transition: opacity 150ms ease !important;
+
+/* Énfasis */
+.confidentiality-item strong {
+  font-weight: 400;
+  color: #0D8DA8;
 }
 
-.calendar-button + .qxCTlb:hover {
-  opacity: 0.9;
-}
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
+/* Cierre */
+.confidentiality-summary {
+  padding-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.7;
+
+  font-weight: 300;
+
+  letter-spacing: 0.13em;
+
+  color: #6C6459;
+
+  text-align: center;
 }

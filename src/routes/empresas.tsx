@@ -3,7 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import heroJpg from "@/assets/images/oficina.jpg";
 import heroWebp from "@/assets/images/oficina.webp";
 import heroAvif from "@/assets/images/oficina.avif";
-import procesoJpg from "@/assets/images/proceso.jpg";
+// proceso.jpg no se usa: eliminado para evitar warning de import sin uso
 
 export const Route = createFileRoute("/empresas")({
   head: () => ({
@@ -134,7 +134,8 @@ function EmpresasPage() {
         <h2 className="text-3xl md:text-4xl">CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS</h2>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2 items-start">
-          {/* Cuadro principal: texto maquetado */}
+          {/* Cuadro principal: caja de confidencialidad */}
+
           <div className="rounded-2xl border border-border/60 bg-card p-6 prose max-w-none text-sm text-muted-foreground">
             <p>
               Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La
@@ -171,16 +172,85 @@ function EmpresasPage() {
         </div>
       </section>
 
-      {/* Cómo es una sesión / proceso (infografía) */}
-      <section className="bg-muted/60 py-12 md:py-16">
+      {/* Cómo es una sesión / proceso (inline SVG track) */}
+      <section className="company-process bg-muted/60 py-12 md:py-16" aria-label="Cómo trabajamos con organizaciones">
         <div className="container-page">
-          <h3 className="eyebrow">CÓMO ES UNA SESIÓN O TALLER</h3>
-          <div className="mt-6">
-            <picture>
-              <source srcSet={procesoJpg.replace(/\.jpg$/, ".avif")} type="image/avif" />
-              <source srcSet={procesoJpg.replace(/\.jpg$/, ".webp")} type="image/webp" />
-              <img src={procesoJpg} alt="Proceso: definimos objetivo, explicamos, practicamos, trasladamos al trabajo" className="w-full rounded-2xl object-cover" loading="lazy" />
-            </picture>
+          <h2 className="text-3xl md:text-4xl">CÓMO ES UNA SESIÓN O TALLER</h2>
+
+          <div className="process-track mt-6 grid gap-6 md:grid-cols-2">
+
+            {/* PASO 01 */}
+            <article className="process-step step-1 rounded-2xl border border-border/60 bg-card p-6">
+              <div className="process-visual mb-4">
+                <div className="process-circle w-20 h-20 flex items-center justify-center rounded-full border border-border/40 bg-muted/5">
+                  <svg viewBox="0 0 64 64" className="process-icon w-10 h-10 text-muted-foreground" aria-hidden="true">
+                    <circle cx="29" cy="35" r="20" fill="none" stroke="currentColor" strokeWidth="2" />
+                    <circle cx="29" cy="35" r="12" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                    <circle cx="29" cy="35" r="4" fill="currentColor" />
+                    <path d="M32 32 L51 13" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M45 12 L53 10 L51 18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="process-number text-primary font-bold">01</div>
+              <h4 className="mt-2">DEFINIMOS EL OBJETIVO.</h4>
+              <p className="mt-2 text-sm text-muted-foreground">Hablamos con la organización para entender la situación y el resultado esperado.</p>
+            </article>
+
+            {/* PASO 02 */}
+            <article className="process-step step-2 rounded-2xl border border-border/60 bg-card p-6">
+              <div className="process-visual mb-4">
+                <div className="process-circle w-20 h-20 flex items-center justify-center rounded-full border border-border/40 bg-muted/5">
+                  <svg viewBox="0 0 64 64" className="process-icon w-10 h-10 text-muted-foreground" aria-hidden="true">
+                    <path d="M29 8 C17 8 10 17 10 29 C10 36 14 42 19 46 L19 56" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M19 56 L29 56" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M23 24 C23 18 28 15 32 18 C36 14 42 17 42 22 C47 23 48 29 44 32 C44 38 38 40 34 37 C30 41 24 38 24 33 C20 31 20 27 23 24Z" fill="none" stroke="currentColor" strokeWidth="1.2" />
+                    <path d="M28 28 C30 25 34 25 36 28 C38 25 42 27 42 30 C42 34 37 37 35 39 C33 37 27 34 27 30 C27 29 27 28 28 28Z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="process-number text-primary font-bold">02</div>
+              <h4 className="mt-2">EXPLICAMOS CÓMO FUNCIONA.</h4>
+              <p className="mt-2 text-sm text-muted-foreground">Qué es la hipnosis, qué se puede esperar y qué no ocurre durante el proceso.</p>
+            </article>
+
+            {/* PASO 03 */}
+            <article className="process-step step-3 rounded-2xl border border-border/60 bg-card p-6">
+              <div className="process-visual mb-4">
+                <div className="process-circle w-20 h-20 flex items-center justify-center rounded-full border border-border/40 bg-muted/5">
+                  <svg viewBox="0 0 64 64" className="process-icon w-10 h-10 text-muted-foreground" aria-hidden="true">
+                    <circle cx="32" cy="17" r="7" fill="currentColor" />
+                    <path d="M32 25 L32 39" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M32 31 L21 39" fill="none" stroke="currentColor" strokeWidth="1.2" />
+                    <path d="M32 31 L43 39" fill="none" stroke="currentColor" strokeWidth="1.2" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="process-number text-primary font-bold">03</div>
+              <h4 className="mt-2">PRACTICAMOS.</h4>
+              <p className="mt-2 text-sm text-muted-foreground">Ejercicios de atención, visualizaciones y preparación mental adecuados al objetivo.</p>
+            </article>
+
+            {/* PASO 04 */}
+            <article className="process-step step-4 rounded-2xl border border-border/60 bg-card p-6">
+              <div className="process-visual mb-4">
+                <div className="process-circle w-20 h-20 flex items-center justify-center rounded-full border border-border/40 bg-muted/5">
+                  <svg viewBox="0 0 64 64" className="process-icon w-10 h-10 text-muted-foreground" aria-hidden="true">
+                    <rect x="11" y="22" width="42" height="27" rx="4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M24 22 V17 C24 15 26 14 28 14 H36 C38 14 40 15 40 17 V22" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M11 31 C21 36 43 36 53 31" fill="none" stroke="currentColor" strokeWidth="1.2" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="process-number text-primary font-bold">04</div>
+              <h4 className="mt-2">LO TRASLADAMOS<br/>AL TRABAJO REAL.</h4>
+              <p className="mt-2 text-sm text-muted-foreground">Buscamos que las herramientas se utilicen en situaciones profesionales concretas.</p>
+            </article>
+
           </div>
         </div>
       </section>
