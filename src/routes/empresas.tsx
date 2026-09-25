@@ -167,17 +167,6 @@ function EmpresasPage() {
 
             <div className="mt-3 rounded-md bg-muted/10 p-3 text-lg font-semibold">La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.</div>
           </div>
-
-          <aside className="rounded-2xl border border-border/60 bg-card p-6">
-            <h4 className="text-lg font-semibold">Principios clave</h4>
-            <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-2">
-              <li><strong>Privacidad:</strong> las sesiones se mantienen confidenciales.</li>
-              <li><strong>Consentimiento:</strong> la persona decide participar libremente.</li>
-              <li><strong>Objetivos compartidos:</strong> la empresa y el empleado acuerdan el objetivo general.</li>
-            </ul>
-
-            <div className="mt-6 rounded-md bg-muted/10 p-4 text-sm font-semibold">La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.</div>
-          </aside>
         </div>
       </section>
 
