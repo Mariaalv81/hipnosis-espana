@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
-import heroJpg from "@/assets/images/hero-room.jpg";
-import heroWebp from "@/assets/images/hero-room.webp";
-import heroAvif from "@/assets/images/hero-room.avif";
-import attachedHero from "@/assets/images/hero-attached.jpg";
+import heroJpg from "@/assets/images/maria-cabo.jpg";
+import heroWebp from "@/assets/images/maria-cabo.webp";
+import heroAvif from "@/assets/images/maria-cabo.avif";
+import attachedHero from "@/assets/images/maria-cabo.jpg";
 import linenImage from "@/assets/images/texture-linen.jpg";
 
 export const Route = createFileRoute("/")({
