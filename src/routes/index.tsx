@@ -182,7 +182,7 @@ function HypnosisPage() {
             <div className="mt-6"><Link to="/sobre-mi" className="text-sm text-primary underline">CONOCERME</Link></div>
           </div>
           <div>
-            <img src={heroJpg} alt="María Cabo" className="rounded-3xl object-cover" loading="lazy" />
+            <img src="sesion_maria_cabo.jpg" alt="María Cabo" className="rounded-3xl object-cover" loading="lazy" />
           </div>
         </div>
       </section>
