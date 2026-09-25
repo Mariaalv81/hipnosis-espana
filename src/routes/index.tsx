@@ -37,9 +37,9 @@ function HypnosisPage() {
           <div className="order-2 lg:order-1">
             <p className="eyebrow">HIPNOSIS Y DESARROLLO PERSONAL</p>
             <h1 className="mt-4 text-4xl leading-tight md:text-6xl">
-              <span className="block text-forest green-600">CAMBIA PATRONES.</span>
+              <span className="block text-primary-600">CAMBIA PATRONES.</span>
               <span className="block text-muted-foreground">ENTRENA TU MENTE.</span>
-              <span className="block text-forest green-600">AVANZA.</span>
+              <span className="block text-primary-600">AVANZA.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               Acompañamiento con hipnosis para trabajar hábitos, confianza, foco y respuestas
