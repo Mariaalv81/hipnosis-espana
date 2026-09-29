@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import { EventCards } from "@/components/event-cards";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
 import heroAvif from "@/assets/images/maria-cabo.avif";
@@ -175,7 +176,7 @@ function HypnosisPage() {
           <h2 className="text-3xl md:text-4xl">{t.home.eventsTitle}</h2>
           <Link to="/eventos" className="text-sm text-primary underline">{t.home.eventsLink}</Link>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground">{t.home.eventsEmpty}</p>
+        <EventCards limit={3} variant="compact" />
       </section>
 
       <section className="container-page py-12 md:py-16">
