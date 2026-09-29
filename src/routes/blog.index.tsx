@@ -9,62 +9,109 @@ export const Route = createFileRoute("/blog/")({
 
 function BlogIndexPage() {
   const { t } = useI18n();
-  const [featured, ...posts] = t.journal.posts;
-  if (!featured) return null;
+  const postBySlug = new Map(
+    t.journal.posts
+      .filter((post): post is typeof post & { slug: string } => Boolean(post.slug))
+      .map((post) => [post.slug, post]),
+  );
+  const seriesSlugs = new Set(t.journal.series.flatMap((series) => series.posts));
+  const standalonePosts = t.journal.posts.filter(
+    (post) => !post.slug || !seriesSlugs.has(post.slug),
+  );
 
   return (
     <>
       <PageHeader eyebrow={t.tagline} title={t.journal.title} intro={t.journal.intro} />
 
       <section className="container-page py-16 md:py-20">
-        <Link
-          to="/blog/$slug"
-          params={{ slug: featured.slug ?? "que-es-la-hipnosis" }}
-          className="group grid gap-8 overflow-hidden rounded-3xl border border-border/60 bg-card transition-shadow hover:shadow-[var(--shadow-soft)] md:grid-cols-5"
-        >
-          <div className="relative bg-secondary/60 p-10 md:col-span-2 md:p-12">
-            <p className="eyebrow">{t.journal.latest}</p>
-            <p className="mt-6 font-serif text-5xl leading-none text-primary md:text-6xl">05</p>
-            <span className="absolute -bottom-10 -right-10 size-40 rounded-full border border-accent/40" />
-            <span className="absolute -bottom-6 -right-6 size-24 rounded-full bg-accent/15" />
-          </div>
-          <div className="flex flex-col justify-center p-10 md:col-span-3 md:p-12 md:pl-4">
-            <h2 className="max-w-md text-3xl leading-tight md:text-4xl">{featured.title}</h2>
-            <p className="mt-4 max-w-lg leading-relaxed text-muted-foreground">
-              {featured.excerpt}
-            </p>
-            <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary">
-              {t.journal.readPost}
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-            </span>
-          </div>
-        </Link>
-
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {posts.map((post) =>
-            post.slug ? (
-              <Link
-                key={post.title}
-                to="/blog/$slug"
-                params={{ slug: post.slug }}
-                className="rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)]"
-              >
-                <p className="eyebrow">{t.journal.readPost}</p>
-                <h3 className="mt-3 text-xl leading-snug">{post.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-              </Link>
-            ) : (
-              <article
-                key={post.title}
-                className="rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)]"
-              >
-                <p className="eyebrow">{t.journal.soon}</p>
-                <h3 className="mt-3 text-xl leading-snug">{post.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-              </article>
-            ),
-          )}
+        <div>
+          <p className="eyebrow">{t.journal.seriesTitle}</p>
+          <h2 className="mt-3 max-w-2xl text-3xl leading-tight md:text-4xl">
+            {t.journal.seriesIntro}
+          </h2>
         </div>
+
+        <div className="mt-10 grid gap-8">
+          {t.journal.series.map((series) => (
+            <section
+              key={series.title}
+              className="rounded-3xl border border-border/60 bg-card p-6 md:p-8"
+            >
+              <div className="grid gap-3 md:grid-cols-[0.72fr_1.28fr] md:gap-8">
+                <div>
+                  <p className="eyebrow">{t.journal.readPost}</p>
+                  <h3 className="mt-3 text-2xl leading-tight md:text-3xl">{series.title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    {series.description}
+                  </p>
+                </div>
+
+                <ol className="grid gap-3">
+                  {series.posts.map((slug, index) => {
+                    const post = postBySlug.get(slug);
+                    if (!post) return null;
+
+                    return (
+                      <li key={slug}>
+                        <Link
+                          to="/blog/$slug"
+                          params={{ slug }}
+                          className="group grid gap-4 rounded-2xl border border-border/60 bg-background/60 p-5 transition-colors hover:border-primary/40 sm:grid-cols-[3.5rem_1fr_auto] sm:items-center"
+                        >
+                          <span className="font-serif text-3xl leading-none text-primary">
+                            {String(index + 1).padStart(2, "0")}
+                          </span>
+                          <span>
+                            <span className="block text-lg leading-snug">{post.title}</span>
+                            <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">
+                              {post.excerpt}
+                            </span>
+                          </span>
+                          <ArrowRight className="size-4 text-primary transition-transform group-hover:translate-x-1" />
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            </section>
+          ))}
+        </div>
+
+        {standalonePosts.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-2xl md:text-3xl">{t.journal.standaloneTitle}</h2>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              {standalonePosts.map((post) =>
+                post.slug ? (
+                  <Link
+                    key={post.title}
+                    to="/blog/$slug"
+                    params={{ slug: post.slug }}
+                    className="rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)]"
+                  >
+                    <p className="eyebrow">{t.journal.readPost}</p>
+                    <h3 className="mt-3 text-xl leading-snug">{post.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {post.excerpt}
+                    </p>
+                  </Link>
+                ) : (
+                  <article
+                    key={post.title}
+                    className="rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)]"
+                  >
+                    <p className="eyebrow">{t.journal.soon}</p>
+                    <h3 className="mt-3 text-xl leading-snug">{post.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {post.excerpt}
+                    </p>
+                  </article>
+                ),
+              )}
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

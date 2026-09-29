@@ -347,6 +347,298 @@ const esHypnosisSession: BlogPostContent = {
   ],
 };
 
+const esAnxietyIntro: BlogPostContent = {
+  slug: "que-es-realmente-la-ansiedad",
+  title: "¿Qué es realmente la ansiedad?",
+  excerpt:
+    "La ansiedad no es necesariamente algo malo. Es un mecanismo de protección que puede empezar a activarse demasiado.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "La ansiedad no es necesariamente algo malo. Es un mecanismo de protección. El problema aparece cuando nuestro sistema de alarma empieza a activarse demasiado, durante demasiado tiempo o ante situaciones que no representan un peligro real.",
+    },
+    {
+      type: "p",
+      text: "Todos conocemos la sensación. El corazón se acelera. Nos cuesta desconectar. Repasamos una conversación una y otra vez. Pensamos en lo que podría salir mal mañana, la semana que viene o dentro de seis meses.",
+    },
+    {
+      type: "p",
+      text: "A veces incluso sabemos que estamos exagerando. Y aun así, nuestro cuerpo parece no estar de acuerdo.",
+    },
+    { type: "h2", text: "La ansiedad tiene una función" },
+    {
+      type: "p",
+      text: "La ansiedad forma parte de nuestro sistema de supervivencia. Cuando el cerebro interpreta que algo puede representar una amenaza, prepara al organismo para responder. Aumenta nuestra atención, moviliza energía y produce cambios físicos destinados a ayudarnos a reaccionar rápidamente.",
+    },
+    {
+      type: "p",
+      text: "Ante un peligro real, esa respuesta es extraordinariamente útil. Pero nuestro sistema de alarma no responde únicamente a amenazas físicas.",
+    },
+    {
+      type: "p",
+      text: "También puede activarse ante una entrevista de trabajo, un examen, hablar delante de otras personas, subir a un avión, tomar una decisión importante o simplemente imaginar algo que podría suceder.",
+    },
+    {
+      type: "p",
+      text: "Nuestro cerebro tiene una enorme capacidad para anticipar. Y esa misma capacidad que nos permite planificar también puede hacer que reaccionemos hoy ante un peligro que solamente existe en nuestra imaginación sobre mañana.",
+    },
+    { type: "h2", text: "¿Cómo se siente la ansiedad?" },
+    {
+      type: "p",
+      text: "No todo el mundo la experimenta igual. Puede aparecer como pensamientos constantes: ¿y si sale mal?, ¿y si no puedo hacerlo?, ¿y si ocurre algo?",
+    },
+    {
+      type: "p",
+      text: "Pero también puede sentirse directamente en el cuerpo: tensión muscular, respiración rápida, presión en el pecho, molestias digestivas, inquietud, dificultad para dormir o problemas para concentrarse.",
+    },
+    {
+      type: "p",
+      text: "La Organización Mundial de la Salud distingue entre experimentar ansiedad, algo que todas las personas podemos sentir, y los trastornos de ansiedad, donde el miedo o la preocupación son intensos, persistentes y llegan a interferir significativamente en la vida diaria. Según sus datos más recientes, alrededor de 470 millones de personas vivían con algún trastorno de ansiedad en 2023.",
+    },
+    { type: "h2", text: "¿Cuándo empieza a limitarnos?" },
+    {
+      type: "p",
+      text: "Imagina que sientes ansiedad cada vez que tienes que hablar delante de otras personas. La primera vez decides evitarlo. La ansiedad desaparece.",
+    },
+    {
+      type: "p",
+      text: "Tu cerebro acaba de aprender algo muy sencillo: evitar equivale a sentirme mejor. La próxima vez será todavía más tentador evitar esa situación.",
+    },
+    {
+      type: "p",
+      text: "Poco a poco podemos empezar a organizar nuestra vida alrededor de aquello que nos produce ansiedad: dejamos de hacer cosas, anticipamos constantemente problemas o buscamos continuamente seguridad.",
+    },
+    {
+      type: "p",
+      text: "Y sin darnos cuenta, nuestra vida puede hacerse más pequeña.",
+    },
+    { type: "h2", text: "La ansiedad no siempre se resuelve pensando" },
+    {
+      type: "p",
+      text: "Una de las partes más frustrantes de la ansiedad es esta: podemos entender racionalmente que algo no es peligroso y seguir sintiéndonos nerviosos.",
+    },
+    {
+      type: "p",
+      text: "Sé que no pasa nada. Sé que probablemente irá bien. Sé que estoy pensando demasiado. Y, sin embargo, el cuerpo sigue reaccionando.",
+    },
+    {
+      type: "p",
+      text: "Esto ocurre porque nuestras respuestas no dependen únicamente del pensamiento consciente. Las experiencias, las asociaciones aprendidas, la atención, las expectativas y las respuestas corporales también forman parte del proceso.",
+    },
+    {
+      type: "quote",
+      text: "El objetivo no tiene que ser vivir sin ansiedad. Puede ser aprender a que la ansiedad deje de decidir por nosotros.",
+    },
+    {
+      type: "note",
+      text: "Este contenido tiene carácter divulgativo y está orientado al desarrollo personal. Cuando la ansiedad es intensa, persistente, provoca un sufrimiento significativo o interfiere en la vida cotidiana, es recomendable acudir a un profesional sanitario cualificado.",
+    },
+  ],
+};
+
+const esBodyAlert: BlogPostContent = {
+  slug: "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+  title: "Cuando el cuerpo aprende a estar en alerta",
+  excerpt:
+    "A veces la situación cambia, pero nuestro organismo continúa reaccionando como si el peligro siguiera ahí.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "A veces la situación cambia, pero nuestro organismo continúa reaccionando como si el peligro siguiera ahí.",
+    },
+    {
+      type: "p",
+      text: "Una presentación importante. Un ascensor. Conducir por una autopista. Esperar una respuesta. Entrar en una habitación llena de personas.",
+    },
+    {
+      type: "p",
+      text: "Para alguien pueden ser situaciones completamente normales. Para otra persona pueden desencadenar inmediatamente tensión, pensamientos anticipatorios o una fuerte necesidad de escapar.",
+    },
+    {
+      type: "p",
+      text: "¿Por qué? Porque nuestro cerebro no solo piensa. También aprende asociaciones.",
+    },
+    { type: "h2", text: "Cuando una experiencia deja una huella" },
+    {
+      type: "p",
+      text: "Imaginemos que un día tienes una experiencia desagradable en un ascensor. El corazón se acelera. Te sientes atrapado. Quieres salir.",
+    },
+    {
+      type: "p",
+      text: "La próxima vez que entras en uno recuerdas aquella sensación. Empiezas a observar tu respiración. Espero que no vuelva a pasar. Notas cómo aumenta ligeramente el pulso.",
+    },
+    {
+      type: "p",
+      text: "Y ese pequeño cambio corporal puede convertirse precisamente en la señal que tu cerebro interpreta como: está empezando otra vez. La ansiedad aumenta. Sin que exista ningún peligro nuevo, se ha creado un círculo.",
+    },
+    { type: "h2", text: "Pensamiento, cuerpo y atención se alimentan" },
+    {
+      type: "p",
+      text: "La ansiedad no ocurre solamente en la cabeza. La forma en que interpretamos una situación influye en nuestra respuesta corporal, y las sensaciones del cuerpo también influyen en cómo interpretamos lo que está sucediendo.",
+    },
+    {
+      type: "p",
+      text: "Si estamos preocupados por nuestra respiración, prestamos más atención a nuestra respiración. Si tememos sentir palpitaciones, detectamos cualquier pequeño cambio del corazón.",
+    },
+    {
+      type: "p",
+      text: "Si esperamos que una situación sea incómoda, buscamos señales que confirmen que efectivamente lo es. La atención se vuelve cada vez más estrecha. Y aquello que tememos puede empezar a ocupar cada vez más espacio.",
+    },
+    { type: "h2", text: "El problema de anticipar" },
+    {
+      type: "p",
+      text: "Los seres humanos tenemos una capacidad extraordinaria: podemos imaginar acontecimientos que todavía no han sucedido. Podemos preparar unas vacaciones, visualizar un proyecto o pensar cómo resolver un problema.",
+    },
+    {
+      type: "p",
+      text: "Pero también podemos imaginar una conversación desastrosa que nunca tendrá lugar. El organismo puede reaccionar ante esa anticipación.",
+    },
+    {
+      type: "p",
+      text: "Por eso algunas personas empiezan a sentir ansiedad horas, días o incluso semanas antes de aquello que les preocupa. El acontecimiento todavía no está ocurriendo. La experiencia emocional, sin embargo, ya ha comenzado.",
+    },
+    { type: "h2", text: "Y aparece la evitación" },
+    {
+      type: "p",
+      text: "Cuando algo nos produce ansiedad, evitarlo proporciona alivio casi inmediatamente. Y ese alivio es poderoso. Porque el cerebro aprende: cuando no hago esto, me siento mejor.",
+    },
+    {
+      type: "p",
+      text: "La dificultad es que así no tenemos la oportunidad de experimentar algo diferente. La asociación entre esa situación y el peligro puede mantenerse.",
+    },
+    {
+      type: "p",
+      text: "Por eso trabajar con la ansiedad muchas veces implica aprender poco a poco una respuesta distinta: observar las sensaciones sin interpretarlas inmediatamente como una amenaza, flexibilizar la atención y experimentar que podemos permanecer delante de determinadas situaciones sin que ocurra aquello que anticipábamos.",
+    },
+    { type: "h2", text: "El cerebro también puede aprender otra respuesta" },
+    {
+      type: "p",
+      text: "Lo importante es que aquello que hemos aprendido no tiene necesariamente que acompañarnos siempre. Nuestro cerebro mantiene capacidad de aprendizaje a lo largo de la vida.",
+    },
+    {
+      type: "p",
+      text: "Podemos crear nuevas asociaciones, practicar otras respuestas y experimentar una misma situación desde perspectivas diferentes.",
+    },
+    {
+      type: "p",
+      text: "No suele ocurrir simplemente diciéndonos no tengas ansiedad. Pero sí podemos entrenar la atención, trabajar con nuestras expectativas, modificar determinadas asociaciones y practicar nuevas maneras de responder.",
+    },
+    {
+      type: "quote",
+      text: "Si nuestro sistema ha aprendido a reaccionar de una determinada manera, también puede aprender que existen otras posibilidades.",
+    },
+    {
+      type: "note",
+      text: "Este contenido es divulgativo y no sustituye una evaluación médica o psicológica. Los trastornos de ansiedad pueden requerir tratamiento por profesionales sanitarios cualificados.",
+    },
+  ],
+};
+
+const esHypnosisAnxiety: BlogPostContent = {
+  slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+  title: "Hipnosis y ansiedad: aprender una respuesta diferente",
+  excerpt:
+    "La hipnosis puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y respuestas aprendidas.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "La hipnosis no consiste en eliminar la ansiedad con una orden. Puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y determinadas respuestas aprendidas.",
+    },
+    {
+      type: "p",
+      text: "Si has experimentado ansiedad alguna vez, probablemente conozcas esta paradoja: una parte de ti sabe perfectamente que todo está bien. Pero otra parece reaccionar como si no lo estuviera.",
+    },
+    {
+      type: "p",
+      text: "Sé que puedo hacerlo. Sé que estoy seguro. Sé que no debería preocuparme tanto. Y aun así aparece la tensión.",
+    },
+    {
+      type: "p",
+      text: "Por eso el trabajo con la ansiedad no siempre consiste únicamente en comprenderla racionalmente. También puede implicar experimentar una respuesta diferente.",
+    },
+    { type: "h2", text: "¿Dónde entra la hipnosis?" },
+    {
+      type: "p",
+      text: "Durante la hipnosis se utiliza un estado de atención focalizada. La persona no pierde el control ni queda inconsciente. Por el contrario, se dirige intencionadamente la atención hacia determinadas sensaciones, imágenes, ideas o experiencias.",
+    },
+    {
+      type: "p",
+      text: "En ese contexto pueden utilizarse recursos como la imaginación guiada, el ensayo mental o las sugestiones para trabajar con situaciones que habitualmente producen tensión.",
+    },
+    {
+      type: "p",
+      text: "Por ejemplo, podemos imaginar una situación futura desde un estado de mayor calma y ensayar mentalmente cómo queremos responder. No se trata de fingir que la ansiedad no existe. Se trata de introducir nuevas posibilidades.",
+    },
+    { type: "h2", text: "El ensayo mental importa" },
+    {
+      type: "p",
+      text: "Nuestro cerebro puede reaccionar ante aquello que imaginamos. Basta pensar en algo tan sencillo como morder un limón para entenderlo: aunque no tengamos ninguno delante, algunas personas empiezan inmediatamente a salivar.",
+    },
+    {
+      type: "p",
+      text: "La imaginación tiene efectos reales sobre nuestra experiencia. En hipnosis podemos utilizar deliberadamente esa capacidad para practicar respuestas diferentes.",
+    },
+    {
+      type: "p",
+      text: "Una persona que anticipa nervios ante una presentación, por ejemplo, puede trabajar imaginando esa situación mientras practica una respiración tranquila, una atención más amplia y una sensación diferente de seguridad.",
+    },
+    {
+      type: "p",
+      text: "No garantiza lo que sucederá posteriormente. Pero permite ensayar algo distinto del escenario de amenaza que quizá llevaba semanas practicando mentalmente.",
+    },
+    { type: "h2", text: "¿Qué dice la investigación?" },
+    {
+      type: "p",
+      text: "La hipnosis se investiga científicamente desde hace décadas y existen ensayos clínicos y revisiones sistemáticas sobre su utilización en distintas situaciones.",
+    },
+    {
+      type: "p",
+      text: "Una revisión y metaanálisis publicada en 2025 analizó 20 ensayos controlados aleatorizados con 1.250 participantes sometidos a procedimientos médicos invasivos. En conjunto, la hipnosis estuvo asociada con una reducción de la ansiedad frente a la atención habitual.",
+    },
+    {
+      type: "p",
+      text: "Otra revisión publicada en 2026, centrada en intervenciones alrededor de procedimientos quirúrgicos, encontró también reducciones de ansiedad en determinados contextos. Una revisión más amplia de estudios de anestesia, con más de 9.000 participantes, encontró resultados favorables sobre ansiedad y dolor, aunque sus autores señalan que para muchos resultados todavía existe incertidumbre.",
+    },
+    {
+      type: "p",
+      text: "La investigación no demuestra que la hipnosis cure cualquier forma de ansiedad, ni que todas las personas respondan igual. Sí aporta evidencia de que puede ser una herramienta útil para reducir ansiedad en determinados contextos y justifica seguir investigando sus aplicaciones.",
+    },
+    { type: "h2", text: "No se trata de controlar la mente" },
+    {
+      type: "p",
+      text: "La idea no es convencernos de que nunca volveremos a sentir nervios. La ansiedad también puede ser útil. Nos prepara para situaciones importantes y nos ayuda a detectar posibles problemas.",
+    },
+    {
+      type: "p",
+      text: "El objetivo puede ser algo mucho más realista: que podamos experimentar nervios sin sentir que necesariamente tenemos que huir, bloquearlos o permitir que determinen nuestras decisiones.",
+    },
+    {
+      type: "p",
+      text: "En un contexto de desarrollo personal, la hipnosis puede utilizarse para trabajar con aspectos como la anticipación, la focalización de la atención, determinadas respuestas automáticas, el ensayo mental de situaciones futuras y la conexión con recursos personales.",
+    },
+    { type: "h2", text: "Una herramienta, no una solución universal" },
+    {
+      type: "p",
+      text: "La hipnosis puede formar parte de un proceso de cambio, pero no sustituye los tratamientos médicos o psicológicos cuando existe un trastorno de ansiedad.",
+    },
+    {
+      type: "p",
+      text: "Cuando la ansiedad es intensa, persistente, aparecen ataques de pánico recurrentes, existe una evitación importante o empieza a interferir seriamente en el trabajo, las relaciones o la vida cotidiana, debe valorarla un profesional sanitario.",
+    },
+    {
+      type: "quote",
+      text: "Quizá no podamos controlar todo lo que sentimos. Pero podemos aprender nuevas maneras de relacionarnos con ello.",
+    },
+    {
+      type: "note",
+      text: "Contenido divulgativo orientado al desarrollo personal. La hipnosis no sustituye la atención psicológica, psiquiátrica o médica cuando esta es necesaria.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment la hipnosi?",
@@ -478,7 +770,16 @@ const en: BlogPostContent = {
 };
 
 const postsByLang: Record<Lang, BlogPostContent[]> = {
-  es: [esHypnosisSession, esHypnosisHabits, esHabit, esBrain, es],
+  es: [
+    esHypnosisAnxiety,
+    esBodyAlert,
+    esAnxietyIntro,
+    esHypnosisSession,
+    esHypnosisHabits,
+    esHabit,
+    esBrain,
+    es,
+  ],
   va: [va],
   en: [en],
 };

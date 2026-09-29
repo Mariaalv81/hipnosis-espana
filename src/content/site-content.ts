@@ -379,6 +379,24 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        title: "Hipnosis y ansiedad: aprender una respuesta diferente",
+        excerpt:
+          "La hipnosis puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y respuestas aprendidas.",
+      },
+      {
+        slug: "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+        title: "Cuando el cuerpo aprende a estar en alerta",
+        excerpt:
+          "A veces la situación cambia, pero nuestro organismo continúa reaccionando como si el peligro siguiera ahí.",
+      },
+      {
+        slug: "que-es-realmente-la-ansiedad",
+        title: "¿Qué es realmente la ansiedad?",
+        excerpt:
+          "La ansiedad no es necesariamente algo malo. Es un mecanismo de protección que puede empezar a activarse demasiado.",
+      },
+      {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "¿Cómo es una sesión de hipnosis?",
         excerpt:
@@ -414,6 +432,33 @@ const es = {
           "Qué puedo aportar yo, qué aportas tú y por qué esa frontera hace que el proceso funcione mejor.",
       },
     ],
+    seriesTitle: "Series de lectura",
+    seriesIntro: "Lee cada serie en orden para seguir mejor el hilo de los artículos relacionados.",
+    series: [
+      {
+        title: "Ansiedad y respuestas aprendidas",
+        description:
+          "Tres textos para entender qué es la ansiedad, cómo se aprende la alerta y cómo puede trabajarse una respuesta diferente.",
+        posts: [
+          "que-es-realmente-la-ansiedad",
+          "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+          "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        ],
+      },
+      {
+        title: "Entender la hipnosis",
+        description:
+          "Una introducción ordenada a la hipnosis, el cerebro, los hábitos y cómo puede ser una sesión.",
+        posts: [
+          "que-es-la-hipnosis",
+          "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+          "por-que-cuesta-cambiar-un-habito",
+          "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+          "como-es-una-sesion-de-hipnosis",
+        ],
+      },
+    ],
+    standaloneTitle: "También en el blog",
     soon: "Próximamente",
     latest: "Último artículo",
     readPost: "Leer artículo",
@@ -886,6 +931,24 @@ const va: Dict = {
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
       {
+        slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        title: "Hipnosi i ansietat: aprendre una resposta diferent",
+        excerpt:
+          "La hipnosi pot oferir un context diferent per a treballar amb l'atenció, la imaginació i respostes apreses.",
+      },
+      {
+        slug: "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+        title: "Quan el cos aprén a estar en alerta",
+        excerpt:
+          "De vegades la situació canvia, però l'organisme continua reaccionant com si el perill encara fora present.",
+      },
+      {
+        slug: "que-es-realmente-la-ansiedad",
+        title: "Què és realment l'ansietat?",
+        excerpt:
+          "L'ansietat no és necessàriament una cosa dolenta. És un mecanisme de protecció que pot començar a activar-se massa.",
+      },
+      {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "Com és una sessió d'hipnosi?",
         excerpt:
@@ -920,6 +983,33 @@ const va: Dict = {
           "Què puc aportar jo, què aportes tu i per què eixa frontera fa que el procés funcione millor.",
       },
     ],
+    seriesTitle: "Sèries de lectura",
+    seriesIntro: "Llig cada sèrie en ordre per a seguir millor el fil dels articles relacionats.",
+    series: [
+      {
+        title: "Ansietat i respostes apreses",
+        description:
+          "Tres textos per a entendre què és l'ansietat, com s'aprén l'alerta i com pot treballar-se una resposta diferent.",
+        posts: [
+          "que-es-realmente-la-ansiedad",
+          "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+          "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        ],
+      },
+      {
+        title: "Entendre la hipnosi",
+        description:
+          "Una introducció ordenada a la hipnosi, el cervell, els hàbits i com pot ser una sessió.",
+        posts: [
+          "que-es-la-hipnosis",
+          "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+          "por-que-cuesta-cambiar-un-habito",
+          "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+          "como-es-una-sesion-de-hipnosis",
+        ],
+      },
+    ],
+    standaloneTitle: "També en el blog",
     soon: "Pròximament",
     latest: "Últim article",
     readPost: "Llegir article",
@@ -1300,8 +1390,7 @@ const en: Dict = {
       "Confidentiality.",
       "Practical tools for everyday life.",
     ],
-    controlNote:
-      "You remain aware, involved and in control of the experience at all times.",
+    controlNote: "You remain aware, involved and in control of the experience at all times.",
     statement:
       "My work is about supporting each person as they explore their patterns and offering tools to respond in ways that are more useful for them.",
     workEyebrow: "My way of working",
@@ -1386,6 +1475,24 @@ const en: Dict = {
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
       {
+        slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        title: "Hypnosis and anxiety: learning a different response",
+        excerpt:
+          "Hypnosis can offer a different context for working with attention, imagination and learned responses.",
+      },
+      {
+        slug: "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+        title: "When the body learns to stay on alert",
+        excerpt:
+          "Sometimes the situation changes, but the body keeps responding as if the danger were still there.",
+      },
+      {
+        slug: "que-es-realmente-la-ansiedad",
+        title: "What is anxiety, really?",
+        excerpt:
+          "Anxiety is not necessarily a bad thing. It is a protective mechanism that can begin to activate too often.",
+      },
+      {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "What is a hypnosis session like?",
         excerpt:
@@ -1421,6 +1528,33 @@ const en: Dict = {
           "What I bring, what you bring, and why that boundary makes the process work better.",
       },
     ],
+    seriesTitle: "Reading series",
+    seriesIntro: "Read each series in order to follow the thread between related articles.",
+    series: [
+      {
+        title: "Anxiety and learned responses",
+        description:
+          "Three pieces to understand what anxiety is, how alertness is learned and how a different response can be practised.",
+        posts: [
+          "que-es-realmente-la-ansiedad",
+          "cuando-el-cuerpo-aprende-a-estar-en-alerta",
+          "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
+        ],
+      },
+      {
+        title: "Understanding hypnosis",
+        description:
+          "An ordered introduction to hypnosis, the brain, habits and what a session can be like.",
+        posts: [
+          "que-es-la-hipnosis",
+          "que-ocurre-en-el-cerebro-durante-la-hipnosis",
+          "por-que-cuesta-cambiar-un-habito",
+          "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
+          "como-es-una-sesion-de-hipnosis",
+        ],
+      },
+    ],
+    standaloneTitle: "Also in the blog",
     soon: "Coming soon",
     latest: "Latest article",
     readPost: "Read article",

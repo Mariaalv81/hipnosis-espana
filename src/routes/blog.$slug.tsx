@@ -80,6 +80,7 @@ function BlogPostPage() {
   const { t, lang } = useI18n();
   const post = getBlogPost(slug, lang);
   const listingPost = t.journal.posts.find((item) => item.slug === slug);
+  const currentSeries = t.journal.series.find((series) => series.posts.includes(slug));
 
   if (!post) throw notFound();
 
@@ -112,6 +113,45 @@ function BlogPostPage() {
           <Block key={i} block={block} />
         ))}
       </div>
+
+      {currentSeries && (
+        <section className="container-page max-w-2xl pb-12">
+          <div className="rounded-3xl border border-border/60 bg-card p-7 md:p-8">
+            <p className="eyebrow">{t.journal.seriesTitle}</p>
+            <h2 className="mt-3 text-2xl md:text-3xl">{currentSeries.title}</h2>
+            <ol className="mt-6 grid gap-3">
+              {currentSeries.posts.map((seriesSlug, index) => {
+                const relatedPost = t.journal.posts.find((item) => item.slug === seriesSlug);
+                if (!relatedPost) return null;
+
+                return (
+                  <li key={seriesSlug}>
+                    <Link
+                      to="/blog/$slug"
+                      params={{ slug: seriesSlug }}
+                      className={`grid gap-3 rounded-2xl border p-4 transition-colors sm:grid-cols-[2.5rem_1fr] ${
+                        seriesSlug === slug
+                          ? "border-primary/40 bg-primary/5"
+                          : "border-border/60 bg-background/60 hover:border-primary/40"
+                      }`}
+                    >
+                      <span className="font-serif text-2xl leading-none text-primary">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span>
+                        <span className="block text-base leading-snug">{relatedPost.title}</span>
+                        <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">
+                          {relatedPost.excerpt}
+                        </span>
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </section>
+      )}
 
       <section className="container-page max-w-2xl pb-20">
         <div className="rounded-3xl border border-border/60 bg-card p-8 text-center md:p-10">
