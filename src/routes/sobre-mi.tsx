@@ -3,31 +3,6 @@ import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 
-const cities = ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"];
-
-const focusAreas = [
-  {
-    title: "Cambio práctico",
-    text: "Sesiones orientadas a objetivos concretos, con recursos que puedan trasladarse a la vida real.",
-  },
-  {
-    title: "Proceso consciente",
-    text: "La persona participa activamente, entiende qué estamos haciendo y mantiene siempre el control.",
-  },
-  {
-    title: "Ritmo personal",
-    text: "Cada trabajo se adapta a la historia, circunstancias y forma de experimentar el proceso.",
-  },
-];
-
-const values = [
-  "Escucha y respeto por cada persona.",
-  "Objetivos claros y expectativas realistas.",
-  "Participación activa durante todo el proceso.",
-  "Confidencialidad.",
-  "Herramientas prácticas para el día a día.",
-];
-
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({
     meta: [
@@ -53,6 +28,7 @@ export const Route = createFileRoute("/sobre-mi")({
 
 function AboutPage() {
   const { t } = useI18n();
+  const about = t.about;
 
   return (
     <>
@@ -61,16 +37,14 @@ function AboutPage() {
           <div className="order-2 lg:order-1">
             <p className="eyebrow">{t.about.role}</p>
             <h1 className="mt-4 max-w-2xl text-4xl leading-tight md:text-5xl">
-              {t.about.name}
+              {about.name}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Trabajo con hipnosis aplicada al desarrollo personal y profesional,
-              desde un enfoque cercano, práctico y respetuoso con el ritmo de
-              cada persona.
+              {about.intro}
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {["Cercanía", "Claridad", "Recursos útiles"].map((item) => (
+              {about.traits.map((item) => (
                 <div
                   key={item}
                   className="border-l border-accent/60 bg-background/50 px-4 py-3"
@@ -98,9 +72,9 @@ function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="border-y border-border py-8">
-              <p className="eyebrow">En cada sesión</p>
+              <p className="eyebrow">{about.valuesSidebarTitle}</p>
               <ul className="mt-6 grid gap-4">
-                {values.map((value) => (
+                {about.values.map((value) => (
                   <li
                     key={value}
                     className="flex gap-3 text-sm leading-relaxed text-muted-foreground"
@@ -114,8 +88,7 @@ function AboutPage() {
 
             <div className="mt-8 rounded-2xl bg-primary p-7 text-primary-foreground">
               <p className="text-base leading-relaxed">
-                La persona mantiene siempre la consciencia, la participación y
-                el control sobre la experiencia.
+                {about.controlNote}
               </p>
             </div>
           </aside>
@@ -123,27 +96,22 @@ function AboutPage() {
           <div className="min-w-0">
             <section className="grid gap-6">
               <h2 className="mt-4 max-w-2xl text-3xl leading-tight md:text-4xl">
-                Mi trabajo consiste en acompañar a cada persona a explorar sus
-                patrones y ofrecerle herramientas para responder de una manera
-                más útil para ella.
+                {about.statement}
               </h2>
             </section>
 
             <section className="mt-14 border-t border-border pt-10 md:mt-16 md:pt-12">
-              <p className="eyebrow">Mi forma de trabajar</p>
+              <p className="eyebrow">{about.workEyebrow}</p>
               <h2 className="mt-4 max-w-2xl text-3xl leading-tight md:text-4xl">
-                Hipnosis como herramienta, no como fórmula mágica.
+                {about.workTitle}
               </h2>
 
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
-                Entiendo la hipnosis como un recurso para facilitar procesos de cambio,
-                observar respuestas automáticas y entrenar nuevas formas de
-                afrontar situaciones concretas con más calma, seguridad y
-                capacidad de elección.
+                {about.workText}
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-3">
-                {focusAreas.map((area) => (
+                {about.focusAreas.map((area) => (
                   <article
                     key={area.title}
                     className="rounded-2xl border border-border bg-card p-6"
@@ -159,15 +127,15 @@ function AboutPage() {
 
             <section className="mt-14 grid gap-8 border-t border-border pt-10 md:mt-16 md:grid-cols-[0.9fr_1.1fr] md:pt-12">
               <div>
-                <p className="eyebrow">Trayectoria</p>
+                <p className="eyebrow">{about.pathEyebrow}</p>
                 <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
-                  Una mirada construida entre culturas y entornos profesionales.
+                  {about.pathTitle}
                 </h2>
               </div>
 
               <div>
                 <div className="flex flex-wrap gap-2">
-                  {cities.map((city) => (
+                  {about.cities.map((city) => (
                     <span
                       key={city}
                       className="rounded-full border border-border bg-card px-4 py-2 text-xs uppercase tracking-[0.14em] text-muted-foreground"
@@ -177,53 +145,34 @@ function AboutPage() {
                   ))}
                 </div>
                 <div className="mt-8 grid max-w-2xl gap-4 text-base leading-relaxed text-muted-foreground">
-                  <p>
-                    A lo largo de mi trayectoria he trabajado en entornos
-                    corporativos e internacionales y he vivido en ciudades como
-                    Los Ángeles, Londres, Barcelona, Valencia y Madrid.
-                  </p>
-                  <p>
-                    Esa experiencia me ha permitido entender que detrás de cada
-                    objetivo hay una historia, una forma de responder y unas
-                    circunstancias diferentes.
-                  </p>
+                  {about.pathParagraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
                 </div>
 
                 <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                  Mi experiencia previa en empresas internacionales me ayuda a
-                  entender retos habituales del trabajo: hablar en público,
-                  asumir responsabilidades, rendir bajo presión, mantener el
-                  foco o desenvolverse con mayor confianza en situaciones
-                  exigentes.
+                  {about.pathExtra}
                 </p>
               </div>
             </section>
 
             <section className="mt-14 border-t border-border pt-10 md:mt-16 md:pt-12">
-              <p className="eyebrow">Sesiones y colaboraciones</p>
+              <p className="eyebrow">{about.sessionsEyebrow}</p>
               <div className="mt-5 grid gap-5 md:grid-cols-[0.8fr_1.2fr] md:items-start">
                 <h2 className="text-3xl leading-tight md:text-4xl">
-                  Sueca · Ribera Baixa · Valencia · Gandia
+                  {about.serviceAreaTitle}
                 </h2>
                 <div className="grid gap-4 text-base leading-relaxed text-muted-foreground">
-                  <p>
-                    Las sesiones individuales se realizan de forma presencial en
-                    un despacho en Sueca, Valencia.
-                  </p>
-                  <p>
-                    También puedo desplazarme a casas particulares, empresas,
-                    oficinas, centros y organizaciones para sesiones, talleres o
-                    programas de desarrollo profesional.
-                  </p>
+                  {about.sessionsTexts.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
                 </div>
               </div>
             </section>
 
             <section className="mt-14 rounded-2xl bg-sand px-6 py-8 md:mt-16 md:px-8 md:py-10">
               <h2 className="max-w-3xl text-3xl leading-tight md:text-4xl">
-                Muchas veces el cambio no consiste en convertirse en otra
-                persona, sino en dejar de estar limitado por patrones que ya no
-                necesitamos.
+                {about.quote}
               </h2>
               <Button
                 asChild

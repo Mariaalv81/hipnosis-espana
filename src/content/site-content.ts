@@ -276,18 +276,62 @@ const es = {
     title: "Sobre mí",
     name: "Maria Cabo",
     role: "Facilitadora de hipnosis aplicada al desarrollo personal",
+    intro:
+      "Trabajo con hipnosis aplicada al desarrollo personal y profesional, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
+    traits: ["Cercanía", "Claridad", "Recursos útiles"],
     body: [
       "Acompaño a personas adultas que quieren producir un cambio concreto y no saben por dónde empezar. Mi manera de trabajar es tranquila, curiosa y honesta: primero entender, luego proponer.",
       "Creo en las expectativas realistas. La hipnosis puede ser una herramienta muy útil para trabajar hábitos, atención y respuesta al estrés, pero no lo resuelve todo ni sustituye a la atención sanitaria.",
       "Trabajo en Sueca, en castellano e inglés, en un despacho independiente dentro del Centro Sanar.",
     ],
     valuesTitle: "Cómo trabajo",
+    valuesSidebarTitle: "En cada sesión",
     values: [
-      "Consentimiento y ritmo tuyo en cada sesión.",
-      "Lenguaje sencillo, sin jerga ni tecnicismos.",
-      "Confidencialidad y mínimos datos necesarios.",
-      "Derivación cuando corresponde a otro profesional.",
+      "Escucha y respeto por cada persona.",
+      "Objetivos claros y expectativas realistas.",
+      "Participación activa durante todo el proceso.",
+      "Confidencialidad.",
+      "Herramientas prácticas para el día a día.",
     ],
+    controlNote:
+      "La persona mantiene siempre la consciencia, la participación y el control sobre la experiencia.",
+    statement:
+      "Mi trabajo consiste en acompañar a cada persona a explorar sus patrones y ofrecerle herramientas para responder de una manera más útil para ella.",
+    workEyebrow: "Mi forma de trabajar",
+    workTitle: "Hipnosis como herramienta, no como fórmula mágica.",
+    workText:
+      "Entiendo la hipnosis como un recurso para facilitar procesos de cambio, observar respuestas automáticas y entrenar nuevas formas de afrontar situaciones concretas con más calma, seguridad y capacidad de elección.",
+    focusAreas: [
+      {
+        title: "Cambio práctico",
+        text: "Sesiones orientadas a objetivos concretos, con recursos que puedan trasladarse a la vida real.",
+      },
+      {
+        title: "Proceso consciente",
+        text: "La persona participa activamente, entiende qué estamos haciendo y mantiene siempre el control.",
+      },
+      {
+        title: "Ritmo personal",
+        text: "Cada trabajo se adapta a la historia, circunstancias y forma de experimentar el proceso.",
+      },
+    ],
+    pathEyebrow: "Trayectoria",
+    pathTitle: "Una mirada construida entre culturas y entornos profesionales.",
+    cities: ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"],
+    pathParagraphs: [
+      "A lo largo de mi trayectoria he trabajado en entornos corporativos e internacionales y he vivido en ciudades como Los Ángeles, Londres, Barcelona, Valencia y Madrid.",
+      "Esa experiencia me ha permitido entender que detrás de cada objetivo hay una historia, una forma de responder y unas circunstancias diferentes.",
+    ],
+    pathExtra:
+      "Mi experiencia previa en empresas internacionales me ayuda a entender retos habituales del trabajo: hablar en público, asumir responsabilidades, rendir bajo presión, mantener el foco o desenvolverse con mayor confianza en situaciones exigentes.",
+    sessionsEyebrow: "Sesiones y colaboraciones",
+    serviceAreaTitle: "Sueca · Ribera Baixa · Valencia · Gandia",
+    sessionsTexts: [
+      "Las sesiones individuales se realizan de forma presencial en un despacho en Sueca, Valencia.",
+      "También puedo desplazarme a casas particulares, empresas, oficinas, centros y organizaciones para sesiones, talleres o programas de desarrollo profesional.",
+    ],
+    quote:
+      "Muchas veces el cambio no consiste en convertirse en otra persona, sino en dejar de estar limitado por patrones que ya no necesitamos.",
   },
   events: {
     title: "Eventos y talleres",
@@ -739,18 +783,62 @@ const va: Dict = {
     title: "Sobre mi",
     name: "Maria Cabo",
     role: "Facilitadora d'hipnosi aplicada al desenvolupament personal",
+    intro:
+      "Treballe amb hipnosi aplicada al desenvolupament personal i professional, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
+    traits: ["Proximitat", "Claredat", "Recursos útils"],
     body: [
       "Acompanye persones adultes que volen produir un canvi concret i no saben per on començar. La meua manera de treballar és tranquil·la, curiosa i honesta: primer entendre, després proposar.",
       "Crec en les expectatives realistes. La hipnosi pot ser una ferramenta molt útil per a treballar hàbits, atenció i resposta a l'estrés, però no ho resol tot ni substituïx l'atenció sanitària.",
       "Treballe a Sueca, en castellà i anglés, en un despatx independent dins de Centro Sanar.",
     ],
     valuesTitle: "Com treballe",
+    valuesSidebarTitle: "En cada sessió",
     values: [
-      "Consentiment i el teu ritme en cada sessió.",
-      "Llenguatge senzill, sense argot ni tecnicismes.",
-      "Confidencialitat i mínimes dades necessàries.",
-      "Derivació quan correspon a un altre professional.",
+      "Escolta i respecte per cada persona.",
+      "Objectius clars i expectatives realistes.",
+      "Participació activa durant tot el procés.",
+      "Confidencialitat.",
+      "Ferramentes pràctiques per al dia a dia.",
     ],
+    controlNote:
+      "La persona manté sempre la consciència, la participació i el control sobre l'experiència.",
+    statement:
+      "El meu treball consistix a acompanyar cada persona a explorar els seus patrons i oferir-li ferramentes per a respondre d'una manera més útil per a ella.",
+    workEyebrow: "La meua manera de treballar",
+    workTitle: "La hipnosi com a ferramenta, no com a fórmula màgica.",
+    workText:
+      "Entenc la hipnosi com un recurs per a facilitar processos de canvi, observar respostes automàtiques i entrenar noves formes d'afrontar situacions concretes amb més calma, seguretat i capacitat d'elecció.",
+    focusAreas: [
+      {
+        title: "Canvi pràctic",
+        text: "Sessions orientades a objectius concrets, amb recursos que puguen traslladar-se a la vida real.",
+      },
+      {
+        title: "Procés conscient",
+        text: "La persona participa activament, entén què estem fent i manté sempre el control.",
+      },
+      {
+        title: "Ritme personal",
+        text: "Cada treball s'adapta a la història, les circumstàncies i la manera d'experimentar el procés.",
+      },
+    ],
+    pathEyebrow: "Trajectòria",
+    pathTitle: "Una mirada construïda entre cultures i entorns professionals.",
+    cities: ["Los Angeles", "Londres", "Barcelona", "Madrid", "València"],
+    pathParagraphs: [
+      "Al llarg de la meua trajectòria he treballat en entorns corporatius i internacionals i he viscut en ciutats com Los Angeles, Londres, Barcelona, València i Madrid.",
+      "Eixa experiència m'ha permés entendre que darrere de cada objectiu hi ha una història, una manera de respondre i unes circumstàncies diferents.",
+    ],
+    pathExtra:
+      "La meua experiència prèvia en empreses internacionals m'ajuda a entendre reptes habituals del treball: parlar en públic, assumir responsabilitats, rendir sota pressió, mantindre el focus o moure's amb més confiança en situacions exigents.",
+    sessionsEyebrow: "Sessions i col·laboracions",
+    serviceAreaTitle: "Sueca · Ribera Baixa · València · Gandia",
+    sessionsTexts: [
+      "Les sessions individuals es fan de manera presencial en un despatx a Sueca, València.",
+      "També puc desplaçar-me a cases particulars, empreses, oficines, centres i organitzacions per a sessions, tallers o programes de desenvolupament professional.",
+    ],
+    quote:
+      "Moltes vegades el canvi no consistix a convertir-se en una altra persona, sinó a deixar d'estar limitat per patrons que ja no necessitem.",
   },
   events: {
     title: "Esdeveniments i tallers",
@@ -1195,18 +1283,62 @@ const en: Dict = {
     title: "About me",
     name: "Maria Cabo",
     role: "Hypnosis facilitator for personal development",
+    intro:
+      "I work with hypnosis applied to personal and professional development, through a warm, practical approach that respects each person's pace.",
+    traits: ["Warmth", "Clarity", "Useful resources"],
     body: [
       "I work with adults who want to make a specific change and don't know where to start. My way of working is calm, curious and honest: understand first, propose after.",
       "I believe in realistic expectations. Hypnosis can be a useful tool for habits, attention and stress responses, but it doesn't solve everything and it doesn't replace healthcare.",
       "I work in Sueca, in Spanish and English, from an independent consultation room at Centro Sanar.",
     ],
     valuesTitle: "How I work",
+    valuesSidebarTitle: "In every session",
     values: [
-      "Consent and your own pace in every session.",
-      "Plain language, no jargon.",
-      "Confidentiality and minimal data.",
-      "Referral when another professional is the right fit.",
+      "Listening and respect for each person.",
+      "Clear goals and realistic expectations.",
+      "Active participation throughout the process.",
+      "Confidentiality.",
+      "Practical tools for everyday life.",
     ],
+    controlNote:
+      "You remain aware, involved and in control of the experience at all times.",
+    statement:
+      "My work is about supporting each person as they explore their patterns and offering tools to respond in ways that are more useful for them.",
+    workEyebrow: "My way of working",
+    workTitle: "Hypnosis as a tool, not a magic formula.",
+    workText:
+      "I understand hypnosis as a resource that can support change, help observe automatic responses and train new ways of facing specific situations with more calm, confidence and choice.",
+    focusAreas: [
+      {
+        title: "Practical change",
+        text: "Sessions focused on concrete goals, with resources that can be carried into real life.",
+      },
+      {
+        title: "A conscious process",
+        text: "The person participates actively, understands what we are doing and always remains in control.",
+      },
+      {
+        title: "Personal pace",
+        text: "Each process adapts to the person's story, circumstances and way of experiencing the work.",
+      },
+    ],
+    pathEyebrow: "Background",
+    pathTitle: "A perspective shaped across cultures and professional settings.",
+    cities: ["Los Angeles", "London", "Barcelona", "Madrid", "Valencia"],
+    pathParagraphs: [
+      "Throughout my career I have worked in corporate and international environments and lived in cities such as Los Angeles, London, Barcelona, Valencia and Madrid.",
+      "That experience has helped me understand that behind every goal there is a story, a way of responding and a different set of circumstances.",
+    ],
+    pathExtra:
+      "My previous experience in international companies helps me understand common work-related challenges: public speaking, taking on responsibility, performing under pressure, staying focused or moving through demanding situations with more confidence.",
+    sessionsEyebrow: "Sessions and collaborations",
+    serviceAreaTitle: "Sueca · Ribera Baixa · Valencia · Gandia",
+    sessionsTexts: [
+      "Individual sessions take place in person in a consultation room in Sueca, Valencia.",
+      "I can also travel to private homes, companies, offices, centres and organisations for sessions, workshops or professional-development programmes.",
+    ],
+    quote:
+      "Very often, change is not about becoming someone else, but about no longer being limited by patterns we no longer need.",
   },
   events: {
     title: "Events and workshops",
