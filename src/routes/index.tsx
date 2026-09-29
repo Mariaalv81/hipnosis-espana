@@ -197,7 +197,7 @@ function HypnosisPage() {
       <section className="container-page py-12 md:py-16">
         <div className="flex items-baseline justify-between">
           <h2 className="text-3xl md:text-4xl">{t.home.faqHomeTitle}</h2>
-          <Link to="/preguntas" className="text-sm text-primary underline">{t.home.faqHomeLink}</Link>
+          <Link to="/faq" className="text-sm text-primary underline">{t.home.faqHomeLink}</Link>
         </div>
         <dl className="mt-6 divide-y divide-border border-y border-border">
           {t.faq.items.slice(0, 5).map((item) => (
