@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
-import mariaCaboJpg from "@/assets/images/maria-cabo.jpg";
+import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 
 const cities = ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"];
 
@@ -83,7 +83,7 @@ function AboutPage() {
 
           <div className="order-1 lg:order-2">
             <img
-              src={mariaCaboJpg}
+              src={sobreMiMariaCaboJpg}
               alt="María Cabo"
               width={1510}
               height={1042}
@@ -176,18 +176,18 @@ function AboutPage() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-8 grid gap-5 text-base leading-relaxed text-muted-foreground md:grid-cols-2">
-                <p>
-                  A lo largo de mi trayectoria he trabajado en entornos
-                  corporativos e internacionales y he vivido en ciudades como
-                  Los Ángeles, Londres, Barcelona, Valencia y Madrid.
-                </p>
-                <p>
-                  Esa experiencia me ha permitido entender que detrás de cada
-                  objetivo hay una historia, una forma de responder y unas
-                  circunstancias diferentes.
-                </p>
-              </div>
+                <div className="mt-8 grid max-w-2xl gap-4 text-base leading-relaxed text-muted-foreground">
+                  <p>
+                    A lo largo de mi trayectoria he trabajado en entornos
+                    corporativos e internacionales y he vivido en ciudades como
+                    Los Ángeles, Londres, Barcelona, Valencia y Madrid.
+                  </p>
+                  <p>
+                    Esa experiencia me ha permitido entender que detrás de cada
+                    objetivo hay una historia, una forma de responder y unas
+                    circunstancias diferentes.
+                  </p>
+                </div>
 
                 <p className="mt-6 text-base leading-relaxed text-muted-foreground">
                   Mi experiencia previa en empresas internacionales me ayuda a
@@ -220,11 +220,11 @@ function AboutPage() {
             </section>
 
             <section className="mt-14 rounded-2xl bg-sand px-6 py-8 md:mt-16 md:px-8 md:py-10">
-              <p className="max-w-3xl text-xl leading-relaxed text-primary md:text-2xl">
+              <h2 className="max-w-3xl text-3xl leading-tight md:text-4xl">
                 Muchas veces el cambio no consiste en convertirse en otra
                 persona, sino en dejar de estar limitado por patrones que ya no
                 necesitamos.
-              </p>
+              </h2>
               <Button
                 asChild
                 className="mt-7 w-fit rounded-full px-7 py-3 text-sm"
