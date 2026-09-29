@@ -379,6 +379,24 @@ const es = {
       "Textos breves para entender mejor la hipnosis, los hábitos y el cambio personal. Nunca diagnósticos ni recetas.",
     posts: [
       {
+        slug: "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        title: "Hipnosis y fobias: aprender una respuesta diferente",
+        excerpt:
+          "Una fobia puede sentirse como una reacción automática. La hipnosis permite trabajar con esa parte más automática de la experiencia.",
+      },
+      {
+        slug: "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+        title: "¿Por qué evitar aquello que tememos puede mantener el miedo?",
+        excerpt:
+          "Evitar aquello que nos produce miedo funciona muy bien a corto plazo. Precisamente por eso puede convertirse en parte del problema.",
+      },
+      {
+        slug: "que-es-realmente-una-fobia",
+        title: "¿Qué es realmente una fobia?",
+        excerpt:
+          "Tener miedo es humano. Una fobia aparece cuando ese miedo se vuelve desproporcionado y empieza a condicionar lo que hacemos.",
+      },
+      {
         slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
         title: "Hipnosis y ansiedad: aprender una respuesta diferente",
         excerpt:
@@ -435,6 +453,16 @@ const es = {
     seriesTitle: "Series de lectura",
     seriesIntro: "Lee cada serie en orden para seguir mejor el hilo de los artículos relacionados.",
     series: [
+      {
+        title: "Fobias y miedo aprendido",
+        description:
+          "Tres textos para entender qué es una fobia, por qué la evitación puede mantener el miedo y cómo puede trabajarse una respuesta diferente.",
+        posts: [
+          "que-es-realmente-una-fobia",
+          "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+          "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        ],
+      },
       {
         title: "Ansiedad y respuestas aprendidas",
         description:
@@ -931,6 +959,24 @@ const va: Dict = {
       "Textos breus per a entendre millor la hipnosi, els hàbits i el canvi personal. Mai diagnòstics ni receptes.",
     posts: [
       {
+        slug: "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        title: "Hipnosi i fòbies: aprendre una resposta diferent",
+        excerpt:
+          "Una fòbia pot sentir-se com una reacció automàtica. La hipnosi permet treballar amb eixa part més automàtica de l'experiència.",
+      },
+      {
+        slug: "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+        title: "Per què evitar allò que temem pot mantindre la por?",
+        excerpt:
+          "Evitar allò que ens fa por funciona molt bé a curt termini. Precisament per això pot convertir-se en part del problema.",
+      },
+      {
+        slug: "que-es-realmente-una-fobia",
+        title: "Què és realment una fòbia?",
+        excerpt:
+          "Tindre por és humà. Una fòbia apareix quan eixa por es torna desproporcionada i comença a condicionar el que fem.",
+      },
+      {
         slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
         title: "Hipnosi i ansietat: aprendre una resposta diferent",
         excerpt:
@@ -986,6 +1032,16 @@ const va: Dict = {
     seriesTitle: "Sèries de lectura",
     seriesIntro: "Llig cada sèrie en ordre per a seguir millor el fil dels articles relacionats.",
     series: [
+      {
+        title: "Fòbies i por apresa",
+        description:
+          "Tres textos per a entendre què és una fòbia, per què l'evitació pot mantindre la por i com pot treballar-se una resposta diferent.",
+        posts: [
+          "que-es-realmente-una-fobia",
+          "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+          "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        ],
+      },
       {
         title: "Ansietat i respostes apreses",
         description:
@@ -1475,6 +1531,24 @@ const en: Dict = {
       "Short pieces to better understand hypnosis, habits and personal change. Never diagnoses or prescriptions.",
     posts: [
       {
+        slug: "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        title: "Hypnosis and phobias: learning a different response",
+        excerpt:
+          "A phobia can feel like an automatic reaction. Hypnosis can work with that more automatic part of the experience.",
+      },
+      {
+        slug: "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+        title: "Why avoiding what we fear can keep fear in place",
+        excerpt:
+          "Avoiding what frightens us works very well in the short term. That is precisely why it can become part of the problem.",
+      },
+      {
+        slug: "que-es-realmente-una-fobia",
+        title: "What is a phobia, really?",
+        excerpt:
+          "Fear is human. A phobia appears when that fear becomes disproportionate and starts shaping what we do.",
+      },
+      {
         slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
         title: "Hypnosis and anxiety: learning a different response",
         excerpt:
@@ -1531,6 +1605,16 @@ const en: Dict = {
     seriesTitle: "Reading series",
     seriesIntro: "Read each series in order to follow the thread between related articles.",
     series: [
+      {
+        title: "Phobias and learned fear",
+        description:
+          "Three pieces to understand what a phobia is, why avoidance can keep fear in place and how a different response can be practised.",
+        posts: [
+          "que-es-realmente-una-fobia",
+          "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+          "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+        ],
+      },
       {
         title: "Anxiety and learned responses",
         description:

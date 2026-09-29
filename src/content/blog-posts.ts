@@ -639,6 +639,356 @@ const esHypnosisAnxiety: BlogPostContent = {
   ],
 };
 
+const esPhobiaIntro: BlogPostContent = {
+  slug: "que-es-realmente-una-fobia",
+  title: "¿Qué es realmente una fobia?",
+  excerpt:
+    "Tener miedo es humano. Una fobia aparece cuando ese miedo se vuelve desproporcionado y empieza a condicionar lo que hacemos.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "Tener miedo es humano. Una fobia aparece cuando ese miedo se vuelve desproporcionado y empieza a condicionar lo que hacemos.",
+    },
+    {
+      type: "p",
+      text: "Arañas. Volando. Ascensores. Agujas. Conducir. Espacios cerrados. Alturas. Hay cosas que pueden producirnos cierta incomodidad y que simplemente preferimos evitar. Pero una fobia es algo diferente.",
+    },
+    {
+      type: "p",
+      text: "La reacción puede ser tan intensa que sabemos racionalmente que el peligro es pequeño y, aun así, nuestro cuerpo responde como si realmente estuviéramos amenazados.",
+    },
+    { type: "h2", text: "El miedo tiene una función" },
+    {
+      type: "p",
+      text: "El miedo no es nuestro enemigo. Es uno de los sistemas que nos ha permitido sobrevivir como especie.",
+    },
+    {
+      type: "p",
+      text: "Ante una amenaza, nuestro organismo se prepara rápidamente para responder: aumenta la atención, cambia la respiración, el corazón puede acelerarse y nuestros músculos se preparan para actuar.",
+    },
+    {
+      type: "p",
+      text: "Todo ocurre en muy poco tiempo. El problema aparece cuando esa alarma se activa con una intensidad muy superior al peligro real.",
+    },
+    {
+      type: "p",
+      text: "Alguien puede saber perfectamente que un pequeño insecto no supone una amenaza grave y, sin embargo, sentir una necesidad prácticamente irresistible de salir de la habitación.",
+    },
+    {
+      type: "p",
+      text: "No es una decisión racional. Es una respuesta de miedo.",
+    },
+    { type: "h2", text: "¿Cómo puede aparecer una fobia?" },
+    {
+      type: "p",
+      text: "No existe una única explicación. En algunas personas comienza después de una experiencia desagradable: un vuelo turbulento, una mordedura de perro o una sensación de pánico dentro de un ascensor.",
+    },
+    {
+      type: "p",
+      text: "En otras puede desarrollarse sin que exista un acontecimiento claramente identificable. También podemos aprender observando a otras personas o escuchando repetidamente que determinadas situaciones son peligrosas.",
+    },
+    {
+      type: "p",
+      text: "Nuestro cerebro está constantemente aprendiendo asociaciones. Y algunas pueden quedar vinculadas a una respuesta intensa de alarma.",
+    },
+    { type: "h2", text: "Saber que no hay peligro no siempre basta" },
+    {
+      type: "p",
+      text: "Aquí aparece una de las características más frustrantes de las fobias. La persona puede pensar: sé que no debería darme miedo. Y seguir sintiendo miedo.",
+    },
+    {
+      type: "p",
+      text: "Porque saber algo y sentirlo no son exactamente el mismo proceso. Podemos entender racionalmente que un avión es un medio de transporte muy seguro y aun así notar cómo nuestro cuerpo se activa al entrar en el aeropuerto.",
+    },
+    {
+      type: "p",
+      text: "Podemos saber que un ascensor funciona correctamente y seguir sintiendo que necesitamos salir inmediatamente. No significa que la persona sea irracional. Significa que su sistema de alarma ha aprendido a reaccionar ante determinadas señales.",
+    },
+    { type: "h2", text: "Cuando el miedo empieza a decidir" },
+    {
+      type: "p",
+      text: "El problema principal de una fobia no siempre es el miedo. Es cuánto condiciona nuestra vida.",
+    },
+    {
+      type: "p",
+      text: "Una persona con miedo a volar puede rechazar determinados trabajos. Alguien con miedo a conducir puede organizar toda su vida para evitar determinadas carreteras. Una persona con miedo a las agujas puede posponer revisiones médicas.",
+    },
+    {
+      type: "p",
+      text: "Y poco a poco empezamos a tomar decisiones no en función de lo que queremos hacer, sino de aquello que queremos evitar.",
+    },
+    { type: "h2", text: "Pero lo aprendido también puede cambiar" },
+    {
+      type: "p",
+      text: "Nuestro cerebro tiene capacidad para incorporar nuevas experiencias. Una situación que durante mucho tiempo hemos asociado con peligro puede empezar a relacionarse con respuestas diferentes.",
+    },
+    {
+      type: "p",
+      text: "Ese proceso no consiste simplemente en decir: no tengas miedo. Consiste en crear experiencias que permitan al cerebro comprobar que existen otras posibilidades.",
+    },
+    {
+      type: "quote",
+      text: "Superar un miedo no significa necesariamente dejar de sentirlo por completo. Significa que ese miedo deje de elegir por nosotros.",
+    },
+    {
+      type: "note",
+      text: "Este artículo tiene carácter divulgativo y está orientado al desarrollo personal. Las fobias intensas o incapacitantes deben ser evaluadas y tratadas por profesionales sanitarios cualificados.",
+    },
+  ],
+};
+
+const esAvoidanceFear: BlogPostContent = {
+  slug: "por-que-evitar-aquello-que-tememos-puede-mantener-el-miedo",
+  title: "¿Por qué evitar aquello que tememos puede mantener el miedo?",
+  excerpt:
+    "Evitar aquello que nos produce miedo funciona muy bien a corto plazo. Precisamente por eso puede convertirse en parte del problema.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "Evitar aquello que nos produce miedo funciona muy bien a corto plazo. Precisamente por eso puede convertirse en parte del problema.",
+    },
+    {
+      type: "p",
+      text: "Imagina que tienes miedo a los ascensores. Llegas a un edificio y tienes dos posibilidades: ascensor o escaleras. Solo con pensar en entrar en el ascensor notas cómo aumenta la tensión.",
+    },
+    {
+      type: "p",
+      text: "Eliges las escaleras. Y ocurre algo inmediato: te sientes mejor. Ese alivio es importante para entender cómo puede mantenerse una fobia.",
+    },
+    { type: "h2", text: "El cerebro aprende del alivio" },
+    {
+      type: "p",
+      text: "Nuestro cerebro presta mucha atención a lo que ocurre después de nuestras acciones. Si evitamos algo que nos produce miedo y la ansiedad desaparece inmediatamente, aprendemos una asociación muy potente: evitar equivale a seguridad.",
+    },
+    {
+      type: "p",
+      text: "La siguiente vez tendremos todavía más razones para evitarlo. Y así puede formarse un círculo: miedo, evitación, alivio y más evitación.",
+    },
+    {
+      type: "p",
+      text: "A corto plazo funciona. A largo plazo puede reforzar la idea de que aquello que evitábamos realmente era peligroso.",
+    },
+    { type: "h2", text: "Nunca comprobamos qué habría ocurrido" },
+    {
+      type: "p",
+      text: "Existe otro problema. Si siempre evitamos una situación, nunca damos al cerebro la oportunidad de aprender algo nuevo.",
+    },
+    {
+      type: "p",
+      text: "Volvamos al ascensor. Si siempre subimos por las escaleras, nuestro cerebro nunca puede experimentar: entré, sentí nervios, permanecí allí y finalmente salí sin que ocurriera aquello que temía.",
+    },
+    {
+      type: "p",
+      text: "Esa experiencia es importante. Por eso las intervenciones basadas en exposición cuentan con un respaldo científico especialmente sólido para las fobias específicas. En ellas, la persona se aproxima de forma planificada a aquello que teme para favorecer nuevos aprendizajes.",
+    },
+    {
+      type: "p",
+      text: "Diferentes metaanálisis han encontrado efectos importantes tanto con programas de varias sesiones como con determinadas intervenciones intensivas de una sola sesión.",
+    },
+    { type: "h2", text: "Y antes de la situación aparece la imaginación" },
+    {
+      type: "p",
+      text: "Las fobias no comienzan necesariamente cuando estamos delante de aquello que tememos. Pueden empezar mucho antes.",
+    },
+    {
+      type: "p",
+      text: "Una persona que tiene que volar el sábado puede empezar a sentir ansiedad el lunes. Imagina turbulencias, piensa en estar atrapada, visualiza todo aquello que podría salir mal.",
+    },
+    {
+      type: "p",
+      text: "Sin darse cuenta, puede pasar varios días ensayando mentalmente el escenario que más teme. Y el cuerpo responde a esas imágenes.",
+    },
+    { type: "h2", text: "Prestamos atención a las señales de peligro" },
+    {
+      type: "p",
+      text: "Cuando estamos asustados, nuestra atención cambia. Empezamos a buscar información relacionada con la amenaza.",
+    },
+    {
+      type: "p",
+      text: "Si tenemos miedo a volar, quizá prestemos una atención extraordinaria a cada ruido del avión. Si tememos conducir, podemos interpretar cualquier movimiento de otro vehículo como una señal de peligro.",
+    },
+    {
+      type: "p",
+      text: "Si tenemos miedo a desmayarnos, podemos observar continuamente nuestras propias sensaciones físicas. Cuanto más buscamos una señal, más fácil es encontrarla. Y el círculo continúa.",
+    },
+    { type: "h2", text: "Crear un aprendizaje diferente" },
+    {
+      type: "p",
+      text: "Trabajar con una fobia implica precisamente romper ese ciclo. No necesariamente enfrentándonos de golpe a aquello que más miedo nos da.",
+    },
+    {
+      type: "p",
+      text: "En contextos terapéuticos, la exposición suele realizarse de manera estructurada y adaptada a cada persona. El objetivo es permitir que el cerebro incorpore nueva información.",
+    },
+    {
+      type: "p",
+      text: "Puedo sentir miedo y permanecer aquí. Una sensación incómoda no significa necesariamente peligro. No necesito escapar inmediatamente.",
+    },
+    {
+      type: "p",
+      text: "Poco a poco, la relación con esa situación puede empezar a cambiar. Porque nuestro cerebro no solo aprende miedo.",
+    },
+    {
+      type: "quote",
+      text: "También puede aprender seguridad, tolerancia y nuevas formas de responder.",
+    },
+    {
+      type: "note",
+      text: "Las fobias pueden formar parte de un trastorno de ansiedad. Cuando producen un sufrimiento importante o limitan significativamente la vida cotidiana, es recomendable acudir a un profesional sanitario especializado.",
+    },
+  ],
+};
+
+const esHypnosisPhobias: BlogPostContent = {
+  slug: "hipnosis-y-fobias-aprender-una-respuesta-diferente",
+  title: "Hipnosis y fobias: aprender una respuesta diferente",
+  excerpt:
+    "Una fobia puede sentirse como una reacción automática. La hipnosis permite trabajar con esa parte más automática de la experiencia.",
+  date: "2026-09-29",
+  blocks: [
+    {
+      type: "lead",
+      text: "Una fobia puede sentirse como una reacción automática: sabemos que algo no representa un peligro real y, sin embargo, nuestro cuerpo responde como si lo fuera. La hipnosis permite trabajar precisamente con esa parte más automática de la experiencia.",
+    },
+    {
+      type: "p",
+      text: "Una persona puede saber perfectamente que un ascensor es seguro. Puede entender que una araña pequeña no supone una amenaza. Puede conocer las estadísticas sobre seguridad aérea. Y aun así sentir miedo.",
+    },
+    {
+      type: "p",
+      text: "Esto nos recuerda algo importante: comprender racionalmente una situación no siempre es suficiente para cambiar nuestra respuesta emocional.",
+    },
+    {
+      type: "p",
+      text: "Cuando existe una fobia, determinadas imágenes, sensaciones o situaciones pueden haber quedado asociadas a una respuesta intensa de alarma. La hipnosis ofrece una forma de trabajar con esas asociaciones desde un estado de atención especialmente focalizada.",
+    },
+    { type: "h2", text: "Trabajar con aquello que imaginamos" },
+    {
+      type: "p",
+      text: "Las fobias no aparecen únicamente cuando estamos delante de aquello que tememos. Muchas veces comienzan antes.",
+    },
+    {
+      type: "p",
+      text: "Pensamos en el vuelo de la semana siguiente. Imaginamos que el ascensor se queda parado. Anticipamos que perderemos el control. Nuestro organismo puede empezar a reaccionar ante algo que todavía no ha sucedido.",
+    },
+    {
+      type: "p",
+      text: "Durante la hipnosis podemos utilizar esa misma capacidad de imaginación en otra dirección. En lugar de repetir una y otra vez el escenario que genera miedo, podemos ensayar mentalmente una experiencia diferente.",
+    },
+    {
+      type: "p",
+      text: "Una persona con miedo a volar, por ejemplo, puede imaginarse entrando en el aeropuerto, sentándose en el avión, escuchando los motores y experimentando el despegue mientras practica una manera diferente de dirigir su atención y responder a sus sensaciones.",
+    },
+    { type: "h2", text: "Crear nuevas asociaciones" },
+    {
+      type: "p",
+      text: "Una fobia puede entenderse, en parte, como un aprendizaje. Determinada situación ha quedado asociada a peligro.",
+    },
+    {
+      type: "p",
+      text: "La hipnosis permite trabajar con imágenes, sensaciones, recuerdos, expectativas y respuestas internas para explorar asociaciones diferentes. No consiste simplemente en decir: a partir de ahora ya no tienes miedo.",
+    },
+    {
+      type: "p",
+      text: "Podemos ayudar a la persona a experimentar internamente una situación que antes estaba vinculada únicamente al miedo mientras incorpora otras sensaciones y recursos: calma, seguridad, curiosidad, confianza y capacidad para permanecer presente.",
+    },
+    {
+      type: "p",
+      text: "El objetivo es ampliar las posibilidades de respuesta.",
+    },
+    { type: "h2", text: "La experiencia puede sentirse muy real" },
+    {
+      type: "p",
+      text: "Cuando imaginamos algo intensamente, nuestro cuerpo puede responder. Piensa en morder un limón. Probablemente puedas imaginar su sabor, su textura e incluso notar cómo aumenta ligeramente la saliva.",
+    },
+    {
+      type: "p",
+      text: "No hay ningún limón. Pero la experiencia mental produce una respuesta.",
+    },
+    {
+      type: "p",
+      text: "Durante la hipnosis, la atención y la imaginación pueden adquirir una intensidad especial. Esto permite trabajar con experiencias simuladas de una forma mucho más absorbente que simplemente hablando sobre ellas.",
+    },
+    {
+      type: "p",
+      text: "Y esa capacidad resulta especialmente interesante cuando aquello que queremos modificar está muy relacionado con la anticipación y las respuestas automáticas.",
+    },
+    { type: "h2", text: "¿Qué sabemos sobre hipnosis y miedo?" },
+    {
+      type: "p",
+      text: "La hipnosis se ha investigado en numerosos contextos relacionados con la ansiedad y el miedo.",
+    },
+    {
+      type: "p",
+      text: "Un metaanálisis que reunió 17 ensayos encontró que, al terminar las intervenciones, las personas que habían recibido hipnosis mostraban una reducción de la ansiedad significativamente superior a las condiciones de control. Los autores observaron además que los resultados eran especialmente favorables cuando la hipnosis se integraba con otras intervenciones psicológicas.",
+    },
+    {
+      type: "p",
+      text: "También existen investigaciones en miedos específicos. La ansiedad y la fobia dental, por ejemplo, han sido objeto de distintos ensayos clínicos con hipnosis. Una revisión sistemática de 19 estudios describió los resultados como prometedores, aunque señaló que la gran variedad de métodos utilizados dificulta comparar directamente los estudios entre sí.",
+    },
+    {
+      type: "p",
+      text: "Investigaciones más recientes continúan estudiando la hipnosis dentro de las intervenciones no farmacológicas para reducir miedo y ansiedad, encontrando efectos sobre distintas medidas psicológicas y fisiológicas, aunque todavía se necesitan estudios más amplios y homogéneos.",
+    },
+    {
+      type: "p",
+      text: "Esto también ayuda a entender una diferencia importante entre investigación y experiencia clínica. En la práctica profesional existen terapeutas que utilizan desde hace años la hipnosis para trabajar con miedos y fobias y observan cambios relevantes en muchas personas.",
+    },
+    {
+      type: "p",
+      text: "La investigación científica intenta estudiar esos resultados bajo condiciones controladas, comparar métodos y determinar en qué personas y circunstancias funcionan mejor. Que todavía exista investigación por hacer no significa que una herramienta carezca de utilidad. Significa que seguimos intentando comprender mejor cómo funciona, para quién funciona y cómo utilizarla de la manera más eficaz.",
+    },
+    { type: "h2", text: "Hipnosis y exposición no tienen por qué ser opuestas" },
+    {
+      type: "p",
+      text: "También podemos alejarnos de la idea de que hay que elegir entre una técnica u otra.",
+    },
+    {
+      type: "p",
+      text: "Una persona puede utilizar la hipnosis para prepararse mentalmente, trabajar la anticipación y practicar una respuesta diferente, y posteriormente trasladar ese aprendizaje a situaciones reales.",
+    },
+    {
+      type: "p",
+      text: "Por ejemplo, alguien con miedo a conducir puede trabajar primero imaginando determinados recorridos mientras aprende a gestionar sus sensaciones. Después puede comenzar a enfrentarse progresivamente a situaciones reales.",
+    },
+    {
+      type: "p",
+      text: "La experiencia imaginada y la experiencia real pueden formar parte del mismo proceso de aprendizaje.",
+    },
+    { type: "h2", text: "De no puedo a puedo experimentar esto de otra manera" },
+    {
+      type: "p",
+      text: "Quizá una de las partes más interesantes del trabajo con una fobia sea precisamente descubrir que una reacción que parecía completamente automática puede modificarse.",
+    },
+    {
+      type: "p",
+      text: "No necesariamente porque desaparezca cualquier sensación de nerviosismo. Sino porque cambia la relación con ella.",
+    },
+    {
+      type: "p",
+      text: "La persona puede descubrir: puedo sentir esta sensación y seguir aquí. No necesito escapar inmediatamente. Mi cuerpo puede aprender otra respuesta. Puedo imaginar esta situación sin experimentar el mismo nivel de miedo.",
+    },
+    {
+      type: "p",
+      text: "Y cuando cambia esa experiencia interna, también pueden empezar a cambiar nuestras decisiones.",
+    },
+    {
+      type: "p",
+      text: "Dentro del desarrollo personal, la hipnosis puede ser una herramienta especialmente interesante para explorar estos patrones, trabajar con la anticipación y practicar nuevas formas de responder.",
+    },
+    {
+      type: "quote",
+      text: "Un miedo aprendido no tiene por qué convertirse en una limitación permanente. Nuestro cerebro también tiene capacidad para aprender experiencias nuevas.",
+    },
+    {
+      type: "note",
+      text: "Contenido divulgativo orientado al desarrollo personal. Cuando una fobia es intensa, provoca ataques de pánico, genera una evitación importante o limita significativamente la vida cotidiana, es recomendable contar con la valoración de un profesional sanitario cualificado. La hipnosis puede utilizarse de forma complementaria dentro de un proceso adecuado a cada persona.",
+    },
+  ],
+};
+
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment la hipnosi?",
@@ -771,6 +1121,9 @@ const en: BlogPostContent = {
 
 const postsByLang: Record<Lang, BlogPostContent[]> = {
   es: [
+    esHypnosisPhobias,
+    esAvoidanceFear,
+    esPhobiaIntro,
     esHypnosisAnxiety,
     esBodyAlert,
     esAnxietyIntro,
