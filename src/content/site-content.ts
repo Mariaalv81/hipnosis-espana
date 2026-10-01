@@ -1170,7 +1170,7 @@ const va: Dict = {
     consent: "He llegit i accepte la política de privacitat.",
     send: "Enviar missatge",
     sent: "Gràcies, he rebut el teu missatge. Et respondré ben aviat.",
-    note: "Formulari de mostra: encara no envia correus. Quan vulgues el connectem.",
+    note: "Envia el teu missatge i et respondré prompte. Si ho preferixes, també pots reservar directament en el calendari.",
     infoTitle: "Dades",
     area: "Sueca · despatx independent dins del Centre Sanar",
     languages: "Sessions en castellà i anglés",
@@ -1207,7 +1207,8 @@ const va: Dict = {
   },
   common: {
     bookNow: "Reservar una sessió",
-    bookSoon: "Les reserves en línia estaran disponibles prompte. Escriu-me mentrestant.",
+    bookSoon: "Reserva directament en el calendari o escriu-me si preferixes consultar-ho.",
+    bookIntro: "Reserva directament en el calendari o escriu-me si preferixes consultar-ho.",
     contactMe: "Escriu-me",
     draft: "Contingut provisional pendent de les teues dades definitives.",
     bookCalendar: "Reservar en el calendari",
@@ -1796,7 +1797,7 @@ const en: Dict = {
     consent: "I have read and accept the privacy policy.",
     send: "Send message",
     sent: "Thank you, your message has been received. I'll reply shortly.",
-    note: "Sample form: it doesn't send emails yet. We can connect it whenever you like.",
+    note: "Send your message and I'll reply shortly. If you prefer, you can also book directly in the calendar.",
     infoTitle: "Details",
     area: "Sueca · independent practice within Centro Sanar",
     languages: "Sessions available in Spanish and English",
@@ -1833,7 +1834,10 @@ const en: Dict = {
   },
   common: {
     bookNow: "Book a session",
-    bookSoon: "Online booking is coming soon. Write to me in the meantime.",
+    bookSoon:
+      "Book directly in the calendar, or write to me first if you prefer to ask a question.",
+    bookIntro:
+      "Book directly in the calendar, or write to me first if you prefer to ask a question.",
     contactMe: "Write to me",
     draft: "Placeholder content pending your final details.",
     bookCalendar: "Book in the calendar",

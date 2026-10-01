@@ -1,19 +1,19 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import fetch from 'node-fetch';
-import fs from 'fs';
-import path from 'path';
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+import fetch from "node-fetch";
+import fs from "fs";
+import path from "path";
 
 // Load .env.local into process.env for local dev (keeps production unchanged)
 function loadLocalEnv() {
   try {
-    const p = path.resolve(process.cwd(), '.env.local');
+    const p = path.resolve(process.cwd(), ".env.local");
     if (!fs.existsSync(p)) return;
-    const txt = fs.readFileSync(p, 'utf8');
+    const txt = fs.readFileSync(p, "utf8");
     for (const line of txt.split(/\r?\n/)) {
       const m = line.match(/^\s*([A-Za-z0-9_]+)=(.*)$/);
       if (!m) continue;
       const k = m[1];
-      let v = m[2] || '';
+      let v = m[2] || "";
       // strip surrounding quotes if present
       if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
         v = v.slice(1, -1);
@@ -26,24 +26,34 @@ function loadLocalEnv() {
 }
 
 loadLocalEnv();
-import { google } from 'googleapis';
+import { google } from "googleapis";
 
-async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: string; subject: string; text: string }) {
+async function sendViaSendGrid({
+  to,
+  from,
+  subject,
+  text,
+}: {
+  to: string;
+  from: string;
+  subject: string;
+  text: string;
+}) {
   const apiKey = process.env.SENDGRID_API_KEY;
-  if (!apiKey) throw new Error('SENDGRID_API_KEY not set');
+  if (!apiKey) throw new Error("SENDGRID_API_KEY not set");
 
   const payload = {
     personalizations: [{ to: [{ email: to }] }],
     from: { email: from },
     subject,
-    content: [{ type: 'text/plain', value: text }],
+    content: [{ type: "text/plain", value: text }],
   };
 
-  const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
-    method: 'POST',
+  const res = await fetch("https://api.sendgrid.com/v3/mail/send", {
+    method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
   });
@@ -54,65 +64,82 @@ async function sendViaSendGrid({ to, from, subject, text }: { to: string; from: 
   }
 }
 
-async function appendToSheet({ sheetId, name, email, phone, message }: { sheetId: string; name: string; email: string; phone?: string; message: string }) {
+async function appendToSheet({
+  sheetId,
+  name,
+  email,
+  phone,
+  message,
+}: {
+  sheetId: string;
+  name: string;
+  email: string;
+  phone?: string;
+  message: string;
+}) {
   const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   let privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
-  if (!clientEmail || !privateKey) throw new Error('Google service account not configured');
-  if (privateKey.includes('\\n')) privateKey = privateKey.replace(/\\n/g, '\n');
+  if (!clientEmail || !privateKey) throw new Error("Google service account not configured");
+  if (privateKey.includes("\\n")) privateKey = privateKey.replace(/\\n/g, "\n");
 
   const jwtClient = new google.auth.JWT({
     email: clientEmail,
     key: privateKey,
-    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
 
   await jwtClient.authorize();
 
-  const sheets = google.sheets({ version: 'v4', auth: jwtClient });
+  const sheets = google.sheets({ version: "v4", auth: jwtClient });
 
-  const values = [[new Date().toISOString(), name, email, phone ?? '', message]];
+  const values = [[new Date().toISOString(), name, email, phone ?? "", message]];
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: sheetId,
-    range: 'Sheet1!A:E',
-    valueInputOption: 'RAW',
+    range: "Sheet1!A:E",
+    valueInputOption: "RAW",
     requestBody: { values },
   });
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'POST') return res.status(405).send({ ok: false, error: 'Method not allowed' });
+  if (req.method !== "POST")
+    return res.status(405).send({ ok: false, error: "Method not allowed" });
 
   try {
     const { name, email, phone, message, website, recaptchaToken } = req.body || {};
 
     // Honeypot: if website field (hidden) is filled, likely spam
-    if (website) return res.status(400).json({ ok: false, error: 'Spam detected' });
+    if (website) return res.status(400).json({ ok: false, error: "Spam detected" });
 
-    if (!name || !email || !message) return res.status(400).json({ ok: false, error: 'Missing fields' });
+    if (!name || !email || !message)
+      return res.status(400).json({ ok: false, error: "Missing fields" });
 
     // Optional: verify reCAPTCHA if secret provided
     const recaptchaSecret = process.env.RECAPTCHA_SECRET;
     if (recaptchaSecret) {
-      if (!recaptchaToken) return res.status(400).json({ ok: false, error: 'Missing recaptcha token' });
+      if (!recaptchaToken)
+        return res.status(400).json({ ok: false, error: "Missing recaptcha token" });
 
-      const verifyRes = await fetch('https://www.google.com/recaptcha/api/siteverify', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: `secret=${encodeURIComponent(recaptchaSecret)}&response=${encodeURIComponent(recaptchaToken)}`,
       });
 
       const verifyJson = await verifyRes.json();
       if (!verifyJson.success || (verifyJson.score !== undefined && verifyJson.score < 0.5)) {
-        return res.status(400).json({ ok: false, error: 'recaptcha verification failed' });
+        return res.status(400).json({ ok: false, error: "recaptcha verification failed" });
       }
     }
 
     // If Google Sheet configured, append row there
     const sheetId = process.env.SHEET_ID;
-    const hasGoogle = Boolean(sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY);
-    console.log('env presence:', {
+    const hasGoogle = Boolean(
+      sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY,
+    );
+    console.log("env presence:", {
       sheetId: !!sheetId,
       googleEmail: !!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
       googleKey: !!process.env.GOOGLE_PRIVATE_KEY,
@@ -122,23 +149,23 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (hasGoogle) {
       await appendToSheet({ sheetId, name, email, phone, message });
-      return res.status(200).json({ ok: true, via: 'sheets' });
+      return res.status(200).json({ ok: true, via: "sheets" });
     }
 
     // Otherwise fallback to SendGrid
     const to = process.env.CONTACT_EMAIL || process.env.SENDGRID_TO;
-    const from = process.env.SENDGRID_FROM || (process.env.CONTACT_EMAIL || 'no-reply@example.com');
+    const from = process.env.SENDGRID_FROM || process.env.CONTACT_EMAIL || "no-reply@example.com";
 
-    if (!to) return res.status(500).json({ ok: false, error: 'Recipient not configured' });
+    if (!to) return res.status(500).json({ ok: false, error: "Recipient not configured" });
 
     const subject = `Contacto web: ${name}`;
-    const text = `Nuevo mensaje desde la web:\n\nNombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`;
+    const text = `Nuevo mensaje desde la web:\n\nNombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone || "No indicado"}\n\nMensaje:\n${message}`;
 
     await sendViaSendGrid({ to, from, subject, text });
 
-    return res.status(200).json({ ok: true, via: 'sendgrid' });
+    return res.status(200).json({ ok: true, via: "sendgrid" });
   } catch (err: any) {
-    console.error('send-email error', err);
-    return res.status(500).json({ ok: false, error: err.message || 'Server error' });
+    console.error("send-email error", err);
+    return res.status(500).json({ ok: false, error: err.message || "Server error" });
   }
 }
