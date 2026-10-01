@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { Check, Clock, Phone, Sparkles } from "lucide-react";
+import { Check, Clock, Instagram, Phone, Sparkles } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
@@ -401,7 +401,16 @@ function DejarDeFumarPage() {
             </ul>
 
             <div className="mt-8 border-t border-border pt-6 text-xs text-muted-foreground">
-              <p>
+              <a
+                href={siteSettings.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-pink-600 dark:hover:text-pink-400"
+              >
+                <Instagram className="size-4 shrink-0 text-pink-600 dark:text-pink-400" />
+                <span>Vídeos y reflexiones en {siteSettings.instagramHandle}</span>
+              </a>
+              <p className="mt-4">
                 Despacho en Sueca (Valencia) dentro del Centro Sanar. Para cualquier otra consulta,
                 también puedes usar el{" "}
                 <Link to="/contacto" className="text-primary underline">

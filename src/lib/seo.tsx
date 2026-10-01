@@ -1,3 +1,5 @@
+import { siteSettings } from "@/content/site-settings";
+
 export const SITE_URL = "https://mariacabo.com";
 export const SITE_NAME = "María Cabo";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
@@ -82,6 +84,7 @@ export function makeLocalBusinessSchema() {
     image: DEFAULT_OG_IMAGE,
     description:
       "Acompañamiento con hipnosis para el desarrollo personal en Sueca (Valencia): cambio de hábitos, dejar de fumar, calma, foco y confianza.",
+    sameAs: [siteSettings.instagramUrl],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Centro Sanar",
@@ -154,6 +157,7 @@ export function makeArticleSchema({
       "@type": "Person",
       name: "María Cabo",
       url: `${SITE_URL}/sobre-mi`,
+      sameAs: [siteSettings.instagramUrl],
     },
     publisher: {
       "@type": "Organization",

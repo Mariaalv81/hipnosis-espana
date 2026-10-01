@@ -5,4 +5,6 @@ export const siteSettings = {
   smokingProgramEmail: "maria.a.cabo@gmail.com",
   smokingProgramEmailBody:
     "Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nMejor horario para la entrevista de 20 minutos: ",
+  instagramUrl: "https://www.instagram.com/mariacabo_hipnosis/",
+  instagramHandle: "@mariacabo_hipnosis",
 };

@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
+import { Instagram } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { openCookiePreferences } from "@/lib/cookie-consent";
+import { siteSettings } from "@/content/site-settings";
 import mcLogoBlack from "@/assets/images/mc-negro-web.png";
 
 export function SiteFooter() {
@@ -49,6 +51,22 @@ export function SiteFooter() {
             </p>
           </div>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t.tagline}</p>
+
+          <div className="mt-5">
+            <a
+              href={siteSettings.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/80 px-3.5 py-1.5 text-xs text-foreground transition-all hover:border-pink-500/40 hover:text-pink-600 dark:hover:text-pink-400 hover:shadow-sm"
+              aria-label="Instagram de María Cabo"
+            >
+              <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
+              <span className="font-medium">{siteSettings.instagramHandle}</span>
+            </a>
+            <p className="mt-1.5 text-[0.72rem] text-muted-foreground">
+              Divulgación, reflexiones y día a día
+            </p>
+          </div>
         </div>
 
         <nav className="grid gap-2 text-sm">

@@ -1,7 +1,8 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Instagram } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makeArticleSchema, makeSeo } from "@/lib/seo";
+import { siteSettings } from "@/content/site-settings";
 import { getBlogPost, type BlogBlock } from "@/content/blog-posts";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -113,6 +114,28 @@ function BlogPostPage() {
           <Block key={i} block={block} />
         ))}
       </div>
+
+      {/* Tarjeta de autora con Instagram */}
+      <section className="container-page max-w-2xl pb-12">
+        <div className="flex flex-col gap-4 rounded-3xl border border-border/80 bg-muted/30 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">Escrito por</p>
+            <h3 className="text-lg font-medium">María Cabo</h3>
+            <p className="mt-0.5 text-xs text-muted-foreground">
+              Hipnosis y desarrollo personal en Sueca (Valencia) y online.
+            </p>
+          </div>
+          <a
+            href={siteSettings.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-xs font-medium text-foreground transition-all hover:border-pink-500/40 hover:text-pink-600 dark:hover:text-pink-400"
+          >
+            <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
+            <span>Seguir {siteSettings.instagramHandle}</span>
+          </a>
+        </div>
+      </section>
 
       {currentSeries && (
         <section className="container-page max-w-2xl pb-12">

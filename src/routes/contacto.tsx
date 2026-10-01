@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
+import { ExternalLink, Instagram } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
@@ -148,6 +149,34 @@ function ContactPage() {
             <li>{t.contact.languages}</li>
             <li>{t.contact.hours}</li>
           </ul>
+
+          <div className="mt-6 border-t border-border pt-6">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Canal de divulgación y contacto directo
+            </p>
+            <a
+              href={siteSettings.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-border/80 bg-muted/40 p-4 transition-all hover:border-pink-500/40 hover:bg-pink-500/5 group"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-sm">
+                  <Instagram className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium group-hover:text-pink-600 dark:group-hover:text-pink-400">
+                    {siteSettings.instagramHandle}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Escríbeme por mensaje directo o sígueme
+                  </p>
+                </div>
+              </div>
+              <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-foreground" />
+            </a>
+          </div>
+
           <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
             {t.footer.disclaimer}
           </p>

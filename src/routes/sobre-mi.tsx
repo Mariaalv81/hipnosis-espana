@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ExternalLink, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 import { makeSeo } from "@/lib/seo";
+import { siteSettings } from "@/content/site-settings";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 
 export const Route = createFileRoute("/sobre-mi")({
@@ -79,6 +81,31 @@ function AboutPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-sm">
+                  <Instagram className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">{siteSettings.instagramHandle}</p>
+                  <p className="text-xs text-muted-foreground">Comunidad en Instagram</p>
+                </div>
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                Comparto reflexiones, desmitificación de la hipnosis, casos y consejos prácticos
+                casi a diario.
+              </p>
+              <a
+                href={siteSettings.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-muted/60 px-4 py-2.5 text-xs font-medium text-foreground transition-colors hover:bg-pink-500/10 hover:text-pink-600 dark:hover:text-pink-400"
+              >
+                <span>Seguir a María</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
             </div>
 
             <div className="mt-8 rounded-2xl bg-primary p-7 text-primary-foreground">

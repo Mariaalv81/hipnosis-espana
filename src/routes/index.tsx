@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ExternalLink, Instagram } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makeFaqSchema, makeLocalBusinessSchema, makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
+import { siteSettings } from "@/content/site-settings";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
 import heroAvif from "@/assets/images/maria-cabo.avif";
@@ -176,10 +178,20 @@ function HypnosisPage() {
           <div>
             <h2 className="text-3xl md:text-4xl">{t.home.aboutTitle}</h2>
             <p className="mt-4 text-sm text-muted-foreground">{t.home.aboutText}</p>
-            <div className="mt-6">
-              <Link to="/sobre-mi" className="text-sm text-primary underline">
+            <div className="mt-6 flex flex-wrap items-center gap-4">
+              <Link to="/sobre-mi" className="text-sm text-primary underline underline-offset-4">
                 {t.home.aboutLink}
               </Link>
+              <a
+                href={siteSettings.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3.5 py-1.5 text-xs text-foreground transition-all hover:border-pink-500/40 hover:text-pink-600 dark:hover:text-pink-400"
+                aria-label="Instagram de María Cabo"
+              >
+                <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
+                <span>{siteSettings.instagramHandle}</span>
+              </a>
             </div>
           </div>
           <div>
@@ -218,6 +230,36 @@ function HypnosisPage() {
               <p className="mt-2 text-sm text-muted-foreground">{post.excerpt}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* Instagram Banner / Canal de divulgación */}
+      <section className="border-y border-border/60 bg-muted/40 py-12 md:py-16">
+        <div className="container-page flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-md">
+              <Instagram className="h-7 w-7" />
+            </div>
+            <div>
+              <p className="eyebrow">DIVULGACIÓN & CASOS</p>
+              <h3 className="mt-1 font-serif text-2xl md:text-3xl">
+                Conoce el enfoque en Instagram
+              </h3>
+              <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                Vídeos cortos, reflexiones sobre hipnosis sin mitos y hábitos para el cambio en
+                Sueca y online.
+              </p>
+            </div>
+          </div>
+          <a
+            href={siteSettings.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background shadow-sm transition-opacity hover:opacity-90"
+          >
+            <span>Seguir @mariacabo_hipnosis</span>
+            <ExternalLink className="h-4 w-4" />
+          </a>
         </div>
       </section>
 
