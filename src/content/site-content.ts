@@ -468,7 +468,7 @@ const es = {
   sessions: {
     title: "Sesiones",
     intro:
-      "Sesiones individuales presenciales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad, u online por videoconferencia. Precios claros, sin permanencia y con política de cambios transparente.",
+      "Sesiones individuales presenciales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad, u online por videoconferencia. Precios claros y con política de cambios transparente.",
     items: [
       {
         name: "Sesión individual",
@@ -478,7 +478,7 @@ const es = {
         points: [
           "Duración de 60 minutos",
           "Sueca, a domicilio en Valencia u online",
-          "Sin permanencia",
+          "A tu propio ritmo",
         ],
       },
       {
@@ -1358,14 +1358,14 @@ const va: Dict = {
   sessions: {
     title: "Sessions",
     intro:
-      "Sessions individuals presencials a Sueca, en un despatx independent dins de Centro Sanar. Preus clars, sense permanència i amb política de canvis transparent.",
+      "Sessions individuals presencials a Sueca, en un despatx independent dins de Centro Sanar. Preus clars i amb política de canvis transparent.",
     items: [
       {
         name: "Sessió individual",
         price: "70 €",
         unit: "per hora",
         text: "Una hora d'acompanyament amb hipnosi, centrada en l'objectiu que hàgem definit.",
-        points: ["Duració de 60 minuts", "Presencial", "Sense permanència"],
+        points: ["Duració de 60 minuts", "Presencial", "Al teu propi ritme"],
       },
       {
         name: "Programa per a deixar de fumar",
@@ -2235,14 +2235,14 @@ const en: Dict = {
   sessions: {
     title: "Sessions",
     intro:
-      "One-to-one in-person sessions in Sueca, in an independent consultation room at Centro Sanar. Clear prices, no lock-in and a transparent change policy.",
+      "One-to-one in-person sessions in Sueca, in an independent consultation room at Centro Sanar. Clear prices and a transparent change policy.",
     items: [
       {
         name: "Individual session",
         price: "€70",
         unit: "per hour",
         text: "One hour of hypnosis-based support, focused on the goal we have defined together.",
-        points: ["60 minutes", "In person", "No lock-in"],
+        points: ["60 minutes", "In person", "At your own pace"],
       },
       {
         name: "Stop-smoking programme",
