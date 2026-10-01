@@ -77,17 +77,20 @@ export function makeLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
-    name: "María Cabo · Hipnosis y desarrollo personal",
+    name: "María Cabo · Hipnosis en Valencia y Sueca",
     alternateName: "María Cabo",
     url: SITE_URL,
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
     description:
-      "Acompañamiento con hipnosis para el desarrollo personal en Sueca (Valencia): cambio de hábitos, dejar de fumar, calma, foco y confianza.",
+      "Acompañamiento con hipnosis para el desarrollo personal en Sueca y Valencia (consulta presencial en Centro Sanar, sesiones a domicilio en casas de particulares en Valencia ciudad y formato online): cambio de hábitos, dejar de fumar, calma, foco y confianza.",
     sameAs: [siteSettings.instagramUrl],
     knowsAbout: [
       "Hipnosis",
+      "Hipnosis en Valencia",
+      "Hipnosis a domicilio en Valencia",
       "Dejar de fumar",
+      "Dejar de fumar en Valencia",
       "Cambio de hábitos",
       "Gestión del estrés",
       "Desarrollo personal",
@@ -101,9 +104,9 @@ export function makeLocalBusinessSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Sesión individual de hipnosis",
+            name: "Sesión individual de hipnosis (Sueca, a domicilio en Valencia u online)",
             description:
-              "Sesión presencial en Sueca u online de 1 hora para cambio de hábitos, calma y foco.",
+              "Sesión presencial de 1 hora en despacho en Sueca, a domicilio en casas de particulares en Valencia ciudad, o en formato online para cambio de hábitos, calma y foco.",
           },
           price: "60",
           priceCurrency: "EUR",
@@ -112,9 +115,9 @@ export function makeLocalBusinessSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Programa para dejar de fumar",
+            name: "Programa para dejar de fumar con hipnosis",
             description:
-              "Programa estructurado de tres sesiones de hipnosis con entrevista previa de 20 minutos sin compromiso.",
+              "Programa estructurado de tres sesiones de hipnosis (en Sueca o a domicilio en Valencia) con entrevista previa de 20 minutos sin compromiso.",
           },
           price: "300",
           priceCurrency: "EUR",
@@ -137,7 +140,11 @@ export function makeLocalBusinessSchema() {
     email: "maria.a.cabo@gmail.com",
     priceRange: "60€ - 300€",
     areaServed: [
+      { "@type": "City", name: "Valencia" },
       { "@type": "City", name: "Sueca" },
+      { "@type": "City", name: "Cullera" },
+      { "@type": "City", name: "Gandia" },
+      { "@type": "City", name: "Alzira" },
       { "@type": "AdministrativeArea", name: "Valencia" },
       { "@type": "AdministrativeArea", name: "Comunidad Valenciana" },
     ],

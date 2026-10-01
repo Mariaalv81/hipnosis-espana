@@ -17,7 +17,7 @@ const es = {
     book: "Reservar",
   },
   home: {
-    eyebrow: "Sueca · Sesiones presenciales",
+    eyebrow: "Valencia y Sueca · Presencial y a domicilio",
     title: "Un espacio para cambiar desde dentro",
     subtitle:
       "Acompañamiento con hipnosis para personas adultas que quieren producir cambios reales: hábitos, calma, foco y confianza. Con criterio, cercanía y expectativas honestas.",
@@ -60,7 +60,7 @@ const es = {
     heroTitle2: "ENTRENA TU MENTE.",
     heroTitle3: "AVANZA.",
     heroIntro:
-      "Acompañamiento con hipnosis para trabajar hábitos, confianza, foco y respuestas automáticas. Sesiones individuales y programas para organizaciones.",
+      "Acompañamiento con hipnosis para trabajar hábitos, confianza, foco y respuestas automáticas. Despacho en Sueca, a domicilio en Valencia y formato online.",
     heroPrimary: "RESERVAR UNA SESIÓN",
     heroSecondary: "SOLUCIONES PARA EMPRESAS",
     heroHow: "Conocer cómo funciona la hipnosis →",
@@ -288,9 +288,9 @@ const es = {
     notProvided: "No indicado",
   },
   smokingPage: {
-    seoTitle: "Programa para dejar de fumar con hipnosis en Sueca · María Cabo",
+    seoTitle: "Programa para dejar de fumar con hipnosis en Valencia y Sueca · María Cabo",
     seoDescription:
-      "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca (Valencia). Entrevista previa gratuita de 20 minutos sin compromiso.",
+      "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 20 minutos sin compromiso.",
     eyebrow: "PROGRAMA ANTITABACO",
     title: "DEJAR DE FUMAR CON HIPNOSIS",
     subtitle:
@@ -318,26 +318,26 @@ const es = {
       {
         num: "02",
         title: "SESIÓN 1 · EL DÍA DEL CAMBIO",
-        badge: "Presencial en Sueca (75 min)",
+        badge: "Sueca o a domicilio (75 min)",
         text: "Trabajamos en profundidad tus motivos personales, desactivamos los disparadores cotidianos y anclamos el nuevo estado de no fumador.",
       },
       {
         num: "03",
         title: "SESIÓN 2 · CONSOLIDACIÓN Y CALMA",
-        badge: "Presencial en Sueca (60 min)",
+        badge: "Sueca o a domicilio (60 min)",
         text: "Evaluamos los primeros días sin fumar, reforzamos la sensación de bienestar, gestionamos posibles picos de tensión y afianzamos nuevas respuestas.",
       },
       {
         num: "04",
         title: "SESIÓN 3 · AUTONOMÍA Y PREVENCIÓN",
-        badge: "Presencial en Sueca (60 min)",
+        badge: "Sueca o a domicilio (60 min)",
         text: "Proyección a largo plazo, herramientas para situaciones sociales o de estrés imprevisto y cierre del proceso con total independencia.",
       },
     ],
     includedTitle: "QUÉ INCLUYE EL PROGRAMA",
     includedItems: [
       "Entrevista previa de valoración de 20 minutos sin coste.",
-      "3 sesiones presenciales individuales e intensivas en Sueca.",
+      "3 sesiones individuales e intensivas (en Sueca o a domicilio en Valencia).",
       "Grabación de audio de refuerzo personalizada para escuchar en casa.",
       "Seguimiento y apoyo cercano entre sesiones.",
       "Pautas de respiración y autohipnosis para momentos puntuales de tensión.",
@@ -390,7 +390,7 @@ const es = {
       },
       {
         q: "¿Dónde se realizan las sesiones?",
-        a: "Las 3 sesiones presenciales se realizan en mi despacho independiente dentro del Centro Sanar en Sueca (Valencia). La entrevista previa de 20 minutos se realiza cómodamente por teléfono o videollamada.",
+        a: "Las sesiones presenciales se realizan en mi despacho dentro del Centro Sanar en Sueca (Valencia) o a domicilio en casas de particulares en Valencia ciudad (consultar suplemento por desplazamiento según zona). La entrevista previa de 20 minutos se realiza cómodamente por teléfono o videollamada.",
       },
     ],
   },
@@ -468,21 +468,29 @@ const es = {
   sessions: {
     title: "Sesiones",
     intro:
-      "Sesiones individuales presenciales en Sueca, en un despacho independiente dentro del Centro Sanar. Precios claros, sin permanencia y con política de cambios transparente.",
+      "Sesiones individuales presenciales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad, u online por videoconferencia. Precios claros, sin permanencia y con política de cambios transparente.",
     items: [
       {
         name: "Sesión individual",
         price: "60 €",
         unit: "por hora",
         text: "Una hora de acompañamiento con hipnosis, enfocada en el objetivo que hayamos definido.",
-        points: ["Duración de 60 minutos", "Presencial", "Sin permanencia"],
+        points: [
+          "Duración de 60 minutos",
+          "Sueca, a domicilio en Valencia u online",
+          "Sin permanencia",
+        ],
       },
       {
         name: "Programa para dejar de fumar",
         price: "300 €",
         unit: "paquete de tres sesiones",
         text: "Un recorrido estructurado en tres sesiones para acompañar la decisión de dejar de fumar y sostenerla.",
-        points: ["Tres sesiones", "Seguimiento entre sesiones", "Pago del paquete completo"],
+        points: [
+          "Tres sesiones (Sueca, a domicilio o en línea)",
+          "Seguimiento entre sesiones",
+          "Entrevista previa gratuita de 20 min",
+        ],
       },
     ],
     policyTitle: "Antes de reservar",
@@ -560,10 +568,10 @@ const es = {
     pathExtra:
       "Mi experiencia previa en empresas internacionales me ayuda a entender retos habituales del trabajo: hablar en público, asumir responsabilidades, rendir bajo presión, mantener el foco o desenvolverse con mayor confianza en situaciones exigentes.",
     sessionsEyebrow: "Sesiones y colaboraciones",
-    serviceAreaTitle: "Sueca · Ribera Baixa · Valencia · Gandia",
+    serviceAreaTitle: "Valencia · Sueca · Ribera Baixa · Gandia",
     sessionsTexts: [
-      "Las sesiones individuales se realizan de forma presencial en un despacho en Sueca, Valencia.",
-      "También puedo desplazarme a casas particulares, empresas, oficinas, centros y organizaciones para sesiones, talleres o programas de desarrollo profesional.",
+      "Las sesiones individuales se realizan en mi despacho en Sueca o a domicilio en casas de particulares en Valencia ciudad.",
+      "También realizo sesiones en formato online por videoconferencia y me desplazo a empresas y organizaciones para talleres y programas de desarrollo profesional.",
     ],
     quote:
       "Muchas veces el cambio no consiste en convertirse en otra persona, sino en dejar de estar limitado por patrones que ya no necesitamos.",
@@ -776,7 +784,7 @@ const es = {
     sent: "Gracias, he recibido tu mensaje. Te responderé en breve.",
     note: "Envía tu mensaje y te responderé en breve. Si prefieres, también puedes reservar directamente en el calendario.",
     infoTitle: "Datos",
-    area: "Sueca · despacho independiente dentro del Centro Sanar",
+    area: "Sueca (Centro Sanar) · A domicilio en Valencia ciudad · Sesiones online",
     languages: "Sesiones en castellano e inglés",
     hours: "Horario de atención en hora peninsular",
   },
@@ -902,7 +910,7 @@ const va: Dict = {
     book: "Reservar",
   },
   home: {
-    eyebrow: "Sueca · Sessions presencials",
+    eyebrow: "València i Sueca · Presencial i a domicili",
     title: "Un espai per a canviar des de dins",
     subtitle:
       "Acompanyament amb hipnosi per a persones adultes que volen produir canvis reals: hàbits, calma, focus i confiança. Amb criteri, proximitat i expectatives honestes.",
@@ -1657,7 +1665,7 @@ const va: Dict = {
     sent: "Gràcies, he rebut el teu missatge. Et respondré ben aviat.",
     note: "Envia el teu missatge i et respondré prompte. Si ho preferixes, també pots reservar directament en el calendari.",
     infoTitle: "Dades",
-    area: "Sueca · despatx independent dins del Centre Sanar",
+    area: "Sueca (Centre Sanar) · A domicili a València ciutat · Sessions online",
     languages: "Sessions en castellà i anglés",
     hours: "Horari d'atenció en hora peninsular",
   },
@@ -1781,7 +1789,7 @@ const en: Dict = {
     book: "Book",
   },
   home: {
-    eyebrow: "Sueca · In-person sessions",
+    eyebrow: "Valencia & Sueca · In-person & Home visits",
     title: "A space to change from within",
     subtitle:
       "Hypnosis-based support for adults who want real change: habits, calm, focus and confidence. Thoughtful, close and honest about what to expect.",
@@ -2534,7 +2542,7 @@ const en: Dict = {
     sent: "Thank you, your message has been received. I'll reply shortly.",
     note: "Send your message and I'll reply shortly. If you prefer, you can also book directly in the calendar.",
     infoTitle: "Details",
-    area: "Sueca · independent practice within Centro Sanar",
+    area: "Sueca (Centro Sanar) · Home visits in Valencia city · Online sessions",
     languages: "Sessions available in Spanish and English",
     hours: "Opening hours in mainland Spain time",
   },

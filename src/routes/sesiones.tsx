@@ -7,9 +7,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/sesiones")({
   head: () =>
     makeSeo({
-      title: "Sesiones y precios · María Cabo",
+      title: "Sesiones de hipnosis en Valencia y Sueca · María Cabo",
       description:
-        "Sesión individual de hipnosis por 60 € la hora y programa para dejar de fumar de tres sesiones por 300 €.",
+        "Sesiones individuales de hipnosis en Sueca, a domicilio en casas de particulares en Valencia ciudad u online. 60 € por sesión de 1 hora.",
       path: "/sesiones",
     }),
   component: SessionsPage,
@@ -22,7 +22,35 @@ function SessionsPage() {
     <>
       <PageHeader eyebrow={t.tagline} title={t.sessions.title} intro={t.sessions.intro} />
 
-      <section className="container-page grid gap-6 py-16 md:grid-cols-2 md:py-20">
+      <section className="border-y border-border/60 bg-muted/30 py-8 md:py-10">
+        <div className="container-page">
+          <p className="eyebrow">MODALIDADES DE ATENCIÓN</p>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <h3 className="text-base font-medium">Despacho en Sueca</h3>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                Espacio sereno e independiente dentro del Centro Sanar en Sueca (Valencia).
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <h3 className="text-base font-medium">A domicilio en Valencia</h3>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                En casas de particulares en Valencia capital y alrededores. Comodidad y privacidad
+                en tu propio entorno.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <h3 className="text-base font-medium">Sesiones Online</h3>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                Por videoconferencia en directo para cualquier ubicación en castellano, valenciano o
+                inglés.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-page grid gap-6 py-14 md:grid-cols-2 md:py-16">
         {t.sessions.items.map((item, index) => (
           <article
             key={item.name}

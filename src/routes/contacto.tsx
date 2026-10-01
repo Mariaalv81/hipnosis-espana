@@ -10,8 +10,9 @@ import { siteSettings } from "@/content/site-settings";
 export const Route = createFileRoute("/contacto")({
   head: () =>
     makeSeo({
-      title: "Contacto · María Cabo",
-      description: "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
+      title: "Contacto · Hipnosis en Valencia y Sueca · María Cabo",
+      description:
+        "Contacta con María Cabo para sesiones presenciales en Sueca, a domicilio en casas de particulares en Valencia ciudad u online.",
       path: "/contacto",
     }),
   component: ContactPage,

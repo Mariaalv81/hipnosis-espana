@@ -17,9 +17,9 @@ import sessionMariaAvif from "@/assets/images/sesion_maria_cabo.avif";
 export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
-      title: "María Cabo · Hipnosis para el cambio personal en Sueca",
+      title: "María Cabo · Hipnosis en Valencia y Sueca | Presencial y a domicilio",
       description:
-        "Sesiones de hipnosis para el desarrollo personal en Sueca (Valencia). Un espacio sereno para trabajar hábitos, dejar de fumar, calma, foco y confianza.",
+        "Sesiones de hipnosis en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y online. Especialista en dejar de fumar, hábitos, calma y confianza.",
       path: "/",
     }),
   component: HypnosisPage,
