@@ -4,7 +4,6 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  useLocation,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -14,7 +13,6 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "@/lib/i18n";
 import { CookieConsent } from "@/components/cookie-consent";
-import { trackGoogleAnalyticsPageView } from "@/lib/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -135,7 +133,6 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEF4PZK50X" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -149,14 +146,31 @@ function RootShell({ children }: { children: ReactNode }) {
                 ad_personalization: 'denied',
                 wait_for_update: 500
               });
-              gtag('js', new Date());
-              gtag('config', 'G-HEF4PZK50X', { anonymize_ip: true });
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-NN45HVJ6');
             `,
           }}
         />
         <HeadContent />
       </head>
       <body suppressHydrationWarning>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NN45HVJ6"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {children}
         <Scripts />
       </body>
@@ -166,11 +180,6 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const location = useLocation();
-
-  useEffect(() => {
-    trackGoogleAnalyticsPageView();
-  }, [location.href]);
 
   return (
     <QueryClientProvider client={queryClient}>

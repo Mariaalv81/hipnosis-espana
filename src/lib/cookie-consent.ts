@@ -72,21 +72,12 @@ export function loadGoogleAnalytics(): void {
 
   ensureGoogleTag();
 
-  if (!document.getElementById("google-analytics-gtag")) {
-    const script = document.createElement("script");
-    script.id = "google-analytics-gtag";
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(script);
-  }
-
   window.gtag?.("consent", "update", {
     analytics_storage: "granted",
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied",
   });
-  window.gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
 }
 
 export function disableGoogleAnalytics(): void {
@@ -112,17 +103,6 @@ export function ensureGoogleTag(): void {
     function gtag(...args: unknown[]) {
       window.dataLayer?.push(args);
     };
-}
-
-export function trackGoogleAnalyticsPageView(): void {
-  if (typeof window === "undefined") return;
-  if (getStoredConsent()?.analytics !== true || !window.gtag) return;
-
-  window.gtag("event", "page_view", {
-    page_location: window.location.href,
-    page_path: `${window.location.pathname}${window.location.search}`,
-    page_title: document.title,
-  });
 }
 
 export function deleteGoogleAnalyticsCookies(): void {
