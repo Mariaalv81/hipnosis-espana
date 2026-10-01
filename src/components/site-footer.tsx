@@ -6,9 +6,26 @@ import mcLogoBlack from "@/assets/images/mc-negro-web.png";
 export function SiteFooter() {
   const { t } = useI18n();
 
+  const primaryLinks = [
+    { to: "/como-funciona", label: t.nav.how },
+    { to: "/ambitos", label: t.nav.areas },
+    { to: "/empresas", label: t.nav.companies },
+    { to: "/sesiones", label: t.nav.sessions },
+    { to: "/sobre-mi", label: t.nav.about },
+    { to: "/blog", label: t.nav.journal },
+  ] as const;
+
+  const secondaryLinks = [
+    { to: "/eventos", label: t.nav.events },
+    { to: "/faq", label: t.nav.faq },
+    { to: "/contacto", label: t.nav.contact },
+    { to: "/legal", label: t.footer.legal },
+    { to: "/politica-de-cookies", label: t.cookies.policyLink },
+  ] as const;
+
   return (
     <footer className="mt-24 border-t border-border/60 bg-muted/60">
-      <div className="container-page grid gap-10 py-14 md:grid-cols-3">
+      <div className="container-page grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
             <img
@@ -34,27 +51,27 @@ export function SiteFooter() {
         </div>
 
         <nav className="grid gap-2 text-sm">
-          <Link to="/como-funciona" className="text-muted-foreground hover:text-foreground">
-            {t.nav.how}
-          </Link>
-          <Link to="/ambitos" className="text-muted-foreground hover:text-foreground">
-            {t.nav.areas}
-          </Link>
-          <Link to="/sesiones" className="text-muted-foreground hover:text-foreground">
-            {t.nav.sessions}
-          </Link>
-          <Link to="/eventos" className="text-muted-foreground hover:text-foreground">
-            {t.nav.events}
-          </Link>
-          <Link to="/blog" className="text-muted-foreground hover:text-foreground">
-            {t.nav.journal}
-          </Link>
-          <Link to="/legal" className="text-muted-foreground hover:text-foreground">
-            {t.footer.legal}
-          </Link>
-          <Link to="/politica-de-cookies" className="text-muted-foreground hover:text-foreground">
-            {t.cookies.policyLink}
-          </Link>
+          {primaryLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-muted-foreground hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <nav className="grid gap-2 text-sm">
+          {secondaryLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-muted-foreground hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
           <button
             type="button"
             onClick={openCookiePreferences}

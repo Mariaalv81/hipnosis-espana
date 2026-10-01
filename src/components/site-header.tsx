@@ -8,16 +8,13 @@ export function SiteHeader() {
   const { t, lang, setLang } = useI18n();
   const [open, setOpen] = useState(false);
 
-  const links = [
+  const primaryLinks = [
     { to: "/como-funciona", label: t.nav.how },
     { to: "/ambitos", label: t.nav.areas },
     { to: "/empresas", label: t.nav.companies },
     { to: "/sesiones", label: t.nav.sessions },
     { to: "/sobre-mi", label: t.nav.about },
-    { to: "/eventos", label: t.nav.events },
     { to: "/blog", label: t.nav.journal },
-    { to: "/faq", label: t.nav.faq },
-    { to: "/contacto", label: t.nav.contact },
   ] as const;
 
   return (
@@ -49,7 +46,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
-          {links.map((l) => (
+          {primaryLinks.map((l) => (
             <Link
               key={l.to}
               to={l.to}
@@ -95,7 +92,7 @@ export function SiteHeader() {
       {open && (
         <nav className="border-t border-border/60 bg-background lg:hidden">
           <div className="container-page flex flex-col py-3">
-            {links.map((l) => (
+            {primaryLinks.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
