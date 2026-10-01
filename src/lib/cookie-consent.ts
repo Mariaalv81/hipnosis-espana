@@ -78,6 +78,7 @@ export function loadGoogleAnalytics(): void {
     ad_user_data: "denied",
     ad_personalization: "denied",
   });
+  window.gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
 }
 
 export function disableGoogleAnalytics(): void {
