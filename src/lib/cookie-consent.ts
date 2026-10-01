@@ -68,6 +68,8 @@ export function applyConsent(consent: ConsentPreferences): void {
 export function loadGoogleAnalytics(): void {
   if (typeof window === "undefined") return;
 
+  (window as Window & Record<string, unknown>)[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+
   window.dataLayer = window.dataLayer || [];
   window.gtag =
     window.gtag ||
