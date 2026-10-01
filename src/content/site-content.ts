@@ -184,60 +184,34 @@ const es = {
   areas: {
     title: "Ámbitos de acompañamiento",
     intro:
-      "La hipnosis puede ser una herramienta de apoyo para trabajar objetivos de desarrollo personal. Cada proceso se adapta a la persona, sin diagnósticos ni promesas de resultados.",
+      "Seis áreas habituales donde la hipnosis puede ayudar a trabajar respuestas automáticas, hábitos y formas de afrontar situaciones concretas. Siempre desde desarrollo personal: sin diagnósticos, sin promesas y sin sustituir atención sanitaria o psicológica.",
     noticeTitle: "Un enfoque de desarrollo personal",
     notice:
       "Este acompañamiento no es atención sanitaria ni terapia psicológica. No trata trastornos, no realiza diagnósticos y no sustituye a profesionales de la salud. Si lo que necesitas requiere atención clínica, te lo diré con claridad y te orientaré hacia el recurso adecuado.",
     items: [
       {
-        title: "Miedos y fobias",
-        text: "Podemos explorar cómo prepararte ante situaciones que te inquietan y practicar recursos de calma, atención y confianza para afrontarlas a tu ritmo.",
-        note: "No sustituye la evaluación ni el tratamiento psicológico de una fobia o un trastorno de ansiedad.",
+        title: "Miedos y evitación",
+        text: "Trabajar cómo te preparas ante situaciones que ahora generan bloqueo, tensión o evitación, para ensayar respuestas más calmadas y útiles.",
       },
       {
-        title: "Ansiedad y estrés cotidiano",
-        text: "Un espacio para trabajar la tensión del día a día, recuperar pausas y ensayar formas más conscientes de responder ante momentos exigentes.",
-        note: "Ante malestar intenso, persistente o que interfiera en tu vida, es importante consultar con un profesional sanitario.",
+        title: "Estrés y calma",
+        text: "Entrenar recursos de atención, respiración, imaginación y respuesta interna para recuperar más calma en momentos exigentes.",
+      },
+      {
+        title: "Hábitos",
+        text: "Observar conductas que repites aunque conscientemente quieras otra cosa, y practicar formas más sostenibles de responder.",
       },
       {
         title: "Dejar de fumar",
-        text: "Un proceso estructurado para acompañar tu decisión, reforzar los motivos personales y preparar hábitos que ayuden a sostener el cambio.",
-        note: "Es apoyo al cambio de hábitos; no sustituye la atención médica ni el tratamiento de una dependencia.",
+        text: "Un recorrido específico para acompañar la decisión, reforzar motivos personales y trabajar automatismos relacionados con el tabaco.",
       },
       {
-        title: "Control de peso",
-        text: "Podemos revisar la relación con las rutinas, la motivación y los hábitos cotidianos para acompañar objetivos de bienestar acordados contigo.",
-        note: "No es un servicio de nutrición ni aborda trastornos de la conducta alimentaria.",
+        title: "Confianza",
+        text: "Trabajar seguridad personal, diálogo interno y preparación ante situaciones donde quieres expresarte, decidir o exponerte con más claridad.",
       },
       {
-        title: "Cambios y estados de duelo",
-        text: "Un acompañamiento sereno para transitar pérdidas o cambios vitales, dando espacio a lo que estás viviendo y a los recursos que te ayudan a avanzar.",
-        note: "No sustituye la atención psicológica cuando el duelo resulta muy intenso, se prolonga o compromete tu bienestar.",
-      },
-      {
-        title: "Estudio y concentración",
-        text: "Podemos trabajar la preparación, el foco y las rutinas de estudio para afrontar retos académicos con más claridad y continuidad.",
-        note: "No sustituye una evaluación de dificultades de aprendizaje o atención.",
-      },
-      {
-        title: "Patrones de conducta",
-        text: "Identificamos respuestas repetidas que ya no te sirven y ensayamos alternativas pequeñas, concretas y coherentes con el cambio que buscas.",
-        note: "No es tratamiento de trastornos de conducta ni de salud mental.",
-      },
-      {
-        title: "Mejora de hábitos",
-        text: "Un espacio para definir un hábito realista, reconocer qué lo dificulta y reforzar acciones sostenibles en tu día a día.",
-        note: "El ritmo y los resultados dependen de muchos factores; no se garantizan cambios concretos.",
-      },
-      {
-        title: "Bienestar emocional",
-        text: "Podemos cultivar recursos personales de calma, presencia y autocuidado para relacionarte con las emociones de una manera más consciente.",
-        note: "No sustituye la intervención psicológica o psiquiátrica cuando es necesaria.",
-      },
-      {
-        title: "Autoconfianza",
-        text: "Trabajamos objetivos concretos, diálogo interno y preparación para expresarte, decidir o afrontar situaciones que te importan.",
-        note: "Es un acompañamiento de desarrollo personal, no un tratamiento clínico de la autoestima.",
+        title: "Foco y aprendizaje",
+        text: "Preparar estudio, exámenes, presentaciones o retos concretos entrenando concentración, ensayo mental y continuidad.",
       },
     ],
     closing:
@@ -848,60 +822,34 @@ const va: Dict = {
   areas: {
     title: "Àmbits d'acompanyament",
     intro:
-      "La hipnosi pot ser una ferramenta de suport per a treballar objectius de desenvolupament personal. Cada procés s'adapta a la persona, sense diagnòstics ni promeses de resultats.",
+      "Sis àrees habituals on la hipnosi pot ajudar a treballar respostes automàtiques, hàbits i formes d'afrontar situacions concretes. Sempre des del desenvolupament personal: sense diagnòstics, sense promeses i sense substituir atenció sanitària o psicològica.",
     noticeTitle: "Un enfocament de desenvolupament personal",
     notice:
       "Este acompanyament no és atenció sanitària ni teràpia psicològica. No tracta trastorns, no realitza diagnòstics i no substituïx professionals de la salut. Si el que necessites requerix atenció clínica, t'ho diré amb claredat i t'orientaré cap al recurs adequat.",
     items: [
       {
-        title: "Pors i fòbies",
-        text: "Podem explorar com preparar-te davant de situacions que t'inquieten i practicar recursos de calma, atenció i confiança per a afrontar-les al teu ritme.",
-        note: "No substituïx l'avaluació ni el tractament psicològic d'una fòbia o un trastorn d'ansietat.",
+        title: "Pors i evitació",
+        text: "Treballar com et prepares davant de situacions que ara generen bloqueig, tensió o evitació, per a assajar respostes més calmades i útils.",
       },
       {
-        title: "Ansietat i estrès quotidià",
-        text: "Un espai per a treballar la tensió del dia a dia, recuperar pauses i assajar formes més conscients de respondre davant de moments exigents.",
-        note: "Davant d'un malestar intens, persistent o que interferisca en la teua vida, és important consultar amb un professional sanitari.",
+        title: "Estrés i calma",
+        text: "Entrenar recursos d'atenció, respiració, imaginació i resposta interna per a recuperar més calma en moments exigents.",
+      },
+      {
+        title: "Hàbits",
+        text: "Observar conductes que repetixes encara que conscientment vulgues una altra cosa, i practicar formes més sostenibles de respondre.",
       },
       {
         title: "Deixar de fumar",
-        text: "Un procés estructurat per a acompanyar la teua decisió, reforçar els motius personals i preparar hàbits que ajuden a sostindre el canvi.",
-        note: "És suport al canvi d'hàbits; no substituïx l'atenció mèdica ni el tractament d'una dependència.",
+        text: "Un recorregut específic per a acompanyar la decisió, reforçar motius personals i treballar automatismes relacionats amb el tabac.",
       },
       {
-        title: "Control de pes",
-        text: "Podem revisar la relació amb les rutines, la motivació i els hàbits quotidians per a acompanyar objectius de benestar acordats amb tu.",
-        note: "No és un servici de nutrició ni aborda trastorns de la conducta alimentària.",
+        title: "Confiança",
+        text: "Treballar seguretat personal, diàleg intern i preparació davant situacions on vols expressar-te, decidir o exposar-te amb més claredat.",
       },
       {
-        title: "Canvis i estats de dol",
-        text: "Un acompanyament seré per a transitar pèrdues o canvis vitals, donant espai al que estàs vivint i als recursos que t'ajuden a avançar.",
-        note: "No substituïx l'atenció psicològica quan el dol és molt intens, es prolonga o compromet el teu benestar.",
-      },
-      {
-        title: "Estudi i concentració",
-        text: "Podem treballar la preparació, el focus i les rutines d'estudi per a afrontar reptes acadèmics amb més claredat i continuïtat.",
-        note: "No substituïx una avaluació de dificultats d'aprenentatge o atenció.",
-      },
-      {
-        title: "Patrons de conducta",
-        text: "Identifiquem respostes repetides que ja no et servixen i assagem alternatives xicotetes, concretes i coherents amb el canvi que busques.",
-        note: "No és tractament de trastorns de conducta ni de salut mental.",
-      },
-      {
-        title: "Millora d'hàbits",
-        text: "Un espai per a definir un hàbit realista, reconéixer què el dificulta i reforçar accions sostenibles en el teu dia a dia.",
-        note: "El ritme i els resultats depenen de molts factors; no es garantixen canvis concrets.",
-      },
-      {
-        title: "Benestar emocional",
-        text: "Podem cultivar recursos personals de calma, presència i autocura per a relacionar-te amb les emocions d'una manera més conscient.",
-        note: "No substituïx la intervenció psicològica o psiquiàtrica quan és necessària.",
-      },
-      {
-        title: "Autoconfiança",
-        text: "Treballem objectius concrets, diàleg intern i preparació per a expressar-te, decidir o afrontar situacions que t'importen.",
-        note: "És un acompanyament de desenvolupament personal, no un tractament clínic de l'autoestima.",
+        title: "Focus i aprenentatge",
+        text: "Preparar estudi, exàmens, presentacions o reptes concrets entrenant concentració, assaig mental i continuïtat.",
       },
     ],
     closing: "Si dubtes de si este acompanyament encaixa amb tu, escriu-me abans de reservar.",
@@ -1504,60 +1452,34 @@ const en: Dict = {
   areas: {
     title: "Focus areas",
     intro:
-      "Hypnosis can be a supportive tool for personal-development goals. Each process is tailored to the person, with no diagnoses and no promises of results.",
+      "Six common areas where hypnosis can support work with automatic responses, habits and ways of approaching specific situations. Always from personal development: no diagnoses, no promises and no replacement for healthcare or psychological care.",
     noticeTitle: "A personal-development approach",
     notice:
       "This support is not healthcare or psychological therapy. It does not treat disorders, provide diagnoses or replace health professionals. If your needs call for clinical care, I will tell you clearly and guide you towards the right resource.",
     items: [
       {
-        title: "Fears and phobias",
-        text: "We can explore how to prepare for situations that worry you and practise resources for calm, attention and confidence at your own pace.",
-        note: "It does not replace the assessment or psychological treatment of a phobia or anxiety disorder.",
+        title: "Fears and avoidance",
+        text: "Work on how you prepare for situations that currently create block, tension or avoidance, and rehearse calmer, more useful responses.",
       },
       {
-        title: "Everyday anxiety and stress",
-        text: "A space to work with day-to-day tension, recover pauses and rehearse more conscious ways of responding during demanding moments.",
-        note: "For intense, persistent distress or distress that affects daily life, it is important to consult a health professional.",
+        title: "Stress and calm",
+        text: "Train attention, breathing, imagination and inner-response resources to recover more calm in demanding moments.",
+      },
+      {
+        title: "Habits",
+        text: "Look at behaviours you repeat even when you consciously want something different, and practise more sustainable ways of responding.",
       },
       {
         title: "Stopping smoking",
-        text: "A structured process to support your decision, strengthen your personal reasons and prepare habits that help sustain change.",
-        note: "This supports habit change; it does not replace medical care or treatment for dependence.",
+        text: "A specific process to support your decision, strengthen personal reasons and work with automatisms related to tobacco.",
       },
       {
-        title: "Weight management",
-        text: "We can look at routines, motivation and daily habits to support wellbeing goals agreed with you.",
-        note: "It is not a nutrition service and does not address eating disorders.",
+        title: "Confidence",
+        text: "Work with personal security, inner dialogue and preparation for situations where you want to express yourself, decide or show up with more clarity.",
       },
       {
-        title: "Changes and grief",
-        text: "Calm support for moving through losses or life changes, making room for what you are living through and the resources that help you move forward.",
-        note: "It does not replace psychological support when grief is very intense, prolonged or affecting your wellbeing.",
-      },
-      {
-        title: "Study and concentration",
-        text: "We can work on preparation, focus and study routines to meet academic challenges with more clarity and consistency.",
-        note: "It does not replace an assessment for learning or attention difficulties.",
-      },
-      {
-        title: "Behaviour patterns",
-        text: "We identify repeated responses that no longer serve you and rehearse small, concrete alternatives aligned with the change you are looking for.",
-        note: "It is not treatment for behavioural or mental-health disorders.",
-      },
-      {
-        title: "Habit building",
-        text: "A space to define a realistic habit, recognise what makes it difficult and reinforce sustainable actions in everyday life.",
-        note: "Pace and results depend on many factors; specific changes cannot be guaranteed.",
-      },
-      {
-        title: "Emotional wellbeing",
-        text: "We can cultivate personal resources for calm, presence and self-care, so you can relate to emotions more consciously.",
-        note: "It does not replace psychological or psychiatric care when that is needed.",
-      },
-      {
-        title: "Self-confidence",
-        text: "We work on specific goals, inner dialogue and preparation to express yourself, decide or face situations that matter to you.",
-        note: "It is personal-development support, not clinical treatment for self-esteem.",
+        title: "Focus and learning",
+        text: "Prepare study, exams, presentations or concrete challenges by training concentration, mental rehearsal and consistency.",
       },
     ],
     closing:

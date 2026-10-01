@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CircleAlert } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 
@@ -30,27 +29,12 @@ function AreasPage() {
     <>
       <PageHeader eyebrow={t.tagline} title={t.areas.title} intro={t.areas.intro} />
 
-      <section className="border-b border-border/60 bg-muted/60 py-10">
-        <div className="container-page flex gap-4">
-          <CircleAlert className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
-          <div>
-            <h2 className="text-xl">{t.areas.noticeTitle}</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-              {t.areas.notice}
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="container-page py-16 md:py-20">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.areas.items.map((item) => (
-            <article key={item.title} className="rounded-2xl border border-border bg-card p-7">
+            <article key={item.title} className="rounded-lg border border-border bg-card p-7">
               <h2 className="text-2xl">{item.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-              <p className="mt-5 border-t border-border/60 pt-4 text-xs leading-relaxed text-muted-foreground">
-                {item.note}
-              </p>
             </article>
           ))}
         </div>
