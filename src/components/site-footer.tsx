@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import { openCookiePreferences } from "@/lib/cookie-consent";
 import mcLogoBlack from "@/assets/images/mc-negro-web.png";
 
 export function SiteFooter() {
@@ -51,6 +52,16 @@ export function SiteFooter() {
           <Link to="/legal" className="text-muted-foreground hover:text-foreground">
             {t.footer.legal}
           </Link>
+          <Link to="/politica-de-cookies" className="text-muted-foreground hover:text-foreground">
+            {t.cookies.policyLink}
+          </Link>
+          <button
+            type="button"
+            onClick={openCookiePreferences}
+            className="w-fit text-left text-muted-foreground hover:text-foreground"
+          >
+            {t.cookies.footerConfigure}
+          </button>
         </nav>
 
         <div className="text-sm text-muted-foreground">

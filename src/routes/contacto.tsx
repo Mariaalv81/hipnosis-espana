@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, useEffect, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { siteSettings } from "@/content/site-settings";
@@ -10,8 +10,7 @@ export const Route = createFileRoute("/contacto")({
       { title: "Contacto · María Cabo" },
       {
         name: "description",
-        content:
-          "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
+        content: "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
       },
       { property: "og:title", content: "Contacto · María Cabo" },
       {
@@ -23,6 +22,43 @@ export const Route = createFileRoute("/contacto")({
   component: ContactPage,
 });
 
+declare global {
+  interface Window {
+    grecaptcha?: {
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      ready?: (callback: () => void) => void;
+    };
+  }
+}
+
+function loadRecaptcha(siteKey: string): Promise<void> {
+  if (window.grecaptcha) return Promise.resolve();
+
+  return new Promise((resolve, reject) => {
+    const existingScript = document.getElementById("recaptcha-script") as HTMLScriptElement | null;
+    if (existingScript) {
+      existingScript.addEventListener("load", () => resolve(), { once: true });
+      existingScript.addEventListener(
+        "error",
+        () => reject(new Error("reCAPTCHA failed to load")),
+        {
+          once: true,
+        },
+      );
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.id = "recaptcha-script";
+    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    script.async = true;
+    script.defer = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("reCAPTCHA failed to load"));
+    document.head.appendChild(script);
+  });
+}
+
 function ContactPage() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
@@ -33,56 +69,42 @@ function ContactPage() {
     const form = e.currentTarget;
     const fd = new FormData(form);
     const payload = {
-      name: String(fd.get('name') ?? ''),
-      email: String(fd.get('email') ?? ''),
-      phone: String(fd.get('phone') ?? ''),
-      message: String(fd.get('message') ?? ''),
-      website: String(fd.get('website') ?? ''), // honeypot
+      name: String(fd.get("name") ?? ""),
+      email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
+      message: String(fd.get("message") ?? ""),
+      website: String(fd.get("website") ?? ""),
       recaptchaToken: undefined as string | undefined,
     };
     try {
-      // If reCAPTCHA site key is provided, execute and include token
       const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
-      if (siteKey && (window as any).grecaptcha) {
+      if (siteKey) {
         try {
-          const token = await (window as any).grecaptcha.execute(siteKey, { action: 'contact' });
+          await loadRecaptcha(siteKey);
+          const token = await window.grecaptcha?.execute(siteKey, { action: "contact" });
           payload.recaptchaToken = token;
         } catch (err) {
-          // ignore token errors and continue without it
+          console.warn("reCAPTCHA unavailable, continuing without token", err);
         }
       }
 
-      const res = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
-      if (!res.ok) throw new Error('Error enviando el mensaje');
+      if (!res.ok) throw new Error("Error enviando el mensaje");
       setSent(true);
     } catch (err) {
-      // Fallback: provide mailto link for user to click instead of auto-opening
-      console.error('send-email failed, falling back to mailto', err);
-      const subject = encodeURIComponent('Consulta desde la web · María Cabo');
-      const body = encodeURIComponent(`Nombre: ${payload.name}\nCorreo: ${payload.email}\nTeléfono: ${payload.phone}\n\n${payload.message}`);
+      console.error("send-email failed, falling back to mailto", err);
+      const subject = encodeURIComponent("Consulta desde la web · María Cabo");
+      const body = encodeURIComponent(
+        `Nombre: ${payload.name}\nCorreo: ${payload.email}\nTeléfono: ${payload.phone}\n\n${payload.message}`,
+      );
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
-      // do not auto-navigate; show message to user
     }
   };
-
-  useEffect(() => {
-    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
-    if (!siteKey) return;
-
-    // load reCAPTCHA v3 script
-    const id = 'recaptcha-script';
-    if (document.getElementById(id)) return;
-    const s = document.createElement('script');
-    s.id = id;
-    s.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
-    s.async = true;
-    document.head.appendChild(s);
-  }, []);
 
   return (
     <>
@@ -91,7 +113,7 @@ function ContactPage() {
       <section className="container-page grid gap-12 py-16 md:py-20 lg:grid-cols-[3fr_2fr]">
         <form onSubmit={onSubmit} className="grid gap-5">
           {/* Honeypot field to trap bots - keep it hidden */}
-          <input type="text" name="website" style={{ display: 'none' }} aria-hidden />
+          <input type="text" name="website" style={{ display: "none" }} aria-hidden />
           <div className="grid gap-2">
             <label htmlFor="name" className="text-sm">
               {t.contact.name}

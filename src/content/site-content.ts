@@ -553,7 +553,7 @@ const es = {
       },
       {
         title: "Cookies",
-        text: "La web no utiliza cookies de perfilado. Si en el futuro se añade analítica, se solicitará el consentimiento previo y se ofrecerá una opción de rechazo.",
+        text: "La web utiliza almacenamiento técnico necesario para recordar idioma y preferencias de consentimiento. Google Analytics solo se carga si aceptas la categoría de analítica, y puedes cambiar tu elección desde la política de cookies.",
       },
       {
         title: "Condiciones del servicio",
@@ -576,6 +576,52 @@ const es = {
     bookCalendar: "Reservar en el calendario",
     smokeEmail: "Quiero dejar de fumar",
     smokeEmailNote: "Te escribo un email y concertamos una entrevista de 20 minutos.",
+  },
+  cookies: {
+    bannerAriaLabel: "Aviso de cookies",
+    bannerTitle: "Uso de cookies",
+    bannerText:
+      "Utilizamos almacenamiento necesario para que la web funcione y, solo si lo aceptas, Google Analytics para entender el uso general del sitio. Puedes aceptar, rechazar o configurar tus preferencias.",
+    policyLink: "Política de cookies",
+    acceptAll: "Aceptar todas",
+    reject: "Rechazar",
+    configure: "Configurar",
+    panelTitle: "Configurar cookies",
+    panelIntro:
+      "Puedes decidir qué categorías permites. Las cookies necesarias están siempre activas porque sostienen funciones básicas del sitio.",
+    necessaryTitle: "Necesarias",
+    necessaryText:
+      "Incluyen la preferencia de idioma, el registro de consentimiento y almacenamiento técnico para recargar la aplicación correctamente.",
+    alwaysActive: "Siempre activas",
+    analyticsTitle: "Analítica",
+    analyticsText:
+      "Permite cargar Google Analytics para medir visitas y uso agregado del sitio. No se carga si no das tu consentimiento.",
+    marketingTitle: "Marketing",
+    marketingText: "Actualmente no usamos cookies ni scripts de marketing.",
+    savePreferences: "Guardar preferencias",
+    close: "Cerrar",
+    footerConfigure: "Configurar cookies",
+    policyTitle: "Política de cookies",
+    policyIntro:
+      "Esta página explica qué almacenamiento usa la web, qué servicios externos pueden cargarse y cómo puedes cambiar tu consentimiento.",
+    policySections: [
+      {
+        title: "Cookies y almacenamiento necesarios",
+        text: "La web guarda la preferencia de idioma, la decisión de consentimiento y un dato técnico temporal para gestionar errores de carga. Son necesarios para prestar el servicio solicitado y no se usan para analítica ni publicidad.",
+      },
+      {
+        title: "Analítica opcional",
+        text: "Google Analytics, con identificador G-HEF4PZK50X, solo se carga cuando aceptas la categoría de analítica. Si rechazas o revocas el permiso, se bloquea el script y se intentan borrar sus cookies (_ga, _gid, _gat y equivalentes).",
+      },
+      {
+        title: "Servicios externos",
+        text: "El botón de reserva abre Google Calendar en una pestaña nueva sin cargar su script dentro de la web. reCAPTCHA solo se solicita al enviar el formulario de contacto si está configurado, como medida de seguridad contra abuso.",
+      },
+      {
+        title: "Cambiar tu elección",
+        text: "Puedes volver a abrir el panel desde el enlace permanente del pie de página. Rechazar es tan sencillo como aceptar.",
+      },
+    ],
   },
 };
 
@@ -1131,7 +1177,7 @@ const va: Dict = {
       },
       {
         title: "Galetes",
-        text: "La web no utilitza galetes de perfilat. Si en el futur s'afig analítica, es demanarà el teu consentiment previ amb opció de rebuig igual de senzilla.",
+        text: "La web utilitza emmagatzematge tècnic necessari per a recordar l'idioma i les preferències de consentiment. Google Analytics només es carrega si acceptes la categoria d'analítica, i pots canviar la teua elecció des de la política de galetes.",
       },
       {
         title: "Condicions del servici",
@@ -1153,6 +1199,52 @@ const va: Dict = {
     bookCalendar: "Reservar en el calendari",
     smokeEmail: "Vull deixar de fumar",
     smokeEmailNote: "M'escrius un email i concertem una entrevista de 20 minuts.",
+  },
+  cookies: {
+    bannerAriaLabel: "Avís de galetes",
+    bannerTitle: "Ús de galetes",
+    bannerText:
+      "Utilitzem emmagatzematge necessari perquè la web funcione i, només si ho acceptes, Google Analytics per a entendre l'ús general del lloc. Pots acceptar, rebutjar o configurar les preferències.",
+    policyLink: "Política de galetes",
+    acceptAll: "Acceptar totes",
+    reject: "Rebutjar",
+    configure: "Configurar",
+    panelTitle: "Configurar galetes",
+    panelIntro:
+      "Pots decidir quines categories permets. Les galetes necessàries estan sempre actives perquè sostenen funcions bàsiques del lloc.",
+    necessaryTitle: "Necessàries",
+    necessaryText:
+      "Inclouen la preferència d'idioma, el registre de consentiment i emmagatzematge tècnic per a recarregar l'aplicació correctament.",
+    alwaysActive: "Sempre actives",
+    analyticsTitle: "Analítica",
+    analyticsText:
+      "Permet carregar Google Analytics per a mesurar visites i ús agregat del lloc. No es carrega si no dones el teu consentiment.",
+    marketingTitle: "Màrqueting",
+    marketingText: "Actualment no utilitzem galetes ni scripts de màrqueting.",
+    savePreferences: "Guardar preferències",
+    close: "Tancar",
+    footerConfigure: "Configurar galetes",
+    policyTitle: "Política de galetes",
+    policyIntro:
+      "Esta pàgina explica quin emmagatzematge usa la web, quins servicis externs poden carregar-se i com pots canviar el consentiment.",
+    policySections: [
+      {
+        title: "Galetes i emmagatzematge necessaris",
+        text: "La web guarda la preferència d'idioma, la decisió de consentiment i una dada tècnica temporal per a gestionar errors de càrrega. Són necessaris per a prestar el servici sol·licitat i no s'usen per a analítica ni publicitat.",
+      },
+      {
+        title: "Analítica opcional",
+        text: "Google Analytics, amb identificador G-HEF4PZK50X, només es carrega quan acceptes la categoria d'analítica. Si rebutges o revoques el permís, es bloqueja el script i s'intenten esborrar les seues galetes (_ga, _gid, _gat i equivalents).",
+      },
+      {
+        title: "Servicis externs",
+        text: "El botó de reserva obri Google Calendar en una pestanya nova sense carregar el seu script dins de la web. reCAPTCHA només se sol·licita en enviar el formulari de contacte si està configurat, com a mesura de seguretat contra abús.",
+      },
+      {
+        title: "Canviar la teua elecció",
+        text: "Pots tornar a obrir el panell des de l'enllaç permanent del peu de pàgina. Rebutjar és tan senzill com acceptar.",
+      },
+    ],
   },
 };
 
@@ -1704,7 +1796,7 @@ const en: Dict = {
       },
       {
         title: "Cookies",
-        text: "This site uses no profiling cookies. If analytics are added later, consent will be requested first, with refusal just as easy.",
+        text: "The site uses necessary technical storage to remember language and consent preferences. Google Analytics only loads if you accept the analytics category, and you can change your choice from the cookie policy.",
       },
       {
         title: "Terms of service",
@@ -1726,6 +1818,52 @@ const en: Dict = {
     bookCalendar: "Book in the calendar",
     smokeEmail: "I want to quit smoking",
     smokeEmailNote: "Send an email and we'll arrange a 20-minute interview.",
+  },
+  cookies: {
+    bannerAriaLabel: "Cookie notice",
+    bannerTitle: "Cookie use",
+    bannerText:
+      "We use necessary storage so the site can work and, only if you accept it, Google Analytics to understand overall site usage. You can accept, reject or configure your preferences.",
+    policyLink: "Cookie policy",
+    acceptAll: "Accept all",
+    reject: "Reject",
+    configure: "Configure",
+    panelTitle: "Configure cookies",
+    panelIntro:
+      "You can decide which categories you allow. Necessary cookies are always active because they support basic site functions.",
+    necessaryTitle: "Necessary",
+    necessaryText:
+      "These include the language preference, the consent record and technical storage used to reload the application correctly.",
+    alwaysActive: "Always active",
+    analyticsTitle: "Analytics",
+    analyticsText:
+      "Allows Google Analytics to load in order to measure visits and aggregated site usage. It does not load unless you give consent.",
+    marketingTitle: "Marketing",
+    marketingText: "We currently do not use marketing cookies or scripts.",
+    savePreferences: "Save preferences",
+    close: "Close",
+    footerConfigure: "Configure cookies",
+    policyTitle: "Cookie policy",
+    policyIntro:
+      "This page explains what storage the website uses, which external services may load and how you can change your consent.",
+    policySections: [
+      {
+        title: "Necessary cookies and storage",
+        text: "The website stores the language preference, the consent decision and a temporary technical value to handle loading errors. These are necessary to provide the requested service and are not used for analytics or advertising.",
+      },
+      {
+        title: "Optional analytics",
+        text: "Google Analytics, using ID G-HEF4PZK50X, only loads when you accept the analytics category. If you reject or revoke permission, the script is blocked and its cookies (_ga, _gid, _gat and equivalents) are deleted where possible.",
+      },
+      {
+        title: "External services",
+        text: "The booking button opens Google Calendar in a new tab without loading its script inside the website. reCAPTCHA is only requested when the contact form is submitted, if configured, as a security measure against abuse.",
+      },
+      {
+        title: "Change your choice",
+        text: "You can reopen the panel from the permanent link in the footer. Rejecting is just as simple as accepting.",
+      },
+    ],
   },
 };
 

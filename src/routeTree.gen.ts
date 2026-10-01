@@ -18,6 +18,7 @@ import { Route as EmpresasRouteImport } from './routes/empresas'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as LegalRouteImport } from './routes/legal'
+import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as ReservarRouteImport } from './routes/reservar'
 import { Route as SesionesRouteImport } from './routes/sesiones'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
@@ -69,6 +70,11 @@ const LegalRoute = LegalRouteImport.update({
   path: '/legal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoliticaDeCookiesRoute = PoliticaDeCookiesRouteImport.update({
+  id: '/politica-de-cookies',
+  path: '/politica-de-cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReservarRoute = ReservarRouteImport.update({
   id: '/reservar',
   path: '/reservar',
@@ -105,6 +111,7 @@ export interface FileRoutesByFullPath {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -120,6 +127,7 @@ export interface FileRoutesByTo {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -137,6 +145,7 @@ export interface FileRoutesById {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -155,6 +164,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/legal'
+    | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -170,6 +180,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/legal'
+    | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -186,6 +197,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/legal'
+    | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -203,6 +215,7 @@ export interface RootRouteChildren {
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
   LegalRoute: typeof LegalRoute
+  PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   ReservarRoute: typeof ReservarRoute
   SesionesRoute: typeof SesionesRoute
   SobreMiRoute: typeof SobreMiRoute
@@ -273,6 +286,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LegalRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/politica-de-cookies': {
+      id: '/politica-de-cookies'
+      path: '/politica-de-cookies'
+      fullPath: '/politica-de-cookies'
+      preLoaderRoute: typeof PoliticaDeCookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/reservar': {
       id: '/reservar'
       path: '/reservar'
@@ -333,6 +353,7 @@ const rootRouteChildren: RootRouteChildren = {
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
   LegalRoute: LegalRoute,
+  PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   ReservarRoute: ReservarRoute,
   SesionesRoute: SesionesRoute,
   SobreMiRoute: SobreMiRoute,

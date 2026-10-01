@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "@/lib/i18n";
+import { CookieConsent } from "@/components/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -132,18 +133,6 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEF4PZK50X" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-HEF4PZK50X');
-            `,
-          }}
-        />
         <HeadContent />
       </head>
       <body suppressHydrationWarning>
@@ -167,6 +156,7 @@ function RootComponent() {
             <Outlet />
           </main>
           <SiteFooter />
+          <CookieConsent />
         </div>
       </I18nProvider>
     </QueryClientProvider>
