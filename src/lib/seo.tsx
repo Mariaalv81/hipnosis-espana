@@ -85,6 +85,42 @@ export function makeLocalBusinessSchema() {
     description:
       "Acompañamiento con hipnosis para el desarrollo personal en Sueca (Valencia): cambio de hábitos, dejar de fumar, calma, foco y confianza.",
     sameAs: [siteSettings.instagramUrl],
+    knowsAbout: [
+      "Hipnosis",
+      "Dejar de fumar",
+      "Cambio de hábitos",
+      "Gestión del estrés",
+      "Desarrollo personal",
+      "Atención focalizada y concentración",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Servicios de Hipnosis y Desarrollo Personal",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Sesión individual de hipnosis",
+            description:
+              "Sesión presencial en Sueca u online de 1 hora para cambio de hábitos, calma y foco.",
+          },
+          price: "60",
+          priceCurrency: "EUR",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Programa para dejar de fumar",
+            description:
+              "Programa estructurado de tres sesiones de hipnosis con entrevista previa de 20 minutos sin compromiso.",
+          },
+          price: "300",
+          priceCurrency: "EUR",
+        },
+      ],
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: "Centro Sanar",
