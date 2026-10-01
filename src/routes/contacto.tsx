@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { loadRecaptcha } from "@/lib/recaptcha";
 import { siteSettings } from "@/content/site-settings";
 
 export const Route = createFileRoute("/contacto")({
@@ -21,43 +22,6 @@ export const Route = createFileRoute("/contacto")({
   }),
   component: ContactPage,
 });
-
-declare global {
-  interface Window {
-    grecaptcha?: {
-      execute: (siteKey: string, options: { action: string }) => Promise<string>;
-      ready?: (callback: () => void) => void;
-    };
-  }
-}
-
-function loadRecaptcha(siteKey: string): Promise<void> {
-  if (window.grecaptcha) return Promise.resolve();
-
-  return new Promise((resolve, reject) => {
-    const existingScript = document.getElementById("recaptcha-script") as HTMLScriptElement | null;
-    if (existingScript) {
-      existingScript.addEventListener("load", () => resolve(), { once: true });
-      existingScript.addEventListener(
-        "error",
-        () => reject(new Error("reCAPTCHA failed to load")),
-        {
-          once: true,
-        },
-      );
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.id = "recaptcha-script";
-    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("reCAPTCHA failed to load"));
-    document.head.appendChild(script);
-  });
-}
 
 function ContactPage() {
   const { t } = useI18n();

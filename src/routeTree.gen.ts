@@ -24,6 +24,7 @@ import { Route as SesionesRouteImport } from './routes/sesiones'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as EmpresasContactoRouteImport } from './routes/empresas.contacto'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -100,6 +101,11 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const EmpresasContactoRoute = EmpresasContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => EmpresasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -107,7 +113,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
-  '/empresas': typeof EmpresasRoute
+  '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -116,6 +122,7 @@ export interface FileRoutesByFullPath {
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
@@ -123,7 +130,7 @@ export interface FileRoutesByTo {
   '/ambitos': typeof AmbitosRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
-  '/empresas': typeof EmpresasRoute
+  '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -132,6 +139,7 @@ export interface FileRoutesByTo {
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
@@ -141,7 +149,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
-  '/empresas': typeof EmpresasRoute
+  '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/legal': typeof LegalRoute
@@ -150,6 +158,7 @@ export interface FileRoutesById {
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
@@ -169,6 +178,7 @@ export interface FileRouteTypes {
     | '/sesiones'
     | '/sobre-mi'
     | '/blog/$slug'
+    | '/empresas/contacto'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -185,6 +195,7 @@ export interface FileRouteTypes {
     | '/sesiones'
     | '/sobre-mi'
     | '/blog/$slug'
+    | '/empresas/contacto'
     | '/blog'
   id:
     | '__root__'
@@ -202,6 +213,7 @@ export interface FileRouteTypes {
     | '/sesiones'
     | '/sobre-mi'
     | '/blog/$slug'
+    | '/empresas/contacto'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
@@ -211,7 +223,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   ComoFuncionaRoute: typeof ComoFuncionaRoute
   ContactoRoute: typeof ContactoRoute
-  EmpresasRoute: typeof EmpresasRoute
+  EmpresasRoute: typeof EmpresasRouteWithChildren
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
   LegalRoute: typeof LegalRoute
@@ -328,6 +340,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/empresas/contacto': {
+      id: '/empresas/contacto'
+      path: '/contacto'
+      fullPath: '/empresas/contacto'
+      preLoaderRoute: typeof EmpresasContactoRouteImport
+      parentRoute: typeof EmpresasRoute
+    }
   }
 }
 
@@ -343,13 +362,25 @@ const BlogRouteChildren: BlogRouteChildren = {
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
+interface EmpresasRouteChildren {
+  EmpresasContactoRoute: typeof EmpresasContactoRoute
+}
+
+const EmpresasRouteChildren: EmpresasRouteChildren = {
+  EmpresasContactoRoute: EmpresasContactoRoute,
+}
+
+const EmpresasRouteWithChildren = EmpresasRoute._addFileChildren(
+  EmpresasRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AmbitosRoute: AmbitosRoute,
   BlogRoute: BlogRouteWithChildren,
   ComoFuncionaRoute: ComoFuncionaRoute,
   ContactoRoute: ContactoRoute,
-  EmpresasRoute: EmpresasRoute,
+  EmpresasRoute: EmpresasRouteWithChildren,
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
   LegalRoute: LegalRoute,
