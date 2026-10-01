@@ -1,14 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarButton } from "@/components/calendar-button";
 import { PageHeader } from "@/components/page-header";
-import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { makeSeo } from "@/lib/seo";
-
-const smokingMailto = (subject: string) =>
-  `mailto:${siteSettings.smokingProgramEmail}?subject=${encodeURIComponent(
-    subject,
-  )}&body=${encodeURIComponent(siteSettings.smokingProgramEmailBody)}`;
 
 export const Route = createFileRoute("/reservar")({
   head: () =>
@@ -42,12 +36,12 @@ function BookPage() {
               <CalendarButton className="mt-7 w-fit" />
             ) : (
               <>
-                <a
-                  href={smokingMailto(t.common.smokeEmail)}
+                <Link
+                  to="/dejar-de-fumar"
                   className="mt-7 w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
                 >
                   {t.common.smokeEmail}
-                </a>
+                </Link>
                 <p className="mt-3 text-xs text-muted-foreground">{t.common.smokeEmailNote}</p>
               </>
             )}

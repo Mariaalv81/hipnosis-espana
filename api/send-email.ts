@@ -164,8 +164,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     await sendViaSendGrid({ to, from, subject, text });
 
     return res.status(200).json({ ok: true, via: "sendgrid" });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("send-email error", err);
-    return res.status(500).json({ ok: false, error: err.message || "Server error" });
+    const message = err instanceof Error ? err.message : "Server error";
+    return res.status(500).json({ ok: false, error: message });
   }
 }

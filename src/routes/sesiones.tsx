@@ -44,10 +44,10 @@ function SessionsPage() {
               <CalendarButton className="mt-8 w-fit" />
             ) : (
               <Link
-                to="/reservar"
+                to="/dejar-de-fumar"
                 className="mt-8 rounded-full bg-primary px-6 py-3 text-center text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                {t.common.bookNow}
+                {t.common.smokeEmail}
               </Link>
             )}
           </article>

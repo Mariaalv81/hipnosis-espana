@@ -14,6 +14,7 @@ import { Route as AmbitosRouteImport } from './routes/ambitos'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as DejarDeFumarRouteImport } from './routes/dejar-de-fumar'
 import { Route as EmpresasRouteImport } from './routes/empresas'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
@@ -49,6 +50,11 @@ const ComoFuncionaRoute = ComoFuncionaRouteImport.update({
 const ContactoRoute = ContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DejarDeFumarRoute = DejarDeFumarRouteImport.update({
+  id: '/dejar-de-fumar',
+  path: '/dejar-de-fumar',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EmpresasRoute = EmpresasRouteImport.update({
@@ -113,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
@@ -130,6 +137,7 @@ export interface FileRoutesByTo {
   '/ambitos': typeof AmbitosRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
@@ -149,6 +157,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
+  '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
@@ -169,6 +178,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/como-funciona'
     | '/contacto'
+    | '/dejar-de-fumar'
     | '/empresas'
     | '/eventos'
     | '/faq'
@@ -186,6 +196,7 @@ export interface FileRouteTypes {
     | '/ambitos'
     | '/como-funciona'
     | '/contacto'
+    | '/dejar-de-fumar'
     | '/empresas'
     | '/eventos'
     | '/faq'
@@ -204,6 +215,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/como-funciona'
     | '/contacto'
+    | '/dejar-de-fumar'
     | '/empresas'
     | '/eventos'
     | '/faq'
@@ -223,6 +235,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   ComoFuncionaRoute: typeof ComoFuncionaRoute
   ContactoRoute: typeof ContactoRoute
+  DejarDeFumarRoute: typeof DejarDeFumarRoute
   EmpresasRoute: typeof EmpresasRouteWithChildren
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
@@ -268,6 +281,13 @@ declare module '@tanstack/react-router' {
       path: '/contacto'
       fullPath: '/contacto'
       preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dejar-de-fumar': {
+      id: '/dejar-de-fumar'
+      path: '/dejar-de-fumar'
+      fullPath: '/dejar-de-fumar'
+      preLoaderRoute: typeof DejarDeFumarRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/empresas': {
@@ -380,6 +400,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   ComoFuncionaRoute: ComoFuncionaRoute,
   ContactoRoute: ContactoRoute,
+  DejarDeFumarRoute: DejarDeFumarRoute,
   EmpresasRoute: EmpresasRouteWithChildren,
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,

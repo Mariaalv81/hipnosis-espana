@@ -259,7 +259,10 @@ function HypnosisPage() {
             </Link>
           </div>
           <div className="mt-4 text-sm">
-            <Link to="/empresas" className="text-primary underline">
+            <Link
+              to="/empresas"
+              className="text-primary-foreground/90 underline underline-offset-4 hover:text-primary-foreground"
+            >
               {t.home.ctaCompanies}
             </Link>
           </div>

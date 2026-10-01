@@ -65,7 +65,7 @@ function CorporateContactPage() {
     ].join("\n");
 
     try {
-      const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
+      const siteKey = import.meta.env["VITE_RECAPTCHA_SITE_KEY"] as string | undefined;
       if (siteKey) {
         try {
           await loadRecaptcha(siteKey);

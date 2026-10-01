@@ -45,7 +45,8 @@ function EmpresasPage() {
                 HABLAR SOBRE UN PROGRAMA
               </Link>
               <Link
-                to="/empresas#formatos"
+                to="/empresas"
+                hash="formatos"
                 className="rounded-full border border-border bg-card px-6 py-3 text-sm"
               >
                 FORMATOS PARA EMPRESAS

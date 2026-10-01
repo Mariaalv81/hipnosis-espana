@@ -68,7 +68,7 @@ export function applyConsent(consent: ConsentPreferences): void {
 export function loadGoogleAnalytics(): void {
   if (typeof window === "undefined") return;
 
-  (window as Window & Record<string, unknown>)[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+  (window as unknown as Record<string, unknown>)[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
 
   ensureGoogleTag();
 
@@ -78,14 +78,14 @@ export function loadGoogleAnalytics(): void {
     ad_user_data: "denied",
     ad_personalization: "denied",
   });
-  window.gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
+  window.gtag?.("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
 }
 
 export function disableGoogleAnalytics(): void {
   if (typeof window === "undefined") return;
 
   ensureGoogleTag();
-  (window as Window & Record<string, unknown>)[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+  (window as unknown as Record<string, unknown>)[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
   window.gtag?.("consent", "update", {
     analytics_storage: "denied",
     ad_storage: "denied",

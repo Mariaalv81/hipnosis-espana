@@ -21,8 +21,6 @@ const es = {
     title: "Un espacio para cambiar desde dentro",
     subtitle:
       "Acompañamiento con hipnosis para personas adultas que quieren producir cambios reales: hábitos, calma, foco y confianza. Con criterio, cercanía y expectativas honestas.",
-    ctaPrimary: "Reservar una sesión",
-    ctaSecondary: "Cómo funciona",
     pillars: [
       {
         title: "Explicación clara",
@@ -146,6 +144,255 @@ const es = {
     ctaPrimary: "RESERVAR UNA SESIÓN",
     ctaSecondary: "PREGUNTAR ANTES DE RESERVAR",
     ctaCompanies: "¿Representas a una empresa? Ver soluciones para organizaciones →",
+  },
+  companiesPage: {
+    seoTitle: "Programas de desarrollo profesional para empresas · María Cabo",
+    seoDescription:
+      "Talleres y programas para trabajar atención, confianza, aprendizaje, hábitos y preparación ante situaciones profesionales exigentes.",
+    heroTitle: "DESARROLLO PROFESIONAL",
+    heroLead:
+      "Atención, confianza, aprendizaje y cambio de hábitos aplicados al entorno profesional.",
+    heroText:
+      "Diseño talleres y programas que utilizan herramientas de hipnosis, atención focalizada y cambio de patrones para ayudar a las personas a trabajar de forma más consciente frente a situaciones de presión, distracción, inseguridad o bloqueo.",
+    heroPrimary: "HABLAR SOBRE UN PROGRAMA",
+    heroSecondary: "FORMATOS PARA EMPRESAS",
+    heroImageAlt: "Equipo trabajando",
+    leadTitle: 'CUANDO "SABER QUÉ HACER" NO ES SUFICIENTE',
+    leadText:
+      "En muchas situaciones profesionales, el problema no es la falta de conocimientos. Gran parte de nuestro comportamiento funciona mediante asociaciones, expectativas y respuestas automatizadas. Trabajar sobre esos patrones complementa la formación tradicional y ayuda a desarrollar nuevas formas de responder.",
+    areasEyebrow: "ÁREAS DE TRABAJO",
+    areas: [
+      {
+        title: "CONFIANZA PROFESIONAL",
+        text: "Presentaciones, reuniones, entrevistas y situaciones de exposición.",
+      },
+      {
+        title: "FOCO Y ATENCIÓN",
+        text: "Hábitos de concentración, recuperación del foco y gestión de distracciones.",
+      },
+      {
+        title: "APRENDIZAJE",
+        text: "Crear condiciones mentales y hábitos favorables para incorporar nuevas habilidades.",
+      },
+      {
+        title: "GESTIÓN DE LA PRESIÓN",
+        text: "Preparación mental para rendir en situaciones exigentes.",
+      },
+      {
+        title: "CAMBIO DE HÁBITOS",
+        text: "Reducir automatismos que dificultan el trabajo y construir hábitos útiles.",
+      },
+      {
+        title: "PREPARACIÓN MENTAL",
+        text: "Intervenciones diseñadas para situaciones concretas: negociaciones, certificaciones o mediación de conflictos.",
+      },
+    ],
+    formatsTitle: "FORMATOS PARA EMPRESAS",
+    formats: [
+      {
+        title: "SESIONES INTRODUCTORIAS",
+        text: "45–60 minutos. Introducción práctica a la atención y los automatismos.",
+      },
+      {
+        title: "TALLERES",
+        text: "90 minutos – 3 horas. Sesiones prácticas centradas en una habilidad concreta.",
+      },
+      {
+        title: "PROGRAMAS",
+        text: "Varias sesiones con seguimiento cuando se requiere práctica y consolidación.",
+      },
+      {
+        title: "SESIONES INDIVIDUALES",
+        text: "Sesiones dentro de programas para personas que necesitan trabajo más personalizado.",
+      },
+    ],
+    confidentialityTitle: "CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS",
+    confidentialityParagraphs: [
+      "Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La empresa puede participar en la definición del objetivo general del programa, pero el contenido de las conversaciones y de las sesiones no se comparte con la organización.",
+      "El trabajo parte siempre del consentimiento del empleado. La hipnosis no se utiliza para modificar sus valores, su personalidad, sus opiniones ni para inducir comportamientos que no desea. Al contrario: es una herramienta orientada a ayudar a la persona a desarrollar un mayor control sobre determinadas respuestas automáticas, emociones o hábitos que ella misma quiere cambiar.",
+      "Los objetivos deben, por tanto, tener sentido para ambas partes: pueden favorecer el desarrollo profesional y, al mismo tiempo, representar una mejora real para la persona.",
+    ],
+    exampleTitle: "Ejemplo",
+    exampleText:
+      "Una empresa quiere promocionar a un empleado a un puesto que implica viajar con mayor frecuencia, pero esa persona tiene un miedo intenso a volar. La empresa y el empleado pueden acordar que trabajar ese miedo sería beneficioso para su nueva responsabilidad. A partir de ahí, las sesiones y conversaciones se mantienen de forma privada, y el proceso solo se realiza si el empleado desea trabajar ese objetivo y da su consentimiento.",
+    exampleSummary:
+      "La empresa acuerda el objetivo. El empleado decide participar. La sesión permanece privada.",
+    processAria: "Cómo trabajamos con organizaciones",
+    processTitle: "CÓMO ES UNA SESIÓN O TALLER",
+    processSteps: [
+      {
+        title: "DEFINIMOS EL OBJETIVO.",
+        text: "Hablamos con la organización para entender la situación y el resultado esperado.",
+      },
+      {
+        title: "EXPLICAMOS CÓMO FUNCIONA.",
+        text: "Qué es la hipnosis, qué se puede esperar y qué no ocurre durante el proceso.",
+      },
+      {
+        title: "PRACTICAMOS.",
+        text: "Ejercicios de atención, visualizaciones y preparación mental adecuados al objetivo.",
+      },
+      {
+        title: "LO TRASLADAMOS AL TRABAJO REAL.",
+        text: "Buscamos que las herramientas se utilicen en situaciones profesionales concretas.",
+      },
+    ],
+    finalTitle: "HABLEMOS DE TU EQUIPO",
+    finalText:
+      "Cuéntame qué quieres mejorar y valoraremos si este enfoque tiene sentido para vuestra organización.",
+    finalCta: "SOLICITAR UNA CONVERSACIÓN",
+    aboutLink: "CONOCER MÁS SOBRE MARÍA",
+  },
+  companiesContact: {
+    seoTitle: "Hablar sobre un programa para empresas · María Cabo",
+    seoDescription:
+      "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María Cabo.",
+    eyebrow: "Empresas",
+    title: "Hablar sobre un programa",
+    intro:
+      "Cuéntame el contexto de la organización para valorar si un taller o programa puede encajar con vuestro objetivo.",
+    fields: {
+      company: "Empresa",
+      contactName: "Persona de contacto",
+      role: "Cargo",
+      email: "Email",
+      phone: "Teléfono",
+      employees: "Nº de empleados",
+      objective: "Objetivo del programa",
+      format: "Formato de interés",
+      participants: "Participantes previstos",
+      message: "Mensaje",
+    },
+    objectivePlaceholder: "Ej. mejorar foco, preparar presentaciones, gestionar presión...",
+    formatPlaceholder: "Selecciona una opción",
+    formats: [
+      "Sesión introductoria",
+      "Taller",
+      "Programa de varias sesiones",
+      "Sesiones individuales dentro de empresa",
+      "No lo tengo claro",
+    ],
+    consent: "He leído y acepto la política de privacidad.",
+    send: "Enviar consulta de empresa",
+    sent: "Gracias, he recibido la consulta. Te responderé para valorar el encaje.",
+    mailto: "Enviar por correo",
+    asideTitle: "Para preparar la conversación",
+    asideItems: [
+      "El objetivo puede ser individual, grupal o de equipo.",
+      "El formato se ajusta al tamaño del grupo y al contexto de trabajo.",
+      "No se comparten contenidos privados de sesiones individuales con la empresa.",
+    ],
+    back: "Volver a empresas",
+    emailSubject: "Programa para empresas",
+    emailSummary: "Consulta B2B desde la web",
+    notProvided: "No indicado",
+  },
+  smokingPage: {
+    seoTitle: "Programa para dejar de fumar con hipnosis en Sueca · María Cabo",
+    seoDescription:
+      "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca (Valencia). Entrevista previa gratuita de 20 minutos sin compromiso.",
+    eyebrow: "PROGRAMA ANTITABACO",
+    title: "DEJAR DE FUMAR CON HIPNOSIS",
+    subtitle:
+      "Un recorrido estructurado para cambiar automatismos, desactivar disparadores cotidianos y sostener tu decisión con calma.",
+    introText:
+      "Fumar no suele ser una decisión consciente: funciona a través de patrones automáticos construidos durante años. Con hipnosis trabajamos precisamente con esa parte involuntaria, para que soltar el tabaco no sea una batalla agotadora contra ti mismo.",
+    ctaPrimary: "SOLICITAR ENTREVISTA PREVIA",
+    ctaSecondary: "CÓMO ES EL PROGRAMA",
+    whyTitle: '¿POR QUÉ LA "FUERZA DE VOLUNTAD" NO SUELE SER SUFICIENTE?',
+    whyParagraphs: [
+      "La mayoría de las personas que quieren dejar de fumar saben perfectamente por qué deberían hacerlo: salud, dinero, libertad, olor. Sin embargo, en cuanto aparece el estrés, el café de la mañana o una sobremesa con amigos, el cuerpo y la mente activan la respuesta automática antes de que la razón intervenga.",
+      "El problema no es que te falte voluntad o carácter. El problema es que el hábito del tabaco se sostiene en asociaciones neuronales profundas que operan de forma automática. Intentar frenarlo únicamente con fuerza de voluntad constante genera tensión, irritabilidad y desgaste.",
+      "La hipnosis permite intervenir en el nivel donde se originan esos automatismos: ayuda a desconectar las asociaciones que vinculan el tabaco con la calma o el placer, y a sustituirlas por respuestas saludables y tranquilas.",
+    ],
+    programTitle: "ESTRUCTURA DEL PROGRAMA (3 SESIONES)",
+    programIntro:
+      "Un proceso claro, con inicio y fin, diseñado para darte autonomía y evitar dependencias.",
+    steps: [
+      {
+        num: "01",
+        title: "ENTREVISTA PREVIA DE 20 MINUTOS",
+        badge: "Gratuita y sin compromiso",
+        text: "Hablamos por teléfono o videollamada para conocer tu relación con el tabaco, tus motivaciones personales y resolver todas tus dudas antes de empezar.",
+      },
+      {
+        num: "02",
+        title: "SESIÓN 1 · EL DÍA DEL CAMBIO",
+        badge: "Presencial en Sueca (75 min)",
+        text: "Trabajamos en profundidad tus motivos personales, desactivamos los disparadores cotidianos y anclamos el nuevo estado de no fumador.",
+      },
+      {
+        num: "03",
+        title: "SESIÓN 2 · CONSOLIDACIÓN Y CALMA",
+        badge: "Presencial en Sueca (60 min)",
+        text: "Evaluamos los primeros días sin fumar, reforzamos la sensación de bienestar, gestionamos posibles picos de tensión y afianzamos nuevas respuestas.",
+      },
+      {
+        num: "04",
+        title: "SESIÓN 3 · AUTONOMÍA Y PREVENCIÓN",
+        badge: "Presencial en Sueca (60 min)",
+        text: "Proyección a largo plazo, herramientas para situaciones sociales o de estrés imprevisto y cierre del proceso con total independencia.",
+      },
+    ],
+    includedTitle: "QUÉ INCLUYE EL PROGRAMA",
+    includedItems: [
+      "Entrevista previa de valoración de 20 minutos sin coste.",
+      "3 sesiones presenciales individuales e intensivas en Sueca.",
+      "Grabación de audio de refuerzo personalizada para escuchar en casa.",
+      "Seguimiento y apoyo cercano entre sesiones.",
+      "Pautas de respiración y autohipnosis para momentos puntuales de tensión.",
+    ],
+    price: "300 €",
+    priceNote:
+      "Precio cerrado por el paquete completo de las tres sesiones y todo el material de apoyo.",
+    formEyebrow: "ENTREVISTA PREVIA",
+    formTitle: "SOLICITAR ENTREVISTA DE 20 MINUTOS",
+    formSubtitle:
+      "Rellena este breve formulario y me pondré en contacto contigo para concertar la llamada sin ningún compromiso.",
+    formFields: {
+      name: "Nombre completo",
+      email: "Correo electrónico",
+      phone: "Teléfono",
+      preferredTime: "Horario preferido para la llamada",
+      preferredTimePlaceholder: "Selecciona una opción",
+      timeOptions: [
+        "Mañanas (09:00 - 13:00)",
+        "Mediodía (13:00 - 16:00)",
+        "Tardes (16:00 - 20:00)",
+        "Indiferente / Cualquier horario",
+      ],
+      preferredMethod: "Medio preferido",
+      methodOptions: ["Llamada telefónica", "Videollamada"],
+      habitDetails: "¿Cuánto fumas habitualmente? (Opcional)",
+      habitDetailsPlaceholder: "Ej. 1 paquete al día desde hace 10 años, fumo más por estrés...",
+      message: "¿Alguna duda o comentario adicional? (Opcional)",
+      messagePlaceholder: "¿Hay algo que quieras consultar antes de la llamada?",
+      consent: "He leído y acepto la política de privacidad.",
+      submit: "Solicitar entrevista previa gratuita",
+      submitting: "Enviando solicitud...",
+      success:
+        "Gracias. He recibido tu solicitud. Te llamaré o escribiré en breve para confirmar el horario de la entrevista.",
+      fallbackMailto: "Enviar por correo electrónico",
+    },
+    faqTitle: "PREGUNTAS FRECUENTES SOBRE EL PROGRAMA",
+    faqs: [
+      {
+        q: "¿Dejaré de fumar desde la primera sesión?",
+        a: "El objetivo es que dejes de fumar en la primera sesión presencial. La entrevista previa nos permite preparar ese momento para que llegues decidido, y las sesiones 2 y 3 sirven para consolidar el cambio y asegurar que te mantienes sin fumar sin sufrimiento.",
+      },
+      {
+        q: "¿Tendré ansiedad o ganas incontrolables de fumar?",
+        a: "La hipnosis ayuda precisamente a reducir el componente de ansiedad psicológica asociado a la abstinencia. Te daremos además una grabación de refuerzo y pautas sencillas de calma para los momentos puntuales.",
+      },
+      {
+        q: "¿Qué pasa si no funciona o tengo dudas?",
+        a: "Por eso realizamos la entrevista previa gratuita de 20 minutos: para evaluar honestamente tu caso. Si consideramos que no es el momento adecuado o que necesitas otro tipo de acompañamiento, te lo diré con total transparencia.",
+      },
+      {
+        q: "¿Dónde se realizan las sesiones?",
+        a: "Las 3 sesiones presenciales se realizan en mi despacho independiente dentro del Centro Sanar en Sueca (Valencia). La entrevista previa de 20 minutos se realiza cómodamente por teléfono o videollamada.",
+      },
+    ],
   },
   how: {
     title: "Cómo funciona",
@@ -659,8 +906,6 @@ const va: Dict = {
     title: "Un espai per a canviar des de dins",
     subtitle:
       "Acompanyament amb hipnosi per a persones adultes que volen produir canvis reals: hàbits, calma, focus i confiança. Amb criteri, proximitat i expectatives honestes.",
-    ctaPrimary: "Reservar una sessió",
-    ctaSecondary: "Com funciona",
     pillars: [
       {
         title: "Explicació clara",
@@ -784,6 +1029,253 @@ const va: Dict = {
     ctaPrimary: "RESERVAR UNA SESSIÓ",
     ctaSecondary: "PREGUNTAR ABANS DE RESERVAR",
     ctaCompanies: "Representes una empresa? Veure solucions per a organitzacions →",
+  },
+  companiesPage: {
+    seoTitle: "Programes de desenvolupament professional per a empreses · María Cabo",
+    seoDescription:
+      "Tallers i programes per a treballar atenció, confiança, aprenentatge, hàbits i preparació davant situacions professionals exigents.",
+    heroTitle: "DESENVOLUPAMENT PROFESSIONAL",
+    heroLead: "Atenció, confiança, aprenentatge i canvi d'hàbits aplicats a l'entorn professional.",
+    heroText:
+      "Dissenye tallers i programes que utilitzen ferramentes d'hipnosi, atenció focalitzada i canvi de patrons per a ajudar les persones a treballar d'una manera més conscient davant situacions de pressió, distracció, inseguretat o bloqueig.",
+    heroPrimary: "PARLAR SOBRE UN PROGRAMA",
+    heroSecondary: "FORMATS PER A EMPRESES",
+    heroImageAlt: "Equip treballant",
+    leadTitle: 'QUAN "SABER QUÈ FER" NO ÉS SUFICIENT',
+    leadText:
+      "En moltes situacions professionals, el problema no és la falta de coneixements. Gran part del nostre comportament funciona mitjançant associacions, expectatives i respostes automatitzades. Treballar sobre estos patrons complementa la formació tradicional i ajuda a desenvolupar noves formes de respondre.",
+    areasEyebrow: "ÀREES DE TREBALL",
+    areas: [
+      {
+        title: "CONFIANÇA PROFESSIONAL",
+        text: "Presentacions, reunions, entrevistes i situacions d'exposició.",
+      },
+      {
+        title: "FOCUS I ATENCIÓ",
+        text: "Hàbits de concentració, recuperació del focus i gestió de distraccions.",
+      },
+      {
+        title: "APRENENTATGE",
+        text: "Crear condicions mentals i hàbits favorables per a incorporar noves habilitats.",
+      },
+      {
+        title: "GESTIÓ DE LA PRESSIÓ",
+        text: "Preparació mental per a rendir en situacions exigents.",
+      },
+      {
+        title: "CANVI D'HÀBITS",
+        text: "Reduir automatismes que dificulten el treball i construir hàbits útils.",
+      },
+      {
+        title: "PREPARACIÓ MENTAL",
+        text: "Intervencions dissenyades per a situacions concretes: negociacions, certificacions o mediació de conflictes.",
+      },
+    ],
+    formatsTitle: "FORMATS PER A EMPRESES",
+    formats: [
+      {
+        title: "SESSIONS INTRODUCTÒRIES",
+        text: "45–60 minuts. Introducció pràctica a l'atenció i els automatismes.",
+      },
+      {
+        title: "TALLERS",
+        text: "90 minuts – 3 hores. Sessions pràctiques centrades en una habilitat concreta.",
+      },
+      {
+        title: "PROGRAMES",
+        text: "Diverses sessions amb seguiment quan es requerix pràctica i consolidació.",
+      },
+      {
+        title: "SESSIONS INDIVIDUALS",
+        text: "Sessions dins de programes per a persones que necessiten un treball més personalitzat.",
+      },
+    ],
+    confidentialityTitle: "CONFIDENCIALITAT, CONSENTIMENT I OBJECTIUS COMPARTITS",
+    confidentialityParagraphs: [
+      "Les sessions individuals són un espai privat i confidencial entre el professional i l'empleat. L'empresa pot participar en la definició de l'objectiu general del programa, però el contingut de les converses i de les sessions no es compartix amb l'organització.",
+      "El treball partix sempre del consentiment de l'empleat. La hipnosi no s'utilitza per a modificar els seus valors, la seua personalitat, les seues opinions ni per a induir comportaments que no desitja. Al contrari: és una ferramenta orientada a ajudar la persona a desenvolupar un major control sobre determinades respostes automàtiques, emocions o hàbits que ella mateixa vol canviar.",
+      "Els objectius, per tant, han de tindre sentit per a les dos parts: poden afavorir el desenvolupament professional i, al mateix temps, representar una millora real per a la persona.",
+    ],
+    exampleTitle: "Exemple",
+    exampleText:
+      "Una empresa vol promocionar un empleat a un lloc que implica viatjar amb més freqüència, però eixa persona té una por intensa a volar. L'empresa i l'empleat poden acordar que treballar eixa por seria beneficiós per a la nova responsabilitat. A partir d'ací, les sessions i converses es mantenen de forma privada, i el procés només es realitza si l'empleat vol treballar eixe objectiu i dona el seu consentiment.",
+    exampleSummary:
+      "L'empresa acorda l'objectiu. L'empleat decidix participar. La sessió continua sent privada.",
+    processAria: "Com treballem amb organitzacions",
+    processTitle: "COM ÉS UNA SESSIÓ O TALLER",
+    processSteps: [
+      {
+        title: "DEFINIM L'OBJECTIU.",
+        text: "Parlem amb l'organització per a entendre la situació i el resultat esperat.",
+      },
+      {
+        title: "EXPLIQUEM COM FUNCIONA.",
+        text: "Què és la hipnosi, què es pot esperar i què no ocorre durant el procés.",
+      },
+      {
+        title: "PRACTIQUEM.",
+        text: "Exercicis d'atenció, visualitzacions i preparació mental adequats a l'objectiu.",
+      },
+      {
+        title: "HO TRASLLADEM AL TREBALL REAL.",
+        text: "Busquem que les ferramentes s'utilitzen en situacions professionals concretes.",
+      },
+    ],
+    finalTitle: "PARLEM DEL TEU EQUIP",
+    finalText:
+      "Conta'm què vols millorar i valorarem si este enfocament té sentit per a la vostra organització.",
+    finalCta: "SOL·LICITAR UNA CONVERSA",
+    aboutLink: "CONÉIXER MÉS SOBRE MARÍA",
+  },
+  companiesContact: {
+    seoTitle: "Parlar sobre un programa per a empreses · María Cabo",
+    seoDescription:
+      "Formulari per a empreses interessades en tallers o programes de desenvolupament professional amb María Cabo.",
+    eyebrow: "Empreses",
+    title: "Parlar sobre un programa",
+    intro:
+      "Conta'm el context de l'organització per a valorar si un taller o programa pot encaixar amb el vostre objectiu.",
+    fields: {
+      company: "Empresa",
+      contactName: "Persona de contacte",
+      role: "Càrrec",
+      email: "Email",
+      phone: "Telèfon",
+      employees: "Nº d'empleats",
+      objective: "Objectiu del programa",
+      format: "Format d'interés",
+      participants: "Participants previstos",
+      message: "Missatge",
+    },
+    objectivePlaceholder: "Ex. millorar focus, preparar presentacions, gestionar pressió...",
+    formatPlaceholder: "Selecciona una opció",
+    formats: [
+      "Sessió introductòria",
+      "Taller",
+      "Programa de diverses sessions",
+      "Sessions individuals dins d'empresa",
+      "No ho tinc clar",
+    ],
+    consent: "He llegit i accepte la política de privacitat.",
+    send: "Enviar consulta d'empresa",
+    sent: "Gràcies, he rebut la consulta. Et respondré per a valorar l'encaix.",
+    mailto: "Enviar per correu",
+    asideTitle: "Per a preparar la conversa",
+    asideItems: [
+      "L'objectiu pot ser individual, grupal o d'equip.",
+      "El format s'ajusta a la mida del grup i al context de treball.",
+      "No es compartixen continguts privats de sessions individuals amb l'empresa.",
+    ],
+    back: "Tornar a empreses",
+    emailSubject: "Programa per a empreses",
+    emailSummary: "Consulta B2B des de la web",
+    notProvided: "No indicat",
+  },
+  smokingPage: {
+    seoTitle: "Programa per a deixar de fumar amb hipnosi a Sueca · María Cabo",
+    seoDescription:
+      "Programa estructurat de tres sessions d'hipnosi per a deixar de fumar a Sueca (València). Entrevista prèvia gratuïta de 20 minuts sense compromís.",
+    eyebrow: "PROGRAMA ANTITABAC",
+    title: "DEIXAR DE FUMAR AMB HIPNOSI",
+    subtitle:
+      "Un recorregut estructurat per a canviar automatismes, desactivar disparadors quotidians i sostindre la teua decisió amb calma.",
+    introText:
+      "Fumar no sol ser una decisió conscient: funciona a través de patrons automàtics construïts durant anys. Amb hipnosi treballem precisament amb eixa part involuntària, perquè soltar el tabac no siga una batalla esgotadora contra tu mateix.",
+    ctaPrimary: "SOL·LICITAR ENTREVISTA PRÈVIA",
+    ctaSecondary: "COM ÉS EL PROGRAMA",
+    whyTitle: 'PER QUÈ LA "FORÇA DE VOLUNTAT" NO SOL SER SUFICIENT?',
+    whyParagraphs: [
+      "La majoria de les persones que volen deixar de fumar saben perfectament per què haurien de fer-ho: salut, diners, llibertat, olor. No obstant això, en quant apareix l'estrés, el cafè del matí o una sobretaula amb amics, el cos i la ment activen la resposta automàtica abans que la raó intervinga.",
+      "El problema no és que et falte voluntat o caràcter. El problema és que l'hàbit del tabac se sosté en associacions neuronals profundes que operen de forma automàtica. Intentar frenar-lo únicament amb força de voluntat constant genera tensió, irritabilitat i desgast.",
+      "La hipnosi permet intervindre en el nivell on s'originen eixos automatismes: ajuda a desconnectar les associacions que vinculen el tabac amb la calma o el plaer, i a substituir-les per respostes saludables i tranquil·les.",
+    ],
+    programTitle: "ESTRUCTURA DEL PROGRAMA (3 SESSIONS)",
+    programIntro:
+      "Un procés clar, amb inici i fi, dissenyat per a donar-te autonomia i evitar dependències.",
+    steps: [
+      {
+        num: "01",
+        title: "ENTREVISTA PRÈVIA DE 20 MINUTS",
+        badge: "Gratuïta i sense compromís",
+        text: "Parlem per telèfon o videotelefonada per a conéixer la teua relació amb el tabac, els teus motius personals i resoldre tots els dubtes abans de començar.",
+      },
+      {
+        num: "02",
+        title: "SESSIÓ 1 · EL DIA DEL CANVI",
+        badge: "Presencial a Sueca (75 min)",
+        text: "Treballem en profunditat els teus motius personals, desactivem els disparadors quotidians i anclem el nou estat de no fumador.",
+      },
+      {
+        num: "03",
+        title: "SESSIÓ 2 · CONSOLIDACIÓ I CALMA",
+        badge: "Presencial a Sueca (60 min)",
+        text: "Avaluem els primers dies sense fumar, reforcem la sensació de benestar, gestionem possibles pics de tensió i afermem noves respostes.",
+      },
+      {
+        num: "04",
+        title: "SESSIÓ 3 · AUTONOMIA I PREVENCIÓ",
+        badge: "Presencial a Sueca (60 min)",
+        text: "Projecció a llarg termini, ferramentes per a situacions socials o d'estrés imprevist i tancament del procés amb total independència.",
+      },
+    ],
+    includedTitle: "QUÈ INCLOU EL PROGRAMA",
+    includedItems: [
+      "Entrevista prèvia de valoració de 20 minuts sense cost.",
+      "3 sessions presencials individuals i intensives a Sueca.",
+      "Gravació d'àudio de reforç personalitzada per a escoltar a casa.",
+      "Seguiment i suport proper entre sessions.",
+      "Pautes de respiració i autohipnosi per a moments puntuals de tensió.",
+    ],
+    price: "300 €",
+    priceNote: "Preu tancat pel paquet complet de les tres sessions i tot el material de suport.",
+    formEyebrow: "ENTREVISTA PRÈVIA",
+    formTitle: "SOL·LICITAR ENTREVISTA DE 20 MINUTOS",
+    formSubtitle:
+      "Emplena este breu formulari i em posaré en contacte amb tu per a concertar la telefonada sense cap compromís.",
+    formFields: {
+      name: "Nom complet",
+      email: "Correu electrònic",
+      phone: "Telèfon",
+      preferredTime: "Horari preferit per a la telefonada",
+      preferredTimePlaceholder: "Selecciona una opció",
+      timeOptions: [
+        "Matins (09:00 - 13:00)",
+        "Migdia (13:00 - 16:00)",
+        "Vesprades (16:00 - 20:00)",
+        "Indiferent / Qualsevol horari",
+      ],
+      preferredMethod: "Mitjà preferit",
+      methodOptions: ["Telefonada", "Videotelefonada"],
+      habitDetails: "Quant fumes habitualment? (Opcional)",
+      habitDetailsPlaceholder: "Ex. 1 paquet al dia des de fa 10 anys, fume més per estrés...",
+      message: "Algun dubte o comentari addicional? (Opcional)",
+      messagePlaceholder: "Hi ha alguna cosa que vulgues consultar abans de la telefonada?",
+      consent: "He llegit i accepte la política de privacitat.",
+      submit: "Sol·licitar entrevista prèvia gratuïta",
+      submitting: "Enviant sol·licitud...",
+      success:
+        "Gràcies. He rebut la teua sol·licitud. Et telefonaré o escriuré prompte per a confirmar l'horari de l'entrevista.",
+      fallbackMailto: "Enviar per correu electrònic",
+    },
+    faqTitle: "PREGUNTES FREQÜENTS SOBRE EL PROGRAMA",
+    faqs: [
+      {
+        q: "Deixaré de fumar des de la primera sessió?",
+        a: "L'objectiu és que deixes de fumar en la primera sessió presencial. L'entrevista prèvia ens permet preparar eixe moment perquè arribes decidit, i les sessions 2 i 3 servixen per a consolidar el canvi i assegurar que et mantens sense fumar sense patiment.",
+      },
+      {
+        q: "Tindré ansietat o ganes incontrolables de fumar?",
+        a: "La hipnosi ajuda precisament a reduir el component d'ansietat psicològica associat a l'abstinència. Et donarem a més una gravació de reforç i pautes senzilles de calma per als moments puntuals.",
+      },
+      {
+        q: "Què passa si no funciona o tinc dubtes?",
+        a: "Per això realitzem l'entrevista prèvia gratuïta de 20 minuts: per a avaluar honestament el teu cas. Si considerem que no és el moment adequat o que necessites un altre tipus d'acompanyament, t'ho diré amb total transparència.",
+      },
+      {
+        q: "On es realitzen les sessions?",
+        a: "Les 3 sessions presencials es realitzen en el meu despatx independent dins del Centre Sanar a Sueca (València). L'entrevista prèvia de 20 minuts es realitza còmodament per telèfon o videotelefonada.",
+      },
+    ],
   },
   how: {
     title: "Com funciona",
@@ -1156,6 +1648,7 @@ const va: Dict = {
     title: "Contacte",
     intro:
       "Si tens un dubte abans de reservar, escriu-me i et responc amb calma. No cal que expliques res que no vulgues contar.",
+    phone: "Telèfon",
     name: "Nom",
     email: "Correu electrònic",
     message: "El teu missatge",
@@ -1292,8 +1785,6 @@ const en: Dict = {
     title: "A space to change from within",
     subtitle:
       "Hypnosis-based support for adults who want real change: habits, calm, focus and confidence. Thoughtful, close and honest about what to expect.",
-    ctaPrimary: "Book a session",
-    ctaSecondary: "How it works",
     pillars: [
       {
         title: "Clear explanation",
@@ -1414,6 +1905,253 @@ const en: Dict = {
     ctaPrimary: "BOOK A SESSION",
     ctaSecondary: "ASK A QUESTION BEFORE BOOKING",
     ctaCompanies: "Representing an organisation? Explore our solutions →",
+  },
+  companiesPage: {
+    seoTitle: "Professional Development Programmes for Organisations · María Cabo",
+    seoDescription:
+      "Workshops and programmes focusing on focus, confidence, learning, habits and mental preparation for high-demand professional environments.",
+    heroTitle: "PROFESSIONAL DEVELOPMENT",
+    heroLead: "Focus, confidence, learning and habit change applied to the workplace.",
+    heroText:
+      "I design workshops and programmes using hypnosis, focused attention and pattern-shifting tools to help individuals work more consciously through pressure, distraction, self-doubt or mental blocks.",
+    heroPrimary: "DISCUSS A PROGRAMME",
+    heroSecondary: "FORMATS FOR BUSINESSES",
+    heroImageAlt: "Team working together",
+    leadTitle: 'WHEN "KNOWING WHAT TO DO" IS NOT ENOUGH',
+    leadText:
+      "In many professional situations, the issue is not a lack of knowledge. Much of our behaviour is driven by automatic associations, expectations and habits. Working directly on these patterns complements traditional training and enables new ways of responding.",
+    areasEyebrow: "FOCUS AREAS",
+    areas: [
+      {
+        title: "PROFESSIONAL CONFIDENCE",
+        text: "Presentations, high-stakes meetings, interviews and public speaking.",
+      },
+      {
+        title: "FOCUS & ATTENTION",
+        text: "Concentration routines, reclaiming focus and managing modern distractions.",
+      },
+      {
+        title: "LEARNING & ADAPTABILITY",
+        text: "Cultivating mental conditions that facilitate acquiring new skills quickly.",
+      },
+      {
+        title: "PRESSURE MANAGEMENT",
+        text: "Mental preparation to perform calmly under tight deadlines and scrutiny.",
+      },
+      {
+        title: "HABIT RESTRUCTURING",
+        text: "Reducing counter-productive automatic behaviours and building sustainable habits.",
+      },
+      {
+        title: "TARGETED MENTAL PREPARATION",
+        text: "Specific interventions for key milestones: negotiations, certifications or mediation.",
+      },
+    ],
+    formatsTitle: "FORMATS FOR ORGANISATIONS",
+    formats: [
+      {
+        title: "INTRODUCTORY SESSIONS",
+        text: "45–60 minutes. A practical introduction to attention and subconscious automatisms.",
+      },
+      {
+        title: "WORKSHOPS",
+        text: "90 minutes – 3 hours. Hands-on sessions centred on a specific skill or challenge.",
+      },
+      {
+        title: "PROGRAMMES",
+        text: "Multi-session journeys with follow-up when ongoing practice is required.",
+      },
+      {
+        title: "INDIVIDUAL SESSIONS",
+        text: "Tailored 1-on-1 sessions within corporate initiatives for specific team members.",
+      },
+    ],
+    confidentialityTitle: "CONFIDENTIALITY, CONSENT AND SHARED OBJECTIVES",
+    confidentialityParagraphs: [
+      "Individual sessions are a private and confidential space between the practitioner and the employee. While the organisation participates in defining overarching goals, session conversations and contents are never disclosed to the company.",
+      "All work is strictly based on the employee's genuine consent. Hypnosis is never used to alter someone's values, personality, or opinions, nor to induce unwanted behaviours. On the contrary, it is a tool designed to help individuals regain conscious control over automatic habits or emotional reactions they themselves wish to change.",
+      "Objectives must therefore make sense for both parties: supporting professional development while offering genuine personal growth.",
+    ],
+    exampleTitle: "Example",
+    exampleText:
+      "A company wishes to promote an employee into a role requiring frequent travel, but the individual experiences intense fear of flying. Both company and employee may agree that addressing this fear benefits the new responsibility. From that point onwards, sessions remain entirely confidential, and the process only takes place if the employee genuinely consents to working on that goal.",
+    exampleSummary:
+      "The organisation agrees on the objective. The employee chooses to participate. Sessions remain private.",
+    processAria: "How we work with organisations",
+    processTitle: "HOW A SESSION OR WORKSHOP RUNS",
+    processSteps: [
+      {
+        title: "DEFINING THE OBJECTIVE.",
+        text: "We speak with the organisation to understand the context and desired outcome.",
+      },
+      {
+        title: "EXPLAINING THE PROCESS.",
+        text: "Clarifying what hypnosis is, what to expect, and what does not happen during sessions.",
+      },
+      {
+        title: "PRACTISING TOGETHER.",
+        text: "Tailored attention exercises, mental imagery and rehearsals suited to the goal.",
+      },
+      {
+        title: "APPLYING TO REAL WORK.",
+        text: "Ensuring techniques are practical and immediately usable in daily professional life.",
+      },
+    ],
+    finalTitle: "LET'S TALK ABOUT YOUR TEAM",
+    finalText:
+      "Tell me what you would like to improve, and we will assess whether this approach suits your organisation.",
+    finalCta: "REQUEST A CONVERSATION",
+    aboutLink: "LEARN MORE ABOUT MARÍA",
+  },
+  companiesContact: {
+    seoTitle: "Discuss a Corporate Programme · María Cabo",
+    seoDescription:
+      "Contact form for companies interested in professional development programmes and workshops with María Cabo.",
+    eyebrow: "Organisations",
+    title: "Discuss a programme",
+    intro:
+      "Tell me about your organisation's context to assess whether a workshop or programme fits your goals.",
+    fields: {
+      company: "Company",
+      contactName: "Contact person",
+      role: "Role / Position",
+      email: "Email",
+      phone: "Phone",
+      employees: "No. of employees",
+      objective: "Programme objective",
+      format: "Format of interest",
+      participants: "Expected participants",
+      message: "Message",
+    },
+    objectivePlaceholder: "e.g. improve focus, prepare presentations, manage stress...",
+    formatPlaceholder: "Select an option",
+    formats: [
+      "Introductory session",
+      "Workshop",
+      "Multi-session programme",
+      "Individual sessions within company",
+      "Not sure yet",
+    ],
+    consent: "I have read and accept the privacy policy.",
+    send: "Send enquiry",
+    sent: "Thank you, I have received your enquiry. I will reply shortly to discuss next steps.",
+    mailto: "Send via email",
+    asideTitle: "Before our conversation",
+    asideItems: [
+      "Objectives can be individual, group or team-wide.",
+      "Formats are tailored to group size and work environment.",
+      "Private contents of individual sessions are never shared with the organisation.",
+    ],
+    back: "Back to organisations",
+    emailSubject: "Programme for organisations",
+    emailSummary: "B2B web enquiry",
+    notProvided: "Not provided",
+  },
+  smokingPage: {
+    seoTitle: "Quit Smoking with Hypnosis in Sueca · María Cabo",
+    seoDescription:
+      "Structured 3-session hypnosis programme to stop smoking permanently in Sueca (Valencia). Request your free 20-minute consultation.",
+    eyebrow: "STOP SMOKING PROGRAMME",
+    title: "QUIT SMOKING WITH HYPNOSIS",
+    subtitle:
+      "A structured journey to change automatic habits, disable daily triggers and sustain your decision calmly.",
+    introText:
+      "Smoking is rarely a conscious choice: it operates through automatic patterns built over years. With hypnosis, we work directly on that involuntary mechanism, so that quitting does not feel like an exhausting battle against yourself.",
+    ctaPrimary: "REQUEST INITIAL CONSULTATION",
+    ctaSecondary: "HOW THE PROGRAMME WORKS",
+    whyTitle: 'WHY "WILLPOWER" ALONE IS RARELY ENOUGH',
+    whyParagraphs: [
+      "Most people who want to quit smoking know exactly why they should: health, finances, freedom, smell. However, the moment stress strikes, morning coffee arrives, or friends gather around a table, the subconscious triggers the automatic urge before rational thinking intervenes.",
+      "The problem is not a lack of willpower or character. The problem is that the smoking habit is sustained by deep neural associations that fire automatically. Relying solely on constant willpower creates tension, irritability and fatigue.",
+      "Hypnosis allows us to intervene where those automatisms originate: disconnecting the links between smoking and calmness or reward, and replacing them with healthy, calm responses.",
+    ],
+    programTitle: "PROGRAMME STRUCTURE (3 SESSIONS)",
+    programIntro:
+      "A clear process with a beginning and an end, designed to foster your long-term independence.",
+    steps: [
+      {
+        num: "01",
+        title: "20-MINUTE INITIAL CONSULTATION",
+        badge: "Free & no obligation",
+        text: "We speak by phone or video call to understand your smoking history, personal motivations and answer any questions before beginning.",
+      },
+      {
+        num: "02",
+        title: "SESSION 1 · THE TURNING POINT",
+        badge: "In-person in Sueca (75 min)",
+        text: "We address your personal drivers in depth, neutralise everyday triggers and establish your new identity as a non-smoker.",
+      },
+      {
+        num: "03",
+        title: "SESSION 2 · CONSOLIDATION & CALM",
+        badge: "In-person in Sueca (60 min)",
+        text: "We review your first smoke-free days, reinforce positive sensations, navigate potential tension spikes and anchor new habits.",
+      },
+      {
+        num: "04",
+        title: "SESSION 3 · LONG-TERM RESILIENCE",
+        badge: "In-person in Sueca (60 min)",
+        text: "Future-pacing for social events or unforeseen stress, prevention tools and concluding the process with complete autonomy.",
+      },
+    ],
+    includedTitle: "WHAT IS INCLUDED",
+    includedItems: [
+      "Free 20-minute preliminary assessment consultation.",
+      "3 intensive individual in-person sessions in Sueca.",
+      "Personalised audio reinforcement recording to listen to at home.",
+      "Support and follow-up between sessions.",
+      "Breathing and self-hypnosis tools for situational stress.",
+    ],
+    price: "€300",
+    priceNote: "All-inclusive price covering the three sessions and all supplementary materials.",
+    formEyebrow: "INITIAL CONSULTATION",
+    formTitle: "REQUEST YOUR FREE 20-MINUTE CALL",
+    formSubtitle:
+      "Fill out this brief form and I will get in touch with you shortly to schedule our conversation with no obligation.",
+    formFields: {
+      name: "Full name",
+      email: "Email address",
+      phone: "Phone number",
+      preferredTime: "Preferred time for the call",
+      preferredTimePlaceholder: "Select an option",
+      timeOptions: [
+        "Mornings (09:00 - 13:00)",
+        "Midday (13:00 - 16:00)",
+        "Afternoons (16:00 - 20:00)",
+        "Any time / Flexible",
+      ],
+      preferredMethod: "Preferred method",
+      methodOptions: ["Phone call", "Video call"],
+      habitDetails: "How much do you currently smoke? (Optional)",
+      habitDetailsPlaceholder: "e.g. 1 pack a day for 10 years, smoke more when stressed...",
+      message: "Any questions or additional notes? (Optional)",
+      messagePlaceholder: "Is there anything you would like to ask before our call?",
+      consent: "I have read and accept the privacy policy.",
+      submit: "Request free consultation",
+      submitting: "Sending request...",
+      success:
+        "Thank you. Your request has been received. I will be in touch shortly to confirm a time for our call.",
+      fallbackMailto: "Send via email",
+    },
+    faqTitle: "FREQUENTLY ASKED QUESTIONS",
+    faqs: [
+      {
+        q: "Will I quit smoking right after the first session?",
+        a: "The goal is for you to stop smoking during the first in-person session. The preliminary consultation ensures you arrive prepared and committed, while sessions 2 and 3 consolidate the shift so you remain smoke-free comfortably.",
+      },
+      {
+        q: "Will I experience intense cravings or anxiety?",
+        a: "Hypnosis specifically alleviates the psychological anxiety linked to withdrawal. You will also receive an audio recording and simple calming techniques for specific moments.",
+      },
+      {
+        q: "What if it does not work or I have doubts?",
+        a: "That is precisely why we hold the free 20-minute preliminary interview: to assess your situation honestly. If it is not the right moment or approach, I will tell you with complete transparency.",
+      },
+      {
+        q: "Where do sessions take place?",
+        a: "All 3 in-person sessions take place at my independent practice within Centro Sanar in Sueca (Valencia). The 20-minute initial consultation is conducted comfortably by phone or video call.",
+      },
+    ],
   },
   how: {
     title: "How it works",
@@ -1787,6 +2525,7 @@ const en: Dict = {
     title: "Contact",
     intro:
       "If you have a question before booking, write to me and I'll reply calmly. You don't need to explain anything you'd rather keep private.",
+    phone: "Phone",
     name: "Name",
     email: "Email",
     message: "Your message",

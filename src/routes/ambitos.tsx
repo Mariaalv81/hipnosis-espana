@@ -23,12 +23,30 @@ function AreasPage() {
 
       <section className="container-page py-16 md:py-20">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {t.areas.items.map((item) => (
-            <article key={item.title} className="rounded-lg border border-border bg-card p-7">
-              <h2 className="text-2xl">{item.title}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-            </article>
-          ))}
+          {t.areas.items.map((item, index) => {
+            const isSmoking = index === 3;
+            return (
+              <article
+                key={item.title}
+                className="flex flex-col justify-between rounded-lg border border-border bg-card p-7"
+              >
+                <div>
+                  <h2 className="text-2xl">{item.title}</h2>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+                </div>
+                {isSmoking && (
+                  <div className="mt-6 border-t border-border/60 pt-4">
+                    <Link
+                      to="/dejar-de-fumar"
+                      className="inline-flex text-xs font-medium text-primary underline underline-offset-4 hover:opacity-80"
+                    >
+                      {t.common.smokeEmail} →
+                    </Link>
+                  </div>
+                )}
+              </article>
+            );
+          })}
         </div>
       </section>
 

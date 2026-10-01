@@ -9,6 +9,7 @@ export function SiteFooter() {
   const primaryLinks = [
     { to: "/como-funciona", label: t.nav.how },
     { to: "/ambitos", label: t.nav.areas },
+    { to: "/dejar-de-fumar", label: t.smokingPage.eyebrow },
     { to: "/empresas", label: t.nav.companies },
     { to: "/sesiones", label: t.nav.sessions },
     { to: "/sobre-mi", label: t.nav.about },
