@@ -104,11 +104,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "María Cabo" },
     ],
     links: [
+      { rel: "preload", href: appCss, as: "style" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
-        rel: "stylesheet",
+        rel: "preload",
+        as: "style",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap",
       },
       { rel: "icon", href: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
@@ -148,6 +150,31 @@ function RootShell({ children }: { children: ReactNode }) {
           src="https://www.googletagmanager.com/gtag/js?id=G-HEF4PZK50X"
         />
         <HeadContent />
+        <link
+          id="google-fonts-stylesheet"
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap"
+          media="print"
+          suppressHydrationWarning
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var el = document.getElementById('google-fonts-stylesheet');
+                if (el) {
+                  el.addEventListener('load', function() { this.media = 'all'; });
+                  if (el.sheet) { el.media = 'all'; }
+                }
+              })();
+            `,
+          }}
+        />
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap" />`,
+          }}
+        />
       </head>
       <body suppressHydrationWarning>
         {children}
@@ -159,6 +186,13 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => {
+    const el = document.getElementById("google-fonts-stylesheet") as HTMLLinkElement | null;
+    if (el && el.media !== "all") {
+      el.media = "all";
+    }
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
