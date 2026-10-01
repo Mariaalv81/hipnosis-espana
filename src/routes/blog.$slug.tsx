@@ -1,7 +1,7 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import { makeSeo } from "@/lib/seo";
+import { JsonLd, makeArticleSchema, makeSeo } from "@/lib/seo";
 import { getBlogPost, type BlogBlock } from "@/content/blog-posts";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -83,6 +83,14 @@ function BlogPostPage() {
 
   return (
     <article>
+      <JsonLd
+        schema={makeArticleSchema({
+          title: listingPost?.title ?? post.title,
+          excerpt: post.excerpt,
+          date: post.date,
+          slug,
+        })}
+      />
       <section className="border-b border-border/60 bg-sand/50">
         <div className="container-page max-w-3xl py-16 md:py-24">
           <Link

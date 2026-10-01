@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
-import { makeSeo } from "@/lib/seo";
+import { JsonLd, makeFaqSchema, makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/faq")({
   head: () =>
     makeSeo({
-      title: "Preguntas frecuentes · María Cabo",
+      title: "Preguntas frecuentes sobre hipnosis en Sueca · María Cabo",
       description:
         "Dudas habituales sobre la hipnosis: control, confidencialidad, número de sesiones, precios y límites del acompañamiento.",
       path: "/faq",
@@ -19,6 +19,7 @@ function FaqPage() {
 
   return (
     <>
+      <JsonLd schema={makeFaqSchema(t.faq.items)} />
       <PageHeader eyebrow={t.tagline} title={t.faq.title} />
 
       <section className="container-page py-16 md:py-20">

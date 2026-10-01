@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
-import { makeSeo } from "@/lib/seo";
+import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/dejar-de-fumar")({
   head: () =>
@@ -24,6 +24,15 @@ function DejarDeFumarPage() {
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
+
+  const serviceSchema = makeServiceSchema({
+    name: "Programa para dejar de fumar con hipnosis",
+    description:
+      "Acompañamiento estructurado de tres sesiones de hipnosis para dejar de fumar de forma definitiva en Sueca (Valencia). Incluye entrevista previa gratuita de 20 minutos.",
+    price: "300 €",
+    path: "/dejar-de-fumar",
+  });
+  const faqSchema = makeFaqSchema(sp.faqs);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -99,6 +108,7 @@ function DejarDeFumarPage() {
 
   return (
     <>
+      <JsonLd schema={[serviceSchema, faqSchema]} />
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-sand/30 to-background">
         <div className="container-page py-16 md:py-24">

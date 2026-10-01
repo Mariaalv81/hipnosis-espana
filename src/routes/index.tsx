@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
-import { makeSeo } from "@/lib/seo";
+import { JsonLd, makeFaqSchema, makeLocalBusinessSchema, makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
@@ -12,9 +12,9 @@ import sessionMaria from "@/assets/images/sesion_maria_cabo.jpg";
 export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
-      title: "María Cabo · Hipnosis para el cambio personal",
+      title: "María Cabo · Hipnosis para el cambio personal en Sueca",
       description:
-        "Sesiones para el desarrollo personal en Sueca. Un espacio sereno para trabajar hábitos, calma, foco y confianza.",
+        "Sesiones de hipnosis para el desarrollo personal en Sueca (Valencia). Un espacio sereno para trabajar hábitos, dejar de fumar, calma, foco y confianza.",
       path: "/",
     }),
   component: HypnosisPage,
@@ -25,6 +25,7 @@ function HypnosisPage() {
 
   return (
     <>
+      <JsonLd schema={[makeLocalBusinessSchema(), makeFaqSchema(t.faq.items.slice(0, 5))]} />
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="container-page grid items-center gap-8 py-12 md:py-20 lg:grid-cols-2">
