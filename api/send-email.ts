@@ -1,7 +1,32 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
 import fetch from "node-fetch";
-import fs from "fs";
-import path from "path";
+import * as fs from "fs";
+import * as path from "path";
+import { google } from "googleapis";
+
+export type VercelRequest = {
+  method?: string;
+  body?: unknown;
+  headers?: Record<string, string | string[] | undefined>;
+  query?: Record<string, string | string[] | undefined>;
+  [key: string]: unknown;
+};
+
+export type VercelResponse = {
+  status: (code: number) => VercelResponse;
+  json: (body: unknown) => VercelResponse;
+  send: (body: unknown) => VercelResponse;
+  setHeader?: (name: string, value: string | string[]) => VercelResponse;
+  [key: string]: unknown;
+};
+
+interface ContactRequestBody {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+  website?: string;
+  recaptchaToken?: string;
+}
 
 // Load .env.local into process.env for local dev (keeps production unchanged)
 function loadLocalEnv() {
@@ -13,20 +38,22 @@ function loadLocalEnv() {
       const m = line.match(/^\s*([A-Za-z0-9_]+)=(.*)$/);
       if (!m) continue;
       const k = m[1];
-      let v = m[2] || "";
+      if (!k) continue;
+      let v = m[2] ?? "";
       // strip surrounding quotes if present
       if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
         v = v.slice(1, -1);
       }
-      if (!process.env[k]) process.env[k] = v;
+      if (!process.env[k]) {
+        process.env[k] = v;
+      }
     }
-  } catch (e) {
+  } catch (_e) {
     // ignore
   }
 }
 
 loadLocalEnv();
-import { google } from "googleapis";
 
 async function sendViaSendGrid({
   to,
@@ -39,7 +66,7 @@ async function sendViaSendGrid({
   subject: string;
   text: string;
 }) {
-  const apiKey = process.env.SENDGRID_API_KEY;
+  const apiKey = process.env["SENDGRID_API_KEY"];
   if (!apiKey) throw new Error("SENDGRID_API_KEY not set");
 
   const payload = {
@@ -74,11 +101,11 @@ async function appendToSheet({
   sheetId: string;
   name: string;
   email: string;
-  phone?: string;
+  phone?: string | undefined;
   message: string;
 }) {
-  const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  let privateKey = process.env.GOOGLE_PRIVATE_KEY;
+  const clientEmail = process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"];
+  let privateKey = process.env["GOOGLE_PRIVATE_KEY"];
 
   if (!clientEmail || !privateKey) throw new Error("Google service account not configured");
   if (privateKey.includes("\\n")) privateKey = privateKey.replace(/\\n/g, "\n");
@@ -104,23 +131,27 @@ async function appendToSheet({
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== "POST")
+  if (req.method !== "POST") {
     return res.status(405).send({ ok: false, error: "Method not allowed" });
+  }
 
   try {
-    const { name, email, phone, message, website, recaptchaToken } = req.body || {};
+    const body = (req.body as ContactRequestBody | undefined) || {};
+    const { name, email, phone, message, website, recaptchaToken } = body;
 
     // Honeypot: if website field (hidden) is filled, likely spam
     if (website) return res.status(400).json({ ok: false, error: "Spam detected" });
 
-    if (!name || !email || !message)
+    if (!name || !email || !message) {
       return res.status(400).json({ ok: false, error: "Missing fields" });
+    }
 
     // Optional: verify reCAPTCHA if secret provided
-    const recaptchaSecret = process.env.RECAPTCHA_SECRET;
+    const recaptchaSecret = process.env["RECAPTCHA_SECRET"];
     if (recaptchaSecret) {
-      if (!recaptchaToken)
+      if (!recaptchaToken) {
         return res.status(400).json({ ok: false, error: "Missing recaptcha token" });
+      }
 
       const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
         method: "POST",
@@ -128,33 +159,34 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         body: `secret=${encodeURIComponent(recaptchaSecret)}&response=${encodeURIComponent(recaptchaToken)}`,
       });
 
-      const verifyJson = await verifyRes.json();
+      const verifyJson = (await verifyRes.json()) as { success?: boolean; score?: number };
       if (!verifyJson.success || (verifyJson.score !== undefined && verifyJson.score < 0.5)) {
         return res.status(400).json({ ok: false, error: "recaptcha verification failed" });
       }
     }
 
     // If Google Sheet configured, append row there
-    const sheetId = process.env.SHEET_ID;
+    const sheetId = process.env["SHEET_ID"];
     const hasGoogle = Boolean(
-      sheetId && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY,
+      sheetId && process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"] && process.env["GOOGLE_PRIVATE_KEY"],
     );
     console.log("env presence:", {
-      sheetId: !!sheetId,
-      googleEmail: !!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      googleKey: !!process.env.GOOGLE_PRIVATE_KEY,
-      contactEmail: !!process.env.CONTACT_EMAIL,
-      sendgridTo: !!process.env.SENDGRID_TO,
+      sheetId: !sheetId,
+      googleEmail: !process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"],
+      googleKey: !process.env["GOOGLE_PRIVATE_KEY"],
+      contactEmail: !process.env["CONTACT_EMAIL"],
+      sendgridTo: !process.env["SENDGRID_TO"],
     });
 
-    if (hasGoogle) {
+    if (hasGoogle && sheetId) {
       await appendToSheet({ sheetId, name, email, phone, message });
       return res.status(200).json({ ok: true, via: "sheets" });
     }
 
     // Otherwise fallback to SendGrid
-    const to = process.env.CONTACT_EMAIL || process.env.SENDGRID_TO;
-    const from = process.env.SENDGRID_FROM || process.env.CONTACT_EMAIL || "no-reply@example.com";
+    const to = process.env["CONTACT_EMAIL"] || process.env["SENDGRID_TO"];
+    const from =
+      process.env["SENDGRID_FROM"] || process.env["CONTACT_EMAIL"] || "no-reply@example.com";
 
     if (!to) return res.status(500).json({ ok: false, error: "Recipient not configured" });
 
