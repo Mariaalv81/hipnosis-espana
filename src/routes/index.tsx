@@ -11,17 +11,17 @@ import sessionMaria from "@/assets/images/sesion_maria_cabo.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-        { title: "María Cabo · Hipnosis para el cambio personal" },
+      { title: "María Cabo · Hipnosis para el cambio personal" },
       {
         name: "description",
-         content:
-           "Sesiones para el desarrollo personal. Un espacio sereno para trabajar hábitos, calma y confianza.",
+        content:
+          "Sesiones para el desarrollo personal. Un espacio sereno para trabajar hábitos, calma y confianza.",
       },
-        { property: "og:title", content: "María Cabo · Hipnosis para el cambio personal" },
+      { property: "og:title", content: "María Cabo · Hipnosis para el cambio personal" },
       {
         property: "og:description",
-         content:
-           "Acompañamiento para personas adultas, con criterio, cercanía y expectativas honestas.",
+        content:
+          "Acompañamiento para personas adultas, con criterio, cercanía y expectativas honestas.",
       },
     ],
   }),
@@ -47,15 +47,24 @@ function HypnosisPage() {
               {t.home.heroIntro}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/reservar" className="rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground">
+              <Link
+                to="/reservar"
+                className="rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground"
+              >
                 {t.home.heroPrimary}
               </Link>
-              <Link to="/empresas" className="rounded-full border border-border bg-card px-6 py-3 text-sm">
+              <Link
+                to="/empresas"
+                className="rounded-full border border-border bg-card px-6 py-3 text-sm"
+              >
                 {t.home.heroSecondary}
               </Link>
             </div>
             <div className="mt-4">
-              <Link to="/como-funciona" className="text-sm text-primary underline underline-offset-4">
+              <Link
+                to="/como-funciona"
+                className="text-sm text-primary underline underline-offset-4"
+              >
                 {t.home.heroHow}
               </Link>
             </div>
@@ -103,20 +112,24 @@ function HypnosisPage() {
           <div>
             <p className="eyebrow">{t.home.hypnosisEyebrow}</p>
             <h2 className="mt-3 text-3xl md:text-4xl">{t.home.hypnosisTitle}</h2>
-            <p className="mt-4 text-sm text-muted-foreground">
-              {t.home.hypnosisText1}
-            </p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              {t.home.hypnosisText2}
-            </p>
+            <p className="mt-4 text-sm text-muted-foreground">{t.home.hypnosisText1}</p>
+            <p className="mt-3 text-sm text-muted-foreground">{t.home.hypnosisText2}</p>
             <div className="mt-6">
-              <Link to="/como-funciona" className="text-sm text-primary underline underline-offset-4">
+              <Link
+                to="/como-funciona"
+                className="text-sm text-primary underline underline-offset-4"
+              >
                 {t.home.hypnosisLink}
               </Link>
             </div>
           </div>
           <div>
-            <img src={linenImage} alt={t.home.hypnosisImageAlt} className="rounded-3xl object-cover" loading="lazy" />
+            <img
+              src={linenImage}
+              alt={t.home.hypnosisImageAlt}
+              className="rounded-3xl object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -128,12 +141,20 @@ function HypnosisPage() {
           <div className="rounded-2xl border border-border/60 bg-card p-6">
             <h3 className="text-xl">{t.home.individualTitle}</h3>
             <p className="mt-2 text-sm text-muted-foreground">{t.home.individualText}</p>
-            <div className="mt-4"><Link to="/sesiones" className="text-sm text-primary underline">{t.home.individualLink}</Link></div>
+            <div className="mt-4">
+              <Link to="/sesiones" className="text-sm text-primary underline">
+                {t.home.individualLink}
+              </Link>
+            </div>
           </div>
           <div className="rounded-2xl border border-border/60 bg-card p-6">
             <h3 className="text-xl">{t.home.companiesTitle}</h3>
             <p className="mt-2 text-sm text-muted-foreground">{t.home.companiesText}</p>
-            <div className="mt-4"><Link to="/empresas" className="text-sm text-primary underline">{t.home.companiesLink}</Link></div>
+            <div className="mt-4">
+              <Link to="/empresas" className="text-sm text-primary underline">
+                {t.home.companiesLink}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -162,10 +183,19 @@ function HypnosisPage() {
           <div>
             <h2 className="text-3xl md:text-4xl">{t.home.aboutTitle}</h2>
             <p className="mt-4 text-sm text-muted-foreground">{t.home.aboutText}</p>
-            <div className="mt-6"><Link to="/sobre-mi" className="text-sm text-primary underline">{t.home.aboutLink}</Link></div>
+            <div className="mt-6">
+              <Link to="/sobre-mi" className="text-sm text-primary underline">
+                {t.home.aboutLink}
+              </Link>
+            </div>
           </div>
           <div>
-            <img src={sessionMaria} alt={t.home.aboutImageAlt} className="rounded-3xl object-cover" loading="lazy" />
+            <img
+              src={sessionMaria}
+              alt={t.home.aboutImageAlt}
+              className="rounded-3xl object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -174,15 +204,19 @@ function HypnosisPage() {
       <section className="container-page py-12 md:py-16">
         <div className="flex items-baseline justify-between">
           <h2 className="text-3xl md:text-4xl">{t.home.eventsTitle}</h2>
-          <Link to="/eventos" className="text-sm text-primary underline">{t.home.eventsLink}</Link>
+          <Link to="/eventos" className="text-sm text-primary underline">
+            {t.home.eventsLink}
+          </Link>
         </div>
-        <EventCards limit={3} variant="compact" />
+        <EventCards limit={3} variant="compact" status="upcoming" />
       </section>
 
       <section className="container-page py-12 md:py-16">
         <div className="flex items-baseline justify-between">
           <h2 className="text-3xl md:text-4xl">{t.home.learnTitle}</h2>
-          <Link to="/blog" className="text-sm text-primary underline">{t.home.learnLink}</Link>
+          <Link to="/blog" className="text-sm text-primary underline">
+            {t.home.learnLink}
+          </Link>
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {t.journal.posts.slice(0, 3).map((post) => (
@@ -198,13 +232,17 @@ function HypnosisPage() {
       <section className="container-page py-12 md:py-16">
         <div className="flex items-baseline justify-between">
           <h2 className="text-3xl md:text-4xl">{t.home.faqHomeTitle}</h2>
-          <Link to="/faq" className="text-sm text-primary underline">{t.home.faqHomeLink}</Link>
+          <Link to="/faq" className="text-sm text-primary underline">
+            {t.home.faqHomeLink}
+          </Link>
         </div>
         <dl className="mt-6 divide-y divide-border border-y border-border">
           {t.faq.items.slice(0, 5).map((item) => (
             <div key={item.q} className="grid gap-2 py-6 md:grid-cols-3 md:gap-8">
               <dt className="text-base">{item.q}</dt>
-              <dd className="text-sm leading-relaxed text-muted-foreground md:col-span-2">{item.a}</dd>
+              <dd className="text-sm leading-relaxed text-muted-foreground md:col-span-2">
+                {item.a}
+              </dd>
             </div>
           ))}
         </dl>
@@ -215,11 +253,23 @@ function HypnosisPage() {
         <div className="rounded-3xl bg-primary px-8 py-14 text-center text-primary-foreground">
           <h2 className="text-3xl md:text-4xl">{t.home.ctaTitle}</h2>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link to="/reservar" className="rounded-full bg-background px-6 py-3 text-sm text-foreground">{t.home.ctaPrimary}</Link>
-            <Link to="/contacto" className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm">{t.home.ctaSecondary}</Link>
+            <Link
+              to="/reservar"
+              className="rounded-full bg-background px-6 py-3 text-sm text-foreground"
+            >
+              {t.home.ctaPrimary}
+            </Link>
+            <Link
+              to="/contacto"
+              className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm"
+            >
+              {t.home.ctaSecondary}
+            </Link>
           </div>
           <div className="mt-4 text-sm">
-            <Link to="/empresas" className="text-primary underline">{t.home.ctaCompanies}</Link>
+            <Link to="/empresas" className="text-primary underline">
+              {t.home.ctaCompanies}
+            </Link>
           </div>
         </div>
       </section>

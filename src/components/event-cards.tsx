@@ -7,12 +7,48 @@ type EventCardsProps = {
   limit?: number;
   variant?: "compact" | "full";
   showEmpty?: boolean;
+  status?: "all" | "upcoming" | "past";
+  showHeadings?: boolean;
 };
 
-export function EventCards({ limit, variant = "full", showEmpty = true }: EventCardsProps) {
+type EventItem = ReturnType<typeof useI18n>["t"]["events"]["items"][number];
+type EventStatus = "upcoming" | "past";
+
+function todayStart() {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+}
+
+function eventTime(event: EventItem) {
+  return new Date(`${event.dateISO}T00:00:00`).getTime();
+}
+
+function splitEvents(events: EventItem[]) {
+  const today = todayStart();
+
+  return {
+    upcoming: events
+      .filter((event) => eventTime(event) >= today)
+      .sort((a, b) => eventTime(a) - eventTime(b)),
+    past: events
+      .filter((event) => eventTime(event) < today)
+      .sort((a, b) => eventTime(b) - eventTime(a)),
+  };
+}
+
+export function EventCards({
+  limit,
+  variant = "full",
+  showEmpty = true,
+  status = "all",
+  showHeadings = status === "all",
+}: EventCardsProps) {
   const { t } = useI18n();
-  const events = typeof limit === "number" ? t.events.items.slice(0, limit) : t.events.items;
   const icons = [CigaretteOff, Brain, BookOpen, Apple];
+  const { upcoming, past } = splitEvents(t.events.items);
+  const eventsByStatus =
+    status === "upcoming" ? upcoming : status === "past" ? past : [...upcoming, ...past];
+  const events = typeof limit === "number" ? eventsByStatus.slice(0, limit) : eventsByStatus;
 
   if (events.length === 0) {
     if (!showEmpty) return null;
@@ -33,16 +69,31 @@ export function EventCards({ limit, variant = "full", showEmpty = true }: EventC
     );
   }
 
-  if (variant === "compact") {
-    return (
-      <div className="mt-8 grid gap-5 md:grid-cols-3">
-        {events.map((event) => (
+  const renderBadge = (eventStatus: EventStatus) =>
+    eventStatus === "past" ? t.events.pastBadge : t.events.badge;
+
+  const renderCta = (eventStatus: EventStatus, className: string) =>
+    eventStatus === "upcoming" ? (
+      <Link to="/contacto" className={className}>
+        {t.events.cta}
+      </Link>
+    ) : null;
+
+  const getStatus = (event: EventItem): EventStatus =>
+    eventTime(event) < todayStart() ? "past" : "upcoming";
+
+  const renderCompactCards = (cards: EventItem[]) => (
+    <div className="mt-8 grid gap-5 md:grid-cols-3">
+      {cards.map((event) => {
+        const eventStatus = getStatus(event);
+
+        return (
           <article
             key={`${event.date}-${event.title}`}
             className="flex min-h-full flex-col rounded-3xl border border-border/60 bg-card p-6"
           >
             <div>
-              <p className="eyebrow">{t.events.badge}</p>
+              <p className="eyebrow">{renderBadge(eventStatus)}</p>
               <div className="mt-4 flex flex-wrap items-end gap-x-3 gap-y-2">
                 <p className="font-serif text-4xl leading-none text-primary">{event.date}</p>
                 <p className="mb-1 flex items-center gap-1.5 text-sm text-muted-foreground">
@@ -59,22 +110,21 @@ export function EventCards({ limit, variant = "full", showEmpty = true }: EventC
               {t.events.place}
             </p>
 
-            <Link
-              to="/contacto"
-              className="mt-6 inline-flex w-fit rounded-full bg-primary px-5 py-2.5 text-sm text-primary-foreground transition-opacity hover:opacity-90"
-            >
-              {t.events.cta}
-            </Link>
+            {renderCta(
+              eventStatus,
+              "mt-6 inline-flex w-fit rounded-full bg-primary px-5 py-2.5 text-sm text-primary-foreground transition-opacity hover:opacity-90",
+            )}
           </article>
-        ))}
-      </div>
-    );
-  }
+        );
+      })}
+    </div>
+  );
 
-  return (
+  const renderFullCards = (cards: EventItem[]) => (
     <div className="grid gap-5 md:grid-cols-2">
-      {events.map((event, index) => {
+      {cards.map((event, index) => {
         const Icon = icons[index] ?? Brain;
+        const eventStatus = getStatus(event);
 
         return (
           <article
@@ -82,7 +132,7 @@ export function EventCards({ limit, variant = "full", showEmpty = true }: EventC
             className="grid gap-6 rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)] sm:grid-cols-[8rem_1fr]"
           >
             <div className="flex h-full flex-col justify-between rounded-2xl bg-secondary/60 p-5">
-              <p className="eyebrow">{t.events.badge}</p>
+              <p className="eyebrow">{renderBadge(eventStatus)}</p>
               <div className="mt-8">
                 <p className="font-serif text-4xl leading-none text-primary">{event.date}</p>
                 <p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
@@ -106,16 +156,38 @@ export function EventCards({ limit, variant = "full", showEmpty = true }: EventC
                 {t.events.place}
               </p>
 
-              <Link
-                to="/contacto"
-                className="mt-7 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                {t.events.cta}
-              </Link>
+              {renderCta(
+                eventStatus,
+                "mt-7 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90",
+              )}
             </div>
           </article>
         );
       })}
+    </div>
+  );
+
+  if (variant === "compact") {
+    return renderCompactCards(events);
+  }
+
+  if (!showHeadings || status !== "all") return renderFullCards(events);
+
+  return (
+    <div className="grid gap-12">
+      {upcoming.length > 0 && (
+        <section>
+          <h2 className="text-3xl">{t.events.upcomingTitle}</h2>
+          <div className="mt-6">{renderFullCards(upcoming)}</div>
+        </section>
+      )}
+
+      {past.length > 0 && (
+        <section>
+          <h2 className="text-3xl">{t.events.pastTitle}</h2>
+          <div className="mt-6">{renderFullCards(past)}</div>
+        </section>
+      )}
     </div>
   );
 }
