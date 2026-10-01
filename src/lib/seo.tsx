@@ -138,7 +138,7 @@ export function makeLocalBusinessSchema() {
       longitude: -0.3113,
     },
     email: "maria.a.cabo@gmail.com",
-    priceRange: "60€ - 300€",
+    priceRange: "70€ - 300€",
     areaServed: [
       { "@type": "City", name: "Valencia" },
       { "@type": "City", name: "Sueca" },

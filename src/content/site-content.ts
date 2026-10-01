@@ -472,7 +472,7 @@ const es = {
     items: [
       {
         name: "Sesión individual",
-        price: "60 €",
+        price: "70 €",
         unit: "por hora",
         text: "Una hora de acompañamiento con hipnosis, enfocada en el objetivo que hayamos definido.",
         points: [
@@ -767,7 +767,7 @@ const es = {
       },
       {
         q: "¿Qué precio tiene?",
-        a: "La sesión individual son 60 € la hora. El programa para dejar de fumar son 300 € e incluye tres sesiones.",
+        a: "La sesión individual son 70 € la hora. El programa para dejar de fumar son 300 € e incluye tres sesiones.",
       },
     ],
   },
@@ -1362,7 +1362,7 @@ const va: Dict = {
     items: [
       {
         name: "Sessió individual",
-        price: "60 €",
+        price: "70 €",
         unit: "per hora",
         text: "Una hora d'acompanyament amb hipnosi, centrada en l'objectiu que hàgem definit.",
         points: ["Duració de 60 minuts", "Presencial", "Sense permanència"],
@@ -1648,7 +1648,7 @@ const va: Dict = {
       },
       {
         q: "Quin preu té?",
-        a: "La sessió individual són 60 € l'hora. El programa per a deixar de fumar són 300 € i inclou tres sessions.",
+        a: "La sessió individual són 70 € l'hora. El programa per a deixar de fumar són 300 € i inclou tres sessions.",
       },
     ],
   },
@@ -2239,7 +2239,7 @@ const en: Dict = {
     items: [
       {
         name: "Individual session",
-        price: "€60",
+        price: "€70",
         unit: "per hour",
         text: "One hour of hypnosis-based support, focused on the goal we have defined together.",
         points: ["60 minutes", "In person", "No lock-in"],
@@ -2525,7 +2525,7 @@ const en: Dict = {
       },
       {
         q: "How much does it cost?",
-        a: "An individual session is €60 per hour. The stop-smoking programme is €300 and includes three sessions.",
+        a: "An individual session is €70 per hour. The stop-smoking programme is €300 and includes three sessions.",
       },
     ],
   },

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/reservar")({
     makeSeo({
       title: "Reservar una sesión · María Cabo",
       description:
-        "Reserva tu sesión de hipnosis con María Cabo en Sueca: 60 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
+        "Reserva tu sesión de hipnosis con María Cabo en Sueca: 70 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
       path: "/reservar",
     }),
   component: BookPage,
