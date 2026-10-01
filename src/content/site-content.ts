@@ -548,23 +548,39 @@ const es = {
   legal: {
     title: "Información legal",
     intro:
-      "Información legal y de privacidad relacionada con María Cabo. Para cualquier aclaración o consulta legal, escríbeme a través del formulario de contacto.",
+      "Información legal, privacidad y condiciones de reserva de María Cabo. Si necesitas una aclaración adicional, puedes escribir a maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: María Cabo. El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
+        text: "Titular del sitio: María Cabo. Contacto: maria.a.cabo@gmail.com. Actividad: acompañamiento de desarrollo personal mediante hipnosis, con sesiones presenciales en Sueca dentro de un despacho independiente del Centro Sanar. El contenido publicado en esta web tiene carácter informativo y no constituye asesoramiento sanitario, psicológico, médico ni legal.",
       },
       {
-        title: "Privacidad",
-        text: "Los datos que facilites se usarán únicamente para responder a tu consulta y gestionar la cita. No se recogen datos de salud a través de la web. Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación escribiendo al email de contacto.",
+        title: "Datos identificativos",
+        text: "La responsable del tratamiento y titular de la actividad es María Cabo. El NIF, domicilio fiscal y demás datos identificativos completos se facilitarán en la contratación, factura o comunicaciones precontractuales cuando resulten necesarios. Para solicitarlos antes de contratar, escribe a maria.a.cabo@gmail.com.",
+      },
+      {
+        title: "Privacidad y finalidad",
+        text: "Los datos que facilites mediante formularios, email o solicitud de reserva se usan para responder a tu consulta, gestionar citas, preparar la prestación solicitada y mantener comunicaciones relacionadas con el servicio. No se solicitan datos de salud a través de la web; si voluntariamente incluyes información sensible en un mensaje, se tratará solo para atender tu solicitud y con la máxima confidencialidad posible.",
+      },
+      {
+        title: "Base legal y conservación",
+        text: "La base legal del tratamiento es tu consentimiento al enviar un formulario o escribir por email, la aplicación de medidas precontractuales si solicitas una sesión y, cuando proceda, el cumplimiento de obligaciones legales. Los datos se conservarán durante el tiempo necesario para gestionar la consulta o reserva y, después, durante los plazos exigibles por obligaciones fiscales, contables o de defensa de reclamaciones.",
+      },
+      {
+        title: "Proveedores",
+        text: "La web puede apoyarse en proveedores técnicos para alojamiento, analítica, calendario, protección antispam, formularios y envío o registro de mensajes: Vercel, Google Calendar, Google Analytics con consentimiento, Google reCAPTCHA cuando esté activo, Google Sheets si se usa como registro interno y SendGrid si se usa para el envío de correos. Estos proveedores tratan datos solo en la medida necesaria para prestar sus servicios.",
+      },
+      {
+        title: "Derechos",
+        text: "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a maria.a.cabo@gmail.com. También puedes retirar tu consentimiento cuando el tratamiento dependa de él. Si consideras que tus derechos no han sido atendidos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos.",
       },
       {
         title: "Cookies",
         text: "La web utiliza almacenamiento técnico necesario para recordar idioma y preferencias de consentimiento. La etiqueta de Google se inicia con el consentimiento de analítica denegado por defecto, y solo se concede si aceptas esa categoría.",
       },
       {
-        title: "Condiciones del servicio",
-        text: "El servicio se dirige a personas mayores de 18 años y consiste en acompañamiento de desarrollo personal mediante hipnosis. Información detallada sobre cancelaciones y reembolsos está disponible a petición; escríbeme para recibir las condiciones completas.",
+        title: "Condiciones de reserva, cancelación y reembolso",
+        text: "El servicio se dirige a personas mayores de 18 años. La sesión individual tiene una duración aproximada de una hora y el programa para dejar de fumar incluye tres sesiones. Si necesitas cambiar o cancelar una cita, avisa con al menos 24 horas de antelación para poder reprogramarla sin coste. Las sesiones ya realizadas no son reembolsables. Los importes abonados por sesiones no realizadas podrán reprogramarse o reembolsarse si la cancelación se comunica dentro del plazo indicado o si la sesión no pudiera prestarse por causa imputable a María Cabo.",
       },
     ],
   },
@@ -1179,15 +1195,31 @@ const va: Dict = {
   legal: {
     title: "Informació legal",
     intro:
-      "Esborrany de textos legals pendent de revisió. Falten dades identificatives, adreça i proveïdors definitius.",
+      "Informació legal, privacitat i condicions de reserva de María Cabo. Si necessites un aclariment addicional, pots escriure a maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Avís legal",
-        text: "Titular del lloc: María Cabo. Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
+        text: "Titular del lloc: María Cabo. Contacte: maria.a.cabo@gmail.com. Activitat: acompanyament de desenvolupament personal mitjançant hipnosi, amb sessions presencials a Sueca dins d'un despatx independent del Centre Sanar. El contingut publicat en esta web té caràcter informatiu i no constituïx assessorament sanitari, psicològic, mèdic ni legal.",
       },
       {
-        title: "Privacitat",
-        text: "Les dades que facilites s'utilitzen únicament per a respondre la teua consulta i gestionar la cita. No es recullen dades de salut a través de la web. Pots exercir els teus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació escrivint a l'adreça de contacte.",
+        title: "Dades identificatives",
+        text: "La responsable del tractament i titular de l'activitat és María Cabo. El NIF, domicili fiscal i la resta de dades identificatives completes es facilitaran en la contractació, factura o comunicacions precontractuals quan siguen necessàries. Per a sol·licitar-les abans de contractar, escriu a maria.a.cabo@gmail.com.",
+      },
+      {
+        title: "Privacitat i finalitat",
+        text: "Les dades que facilites mitjançant formularis, email o sol·licitud de reserva s'utilitzen per a respondre la consulta, gestionar cites, preparar el servici sol·licitat i mantindre comunicacions relacionades amb el servici. No se sol·liciten dades de salut a través de la web; si voluntàriament inclous informació sensible en un missatge, es tractarà només per a atendre la teua sol·licitud i amb la màxima confidencialitat possible.",
+      },
+      {
+        title: "Base legal i conservació",
+        text: "La base legal del tractament és el teu consentiment en enviar un formulari o escriure per email, l'aplicació de mesures precontractuals si sol·licites una sessió i, quan pertoque, el compliment d'obligacions legals. Les dades es conservaran durant el temps necessari per a gestionar la consulta o reserva i, després, durant els terminis exigibles per obligacions fiscals, comptables o de defensa de reclamacions.",
+      },
+      {
+        title: "Proveïdors",
+        text: "La web pot recolzar-se en proveïdors tècnics per a allotjament, analítica, calendari, protecció antispam, formularis i enviament o registre de missatges: Vercel, Google Calendar, Google Analytics amb consentiment, Google reCAPTCHA quan estiga actiu, Google Sheets si s'utilitza com a registre intern i SendGrid si s'utilitza per a l'enviament de correus. Estos proveïdors tracten dades només en la mesura necessària per a prestar els seus servicis.",
+      },
+      {
+        title: "Drets",
+        text: "Pots exercir els teus drets d'accés, rectificació, supressió, oposició, limitació i portabilitat escrivint a maria.a.cabo@gmail.com. També pots retirar el consentiment quan el tractament depenga d'ell. Si consideres que els teus drets no han sigut atesos, pots presentar una reclamació davant l'Agència Espanyola de Protecció de Dades.",
       },
       {
         title: "Galetes",
@@ -1195,7 +1227,7 @@ const va: Dict = {
       },
       {
         title: "Condicions del servici",
-        text: "El servici s'adreça a persones majors de 18 anys i consistix en acompanyament de desenvolupament personal mitjançant hipnosi. Condicions de canvi, cancel·lació i reemborsament pendents de definir.",
+        text: "El servici s'adreça a persones majors de 18 anys. La sessió individual té una duració aproximada d'una hora i el programa per a deixar de fumar inclou tres sessions. Si necessites canviar o cancel·lar una cita, avisa amb almenys 24 hores d'antelació per a poder reprogramar-la sense cost. Les sessions ja realitzades no són reemborsables. Els imports abonats per sessions no realitzades podran reprogramar-se o reemborsar-se si la cancel·lació es comunica dins del termini indicat o si la sessió no poguera prestar-se per causa imputable a María Cabo.",
       },
     ],
   },
@@ -1806,15 +1838,31 @@ const en: Dict = {
   legal: {
     title: "Legal information",
     intro:
-      "Draft legal texts pending review. Identification details, address and final providers are still missing.",
+      "Legal information, privacy and booking terms for María Cabo. If you need any further clarification, you can write to maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Legal notice",
-        text: "Site owner: María Cabo. Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
+        text: "Site owner: María Cabo. Contact: maria.a.cabo@gmail.com. Activity: personal development support through hypnosis, with in-person sessions in Sueca in an independent practice within Centro Sanar. The content published on this website is informational and does not constitute healthcare, psychological, medical or legal advice.",
       },
       {
-        title: "Privacy",
-        text: "The data you provide is used only to answer your enquiry and manage your appointment. No health data is collected through the website. You can exercise your rights of access, rectification, erasure, objection, portability and restriction by writing to the contact address.",
+        title: "Identification details",
+        text: "The controller and owner of the activity is María Cabo. Tax ID, fiscal address and full identification details will be provided in the booking process, invoice or pre-contractual communications when required. To request them before booking, write to maria.a.cabo@gmail.com.",
+      },
+      {
+        title: "Privacy and purpose",
+        text: "The data you provide through forms, email or booking requests is used to answer your enquiry, manage appointments, prepare the requested service and maintain communications related to the service. Health data is not requested through the website; if you voluntarily include sensitive information in a message, it will be processed only to handle your request and with the highest possible confidentiality.",
+      },
+      {
+        title: "Legal basis and retention",
+        text: "The legal basis for processing is your consent when you submit a form or write by email, the application of pre-contractual measures when you request a session and, where applicable, compliance with legal obligations. Data will be kept for the time needed to manage the enquiry or booking and, afterwards, for the periods required for tax, accounting or legal defence obligations.",
+      },
+      {
+        title: "Providers",
+        text: "The website may rely on technical providers for hosting, analytics, calendar booking, anti-spam protection, forms and message delivery or logging: Vercel, Google Calendar, Google Analytics with consent, Google reCAPTCHA when active, Google Sheets if used as an internal record and SendGrid if used for email delivery. These providers process data only to the extent necessary to provide their services.",
+      },
+      {
+        title: "Rights",
+        text: "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to maria.a.cabo@gmail.com. You can also withdraw consent when processing depends on it. If you believe your rights have not been addressed, you may lodge a complaint with the Spanish Data Protection Agency.",
       },
       {
         title: "Cookies",
@@ -1822,7 +1870,7 @@ const en: Dict = {
       },
       {
         title: "Terms of service",
-        text: "The service is for adults over 18 and consists of personal development support through hypnosis. Change, cancellation and refund terms are still to be defined.",
+        text: "The service is for adults over 18. Individual sessions last approximately one hour and the stop-smoking programme includes three sessions. If you need to change or cancel an appointment, please give at least 24 hours' notice so it can be rescheduled at no cost. Sessions that have already taken place are non-refundable. Amounts paid for sessions not yet provided may be rescheduled or refunded if cancellation is communicated within the stated notice period or if the session cannot be provided for a reason attributable to María Cabo.",
       },
     ],
   },
