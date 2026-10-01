@@ -18,8 +18,7 @@ export const Route = createFileRoute("/sobre-mi")({
       },
       {
         property: "og:description",
-        content:
-          "Una forma cercana, práctica y respetuosa de trabajar con el cambio.",
+        content: "Una forma cercana, práctica y respetuosa de trabajar con el cambio.",
       },
     ],
   }),
@@ -32,23 +31,18 @@ function AboutPage() {
 
   return (
     <>
-      <section className="border-b border-border/60 bg-sand/40">
-        <div className="container-page grid gap-10 py-12 md:py-16 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-14">
+      <section className="border-b border-border/60 bg-background">
+        <div className="container-page grid gap-10 py-12 md:py-16 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-14">
           <div className="order-2 lg:order-1">
             <p className="eyebrow">{t.about.role}</p>
-            <h1 className="mt-4 max-w-2xl text-4xl leading-tight md:text-5xl">
-              {about.name}
-            </h1>
+            <h1 className="mt-4 max-w-2xl text-4xl leading-tight md:text-5xl">{about.name}</h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               {about.intro}
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {about.traits.map((item) => (
-                <div
-                  key={item}
-                  className="border-l border-accent/60 bg-background/50 px-4 py-3"
-                >
+                <div key={item} className="border-l border-primary/40 bg-muted/20 px-4 py-3">
                   <p className="text-sm font-medium text-primary">{item}</p>
                 </div>
               ))}
@@ -62,9 +56,20 @@ function AboutPage() {
               width={1510}
               height={1042}
               loading="eager"
-              className="aspect-[4/3] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-soft)]"
+              className="aspect-[4/3] w-full rounded-lg object-cover object-center shadow-[var(--shadow-soft)]"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="container-page border-b border-border/60 py-10 md:py-12">
+        <div className="grid gap-4 md:grid-cols-3">
+          {about.highlights.map((item) => (
+            <article key={item.title} className="border-l border-primary/40 px-5 py-2">
+              <h2 className="text-xl leading-tight">{item.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -87,9 +92,7 @@ function AboutPage() {
             </div>
 
             <div className="mt-8 rounded-2xl bg-primary p-7 text-primary-foreground">
-              <p className="text-base leading-relaxed">
-                {about.controlNote}
-              </p>
+              <p className="text-base leading-relaxed">{about.controlNote}</p>
             </div>
           </aside>
 
@@ -128,9 +131,7 @@ function AboutPage() {
             <section className="mt-14 grid gap-8 border-t border-border pt-10 md:mt-16 md:grid-cols-[0.9fr_1.1fr] md:pt-12">
               <div>
                 <p className="eyebrow">{about.pathEyebrow}</p>
-                <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
-                  {about.pathTitle}
-                </h2>
+                <h2 className="mt-4 text-3xl leading-tight md:text-4xl">{about.pathTitle}</h2>
               </div>
 
               <div>
@@ -159,9 +160,7 @@ function AboutPage() {
             <section className="mt-14 border-t border-border pt-10 md:mt-16 md:pt-12">
               <p className="eyebrow">{about.sessionsEyebrow}</p>
               <div className="mt-5 grid gap-5 md:grid-cols-[0.8fr_1.2fr] md:items-start">
-                <h2 className="text-3xl leading-tight md:text-4xl">
-                  {about.serviceAreaTitle}
-                </h2>
+                <h2 className="text-3xl leading-tight md:text-4xl">{about.serviceAreaTitle}</h2>
                 <div className="grid gap-4 text-base leading-relaxed text-muted-foreground">
                   {about.sessionsTexts.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
@@ -170,13 +169,11 @@ function AboutPage() {
               </div>
             </section>
 
-            <section className="mt-14 rounded-2xl bg-sand px-6 py-8 md:mt-16 md:px-8 md:py-10">
-              <h2 className="max-w-3xl text-3xl leading-tight md:text-4xl">
-                {about.quote}
-              </h2>
+            <section className="mt-14 rounded-lg bg-primary px-6 py-8 text-primary-foreground md:mt-16 md:px-8 md:py-10">
+              <h2 className="max-w-3xl text-3xl leading-tight md:text-4xl">{about.quote}</h2>
               <Button
                 asChild
-                className="mt-7 w-fit rounded-full px-7 py-3 text-sm"
+                className="mt-7 w-fit rounded-full bg-background px-7 py-3 text-sm text-foreground hover:bg-background/90"
               >
                 <Link to="/reservar">{t.common.bookNow}</Link>
               </Button>

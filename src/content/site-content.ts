@@ -279,6 +279,20 @@ const es = {
     intro:
       "Trabajo con hipnosis aplicada al desarrollo personal y profesional, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
     traits: ["Cercanía", "Claridad", "Recursos útiles"],
+    highlights: [
+      {
+        title: "Experiencia internacional",
+        text: "He vivido y trabajado entre Los Ángeles, Londres, Barcelona, Madrid y Valencia.",
+      },
+      {
+        title: "Mirada corporativa",
+        text: "Conozco retos habituales de empresas y equipos: presión, foco, confianza y comunicación.",
+      },
+      {
+        title: "Sesiones en dos idiomas",
+        text: "Trabajo en castellano e inglés, con personas y organizaciones.",
+      },
+    ],
     body: [
       "Acompaño a personas adultas que quieren producir un cambio concreto y no saben por dónde empezar. Mi manera de trabajar es tranquila, curiosa y honesta: primero entender, luego proponer.",
       "Creo en las expectativas realistas. La hipnosis puede ser una herramienta muy útil para trabajar hábitos, atención y respuesta al estrés, pero no lo resuelve todo ni sustituye a la atención sanitaria.",
@@ -928,6 +942,20 @@ const va: Dict = {
     intro:
       "Treballe amb hipnosi aplicada al desenvolupament personal i professional, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
     traits: ["Proximitat", "Claredat", "Recursos útils"],
+    highlights: [
+      {
+        title: "Experiència internacional",
+        text: "He viscut i treballat entre Los Angeles, Londres, Barcelona, Madrid i València.",
+      },
+      {
+        title: "Mirada corporativa",
+        text: "Conec reptes habituals d'empreses i equips: pressió, focus, confiança i comunicació.",
+      },
+      {
+        title: "Sessions en dos idiomes",
+        text: "Treballe en castellà i anglés, amb persones i organitzacions.",
+      },
+    ],
     body: [
       "Acompanye persones adultes que volen produir un canvi concret i no saben per on començar. La meua manera de treballar és tranquil·la, curiosa i honesta: primer entendre, després proposar.",
       "Crec en les expectatives realistes. La hipnosi pot ser una ferramenta molt útil per a treballar hàbits, atenció i resposta a l'estrés, però no ho resol tot ni substituïx l'atenció sanitària.",
@@ -1571,6 +1599,20 @@ const en: Dict = {
     intro:
       "I work with hypnosis applied to personal and professional development, through a warm, practical approach that respects each person's pace.",
     traits: ["Warmth", "Clarity", "Useful resources"],
+    highlights: [
+      {
+        title: "International experience",
+        text: "I have lived and worked across Los Angeles, London, Barcelona, Madrid and Valencia.",
+      },
+      {
+        title: "Corporate perspective",
+        text: "I understand common challenges in companies and teams: pressure, focus, confidence and communication.",
+      },
+      {
+        title: "Sessions in two languages",
+        text: "I work in Spanish and English, with individuals and organisations.",
+      },
+    ],
     body: [
       "I work with adults who want to make a specific change and don't know where to start. My way of working is calm, curious and honest: understand first, propose after.",
       "I believe in realistic expectations. Hypnosis can be a useful tool for habits, attention and stress responses, but it doesn't solve everything and it doesn't replace healthcare.",
