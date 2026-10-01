@@ -61,6 +61,17 @@ ${urls.join("\n")}
   const outPath = path.resolve("public/sitemap.xml");
   fs.writeFileSync(outPath, xml, "utf8");
   console.log(`Generated public/sitemap.xml with ${urls.length} URLs.`);
+
+  const distDir = path.resolve("dist");
+  if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir, { recursive: true });
+  }
+  fs.writeFileSync(path.join(distDir, "sitemap.xml"), xml, "utf8");
+  const robotsPath = path.resolve("public/robots.txt");
+  if (fs.existsSync(robotsPath)) {
+    fs.copyFileSync(robotsPath, path.join(distDir, "robots.txt"));
+  }
+  console.log(`Synced sitemap.xml and robots.txt to dist/.`);
 }
 
 generateSitemap();
