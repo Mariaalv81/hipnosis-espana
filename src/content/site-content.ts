@@ -553,7 +553,7 @@ const es = {
       },
       {
         title: "Cookies",
-        text: "La web utiliza almacenamiento técnico necesario para recordar idioma y preferencias de consentimiento. Google Analytics solo se carga si aceptas la categoría de analítica, y puedes cambiar tu elección desde la política de cookies.",
+        text: "La web utiliza almacenamiento técnico necesario para recordar idioma y preferencias de consentimiento. La etiqueta de Google se inicia con el consentimiento de analítica denegado por defecto, y solo se concede si aceptas esa categoría.",
       },
       {
         title: "Condiciones del servicio",
@@ -595,7 +595,7 @@ const es = {
     alwaysActive: "Siempre activas",
     analyticsTitle: "Analítica",
     analyticsText:
-      "Permite cargar Google Analytics para medir visitas y uso agregado del sitio. No se carga si no das tu consentimiento.",
+      "Permite a Google Analytics medir visitas y uso agregado del sitio. Sin tu consentimiento, la etiqueta se mantiene con almacenamiento de analítica denegado.",
     marketingTitle: "Marketing",
     marketingText: "Actualmente no usamos cookies ni scripts de marketing.",
     savePreferences: "Guardar preferencias",
@@ -611,7 +611,7 @@ const es = {
       },
       {
         title: "Analítica opcional",
-        text: "Google Analytics, con identificador G-HEF4PZK50X, solo se carga cuando aceptas la categoría de analítica. Si rechazas o revocas el permiso, se bloquea el script y se intentan borrar sus cookies (_ga, _gid, _gat y equivalentes).",
+        text: "Google Analytics, con identificador G-HEF4PZK50X, usa Consent Mode: la analítica queda denegada por defecto y solo se concede cuando aceptas esta categoría. Si rechazas o revocas el permiso, se vuelve a denegar la analítica y se intentan borrar sus cookies (_ga, _gid, _gat y equivalentes).",
       },
       {
         title: "Servicios externos",
@@ -1177,7 +1177,7 @@ const va: Dict = {
       },
       {
         title: "Galetes",
-        text: "La web utilitza emmagatzematge tècnic necessari per a recordar l'idioma i les preferències de consentiment. Google Analytics només es carrega si acceptes la categoria d'analítica, i pots canviar la teua elecció des de la política de galetes.",
+        text: "La web utilitza emmagatzematge tècnic necessari per a recordar l'idioma i les preferències de consentiment. L'etiqueta de Google s'inicia amb el consentiment d'analítica denegat per defecte, i només es concedix si acceptes eixa categoria.",
       },
       {
         title: "Condicions del servici",
@@ -1218,7 +1218,7 @@ const va: Dict = {
     alwaysActive: "Sempre actives",
     analyticsTitle: "Analítica",
     analyticsText:
-      "Permet carregar Google Analytics per a mesurar visites i ús agregat del lloc. No es carrega si no dones el teu consentiment.",
+      "Permet a Google Analytics mesurar visites i ús agregat del lloc. Sense el teu consentiment, l'etiqueta es manté amb emmagatzematge d'analítica denegat.",
     marketingTitle: "Màrqueting",
     marketingText: "Actualment no utilitzem galetes ni scripts de màrqueting.",
     savePreferences: "Guardar preferències",
@@ -1234,7 +1234,7 @@ const va: Dict = {
       },
       {
         title: "Analítica opcional",
-        text: "Google Analytics, amb identificador G-HEF4PZK50X, només es carrega quan acceptes la categoria d'analítica. Si rebutges o revoques el permís, es bloqueja el script i s'intenten esborrar les seues galetes (_ga, _gid, _gat i equivalents).",
+        text: "Google Analytics, amb identificador G-HEF4PZK50X, usa Consent Mode: l'analítica queda denegada per defecte i només es concedix quan acceptes esta categoria. Si rebutges o revoques el permís, es torna a denegar l'analítica i s'intenten esborrar les seues galetes (_ga, _gid, _gat i equivalents).",
       },
       {
         title: "Servicis externs",
@@ -1796,7 +1796,7 @@ const en: Dict = {
       },
       {
         title: "Cookies",
-        text: "The site uses necessary technical storage to remember language and consent preferences. Google Analytics only loads if you accept the analytics category, and you can change your choice from the cookie policy.",
+        text: "The site uses necessary technical storage to remember language and consent preferences. The Google tag starts with analytics consent denied by default, and it is only granted if you accept that category.",
       },
       {
         title: "Terms of service",
@@ -1837,7 +1837,7 @@ const en: Dict = {
     alwaysActive: "Always active",
     analyticsTitle: "Analytics",
     analyticsText:
-      "Allows Google Analytics to load in order to measure visits and aggregated site usage. It does not load unless you give consent.",
+      "Allows Google Analytics to measure visits and aggregated site usage. Without your consent, the tag remains set to denied analytics storage.",
     marketingTitle: "Marketing",
     marketingText: "We currently do not use marketing cookies or scripts.",
     savePreferences: "Save preferences",
@@ -1853,7 +1853,7 @@ const en: Dict = {
       },
       {
         title: "Optional analytics",
-        text: "Google Analytics, using ID G-HEF4PZK50X, only loads when you accept the analytics category. If you reject or revoke permission, the script is blocked and its cookies (_ga, _gid, _gat and equivalents) are deleted where possible.",
+        text: "Google Analytics, using ID G-HEF4PZK50X, uses Consent Mode: analytics is denied by default and is only granted when you accept this category. If you reject or revoke permission, analytics is denied again and its cookies (_ga, _gid, _gat and equivalents) are deleted where possible.",
       },
       {
         title: "External services",
