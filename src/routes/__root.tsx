@@ -9,7 +9,7 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import appCss from "../styles.css?url";
+import appCss from "../styles.css?inline";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "@/lib/i18n";
 import { CookieConsent } from "@/components/cookie-consent";
@@ -104,14 +104,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "María Cabo" },
     ],
     links: [
-      { rel: "preload", href: appCss, as: "style" },
-      { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "preload",
-        as: "style",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap",
+        href: "https://fonts.gstatic.com/s/karla/v33/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "preload",
+        href: "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86KnTOig.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
       },
       { rel: "icon", href: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
       { rel: "icon", href: "/favicon-192x192.png?v=2", type: "image/png", sizes: "192x192" },
@@ -149,32 +155,8 @@ function RootShell({ children }: { children: ReactNode }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-HEF4PZK50X"
         />
+        <style dangerouslySetInnerHTML={{ __html: appCss }} suppressHydrationWarning />
         <HeadContent />
-        <link
-          id="google-fonts-stylesheet"
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap"
-          media="print"
-          suppressHydrationWarning
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var el = document.getElementById('google-fonts-stylesheet');
-                if (el) {
-                  el.addEventListener('load', function() { this.media = 'all'; });
-                  if (el.sheet) { el.media = 'all'; }
-                }
-              })();
-            `,
-          }}
-        />
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap" />`,
-          }}
-        />
       </head>
       <body suppressHydrationWarning>
         {children}
@@ -186,13 +168,6 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-
-  useEffect(() => {
-    const el = document.getElementById("google-fonts-stylesheet") as HTMLLinkElement | null;
-    if (el && el.media !== "all") {
-      el.media = "all";
-    }
-  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
