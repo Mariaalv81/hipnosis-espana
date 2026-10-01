@@ -7,9 +7,12 @@ import { siteSettings } from "@/content/site-settings";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
 import heroAvif from "@/assets/images/maria-cabo.avif";
-import attachedHero from "@/assets/images/maria-cabo.jpg";
 import linenImage from "@/assets/images/texture-linen.jpg";
+import linenImageWebp from "@/assets/images/texture-linen.webp";
+import linenImageAvif from "@/assets/images/texture-linen.avif";
 import sessionMaria from "@/assets/images/sesion_maria_cabo.jpg";
+import sessionMariaWebp from "@/assets/images/sesion_maria_cabo.webp";
+import sessionMariaAvif from "@/assets/images/sesion_maria_cabo.avif";
 
 export const Route = createFileRoute("/")({
   head: () =>
@@ -70,12 +73,14 @@ function HypnosisPage() {
               <source srcSet={heroAvif} type="image/avif" />
               <source srcSet={heroWebp} type="image/webp" />
               <img
-                src={attachedHero}
+                src={heroJpg}
                 alt={t.home.heroImageAlt}
-                width={1600}
-                height={1200}
+                width={1510}
+                height={1042}
                 className="rounded-3xl object-cover shadow-[var(--shadow-soft)] w-full h-auto"
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </picture>
           </div>
@@ -119,12 +124,19 @@ function HypnosisPage() {
             </div>
           </div>
           <div>
-            <img
-              src={linenImage}
-              alt={t.home.hypnosisImageAlt}
-              className="rounded-3xl object-cover"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet={linenImageAvif} type="image/avif" />
+              <source srcSet={linenImageWebp} type="image/webp" />
+              <img
+                src={linenImage}
+                alt={t.home.hypnosisImageAlt}
+                width={1200}
+                height={900}
+                className="rounded-3xl object-cover w-full h-auto"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -195,12 +207,19 @@ function HypnosisPage() {
             </div>
           </div>
           <div>
-            <img
-              src={sessionMaria}
-              alt={t.home.aboutImageAlt}
-              className="rounded-3xl object-cover"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet={sessionMariaAvif} type="image/avif" />
+              <source srcSet={sessionMariaWebp} type="image/webp" />
+              <img
+                src={sessionMaria}
+                alt={t.home.aboutImageAlt}
+                width={1672}
+                height={941}
+                className="rounded-3xl object-cover w-full h-auto"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>

@@ -5,6 +5,8 @@ import { useI18n } from "@/lib/i18n";
 import { makeSeo } from "@/lib/seo";
 import { siteSettings } from "@/content/site-settings";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
+import sobreMiMariaCaboWebp from "@/assets/images/sobre-mi-maria-cabo.webp";
+import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 
 export const Route = createFileRoute("/sobre-mi")({
   head: () =>
@@ -42,14 +44,20 @@ function AboutPage() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <img
-              src={sobreMiMariaCaboJpg}
-              alt="María Cabo"
-              width={1510}
-              height={1042}
-              loading="eager"
-              className="aspect-[4/3] w-full rounded-lg object-cover object-center shadow-[var(--shadow-soft)]"
-            />
+            <picture>
+              <source srcSet={sobreMiMariaCaboAvif} type="image/avif" />
+              <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
+              <img
+                src={sobreMiMariaCaboJpg}
+                alt="María Cabo"
+                width={1254}
+                height={1254}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="aspect-[4/3] w-full rounded-lg object-cover object-center shadow-[var(--shadow-soft)]"
+              />
+            </picture>
           </div>
         </div>
       </section>

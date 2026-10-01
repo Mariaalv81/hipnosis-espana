@@ -61,8 +61,12 @@ function EmpresasPage() {
               <img
                 src={heroJpg}
                 alt="Equipo trabajando"
+                width={1672}
+                height={941}
                 className="rounded-3xl object-cover w-full h-auto"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </picture>
           </div>
