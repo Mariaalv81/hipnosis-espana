@@ -1,6 +1,7 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 import { getBlogPost, type BlogBlock } from "@/content/blog-posts";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -11,21 +12,12 @@ export const Route = createFileRoute("/blog/$slug")({
       post?.excerpt ??
       "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.";
 
-    return {
-      meta: [
-        { title: `${title} · María Cabo` },
-        {
-          name: "description",
-          content: description,
-        },
-        { property: "og:title", content: `${title} · María Cabo` },
-        {
-          property: "og:description",
-          content: description,
-        },
-        { property: "og:type", content: "article" },
-      ],
-    };
+    return makeSeo({
+      title: `${title} · María Cabo`,
+      description,
+      path: `/blog/${params.slug}`,
+      type: "article",
+    });
   },
   component: BlogPostPage,
   notFoundComponent: () => (

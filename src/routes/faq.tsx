@@ -1,23 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/faq")({
-  head: () => ({
-    meta: [
-      { title: "Preguntas frecuentes · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Dudas habituales sobre la hipnosis: control, confidencialidad, número de sesiones y precios.",
-      },
-      { property: "og:title", content: "Preguntas frecuentes · María Cabo" },
-      {
-        property: "og:description",
-        content: "Respuestas claras antes de reservar tu primera sesión.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Preguntas frecuentes · María Cabo",
+      description:
+        "Dudas habituales sobre la hipnosis: control, confidencialidad, número de sesiones, precios y límites del acompañamiento.",
+      path: "/faq",
+    }),
   component: FaqPage,
 });
 

@@ -1,22 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 import heroJpg from "@/assets/images/oficina.jpg";
 import heroWebp from "@/assets/images/oficina.webp";
 import heroAvif from "@/assets/images/oficina.avif";
 // proceso.jpg no se usa: eliminado para evitar warning de import sin uso
 
 export const Route = createFileRoute("/empresas")({
-  head: () => ({
-    meta: [
-      { title: "Programas de desarrollo profesional para empresas | María Cabo" },
-      {
-        name: "description",
-        content:
-          "Talleres y programas para trabajar atención, confianza, aprendizaje, hábitos y preparación ante situaciones profesionales exigentes.",
-      },
-      { property: "og:title", content: "Programas para empresas · María Cabo" },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Programas de desarrollo profesional para empresas · María Cabo",
+      description:
+        "Talleres y programas para trabajar atención, confianza, aprendizaje, hábitos y preparación ante situaciones profesionales exigentes.",
+      path: "/empresas",
+    }),
   component: EmpresasPage,
 });
 

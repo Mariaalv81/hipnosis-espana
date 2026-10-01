@@ -3,23 +3,16 @@ import { useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { loadRecaptcha } from "@/lib/recaptcha";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/empresas/contacto")({
-  head: () => ({
-    meta: [
-      { title: "Hablar sobre un programa para empresas · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María Cabo.",
-      },
-      { property: "og:title", content: "Programa para empresas · María Cabo" },
-      {
-        property: "og:description",
-        content: "Cuéntanos el objetivo, formato y participantes para valorar una propuesta.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Hablar sobre un programa para empresas · María Cabo",
+      description:
+        "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María Cabo.",
+      path: "/empresas/contacto",
+    }),
   component: CorporateContactPage,
 });
 

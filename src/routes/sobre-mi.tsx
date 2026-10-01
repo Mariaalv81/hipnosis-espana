@@ -1,27 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 
 export const Route = createFileRoute("/sobre-mi")({
-  head: () => ({
-    meta: [
-      { title: "Sobre María Cabo · María Cabo" },
-      {
-        name: "description",
-        content:
-          "María Cabo trabaja con hipnosis aplicada al desarrollo personal y profesional, con un enfoque cercano, práctico y realista.",
-      },
-      {
-        property: "og:title",
-        content: "Sobre María Cabo · María Cabo",
-      },
-      {
-        property: "og:description",
-        content: "Una forma cercana, práctica y respetuosa de trabajar con el cambio.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Sobre María Cabo · Hipnosis y desarrollo personal",
+      description:
+        "María Cabo trabaja con hipnosis aplicada al desarrollo personal y profesional, con experiencia internacional y corporativa.",
+      path: "/sobre-mi",
+    }),
   component: AboutPage,
 });
 

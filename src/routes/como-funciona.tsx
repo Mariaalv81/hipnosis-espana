@@ -1,24 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/como-funciona")({
-  head: () => ({
-    meta: [
-      { title: "Cómo funciona una sesión de hipnosis · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Qué es y qué no es la hipnosis, el recorrido paso a paso de una sesión y los límites del acompañamiento.",
-      },
-      { property: "og:title", content: "Cómo funciona · María Cabo" },
-      {
-        property: "og:description",
-        content:
-          "El recorrido paso a paso de una sesión de hipnosis, con límites claros y honestos.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Cómo funciona una sesión de hipnosis · María Cabo",
+      description:
+        "Qué es y qué no es la hipnosis, el recorrido paso a paso de una sesión y los límites del acompañamiento.",
+      path: "/como-funciona",
+    }),
   component: HowPage,
 });
 

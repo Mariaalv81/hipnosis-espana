@@ -2,8 +2,16 @@ import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog/")({
+  head: () =>
+    makeSeo({
+      title: "Blog · María Cabo",
+      description:
+        "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.",
+      path: "/blog",
+    }),
   component: BlogIndexPage,
 });
 

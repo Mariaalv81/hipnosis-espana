@@ -2,23 +2,16 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarButton } from "@/components/calendar-button";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/sesiones")({
-  head: () => ({
-    meta: [
-      { title: "Sesiones y precios · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Sesión individual de hipnosis por 60 € la hora y programa para dejar de fumar de tres sesiones por 300 €.",
-      },
-      { property: "og:title", content: "Sesiones y precios · María Cabo" },
-      {
-        property: "og:description",
-        content: "Precios claros para el acompañamiento con hipnosis en Sueca.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Sesiones y precios · María Cabo",
+      description:
+        "Sesión individual de hipnosis por 60 € la hora y programa para dejar de fumar de tres sesiones por 300 €.",
+      path: "/sesiones",
+    }),
   component: SessionsPage,
 });
 

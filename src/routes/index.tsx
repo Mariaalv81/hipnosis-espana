@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
@@ -9,22 +10,13 @@ import linenImage from "@/assets/images/texture-linen.jpg";
 import sessionMaria from "@/assets/images/sesion_maria_cabo.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "María Cabo · Hipnosis para el cambio personal" },
-      {
-        name: "description",
-        content:
-          "Sesiones para el desarrollo personal. Un espacio sereno para trabajar hábitos, calma y confianza.",
-      },
-      { property: "og:title", content: "María Cabo · Hipnosis para el cambio personal" },
-      {
-        property: "og:description",
-        content:
-          "Acompañamiento para personas adultas, con criterio, cercanía y expectativas honestas.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "María Cabo · Hipnosis para el cambio personal",
+      description:
+        "Sesiones para el desarrollo personal en Sueca. Un espacio sereno para trabajar hábitos, calma, foco y confianza.",
+      path: "/",
+    }),
   component: HypnosisPage,
 });
 

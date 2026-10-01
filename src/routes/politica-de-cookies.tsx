@@ -2,22 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { openCookiePreferences } from "@/lib/cookie-consent";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/politica-de-cookies")({
-  head: () => ({
-    meta: [
-      { title: "Política de cookies · María Cabo" },
-      {
-        name: "description",
-        content: "Información sobre cookies, consentimiento y servicios externos de María Cabo.",
-      },
-      { property: "og:title", content: "Política de cookies · María Cabo" },
-      {
-        property: "og:description",
-        content: "Información sobre cookies, consentimiento y servicios externos.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Política de cookies · María Cabo",
+      description: "Información sobre cookies, consentimiento y servicios externos de María Cabo.",
+      path: "/politica-de-cookies",
+    }),
   component: CookiePolicyPage,
 });
 

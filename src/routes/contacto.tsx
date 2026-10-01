@@ -3,23 +3,16 @@ import { useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
+import { makeSeo } from "@/lib/seo";
 import { siteSettings } from "@/content/site-settings";
 
 export const Route = createFileRoute("/contacto")({
-  head: () => ({
-    meta: [
-      { title: "Contacto · María Cabo" },
-      {
-        name: "description",
-        content: "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
-      },
-      { property: "og:title", content: "Contacto · María Cabo" },
-      {
-        property: "og:description",
-        content: "Resolvemos tus dudas con calma antes de reservar.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Contacto · María Cabo",
+      description: "Escribe a María Cabo si tienes una duda antes de reservar tu sesión en Sueca.",
+      path: "/contacto",
+    }),
   component: ContactPage,
 });
 

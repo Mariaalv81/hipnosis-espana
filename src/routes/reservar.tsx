@@ -3,6 +3,7 @@ import { CalendarButton } from "@/components/calendar-button";
 import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 const smokingMailto = (subject: string) =>
   `mailto:${siteSettings.smokingProgramEmail}?subject=${encodeURIComponent(
@@ -10,21 +11,13 @@ const smokingMailto = (subject: string) =>
   )}&body=${encodeURIComponent(siteSettings.smokingProgramEmailBody)}`;
 
 export const Route = createFileRoute("/reservar")({
-  head: () => ({
-    meta: [
-      { title: "Reservar una sesión · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Reserva tu sesión de hipnosis con María Cabo en Sueca: 70 € la hora o programa de tres sesiones por 300 €.",
-      },
-      { property: "og:title", content: "Reservar una sesión · María Cabo" },
-      {
-        property: "og:description",
-        content: "Da el primer paso hacia el cambio que quieres producir.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Reservar una sesión · María Cabo",
+      description:
+        "Reserva tu sesión de hipnosis con María Cabo en Sueca: 60 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
+      path: "/reservar",
+    }),
   component: BookPage,
 });
 

@@ -1,24 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/ambitos")({
-  head: () => ({
-    meta: [
-      { title: "Ámbitos de acompañamiento · María Cabo" },
-      {
-        name: "description",
-        content:
-          "Objetivos de desarrollo personal que pueden explorarse con hipnosis, desde un enfoque no clínico y con límites claros.",
-      },
-      { property: "og:title", content: "Ámbitos de acompañamiento · María Cabo" },
-      {
-        property: "og:description",
-        content:
-          "Una guía de objetivos de desarrollo personal para explorar con hipnosis, sin sustituir la atención sanitaria o psicológica.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Ámbitos de acompañamiento · María Cabo",
+      description:
+        "Miedos, estrés, hábitos, dejar de fumar, confianza y foco: áreas de desarrollo personal que pueden trabajarse con hipnosis.",
+      path: "/ambitos",
+    }),
   component: AreasPage,
 });
 

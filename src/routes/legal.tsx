@@ -1,22 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
+import { makeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/legal")({
-  head: () => ({
-    meta: [
-      { title: "Información legal · María Cabo" },
-      {
-        name: "description",
-        content: "Aviso legal, privacidad, cookies y condiciones del servicio de María Cabo.",
-      },
-      { property: "og:title", content: "Información legal · María Cabo" },
-      {
-        property: "og:description",
-        content: "Aviso legal, privacidad, cookies y condiciones del servicio.",
-      },
-    ],
-  }),
+  head: () =>
+    makeSeo({
+      title: "Información legal · María Cabo",
+      description: "Aviso legal, privacidad, proveedores y condiciones del servicio de María Cabo.",
+      path: "/legal",
+    }),
   component: LegalPage,
 });
 
