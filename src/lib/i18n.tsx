@@ -19,7 +19,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("es");
 
   useEffect(() => {
-    const stored = window.localStorage.getItem("holistico-lang") as Lang | null;
+    const stored = window.localStorage.getItem("maria-cabo-lang") as Lang | null;
     if (stored && stored in dictionaries) setLangState(stored);
   }, []);
 
@@ -29,7 +29,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   const setLang = (l: Lang) => {
     setLangState(l);
-    window.localStorage.setItem("holistico-lang", l);
+    window.localStorage.setItem("maria-cabo-lang", l);
   };
 
   return (

@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Hipnosis Espana design system.
+ * María Cabo design system.
  * Base: off-white and soft sand. Text: greenish charcoal.
  * Primary: muted forest green. Secondary: sage. Accent: restrained terracotta.
  */
@@ -117,17 +117,14 @@
     background: var(--accent);
   }
 
-
-  color: #6C6459;
+  color: #6c6459;
 }
-
 
 /* Énfasis */
 .confidentiality-item strong {
   font-weight: 400;
-  color: #0D8DA8;
+  color: #0d8da8;
 }
-
 
 /* Cierre */
 .confidentiality-summary {
@@ -140,7 +137,7 @@
 
   letter-spacing: 0.13em;
 
-  color: #6C6459;
+  color: #6c6459;
 
   text-align: center;
 }

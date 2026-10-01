@@ -104,7 +104,7 @@ function BlogPostPage() {
           <h1 className="mt-4 text-4xl leading-tight md:text-5xl">
             {listingPost?.title ?? post.title}
           </h1>
-          <p className="mt-5 text-sm text-muted-foreground">Maria Cabo · {date}</p>
+          <p className="mt-5 text-sm text-muted-foreground">María Cabo · {date}</p>
         </div>
       </section>
 

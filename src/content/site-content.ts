@@ -274,7 +274,7 @@ const es = {
   },
   about: {
     title: "Sobre mí",
-    name: "Maria Cabo",
+    name: "María Cabo",
     role: "Facilitadora de hipnosis aplicada al desarrollo personal",
     intro:
       "Trabajo con hipnosis aplicada al desarrollo personal y profesional, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
@@ -545,7 +545,7 @@ const es = {
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: Maria Cabo. El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
+        text: "Titular del sitio: María Cabo. El contenido publicado en este sitio tiene carácter informativo y no constituye asesoramiento sanitario.",
       },
       {
         title: "Privacidad",
@@ -900,7 +900,7 @@ const va: Dict = {
   },
   about: {
     title: "Sobre mi",
-    name: "Maria Cabo",
+    name: "María Cabo",
     role: "Facilitadora d'hipnosi aplicada al desenvolupament personal",
     intro:
       "Treballe amb hipnosi aplicada al desenvolupament personal i professional, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
@@ -1169,7 +1169,7 @@ const va: Dict = {
     sections: [
       {
         title: "Avís legal",
-        text: "Titular del lloc: Maria Cabo. Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
+        text: "Titular del lloc: María Cabo. Domicili, NIF i dades de contacte pendents de confirmar. El contingut d'esta web és informatiu i no constituïx assessorament sanitari.",
       },
       {
         title: "Privacitat",
@@ -1519,7 +1519,7 @@ const en: Dict = {
   },
   about: {
     title: "About me",
-    name: "Maria Cabo",
+    name: "María Cabo",
     role: "Hypnosis facilitator for personal development",
     intro:
       "I work with hypnosis applied to personal and professional development, through a warm, practical approach that respects each person's pace.",
@@ -1788,7 +1788,7 @@ const en: Dict = {
     sections: [
       {
         title: "Legal notice",
-        text: "Site owner: Maria Cabo. Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
+        text: "Site owner: María Cabo. Address, tax ID and contact details to be confirmed. The content of this site is informational and does not constitute health advice.",
       },
       {
         title: "Privacy",

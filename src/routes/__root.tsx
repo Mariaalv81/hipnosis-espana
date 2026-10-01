@@ -16,7 +16,7 @@ import { CookieConsent } from "@/components/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const preloadReloadKey = "hipnosis-espana:preload-reload-url";
+const preloadReloadKey = "maria-cabo:preload-reload-url";
 
 if (typeof window !== "undefined") {
   window.addEventListener("vite:preloadError", (event) => {
