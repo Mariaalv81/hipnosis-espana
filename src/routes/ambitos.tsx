@@ -34,6 +34,16 @@ function AreasPage() {
                   <h2 className="text-2xl">{item.title}</h2>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
                 </div>
+                {index === 1 && (
+                  <div className="mt-6 border-t border-border/60 pt-4">
+                    <Link
+                      to="/ansiedad"
+                      className="inline-flex text-xs font-medium text-primary underline underline-offset-4 hover:opacity-80"
+                    >
+                      {t.anxietyPage.eyebrowNav} →
+                    </Link>
+                  </div>
+                )}
                 {isSmoking && (
                   <div className="mt-6 border-t border-border/60 pt-4">
                     <Link

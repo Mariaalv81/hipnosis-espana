@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AmbitosRouteImport } from './routes/ambitos'
+import { Route as AnsiedadRouteImport } from './routes/ansiedad'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
 import { Route as ContactoRouteImport } from './routes/contacto'
@@ -35,6 +36,11 @@ const IndexRoute = IndexRouteImport.update({
 const AmbitosRoute = AmbitosRouteImport.update({
   id: '/ambitos',
   path: '/ambitos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnsiedadRoute = AnsiedadRouteImport.update({
+  id: '/ansiedad',
+  path: '/ansiedad',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -116,6 +122,7 @@ const EmpresasContactoRoute = EmpresasContactoRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
+  '/ansiedad': typeof AnsiedadRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
@@ -135,6 +142,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
+  '/ansiedad': typeof AnsiedadRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
   '/dejar-de-fumar': typeof DejarDeFumarRoute
@@ -154,6 +162,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
+  '/ansiedad': typeof AnsiedadRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
   '/contacto': typeof ContactoRoute
@@ -175,6 +184,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/ambitos'
+    | '/ansiedad'
     | '/blog'
     | '/como-funciona'
     | '/contacto'
@@ -194,6 +204,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/ambitos'
+    | '/ansiedad'
     | '/como-funciona'
     | '/contacto'
     | '/dejar-de-fumar'
@@ -212,6 +223,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/ambitos'
+    | '/ansiedad'
     | '/blog'
     | '/como-funciona'
     | '/contacto'
@@ -232,6 +244,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AmbitosRoute: typeof AmbitosRoute
+  AnsiedadRoute: typeof AnsiedadRoute
   BlogRoute: typeof BlogRouteWithChildren
   ComoFuncionaRoute: typeof ComoFuncionaRoute
   ContactoRoute: typeof ContactoRoute
@@ -260,6 +273,13 @@ declare module '@tanstack/react-router' {
       path: '/ambitos'
       fullPath: '/ambitos'
       preLoaderRoute: typeof AmbitosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ansiedad': {
+      id: '/ansiedad'
+      path: '/ansiedad'
+      fullPath: '/ansiedad'
+      preLoaderRoute: typeof AnsiedadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -397,6 +417,7 @@ const EmpresasRouteWithChildren = EmpresasRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AmbitosRoute: AmbitosRoute,
+  AnsiedadRoute: AnsiedadRoute,
   BlogRoute: BlogRouteWithChildren,
   ComoFuncionaRoute: ComoFuncionaRoute,
   ContactoRoute: ContactoRoute,

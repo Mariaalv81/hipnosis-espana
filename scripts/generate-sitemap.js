@@ -5,6 +5,7 @@ const SITE_URL = "https://mariacabo.com";
 
 const staticRoutes = [
   { path: "", changefreq: "weekly", priority: "1.0" },
+  { path: "/ansiedad", changefreq: "weekly", priority: "0.9" },
   { path: "/dejar-de-fumar", changefreq: "monthly", priority: "0.9" },
   { path: "/sesiones", changefreq: "monthly", priority: "0.9" },
   { path: "/reservar", changefreq: "monthly", priority: "0.9" },

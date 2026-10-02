@@ -108,7 +108,18 @@ export function makeLocalBusinessSchema() {
             description:
               "Sesión presencial de 1 hora en despacho en Sueca, a domicilio en casas de particulares en Valencia ciudad, o en formato online para cambio de hábitos, calma y foco.",
           },
-          price: "60",
+          price: "70",
+          priceCurrency: "EUR",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Hipnosis para la ansiedad y regulación corporal",
+            description:
+              "Acompañamiento natural con hipnosis para calmar la ansiedad, desactivar la alerta somática y enseñar al cuerpo a recuperar la serenidad en Sueca, Valencia y Ribera Baixa.",
+          },
+          price: "70",
           priceCurrency: "EUR",
         },
         {
@@ -138,7 +149,7 @@ export function makeLocalBusinessSchema() {
       longitude: -0.3113,
     },
     email: "maria.a.cabo@gmail.com",
-    priceRange: "60€ - 300€",
+    priceRange: "70€ - 300€",
     areaServed: [
       { "@type": "City", name: "Valencia" },
       { "@type": "City", name: "Sueca" },
@@ -221,11 +232,13 @@ export function makeServiceSchema({
   description,
   price,
   path,
+  areaServed,
 }: {
   name: string;
   description: string;
   price: string;
   path: string;
+  areaServed?: Array<{ "@type": string; name: string }>;
 }) {
   return {
     "@context": "https://schema.org",
@@ -237,10 +250,11 @@ export function makeServiceSchema({
       "@id": `${SITE_URL}/#organization`,
       name: "María Cabo",
     },
-    areaServed: {
-      "@type": "City",
-      name: "Sueca",
-    },
+    areaServed: areaServed || [
+      { "@type": "City", name: "Sueca" },
+      { "@type": "City", name: "Valencia" },
+      { "@type": "AdministrativeArea", name: "Ribera Baixa" },
+    ],
     offers: {
       "@type": "Offer",
       price: price.replace(/[^0-9]/g, ""),

@@ -42,8 +42,7 @@ function SessionsPage() {
             <div className="rounded-2xl border border-border bg-card p-5">
               <h3 className="text-base font-medium">Sesiones Online</h3>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Por videoconferencia en directo para cualquier ubicación en castellano, o
-                inglés.
+                Por videoconferencia en directo para cualquier ubicación en castellano o inglés.
               </p>
             </div>
           </div>

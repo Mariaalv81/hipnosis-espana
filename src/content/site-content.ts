@@ -394,6 +394,161 @@ const es = {
       },
     ],
   },
+  anxietyPage: {
+    seoTitle: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María Cabo",
+    seoDescription:
+      "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
+    eyebrow: "SOLUCIÓN NATURAL · HIPNOSIS EN VALENCIA Y RIBERA BAIXA",
+    eyebrowNav: "Hipnosis para la Ansiedad",
+    title: "CALMAR LA ANSIEDAD Y ENSEÑAR A TU CUERPO A RECUPERAR LA PAZ",
+    subtitle:
+      "La ansiedad no se resuelve forzando a la mente a no pensar. Se alivia enseñando a tu sistema nervioso a desactivar la respuesta de alerta.",
+    introText:
+      "Opresión en el pecho, nudo en el estómago, respiración corta o una mente que no para de anticipar problemas. Cuando la ansiedad se cronifica, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis aplicada trabajamos en ese nivel profundo e involuntario: ayudamos a tu cuerpo a recordar la relajación profunda y reprogramamos las respuestas de tensión para que recuperes el control de forma natural y sin fármacos.",
+    ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
+    ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
+    trustBadges: [
+      "Solución 100% natural y sin fármacos",
+      "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
+      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+    ],
+    symptomsTitle: "CUANDO EL CUERPO VIVE EN ESTADO DE ALERTA CONTINUO",
+    symptomsSubtitle:
+      "La ansiedad no es una debilidad ni una falta de carácter; es tu sistema nervioso interpretando amenazas en piloto automático.",
+    symptoms: [
+      {
+        title: "Tensión física constante",
+        text: "Opresión en el pecho o garganta, respiración entrecortada, mandíbula apretada, mareo tensional o nudo en el estómago.",
+      },
+      {
+        title: "Mente acelerada y rumiación",
+        text: "Pensamientos anticipatorios en bucle, preocupación desmedida por el futuro y dificultad para frenar el flujo mental.",
+      },
+      {
+        title: "Descanso fragmentado e insomnio",
+        text: "Irte a la cama con el cuerpo en guardia, despertares nocturnos sobresaltados o levantarte con la misma sensación de fatiga.",
+      },
+      {
+        title: "Miedo a desbordarse",
+        text: "Temor a perder el control, agobio en el coche, en el trabajo, en reuniones o en espacios concurridos.",
+      },
+    ],
+    whyTitle: "¿POR QUÉ NO BASTA CON DECIRTE 'CÁLMATE'?",
+    whyParagraphs: [
+      "La mayoría de las personas con ansiedad ya saben que sus preocupaciones son exageradas. La razón lo entiende, pero el cuerpo no obedece: el corazón se acelera, el aire parece no entrar y los músculos se tensan. ¿Por qué ocurre esto?",
+      "Porque la respuesta de ansiedad se origina en el sistema nervioso autónomo (la rama simpática o modo 'lucha o huida'), una red primitiva encargada de tu supervivencia que no responde al lenguaje lógico de los pensamientos conscientes. Intentar frenar la ansiedad obligándote a 'pensar positivo' suele generar más impotencia y frustración.",
+      "La hipnosis funciona porque utiliza el mismo lenguaje que tu sistema nervioso: el de la atención focalizada, las señales sensoriales y la distensión somática. Al inducir un estado de relajación profunda guiada, activamos de manera natural el sistema parasimpático (el freno neurobiológico del estrés), enseñando al cuerpo a apagar la alarma y creando nuevos circuitos neuronales de calma.",
+    ],
+    pillarsTitle: "EL PROCESO PARA ENSEÑAR A TU CUERPO A ESTAR EN CALMA",
+    pillarsIntro:
+      "Un acompañamiento práctico, individual y enfocado en darte autonomía desde la primera sesión.",
+    steps: [
+      {
+        num: "01",
+        badge: "Regulación corporal",
+        title: "DESACTIVAR EL MODO ALERTA",
+        text: "Rompemos el patrón fisiológico de hipervigilancia. Tu cuerpo experimenta seguridad física profunda real, reduciendo de inmediato la activación del estrés.",
+      },
+      {
+        num: "02",
+        badge: "Nivel subconsciente",
+        title: "REPROGRAMAR DISPARADORES",
+        text: "Identificamos los detonantes que disparaban la angustia (situaciones cotidianas, recuerdos, exigencias) y desvinculamos la respuesta automática de miedo.",
+      },
+      {
+        num: "03",
+        badge: "Recursos prácticos",
+        title: "ANCLAJES DE SERENIDAD INSTANTÁNEA",
+        text: "Instalamos en sesión anclajes neurofisiológicos: señales físicas y mentales que puedes activar tú mismo/a en cualquier momento del día para frenar un pico de ansiedad.",
+      },
+      {
+        num: "04",
+        badge: "Para toda la vida",
+        title: "AUTOHIPNOSIS Y AUTONOMÍA",
+        text: "Aprendes pautas de autohipnosis y respiración para gestionar tu bienestar en tu día a día, a tu ritmo y sin crear dependencias.",
+      },
+    ],
+    locationsTitle: "DÓNDE REALIZAMOS LAS SESIONES",
+    locationsIntro:
+      "Atención cercana en la comarca de la Ribera Baixa y Valencia, adaptada a tus preferencias:",
+    locations: [
+      {
+        name: "Despacho en Sueca (Centro Sanar)",
+        area: "Ribera Baixa",
+        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso y aparcamiento para personas de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara y El Perelló.",
+      },
+      {
+        name: "A domicilio en Valencia ciudad",
+        area: "Valencia capital y alrededores",
+        desc: "Ideal si los desplazamientos te generan agobio o prefieres trabajar desde la comodidad y privacidad absoluta de tu propio hogar en Valencia.",
+      },
+      {
+        name: "Sesiones Online en directo",
+        area: "Cualquier ubicación",
+        desc: "Por videoconferencia individual en directo, con la misma eficacia y guiada paso a paso desde el espacio donde te sientas más tranquilo/a.",
+      },
+    ],
+    pricingTitle: "PRECIOS CLAROS Y CONDICIONES TRANSPARENTES",
+    price: "70 €",
+    priceUnit: "por sesión (1 hora)",
+    pricingFeatures: [
+      "Sesión individual y personalizada de 60 minutos.",
+      "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
+      "A tu propio ritmo: sin paquetes obligatorios ni permanencia.",
+      "Pautas de autohipnosis y ejercicios prácticos entre sesiones.",
+      "Resolución de dudas previa sin compromiso.",
+    ],
+    formEyebrow: "CONSULTA O RESERVA",
+    formTitle: "DA EL PRIMER PASO HACIA LA CALMA",
+    formSubtitle:
+      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Te responderé personalmente con total cercanía.",
+    formFields: {
+      name: "Nombre completo",
+      email: "Correo electrónico",
+      phone: "Teléfono",
+      modality: "Modalidad de atención preferida",
+      modalityOptions: [
+        "Despacho en Sueca (Centro Sanar)",
+        "A domicilio en Valencia ciudad",
+        "Sesión Online (Videollamada)",
+        "Aún no lo tengo claro / Prefiero consultarlo",
+      ],
+      symptoms: "¿En qué momentos o situaciones notas más la ansiedad? (Opcional)",
+      symptomsPlaceholder:
+        "Ej. En el trabajo, al conducir, para dormir, opresión en el pecho constante...",
+      message: "¿Alguna duda o detalle que quieras comentar? (Opcional)",
+      messagePlaceholder: "Escribe aquí cualquier consulta previa...",
+      consent: "He leído y acepto la política de privacidad.",
+      submit: "Enviar consulta / Solicitar sesión",
+      submitting: "Enviando mensaje...",
+      success:
+        "Gracias por tu mensaje. Lo he recibido correctamente y me pondré en contacto contigo lo antes posible para atender tu caso.",
+      fallbackMailto: "Enviar por correo electrónico",
+    },
+    faqTitle: "PREGUNTAS FRECUENTES SOBRE HIPNOSIS Y ANSIEDAD",
+    faqs: [
+      {
+        q: "¿Cómo ayuda exactamente la hipnosis a reducir la ansiedad?",
+        a: "La hipnosis actúa directamente sobre la respuesta neurobiológica del estrés. Mientras que conscientemente intentas 'tranquilizarte' sin éxito, en hipnosis accedemos a un estado donde el sistema parasimpático toma el control, permitiendo que el cuerpo desactive la tensión muscular, regule la respiración y desaprenda las asociaciones automáticas de alarma.",
+      },
+      {
+        q: "¿Voy a perder el control o quedarme inconsciente durante la sesión?",
+        a: "No, en absoluto. La hipnosis clínica aplicada al desarrollo personal no tiene nada que ver con los espectáculos de televisión. Estarás consciente en todo momento, escucharás mi voz, podrás hablar, moverte y decidir qué decir. Se trata de un estado de atención focalizada y profunda relajación voluntaria.",
+      },
+      {
+        q: "¿En cuántas sesiones se suele notar el cambio?",
+        a: "Muchas personas experimentan un alivio significativo y una profunda sensación de ligereza corporal desde la primera sesión. Como no hay permanencia, evaluamos juntos tras cada sesión y avanzas a tu propio ritmo según tu evolución personal.",
+      },
+      {
+        q: "¿Es compatible si ya tomo medicación ansiolítica o voy al psicólogo?",
+        a: "Sí, es perfectamente compatible como herramienta de apoyo y desarrollo personal. La hipnosis enseña a tu cuerpo recursos naturales de autorregulación. Es importante recordar que mi servicio no es sanitario ni sustituye el tratamiento médico o psicológico prescrito por profesionales de la salud.",
+      },
+      {
+        q: "¿Realizas sesiones en Sueca, la Ribera Baixa y Valencia?",
+        a: "Sí. Atiendo presencialmente en mi despacho del Centro Sanar en Sueca (muy accesible desde Cullera, Alzira, Algemesí, Sollana, etc.), a domicilio en casas de particulares en Valencia ciudad para mayor comodidad, y en formato online para cualquier ubicación.",
+      },
+    ],
+  },
   how: {
     title: "Cómo funciona",
     intro:
@@ -1285,6 +1440,160 @@ const va: Dict = {
       },
     ],
   },
+  anxietyPage: {
+    seoTitle: "Hipnosi per a l'Ansietat a València i Sueca · Solució Natural | María Cabo",
+    seoDescription:
+      "Aprén a calmar l'ansietat de manera natural i ensenya al teu cos a desactivar l'estat d'alarma. Hipnosi a Sueca (Ribera Baixa), a domicili a València o en línia. 70 €/sessió.",
+    eyebrow: "SOLUCIÓ NATURAL · HIPNOSI A VALÈNCIA I RIBERA BAIXA",
+    eyebrowNav: "Hipnosi per a l'Ansietat",
+    title: "CALMAR L'ANSIETAT I ENSENYAR AL TEU COS A RECUPERAR LA PAU",
+    subtitle:
+      "L'ansietat no es resol forçant la ment a no pensar. S'alleuja ensenyant al teu sistema nerviós a desactivar la resposta d'alerta.",
+    introText:
+      "Opressió al pit, nus a l'estómac, respiració curta o una ment que no para d'anticipar problemes. Quan l'ansietat es cronifica, el cos reacciona de manera reflexa abans que la raó intervinga. Amb hipnosi aplicada treballem en eixe nivell profund i involuntari: ajudem el teu cos a recordar la relaxació profunda i reprogramem les respostes de tensió perquè recuperes el control de manera natural i sense fàrmacs.",
+    ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
+    ctaSecondary: "COM T'AJUDA LA HIPNOSI",
+    trustBadges: [
+      "Solució 100% natural i sense fàrmacs",
+      "Sueca (Centre Sanar) · A domicili a València · En línia",
+      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+    ],
+    symptomsTitle: "QUAN EL COS VIU EN ESTAT D'ALERTA CONTINU",
+    symptomsSubtitle:
+      "L'ansietat no és una feblesa ni una falta de caràcter; és el teu sistema nerviós interpretant amenaces en pilot automàtic.",
+    symptoms: [
+      {
+        title: "Tensió física constant",
+        text: "Opressió al pit o al coll, respiració entretallada, mandíbula serrada, mareig tensional o nus a l'estómac.",
+      },
+      {
+        title: "Ment accelerada i rumiació",
+        text: "Pensaments anticipatoris en bucle, preocupació desmesurada pel futur i dificultat per a frenar el flux mental.",
+      },
+      {
+        title: "Descans fragmentat i insomni",
+        text: "Anar al llit amb el cos en guàrdia, despertars nocturns sobtats o alçar-se amb la mateixa sensació de fatiga.",
+      },
+      {
+        title: "Por a desbordar-se",
+        text: "Temor a perdre el control, angoixa al cotxe, a la feina, en reunions o en espais concorreguts.",
+      },
+    ],
+    whyTitle: "PER QUÈ NO N'HI HA PROU AMB DIR-TE 'CALMA'T'?",
+    whyParagraphs: [
+      "La majoria de les persones amb ansietat ja saben que les seues preocupacions són exagerades. La raó ho entén, però el cos no obeïx: el cor s'accelera, l'aire sembla no entrar i els músculs es tensen. Per què passa açò?",
+      "Perquè la resposta d'ansietat s'origina en el sistema nerviós autònom (la branca simpàtica o mode 'lluita o fugida'), una xarxa primitiva encarregada de la teua supervivència que no respon al llenguatge lògic dels pensaments conscients. Intentar frenar l'ansietat obligant-te a 'pensar en positiu' sol generar més impotència i frustració.",
+      "La hipnosi funciona perquè utilitza el mateix llenguatge que el teu sistema nerviós: el de l'atenció focalitzada, els senyals sensorials i la distensió somàtica. En induir un estat de relaxació profunda guiada, activem de manera natural el sistema parasimpàtic (el fre neurobiològic de l'estrès), ensenyant al cos a apagar l'alarma i creant nous circuits neuronals de calma.",
+    ],
+    pillarsTitle: "EL PROCÉS PER A ENSENYAR AL TEU COS A ESTAR EN CALMA",
+    pillarsIntro:
+      "Un acompanyament pràctic, individual i enfocat en donar-te autonomia des de la primera sessió.",
+    steps: [
+      {
+        num: "01",
+        badge: "Regulació corporal",
+        title: "DESACTIVAR EL MODE ALERTA",
+        text: "Trenquem el patró fisiològic d'hipervigilància. El teu cos experimenta seguretat física profunda real, reduint immediatament l'activació de l'estrès.",
+      },
+      {
+        num: "02",
+        badge: "Nivell subconscient",
+        title: "REPROGRAMAR DISPARADORS",
+        text: "Identifiquem els detonants que disparaven l'angoixa (situacions quotidianes, records, exigències) i desvinculem la resposta automàtica de por.",
+      },
+      {
+        num: "03",
+        badge: "Recursos pràctics",
+        title: "ANCORATGES DE SERENITAT INSTANTÀNIA",
+        text: "Instal·lem en sessió ancoratges neurofisiològics: senyals físics i mentals que pots activar tu mateix/a en qualsevol moment del dia per a frenar un pic d'ansietat.",
+      },
+      {
+        num: "04",
+        badge: "Per a tota la vida",
+        title: "AUTOHIPNOSI I AUTONOMIA",
+        text: "Aprens pautes d'autohipnosi i respiració per a gestionar el teu benestar en el teu dia a dia, al teu ritme i sense crear dependències.",
+      },
+    ],
+    locationsTitle: "ON FEM LES SESSIONS",
+    locationsIntro:
+      "Atenció propera a la comarca de la Ribera Baixa i València, adaptada a les teues preferències:",
+    locations: [
+      {
+        name: "Despatx a Sueca (Centre Sanar)",
+        area: "Ribera Baixa",
+        desc: "Espai serè, independent i confidencial a Sueca. De molt fàcil accés i aparcament per a persones de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara i El Perelló.",
+      },
+      {
+        name: "A domicili a València ciutat",
+        area: "València capital i voltants",
+        desc: "Ideal si els desplaçaments et generen angoixa o prefereixes treballar des de la comoditat i privacitat absoluta de la teua pròpia llar a València.",
+      },
+      {
+        name: "Sessions En línia en directe",
+        area: "Qualsevol ubicació",
+        desc: "Per videoconferència individual en directe, amb la mateixa eficàcia i guiada pas a pas des de l'espai on et sentes més tranquil/a.",
+      },
+    ],
+    pricingTitle: "PREUS CLARS I CONDICIONS TRANSPARENTS",
+    price: "70 €",
+    priceUnit: "per sessió (1 hora)",
+    pricingFeatures: [
+      "Sessió individual i personalitzada de 60 minuts.",
+      "Sueca (Centre Sanar), a domicili a València ciutat o en línia.",
+      "Al teu propi ritme: sense paquets obligatoris ni permanència.",
+      "Pautes d'autohipnosi i exercicis pràctics entre sessions.",
+      "Resolució de dubtes prèvia sense compromís.",
+    ],
+    formEyebrow: "CONSULTA O RESERVA",
+    formTitle: "FES EL PRIMER PAS CAP A LA CALMA",
+    formSubtitle:
+      "Emplena este breu formulari per a consultar els teus dubtes o sol·licitar la teua sessió. Et respondré personalment amb total proximitat.",
+    formFields: {
+      name: "Nom complet",
+      email: "Correu electrònic",
+      phone: "Telèfon",
+      modality: "Modalitat d'atenció preferida",
+      modalityOptions: [
+        "Despatx a Sueca (Centre Sanar)",
+        "A domicili a València ciutat",
+        "Sessió En línia (Videotrucada)",
+        "Encara no ho tinc clar / Preferisc consultar-ho",
+      ],
+      symptoms: "En quins moments o situacions notes més l'ansietat? (Opcional)",
+      symptomsPlaceholder: "Ex. A la feina, en conduir, per a dormir, opressió al pit constant...",
+      message: "Algun dubte o detall que vulgues comentar? (Opcional)",
+      messagePlaceholder: "Escriu ací qualsevol consulta prèvia...",
+      consent: "He llegit i accepte la política de privacitat.",
+      submit: "Enviar consulta / Sol·licitar sessió",
+      submitting: "Enviant missatge...",
+      success:
+        "Gràcies pel teu missatge. L'he rebut correctament i em posaré en contacte amb tu al més prompte possible.",
+      fallbackMailto: "Enviar per correu electrònic",
+    },
+    faqTitle: "PREGUNTES FREQÜENTS SOBRE HIPNOSI I ANSIETAT",
+    faqs: [
+      {
+        q: "Com ajuda exactament la hipnosi a reduir l'ansietat?",
+        a: "La hipnosi actua directament sobre la resposta neurobiològica de l'estrès. Mentre que conscientment intentes 'tranquil·litzar-te' sense èxit, en hipnosi accedim a un estat on el sistema parasimpàtic pren el control, permetent que el cos desactive la tensió muscular, regule la respiració i desaprena les associacions automàtiques d'alarma.",
+      },
+      {
+        q: "Vaig a perdre el control o quedar-me inconscient durant la sessió?",
+        a: "No, en absolut. La hipnosi clínica aplicada al desenvolupament personal no té res a veure amb els espectacles de televisió. Estaràs conscient en tot moment, escoltaràs la meua veu, podràs parlar, moure't i decidir què dir. Es tracta d'un estat d'atenció focalitzada i profunda relaxació voluntària.",
+      },
+      {
+        q: "En quantes sessions se sol notar el canvi?",
+        a: "Moltes persones experimenten un alleujament significatiu i una profunda sensació de lleugeresa corporal des de la primera sessió. Com que no hi ha permanència, avaluem junts després de cada sessió i avances al teu propi ritme segons la teua evolució personal.",
+      },
+      {
+        q: "És compatible si ja prenc medicació ansiolítica o vaig al psicòleg?",
+        a: "Sí, és perfectament compatible com a eina de suport i desenvolupament personal. La hipnosi ensenya al teu cos recursos naturals d'autoregulació. És important recordar que el meu servei no és sanitari ni substituïx el tractament mèdic o psicològic prescrit per professionals de la salut.",
+      },
+      {
+        q: "Realitzes sessions a Sueca, la Ribera Baixa i València?",
+        a: "Sí. Atenc presencialment al meu despatx del Centre Sanar a Sueca (molt accessible des de Cullera, Alzira, Algemesí, Sollana, etc.), a domicili en cases de particulars a València ciutat per a major comoditat, i en format en línia per a qualsevol ubicació.",
+      },
+    ],
+  },
   how: {
     title: "Com funciona",
     intro:
@@ -2158,6 +2467,159 @@ const en: Dict = {
       {
         q: "Where do sessions take place?",
         a: "All 3 in-person sessions take place at my independent practice within Centro Sanar in Sueca (Valencia). The 20-minute initial consultation is conducted comfortably by phone or video call.",
+      },
+    ],
+  },
+  anxietyPage: {
+    seoTitle: "Hypnosis for Anxiety in Valencia & Sueca · Natural Relief | María Cabo",
+    seoDescription:
+      "Learn to ease anxiety naturally and teach your body to deactivate alarm mode. Hypnosis sessions in Sueca (Ribera Baixa), at home in Valencia or online. €70/session.",
+    eyebrow: "NATURAL SOLUTION · HYPNOSIS IN VALENCIA & RIBERA BAIXA",
+    eyebrowNav: "Hypnosis for Anxiety",
+    title: "EASING ANXIETY AND TEACHING YOUR BODY TO REGAIN CALM",
+    subtitle:
+      "Anxiety is not resolved by forcing the mind to stop thinking. It is relieved by teaching your nervous system to deactivate the alarm response.",
+    introText:
+      "Chest tightness, knot in the stomach, shallow breathing or a racing mind anticipating problems. When anxiety becomes chronic, the body reacts automatically before logic can intervene. Through applied hypnosis, we work at that involuntary level: helping your body remember deep relaxation and reprogramming stress triggers so you can regain balance naturally, without pharmaceuticals.",
+    ctaPrimary: "BOOK A SESSION OR ENQUIRE",
+    ctaSecondary: "HOW HYPNOSIS HELPS YOU",
+    trustBadges: [
+      "100% natural, drug-free approach",
+      "Sueca (Centro Sanar) · Home visits in Valencia · Online",
+      "Individual 1h sessions · €70 (at your own pace)",
+    ],
+    symptomsTitle: "WHEN THE BODY LIVES IN PERPETUAL ALERT",
+    symptomsSubtitle:
+      "Anxiety is not a character flaw; it is your nervous system running on survival autopilot.",
+    symptoms: [
+      {
+        title: "Persistent physical tension",
+        text: "Chest or throat tightness, shallow breathing, clenched jaw, tension dizziness or knot in the stomach.",
+      },
+      {
+        title: "Racing mind and rumination",
+        text: "Looping catastrophic thoughts, overthinking future scenarios and difficulty unwinding at the end of the day.",
+      },
+      {
+        title: "Fragmented sleep and insomnia",
+        text: "Going to bed exhausted yet hypervigilant, sudden nighttime awakenings or waking up feeling unrefreshed.",
+      },
+      {
+        title: "Fear of being overwhelmed",
+        text: "Fear of losing control, feeling crowded or panicked in cars, at work, in meetings or in public spaces.",
+      },
+    ],
+    whyTitle: "WHY TELLING YOURSELF TO 'JUST CALM DOWN' DOESN'T WORK",
+    whyParagraphs: [
+      "Most people experiencing anxiety already know rationally that their worries are magnified. The intellect understands, but the physiology doesn't obey: the heart races, breathing stays shallow, and muscles brace. Why?",
+      "Because the anxiety response is generated by the autonomic nervous system (the sympathetic 'fight or flight' branch) — an ancient survival circuit that does not answer to logical self-talk. Trying to stop anxiety through sheer conscious willpower often leads to greater frustration and exhaustion.",
+      "Hypnosis works because it speaks the nervous system's native language: focused sensory attention and neuromuscular relaxation. By guiding you into deep stillness, we engage the parasympathetic nervous system (the physiological brake on stress), teaching the body to quiet the alarm and building lasting neural pathways of composure.",
+    ],
+    pillarsTitle: "THE PROCESS: TEACHING YOUR BODY TO REST IN CALM",
+    pillarsIntro:
+      "A practical, individualized journey focused on giving you self-reliance from session one.",
+    steps: [
+      {
+        num: "01",
+        badge: "Physiological reset",
+        title: "DEACTIVATING THE ALARM",
+        text: "We disrupt the physical loop of hypervigilance. Your body experiences genuine somatic safety, immediately downregulating stress hormones.",
+      },
+      {
+        num: "02",
+        badge: "Subconscious level",
+        title: "REPROGRAMMING TRIGGERS",
+        text: "We identify everyday situations or memories that set off anxiety and unlink them from the automatic panic response.",
+      },
+      {
+        num: "03",
+        badge: "Practical anchors",
+        title: "INSTANT CALM ANCHORS",
+        text: "We establish conditioned physiological anchors: physical and sensory cues you can activate yourself anytime to halt an anxiety surge.",
+      },
+      {
+        num: "04",
+        badge: "Lifelong skills",
+        title: "SELF-HYPNOSIS & INDEPENDENCE",
+        text: "You learn self-hypnosis and breathwork protocols to sustain your well-being in daily life, at your pace, without dependency.",
+      },
+    ],
+    locationsTitle: "WHERE SESSIONS TAKE PLACE",
+    locationsIntro: "Warm, personalized care across the Ribera Baixa area and Valencia city:",
+    locations: [
+      {
+        name: "Office in Sueca (Centro Sanar)",
+        area: "Ribera Baixa",
+        desc: "A peaceful, private space in Sueca with easy parking, convenient for clients from Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara and El Perelló.",
+      },
+      {
+        name: "Home visits in Valencia city",
+        area: "Valencia city & metropolitan area",
+        desc: "Ideal if commuting triggers distress or if you simply prefer the comfort and privacy of your own home in Valencia.",
+      },
+      {
+        name: "Live Online Sessions",
+        area: "Worldwide",
+        desc: "Via one-to-one secure video call, equally effective, guided step-by-step from the comfort of your chosen environment.",
+      },
+    ],
+    pricingTitle: "CLEAR PRICING AND TRANSPARENT CONDITIONS",
+    price: "€70",
+    priceUnit: "per session (1 hour)",
+    pricingFeatures: [
+      "Tailored 60-minute individual session.",
+      "Sueca (Centro Sanar), home visits in Valencia city or online.",
+      "At your own pace: no lock-in contracts or mandatory packages.",
+      "Self-hypnosis audio and practical daily exercises included.",
+      "Pre-session questions answered with zero obligation.",
+    ],
+    formEyebrow: "ENQUIRY & BOOKING",
+    formTitle: "TAKE THE FIRST STEP TOWARDS CALM",
+    formSubtitle:
+      "Fill out this brief form to ask any questions or request an appointment. I will respond to you personally.",
+    formFields: {
+      name: "Full name",
+      email: "Email address",
+      phone: "Phone number",
+      modality: "Preferred session format",
+      modalityOptions: [
+        "Office in Sueca (Centro Sanar)",
+        "Home visit in Valencia city",
+        "Online session (Video call)",
+        "Not sure yet / Want to discuss first",
+      ],
+      symptoms: "When do you notice anxiety most intensely? (Optional)",
+      symptomsPlaceholder: "E.g. At work, while driving, before sleep, constant chest tightness...",
+      message: "Any questions or details to share? (Optional)",
+      messagePlaceholder: "Write your questions here...",
+      consent: "I have read and agree to the privacy policy.",
+      submit: "Send enquiry / Request session",
+      submitting: "Sending message...",
+      success:
+        "Thank you for your message. I have received it and will get back to you as soon as possible.",
+      fallbackMailto: "Send via email client",
+    },
+    faqTitle: "FREQUENTLY ASKED QUESTIONS ABOUT HYPNOSIS & ANXIETY",
+    faqs: [
+      {
+        q: "How exactly does hypnosis help reduce anxiety?",
+        a: "Hypnosis addresses the neurobiology of stress directly. While conscious rationalization often fails to quiet panic, in hypnosis we tap into a state where the parasympathetic nervous system takes over, releasing muscle tension, steadying breathing and unlearning conditioned alarm reactions.",
+      },
+      {
+        q: "Will I lose control or be unconscious during the session?",
+        a: "Not at all. Applied hypnosis for personal development is grounded and collaborative. You remain fully conscious throughout, you hear everything, can speak, move and guide the process. It is a natural state of focused inward attention and deep physical comfort.",
+      },
+      {
+        q: "How many sessions are typically needed?",
+        a: "Many clients experience a profound sense of lightness and physical relief from the very first session. Because there is no lock-in, we evaluate progress together after each session, moving at your natural rhythm.",
+      },
+      {
+        q: "Is it compatible with medication or psychotherapy?",
+        a: "Yes, it is entirely compatible as a supportive self-regulation discipline. Hypnosis gives your body natural tools to de-escalate tension. Remember that my work focuses on personal development and does not replace medical or psychological care.",
+      },
+      {
+        q: "Do you offer sessions in Sueca, the Ribera Baixa and Valencia?",
+        a: "Yes. I see clients in person at my office inside Centro Sanar in Sueca (readily accessible from Cullera, Alzira, Algemesí, Sollana, etc.), at home in Valencia city for added convenience, and online worldwide.",
       },
     ],
   },
