@@ -205,7 +205,10 @@ async function appendToSheet({
       tabName = "Colaboradores";
       isCollaboratorTab = true;
     } else if (!tabName) {
-      tabName = sheetTitles[0] || "Sheet1";
+      tabName =
+        sheetTitles.find((t) => t.includes("Cliente") || t.includes("Leads")) ||
+        sheetTitles[0] ||
+        "Sheet1";
     }
   } catch (_e) {
     if (!tabName) tabName = "Sheet1";
@@ -260,7 +263,34 @@ async function appendToSheet({
   let rowValues: string[];
   let endCol = "L";
 
-  if (isCollaboratorTab || colCount >= 20) {
+  if (isCollaboratorTab && colCount === 12) {
+    // Clean 12-column Colaboradores layout:
+    // Prioridad | Estado | Profesional / Centro | Localidad | Especialidad | Teléfono | WhatsApp Directo | Email | Tipo Colaboración | Próximo seguimiento | Nº Derivaciones | Notas y Acuerdos
+    const cleanPersonName = lead.name.replace(/\s*\(.*?\)$/, "").trim();
+    let profession = lead.specificDetail;
+    let center = "";
+    if (lead.specificDetail.includes(" · ")) {
+      const parts = lead.specificDetail.split(" · ");
+      profession = parts[0]?.trim() || "";
+      center = parts[1]?.trim() || "";
+    }
+
+    rowValues = [
+      "🔥 A",
+      "🟢 Nuevo (Web)",
+      center ? `${cleanPersonName} — ${center}` : cleanPersonName,
+      "",
+      profession,
+      lead.phone,
+      lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 Chat")` : "",
+      lead.email,
+      "A definir",
+      dateFormatted,
+      "0",
+      lead.message,
+    ];
+    endCol = "L";
+  } else if (isCollaboratorTab || colCount >= 20) {
     // Colaboradores 24-column layout:
     // "Prioridad","Nombre","Apellidos","Centro","Profesión","Localidad","Email","Teléfono","WhatsApp","Web","Fuente","Primer contacto","Canal","Respondió","Fecha respuesta","Reunión","Fecha reunión","Tipo colaboración","Charla propuesta","Primera derivación","Nº derivaciones","Próximo seguimiento","Estado","Notas"
     const cleanPersonName = lead.name.replace(/\s*\(.*?\)$/, "").trim();
