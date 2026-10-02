@@ -1,4 +1,5 @@
 import type { Lang } from "@/lib/i18n";
+import { servicesEs, servicesVa, servicesEn } from "./services-content";
 
 const es = {
   brand: "María Cabo",
@@ -475,7 +476,7 @@ const es = {
       {
         name: "Despacho en Sueca (Centro Sanar)",
         area: "Ribera Baixa",
-        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso y aparcamiento para personas de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara y El Perelló.",
+        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso para personas de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara y El Perelló.",
       },
       {
         name: "A domicilio en Valencia ciudad",
@@ -494,7 +495,7 @@ const es = {
     pricingFeatures: [
       "Sesión individual y personalizada de 60 minutos.",
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
-      "A tu propio ritmo: sin paquetes obligatorios ni permanencia.",
+      "A tu propio ritmo: sin paquetes obligatorios ni compromisos cerrados.",
       "Pautas de autohipnosis y ejercicios prácticos entre sesiones.",
       "Resolución de dudas previa sin compromiso.",
     ],
@@ -537,7 +538,7 @@ const es = {
       },
       {
         q: "¿En cuántas sesiones se suele notar el cambio?",
-        a: "Muchas personas experimentan un alivio significativo y una profunda sensación de ligereza corporal desde la primera sesión. Como no hay permanencia, evaluamos juntos tras cada sesión y avanzas a tu propio ritmo según tu evolución personal.",
+        a: "Muchas personas experimentan un alivio significativo y una profunda sensación de ligereza corporal desde la primera sesión. Como no hay compromisos obligatorios, evaluamos juntos tras cada sesión y avanzas a tu propio ritmo según tu evolución personal.",
       },
       {
         q: "¿Es compatible si ya tomo medicación ansiolítica o voy al psicólogo?",
@@ -586,34 +587,58 @@ const es = {
   areas: {
     title: "Ámbitos de acompañamiento",
     intro:
-      "Seis áreas habituales donde la hipnosis puede ayudar a trabajar respuestas automáticas, hábitos y formas de afrontar situaciones concretas. Siempre desde desarrollo personal: sin diagnósticos, sin promesas y sin sustituir atención sanitaria o psicológica.",
+      "Ocho áreas principales donde la hipnosis puede ayudar a trabajar respuestas automáticas, hábitos y formas de afrontar situaciones concretas. Siempre desde desarrollo personal: sin diagnósticos, sin promesas y sin sustituir atención sanitaria o psicológica.",
     noticeTitle: "Un enfoque de desarrollo personal",
     notice:
       "Este acompañamiento no es atención sanitaria ni terapia psicológica. No trata trastornos, no realiza diagnósticos y no sustituye a profesionales de la salud. Si lo que necesitas requiere atención clínica, te lo diré con claridad y te orientaré hacia el recurso adecuado.",
     items: [
       {
-        title: "Miedos y evitación",
-        text: "Trabajar cómo te preparas ante situaciones que ahora generan bloqueo, tensión o evitación, para ensayar respuestas más calmadas y útiles.",
-      },
-      {
         title: "Estrés y calma",
-        text: "Entrenar recursos de atención, respiración, imaginación y respuesta interna para recuperar más calma en momentos exigentes.",
-      },
-      {
-        title: "Hábitos",
-        text: "Observar conductas que repites aunque conscientemente quieras otra cosa, y practicar formas más sostenibles de responder.",
+        text: "Entrenar recursos de atención, respiración y respuesta interna para desactivar la alarma del cuerpo y recuperar la serenidad.",
+        slug: "/ansiedad",
+        cta: "Ver hipnosis para la ansiedad",
       },
       {
         title: "Dejar de fumar",
-        text: "Un recorrido específico para acompañar la decisión, reforzar motivos personales y trabajar automatismos relacionados con el tabaco.",
+        text: "Un recorrido específico y estructurado para cambiar automatismos, desactivar disparadores cotidianos y sostener tu decisión con calma.",
+        slug: "/dejar-de-fumar",
+        cta: "Ver programa antitabaco",
       },
       {
-        title: "Confianza",
-        text: "Trabajar seguridad personal, diálogo interno y preparación ante situaciones donde quieres expresarte, decidir o exponerte con más claridad.",
+        title: "Control de peso",
+        text: "Desactivar la ansiedad por la comida, el picoteo emocional y reconectar con la saciedad corporal real sin dietas restrictivas.",
+        slug: "/control-de-peso",
+        cta: "Ver control de peso",
       },
       {
-        title: "Foco y aprendizaje",
-        text: "Preparar estudio, exámenes, presentaciones o retos concretos entrenando concentración, ensayo mental y continuidad.",
+        title: "Hábitos nerviosos y morderse las uñas",
+        text: "Reprogramar automatismos involuntarios como morderse las uñas (onicofagia), bruxismo diurno o tensión inconsciente.",
+        slug: "/habitos-nerviosos",
+        cta: "Ver hábitos nerviosos",
+      },
+      {
+        title: "Miedos y fobias",
+        text: "Desensibilizar respuestas de bloqueo y pánico ante situaciones concretas como volar, conducir o hablar en público.",
+        slug: "/miedos-y-fobias",
+        cta: "Ver miedos y fobias",
+      },
+      {
+        title: "Autoestima y confianza",
+        text: "Trabajar seguridad personal, superar el síndrome del impostor, poner límites y expresarte con claridad y aplomo.",
+        slug: "/autoestima-y-confianza",
+        cta: "Ver autoestima y confianza",
+      },
+      {
+        title: "Concentración, foco y estudio",
+        text: "Preparación de oposiciones, exámenes exigentes y proyectos entrenando concentración, claridad mental y gestión de la presión.",
+        slug: "/concentracion-y-foco",
+        cta: "Ver foco y concentración",
+      },
+      {
+        title: "Deporte y motivación",
+        text: "Entrenar el estado de flujo, la visualización mental de gestos técnicos, constancia en entrenamientos y calma en competición.",
+        slug: "/deporte-y-motivacion",
+        cta: "Ver deporte y motivación",
       },
     ],
     closing:
@@ -1044,6 +1069,7 @@ const es = {
       },
     ],
   },
+  ...servicesEs,
 };
 
 export type Dict = typeof es;
@@ -1521,7 +1547,7 @@ const va: Dict = {
       {
         name: "Despatx a Sueca (Centre Sanar)",
         area: "Ribera Baixa",
-        desc: "Espai serè, independent i confidencial a Sueca. De molt fàcil accés i aparcament per a persones de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara i El Perelló.",
+        desc: "Espai serè, independent i confidencial a Sueca. De molt fàcil accés per a persones de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara i El Perelló.",
       },
       {
         name: "A domicili a València ciutat",
@@ -1540,7 +1566,7 @@ const va: Dict = {
     pricingFeatures: [
       "Sessió individual i personalitzada de 60 minuts.",
       "Sueca (Centre Sanar), a domicili a València ciutat o en línia.",
-      "Al teu propi ritme: sense paquets obligatoris ni permanència.",
+      "Al teu propi ritme: sense paquets obligatoris ni compromisos tancats.",
       "Pautes d'autohipnosi i exercicis pràctics entre sessions.",
       "Resolució de dubtes prèvia sense compromís.",
     ],
@@ -1582,7 +1608,7 @@ const va: Dict = {
       },
       {
         q: "En quantes sessions se sol notar el canvi?",
-        a: "Moltes persones experimenten un alleujament significatiu i una profunda sensació de lleugeresa corporal des de la primera sessió. Com que no hi ha permanència, avaluem junts després de cada sessió i avances al teu propi ritme segons la teua evolució personal.",
+        a: "Moltes persones experimenten un alleujament significatiu i una profunda sensació de lleugeresa corporal des de la primera sessió. Com que no hi ha compromisos obligatoris, avaluem junts després de cada sessió i avances al teu propi ritme segons la teua evolució personal.",
       },
       {
         q: "És compatible si ja prenc medicació ansiolítica o vaig al psicòleg?",
@@ -1631,34 +1657,58 @@ const va: Dict = {
   areas: {
     title: "Àmbits d'acompanyament",
     intro:
-      "Sis àrees habituals on la hipnosi pot ajudar a treballar respostes automàtiques, hàbits i formes d'afrontar situacions concretes. Sempre des del desenvolupament personal: sense diagnòstics, sense promeses i sense substituir atenció sanitària o psicològica.",
+      "Huit àrees principals on la hipnosi pot ajudar a treballar respostes automàtiques, hàbits i formes d'afrontar situacions concretes. Sempre des del desenvolupament personal: sense diagnòstics, sense promeses i sense substituir atenció sanitària o psicològica.",
     noticeTitle: "Un enfocament de desenvolupament personal",
     notice:
       "Este acompanyament no és atenció sanitària ni teràpia psicològica. No tracta trastorns, no realitza diagnòstics i no substituïx professionals de la salut. Si el que necessites requerix atenció clínica, t'ho diré amb claredat i t'orientaré cap al recurs adequat.",
     items: [
       {
-        title: "Pors i evitació",
-        text: "Treballar com et prepares davant de situacions que ara generen bloqueig, tensió o evitació, per a assajar respostes més calmades i útils.",
-      },
-      {
         title: "Estrés i calma",
-        text: "Entrenar recursos d'atenció, respiració, imaginació i resposta interna per a recuperar més calma en moments exigents.",
-      },
-      {
-        title: "Hàbits",
-        text: "Observar conductes que repetixes encara que conscientment vulgues una altra cosa, i practicar formes més sostenibles de respondre.",
+        text: "Entrenar recursos d'atenció, respiració i resposta interna per a desactivar l'alarma del cos i recuperar la serenitat.",
+        slug: "/ansiedad",
+        cta: "Veure hipnosi per a l'ansietat",
       },
       {
         title: "Deixar de fumar",
-        text: "Un recorregut específic per a acompanyar la decisió, reforçar motius personals i treballar automatismes relacionats amb el tabac.",
+        text: "Un recorregut específic i estructurat per a canviar automatismes, desactivar disparadors quotidians i sostindre la teua decisió amb calma.",
+        slug: "/dejar-de-fumar",
+        cta: "Veure programa antitabac",
       },
       {
-        title: "Confiança",
-        text: "Treballar seguretat personal, diàleg intern i preparació davant situacions on vols expressar-te, decidir o exposar-te amb més claredat.",
+        title: "Control de pes",
+        text: "Desactivar l'angoixa pel menjar, el picoteig emocional i reconnectar amb la sacietat corporal real sense dietes restrictives.",
+        slug: "/control-de-peso",
+        cta: "Veure control de pes",
       },
       {
-        title: "Focus i aprenentatge",
-        text: "Preparar estudi, exàmens, presentacions o reptes concrets entrenant concentració, assaig mental i continuïtat.",
+        title: "Hàbits nerviosos i rostegar-se les ungles",
+        text: "Reprogramar automatismes involuntaris com rostegar-se les ungles (onicofàgia), bruxisme diürn o tensió inconscient.",
+        slug: "/habitos-nerviosos",
+        cta: "Veure hàbits nerviosos",
+      },
+      {
+        title: "Pors i fòbies",
+        text: "Desensibilitzar respostes de bloqueig i pànic davant de situacions concretes com volar, conduir o parlar en públic.",
+        slug: "/miedos-y-fobias",
+        cta: "Veure pors i fòbies",
+      },
+      {
+        title: "Autoestima i confiança",
+        text: "Treballar seguretat personal, superar la síndrome de l'impostor, posar límits i expressar-te amb claredat i aplom.",
+        slug: "/autoestima-y-confianza",
+        cta: "Veure autoestima i confiança",
+      },
+      {
+        title: "Concentració, focus i estudi",
+        text: "Preparació d'oposicions, exàmens exigents i projectes entrenant concentració, claredat mental i gestió de la pressió.",
+        slug: "/concentracion-y-foco",
+        cta: "Veure focus i concentració",
+      },
+      {
+        title: "Esport i motivació",
+        text: "Entrenar l'estat de flux, la visualització mental de gestos tècnics, constància en entrenaments i calma en competició.",
+        slug: "/deporte-y-motivacion",
+        cta: "Veure esport i motivació",
       },
     ],
     closing: "Si dubtes de si este acompanyament encaixa amb tu, escriu-me abans de reservar.",
@@ -2079,6 +2129,7 @@ const va: Dict = {
       },
     ],
   },
+  ...servicesVa,
 };
 
 const en: Dict = {
@@ -2550,7 +2601,7 @@ const en: Dict = {
       {
         name: "Office in Sueca (Centro Sanar)",
         area: "Ribera Baixa",
-        desc: "A peaceful, private space in Sueca with easy parking, convenient for clients from Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara and El Perelló.",
+        desc: "A peaceful, private space in Sueca, convenient for clients from Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara and El Perelló.",
       },
       {
         name: "Home visits in Valencia city",
@@ -2569,7 +2620,7 @@ const en: Dict = {
     pricingFeatures: [
       "Tailored 60-minute individual session.",
       "Sueca (Centro Sanar), home visits in Valencia city or online.",
-      "At your own pace: no lock-in contracts or mandatory packages.",
+      "At your own pace: no fixed commitments or mandatory packages.",
       "Self-hypnosis audio and practical daily exercises included.",
       "Pre-session questions answered with zero obligation.",
     ],
@@ -2611,7 +2662,7 @@ const en: Dict = {
       },
       {
         q: "How many sessions are typically needed?",
-        a: "Many clients experience a profound sense of lightness and physical relief from the very first session. Because there is no lock-in, we evaluate progress together after each session, moving at your natural rhythm.",
+        a: "Many clients experience a profound sense of lightness and physical relief from the very first session. Because there are no mandatory commitments, we evaluate progress together after each session, moving at your natural rhythm.",
       },
       {
         q: "Is it compatible with medication or psychotherapy?",
@@ -2660,34 +2711,58 @@ const en: Dict = {
   areas: {
     title: "Focus areas",
     intro:
-      "Six common areas where hypnosis can support work with automatic responses, habits and ways of approaching specific situations. Always from personal development: no diagnoses, no promises and no replacement for healthcare or psychological care.",
+      "Eight core areas where hypnosis can support work with automatic responses, habits and ways of approaching specific challenges. Always through personal development: no diagnoses, no promises and no replacement for medical or psychological care.",
     noticeTitle: "A personal-development approach",
     notice:
       "This support is not healthcare or psychological therapy. It does not treat disorders, provide diagnoses or replace health professionals. If your needs call for clinical care, I will tell you clearly and guide you towards the right resource.",
     items: [
       {
-        title: "Fears and avoidance",
-        text: "Work on how you prepare for situations that currently create block, tension or avoidance, and rehearse calmer, more useful responses.",
-      },
-      {
         title: "Stress and calm",
-        text: "Train attention, breathing, imagination and inner-response resources to recover more calm in demanding moments.",
-      },
-      {
-        title: "Habits",
-        text: "Look at behaviours you repeat even when you consciously want something different, and practise more sustainable ways of responding.",
+        text: "Train attention, breathing and inner response resources to quieten physical alarm and restore genuine ease.",
+        slug: "/ansiedad",
+        cta: "Explore anxiety support",
       },
       {
         title: "Stopping smoking",
-        text: "A specific process to support your decision, strengthen personal reasons and work with automatisms related to tobacco.",
+        text: "A structured journey to change automatic habits, disable daily triggers and sustain your decision calmly.",
+        slug: "/dejar-de-fumar",
+        cta: "Explore stop smoking programme",
       },
       {
-        title: "Confidence",
-        text: "Work with personal security, inner dialogue and preparation for situations where you want to express yourself, decide or show up with more clarity.",
+        title: "Weight control",
+        text: "Disable food anxiety, emotional snacking, and reconnect with physical satiety signals without restrictive diets.",
+        slug: "/control-de-peso",
+        cta: "Explore weight control",
       },
       {
-        title: "Focus and learning",
-        text: "Prepare study, exams, presentations or concrete challenges by training concentration, mental rehearsal and consistency.",
+        title: "Nervous habits & nail biting",
+        text: "Retrain involuntary automatisms such as nail biting (onychophagia), daytime jaw clenching or nervous tension.",
+        slug: "/habitos-nerviosos",
+        cta: "Explore nervous habits",
+      },
+      {
+        title: "Fears and phobias",
+        text: "Desensitize panic and avoidance responses around flying, driving, public speaking or specific fears.",
+        slug: "/miedos-y-fobias",
+        cta: "Explore fears & phobias",
+      },
+      {
+        title: "Self-esteem and confidence",
+        text: "Build grounded security, overcome imposter syndrome, set healthy boundaries and express yourself with clarity.",
+        slug: "/autoestima-y-confianza",
+        cta: "Explore confidence",
+      },
+      {
+        title: "Focus, study and exams",
+        text: "Prepare for competitive exams, demanding tests and career milestones by training deep focus and pressure management.",
+        slug: "/concentracion-y-foco",
+        cta: "Explore focus & study",
+      },
+      {
+        title: "Sports and motivation",
+        text: "Cultivate flow state, mental rehearsal of motor skills, training consistency and composure during competition.",
+        slug: "/deporte-y-motivacion",
+        cta: "Explore sports hypnosis",
       },
     ],
     closing:
@@ -3111,6 +3186,7 @@ const en: Dict = {
       },
     ],
   },
+  ...servicesEn,
 };
 
 export const dictionaries: Record<Lang, Dict> = { es, va, en };

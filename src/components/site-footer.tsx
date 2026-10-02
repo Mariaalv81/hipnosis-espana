@@ -11,25 +11,29 @@ export function SiteFooter() {
   const primaryLinks = [
     { to: "/como-funciona", label: t.nav.how },
     { to: "/ambitos", label: t.nav.areas },
-    { to: "/dejar-de-fumar", label: t.smokingPage.eyebrow },
-    { to: "/ansiedad", label: t.anxietyPage.eyebrowNav },
-    { to: "/empresas", label: t.nav.companies },
     { to: "/sesiones", label: t.nav.sessions },
     { to: "/sobre-mi", label: t.nav.about },
     { to: "/blog", label: t.nav.journal },
-  ] as const;
-
-  const secondaryLinks = [
+    { to: "/empresas", label: t.nav.companies },
     { to: "/eventos", label: t.nav.events },
     { to: "/faq", label: t.nav.faq },
     { to: "/contacto", label: t.nav.contact },
-    { to: "/legal", label: t.footer.legal },
-    { to: "/politica-de-cookies", label: t.cookies.policyLink },
+  ] as const;
+
+  const serviceLinks = [
+    { to: "/ansiedad", label: "Hipnosis para la ansiedad" },
+    { to: "/dejar-de-fumar", label: "Dejar de fumar" },
+    { to: "/control-de-peso", label: "Control de peso" },
+    { to: "/habitos-nerviosos", label: "Hábitos nerviosos y uñas" },
+    { to: "/miedos-y-fobias", label: "Miedos y fobias" },
+    { to: "/autoestima-y-confianza", label: "Autoestima y confianza" },
+    { to: "/concentracion-y-foco", label: "Concentración y estudio" },
+    { to: "/deporte-y-motivacion", label: "Deporte y motivación" },
   ] as const;
 
   return (
     <footer className="mt-24 border-t border-border/60 bg-muted/60">
-      <div className="container-page grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
+      <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.7fr_1fr_0.9fr]">
         <div>
           <div className="flex items-center gap-3">
             <img
@@ -70,40 +74,60 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <nav className="grid gap-2 text-sm">
-          {primaryLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-foreground/70">
+            Navegación
+          </p>
+          <nav className="mt-3 grid gap-2 text-sm">
+            {primaryLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-        <nav className="grid gap-2 text-sm">
-          {secondaryLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <button
-            type="button"
-            onClick={openCookiePreferences}
-            className="w-fit text-left text-muted-foreground hover:text-foreground"
-          >
-            {t.cookies.footerConfigure}
-          </button>
-        </nav>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-foreground/70">
+            Ámbitos de hipnosis
+          </p>
+          <nav className="mt-3 grid gap-2 text-sm">
+            {serviceLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <div className="text-sm text-muted-foreground">
-          <p>{t.contact.area}</p>
-          <p className="mt-1">{t.contact.languages}</p>
+          <p className="font-medium text-foreground">{t.contact.area}</p>
+          <p className="mt-1 text-xs">{t.contact.languages}</p>
+
+          <div className="mt-4 flex flex-col gap-1.5 text-xs">
+            <Link to="/legal" className="text-muted-foreground hover:text-foreground">
+              {t.footer.legal}
+            </Link>
+            <Link to="/politica-de-cookies" className="text-muted-foreground hover:text-foreground">
+              {t.cookies.policyLink}
+            </Link>
+            <button
+              type="button"
+              onClick={openCookiePreferences}
+              className="w-fit text-left text-muted-foreground hover:text-foreground"
+            >
+              {t.cookies.footerConfigure}
+            </button>
+          </div>
+
           <p className="mt-6 text-xs leading-relaxed">{t.footer.disclaimer}</p>
         </div>
       </div>

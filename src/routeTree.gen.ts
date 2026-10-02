@@ -12,14 +12,20 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AmbitosRouteImport } from './routes/ambitos'
 import { Route as AnsiedadRouteImport } from './routes/ansiedad'
+import { Route as AutoestimaYConfianzaRouteImport } from './routes/autoestima-y-confianza'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
+import { Route as ConcentracionYFocoRouteImport } from './routes/concentracion-y-foco'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as ControlDePesoRouteImport } from './routes/control-de-peso'
 import { Route as DejarDeFumarRouteImport } from './routes/dejar-de-fumar'
+import { Route as DeporteYMotivacionRouteImport } from './routes/deporte-y-motivacion'
 import { Route as EmpresasRouteImport } from './routes/empresas'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as HabitosNerviososRouteImport } from './routes/habitos-nerviosos'
 import { Route as LegalRouteImport } from './routes/legal'
+import { Route as MiedosYFobiasRouteImport } from './routes/miedos-y-fobias'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as ReservarRouteImport } from './routes/reservar'
 import { Route as SesionesRouteImport } from './routes/sesiones'
@@ -43,6 +49,11 @@ const AnsiedadRoute = AnsiedadRouteImport.update({
   path: '/ansiedad',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AutoestimaYConfianzaRoute = AutoestimaYConfianzaRouteImport.update({
+  id: '/autoestima-y-confianza',
+  path: '/autoestima-y-confianza',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -53,14 +64,29 @@ const ComoFuncionaRoute = ComoFuncionaRouteImport.update({
   path: '/como-funciona',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConcentracionYFocoRoute = ConcentracionYFocoRouteImport.update({
+  id: '/concentracion-y-foco',
+  path: '/concentracion-y-foco',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactoRoute = ContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ControlDePesoRoute = ControlDePesoRouteImport.update({
+  id: '/control-de-peso',
+  path: '/control-de-peso',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DejarDeFumarRoute = DejarDeFumarRouteImport.update({
   id: '/dejar-de-fumar',
   path: '/dejar-de-fumar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeporteYMotivacionRoute = DeporteYMotivacionRouteImport.update({
+  id: '/deporte-y-motivacion',
+  path: '/deporte-y-motivacion',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EmpresasRoute = EmpresasRouteImport.update({
@@ -78,9 +104,19 @@ const FaqRoute = FaqRouteImport.update({
   path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HabitosNerviososRoute = HabitosNerviososRouteImport.update({
+  id: '/habitos-nerviosos',
+  path: '/habitos-nerviosos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LegalRoute = LegalRouteImport.update({
   id: '/legal',
   path: '/legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MiedosYFobiasRoute = MiedosYFobiasRouteImport.update({
+  id: '/miedos-y-fobias',
+  path: '/miedos-y-fobias',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PoliticaDeCookiesRoute = PoliticaDeCookiesRouteImport.update({
@@ -123,14 +159,20 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
   '/ansiedad': typeof AnsiedadRoute
+  '/autoestima-y-confianza': typeof AutoestimaYConfianzaRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
+  '/concentracion-y-foco': typeof ConcentracionYFocoRoute
   '/contacto': typeof ContactoRoute
+  '/control-de-peso': typeof ControlDePesoRoute
   '/dejar-de-fumar': typeof DejarDeFumarRoute
+  '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
+  '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/legal': typeof LegalRoute
+  '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
@@ -143,13 +185,19 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
   '/ansiedad': typeof AnsiedadRoute
+  '/autoestima-y-confianza': typeof AutoestimaYConfianzaRoute
   '/como-funciona': typeof ComoFuncionaRoute
+  '/concentracion-y-foco': typeof ConcentracionYFocoRoute
   '/contacto': typeof ContactoRoute
+  '/control-de-peso': typeof ControlDePesoRoute
   '/dejar-de-fumar': typeof DejarDeFumarRoute
+  '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
+  '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/legal': typeof LegalRoute
+  '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
@@ -163,14 +211,20 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ambitos': typeof AmbitosRoute
   '/ansiedad': typeof AnsiedadRoute
+  '/autoestima-y-confianza': typeof AutoestimaYConfianzaRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-funciona': typeof ComoFuncionaRoute
+  '/concentracion-y-foco': typeof ConcentracionYFocoRoute
   '/contacto': typeof ContactoRoute
+  '/control-de-peso': typeof ControlDePesoRoute
   '/dejar-de-fumar': typeof DejarDeFumarRoute
+  '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
+  '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/legal': typeof LegalRoute
+  '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
@@ -185,14 +239,20 @@ export interface FileRouteTypes {
     | '/'
     | '/ambitos'
     | '/ansiedad'
+    | '/autoestima-y-confianza'
     | '/blog'
     | '/como-funciona'
+    | '/concentracion-y-foco'
     | '/contacto'
+    | '/control-de-peso'
     | '/dejar-de-fumar'
+    | '/deporte-y-motivacion'
     | '/empresas'
     | '/eventos'
     | '/faq'
+    | '/habitos-nerviosos'
     | '/legal'
+    | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
@@ -205,13 +265,19 @@ export interface FileRouteTypes {
     | '/'
     | '/ambitos'
     | '/ansiedad'
+    | '/autoestima-y-confianza'
     | '/como-funciona'
+    | '/concentracion-y-foco'
     | '/contacto'
+    | '/control-de-peso'
     | '/dejar-de-fumar'
+    | '/deporte-y-motivacion'
     | '/empresas'
     | '/eventos'
     | '/faq'
+    | '/habitos-nerviosos'
     | '/legal'
+    | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
@@ -224,14 +290,20 @@ export interface FileRouteTypes {
     | '/'
     | '/ambitos'
     | '/ansiedad'
+    | '/autoestima-y-confianza'
     | '/blog'
     | '/como-funciona'
+    | '/concentracion-y-foco'
     | '/contacto'
+    | '/control-de-peso'
     | '/dejar-de-fumar'
+    | '/deporte-y-motivacion'
     | '/empresas'
     | '/eventos'
     | '/faq'
+    | '/habitos-nerviosos'
     | '/legal'
+    | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/reservar'
     | '/sesiones'
@@ -245,14 +317,20 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AmbitosRoute: typeof AmbitosRoute
   AnsiedadRoute: typeof AnsiedadRoute
+  AutoestimaYConfianzaRoute: typeof AutoestimaYConfianzaRoute
   BlogRoute: typeof BlogRouteWithChildren
   ComoFuncionaRoute: typeof ComoFuncionaRoute
+  ConcentracionYFocoRoute: typeof ConcentracionYFocoRoute
   ContactoRoute: typeof ContactoRoute
+  ControlDePesoRoute: typeof ControlDePesoRoute
   DejarDeFumarRoute: typeof DejarDeFumarRoute
+  DeporteYMotivacionRoute: typeof DeporteYMotivacionRoute
   EmpresasRoute: typeof EmpresasRouteWithChildren
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
+  HabitosNerviososRoute: typeof HabitosNerviososRoute
   LegalRoute: typeof LegalRoute
+  MiedosYFobiasRoute: typeof MiedosYFobiasRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   ReservarRoute: typeof ReservarRoute
   SesionesRoute: typeof SesionesRoute
@@ -282,6 +360,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AnsiedadRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/autoestima-y-confianza': {
+      id: '/autoestima-y-confianza'
+      path: '/autoestima-y-confianza'
+      fullPath: '/autoestima-y-confianza'
+      preLoaderRoute: typeof AutoestimaYConfianzaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -296,6 +381,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ComoFuncionaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/concentracion-y-foco': {
+      id: '/concentracion-y-foco'
+      path: '/concentracion-y-foco'
+      fullPath: '/concentracion-y-foco'
+      preLoaderRoute: typeof ConcentracionYFocoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contacto': {
       id: '/contacto'
       path: '/contacto'
@@ -303,11 +395,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/control-de-peso': {
+      id: '/control-de-peso'
+      path: '/control-de-peso'
+      fullPath: '/control-de-peso'
+      preLoaderRoute: typeof ControlDePesoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dejar-de-fumar': {
       id: '/dejar-de-fumar'
       path: '/dejar-de-fumar'
       fullPath: '/dejar-de-fumar'
       preLoaderRoute: typeof DejarDeFumarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deporte-y-motivacion': {
+      id: '/deporte-y-motivacion'
+      path: '/deporte-y-motivacion'
+      fullPath: '/deporte-y-motivacion'
+      preLoaderRoute: typeof DeporteYMotivacionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/empresas': {
@@ -331,11 +437,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/habitos-nerviosos': {
+      id: '/habitos-nerviosos'
+      path: '/habitos-nerviosos'
+      fullPath: '/habitos-nerviosos'
+      preLoaderRoute: typeof HabitosNerviososRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/legal': {
       id: '/legal'
       path: '/legal'
       fullPath: '/legal'
       preLoaderRoute: typeof LegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/miedos-y-fobias': {
+      id: '/miedos-y-fobias'
+      path: '/miedos-y-fobias'
+      fullPath: '/miedos-y-fobias'
+      preLoaderRoute: typeof MiedosYFobiasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/politica-de-cookies': {
@@ -418,14 +538,20 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AmbitosRoute: AmbitosRoute,
   AnsiedadRoute: AnsiedadRoute,
+  AutoestimaYConfianzaRoute: AutoestimaYConfianzaRoute,
   BlogRoute: BlogRouteWithChildren,
   ComoFuncionaRoute: ComoFuncionaRoute,
+  ConcentracionYFocoRoute: ConcentracionYFocoRoute,
   ContactoRoute: ContactoRoute,
+  ControlDePesoRoute: ControlDePesoRoute,
   DejarDeFumarRoute: DejarDeFumarRoute,
+  DeporteYMotivacionRoute: DeporteYMotivacionRoute,
   EmpresasRoute: EmpresasRouteWithChildren,
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
+  HabitosNerviososRoute: HabitosNerviososRoute,
   LegalRoute: LegalRoute,
+  MiedosYFobiasRoute: MiedosYFobiasRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   ReservarRoute: ReservarRoute,
   SesionesRoute: SesionesRoute,

@@ -1,47 +1,97 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import {
   Brain,
-  Calendar,
   Check,
   CheckCircle2,
   Clock,
   Compass,
-  HeartHandshake,
   MapPin,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
 import { CalendarButton } from "@/components/calendar-button";
 import { siteSettings } from "@/content/site-settings";
-import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
-import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
+import { JsonLd, makeFaqSchema, makeServiceSchema } from "@/lib/seo";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-export const Route = createFileRoute("/ansiedad")({
-  head: () =>
-    makeSeo({
-      title: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María Cabo",
-      description:
-        "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
-      path: "/ansiedad",
-    }),
-  component: AnsiedadPage,
-});
+export interface ServiceLandingPageData {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  introText: string;
+  trustBadges: string[];
+  ctaPrimary: string;
+  ctaSecondary: string;
+  symptomsTitle: string;
+  symptomsSubtitle: string;
+  symptoms: { title: string; text: string }[];
+  symptomsNote: string;
+  whyTitle: string;
+  whyParagraphs: string[];
+  whyHighlights?: { title: string; text: string }[];
+  pillarsTitle: string;
+  pillarsIntro: string;
+  steps: { num: string; badge: string; title: string; text: string }[];
+  locationsTitle: string;
+  locationsIntro: string;
+  locations: { name: string; area: string; desc: string }[];
+  pricingTitle: string;
+  pricingFeatures: string[];
+  price: string;
+  priceUnit: string;
+  priceNote?: string;
+  formEyebrow: string;
+  formTitle: string;
+  formSubtitle: string;
+  formFields: {
+    name: string;
+    email: string;
+    phone: string;
+    modality: string;
+    modalityOptions?: { sueca: string; valencia: string; online: string };
+    specificDetail: string;
+    message: string;
+    submit: string;
+    submitting: string;
+    successTitle: string;
+    successText: string;
+    mailtoFallback: string;
+  };
+  faqsTitle: string;
+  faqsSubtitle: string;
+  faqs: { q: string; a: string }[];
+}
 
-function AnsiedadPage() {
-  const { t } = useI18n();
-  const ap = t.anxietyPage;
+export interface ServiceLandingPageProps {
+  data: ServiceLandingPageData;
+  serviceName: string;
+  serviceDescription: string;
+  path: string;
+  formTag: string;
+}
+
+export function ServiceLandingPage({
+  data,
+  serviceName,
+  serviceDescription,
+  path,
+  formTag,
+}: ServiceLandingPageProps) {
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const serviceSchema = makeServiceSchema({
-    name: "Hipnosis para la ansiedad y regulación corporal natural",
-    description:
-      "Acompañamiento natural con hipnosis para calmar la ansiedad, desactivar la respuesta de alerta y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
-    price: "70 €",
-    path: "/ansiedad",
+    name: serviceName,
+    description: serviceDescription,
+    price: data.price,
+    path,
     areaServed: [
       { "@type": "City", name: "Sueca" },
       { "@type": "City", name: "Valencia" },
@@ -54,7 +104,13 @@ function AnsiedadPage() {
     ],
   });
 
-  const faqSchema = makeFaqSchema(ap.faqs);
+  const faqSchema = makeFaqSchema(data.faqs);
+
+  const defaultModalityOptions = data.formFields.modalityOptions ?? {
+    sueca: "Presencial en Sueca (Centro Sanar)",
+    valencia: "A domicilio en Valencia ciudad",
+    online: "Sesión online en directo",
+  };
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -62,28 +118,28 @@ function AnsiedadPage() {
     const form = event.currentTarget;
     const fd = new FormData(form);
 
-    const data = {
+    const formData = {
       name: String(fd.get("name") ?? "").trim(),
       email: String(fd.get("email") ?? "").trim(),
       phone: String(fd.get("phone") ?? "").trim(),
       modality: String(fd.get("modality") ?? "").trim(),
-      symptoms: String(fd.get("symptoms") ?? "").trim(),
+      specificDetail: String(fd.get("specificDetail") ?? "").trim(),
       message: String(fd.get("message") ?? "").trim(),
       website: String(fd.get("website") ?? "").trim(),
       recaptchaToken: undefined as string | undefined,
     };
 
     const fullMessage = [
-      "Consulta / Solicitud sobre Hipnosis para la Ansiedad:",
+      `Consulta / Solicitud: ${formTag}`,
       "",
-      `Nombre: ${data.name}`,
-      `Email: ${data.email}`,
-      `Teléfono: ${data.phone}`,
-      `Modalidad preferida: ${data.modality || "No especificada"}`,
-      `Momentos de ansiedad: ${data.symptoms || "No indicado"}`,
+      `Nombre: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Teléfono: ${formData.phone}`,
+      `Modalidad preferida: ${formData.modality || "No especificada"}`,
+      `Detalle / Situación: ${formData.specificDetail || "No indicado"}`,
       "",
       "Comentarios o dudas:",
-      data.message || "Sin comentarios adicionales",
+      formData.message || "Sin comentarios adicionales",
     ].join("\n");
 
     try {
@@ -91,8 +147,8 @@ function AnsiedadPage() {
       if (siteKey) {
         try {
           await loadRecaptcha(siteKey);
-          data.recaptchaToken = await window.grecaptcha?.execute(siteKey, {
-            action: "anxiety_consultation",
+          formData.recaptchaToken = await window.grecaptcha?.execute(siteKey, {
+            action: `${formTag.toLowerCase().replace(/[^a-z0-9]/g, "_")}_consultation`,
           });
         } catch (err) {
           console.warn("reCAPTCHA unavailable, continuing without token", err);
@@ -103,12 +159,12 @@ function AnsiedadPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${data.name} [Ansiedad]`,
-          email: data.email,
-          phone: data.phone,
+          name: `${formData.name} [${formTag}]`,
+          email: formData.email,
+          phone: formData.phone,
           message: fullMessage,
-          website: data.website,
-          recaptchaToken: data.recaptchaToken,
+          website: formData.website,
+          recaptchaToken: formData.recaptchaToken,
         }),
       });
 
@@ -118,7 +174,7 @@ function AnsiedadPage() {
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`Consulta hipnosis ansiedad · ${data.name}`);
+      const subject = encodeURIComponent(`Consulta hipnosis ${formTag} · ${formData.name}`);
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
     } finally {
@@ -136,24 +192,24 @@ function AnsiedadPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1 text-xs font-medium text-primary">
               <Sparkles className="size-3.5" />
-              <span>{ap.eyebrow}</span>
+              <span>{data.eyebrow}</span>
             </div>
 
             <h1 className="mt-5 text-4xl leading-tight md:text-5xl lg:text-6xl font-normal">
-              {ap.title}
+              {data.title}
             </h1>
 
             <p className="mt-5 text-lg leading-relaxed text-foreground/90 md:text-xl font-serif">
-              {ap.subtitle}
+              {data.subtitle}
             </p>
 
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              {ap.introText}
+              {data.introText}
             </p>
 
             {/* TRUST BADGES */}
             <div className="mt-6 flex flex-wrap gap-2.5">
-              {ap.trustBadges.map((badge) => (
+              {data.trustBadges.map((badge) => (
                 <span
                   key={badge}
                   className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card/80 px-3 py-1 text-xs text-muted-foreground"
@@ -170,14 +226,14 @@ function AnsiedadPage() {
                 href="#formulario"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
               >
-                {ap.ctaPrimary}
+                {data.ctaPrimary}
               </a>
               <CalendarButton className="w-fit" />
               <a
                 href="#como-funciona"
                 className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm transition-colors hover:bg-muted"
               >
-                {ap.ctaSecondary}
+                {data.ctaSecondary}
               </a>
             </div>
           </div>
@@ -187,13 +243,13 @@ function AnsiedadPage() {
       {/* SÍNTOMAS COMUNES: IDENTIFICACIÓN EMPÁTICA */}
       <section className="container-page py-16 md:py-20">
         <div className="max-w-2xl">
-          <p className="eyebrow">SEÑALES DEL CUERPO</p>
-          <h2 className="mt-3 text-3xl leading-tight md:text-4xl">{ap.symptomsTitle}</h2>
-          <p className="mt-4 text-base text-muted-foreground">{ap.symptomsSubtitle}</p>
+          <p className="eyebrow">PATRONES HABITUALES</p>
+          <h2 className="mt-3 text-3xl leading-tight md:text-4xl">{data.symptomsTitle}</h2>
+          <p className="mt-4 text-base text-muted-foreground">{data.symptomsSubtitle}</p>
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {ap.symptoms.map((symptom, i) => (
+          {data.symptoms.map((symptom, i) => (
             <article
               key={symptom.title}
               className="flex flex-col justify-between rounded-2xl border border-border/80 bg-card p-6 shadow-sm transition-shadow hover:shadow-[var(--shadow-soft)]"
@@ -209,38 +265,40 @@ function AnsiedadPage() {
 
         <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/5 p-5 text-sm text-foreground/90">
           <p className="leading-relaxed">
-            <strong>Recuerda:</strong> La ansiedad no significa que algo esté roto en ti. Es un
-            mecanismo biológico de supervivencia que se ha sobreactivado. Con el entrenamiento
-            adecuado, el sistema nervioso puede desaprender ese estado de hipervigilancia constante.
+            <strong>Recuerda:</strong> {data.symptomsNote}
           </p>
         </div>
       </section>
 
-      {/* POR QUÉ LA HIPNOSIS: CIENCIA Y ENFOQUE NATURAL */}
+      {/* POR QUÉ LA HIPNOSIS: CIENCIA Y ENFOQUE SUBCONSCIENTE */}
       <section className="border-y border-border/60 bg-muted/30 py-16 md:py-24">
         <div className="container-page">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
-              <p className="eyebrow">ENFOQUE BIOLÓGICO Y NATURAL</p>
-              <h2 className="mt-3 text-3xl leading-tight md:text-4xl">{ap.whyTitle}</h2>
+              <p className="eyebrow">ENFOQUE NEUROBIOLÓGICO</p>
+              <h2 className="mt-3 text-3xl leading-tight md:text-4xl">{data.whyTitle}</h2>
               <div className="mt-6 flex flex-col gap-3">
                 <div className="flex items-start gap-3 text-sm text-muted-foreground">
                   <Brain className="mt-0.5 size-5 shrink-0 text-primary" />
-                  <span>Acceso a los centros subcorticales del sistema nervioso autónomo.</span>
+                  <span>
+                    Acceso directo a las respuestas automáticas e involuntarias del cerebro.
+                  </span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-muted-foreground">
                   <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" />
-                  <span>Estimulación del sistema parasimpático y desactivación del cortisol.</span>
+                  <span>
+                    Desactivación del estrés, la culpa y la lucha desgastante de voluntad.
+                  </span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-muted-foreground">
                   <Compass className="mt-0.5 size-5 shrink-0 text-primary" />
-                  <span>Construcción de nuevos reflejos somáticos de calma duradera.</span>
+                  <span>Integración de nuevos reflejos, claridad y seguridad sostenible.</span>
                 </div>
               </div>
             </div>
 
             <div className="grid gap-5 text-base leading-relaxed text-muted-foreground">
-              {ap.whyParagraphs.map((paragraph, index) => (
+              {data.whyParagraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -252,12 +310,12 @@ function AnsiedadPage() {
       <section id="como-funciona" className="container-page py-16 md:py-24">
         <div className="max-w-2xl">
           <p className="eyebrow">PASO A PASO</p>
-          <h2 className="mt-3 text-3xl md:text-4xl">{ap.pillarsTitle}</h2>
-          <p className="mt-3 text-sm text-muted-foreground">{ap.pillarsIntro}</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">{data.pillarsTitle}</h2>
+          <p className="mt-3 text-sm text-muted-foreground">{data.pillarsIntro}</p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {ap.steps.map((step) => (
+          {data.steps.map((step) => (
             <article
               key={step.num}
               className="flex flex-col justify-between rounded-3xl border border-border/70 bg-card p-6 shadow-sm transition-shadow hover:shadow-[var(--shadow-soft)]"
@@ -279,13 +337,13 @@ function AnsiedadPage() {
       <section className="border-y border-border/60 bg-sand/30 py-16 md:py-20">
         <div className="container-page">
           <div className="max-w-2xl">
-            <p className="eyebrow">MODALIDADES DE ATENCIÓN LOCAL</p>
-            <h2 className="mt-3 text-3xl md:text-4xl">{ap.locationsTitle}</h2>
-            <p className="mt-3 text-sm text-muted-foreground">{ap.locationsIntro}</p>
+            <p className="eyebrow">MODALIDADES DE ATENCIÓN</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">{data.locationsTitle}</h2>
+            <p className="mt-3 text-sm text-muted-foreground">{data.locationsIntro}</p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {ap.locations.map((loc) => (
+            {data.locations.map((loc) => (
               <div
                 key={loc.name}
                 className="flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-sm"
@@ -315,9 +373,9 @@ function AnsiedadPage() {
           <div className="grid gap-8 md:grid-cols-[1.3fr_0.9fr] md:items-center">
             <div>
               <p className="eyebrow">CONDICIONES HONESTAS</p>
-              <h2 className="mt-2 text-3xl font-medium">{ap.pricingTitle}</h2>
+              <h2 className="mt-2 text-3xl font-medium">{data.pricingTitle}</h2>
               <ul className="mt-6 grid gap-3">
-                {ap.pricingFeatures.map((feat) => (
+                {data.pricingFeatures.map((feat) => (
                   <li key={feat} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
                     <span>{feat}</span>
@@ -328,10 +386,10 @@ function AnsiedadPage() {
 
             <div className="rounded-2xl border border-border/80 bg-background/80 p-8 text-center">
               <p className="eyebrow justify-center">SESIÓN INDIVIDUAL</p>
-              <p className="mt-2 font-serif text-5xl text-primary">{ap.price}</p>
-              <p className="mt-1 text-xs text-muted-foreground">{ap.priceUnit}</p>
+              <p className="mt-2 font-serif text-5xl text-primary">{data.price}</p>
+              <p className="mt-1 text-xs text-muted-foreground">{data.priceUnit}</p>
               <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                A tu propio ritmo · Sin compromisos obligatorios
+                {data.priceNote ?? "A tu propio ritmo · Sin compromisos obligatorios"}
               </p>
               <CalendarButton className="mt-6 w-full" />
               <a
@@ -350,10 +408,10 @@ function AnsiedadPage() {
         <div className="container-page">
           <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <div>
-              <p className="eyebrow">{ap.formEyebrow}</p>
-              <h2 className="mt-3 text-3xl md:text-4xl">{ap.formTitle}</h2>
+              <p className="eyebrow">{data.formEyebrow}</p>
+              <h2 className="mt-3 text-3xl md:text-4xl">{data.formTitle}</h2>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                {ap.formSubtitle}
+                {data.formSubtitle}
               </p>
 
               <form onSubmit={onSubmit} className="mt-8 grid gap-5">
@@ -370,25 +428,27 @@ function AnsiedadPage() {
                 <div className="grid gap-5 md:grid-cols-2">
                   <div className="grid gap-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      {ap.formFields.name} *
+                      {data.formFields.name} *
                     </label>
                     <input
                       id="name"
                       name="name"
                       required
+                      autoComplete="name"
                       className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                     />
                   </div>
 
                   <div className="grid gap-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      {ap.formFields.email} *
+                      {data.formFields.email} *
                     </label>
                     <input
                       id="email"
                       name="email"
                       type="email"
                       required
+                      autoComplete="email"
                       className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                     />
                   </div>
@@ -397,163 +457,176 @@ function AnsiedadPage() {
                 <div className="grid gap-5 md:grid-cols-2">
                   <div className="grid gap-2">
                     <label htmlFor="phone" className="text-sm font-medium">
-                      {ap.formFields.phone} *
+                      {data.formFields.phone} *
                     </label>
                     <input
                       id="phone"
                       name="phone"
                       type="tel"
                       required
+                      autoComplete="tel"
                       className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                     />
                   </div>
 
                   <div className="grid gap-2">
                     <label htmlFor="modality" className="text-sm font-medium">
-                      {ap.formFields.modality}
+                      {data.formFields.modality}
                     </label>
                     <select
                       id="modality"
                       name="modality"
+                      defaultValue=""
                       className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                     >
-                      {ap.formFields.modalityOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
+                      <option value="">Selecciona modalidad preferida</option>
+                      <option value="sueca">{defaultModalityOptions.sueca}</option>
+                      <option value="valencia">{defaultModalityOptions.valencia}</option>
+                      <option value="online">{defaultModalityOptions.online}</option>
                     </select>
                   </div>
                 </div>
 
                 <div className="grid gap-2">
-                  <label htmlFor="symptoms" className="text-sm font-medium">
-                    {ap.formFields.symptoms}
+                  <label htmlFor="specificDetail" className="text-sm font-medium">
+                    {data.formFields.specificDetail}
                   </label>
                   <input
-                    id="symptoms"
-                    name="symptoms"
-                    placeholder={ap.formFields.symptomsPlaceholder}
+                    id="specificDetail"
+                    name="specificDetail"
+                    placeholder="Ej. Desde cuándo ocurre, qué desencadena la respuesta o qué has intentado..."
                     className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                   />
                 </div>
 
                 <div className="grid gap-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    {ap.formFields.message}
+                    {data.formFields.message}
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={3}
-                    placeholder={ap.formFields.messagePlaceholder}
+                    rows={4}
+                    placeholder="Escribe aquí con total confianza lo que quieras comentarme..."
                     className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                   />
                 </div>
 
-                <label className="flex items-start gap-3 text-xs text-muted-foreground">
-                  <input type="checkbox" required className="mt-0.5 rounded border-input" />
-                  <span>
-                    {ap.formFields.consent}{" "}
-                    <Link to="/legal" className="underline hover:text-foreground">
-                      Ver información legal
-                    </Link>
-                    .
-                  </span>
-                </label>
-
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="inline-flex w-full items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50 sm:w-fit"
+                  className="mt-2 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
                 >
-                  {submitting ? ap.formFields.submitting : ap.formFields.submit}
+                  {submitting ? data.formFields.submitting : data.formFields.submit}
                 </button>
 
                 {sent && (
-                  <div className="rounded-xl border border-primary/30 bg-primary/10 p-4 text-sm text-foreground">
-                    <p className="font-medium">{ap.formFields.success}</p>
+                  <div className="rounded-xl border border-primary/30 bg-primary/10 p-5 text-sm text-foreground">
+                    <p className="font-semibold text-primary">{data.formFields.successTitle}</p>
+                    <p className="mt-1 text-muted-foreground">{data.formFields.successText}</p>
+                    <button
+                      type="button"
+                      onClick={() => setSent(false)}
+                      className="mt-3 text-xs underline underline-offset-4 text-primary"
+                    >
+                      Enviar otra consulta
+                    </button>
                   </div>
                 )}
 
                 {mailtoLink && (
-                  <div className="rounded-xl border border-destructive/20 bg-destructive/10 p-4 text-sm text-foreground">
-                    <p className="mb-2">
-                      Si el formulario no se ha podido enviar automáticamente, puedes remitir tu
-                      mensaje directamente por correo:
-                    </p>
+                  <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-xs text-destructive">
+                    <p>{data.formFields.mailtoFallback}</p>
                     <a
                       href={mailtoLink}
-                      className="inline-flex items-center gap-1 font-medium text-primary underline"
+                      className="mt-2 inline-block font-semibold underline underline-offset-2"
                     >
-                      {ap.formFields.fallbackMailto}
+                      Abrir cliente de correo ahora →
                     </a>
                   </div>
                 )}
               </form>
             </div>
 
-            {/* CAJA LATERAL: CONTACTO DIRECTO */}
-            <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-              <h3 className="text-2xl font-serif">Atención cercana y personalizada</h3>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Si prefieres consultar directamente sin rellenar el formulario o tienes dudas sobre
-                si la hipnosis es adecuada para tu caso particular, puedes escribirme o agendar tu
-                sesión en el calendario.
+            {/* CAJA LATERAL DE CONFIANZA */}
+            <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+              <h3 className="font-serif text-2xl">¿Cómo te respondo?</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Leo tu mensaje personalmente y te respondo por WhatsApp o correo en menos de 24-48
+                horas laborables. Te daré una valoración honesta sobre si la hipnosis es adecuada
+                para lo que te ocurre o si conviene orientarte de otra manera.
               </p>
 
-              <div className="mt-8 grid gap-4">
-                <CalendarButton className="w-full justify-center" />
-
-                <a
-                  href={`mailto:${siteSettings.contactEmail}?subject=Consulta%20sobre%20hipnosis%20y%20ansiedad`}
-                  className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-3 text-sm transition-colors hover:bg-muted"
-                >
-                  Escribir a {siteSettings.contactEmail}
-                </a>
+              <div className="mt-6 border-t border-border pt-6">
+                <div className="flex items-center gap-3">
+                  <Clock className="size-5 text-primary" />
+                  <div>
+                    <p className="text-sm font-medium">Respuesta rápida y humana</p>
+                    <p className="text-xs text-muted-foreground">Sin automatismos ni spam.</p>
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-8 border-t border-border/60 pt-6">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <Clock className="size-4 text-primary" />
-                  <span>Respuesta habitual en menos de 24 horas laborables.</span>
+              <div className="mt-4 border-t border-border pt-6">
+                <div className="flex items-center gap-3">
+                  <ShieldCheck className="size-5 text-primary" />
+                  <div>
+                    <p className="text-sm font-medium">Total confidencialidad</p>
+                    <p className="text-xs text-muted-foreground">
+                      Tus datos y tu situación están en un entorno seguro y privado.
+                    </p>
+                  </div>
                 </div>
+              </div>
+
+              <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-center">
+                <p className="text-xs text-muted-foreground">¿Prefieres agendar directamente?</p>
+                <CalendarButton className="mt-3 w-full" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PREGUNTAS FRECUENTES SOBRE ANSIEDAD */}
+      {/* PREGUNTAS FRECUENTES ACCORDION */}
       <section className="container-page py-16 md:py-24">
         <div className="max-w-2xl">
-          <p className="eyebrow">RESOLVEMOS TUS DUDAS</p>
-          <h2 className="mt-3 text-3xl md:text-4xl">{ap.faqTitle}</h2>
+          <p className="eyebrow">DUDAS Y SEGURIDAD</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">{data.faqsTitle}</h2>
+          <p className="mt-3 text-sm text-muted-foreground">{data.faqsSubtitle}</p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {ap.faqs.map((faq) => (
-            <article
-              key={faq.q}
-              className="rounded-2xl border border-border/80 bg-card p-6 shadow-sm"
-            >
-              <h3 className="text-lg font-medium">{faq.q}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{faq.a}</p>
-            </article>
-          ))}
+        <div className="mt-10 max-w-3xl">
+          <Accordion type="single" collapsible className="w-full">
+            {data.faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-base font-medium py-5">{faq.q}</AccordionTrigger>
+                <AccordionContent className="text-sm leading-relaxed text-muted-foreground pb-5">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
-      {/* DISCLAIMER ÉTICO Y LEGAL */}
-      <section className="border-t border-border/60 bg-muted/30 py-10">
-        <div className="container-page text-center">
-          <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> María Cabo ofrece acompañamiento de desarrollo
-            personal y bienestar. La hipnosis es una disciplina complementaria y un recurso de
-            autorregulación natural. No es un servicio sanitario y no sustituye la evaluación,
-            diagnóstico ni tratamiento médico, psiquiátrico o psicológico cuando estos son
-            necesarios.
+      {/* CIERRE / BANNER FINAL */}
+      <section className="container-page pb-24">
+        <div className="rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
+          <h2 className="text-3xl font-normal md:text-4xl">¿Empezamos a cambiar ese patrón?</h2>
+          <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/90 leading-relaxed">
+            Puedes reservar tu primera sesión directamente o escribirme a través del formulario para
+            valorar tu caso antes de dar el paso.
           </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="#formulario"
+              className="inline-flex rounded-full bg-background px-7 py-3 text-sm text-foreground transition-opacity hover:opacity-90 font-medium"
+            >
+              Hacer una consulta previa
+            </a>
+            <CalendarButton className="bg-background text-foreground hover:bg-background/90" />
+          </div>
         </div>
       </section>
     </>
