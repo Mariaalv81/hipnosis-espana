@@ -102,6 +102,11 @@ function parseLeadData(body: ContactRequestBody) {
     }
   }
 
+  // If specificDetail is not explicitly provided, or if this is general contact, keep it blank
+  if (source === "Web - Contacto General" || !specificDetail) {
+    specificDetail = specificDetail || "";
+  }
+
   // Clean phone number for WhatsApp link
   const cleanDigits = phone.replace(/[^\d+]/g, "").replace(/^\+/, "");
   let whatsappPhone = cleanDigits;
@@ -119,8 +124,72 @@ function parseLeadData(body: ContactRequestBody) {
     whatsappUrl,
     source,
     modality: modality || "Por concretar",
-    specificDetail: specificDetail || "No especificado",
+    specificDetail: specificDetail || "", // Empty if reason unknown
     message: rawMessage,
+  };
+}
+
+function parseCorporateDetails(rawName: string, rawMessage: string) {
+  let company = "";
+  let contact = "";
+  let role = "";
+  let employees = "";
+  let objective = "";
+  let format = "";
+  let participants = "";
+  let notes = "";
+
+  const compMatch = rawMessage.match(/Empresa:\s*([^\n\r]+)/i);
+  if (compMatch && compMatch[1]) company = compMatch[1].trim();
+
+  const contactMatch = rawMessage.match(/Persona de contacto:\s*([^\n\r]+)/i);
+  if (contactMatch && contactMatch[1]) contact = contactMatch[1].trim();
+
+  const roleMatch = rawMessage.match(/Cargo:\s*([^\n\r]+)/i);
+  if (roleMatch && roleMatch[1]) role = roleMatch[1].trim();
+
+  const empMatch = rawMessage.match(/Nº de empleados:\s*([^\n\r]+)/i);
+  if (empMatch && empMatch[1]) employees = empMatch[1].trim();
+
+  const objMatch = rawMessage.match(/Objetivo:\s*([^\n\r]+)/i);
+  if (objMatch && objMatch[1]) objective = objMatch[1].trim();
+
+  const fmtMatch = rawMessage.match(/Formato de interés:\s*([^\n\r]+)/i);
+  if (fmtMatch && fmtMatch[1]) format = fmtMatch[1].trim();
+
+  const partMatch = rawMessage.match(/Participantes previstos:\s*([^\n\r]+)/i);
+  if (partMatch && partMatch[1]) participants = partMatch[1].trim();
+
+  const msgMatch = rawMessage.match(/Mensaje:\s*([\s\S]*)$/i);
+  if (msgMatch && msgMatch[1]) notes = msgMatch[1].trim();
+
+  if (!company && rawName.includes(" · ")) {
+    const parts = rawName.split(" · ");
+    contact = parts[0]?.trim() || "";
+    company = parts[1]?.trim() || "";
+  } else if (!contact && rawName) {
+    contact = rawName;
+  }
+
+  const cleanEmployees = employees.replace(/\s*empleados?/i, "").trim();
+  const cleanParticipants = participants.replace(/\s*participantes?/i, "").trim();
+
+  const employeesSummary = [
+    cleanEmployees ? `${cleanEmployees} empleados` : "",
+    cleanParticipants ? `${cleanParticipants} participantes` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  const objectiveSummary = [objective, format].filter(Boolean).join(" · ");
+
+  return {
+    company: company || "Empresa por concretar",
+    contact: contact || "Persona de contacto",
+    role: role || "",
+    employeesSummary,
+    objectiveSummary,
+    notes: notes || rawMessage,
   };
 }
 
@@ -190,28 +259,77 @@ async function appendToSheet({
 
   const sheets = google.sheets({ version: "v4", auth: jwtClient });
 
-  // Resolve target tab name (default to user env, or Colaboradores if B2B, or first sheet)
+  // Resolve target tab name
+  const isCollaboratorLead =
+    lead.source === "Colaboradores / Profesionales" ||
+    lead.source.toLowerCase().includes("colaborador") ||
+    lead.source.toLowerCase().includes("profesional");
+
+  const isEmpresasLead =
+    lead.source === "Web - Empresas" ||
+    lead.source.toLowerCase().includes("empresa") ||
+    lead.source.toLowerCase().includes("corporate") ||
+    lead.source.toLowerCase().includes("b2b");
+
   let tabName = process.env["SHEET_TAB_NAME"] || "";
   let isCollaboratorTab = false;
+  let isEmpresasTab = false;
+  let sheetTitles: string[] = [];
 
   try {
     const meta = await sheets.spreadsheets.get({
       spreadsheetId: sheetId,
       fields: "sheets.properties.title",
     });
-    const sheetTitles = (meta.data.sheets || []).map((s) => s.properties?.title || "");
+    sheetTitles = (meta.data.sheets || []).map((s) => s.properties?.title || "");
 
-    if (lead.source === "Colaboradores / Profesionales" && sheetTitles.includes("Colaboradores")) {
-      tabName = "Colaboradores";
+    if (isCollaboratorLead) {
+      tabName = sheetTitles.find((t) => t.toLowerCase().includes("colaborador")) || "Colaboradores";
       isCollaboratorTab = true;
+    } else if (isEmpresasLead) {
+      tabName = sheetTitles.find((t) => t.toLowerCase().includes("empresa")) || "Empresas";
+      isEmpresasTab = true;
     } else if (!tabName) {
+      // Private client leads (particulares)
       tabName =
+        sheetTitles.find((t) => t === "Leads Clientes" || t === "Clientes") ||
         sheetTitles.find((t) => t.includes("Cliente") || t.includes("Leads")) ||
         sheetTitles[0] ||
-        "Sheet1";
+        "Leads Clientes";
+    }
+
+    // Auto-create tab if missing in spreadsheet
+    if (!sheetTitles.includes(tabName)) {
+      try {
+        await sheets.spreadsheets.batchUpdate({
+          spreadsheetId: sheetId,
+          requestBody: {
+            requests: [
+              {
+                addSheet: {
+                  properties: { title: tabName },
+                },
+              },
+            ],
+          },
+        });
+        sheetTitles.push(tabName);
+      } catch (_e) {
+        // Tab might already exist or concurrent request
+      }
     }
   } catch (_e) {
-    if (!tabName) tabName = "Sheet1";
+    if (!tabName) {
+      if (isCollaboratorLead) {
+        tabName = "Colaboradores";
+        isCollaboratorTab = true;
+      } else if (isEmpresasLead) {
+        tabName = "Empresas";
+        isEmpresasTab = true;
+      } else {
+        tabName = "Leads Clientes";
+      }
+    }
   }
 
   // Check existing header row to determine column structure
@@ -235,22 +353,56 @@ async function appendToSheet({
     timeStyle: "short",
   }).format(now);
 
-  // If sheet is completely empty, initialize with Solo CRM headers
-  if (colCount === 0 && !isCollaboratorTab) {
-    const defaultHeaders = [
-      "Fecha y Hora",
-      "Estado",
-      "Canal / Origen",
-      "Nombre",
-      "Teléfono",
-      "WhatsApp Directo",
-      "Email",
-      "Modalidad",
-      "Motivo / Síntomas",
-      "Mensaje / Notas",
-      "Próxima Acción",
-      "Historial / Pagos",
-    ];
+  // If sheet is completely empty, initialize with proper headers
+  if (colCount === 0) {
+    let defaultHeaders: string[] = [];
+    if (isCollaboratorTab) {
+      defaultHeaders = [
+        "Prioridad",
+        "Estado",
+        "Profesional / Centro",
+        "Localidad",
+        "Especialidad",
+        "Teléfono",
+        "WhatsApp Directo",
+        "Email",
+        "Tipo Colaboración",
+        "Próximo seguimiento",
+        "Nº Derivaciones",
+        "Notas y Acuerdos",
+      ];
+    } else if (isEmpresasLead || isEmpresasTab) {
+      defaultHeaders = [
+        "Fecha y Hora",
+        "Estado",
+        "Empresa",
+        "Persona de Contacto",
+        "Cargo / Rol",
+        "Teléfono",
+        "WhatsApp Directo",
+        "Email",
+        "Empleados / Participantes",
+        "Objetivo / Formato",
+        "Mensaje / Necesidad",
+        "Próxima Acción / Notas",
+      ];
+    } else {
+      defaultHeaders = [
+        "Fecha y Hora",
+        "Estado",
+        "Canal / Origen",
+        "Nombre",
+        "Teléfono",
+        "WhatsApp Directo",
+        "Email",
+        "Modalidad",
+        "Motivo / Síntomas",
+        "Mensaje / Notas",
+        "Próxima Acción",
+        "Historial / Pagos",
+      ];
+    }
+
     await sheets.spreadsheets.values.append({
       spreadsheetId: sheetId,
       range: `'${tabName}'!A1`,
@@ -269,7 +421,7 @@ async function appendToSheet({
     const cleanPersonName = lead.name.replace(/\s*\(.*?\)$/, "").trim();
     let profession = lead.specificDetail;
     let center = "";
-    if (lead.specificDetail.includes(" · ")) {
+    if (lead.specificDetail && lead.specificDetail.includes(" · ")) {
       const parts = lead.specificDetail.split(" · ");
       profession = parts[0]?.trim() || "";
       center = parts[1]?.trim() || "";
@@ -290,13 +442,12 @@ async function appendToSheet({
       lead.message,
     ];
     endCol = "L";
-  } else if (isCollaboratorTab || colCount >= 20) {
+  } else if (isCollaboratorTab && colCount >= 20) {
     // Colaboradores 24-column layout:
-    // "Prioridad","Nombre","Apellidos","Centro","Profesión","Localidad","Email","Teléfono","WhatsApp","Web","Fuente","Primer contacto","Canal","Respondió","Fecha respuesta","Reunión","Fecha reunión","Tipo colaboración","Charla propuesta","Primera derivación","Nº derivaciones","Próximo seguimiento","Estado","Notas"
     const cleanPersonName = lead.name.replace(/\s*\(.*?\)$/, "").trim();
     let profession = lead.specificDetail;
     let center = "";
-    if (lead.specificDetail.includes(" · ")) {
+    if (lead.specificDetail && lead.specificDetail.includes(" · ")) {
       const parts = lead.specificDetail.split(" · ");
       profession = parts[0]?.trim() || "";
       center = parts[1]?.trim() || "";
@@ -329,8 +480,30 @@ async function appendToSheet({
       lead.message, // Notas
     ];
     endCol = "X";
-  } else if (colCount <= 5) {
-    // Legacy 5-column layout (Date, Name, Email, Phone, Message)
+  } else if (isEmpresasTab || isEmpresasLead) {
+    // 12-column Empresas layout:
+    // Fecha y Hora | Estado | Empresa | Persona de Contacto | Cargo / Rol | Teléfono | WhatsApp Directo | Email | Empleados / Participantes | Objetivo / Formato | Mensaje / Necesidad | Próxima Acción / Notas
+    const corp = parseCorporateDetails(lead.name, lead.message);
+    rowValues = [
+      dateFormatted,
+      "🟢 1. Solicitud Recibida",
+      corp.company,
+      corp.contact,
+      corp.role,
+      lead.phone,
+      lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 Chat")` : "",
+      lead.email,
+      corp.employeesSummary,
+      corp.objectiveSummary,
+      corp.notes,
+      "Llamada de valoración / Enviar propuesta",
+    ];
+    endCol = "L";
+  } else if (
+    colCount <= 5 &&
+    !sheetTitles.some((t) => t.includes("Cliente") || t.includes("Leads"))
+  ) {
+    // Legacy 5-column fallback only if no client tab exists
     rowValues = [
       dateFormatted,
       lead.name,
@@ -340,17 +513,18 @@ async function appendToSheet({
     ];
     endCol = "E";
   } else {
-    // Solo CRM 12-column layout
+    // Solo CRM 12-column layout (Leads Clientes / Privados)
+    // NOTE: lead.specificDetail is intentionally empty "" if motive is not specified or unknown!
     rowValues = [
       dateFormatted,
-      "🟢 Nuevo",
+      "🟢 1. Nuevo",
       lead.source,
       lead.name,
       lead.phone,
       lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 Abrir WhatsApp")` : "",
       lead.email,
       lead.modality,
-      lead.specificDetail,
+      lead.specificDetail || "", // Motivo / Síntomas: blank if unknown
       lead.message,
       "Contactar por WhatsApp / Email",
       "",
@@ -430,17 +604,43 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (to && apiKey) {
       try {
-        const subject = `🟢 NUEVO LEAD: ${lead.name} · ${lead.source}`;
+        const isCorp =
+          lead.source === "Web - Empresas" ||
+          lead.source.toLowerCase().includes("empresa") ||
+          lead.source.toLowerCase().includes("corporate");
+        const isCollab =
+          lead.source === "Colaboradores / Profesionales" ||
+          lead.source.toLowerCase().includes("colaborador") ||
+          lead.source.toLowerCase().includes("profesional");
+
+        let subject = `🟢 NUEVO LEAD CLIENTE: ${lead.name} · ${lead.source}`;
+        let badgeText = "Nuevo Cliente";
+        let badgeColor = "#15803d"; // Green
+
+        if (isCorp) {
+          const corp = parseCorporateDetails(lead.name, lead.message);
+          subject = `🏢 NUEVO LEAD EMPRESA: ${corp.company} · ${corp.contact}`;
+          badgeText = "Empresa / B2B";
+          badgeColor = "#064e3b"; // Dark green / emerald
+        } else if (isCollab) {
+          subject = `🩺 NUEVO COLABORADOR: ${lead.name}`;
+          badgeText = "Colaborador Profesional";
+          badgeColor = "#0f766e"; // Teal
+        }
+
+        const displayDetail = lead.specificDetail || "No especificado / Consulta general";
+
         const text = [
-          `¡Nuevo lead recibido!`,
+          `¡Nuevo contacto recibido en la web!`,
           ``,
-          `Nombre: ${lead.name}`,
+          `Tipo / Categoría: ${badgeText}`,
+          `Nombre / Contacto: ${lead.name}`,
           `Origen / Servicio: ${lead.source}`,
-          `Modalidad: ${lead.modality}`,
+          `Modalidad / Formato: ${lead.modality}`,
           `Teléfono: ${lead.phone || "No indicado"}`,
           `WhatsApp: ${lead.whatsappUrl || "No disponible"}`,
           `Email: ${lead.email}`,
-          `Motivo / Detalle: ${lead.specificDetail}`,
+          `Motivo / Detalle: ${displayDetail}`,
           ``,
           `Mensaje completo:`,
           lead.message,
@@ -448,14 +648,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         const html = `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa;">
-            <div style="display: inline-block; background: #15803d; color: #ffffff; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; margin-bottom: 12px;">Nuevo Lead</div>
+            <div style="display: inline-block; background: ${badgeColor}; color: #ffffff; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; margin-bottom: 12px;">${badgeText}</div>
             <h2 style="margin: 0 0 16px; color: #111827; font-size: 22px;">${lead.name}</h2>
             <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
               <p style="margin: 0 0 8px;"><strong>🎯 Canal / Servicio:</strong> ${lead.source}</p>
               <p style="margin: 0 0 8px;"><strong>📍 Modalidad:</strong> ${lead.modality}</p>
               <p style="margin: 0 0 8px;"><strong>📞 Teléfono:</strong> <a href="tel:${lead.phone}" style="color: #2563eb;">${lead.phone || "No indicado"}</a></p>
               <p style="margin: 0 0 8px;"><strong>✉️ Email:</strong> <a href="mailto:${lead.email}" style="color: #2563eb;">${lead.email}</a></p>
-              <p style="margin: 0;"><strong>📝 Motivo:</strong> ${lead.specificDetail}</p>
+              <p style="margin: 0;"><strong>📝 Motivo:</strong> ${displayDetail}</p>
             </div>
             ${
               lead.whatsappUrl
