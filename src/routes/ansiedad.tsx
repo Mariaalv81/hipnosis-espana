@@ -103,7 +103,10 @@ function AnsiedadPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${data.name} [Ansiedad]`,
+          name: data.name,
+          source: "Web - Ansiedad",
+          modality: data.modality,
+          specificDetail: data.symptoms,
           email: data.email,
           phone: data.phone,
           message: fullMessage,

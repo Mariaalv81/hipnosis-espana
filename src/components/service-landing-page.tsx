@@ -159,7 +159,10 @@ export function ServiceLandingPage({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${formData.name} [${formTag}]`,
+          name: formData.name,
+          source: `Web - ${formTag}`,
+          modality: formData.modality,
+          specificDetail: formData.specificDetail,
           email: formData.email,
           phone: formData.phone,
           message: fullMessage,

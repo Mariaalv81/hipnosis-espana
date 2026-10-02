@@ -83,7 +83,10 @@ function DejarDeFumarPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${data.name} [Antitabaco]`,
+          name: data.name,
+          source: "Web - Antitabaco",
+          modality: data.preferredMethod,
+          specificDetail: data.habitDetails,
           email: data.email,
           phone: data.phone,
           message: fullMessage,

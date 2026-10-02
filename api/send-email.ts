@@ -26,6 +26,9 @@ interface ContactRequestBody {
   message?: string;
   website?: string;
   recaptchaToken?: string;
+  source?: string;
+  modality?: string;
+  specificDetail?: string;
 }
 
 // Load .env.local into process.env for local dev (keeps production unchanged)
@@ -55,25 +58,98 @@ function loadLocalEnv() {
 
 loadLocalEnv();
 
+function parseLeadData(body: ContactRequestBody) {
+  let rawName = (body.name || "").trim();
+  let source = (body.source || "").trim();
+  let modality = (body.modality || "").trim();
+  let specificDetail = (body.specificDetail || "").trim();
+  const rawMessage = (body.message || "").trim();
+  const email = (body.email || "").trim();
+  const phone = (body.phone || "").trim();
+
+  // If source not explicitly provided, check if name has [Tag]
+  const tagMatch = rawName.match(/\[(.*?)\]/);
+  if (!source && tagMatch && tagMatch[1]) {
+    source = `Web - ${tagMatch[1].trim()}`;
+    rawName = rawName.replace(/\[(.*?)\]/, "").trim();
+  }
+
+  // Extract from message if present
+  if (!source) {
+    const headerMatch = rawMessage.match(
+      /Consulta \/ Solicitud(?: de entrevista previa.*?)?:\s*(.+)/i,
+    );
+    if (headerMatch && headerMatch[1]) {
+      source = `Web - ${headerMatch[1].trim()}`;
+    } else {
+      source = "Web - Contacto General";
+    }
+  }
+
+  if (!modality) {
+    const modMatch = rawMessage.match(/Modalidad(?:\s+preferida)?:\s*([^\n\r]+)/i);
+    if (modMatch && modMatch[1]) {
+      modality = modMatch[1].trim();
+    }
+  }
+
+  if (!specificDetail) {
+    const detailMatch = rawMessage.match(
+      /(?:Detalle \/ Situación|Momentos de ansiedad|Consumo de tabaco):\s*([^\n\r]+)/i,
+    );
+    if (detailMatch && detailMatch[1]) {
+      specificDetail = detailMatch[1].trim();
+    }
+  }
+
+  // Clean phone number for WhatsApp link
+  const cleanDigits = phone.replace(/[^\d+]/g, "").replace(/^\+/, "");
+  let whatsappPhone = cleanDigits;
+  if (cleanDigits.length === 9 && (cleanDigits.startsWith("6") || cleanDigits.startsWith("7"))) {
+    whatsappPhone = `34${cleanDigits}`;
+  } else if (cleanDigits.startsWith("34") && cleanDigits.length === 11) {
+    whatsappPhone = cleanDigits;
+  }
+  const whatsappUrl = whatsappPhone ? `https://wa.me/${whatsappPhone}` : "";
+
+  return {
+    name: rawName,
+    email,
+    phone,
+    whatsappUrl,
+    source,
+    modality: modality || "Por concretar",
+    specificDetail: specificDetail || "No especificado",
+    message: rawMessage,
+  };
+}
+
 async function sendViaSendGrid({
   to,
   from,
   subject,
   text,
+  html,
 }: {
   to: string;
   from: string;
   subject: string;
   text: string;
+  html?: string;
 }) {
   const apiKey = process.env["SENDGRID_API_KEY"];
   if (!apiKey) throw new Error("SENDGRID_API_KEY not set");
+
+  const content: { type: string; value: string }[] = [{ type: "text/plain", value: text }];
+  if (html) {
+    content.push({ type: "text/html", value: html });
+  }
 
   const payload = {
     personalizations: [{ to: [{ email: to }] }],
     from: { email: from },
     subject,
-    content: [{ type: "text/plain", value: text }],
+    content,
   };
 
   const res = await fetch("https://api.sendgrid.com/v3/mail/send", {
@@ -93,16 +169,10 @@ async function sendViaSendGrid({
 
 async function appendToSheet({
   sheetId,
-  name,
-  email,
-  phone,
-  message,
+  lead,
 }: {
   sheetId: string;
-  name: string;
-  email: string;
-  phone?: string | undefined;
-  message: string;
+  lead: ReturnType<typeof parseLeadData>;
 }) {
   const clientEmail = process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"];
   let privateKey = process.env["GOOGLE_PRIVATE_KEY"];
@@ -120,13 +190,99 @@ async function appendToSheet({
 
   const sheets = google.sheets({ version: "v4", auth: jwtClient });
 
-  const values = [[new Date().toISOString(), name, email, phone ?? "", message]];
+  // Resolve target tab name (default to user env, or first sheet)
+  let tabName = process.env["SHEET_TAB_NAME"] || "";
+  if (!tabName) {
+    try {
+      const meta = await sheets.spreadsheets.get({
+        spreadsheetId: sheetId,
+        fields: "sheets.properties.title",
+      });
+      tabName = meta.data.sheets?.[0]?.properties?.title || "Sheet1";
+    } catch (_e) {
+      tabName = "Sheet1";
+    }
+  }
+
+  // Check existing header row to determine column structure
+  let colCount = 0;
+  try {
+    const headRes = await sheets.spreadsheets.values.get({
+      spreadsheetId: sheetId,
+      range: `'${tabName}'!1:1`,
+    });
+    const headerRow = headRes.data.values?.[0] as string[] | undefined;
+    colCount = headerRow ? headerRow.length : 0;
+  } catch (_e) {
+    colCount = 0;
+  }
+
+  // Current date formatted in Spanish timezone (Europe/Madrid)
+  const now = new Date();
+  const dateFormatted = new Intl.DateTimeFormat("es-ES", {
+    timeZone: "Europe/Madrid",
+    dateStyle: "short",
+    timeStyle: "short",
+  }).format(now);
+
+  // If sheet is completely empty, initialize with Solo CRM headers
+  if (colCount === 0) {
+    const defaultHeaders = [
+      "Fecha y Hora",
+      "Estado",
+      "Canal / Origen",
+      "Nombre",
+      "Teléfono",
+      "WhatsApp Directo",
+      "Email",
+      "Modalidad",
+      "Motivo / Síntomas",
+      "Mensaje / Notas",
+      "Próxima Acción",
+      "Historial / Pagos",
+    ];
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: sheetId,
+      range: `'${tabName}'!A1`,
+      valueInputOption: "USER_ENTERED",
+      requestBody: { values: [defaultHeaders] },
+    });
+    colCount = defaultHeaders.length;
+  }
+
+  let rowValues: string[];
+  if (colCount <= 5) {
+    // Legacy 5-column layout (Date, Name, Email, Phone, Message)
+    rowValues = [
+      dateFormatted,
+      lead.name,
+      lead.email,
+      lead.phone,
+      `[${lead.source} | ${lead.modality}]\n${lead.message}`,
+    ];
+  } else {
+    // Solo CRM 12-column layout
+    rowValues = [
+      dateFormatted,
+      "🟢 Nuevo",
+      lead.source,
+      lead.name,
+      lead.phone,
+      lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 Abrir WhatsApp")` : "",
+      lead.email,
+      lead.modality,
+      lead.specificDetail,
+      lead.message,
+      "Contactar por WhatsApp / Email",
+      "",
+    ];
+  }
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: sheetId,
-    range: "Sheet1!A:E",
-    valueInputOption: "RAW",
-    requestBody: { values },
+    range: `'${tabName}'!A:${colCount <= 5 ? "E" : "L"}`,
+    valueInputOption: "USER_ENTERED",
+    requestBody: { values: [rowValues] },
   });
 }
 
@@ -137,7 +293,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const body = (req.body as ContactRequestBody | undefined) || {};
-    const { name, email, phone, message, website, recaptchaToken } = body;
+    const { name, email, message, website, recaptchaToken } = body;
 
     // Honeypot: if website field (hidden) is filled, likely spam
     if (website) return res.status(400).json({ ok: false, error: "Spam detected" });
@@ -165,39 +321,99 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
-    // If Google Sheet configured, append row there
+    const lead = parseLeadData(body);
+
     const sheetId = process.env["SHEET_ID"];
     const hasGoogle = Boolean(
       sheetId && process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"] && process.env["GOOGLE_PRIVATE_KEY"],
     );
-    console.log("env presence:", {
-      sheetId: !sheetId,
-      googleEmail: !process.env["GOOGLE_SERVICE_ACCOUNT_EMAIL"],
-      googleKey: !process.env["GOOGLE_PRIVATE_KEY"],
-      contactEmail: !process.env["CONTACT_EMAIL"],
-      sendgridTo: !process.env["SENDGRID_TO"],
-    });
 
+    let sheetSaved = false;
+    let sheetError: string | null = null;
     if (hasGoogle && sheetId) {
-      await appendToSheet({ sheetId, name, email, phone, message });
-      return res.status(200).json({ ok: true, via: "sheets" });
+      try {
+        await appendToSheet({ sheetId, lead });
+        sheetSaved = true;
+      } catch (err) {
+        console.error("appendToSheet error:", err);
+        sheetError = err instanceof Error ? err.message : String(err);
+      }
     }
 
-    // Otherwise fallback to SendGrid
+    // Send email alert to María Cabo via SendGrid if configured
+    let emailSent = false;
+    let emailError: string | null = null;
     const to = process.env["CONTACT_EMAIL"] || process.env["SENDGRID_TO"];
     const from =
-      process.env["SENDGRID_FROM"] || process.env["CONTACT_EMAIL"] || "no-reply@example.com";
+      process.env["SENDGRID_FROM"] || process.env["CONTACT_EMAIL"] || "no-reply@mariacabo.com";
+    const apiKey = process.env["SENDGRID_API_KEY"];
 
-    if (!to) return res.status(500).json({ ok: false, error: "Recipient not configured" });
+    if (to && apiKey) {
+      try {
+        const subject = `🟢 NUEVO LEAD: ${lead.name} · ${lead.source}`;
+        const text = [
+          `¡Nuevo lead recibido!`,
+          ``,
+          `Nombre: ${lead.name}`,
+          `Origen / Servicio: ${lead.source}`,
+          `Modalidad: ${lead.modality}`,
+          `Teléfono: ${lead.phone || "No indicado"}`,
+          `WhatsApp: ${lead.whatsappUrl || "No disponible"}`,
+          `Email: ${lead.email}`,
+          `Motivo / Detalle: ${lead.specificDetail}`,
+          ``,
+          `Mensaje completo:`,
+          lead.message,
+        ].join("\n");
 
-    const subject = `Contacto web: ${name}`;
-    const text = `Nuevo mensaje desde la web:\n\nNombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone || "No indicado"}\n\nMensaje:\n${message}`;
+        const html = `
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa;">
+            <div style="display: inline-block; background: #15803d; color: #ffffff; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; margin-bottom: 12px;">Nuevo Lead</div>
+            <h2 style="margin: 0 0 16px; color: #111827; font-size: 22px;">${lead.name}</h2>
+            <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+              <p style="margin: 0 0 8px;"><strong>🎯 Canal / Servicio:</strong> ${lead.source}</p>
+              <p style="margin: 0 0 8px;"><strong>📍 Modalidad:</strong> ${lead.modality}</p>
+              <p style="margin: 0 0 8px;"><strong>📞 Teléfono:</strong> <a href="tel:${lead.phone}" style="color: #2563eb;">${lead.phone || "No indicado"}</a></p>
+              <p style="margin: 0 0 8px;"><strong>✉️ Email:</strong> <a href="mailto:${lead.email}" style="color: #2563eb;">${lead.email}</a></p>
+              <p style="margin: 0;"><strong>📝 Motivo:</strong> ${lead.specificDetail}</p>
+            </div>
+            ${
+              lead.whatsappUrl
+                ? `<div style="margin-bottom: 20px;"><a href="${lead.whatsappUrl}" style="display: inline-block; background: #25D366; color: #ffffff; text-decoration: none; font-weight: bold; padding: 12px 20px; border-radius: 999px; font-size: 14px;">💬 Responder por WhatsApp ahora</a></div>`
+                : ""
+            }
+            <div style="background: #f3f4f6; border-radius: 8px; padding: 12px; font-size: 13px; color: #374151; white-space: pre-wrap;"><strong>Mensaje completo:</strong><br>${lead.message}</div>
+          </div>
+        `;
 
-    await sendViaSendGrid({ to, from, subject, text });
+        await sendViaSendGrid({ to, from, subject, text, html });
+        emailSent = true;
+      } catch (err) {
+        console.error("sendViaSendGrid error:", err);
+        emailError = err instanceof Error ? err.message : String(err);
+      }
+    }
 
-    return res.status(200).json({ ok: true, via: "sendgrid" });
+    // If at least one channel worked (or fallback is ready), consider success
+    if (sheetSaved || emailSent) {
+      return res.status(200).json({
+        ok: true,
+        sheets: sheetSaved,
+        email: emailSent,
+      });
+    }
+
+    // If neither was configured or both failed
+    if (sheetError || emailError) {
+      return res.status(500).json({
+        ok: false,
+        error: sheetError || emailError || "Error al procesar el mensaje",
+      });
+    }
+
+    return res.status(200).json({ ok: true, via: "received" });
   } catch (err: unknown) {
-    console.error("send-email error", err);
+    console.error("send-email unexpected error", err);
     const message = err instanceof Error ? err.message : "Server error";
     return res.status(500).json({ ok: false, error: message });
   }
