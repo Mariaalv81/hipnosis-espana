@@ -1,5 +1,6 @@
 import type { Lang } from "@/lib/i18n";
 import { servicesEs, servicesVa, servicesEn } from "./services-content";
+import { professionalsEs, professionalsVa, professionalsEn } from "./professionals-content";
 
 const es = {
   brand: "María Cabo",
@@ -1069,6 +1070,7 @@ const es = {
       },
     ],
   },
+  professionalsPage: professionalsEs,
   ...servicesEs,
 };
 
@@ -2129,6 +2131,7 @@ const va: Dict = {
       },
     ],
   },
+  professionalsPage: professionalsVa,
   ...servicesVa,
 };
 
@@ -3186,6 +3189,7 @@ const en: Dict = {
       },
     ],
   },
+  professionalsPage: professionalsEn,
   ...servicesEn,
 };
 

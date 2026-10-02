@@ -190,18 +190,25 @@ async function appendToSheet({
 
   const sheets = google.sheets({ version: "v4", auth: jwtClient });
 
-  // Resolve target tab name (default to user env, or first sheet)
+  // Resolve target tab name (default to user env, or Colaboradores if B2B, or first sheet)
   let tabName = process.env["SHEET_TAB_NAME"] || "";
-  if (!tabName) {
-    try {
-      const meta = await sheets.spreadsheets.get({
-        spreadsheetId: sheetId,
-        fields: "sheets.properties.title",
-      });
-      tabName = meta.data.sheets?.[0]?.properties?.title || "Sheet1";
-    } catch (_e) {
-      tabName = "Sheet1";
+  let isCollaboratorTab = false;
+
+  try {
+    const meta = await sheets.spreadsheets.get({
+      spreadsheetId: sheetId,
+      fields: "sheets.properties.title",
+    });
+    const sheetTitles = (meta.data.sheets || []).map((s) => s.properties?.title || "");
+
+    if (lead.source === "Colaboradores / Profesionales" && sheetTitles.includes("Colaboradores")) {
+      tabName = "Colaboradores";
+      isCollaboratorTab = true;
+    } else if (!tabName) {
+      tabName = sheetTitles[0] || "Sheet1";
     }
+  } catch (_e) {
+    if (!tabName) tabName = "Sheet1";
   }
 
   // Check existing header row to determine column structure
@@ -226,7 +233,7 @@ async function appendToSheet({
   }).format(now);
 
   // If sheet is completely empty, initialize with Solo CRM headers
-  if (colCount === 0) {
+  if (colCount === 0 && !isCollaboratorTab) {
     const defaultHeaders = [
       "Fecha y Hora",
       "Estado",
@@ -251,7 +258,48 @@ async function appendToSheet({
   }
 
   let rowValues: string[];
-  if (colCount <= 5) {
+  let endCol = "L";
+
+  if (isCollaboratorTab || colCount >= 20) {
+    // Colaboradores 24-column layout:
+    // "Prioridad","Nombre","Apellidos","Centro","Profesión","Localidad","Email","Teléfono","WhatsApp","Web","Fuente","Primer contacto","Canal","Respondió","Fecha respuesta","Reunión","Fecha reunión","Tipo colaboración","Charla propuesta","Primera derivación","Nº derivaciones","Próximo seguimiento","Estado","Notas"
+    const cleanPersonName = lead.name.replace(/\s*\(.*?\)$/, "").trim();
+    let profession = lead.specificDetail;
+    let center = "";
+    if (lead.specificDetail.includes(" · ")) {
+      const parts = lead.specificDetail.split(" · ");
+      profession = parts[0]?.trim() || "";
+      center = parts[1]?.trim() || "";
+    }
+
+    rowValues = [
+      "A", // Prioridad
+      cleanPersonName, // Nombre
+      "", // Apellidos
+      center, // Centro
+      profession, // Profesión
+      "", // Localidad
+      lead.email, // Email
+      lead.phone, // Teléfono
+      lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 WhatsApp")` : "", // WhatsApp
+      "", // Web
+      "Web / Formulario Profesionales", // Fuente
+      dateFormatted, // Primer contacto
+      "Formulario Web", // Canal
+      "Sí (Inbound)", // Respondió
+      dateFormatted, // Fecha respuesta
+      "Pendiente", // Reunión
+      "", // Fecha reunión
+      "A definir", // Tipo colaboración
+      "", // Charla propuesta
+      "", // Primera derivación
+      "0", // Nº derivaciones
+      dateFormatted, // Próximo seguimiento
+      "⚪ Prospecto (Nuevo formulario web)", // Estado
+      lead.message, // Notas
+    ];
+    endCol = "X";
+  } else if (colCount <= 5) {
     // Legacy 5-column layout (Date, Name, Email, Phone, Message)
     rowValues = [
       dateFormatted,
@@ -260,6 +308,7 @@ async function appendToSheet({
       lead.phone,
       `[${lead.source} | ${lead.modality}]\n${lead.message}`,
     ];
+    endCol = "E";
   } else {
     // Solo CRM 12-column layout
     rowValues = [
@@ -276,11 +325,12 @@ async function appendToSheet({
       "Contactar por WhatsApp / Email",
       "",
     ];
+    endCol = "L";
   }
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: sheetId,
-    range: `'${tabName}'!A:${colCount <= 5 ? "E" : "L"}`,
+    range: `'${tabName}'!A:${endCol}`,
     valueInputOption: "USER_ENTERED",
     requestBody: { values: [rowValues] },
   });

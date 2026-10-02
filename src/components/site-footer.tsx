@@ -15,6 +15,7 @@ export function SiteFooter() {
     { to: "/sobre-mi", label: t.nav.about },
     { to: "/blog", label: t.nav.journal },
     { to: "/empresas", label: t.nav.companies },
+    { to: "/profesionales", label: "Colaboradores" },
     { to: "/eventos", label: t.nav.events },
     { to: "/faq", label: t.nav.faq },
     { to: "/contacto", label: t.nav.contact },
