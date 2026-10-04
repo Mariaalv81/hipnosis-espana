@@ -77,20 +77,37 @@ export function makeLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
-    name: "María Cabo · Hipnosis en Valencia y Sueca",
-    alternateName: "María Cabo",
+    name: "María Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca",
+    alternateName: ["María Cabo", "María Cabo Hipnoterapia", "Hipnosis María Cabo"],
     url: SITE_URL,
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
     description:
-      "Acompañamiento con hipnosis para el desarrollo personal en Sueca y Valencia (consulta presencial en Centro Sanar, sesiones a domicilio en casas de particulares en Valencia ciudad y formato online): cambio de hábitos, dejar de fumar, calma, foco y confianza.",
+      "Acompañamiento con hipnosis e hipnoterapia para el desarrollo personal en Sueca y Valencia (consulta en Centro Sanar, a domicilio en Valencia ciudad y online). Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
     sameAs: [siteSettings.instagramUrl],
+    founder: {
+      "@type": "Person",
+      name: "María Cabo",
+      jobTitle: "Especialista en Hipnosis, Hipnoterapia y Psicoterapia Ericksoniana",
+      url: `${SITE_URL}/sobre-mi`,
+      alumniOf: {
+        "@type": "EducationalOrganization",
+        name: "Instituto Erickson Madrid",
+        url: "https://institutoericksonmadrid.com",
+      },
+    },
     knowsAbout: [
       "Hipnosis",
+      "Hipnoterapia",
+      "Hipnoterapia en Valencia",
+      "Hipnoterapeuta",
+      "Hipnosis ericksoniana",
+      "Psicoterapia ericksoniana",
+      "Instituto Erickson Madrid",
       "Hipnosis en Valencia",
       "Hipnosis a domicilio en Valencia",
-      "Dejar de fumar",
-      "Dejar de fumar en Valencia",
+      "Dejar de fumar con hipnosis",
+      "Hipnosis para la ansiedad",
       "Cambio de hábitos",
       "Gestión del estrés",
       "Desarrollo personal",
@@ -261,6 +278,46 @@ export function makeServiceSchema({
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: absoluteUrl(path),
+    },
+  };
+}
+
+/**
+ * Person schema for María Cabo (SEO / Knowledge Graph / E-E-A-T)
+ */
+export function makePersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_URL}/sobre-mi#maria-cabo`,
+    name: "María Cabo",
+    jobTitle: "Facilitadora de Hipnosis, Hipnoterapia y Psicoterapia Ericksoniana",
+    description:
+      "Facilitadora de hipnosis e hipnoterapia aplicada al desarrollo personal y profesional. Se ha formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
+    url: `${SITE_URL}/sobre-mi`,
+    image: `${SITE_URL}/sobre-mi-maria-cabo.jpg`,
+    sameAs: [siteSettings.instagramUrl],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Instituto Erickson Madrid",
+      url: "https://institutoericksonmadrid.com",
+    },
+    knowsAbout: [
+      "Hipnosis",
+      "Hipnoterapia",
+      "Psicoterapia ericksoniana",
+      "Hipnosis ericksoniana",
+      "Instituto Erickson Madrid",
+      "Desarrollo personal",
+      "Gestión de la ansiedad",
+      "Dejar de fumar con hipnosis",
+      "Cambio de hábitos",
+    ],
+    worksFor: {
+      "@type": "ProfessionalService",
+      "@id": `${SITE_URL}/#organization`,
+      name: "María Cabo · Hipnosis y Hipnoterapia",
+      url: SITE_URL,
     },
   };
 }

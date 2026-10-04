@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ExternalLink, Instagram } from "lucide-react";
+import { ExternalLink, GraduationCap, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
-import { makeSeo } from "@/lib/seo";
+import { JsonLd, makePersonSchema, makeSeo } from "@/lib/seo";
 import { siteSettings } from "@/content/site-settings";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 import sobreMiMariaCaboWebp from "@/assets/images/sobre-mi-maria-cabo.webp";
@@ -11,9 +11,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/sobre-mi")({
   head: () =>
     makeSeo({
-      title: "Sobre María Cabo · Hipnosis y desarrollo personal",
+      title: "Sobre María Cabo · Hipnosis, hipnoterapia y psicoterapia ericksoniana",
       description:
-        "María Cabo trabaja con hipnosis aplicada al desarrollo personal y profesional, con experiencia internacional y corporativa.",
+        "María Cabo es facilitadora de hipnosis e hipnoterapia. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana. Sesiones en Valencia, Sueca y online.",
       path: "/sobre-mi",
     }),
   component: AboutPage,
@@ -25,6 +25,7 @@ function AboutPage() {
 
   return (
     <>
+      <JsonLd schema={makePersonSchema()} />
       <section className="border-b border-border/60 bg-background">
         <div className="container-page grid gap-10 py-12 md:py-16 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-14">
           <div className="order-2 lg:order-1">
@@ -63,7 +64,7 @@ function AboutPage() {
       </section>
 
       <section className="container-page border-b border-border/60 py-10 md:py-12">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {about.highlights.map((item) => (
             <article key={item.title} className="border-l border-primary/40 px-5 py-2">
               <h2 className="text-xl leading-tight">{item.title}</h2>
@@ -89,6 +90,22 @@ function AboutPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <GraduationCap className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">Formación Especializada</p>
+                  <p className="text-xs text-muted-foreground">Instituto Erickson Madrid</p>
+                </div>
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                Formada en hipnosis y psicoterapia ericksoniana. Enfoque riguroso, natural y
+                respetuoso centrado en los recursos de la propia persona.
+              </p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm">

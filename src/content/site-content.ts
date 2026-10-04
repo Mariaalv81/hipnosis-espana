@@ -4,7 +4,7 @@ import { professionalsEs, professionalsVa, professionalsEn } from "./professiona
 
 const es = {
   brand: "María Cabo",
-  tagline: "Hipnosis aplicada al desarrollo personal",
+  tagline: "Hipnosis e hipnoterapia para el desarrollo personal",
   nav: {
     home: "Inicio",
     how: "Cómo funciona",
@@ -133,7 +133,7 @@ const es = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA FORMA CERCANA Y REALISTA DE TRABAJAR CON EL CAMBIO.",
     aboutText:
-      "Mi trabajo parte de una idea sencilla: muchas veces sabemos perfectamente lo que queremos hacer, pero seguimos reaccionando de otra manera. La hipnosis permite trabajar precisamente con esa parte más automática de nuestra experiencia, manteniendo siempre la consciencia, la participación y el control.",
+      "Mi trabajo parte de una idea sencilla: muchas veces sabemos perfectamente lo que queremos hacer, pero seguimos reaccionando de otra manera. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, empleo la hipnosis y la hipnoterapia para intervenir sobre esa parte automática de nuestra experiencia, manteniendo siempre la consciencia, la participación y el control.",
     aboutLink: "CONOCERME",
     aboutImageAlt: "María Cabo",
     eventsTitle: "ENCUENTROS",
@@ -686,11 +686,15 @@ const es = {
   about: {
     title: "Sobre mí",
     name: "María Cabo",
-    role: "Facilitadora de hipnosis aplicada al desarrollo personal",
+    role: "Facilitadora de hipnosis e hipnoterapia aplicada al desarrollo personal",
     intro:
-      "Trabajo con hipnosis aplicada al desarrollo personal y profesional, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
-    traits: ["Cercanía", "Claridad", "Recursos útiles"],
+      "Trabajo con hipnosis e hipnoterapia aplicada al desarrollo personal y profesional. Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
+    traits: ["Cercanía", "Formación Ericksoniana", "Recursos útiles"],
     highlights: [
+      {
+        title: "Instituto Erickson Madrid",
+        text: "Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
+      },
       {
         title: "Experiencia internacional",
         text: "He vivido y trabajado entre Los Ángeles, Londres, Barcelona, Madrid y Valencia.",
@@ -706,8 +710,8 @@ const es = {
     ],
     body: [
       "Acompaño a personas adultas que quieren producir un cambio concreto y no saben por dónde empezar. Mi manera de trabajar es tranquila, curiosa y honesta: primero entender, luego proponer.",
-      "Creo en las expectativas realistas. La hipnosis puede ser una herramienta muy útil para trabajar hábitos, atención y respuesta al estrés, pero no lo resuelve todo ni sustituye a la atención sanitaria.",
-      "Trabajo en Sueca, en castellano e inglés, en un despacho independiente dentro del Centro Sanar.",
+      "Creo en las expectativas realistas. La hipnosis y la hipnoterapia son herramientas muy útiles para trabajar hábitos, atención y respuesta al estrés, pero no lo resuelven todo ni sustituyen a la atención sanitaria.",
+      "Trabajo en Sueca, en castellano e inglés, en un despacho independiente dentro del Centro Sanar, a domicilio en casas de particulares en Valencia ciudad y en formato online.",
     ],
     valuesTitle: "Cómo trabajo",
     valuesSidebarTitle: "En cada sesión",
@@ -723,9 +727,9 @@ const es = {
     statement:
       "Mi trabajo consiste en acompañar a cada persona a explorar sus patrones y ofrecerle herramientas para responder de una manera más útil para ella.",
     workEyebrow: "Mi forma de trabajar",
-    workTitle: "Hipnosis como herramienta, no como fórmula mágica.",
+    workTitle: "Hipnosis e hipnoterapia como herramientas, no como fórmulas mágicas.",
     workText:
-      "Entiendo la hipnosis como un recurso para facilitar procesos de cambio, observar respuestas automáticas y entrenar nuevas formas de afrontar situaciones concretas con más calma, seguridad y capacidad de elección.",
+      "Entiendo la hipnosis y la hipnoterapia ericksoniana como recursos para facilitar procesos de cambio, observar respuestas automáticas y entrenar nuevas formas de afrontar situaciones concretas con más calma, seguridad y capacidad de elección.",
     focusAreas: [
       {
         title: "Cambio práctico",
@@ -741,11 +745,13 @@ const es = {
       },
     ],
     pathEyebrow: "Trayectoria",
-    pathTitle: "Una mirada construida entre culturas y entornos profesionales.",
+    pathTitle:
+      "Una mirada construida entre culturas, entornos profesionales y formación especializada.",
     cities: ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "A lo largo de mi trayectoria he trabajado en entornos corporativos e internacionales y he vivido en ciudades como Los Ángeles, Londres, Barcelona, Valencia y Madrid.",
-      "Esa experiencia me ha permitido entender que detrás de cada objetivo hay una historia, una forma de responder y unas circunstancias diferentes.",
+      "Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una de las instituciones de referencia en España. Este modelo pone el foco en los recursos inconscientes y aprendizajes previos de la propia persona para generar respuestas más adaptativas y duraderas.",
+      "Esa combinación entre formación técnica especializada en hipnoterapia y experiencia vital en entornos de alta exigencia me ayuda a entender que detrás de cada objetivo hay una historia, una forma de responder y unas circunstancias diferentes.",
     ],
     pathExtra:
       "Mi experiencia previa en empresas internacionales me ayuda a entender retos habituales del trabajo: hablar en público, asumir responsabilidades, rendir bajo presión, mantener el foco o desenvolverse con mayor confianza en situaciones exigentes.",
@@ -1079,7 +1085,7 @@ export type Dict = typeof es;
 
 const va: Dict = {
   brand: "María Cabo",
-  tagline: "Hipnosi aplicada al desenvolupament personal",
+  tagline: "Hipnosi i hipnoteràpia per al desenvolupament personal",
   nav: {
     home: "Inici",
     how: "Com funciona",
@@ -1208,7 +1214,7 @@ const va: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA MANERA PRÒXIMA I REALISTA DE TREBALLAR EL CANVI.",
     aboutText:
-      "El meu treball partix d'una idea senzilla: moltes vegades sabem perfectament què volem fer, però continuem reaccionant d'una altra manera. La hipnosi permet treballar precisament amb eixa part més automàtica de la nostra experiència, mantenint sempre la consciència, la participació i el control.",
+      "El meu treball partix d'una idea senzilla: moltes vegades sabem perfectament què volem fer, però continuem reaccionant d'una altra manera. Formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, utilitze la hipnosi i la hipnoteràpia per a treballar amb eixa part automàtica de la nostra experiència, mantenint sempre la consciència, la participació i el control.",
     aboutLink: "CONÉIXER-ME",
     aboutImageAlt: "María Cabo",
     eventsTitle: "TROBADES",
@@ -1749,11 +1755,15 @@ const va: Dict = {
   about: {
     title: "Sobre mi",
     name: "María Cabo",
-    role: "Facilitadora d'hipnosi aplicada al desenvolupament personal",
+    role: "Facilitadora d'hipnosi i hipnoteràpia aplicada al desenvolupament personal",
     intro:
-      "Treballe amb hipnosi aplicada al desenvolupament personal i professional, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
-    traits: ["Proximitat", "Claredat", "Recursos útils"],
+      "Treballe amb hipnosi i hipnoteràpia aplicada al desenvolupament personal i professional. M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
+    traits: ["Proximitat", "Formació Ericksoniana", "Recursos útils"],
     highlights: [
+      {
+        title: "Institut Erickson Madrid",
+        text: "Formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana.",
+      },
       {
         title: "Experiència internacional",
         text: "He viscut i treballat entre Los Angeles, Londres, Barcelona, Madrid i València.",
@@ -1769,8 +1779,8 @@ const va: Dict = {
     ],
     body: [
       "Acompanye persones adultes que volen produir un canvi concret i no saben per on començar. La meua manera de treballar és tranquil·la, curiosa i honesta: primer entendre, després proposar.",
-      "Crec en les expectatives realistes. La hipnosi pot ser una ferramenta molt útil per a treballar hàbits, atenció i resposta a l'estrés, però no ho resol tot ni substituïx l'atenció sanitària.",
-      "Treballe a Sueca, en castellà i anglés, en un despatx independent dins de Centro Sanar.",
+      "Crec en les expectatives realistes. La hipnosi i la hipnoteràpia són eines molt útils per a treballar hàbits, atenció i resposta a l'estrés, però no ho resolen tot ni substituïxen l'atenció sanitària.",
+      "Treballe a Sueca, en castellà i anglés, en un despatx independent dins de Centro Sanar, a domicili a València ciutat i en format online.",
     ],
     valuesTitle: "Com treballe",
     valuesSidebarTitle: "En cada sessió",
@@ -1786,9 +1796,9 @@ const va: Dict = {
     statement:
       "El meu treball consistix a acompanyar cada persona a explorar els seus patrons i oferir-li ferramentes per a respondre d'una manera més útil per a ella.",
     workEyebrow: "La meua manera de treballar",
-    workTitle: "La hipnosi com a ferramenta, no com a fórmula màgica.",
+    workTitle: "Hipnosi i hipnoteràpia com a eines de canvi, no com a fórmules màgiques.",
     workText:
-      "Entenc la hipnosi com un recurs per a facilitar processos de canvi, observar respostes automàtiques i entrenar noves formes d'afrontar situacions concretes amb més calma, seguretat i capacitat d'elecció.",
+      "Entenc la hipnosi i la hipnoteràpia ericksoniana com a recursos per a facilitar processos de canvi, observar respostes automàtiques i entrenar noves formes d'afrontar situacions concretes amb més calma, seguretat i capacitat d'elecció.",
     focusAreas: [
       {
         title: "Canvi pràctic",
@@ -1804,19 +1814,21 @@ const va: Dict = {
       },
     ],
     pathEyebrow: "Trajectòria",
-    pathTitle: "Una mirada construïda entre cultures i entorns professionals.",
+    pathTitle:
+      "Una mirada construïda entre cultures, entorns professionals i formació especialitzada.",
     cities: ["Los Angeles", "Londres", "Barcelona", "Madrid", "València"],
     pathParagraphs: [
       "Al llarg de la meua trajectòria he treballat en entorns corporatius i internacionals i he viscut en ciutats com Los Angeles, Londres, Barcelona, València i Madrid.",
-      "Eixa experiència m'ha permés entendre que darrere de cada objectiu hi ha una història, una manera de respondre i unes circumstàncies diferents.",
+      "M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una de les institucions de referència a Espanya. Este model posa el focus en els recursos inconscients i aprenentatges previs de la pròpia persona per a generar respostes més adaptatives i duradores.",
+      "Eixa combinació entre formació tècnica especialitzada en hipnoteràpia i experiència vital en entorns d'alta exigència m'ajuda a entendre que darrere de cada objectiu hi ha una història, una manera de respondre i unes circumstàncies diferents.",
     ],
     pathExtra:
       "La meua experiència prèvia en empreses internacionals m'ajuda a entendre reptes habituals del treball: parlar en públic, assumir responsabilitats, rendir sota pressió, mantindre el focus o moure's amb més confiança en situacions exigents.",
     sessionsEyebrow: "Sessions i col·laboracions",
     serviceAreaTitle: "Sueca · Ribera Baixa · València · Gandia",
     sessionsTexts: [
-      "Les sessions individuals es fan de manera presencial en un despatx a Sueca, València.",
-      "També puc desplaçar-me a cases particulars, empreses, oficines, centres i organitzacions per a sessions, tallers o programes de desenvolupament professional.",
+      "Les sessions individuals es fan de manera presencial en un despatx a Sueca o a domicili en cases de particulars a València ciutat.",
+      "També realitze sessions en format online per videoconferència i em desplace a empreses i organitzacions per a tallers i programes de desenvolupament professional.",
     ],
     quote:
       "Moltes vegades el canvi no consistix a convertir-se en una altra persona, sinó a deixar d'estar limitat per patrons que ja no necessitem.",
@@ -2139,7 +2151,7 @@ const va: Dict = {
 
 const en: Dict = {
   brand: "María Cabo",
-  tagline: "Hypnosis for personal development",
+  tagline: "Hypnosis and hypnotherapy for personal development",
   nav: {
     home: "Home",
     how: "How it works",
@@ -2265,7 +2277,7 @@ const en: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "A PERSONAL AND REALISTIC APPROACH TO CHANGE.",
     aboutText:
-      "My work starts from a simple idea: we often know exactly what we want to do, yet still find ourselves responding differently. Hypnosis allows us to work with this more automatic side of our experience while remaining aware, involved and in control.",
+      "My work starts from a simple idea: we often know exactly what we want to do, yet still find ourselves responding differently. Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply hypnosis and hypnotherapy to address these automatic responses while keeping full awareness, active participation and control.",
     aboutLink: "ABOUT ME",
     aboutImageAlt: "María Cabo",
     eventsTitle: "EVENTS",
@@ -2806,11 +2818,15 @@ const en: Dict = {
   about: {
     title: "About me",
     name: "María Cabo",
-    role: "Hypnosis facilitator for personal development",
+    role: "Facilitator of hypnosis and hypnotherapy for personal development",
     intro:
-      "I work with hypnosis applied to personal and professional development, through a warm, practical approach that respects each person's pace.",
-    traits: ["Warmth", "Clarity", "Useful resources"],
+      "I work with hypnosis and hypnotherapy applied to personal and professional development. I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, with an approachable, practical and respectful approach.",
+    traits: ["Warmth", "Ericksonian Training", "Practical tools"],
     highlights: [
+      {
+        title: "Instituto Erickson Madrid",
+        text: "Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy.",
+      },
       {
         title: "International experience",
         text: "I have lived and worked across Los Angeles, London, Barcelona, Madrid and Valencia.",
@@ -2826,8 +2842,8 @@ const en: Dict = {
     ],
     body: [
       "I work with adults who want to make a specific change and don't know where to start. My way of working is calm, curious and honest: understand first, propose after.",
-      "I believe in realistic expectations. Hypnosis can be a useful tool for habits, attention and stress responses, but it doesn't solve everything and it doesn't replace healthcare.",
-      "I work in Sueca, in Spanish and English, from an independent consultation room at Centro Sanar.",
+      "I believe in realistic expectations. Hypnosis and hypnotherapy are valuable tools for habits, attention and stress responses, but they don't solve everything and never replace healthcare.",
+      "I work in Sueca, in Spanish and English, from an independent consultation room at Centro Sanar, at private homes in Valencia city and online.",
     ],
     valuesTitle: "How I work",
     valuesSidebarTitle: "In every session",
@@ -2842,9 +2858,9 @@ const en: Dict = {
     statement:
       "My work is about supporting each person as they explore their patterns and offering tools to respond in ways that are more useful for them.",
     workEyebrow: "My way of working",
-    workTitle: "Hypnosis as a tool, not a magic formula.",
+    workTitle: "Hypnosis and hypnotherapy as tools, not magic formulas.",
     workText:
-      "I understand hypnosis as a resource that can support change, help observe automatic responses and train new ways of facing specific situations with more calm, confidence and choice.",
+      "I understand hypnosis and Ericksonian hypnotherapy as resources that support change, help observe automatic responses and train new ways of facing specific situations with more calm, confidence and choice.",
     focusAreas: [
       {
         title: "Practical change",
@@ -2860,19 +2876,21 @@ const en: Dict = {
       },
     ],
     pathEyebrow: "Background",
-    pathTitle: "A perspective shaped across cultures and professional settings.",
+    pathTitle:
+      "A perspective shaped across cultures, professional settings and specialized training.",
     cities: ["Los Angeles", "London", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "Throughout my career I have worked in corporate and international environments and lived in cities such as Los Angeles, London, Barcelona, Valencia and Madrid.",
-      "That experience has helped me understand that behind every goal there is a story, a way of responding and a different set of circumstances.",
+      "I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, one of Spain's leading reference institutions. This model emphasizes each person's unconscious resources and prior learnings to develop more adaptive and lasting responses.",
+      "Combining specialized training in hypnotherapy with international experience allows me to understand the unique background and demands behind every goal.",
     ],
     pathExtra:
       "My previous experience in international companies helps me understand common work-related challenges: public speaking, taking on responsibility, performing under pressure, staying focused or moving through demanding situations with more confidence.",
     sessionsEyebrow: "Sessions and collaborations",
     serviceAreaTitle: "Sueca · Ribera Baixa · Valencia · Gandia",
     sessionsTexts: [
-      "Individual sessions take place in person in a consultation room in Sueca, Valencia.",
-      "I can also travel to private homes, companies, offices, centres and organisations for sessions, workshops or professional-development programmes.",
+      "Individual sessions take place in person in a consultation room in Sueca, at private homes in Valencia city, or online.",
+      "I can also travel to companies, offices, centres and organisations for sessions, workshops or professional-development programmes.",
     ],
     quote:
       "Very often, change is not about becoming someone else, but about no longer being limited by patterns we no longer need.",
