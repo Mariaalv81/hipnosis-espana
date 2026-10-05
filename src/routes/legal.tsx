@@ -7,7 +7,8 @@ export const Route = createFileRoute("/legal")({
   head: () =>
     makeSeo({
       title: "Información legal · María A. Cabo",
-      description: "Aviso legal, privacidad, proveedores y condiciones del servicio de María A. Cabo.",
+      description:
+        "Aviso legal, privacidad, proveedores y condiciones del servicio de María A. Cabo.",
       path: "/legal",
     }),
   component: LegalPage,

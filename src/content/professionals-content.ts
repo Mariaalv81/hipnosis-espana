@@ -86,7 +86,8 @@ export interface ProfessionalsData {
 }
 
 export const professionalsEs: ProfessionalsData = {
-  seoTitle: "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
+  seoTitle:
+    "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
   seoDescription:
     "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Hipnosis para potenciar la adherencia y respuesta de tus clientes.",
   eyebrow: "HIPNOSIS COMO HERRAMIENTA COMPLEMENTARIA",

@@ -13,6 +13,7 @@ const staticRoutes = [
   { path: "/miedos-y-fobias", changefreq: "monthly", priority: "0.9" },
   { path: "/autoestima-y-confianza", changefreq: "monthly", priority: "0.9" },
   { path: "/concentracion-y-foco", changefreq: "monthly", priority: "0.9" },
+  { path: "/vidas-pasadas", changefreq: "weekly", priority: "0.9" },
   { path: "/sesiones", changefreq: "monthly", priority: "0.9" },
   { path: "/reservar", changefreq: "monthly", priority: "0.9" },
   { path: "/como-funciona", changefreq: "monthly", priority: "0.8" },

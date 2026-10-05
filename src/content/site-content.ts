@@ -1,6 +1,7 @@
 import type { Lang } from "@/lib/i18n";
 import { servicesEs, servicesVa, servicesEn } from "./services-content";
 import { professionalsEs, professionalsVa, professionalsEn } from "./professionals-content";
+import { pastLivesEs, pastLivesVa, pastLivesEn } from "./past-lives-content";
 
 const es = {
   brand: "María A. Cabo",
@@ -1078,6 +1079,7 @@ const es = {
     ],
   },
   professionalsPage: professionalsEs,
+  pastLivesPage: pastLivesEs,
   ...servicesEs,
 };
 
@@ -2146,6 +2148,7 @@ const va: Dict = {
     ],
   },
   professionalsPage: professionalsVa,
+  pastLivesPage: pastLivesVa,
   ...servicesVa,
 };
 
@@ -3211,6 +3214,7 @@ const en: Dict = {
     ],
   },
   professionalsPage: professionalsEn,
+  pastLivesPage: pastLivesEn,
   ...servicesEn,
 };
 

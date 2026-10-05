@@ -24,6 +24,7 @@ import { Route as EmpresasRouteImport } from './routes/empresas'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as HabitosNerviososRouteImport } from './routes/habitos-nerviosos'
+import { Route as HipnosisVidasPasadasRouteImport } from './routes/hipnosis-vidas-pasadas'
 import { Route as LegalRouteImport } from './routes/legal'
 import { Route as MiedosYFobiasRouteImport } from './routes/miedos-y-fobias'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
@@ -31,6 +32,7 @@ import { Route as ProfesionalesRouteImport } from './routes/profesionales'
 import { Route as ReservarRouteImport } from './routes/reservar'
 import { Route as SesionesRouteImport } from './routes/sesiones'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
+import { Route as VidasPasadasRouteImport } from './routes/vidas-pasadas'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as EmpresasContactoRouteImport } from './routes/empresas.contacto'
@@ -110,6 +112,11 @@ const HabitosNerviososRoute = HabitosNerviososRouteImport.update({
   path: '/habitos-nerviosos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HipnosisVidasPasadasRoute = HipnosisVidasPasadasRouteImport.update({
+  id: '/hipnosis-vidas-pasadas',
+  path: '/hipnosis-vidas-pasadas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LegalRoute = LegalRouteImport.update({
   id: '/legal',
   path: '/legal',
@@ -145,6 +152,11 @@ const SobreMiRoute = SobreMiRouteImport.update({
   path: '/sobre-mi',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VidasPasadasRoute = VidasPasadasRouteImport.update({
+  id: '/vidas-pasadas',
+  path: '/vidas-pasadas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -177,6 +189,7 @@ export interface FileRoutesByFullPath {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
+  '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -184,6 +197,7 @@ export interface FileRoutesByFullPath {
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/vidas-pasadas': typeof VidasPasadasRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
@@ -203,6 +217,7 @@ export interface FileRoutesByTo {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
+  '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -210,6 +225,7 @@ export interface FileRoutesByTo {
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/vidas-pasadas': typeof VidasPasadasRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog': typeof BlogIndexRoute
@@ -231,6 +247,7 @@ export interface FileRoutesById {
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
+  '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -238,6 +255,7 @@ export interface FileRoutesById {
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/vidas-pasadas': typeof VidasPasadasRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
@@ -260,6 +278,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
+    | '/hipnosis-vidas-pasadas'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -267,6 +286,7 @@ export interface FileRouteTypes {
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
+    | '/vidas-pasadas'
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog/'
@@ -286,6 +306,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
+    | '/hipnosis-vidas-pasadas'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -293,6 +314,7 @@ export interface FileRouteTypes {
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
+    | '/vidas-pasadas'
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog'
@@ -313,6 +335,7 @@ export interface FileRouteTypes {
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
+    | '/hipnosis-vidas-pasadas'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -320,6 +343,7 @@ export interface FileRouteTypes {
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
+    | '/vidas-pasadas'
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog/'
@@ -341,6 +365,7 @@ export interface RootRouteChildren {
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
   HabitosNerviososRoute: typeof HabitosNerviososRoute
+  HipnosisVidasPasadasRoute: typeof HipnosisVidasPasadasRoute
   LegalRoute: typeof LegalRoute
   MiedosYFobiasRoute: typeof MiedosYFobiasRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
@@ -348,6 +373,7 @@ export interface RootRouteChildren {
   ReservarRoute: typeof ReservarRoute
   SesionesRoute: typeof SesionesRoute
   SobreMiRoute: typeof SobreMiRoute
+  VidasPasadasRoute: typeof VidasPasadasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -457,6 +483,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HabitosNerviososRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hipnosis-vidas-pasadas': {
+      id: '/hipnosis-vidas-pasadas'
+      path: '/hipnosis-vidas-pasadas'
+      fullPath: '/hipnosis-vidas-pasadas'
+      preLoaderRoute: typeof HipnosisVidasPasadasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/legal': {
       id: '/legal'
       path: '/legal'
@@ -504,6 +537,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre-mi'
       fullPath: '/sobre-mi'
       preLoaderRoute: typeof SobreMiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vidas-pasadas': {
+      id: '/vidas-pasadas'
+      path: '/vidas-pasadas'
+      fullPath: '/vidas-pasadas'
+      preLoaderRoute: typeof VidasPasadasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -570,6 +610,7 @@ const rootRouteChildren: RootRouteChildren = {
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
   HabitosNerviososRoute: HabitosNerviososRoute,
+  HipnosisVidasPasadasRoute: HipnosisVidasPasadasRoute,
   LegalRoute: LegalRoute,
   MiedosYFobiasRoute: MiedosYFobiasRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
@@ -577,6 +618,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReservarRoute: ReservarRoute,
   SesionesRoute: SesionesRoute,
   SobreMiRoute: SobreMiRoute,
+  VidasPasadasRoute: VidasPasadasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

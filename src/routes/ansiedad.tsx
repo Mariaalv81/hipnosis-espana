@@ -551,11 +551,11 @@ function AnsiedadPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> María A. Cabo ofrece acompañamiento de desarrollo
-            personal y bienestar. La hipnosis es una disciplina complementaria y un recurso de
-            autorregulación natural. No es un servicio sanitario y no sustituye la evaluación,
-            diagnóstico ni tratamiento médico, psiquiátrico o psicológico cuando estos son
-            necesarios.
+            <strong>Aviso de transparencia:</strong> María A. Cabo ofrece acompañamiento de
+            desarrollo personal y bienestar. La hipnosis es una disciplina complementaria y un
+            recurso de autorregulación natural. No es un servicio sanitario y no sustituye la
+            evaluación, diagnóstico ni tratamiento médico, psiquiátrico o psicológico cuando estos
+            son necesarios.
           </p>
         </div>
       </section>

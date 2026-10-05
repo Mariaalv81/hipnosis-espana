@@ -78,7 +78,12 @@ export function makeLocalBusinessSchema() {
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
     name: "María A. Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca",
-    alternateName: ["María A. Cabo", "María Cabo", "María A. Cabo Hipnoterapia", "Hipnosis María A. Cabo"],
+    alternateName: [
+      "María A. Cabo",
+      "María Cabo",
+      "María A. Cabo Hipnoterapia",
+      "Hipnosis María A. Cabo",
+    ],
     url: SITE_URL,
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
@@ -113,11 +118,25 @@ export function makeLocalBusinessSchema() {
       "Gestión del estrés",
       "Desarrollo personal",
       "Atención focalizada y concentración",
+      "Hipnosis para vidas pasadas",
+      "Regresión a vidas pasadas",
+      "Registros Akáshicos",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Servicios de Hipnosis y Desarrollo Personal",
       itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Hipnosis para vidas pasadas y Registros Akáshicos",
+            description:
+              "Regresión consciente a vidas pasadas y acceso a Registros Akáshicos en Sueca, a domicilio en Valencia y online para explorar memorias del alma.",
+          },
+          price: "85",
+          priceCurrency: "EUR",
+        },
         {
           "@type": "Offer",
           itemOffered: {

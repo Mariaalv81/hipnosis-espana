@@ -6,7 +6,8 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/deporte-y-motivacion")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para el Rendimiento Deportivo y Motivación en Valencia y Sueca · María A. Cabo",
+      title:
+        "Hipnosis para el Rendimiento Deportivo y Motivación en Valencia y Sueca · María A. Cabo",
       description:
         "Supera bloqueos mentales, gestiona la presión competitiva y activa tu máximo foco en el deporte. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
       path: "/deporte-y-motivacion",

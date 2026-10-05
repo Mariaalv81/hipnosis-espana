@@ -30,7 +30,8 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/profesionales")({
   head: () =>
     makeSeo({
-      title: "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
+      title:
+        "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
       description:
         "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Hipnosis para potenciar la adherencia y respuesta de tus clientes.",
       path: "/profesionales",
@@ -658,11 +659,11 @@ function ProfessionalsPage() {
         <div className="container-page text-center">
           <p className="mx-auto max-w-3xl text-xs leading-relaxed text-muted-foreground">
             <strong>Aviso de rigor ético y deontológico:</strong> El acompañamiento con hipnosis
-            ofrecido por María A. Cabo se enmarca en el desarrollo personal, la gestión emocional y la
-            modificación de automatismos y hábitos. No constituye un servicio sanitario ni sustituye
-            tratamientos médicos, farmacológicos o de psicología clínica reglada. La colaboración se
-            establece desde la complementariedad y el respeto escrupuloso a las competencias de cada
-            profesional de la salud.
+            ofrecido por María A. Cabo se enmarca en el desarrollo personal, la gestión emocional y
+            la modificación de automatismos y hábitos. No constituye un servicio sanitario ni
+            sustituye tratamientos médicos, farmacológicos o de psicología clínica reglada. La
+            colaboración se establece desde la complementariedad y el respeto escrupuloso a las
+            competencias de cada profesional de la salud.
           </p>
         </div>
       </section>
