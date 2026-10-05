@@ -586,7 +586,7 @@ function PastLivesPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María A. Cabo - Facilitadora de Hipnosis"
+                alt="María A. Cabo - Psicoterapeuta"
                 width={1254}
                 height={1254}
                 loading="lazy"

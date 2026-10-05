@@ -21,15 +21,15 @@ import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 export const Route = createFileRoute("/ansiedad")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María A. Cabo",
+      title: "Hipnosis para la Ansiedad, Miedos y Fobias en Valencia y Sueca · Solución Natural | María A. Cabo",
       description:
-        "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
+        "Calma la ansiedad, desactiva el pánico y supera miedos y fobias (volar, conducir, hablar en público) con psicoterapia e hipnosis en Sueca, Valencia y online. 70 €/sesión.",
       path: "/ansiedad",
     }),
   component: AnsiedadPage,
 });
 
-function AnsiedadPage() {
+export function AnsiedadPage() {
   const { t } = useI18n();
   const ap = t.anxietyPage;
   const [submitting, setSubmitting] = useState(false);
@@ -37,9 +37,9 @@ function AnsiedadPage() {
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const serviceSchema = makeServiceSchema({
-    name: "Hipnosis para la ansiedad y regulación corporal natural",
+    name: "Hipnosis para la ansiedad, miedos y fobias · Regulación somática y serenidad",
     description:
-      "Acompañamiento natural con hipnosis para calmar la ansiedad, desactivar la respuesta de alerta y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
+      "Acompañamiento natural con hipnosis y psicoterapia para calmar la ansiedad, superar miedos y fobias, desactivar la respuesta de alerta y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
     price: "70 €",
     path: "/ansiedad",
     areaServed: [
@@ -74,7 +74,7 @@ function AnsiedadPage() {
     };
 
     const fullMessage = [
-      "Consulta / Solicitud sobre Hipnosis para la Ansiedad:",
+      "Consulta / Solicitud sobre Hipnosis para Ansiedad, Miedos o Fobias:",
       "",
       `Nombre: ${data.name}`,
       `Email: ${data.email}`,

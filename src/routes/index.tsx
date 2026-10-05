@@ -18,9 +18,9 @@ export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
       title:
-        "María A. Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca | Presencial y a domicilio",
+        "María A. Cabo · Psicoterapeuta en Valencia y Sueca | Hipnosis Presencial y a Domicilio",
       description:
-        "Sesiones de hipnosis e hipnoterapia en Sueca, a domicilio en casas de particulares en Valencia ciudad y online. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
+        "Psicoterapeuta formada en el Instituto Erickson Madrid. Sesiones de hipnosis y psicoterapia ericksoniana en Sueca, Valencia y online para estrés, insomnio, ansiedad y hábitos.",
       path: "/",
     }),
   component: HypnosisPage,

@@ -21,10 +21,12 @@ import { Route as ControlDePesoRouteImport } from './routes/control-de-peso'
 import { Route as DejarDeFumarRouteImport } from './routes/dejar-de-fumar'
 import { Route as DeporteYMotivacionRouteImport } from './routes/deporte-y-motivacion'
 import { Route as EmpresasRouteImport } from './routes/empresas'
+import { Route as EstresEInsomnioRouteImport } from './routes/estres-e-insomnio'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as HabitosNerviososRouteImport } from './routes/habitos-nerviosos'
 import { Route as HipnosisVidasPasadasRouteImport } from './routes/hipnosis-vidas-pasadas'
+import { Route as InsomnioRouteImport } from './routes/insomnio'
 import { Route as LegalRouteImport } from './routes/legal'
 import { Route as MiedosYFobiasRouteImport } from './routes/miedos-y-fobias'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
@@ -97,6 +99,11 @@ const EmpresasRoute = EmpresasRouteImport.update({
   path: '/empresas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EstresEInsomnioRoute = EstresEInsomnioRouteImport.update({
+  id: '/estres-e-insomnio',
+  path: '/estres-e-insomnio',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EventosRoute = EventosRouteImport.update({
   id: '/eventos',
   path: '/eventos',
@@ -115,6 +122,11 @@ const HabitosNerviososRoute = HabitosNerviososRouteImport.update({
 const HipnosisVidasPasadasRoute = HipnosisVidasPasadasRouteImport.update({
   id: '/hipnosis-vidas-pasadas',
   path: '/hipnosis-vidas-pasadas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsomnioRoute = InsomnioRouteImport.update({
+  id: '/insomnio',
+  path: '/insomnio',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LegalRoute = LegalRouteImport.update({
@@ -186,10 +198,12 @@ export interface FileRoutesByFullPath {
   '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
+  '/estres-e-insomnio': typeof EstresEInsomnioRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
+  '/insomnio': typeof InsomnioRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -214,10 +228,12 @@ export interface FileRoutesByTo {
   '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
+  '/estres-e-insomnio': typeof EstresEInsomnioRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
+  '/insomnio': typeof InsomnioRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -244,10 +260,12 @@ export interface FileRoutesById {
   '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
   '/empresas': typeof EmpresasRouteWithChildren
+  '/estres-e-insomnio': typeof EstresEInsomnioRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
   '/habitos-nerviosos': typeof HabitosNerviososRoute
   '/hipnosis-vidas-pasadas': typeof HipnosisVidasPasadasRoute
+  '/insomnio': typeof InsomnioRoute
   '/legal': typeof LegalRoute
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
@@ -275,10 +293,12 @@ export interface FileRouteTypes {
     | '/dejar-de-fumar'
     | '/deporte-y-motivacion'
     | '/empresas'
+    | '/estres-e-insomnio'
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
     | '/hipnosis-vidas-pasadas'
+    | '/insomnio'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -303,10 +323,12 @@ export interface FileRouteTypes {
     | '/dejar-de-fumar'
     | '/deporte-y-motivacion'
     | '/empresas'
+    | '/estres-e-insomnio'
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
     | '/hipnosis-vidas-pasadas'
+    | '/insomnio'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -332,10 +354,12 @@ export interface FileRouteTypes {
     | '/dejar-de-fumar'
     | '/deporte-y-motivacion'
     | '/empresas'
+    | '/estres-e-insomnio'
     | '/eventos'
     | '/faq'
     | '/habitos-nerviosos'
     | '/hipnosis-vidas-pasadas'
+    | '/insomnio'
     | '/legal'
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
@@ -362,10 +386,12 @@ export interface RootRouteChildren {
   DejarDeFumarRoute: typeof DejarDeFumarRoute
   DeporteYMotivacionRoute: typeof DeporteYMotivacionRoute
   EmpresasRoute: typeof EmpresasRouteWithChildren
+  EstresEInsomnioRoute: typeof EstresEInsomnioRoute
   EventosRoute: typeof EventosRoute
   FaqRoute: typeof FaqRoute
   HabitosNerviososRoute: typeof HabitosNerviososRoute
   HipnosisVidasPasadasRoute: typeof HipnosisVidasPasadasRoute
+  InsomnioRoute: typeof InsomnioRoute
   LegalRoute: typeof LegalRoute
   MiedosYFobiasRoute: typeof MiedosYFobiasRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
@@ -462,6 +488,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmpresasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/estres-e-insomnio': {
+      id: '/estres-e-insomnio'
+      path: '/estres-e-insomnio'
+      fullPath: '/estres-e-insomnio'
+      preLoaderRoute: typeof EstresEInsomnioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/eventos': {
       id: '/eventos'
       path: '/eventos'
@@ -488,6 +521,13 @@ declare module '@tanstack/react-router' {
       path: '/hipnosis-vidas-pasadas'
       fullPath: '/hipnosis-vidas-pasadas'
       preLoaderRoute: typeof HipnosisVidasPasadasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insomnio': {
+      id: '/insomnio'
+      path: '/insomnio'
+      fullPath: '/insomnio'
+      preLoaderRoute: typeof InsomnioRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/legal': {
@@ -607,10 +647,12 @@ const rootRouteChildren: RootRouteChildren = {
   DejarDeFumarRoute: DejarDeFumarRoute,
   DeporteYMotivacionRoute: DeporteYMotivacionRoute,
   EmpresasRoute: EmpresasRouteWithChildren,
+  EstresEInsomnioRoute: EstresEInsomnioRoute,
   EventosRoute: EventosRoute,
   FaqRoute: FaqRoute,
   HabitosNerviososRoute: HabitosNerviososRoute,
   HipnosisVidasPasadasRoute: HipnosisVidasPasadasRoute,
+  InsomnioRoute: InsomnioRoute,
   LegalRoute: LegalRoute,
   MiedosYFobiasRoute: MiedosYFobiasRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,

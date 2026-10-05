@@ -224,7 +224,7 @@ export const professionalsEs: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Trabajo desde una convicción sencilla pero profunda: la inmensa mayoría de las personas saben exactamente lo que deberían hacer, pero su cuerpo y su mente inconsciente siguen respondiendo con automatismos construidos durante años.",
-    "Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
+    "Como psicoterapeuta formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, aplico una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
     "Utilizo la hipnosis y la hipnoterapia como una vía complementaria, rápida y estructurada para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el poder multiplicador de un equipo multidisciplinar que suma fuerzas en beneficio del paciente.",
   ],
   aboutLocation:
@@ -331,7 +331,7 @@ export const professionalsVa: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Treballe des d'una convicció senzilla però profunda: la immensa majoria de les persones saben exactament el que haurien de fer, però el seu cos i la seua ment inconscient continuen responent amb automatismes construïts durant anys.",
-    "M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
+    "Com a psicoterapeuta formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, aplique una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
     "Utilitze la hipnosi i la hipnoteràpia com una via complementària, ràpida i estructurada per a intervindre sobre eixa part automàtica de l'experiència. Col·labore amb professionals de la salut i el benestar de València i la Ribera Baixa perquè crec fermament en el poder multiplicador d'un equip multidisciplinari que suma forces en benefici del pacient.",
   ],
 
@@ -387,7 +387,7 @@ export const professionalsEn: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "My work is grounded in a simple yet profound premise: most people know intellectually what they need to do, but their nervous system and subconscious mind continue reacting with automatic habits formed over years.",
-    "I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
+    "As a psychotherapist trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
     "I utilize hypnosis and hypnotherapy as a structured complementary tool to address automatic responses. I collaborate with healthcare and wellness practitioners across Valencia and Ribera Baixa, firmly believing in the synergistic value of an interdisciplinary network that enhances client outcomes.",
   ],
 

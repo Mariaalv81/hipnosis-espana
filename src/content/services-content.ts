@@ -7,6 +7,7 @@ export interface ServicesDictionary {
   fearsPage: ServiceLandingPageData;
   confidencePage: ServiceLandingPageData;
   focusPage: ServiceLandingPageData;
+  insomniaPage: ServiceLandingPageData;
 }
 
 export const servicesEs: ServicesDictionary = {
@@ -870,6 +871,157 @@ export const servicesEs: ServicesDictionary = {
       },
     ],
   },
+
+  insomniaPage: {
+    eyebrow: "SUEÑO PROFUNDO Y DESCANSO NATURAL · HIPNOSIS EN SUECA Y VALENCIA",
+    title: "HIPNOSIS PARA EL INSOMNIO: APAGAR LA MENTE Y RECUPERAR EL SUEÑO REPARADOR",
+    subtitle:
+      "El insomnio no es una incapacidad para dormir; es tu sistema nervioso interpretando la cama como un lugar de alerta y rumiación en piloto automático.",
+    introText:
+      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con hipnosis y psicoterapia ericksoniana no forzamos el sueño (porque forzarlo genera más tensión): reprogramamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cerebro a activar de manera natural las ondas de descanso profundo.",
+    trustBadges: [
+      "Solución 100% natural y sin fármacos",
+      "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
+      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+    ],
+    ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
+    ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
+    symptomsTitle: "CÓMO SE MANIFIESTAN EL INSOMNIO Y LA HIPERACTIVACIÓN NOCTURNA",
+    symptomsSubtitle:
+      "Patrones fisiológicos involuntarios que impiden la transición biológica al sueño profundo.",
+    symptoms: [
+      {
+        title: "Dificultad para conciliar el sueño",
+        text: "Pasar más de una hora dando vueltas en la cama con una mente acelerada que no encuentra el botón de apagado.",
+      },
+      {
+        title: "Despertares nocturnos con alerta",
+        text: "Despertarse a mitad de la noche en estado de guardia o hipervigilancia y sentir angustia al ver que el reloj avanza.",
+      },
+      {
+        title: "Rumiación mental en bucle",
+        text: "Pensar compulsivamente en tareas pendientes, preocupaciones cotidianas o en lo cansado/a que vas a estar al día siguiente.",
+      },
+      {
+        title: "Fatiga crónica y niebla mental",
+        text: "Levantarte con pesadez corporal, sensación de no haber descansado, irritabilidad y falta de energía durante la jornada.",
+      },
+    ],
+    symptomsNote:
+      "El sueño es un proceso reflejo: no se puede exigir por la fuerza. Cuanto más intentas obligarte a dormir, más cortisol y adrenalina liberas. La hipnosis desactiva esa lucha interna y restaura el permiso biológico para soltar el control.",
+    whyTitle: "¿POR QUÉ LA HIPNOSIS ES TAN EFECTIVA PARA EL INSOMNIO?",
+    whyParagraphs: [
+      "El insomnio psicofisiológico surge de un condicionamiento involuntario: tu cerebro ha asociado el acto de acostarse no con la desconexión, sino con el esfuerzo por dormir y la preocupación. Esta tensión refleja activa el sistema nervioso simpático ('lucha o huida'), manteniendo los niveles de alerta corporal elevados justo cuando deberían descender.",
+      "Los fármacos inductores del sueño suelen actuar como un anestésico químico que suprime la conciencia pero altera las fases de sueño REM y delta profundo, generando tolerancia sin resolver la causa subyacente.",
+      "En sesión de hipnosis entrenamos a tu sistema nervioso para transitar conscientemente de las ondas beta (vigilia activa) a las frecuencias alfa y theta (relajación profunda previa al sueño). Al asociar la cama con seguridad somática y silencio mental, reactivamos el automatismo natural del sueño reparador.",
+    ],
+    pillarsTitle: "EL RECORRIDO PARA RECUPERAR UN SUEÑO PROFUNDO",
+    pillarsIntro:
+      "Un proceso estructurado de psicoterapia e hipnosis enfocado en devolverte el descanso desde la primera sesión.",
+    steps: [
+      {
+        num: "01",
+        badge: "DESACTIVACIÓN",
+        title: "Apagar la alerta somática del cuerpo",
+        text: "Enseñamos a tu sistema nervioso a pasar del modo alerta al modo parasimpático de descanso, liberando tensión en cuello, mandíbula y respiración.",
+      },
+      {
+        num: "02",
+        badge: "REPROGRAMACIÓN",
+        title: "Desacoplar la cama de la angustia",
+        text: "Eliminamos la asociación refleja entre meterse en la cama y la ansiedad por no dormir, transformando el dormitorio en un espacio seguro de paz.",
+      },
+      {
+        num: "03",
+        badge: "SILENCIO MENTAL",
+        title: "Frenar el diálogo interno y la rumiación",
+        text: "Instalamos recursos de focalización y técnicas de autohipnosis para apagar los pensamientos intrusivos y preocupaciones nocturnas al instante.",
+      },
+      {
+        num: "04",
+        badge: "AUTONOMÍA",
+        title: "Pautas de sueño y descanso duradero",
+        text: "Integras anclajes sencillos para mantener un sueño continuo, profundo y reparador noche tras noche, a tu ritmo y sin crear dependencias.",
+      },
+    ],
+    locationsTitle: "DÓNDE REALIZAMOS LAS SESIONES",
+    locationsIntro:
+      "Atención cercana y personalizada en Sueca, la comarca de la Ribera Baixa y Valencia ciudad:",
+    locations: [
+      {
+        name: "Despacho en Sueca (Centro Sanar)",
+        area: "Ribera Baixa",
+        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso para personas de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara y El Perelló.",
+      },
+      {
+        name: "A domicilio en Valencia ciudad",
+        area: "Valencia capital y alrededores",
+        desc: "Ideal si prefieres trabajar desde la comodidad, privacidad absoluta y tranquilidad de tu propio hogar en Valencia.",
+      },
+      {
+        name: "Sesiones Online en directo",
+        area: "Cualquier ubicación",
+        desc: "Por videoconferencia individual en directo, con la misma eficacia y guiada paso a paso desde el espacio donde te sientas más cómodo/a.",
+      },
+    ],
+    pricingTitle: "PRECIOS CLAROS Y CONDICIONES TRANSPARENTES",
+    price: "70 €",
+    priceUnit: "por sesión (1 hora)",
+    priceNote: "A tu propio ritmo · Sin compromisos obligatorios",
+    pricingFeatures: [
+      "Sesión individual y personalizada de 60 minutos.",
+      "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
+      "Pautas prácticas de neurobiología del sueño e higiene del descanso.",
+      "Técnicas de autohipnosis aplicables cada noche desde tu cama.",
+    ],
+    formEyebrow: "CONSULTA O RESERVA",
+    formTitle: "RECUPERA TU SUEÑO Y TU CALMA NOCTURNA",
+    formSubtitle:
+      "Rellena este breve formulario para consultar tus dudas o pedir tu sesión. Te responderé personalmente con total cercanía.",
+    formFields: {
+      name: "Tu nombre",
+      email: "Tu correo electrónico",
+      phone: "Tu teléfono de contacto",
+      modality: "Modalidad preferida",
+      modalityOptions: {
+        sueca: "Despacho en Sueca (Centro Sanar)",
+        valencia: "A domicilio en Valencia ciudad",
+        online: "Online por videoconferencia",
+      },
+      specificDetail: "¿Qué patrón de insomnio experimentas con más frecuencia?",
+      message: "Cuéntame brevemente tu situación con el sueño...",
+      submit: "Enviar consulta sobre insomnio",
+      submitting: "Enviando consulta...",
+      successTitle: "Mensaje recibido con éxito",
+      successText:
+        "Gracias por contactar. Te responderé en breve para valorar tu caso y orientarte sobre cómo podemos trabajar tu descanso.",
+      mailtoFallback: "O escríbeme directamente por email si lo prefieres",
+    },
+    faqsTitle: "PREGUNTAS FRECUENTES SOBRE HIPNOSIS PARA EL INSOMNIO",
+    faqsSubtitle: "Respuestas claras a las dudas más habituales sobre el acompañamiento:",
+    faqs: [
+      {
+        q: "¿Cómo ayuda la hipnosis si llevo meses o años con insomnio?",
+        a: "El insomnio crónico suele sostenerse por el 'miedo a no poder dormir'. La hipnosis rompe ese círculo vicioso desactivando la hipervigilancia del sistema nervioso y devolviendo al cuerpo su reflejo natural de relajación somática.",
+      },
+      {
+        q: "¿Es compatible con la medicación para dormir que ya tomo?",
+        a: "Totalmente. El trabajo con hipnosis es no invasivo y complementario. Muchas personas notan que, al calmar la mente de forma natural y recuperar confianza, pueden coordinar con su médico una reducción progresiva cuando se sienten preparadas.",
+      },
+      {
+        q: "¿Me quedaré dormido/a durante la sesión de hipnosis?",
+        a: "Durante la sesión estás en un estado de relajación profunda pero consciente, escuchando mi voz y participando activamente. El objetivo no es que duermas en la consulta, sino que tu cerebro aprenda a reproducir ese estado por la noche en tu cama.",
+      },
+      {
+        q: "¿En cuántas sesiones se nota mejoría en el sueño?",
+        a: "Desde la primera sesión adquieres herramientas de calma y te llevas pautas de autohipnosis. Para consolidar el cambio y reajustar los ciclos de sueño se suelen necesitar entre 2 y 4 sesiones, siempre a tu propio ritmo.",
+      },
+      {
+        q: "¿Dónde se realizan las sesiones?",
+        a: "En mi despacho en Sueca (Centro Sanar, Ribera Baixa), a domicilio en casas de particulares en Valencia ciudad para tu máxima comodidad, o en formato online por videoconferencia.",
+      },
+    ],
+  },
 };
 
 export const servicesVa: ServicesDictionary = {
@@ -1014,6 +1166,32 @@ export const servicesVa: ServicesDictionary = {
     formSubtitle:
       "Emplena este formulari per a consultar la teua situació o oposició. Et respondré personalment.",
   },
+
+  insomniaPage: {
+    ...servicesEs.insomniaPage,
+    eyebrow: "SON PROFUND I DESCANS NATURAL · HIPNOSI A SUECA I VALÈNCIA",
+    title: "HIPNOSI PER A L'INSOMNI: APAGAR LA MENT I RECUPERAR EL SON REPARADOR",
+    subtitle:
+      "L'insomni no és una incapacitat per a dormir; és el teu sistema nerviós interpretant el llit com un lloc d'alerta i rumiació en pilot automàtic.",
+    introText:
+      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb hipnosi i psicoteràpia ericksoniana no forcem el son: reprogramem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cervell a activar de manera natural les ones de descans profund.",
+    trustBadges: [
+      "Solució 100% natural i sense fàrmacs",
+      "Sueca (Centre Sanar) · A domicili a València · En línia",
+      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+    ],
+    ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
+    ctaSecondary: "COM T'AJUDA LA HIPNOSI",
+    symptomsTitle: "COM ES MANIFESTA L'INSOMNI I LA HIPERACTIVACIÓ NOCTURNA",
+    symptomsSubtitle:
+      "Patrons fisiològics involuntaris que impedixen la transició biològica al son profund.",
+    pricingTitle: "PREUS CLARS I CONDICIONS TRANSPARENTS",
+    priceNote: "Al teu propi ritme · Sense compromisos obligatoris",
+    formEyebrow: "CONSULTA O RESERVA",
+    formTitle: "RECUPERA EL TEU SON I LA CALMA NOCTURNA",
+    formSubtitle:
+      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Et respondré personalment amb total proximitat.",
+  },
 };
 
 export const servicesEn: ServicesDictionary = {
@@ -1156,5 +1334,31 @@ export const servicesEn: ServicesDictionary = {
     formTitle: "TRAIN YOUR MIND TO PERFORM AT ITS PEAK",
     formSubtitle:
       "Fill out this form to inquire about your studies or book a session. I will reply to you personally.",
+  },
+
+  insomniaPage: {
+    ...servicesEs.insomniaPage,
+    eyebrow: "DEEP SLEEP & NATURAL REST · HYPNOSIS IN SUECA & VALENCIA",
+    title: "HYPNOSIS FOR INSOMNIA: QUIET THE MIND & REGAIN RESTFUL SLEEP",
+    subtitle:
+      "Insomnia is not an inability to sleep; it is your nervous system interpreting bedtime as an alert state of rumination on autopilot.",
+    introText:
+      "You go to bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. With hypnosis and Ericksonian psychotherapy, we do not force sleep: we reprogram the somatic relaxation reflex, silence nighttime internal chatter, and teach your brain to access deep restorative brainwaves naturally.",
+    trustBadges: [
+      "100% natural, medication-free approach",
+      "Sueca (Centro Sanar) · Home visits in Valencia · Online",
+      "1-hour individual sessions · 70 € (at your own pace)",
+    ],
+    ctaPrimary: "BOOK A SESSION OR INQUIRE",
+    ctaSecondary: "HOW HYPNOSIS HELPS YOU",
+    symptomsTitle: "SIGNS OF INSOMNIA & NOCTURNAL HYPERAROUSAL",
+    symptomsSubtitle:
+      "Involuntary physiological patterns that interrupt the natural transition to deep sleep.",
+    pricingTitle: "CLEAR PRICING & HONEST CONDITIONS",
+    priceNote: "At your own pace · No mandatory commitments",
+    formEyebrow: "INQUIRY OR BOOKING",
+    formTitle: "RECLAIM RESTFUL SLEEP & NIGHTTIME CALM",
+    formSubtitle:
+      "Fill out this brief form to discuss your sleep situation or book a session. I will get back to you personally.",
   },
 };

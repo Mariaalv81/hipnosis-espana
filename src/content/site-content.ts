@@ -49,7 +49,7 @@ const es = {
       "Calma ante situaciones que te tensan",
       "Foco y motivación para sostener un cambio",
       "Confianza al hablar, decidir o exponerte",
-      "Descanso y relación con el estrés cotidiano",
+      "Descanso e insomnio: apagar la mente y recuperar el sueño reparador",
       "Preparación de retos concretos",
     ],
     journalTitle: "Últimos escritos",
@@ -64,7 +64,7 @@ const es = {
     heroTitle2: "ENTRENA TU MENTE.",
     heroTitle3: "AVANZA.",
     heroIntro:
-      "Acompañamiento con hipnosis para trabajar hábitos, confianza, foco y respuestas automáticas. Despacho en Sueca, a domicilio en Valencia y formato online.",
+      "Acompañamiento con hipnosis para trabajar hábitos, insomnio, estrés, confianza, foco y respuestas automáticas. Despacho en Sueca, a domicilio en Valencia y formato online.",
     heroPrimary: "RESERVAR UNA SESIÓN",
     heroSecondary: "SOLUCIONES PARA EMPRESAS",
     heroHow: "Conocer cómo funciona la hipnosis →",
@@ -73,12 +73,12 @@ const es = {
     changeTitle: "¿QUÉ QUIERES CAMBIAR?",
     changeCards: [
       {
-        title: "MIEDOS Y EVITACIÓN",
-        text: "Sentirte más tranquilo ante situaciones que ahora generan bloqueo o evitación.",
+        title: "ANSIEDAD, MIEDOS Y FOBIAS",
+        text: "Sentirte tranquilo ante situaciones que ahora generan bloqueo, pánico o evitación.",
       },
       {
-        title: "ESTRÉS Y CALMA",
-        text: "Trabajar respuestas automáticas y aprender a recuperar un estado de mayor calma.",
+        title: "ESTRÉS, CALMA E INSOMNIO",
+        text: "Desactivar la alerta del cuerpo, superar el insomnio y la rumiación nocturna, y recuperar un sueño profundo y reparador.",
       },
       {
         title: "HÁBITOS",
@@ -134,7 +134,7 @@ const es = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA FORMA CERCANA Y REALISTA DE TRABAJAR CON EL CAMBIO.",
     aboutText:
-      "Mi trabajo parte de una idea sencilla: muchas veces sabemos perfectamente lo que queremos hacer, pero seguimos reaccionando de otra manera. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, empleo la hipnosis y la hipnoterapia para intervenir sobre esa parte automática de nuestra experiencia, manteniendo siempre la consciencia, la participación y el control.",
+      "Mi trabajo parte de una idea sencilla: muchas veces sabemos perfectamente lo que queremos hacer, pero seguimos reaccionando de otra manera. Como psicoterapeuta formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, empleo la hipnosis para intervenir sobre esa parte automática de nuestra experiencia, manteniendo siempre la consciencia, la participación y el control.",
     aboutLink: "CONOCERME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "ENCUENTROS",
@@ -399,16 +399,17 @@ const es = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María A. Cabo",
+    seoTitle:
+      "Hipnosis para la Ansiedad, Miedos y Fobias en Valencia y Sueca · Solución Natural | María A. Cabo",
     seoDescription:
-      "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
-    eyebrow: "SOLUCIÓN NATURAL · HIPNOSIS EN VALENCIA Y RIBERA BAIXA",
-    eyebrowNav: "Hipnosis para la Ansiedad",
-    title: "CALMAR LA ANSIEDAD Y ENSEÑAR A TU CUERPO A RECUPERAR LA PAZ",
+      "Calma la ansiedad, desactiva el pánico y supera miedos y fobias (volar, conducir, hablar en público) con psicoterapia e hipnosis en Sueca, Valencia y online. 70 €/sesión.",
+    eyebrow: "SOLUCIÓN NATURAL · ANSIEDAD, MIEDOS Y FOBIAS · VALENCIA Y SUECA",
+    eyebrowNav: "Ansiedad, Miedos y Fobias",
+    title: "CALMAR LA ANSIEDAD, DESACTIVAR EL PÁNICO Y SUPERAR MIEDOS Y FOBIAS",
     subtitle:
-      "La ansiedad no se resuelve forzando a la mente a no pensar. Se alivia enseñando a tu sistema nervioso a desactivar la respuesta de alerta.",
+      "La ansiedad y las fobias no se resuelven forzando a la mente a no pensar. Se superan enseñando a tu sistema nervioso a apagar la respuesta de alarma y recuperar tu libertad.",
     introText:
-      "Opresión en el pecho, nudo en el estómago, respiración corta o una mente que no para de anticipar problemas. Cuando la ansiedad se cronifica, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis aplicada trabajamos en ese nivel profundo e involuntario: ayudamos a tu cuerpo a recordar la relajación profunda y reprogramamos las respuestas de tensión para que recuperes el control de forma natural y sin fármacos.",
+      "Opresión en el pecho, nudo en el estómago, respiración corta, mente que anticipa catástrofes, o pánico paralizante a volar, conducir por autovía o hablar en público. Cuando la ansiedad y las fobias se cronifican, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis y psicoterapia ericksoniana trabajamos en ese nivel profundo e involuntario: ayudamos a tu cuerpo a recordar la seguridad somática, desensibilizamos los disparadores de miedo y reprogramamos las respuestas de tensión para que recuperes el control de forma natural y sin fármacos.",
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
     trustBadges: [
@@ -421,7 +422,7 @@ const es = {
       "La ansiedad no es una debilidad ni una falta de carácter; es tu sistema nervioso interpretando amenazas en piloto automático.",
     symptoms: [
       {
-        title: "Tensión física constante",
+        title: "Tensión física y opresión",
         text: "Opresión en el pecho o garganta, respiración entrecortada, mandíbula apretada, mareo tensional o nudo en el estómago.",
       },
       {
@@ -429,12 +430,12 @@ const es = {
         text: "Pensamientos anticipatorios en bucle, preocupación desmedida por el futuro y dificultad para frenar el flujo mental.",
       },
       {
-        title: "Descanso fragmentado e insomnio",
-        text: "Irte a la cama con el cuerpo en guardia, despertares nocturnos sobresaltados o levantarte con la misma sensación de fatiga.",
+        title: "Miedos y fobias específicas",
+        text: "Bloqueo y pánico ante situaciones concretas: miedo a volar, conducir en autovías o túneles (amaxofobia), agujas o hablar en público.",
       },
       {
-        title: "Miedo a desbordarse",
-        text: "Temor a perder el control, agobio en el coche, en el trabajo, en reuniones o en espacios concurridos.",
+        title: "Miedo a desbordarse y evitación",
+        text: "Temor a perder el control, crisis de angustia o cancelar planes y viajes para evitar la sensación de agobio.",
       },
     ],
     whyTitle: "¿POR QUÉ NO BASTA CON DECIRTE 'CÁLMATE'?",
@@ -596,10 +597,10 @@ const es = {
       "Este acompañamiento no es atención sanitaria ni terapia psicológica. No trata trastornos, no realiza diagnósticos y no sustituye a profesionales de la salud. Si lo que necesitas requiere atención clínica, te lo diré con claridad y te orientaré hacia el recurso adecuado.",
     items: [
       {
-        title: "Estrés y calma",
-        text: "Entrenar recursos de atención, respiración y respuesta interna para desactivar la alarma del cuerpo y recuperar la serenidad.",
-        slug: "/ansiedad",
-        cta: "Ver hipnosis para la ansiedad",
+        title: "Estrés, calma e insomnio",
+        text: "Entrenar recursos de relajación profunda para desactivar la alerta del sistema nervioso, frenar la rumiación nocturna y recuperar un sueño reparador y natural.",
+        slug: "/insomnio",
+        cta: "Ver hipnosis para insomnio y estrés",
       },
       {
         title: "Dejar de fumar",
@@ -620,10 +621,10 @@ const es = {
         cta: "Ver hábitos nerviosos",
       },
       {
-        title: "Miedos y fobias",
-        text: "Desensibilizar respuestas de bloqueo y pánico ante situaciones concretas como volar, conducir o hablar en público.",
-        slug: "/miedos-y-fobias",
-        cta: "Ver miedos y fobias",
+        title: "Ansiedad, miedos y fobias",
+        text: "Desensibilizar respuestas de bloqueo, angustia y pánico ante situaciones concretas como volar, conducir (amaxofobia) o hablar en público.",
+        slug: "/ansiedad",
+        cta: "Ver ansiedad, miedos y fobias",
       },
       {
         title: "Autoestima y confianza",
@@ -657,7 +658,7 @@ const es = {
         name: "Sesión individual",
         price: "70 €",
         unit: "por hora",
-        text: "Una hora de acompañamiento con hipnosis, enfocada en el objetivo que hayamos definido.",
+        text: "Una hora de acompañamiento con hipnosis y psicoterapia para trabajar insomnio, estrés, ansiedad, miedos, hábitos o el objetivo que definamos.",
         points: [
           "Duración de 60 minutos",
           "Sueca, a domicilio en Valencia u online",
@@ -687,9 +688,9 @@ const es = {
   about: {
     title: "Sobre mí",
     name: "María A. Cabo",
-    role: "Facilitadora de hipnosis e hipnoterapia aplicada al desarrollo personal",
+    role: "Psicoterapeuta especializada en desarrollo personal y cambio de hábitos",
     intro:
-      "Trabajo con hipnosis e hipnoterapia aplicada al desarrollo personal y profesional. Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
+      "Trabajo como psicoterapeuta aplicada al desarrollo personal y profesional. Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
     traits: ["Cercanía", "Formación Ericksoniana", "Recursos útiles"],
     highlights: [
       {
@@ -751,7 +752,7 @@ const es = {
     cities: ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "A lo largo de mi trayectoria he trabajado en entornos corporativos e internacionales y he vivido en ciudades como Los Ángeles, Londres, Barcelona, Valencia y Madrid.",
-      "Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una de las instituciones de referencia en España. Este modelo pone el foco en los recursos inconscientes y aprendizajes previos de la propia persona para generar respuestas más adaptativas y duraderas.",
+      "Como psicoterapeuta formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una de las instituciones de referencia en España, empleo un modelo que pone el foco en los recursos inconscientes y aprendizajes previos de la propia persona para generar respuestas más adaptativas y duraderas.",
       "Esa combinación entre formación técnica especializada en hipnoterapia y experiencia vital en entornos de alta exigencia me ayuda a entender que detrás de cada objetivo hay una historia, una forma de responder y unas circunstancias diferentes.",
     ],
     pathExtra:
@@ -1131,7 +1132,7 @@ const va: Dict = {
       "Calma davant situacions que et tensen",
       "Focus i motivació per a sostindre un canvi",
       "Confiança al parlar, decidir o exposar-te",
-      "Descans i relació amb l'estrés quotidià",
+      "Descans i insomni: apagar la ment i recuperar el son reparador",
       "Preparació de reptes concrets",
     ],
     journalTitle: "Últims escrits",
@@ -1146,7 +1147,7 @@ const va: Dict = {
     heroTitle2: "ENTRENA LA TEUA MENT.",
     heroTitle3: "AVANÇA.",
     heroIntro:
-      "Acompanyament amb hipnosi per a treballar hàbits, confiança, focus i respostes automàtiques. Sessions individuals i programes per a organitzacions.",
+      "Acompanyament amb hipnosi per a treballar hàbits, insomni, estrés, confiança, focus i respostes automàtiques. Sessions individuals i programes per a organitzacions.",
     heroPrimary: "RESERVAR UNA SESSIÓ",
     heroSecondary: "SOLUCIONS PER A EMPRESES",
     heroHow: "Conéixer com funciona la hipnosi →",
@@ -1155,12 +1156,12 @@ const va: Dict = {
     changeTitle: "QUÈ VOLS CANVIAR?",
     changeCards: [
       {
-        title: "PORS I EVITACIÓ",
-        text: "Sentir-te més tranquil davant de situacions que ara generen bloqueig o evitació.",
+        title: "ANSIETAT, PORS I FÒBIES",
+        text: "Sentir-te tranquil davant de situacions que ara generen bloqueig, pànic o evitació.",
       },
       {
-        title: "ESTRÉS I CALMA",
-        text: "Treballar respostes automàtiques i aprendre a recuperar un estat de més calma.",
+        title: "ESTRÉS, CALMA I INSOMNI",
+        text: "Desactivar l'alerta del cos, superar l'insomni i la rumiació nocturna, i recuperar un son profund i reparador.",
       },
       {
         title: "HÀBITS",
@@ -1216,7 +1217,7 @@ const va: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA MANERA PRÒXIMA I REALISTA DE TREBALLAR EL CANVI.",
     aboutText:
-      "El meu treball partix d'una idea senzilla: moltes vegades sabem perfectament què volem fer, però continuem reaccionant d'una altra manera. Formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, utilitze la hipnosi i la hipnoteràpia per a treballar amb eixa part automàtica de la nostra experiència, mantenint sempre la consciència, la participació i el control.",
+      "El meu treball partix d'una idea senzilla: moltes vegades sabem perfectament què volem fer, però continuem reaccionant d'una altra manera. Com a psicoterapeuta formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, utilitze la hipnosi per a treballar amb eixa part automàtica de la nostra experiència, mantenint sempre la consciència, la participació i el control.",
     aboutLink: "CONÉIXER-ME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "TROBADES",
@@ -1479,16 +1480,17 @@ const va: Dict = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hipnosi per a l'Ansietat a València i Sueca · Solució Natural | María A. Cabo",
+    seoTitle:
+      "Hipnosi per a l'Ansietat, Pors i Fòbies a València i Sueca · Solució Natural | María A. Cabo",
     seoDescription:
-      "Aprén a calmar l'ansietat de manera natural i ensenya al teu cos a desactivar l'estat d'alarma. Hipnosi a Sueca (Ribera Baixa), a domicili a València o en línia. 70 €/sessió.",
-    eyebrow: "SOLUCIÓ NATURAL · HIPNOSI A VALÈNCIA I RIBERA BAIXA",
-    eyebrowNav: "Hipnosi per a l'Ansietat",
-    title: "CALMAR L'ANSIETAT I ENSENYAR AL TEU COS A RECUPERAR LA PAU",
+      "Calma l'ansietat, desactiva el pànic i supera pors i fòbies (volar, conduir, parlar en públic) amb psicoteràpia i hipnosi a Sueca, València i en línia. 70 €/sessió.",
+    eyebrow: "SOLUCIÓ NATURAL · ANSIETAT, PORS I FÒBIES · VALÈNCIA I SUECA",
+    eyebrowNav: "Ansietat, Pors i Fòbies",
+    title: "CALMAR L'ANSIETAT, DESACTIVAR EL PÀNIC I SUPERAR PORS I FÒBIES",
     subtitle:
-      "L'ansietat no es resol forçant la ment a no pensar. S'alleuja ensenyant al teu sistema nerviós a desactivar la resposta d'alerta.",
+      "L'ansietat i les fòbies no es resolen forçant la ment a no pensar. Se superen ensenyant al teu sistema nerviós a apagar la resposta d'alerta i recuperar la llibertat.",
     introText:
-      "Opressió al pit, nus a l'estómac, respiració curta o una ment que no para d'anticipar problemes. Quan l'ansietat es cronifica, el cos reacciona de manera reflexa abans que la raó intervinga. Amb hipnosi aplicada treballem en eixe nivell profund i involuntari: ajudem el teu cos a recordar la relaxació profunda i reprogramem les respostes de tensió perquè recuperes el control de manera natural i sense fàrmacs.",
+      "Opressió al pit, nus a l'estómac, respiració curta, ment que anticipa catàstrofes o pànic paralitzant a volar, conduir per autovia o parlar en públic. Quan l'ansietat i les fòbies es cronifiquen, el cos reacciona de manera reflexa abans que la raó intervinga. Amb hipnosi i psicoteràpia ericksoniana treballem en eixe nivell profund i involuntari: ajudem el teu cos a recordar la seguretat somàtica, desensibilitzem els disparadors de por i reprogramem les respostes de tensió perquè recuperes el control de manera natural i sense fàrmacs.",
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
     trustBadges: [
@@ -1501,7 +1503,7 @@ const va: Dict = {
       "L'ansietat no és una feblesa ni una falta de caràcter; és el teu sistema nerviós interpretant amenaces en pilot automàtic.",
     symptoms: [
       {
-        title: "Tensió física constant",
+        title: "Tensió física i opressió",
         text: "Opressió al pit o al coll, respiració entretallada, mandíbula serrada, mareig tensional o nus a l'estómac.",
       },
       {
@@ -1509,12 +1511,12 @@ const va: Dict = {
         text: "Pensaments anticipatoris en bucle, preocupació desmesurada pel futur i dificultat per a frenar el flux mental.",
       },
       {
-        title: "Descans fragmentat i insomni",
-        text: "Anar al llit amb el cos en guàrdia, despertars nocturns sobtats o alçar-se amb la mateixa sensació de fatiga.",
+        title: "Pors i fòbies específiques",
+        text: "Bloqueig i pànic davant de situacions concretes: por a volar, conduir en autovies o túnels (amaxofòbia), agulles o parlar en públic.",
       },
       {
-        title: "Por a desbordar-se",
-        text: "Temor a perdre el control, angoixa al cotxe, a la feina, en reunions o en espais concorreguts.",
+        title: "Por a desbordar-se i evitació",
+        text: "Temor a perdre el control, crisi d'angoixa o cancel·lar plans i viatges per a evitar la sensació de malestar.",
       },
     ],
     whyTitle: "PER QUÈ NO N'HI HA PROU AMB DIR-TE 'CALMA'T'?",
@@ -1675,13 +1677,13 @@ const va: Dict = {
       "Este acompanyament no és atenció sanitària ni teràpia psicològica. No tracta trastorns, no realitza diagnòstics i no substituïx professionals de la salut. Si el que necessites requerix atenció clínica, t'ho diré amb claredat i t'orientaré cap al recurs adequat.",
     items: [
       {
-        title: "Estrés i calma",
-        text: "Entrenar recursos d'atenció, respiració i resposta interna per a desactivar l'alarma del cos i recuperar la serenitat.",
-        slug: "/ansiedad",
-        cta: "Veure hipnosi per a l'ansietat",
+        title: "Estrés, calma i insomni",
+        text: "Entrenar recursos de relaxació profunda per a desactivar l'alerta del sistema nerviós, frenar la rumiació nocturna i recuperar un son reparador i natural.",
+        slug: "/insomnio",
+        cta: "Veure hipnosi per a insomni i estrés",
       },
       {
-        title: "Deixar de fumar",
+        title: "Dejar de fumar",
         text: "Un recorregut específic i estructurat per a canviar automatismes, desactivar disparadors quotidians i sostindre la teua decisió amb calma.",
         slug: "/dejar-de-fumar",
         cta: "Veure programa antitabac",
@@ -1699,10 +1701,10 @@ const va: Dict = {
         cta: "Veure hàbits nerviosos",
       },
       {
-        title: "Pors i fòbies",
-        text: "Desensibilitzar respostes de bloqueig i pànic davant de situacions concretes com volar, conduir o parlar en públic.",
-        slug: "/miedos-y-fobias",
-        cta: "Veure pors i fòbies",
+        title: "Ansietat, pors i fòbies",
+        text: "Desensibilitzar respostes de bloqueig, angoixa i pànic davant de situacions concretes com volar, conduir (amaxofòbia) o parlar en públic.",
+        slug: "/ansiedad",
+        cta: "Veure ansietat, pors i fòbies",
       },
       {
         title: "Autoestima i confiança",
@@ -1735,7 +1737,7 @@ const va: Dict = {
         name: "Sessió individual",
         price: "70 €",
         unit: "per hora",
-        text: "Una hora d'acompanyament amb hipnosi, centrada en l'objectiu que hàgem definit.",
+        text: "Una hora d'acompanyament amb hipnosi i psicoteràpia per a treballar insomni, estrés, ansietat, pors, hàbits o l'objectiu que definim.",
         points: ["Duració de 60 minuts", "Presencial", "Al teu propi ritme"],
       },
       {
@@ -1757,9 +1759,9 @@ const va: Dict = {
   about: {
     title: "Sobre mi",
     name: "María A. Cabo",
-    role: "Facilitadora d'hipnosi i hipnoteràpia aplicada al desenvolupament personal",
+    role: "Psicoterapeuta especialitzada en desenvolupament personal i canvi d'hàbits",
     intro:
-      "Treballe amb hipnosi i hipnoteràpia aplicada al desenvolupament personal i professional. M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
+      "Treballe com a psicoterapeuta aplicada al desenvolupament personal i professional. M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
     traits: ["Proximitat", "Formació Ericksoniana", "Recursos útils"],
     highlights: [
       {
@@ -1821,7 +1823,7 @@ const va: Dict = {
     cities: ["Los Angeles", "Londres", "Barcelona", "Madrid", "València"],
     pathParagraphs: [
       "Al llarg de la meua trajectòria he treballat en entorns corporatius i internacionals i he viscut en ciutats com Los Angeles, Londres, Barcelona, València i Madrid.",
-      "M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una de les institucions de referència a Espanya. Este model posa el focus en els recursos inconscients i aprenentatges previs de la pròpia persona per a generar respostes més adaptatives i duradores.",
+      "Com a psicoterapeuta formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una de les institucions de referència a Espanya, utilitze un model que posa el focus en els recursos inconscients i aprenentatges previs de la pròpia persona per a generar respostes més adaptatives i duradores.",
       "Eixa combinació entre formació tècnica especialitzada en hipnoteràpia i experiència vital en entorns d'alta exigència m'ajuda a entendre que darrere de cada objectiu hi ha una història, una manera de respondre i unes circumstàncies diferents.",
     ],
     pathExtra:
@@ -2195,7 +2197,7 @@ const en: Dict = {
       "Calm in situations that tense you up",
       "Focus and motivation to sustain a change",
       "Confidence when speaking, deciding or showing up",
-      "Rest and your relationship with everyday stress",
+      "Rest and insomnia: quieting the mind and regaining deep sleep",
       "Preparing for specific challenges",
     ],
     journalTitle: "Latest writing",
@@ -2210,7 +2212,7 @@ const en: Dict = {
     heroTitle2: "TRAIN YOUR MIND.",
     heroTitle3: "MOVE FORWARD.",
     heroIntro:
-      "Hypnosis-based support for habits, confidence, focus and automatic responses. Individual sessions and programmes for organisations.",
+      "Hypnosis-based support for habits, insomnia, stress, confidence, focus and automatic responses. Individual sessions and programmes for organisations.",
     heroPrimary: "BOOK A SESSION",
     heroSecondary: "SOLUTIONS FOR ORGANISATIONS",
     heroHow: "Learn how hypnosis works →",
@@ -2219,12 +2221,12 @@ const en: Dict = {
     changeTitle: "WHAT WOULD YOU LIKE TO CHANGE?",
     changeCards: [
       {
-        title: "FEARS & AVOIDANCE",
-        text: "Feel calmer in situations that currently lead to fear, avoidance or feeling stuck.",
+        title: "ANXIETY, FEARS & PHOBIAS",
+        text: "Feel calm in situations that currently lead to panic, avoidance or feeling stuck.",
       },
       {
-        title: "STRESS & CALM",
-        text: "Work with automatic responses and learn to return to a calmer state.",
+        title: "STRESS, CALM & INSOMNIA",
+        text: "Deactivate the nervous system's alert state, overcome insomnia and nighttime rumination, and regain deep, restorative sleep.",
       },
       {
         title: "HABITS",
@@ -2280,7 +2282,7 @@ const en: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "A PERSONAL AND REALISTIC APPROACH TO CHANGE.",
     aboutText:
-      "My work starts from a simple idea: we often know exactly what we want to do, yet still find ourselves responding differently. Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply hypnosis and hypnotherapy to address these automatic responses while keeping full awareness, active participation and control.",
+      "My work starts from a simple idea: we often know exactly what we want to do, yet still find ourselves responding differently. As a psychotherapist trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply hypnosis to address these automatic responses while keeping full awareness, active participation and control.",
     aboutLink: "ABOUT ME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "EVENTS",
@@ -2543,16 +2545,17 @@ const en: Dict = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hypnosis for Anxiety in Valencia & Sueca · Natural Relief | María A. Cabo",
+    seoTitle:
+      "Hypnosis for Anxiety, Fears and Phobias in Valencia & Sueca · Natural Relief | María A. Cabo",
     seoDescription:
-      "Learn to ease anxiety naturally and teach your body to deactivate alarm mode. Hypnosis sessions in Sueca (Ribera Baixa), at home in Valencia or online. €70/session.",
-    eyebrow: "NATURAL SOLUTION · HYPNOSIS IN VALENCIA & RIBERA BAIXA",
-    eyebrowNav: "Hypnosis for Anxiety",
-    title: "EASING ANXIETY AND TEACHING YOUR BODY TO REGAIN CALM",
+      "Ease anxiety, disable panic and overcome fears and phobias (flying, driving, public speaking) with psychotherapy and hypnosis in Sueca, Valencia and online. €70/session.",
+    eyebrow: "NATURAL SOLUTION · ANXIETY, FEARS & PHOBIAS · VALENCIA & SUECA",
+    eyebrowNav: "Anxiety, Fears & Phobias",
+    title: "EASING ANXIETY, DISABLING PANIC AND OVERCOMING FEARS & PHOBIAS",
     subtitle:
-      "Anxiety is not resolved by forcing the mind to stop thinking. It is relieved by teaching your nervous system to deactivate the alarm response.",
+      "Anxiety and phobias are not resolved by forcing the mind to stop thinking. They are overcome by teaching your nervous system to deactivate the alarm response and reclaim your freedom.",
     introText:
-      "Chest tightness, knot in the stomach, shallow breathing or a racing mind anticipating problems. When anxiety becomes chronic, the body reacts automatically before logic can intervene. Through applied hypnosis, we work at that involuntary level: helping your body remember deep relaxation and reprogramming stress triggers so you can regain balance naturally, without pharmaceuticals.",
+      "Chest tightness, knot in the stomach, shallow breathing, racing mind anticipating problems, or paralysing fear of flying, motorway driving or public speaking. When anxiety and phobias become chronic, the body reacts automatically before logic can intervene. Through hypnosis and Ericksonian psychotherapy, we work at that deep involuntary level: helping your body remember somatic safety, desensitising fear triggers and retraining tension responses so you can regain control naturally, without pharmaceuticals.",
     ctaPrimary: "BOOK A SESSION OR ENQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
     trustBadges: [
@@ -2573,12 +2576,12 @@ const en: Dict = {
         text: "Looping catastrophic thoughts, overthinking future scenarios and difficulty unwinding at the end of the day.",
       },
       {
-        title: "Fragmented sleep and insomnia",
-        text: "Going to bed exhausted yet hypervigilant, sudden nighttime awakenings or waking up feeling unrefreshed.",
+        title: "Specific fears and phobias",
+        text: "Freeze and panic in specific situations: fear of flying, driving on motorways or tunnels (amaxophobia), needles or public speaking.",
       },
       {
-        title: "Fear of being overwhelmed",
-        text: "Fear of losing control, feeling crowded or panicked in cars, at work, in meetings or in public spaces.",
+        title: "Fear of being overwhelmed and avoidance",
+        text: "Fear of losing control, panic sensations, or cancelling plans and trips to avoid feeling distressed.",
       },
     ],
     whyTitle: "WHY TELLING YOURSELF TO 'JUST CALM DOWN' DOESN'T WORK",
@@ -2671,11 +2674,11 @@ const en: Dict = {
         "Thank you for your message. I have received it and will get back to you as soon as possible.",
       fallbackMailto: "Send via email client",
     },
-    faqTitle: "FREQUENTLY ASKED QUESTIONS ABOUT HYPNOSIS & ANXIETY",
+    faqTitle: "FREQUENTLY ASKED QUESTIONS ABOUT HYPNOSIS, ANXIETY & PHOBIAS",
     faqs: [
       {
-        q: "How exactly does hypnosis help reduce anxiety?",
-        a: "Hypnosis addresses the neurobiology of stress directly. While conscious rationalization often fails to quiet panic, in hypnosis we tap into a state where the parasympathetic nervous system takes over, releasing muscle tension, steadying breathing and unlearning conditioned alarm reactions.",
+        q: "How exactly does hypnosis help reduce anxiety and phobias?",
+        a: "Hypnosis addresses the neurobiology of fear and stress directly. While conscious rationalization often fails to quiet panic, in hypnosis we tap into a state where the parasympathetic nervous system takes over, releasing muscle tension, steadying breathing and desensitizing conditioned alarm reactions.",
       },
       {
         q: "Will I lose control or be unconscious during the session?",
@@ -2738,10 +2741,10 @@ const en: Dict = {
       "This support is not healthcare or psychological therapy. It does not treat disorders, provide diagnoses or replace health professionals. If your needs call for clinical care, I will tell you clearly and guide you towards the right resource.",
     items: [
       {
-        title: "Stress and calm",
-        text: "Train attention, breathing and inner response resources to quieten physical alarm and restore genuine ease.",
-        slug: "/ansiedad",
-        cta: "Explore anxiety support",
+        title: "Stress, calm and insomnia",
+        text: "Train deep relaxation resources to quiet the nervous system's alarm state, stop nighttime rumination and restore deep, natural restorative sleep.",
+        slug: "/insomnio",
+        cta: "Explore hypnosis for insomnia and stress",
       },
       {
         title: "Stopping smoking",
@@ -2762,10 +2765,10 @@ const en: Dict = {
         cta: "Explore nervous habits",
       },
       {
-        title: "Fears and phobias",
-        text: "Desensitize panic and avoidance responses around flying, driving, public speaking or specific fears.",
-        slug: "/miedos-y-fobias",
-        cta: "Explore fears & phobias",
+        title: "Anxiety, fears and phobias",
+        text: "Desensitize freeze, distress and panic responses to specific situations such as flying, driving (amaxophobia), or public speaking.",
+        slug: "/ansiedad",
+        cta: "Explore anxiety, fears & phobias",
       },
       {
         title: "Self-esteem and confidence",
@@ -2799,7 +2802,7 @@ const en: Dict = {
         name: "Individual session",
         price: "€70",
         unit: "per hour",
-        text: "One hour of hypnosis-based support, focused on the goal we have defined together.",
+        text: "One hour of hypnosis and psychotherapy support to work on insomnia, stress, anxiety, fears, habits, or the specific goal we define.",
         points: ["60 minutes", "In person", "At your own pace"],
       },
       {
@@ -2821,9 +2824,9 @@ const en: Dict = {
   about: {
     title: "About me",
     name: "María A. Cabo",
-    role: "Facilitator of hypnosis and hypnotherapy for personal development",
+    role: "Psychotherapist specialized in personal development and habit change",
     intro:
-      "I work with hypnosis and hypnotherapy applied to personal and professional development. I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, with an approachable, practical and respectful approach.",
+      "I practice as a psychotherapist applied to personal and professional development. I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, with an approachable, practical and respectful approach.",
     traits: ["Warmth", "Ericksonian Training", "Practical tools"],
     highlights: [
       {
@@ -2884,7 +2887,7 @@ const en: Dict = {
     cities: ["Los Angeles", "London", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "Throughout my career I have worked in corporate and international environments and lived in cities such as Los Angeles, London, Barcelona, Valencia and Madrid.",
-      "I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, one of Spain's leading reference institutions. This model emphasizes each person's unconscious resources and prior learnings to develop more adaptive and lasting responses.",
+      "As a psychotherapist trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, one of Spain's leading reference institutions, I work with a model that emphasizes each person's unconscious resources and prior learnings to develop more adaptive and lasting responses.",
       "Combining specialized training in hypnotherapy with international experience allows me to understand the unique background and demands behind every goal.",
     ],
     pathExtra:
