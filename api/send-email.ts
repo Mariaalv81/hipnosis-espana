@@ -594,7 +594,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
-    // Send email alert to María Cabo via SendGrid if configured
+    // Send email alert to María A. Cabo via SendGrid if configured
     let emailSent = false;
     let emailError: string | null = null;
     const to = process.env["CONTACT_EMAIL"] || process.env["SENDGRID_TO"];

@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/miedos-y-fobias")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para Miedos y Fobias en Valencia y Sueca · María Cabo",
+      title: "Hipnosis para Miedos y Fobias en Valencia y Sueca · María A. Cabo",
       description:
         "Supera el miedo a volar, conducir, hablar en público o fobias concretas de forma respetuosa y progresiva. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
       path: "/miedos-y-fobias",

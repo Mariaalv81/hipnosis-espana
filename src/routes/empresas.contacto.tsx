@@ -8,9 +8,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/empresas/contacto")({
   head: () =>
     makeSeo({
-      title: "Hablar sobre un programa para empresas · María Cabo",
+      title: "Hablar sobre un programa para empresas · María A. Cabo",
       description:
-        "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María Cabo.",
+        "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María A. Cabo.",
       path: "/empresas/contacto",
     }),
   component: CorporateContactPage,

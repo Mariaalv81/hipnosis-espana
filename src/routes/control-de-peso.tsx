@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/control-de-peso")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para el Control de Peso y Comer Emocional en Valencia y Sueca · María Cabo",
+      title: "Hipnosis para el Control de Peso y Comer Emocional en Valencia y Sueca · María A. Cabo",
       description:
         "Aprende a calmar la ansiedad por la comida, el picoteo compulsivo y la culpa. Hipnosis para reconectar con la saciedad corporal en Sueca, Valencia u online. 70 €/sesión.",
       path: "/control-de-peso",

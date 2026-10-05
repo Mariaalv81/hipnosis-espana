@@ -7,7 +7,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/blog/")({
   head: () =>
     makeSeo({
-      title: "Blog · María Cabo",
+      title: "Blog · María A. Cabo",
       description:
         "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.",
       path: "/blog",

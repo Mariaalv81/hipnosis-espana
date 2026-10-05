@@ -1,6 +1,6 @@
-# María Cabo
+# María A. Cabo
 
-Portal independiente de hipnosis para María Cabo.
+Portal independiente de hipnosis para María A. Cabo.
 
 ## Development
 

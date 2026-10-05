@@ -17,7 +17,7 @@ import sessionMariaAvif from "@/assets/images/sesion_maria_cabo.avif";
 export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
-      title: "María Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca | Presencial y a domicilio",
+      title: "María A. Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca | Presencial y a domicilio",
       description:
         "Sesiones de hipnosis e hipnoterapia en Sueca, a domicilio en casas de particulares en Valencia ciudad y online. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
       path: "/",
@@ -199,7 +199,7 @@ function HypnosisPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3.5 py-1.5 text-xs text-foreground transition-all hover:border-pink-500/40 hover:text-pink-600 dark:hover:text-pink-400"
-                aria-label="Instagram de María Cabo"
+                aria-label="Instagram de María A. Cabo"
               >
                 <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
                 <span>{siteSettings.instagramHandle}</span>

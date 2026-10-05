@@ -10,9 +10,9 @@ import { siteSettings } from "@/content/site-settings";
 export const Route = createFileRoute("/contacto")({
   head: () =>
     makeSeo({
-      title: "Contacto · Hipnosis en Valencia y Sueca · María Cabo",
+      title: "Contacto · Hipnosis en Valencia y Sueca · María A. Cabo",
       description:
-        "Contacta con María Cabo para sesiones presenciales en Sueca, a domicilio en casas de particulares en Valencia ciudad u online.",
+        "Contacta con María A. Cabo para sesiones presenciales en Sueca, a domicilio en casas de particulares en Valencia ciudad u online.",
       path: "/contacto",
     }),
   component: ContactPage,
@@ -58,7 +58,7 @@ function ContactPage() {
       setSent(true);
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent("Consulta desde la web · María Cabo");
+      const subject = encodeURIComponent("Consulta desde la web · María A. Cabo");
       const body = encodeURIComponent(
         `Nombre: ${payload.name}\nCorreo: ${payload.email}\nTeléfono: ${payload.phone}\n\n${payload.message}`,
       );

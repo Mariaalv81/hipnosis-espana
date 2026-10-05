@@ -86,7 +86,7 @@ export interface ProfessionalsData {
 }
 
 export const professionalsEs: ProfessionalsData = {
-  seoTitle: "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María Cabo",
+  seoTitle: "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
   seoDescription:
     "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Hipnosis para potenciar la adherencia y respuesta de tus clientes.",
   eyebrow: "HIPNOSIS COMO HERRAMIENTA COMPLEMENTARIA",
@@ -161,7 +161,7 @@ export const professionalsEs: ProfessionalsData = {
     "Mi enfoque parte estrictamente del desarrollo personal y el cambio de patrones automáticos. Tú lideras y supervisas el tratamiento de tu especialidad; la hipnosis actúa como una herramienta facilitadora que optimiza la receptividad y el compromiso del cliente.",
 
   sessionEyebrow: "MÉTODO DE TRABAJO",
-  sessionTitle: "¿CÓMO ES UNA SESIÓN CON MARÍA CABO?",
+  sessionTitle: "¿CÓMO ES UNA SESIÓN CON MARÍA A. CABO?",
   sessionIntro:
     "Rigor, naturalidad y desmitificación absoluta de los tópicos televisivos sobre la hipnosis:",
   sessionPoints: [
@@ -220,7 +220,7 @@ export const professionalsEs: ProfessionalsData = {
     "El respeto a la intimidad del paciente y la lealtad profesional son sagrados. Cumplo rigurosamente con la normativa de protección de datos (RGPD) y el secreto profesional. Toda comunicación interdisciplinar se realiza únicamente bajo autorización expresa del cliente y con el único fin de favorecer su bienestar integral.",
 
   aboutEyebrow: "PERFIL PROFESIONAL",
-  aboutTitle: "MARÍA CABO",
+  aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Trabajo desde una convicción sencilla pero profunda: la inmensa mayoría de las personas saben exactamente lo que deberían hacer, pero su cuerpo y su mente inconsciente siguen respondiendo con automatismos construidos durante años.",
     "Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
@@ -288,7 +288,7 @@ export const professionalsEs: ProfessionalsData = {
 
 export const professionalsVa: ProfessionalsData = {
   ...professionalsEs,
-  seoTitle: "Col·laboracions Professionals · Hipnosi com a Eina Complementària | María Cabo",
+  seoTitle: "Col·laboracions Professionals · Hipnosi com a Eina Complementària | María A. Cabo",
   seoDescription:
     "Col·laboració interdisciplinària amb nutricionistes, fisioterapeutes, osteòpates i centres de salut a València i Ribera Baixa. Hipnosi per a potenciar l'adherència i resposta dels teus clients.",
   eyebrow: "HIPNOSI COM A EINA COMPLEMENTÀRIA",
@@ -313,7 +313,7 @@ export const professionalsVa: ProfessionalsData = {
   whatIDoNotWorkTitle: "QUÈ NO TREBALLE (ZERO INTRUSISME)",
 
   sessionEyebrow: "MÈTODE DE TREBALL",
-  sessionTitle: "COM ÉS UNA SESSIÓ AMB MARÍA CABO?",
+  sessionTitle: "COM ÉS UNA SESSIÓ AMB MARÍA A. CABO?",
   sessionIntro:
     "Rigor, naturalitat i desmitificació absoluta dels tòpics televisius sobre la hipnosi:",
 
@@ -327,7 +327,7 @@ export const professionalsVa: ProfessionalsData = {
     "El respecte a la intimitat del pacient i la lleialtat professional són sagrats. Complisc rigorosament amb la normativa de protecció de dades (RGPD) i el secret professional. Tota comunicació interdisciplinària es realitza únicament sota autorització expressa del client i per a afavorir el seu benestar integral.",
 
   aboutEyebrow: "PERFIL PROFESSIONAL",
-  aboutTitle: "MARÍA CABO",
+  aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Treballe des d'una convicció senzilla però profunda: la immensa majoria de les persones saben exactament el que haurien de fer, però el seu cos i la seua ment inconscient continuen responent amb automatismes construïts durant anys.",
     "M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
@@ -345,7 +345,7 @@ export const professionalsVa: ProfessionalsData = {
 
 export const professionalsEn: ProfessionalsData = {
   ...professionalsEs,
-  seoTitle: "Professional Partnerships · Hypnosis as a Complementary Tool | María Cabo",
+  seoTitle: "Professional Partnerships · Hypnosis as a Complementary Tool | María A. Cabo",
   seoDescription:
     "Interdisciplinary collaboration with nutritionists, physiotherapists, osteopaths and wellness clinics in Valencia and Ribera Baixa. Enhancing client adherence and clinical outcomes.",
   eyebrow: "HYPNOSIS AS A COMPLEMENTARY TOOL",
@@ -370,7 +370,7 @@ export const professionalsEn: ProfessionalsData = {
   whatIDoNotWorkTitle: "WHAT I DO NOT ADDRESS (ZERO ENCROACHMENT)",
 
   sessionEyebrow: "SESSION METHODOLOGY",
-  sessionTitle: "WHAT IS A HYPNOSIS SESSION LIKE WITH MARÍA CABO?",
+  sessionTitle: "WHAT IS A HYPNOSIS SESSION LIKE WITH MARÍA A. CABO?",
   sessionIntro: "Grounded, scientific and completely stripped of stage-hypnosis myths:",
 
   referralEyebrow: "SMOOTH COORDINATION",
@@ -383,7 +383,7 @@ export const professionalsEn: ProfessionalsData = {
     "Client privacy and interdisciplinary loyalty are paramount. I strictly adhere to European data protection standards (GDPR) and professional confidentiality. Any case discussion occurs exclusively with explicit client consent and for the sole purpose of supporting their comprehensive care.",
 
   aboutEyebrow: "PROFESSIONAL BACKGROUND",
-  aboutTitle: "MARÍA CABO",
+  aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "My work is grounded in a simple yet profound premise: most people know intellectually what they need to do, but their nervous system and subconscious mind continue reacting with automatic habits formed over years.",
     "I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",

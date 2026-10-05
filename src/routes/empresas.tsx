@@ -9,7 +9,7 @@ import heroAvif from "@/assets/images/oficina.avif";
 export const Route = createFileRoute("/empresas")({
   head: () =>
     makeSeo({
-      title: "Programas de desarrollo profesional para empresas · María Cabo",
+      title: "Programas de desarrollo profesional para empresas · María A. Cabo",
       description:
         "Talleres y programas para trabajar atención, confianza, aprendizaje, hábitos y preparación ante situaciones profesionales exigentes.",
       path: "/empresas",

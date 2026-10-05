@@ -10,7 +10,7 @@ import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 export const Route = createFileRoute("/dejar-de-fumar")({
   head: () =>
     makeSeo({
-      title: "Dejar de fumar con hipnosis en Valencia y Sueca · María Cabo",
+      title: "Dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
       description:
         "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 20 minutos sin compromiso.",
       path: "/dejar-de-fumar",

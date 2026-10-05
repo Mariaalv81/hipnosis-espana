@@ -7,9 +7,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/reservar")({
   head: () =>
     makeSeo({
-      title: "Reservar una sesión · María Cabo",
+      title: "Reservar una sesión · María A. Cabo",
       description:
-        "Reserva tu sesión de hipnosis con María Cabo en Sueca: 70 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
+        "Reserva tu sesión de hipnosis con María A. Cabo en Sueca: 70 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
       path: "/reservar",
     }),
   component: BookPage,

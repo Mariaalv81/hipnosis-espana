@@ -1,7 +1,7 @@
 import { siteSettings } from "@/content/site-settings";
 
 export const SITE_URL = "https://mariacabo.com";
-export const SITE_NAME = "María Cabo";
+export const SITE_NAME = "María A. Cabo";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 export function absoluteUrl(path = "/") {
@@ -70,24 +70,25 @@ export function JsonLd({
 }
 
 /**
- * LocalBusiness / ProfessionalService schema for María Cabo in Sueca
+ * LocalBusiness / ProfessionalService schema for María A. Cabo in Sueca
  */
 export function makeLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
-    name: "María Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca",
-    alternateName: ["María Cabo", "María Cabo Hipnoterapia", "Hipnosis María Cabo"],
+    name: "María A. Cabo · Hipnosis y Hipnoterapia en Valencia y Sueca",
+    alternateName: ["María A. Cabo", "María Cabo", "María A. Cabo Hipnoterapia", "Hipnosis María A. Cabo"],
     url: SITE_URL,
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
     description:
-      "Acompañamiento con hipnosis e hipnoterapia para el desarrollo personal en Sueca y Valencia (consulta en Centro Sanar, a domicilio en Valencia ciudad y online). Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
+      "Acompañamiento con hipnosis e hipnoterapia para el desarrollo personal en Sueca y Valencia (consulta en Centro Sanar, a domicilio en Valencia ciudad y online) con María A. Cabo. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
     sameAs: [siteSettings.instagramUrl],
     founder: {
       "@type": "Person",
-      name: "María Cabo",
+      name: "María A. Cabo",
+      alternateName: "María Cabo",
       jobTitle: "Especialista en Hipnosis, Hipnoterapia y Psicoterapia Ericksoniana",
       url: `${SITE_URL}/sobre-mi`,
       alumniOf: {
@@ -226,13 +227,13 @@ export function makeArticleSchema({
     image: DEFAULT_OG_IMAGE,
     author: {
       "@type": "Person",
-      name: "María Cabo",
+      name: "María A. Cabo",
       url: `${SITE_URL}/sobre-mi`,
       sameAs: [siteSettings.instagramUrl],
     },
     publisher: {
       "@type": "Organization",
-      name: "María Cabo",
+      name: "María A. Cabo",
       logo: {
         "@type": "ImageObject",
         url: `${SITE_URL}/favicon-192x192.png`,
@@ -265,7 +266,7 @@ export function makeServiceSchema({
     provider: {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#organization`,
-      name: "María Cabo",
+      name: "María A. Cabo",
     },
     areaServed: areaServed || [
       { "@type": "City", name: "Sueca" },
@@ -283,14 +284,15 @@ export function makeServiceSchema({
 }
 
 /**
- * Person schema for María Cabo (SEO / Knowledge Graph / E-E-A-T)
+ * Person schema for María A. Cabo (SEO / Knowledge Graph / E-E-A-T)
  */
 export function makePersonSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE_URL}/sobre-mi#maria-cabo`,
-    name: "María Cabo",
+    name: "María A. Cabo",
+    alternateName: "María Cabo",
     jobTitle: "Facilitadora de Hipnosis, Hipnoterapia y Psicoterapia Ericksoniana",
     description:
       "Facilitadora de hipnosis e hipnoterapia aplicada al desarrollo personal y profesional. Se ha formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana.",
@@ -316,7 +318,7 @@ export function makePersonSchema() {
     worksFor: {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#organization`,
-      name: "María Cabo · Hipnosis y Hipnoterapia",
+      name: "María A. Cabo · Hipnosis y Hipnoterapia",
       url: SITE_URL,
     },
   };

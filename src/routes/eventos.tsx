@@ -7,7 +7,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/eventos")({
   head: () =>
     makeSeo({
-      title: "Eventos y talleres · María Cabo",
+      title: "Eventos y talleres · María A. Cabo",
       description:
         "Encuentros introductorios y talleres de grupo sobre hipnosis y cambio personal en Sueca.",
       path: "/eventos",

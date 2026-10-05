@@ -11,9 +11,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/sobre-mi")({
   head: () =>
     makeSeo({
-      title: "Sobre María Cabo · Hipnosis, hipnoterapia y psicoterapia ericksoniana",
+      title: "Sobre María A. Cabo · Hipnosis, hipnoterapia y psicoterapia ericksoniana",
       description:
-        "María Cabo es facilitadora de hipnosis e hipnoterapia. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana. Sesiones en Valencia, Sueca y online.",
+        "María A. Cabo es facilitadora de hipnosis e hipnoterapia. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana. Sesiones en Valencia, Sueca y online.",
       path: "/sobre-mi",
     }),
   component: AboutPage,
@@ -50,7 +50,7 @@ function AboutPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María Cabo"
+                alt="María A. Cabo"
                 width={1254}
                 height={1254}
                 loading="eager"

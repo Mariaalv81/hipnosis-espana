@@ -3,7 +3,7 @@ import { servicesEs, servicesVa, servicesEn } from "./services-content";
 import { professionalsEs, professionalsVa, professionalsEn } from "./professionals-content";
 
 const es = {
-  brand: "María Cabo",
+  brand: "María A. Cabo",
   tagline: "Hipnosis e hipnoterapia para el desarrollo personal",
   nav: {
     home: "Inicio",
@@ -135,7 +135,7 @@ const es = {
     aboutText:
       "Mi trabajo parte de una idea sencilla: muchas veces sabemos perfectamente lo que queremos hacer, pero seguimos reaccionando de otra manera. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, empleo la hipnosis y la hipnoterapia para intervenir sobre esa parte automática de nuestra experiencia, manteniendo siempre la consciencia, la participación y el control.",
     aboutLink: "CONOCERME",
-    aboutImageAlt: "María Cabo",
+    aboutImageAlt: "María A. Cabo",
     eventsTitle: "ENCUENTROS",
     eventsLink: "VER EVENTOS",
     eventsEmpty: "Próximas fechas en preparación.",
@@ -149,7 +149,7 @@ const es = {
     ctaCompanies: "¿Representas a una empresa? Ver soluciones para organizaciones →",
   },
   companiesPage: {
-    seoTitle: "Programas de desarrollo profesional para empresas · María Cabo",
+    seoTitle: "Programas de desarrollo profesional para empresas · María A. Cabo",
     seoDescription:
       "Talleres y programas para trabajar atención, confianza, aprendizaje, hábitos y preparación ante situaciones profesionales exigentes.",
     heroTitle: "DESARROLLO PROFESIONAL",
@@ -247,9 +247,9 @@ const es = {
     aboutLink: "CONOCER MÁS SOBRE MARÍA",
   },
   companiesContact: {
-    seoTitle: "Hablar sobre un programa para empresas · María Cabo",
+    seoTitle: "Hablar sobre un programa para empresas · María A. Cabo",
     seoDescription:
-      "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María Cabo.",
+      "Formulario para empresas interesadas en talleres o programas de desarrollo profesional con María A. Cabo.",
     eyebrow: "Empresas",
     title: "Hablar sobre un programa",
     intro:
@@ -291,7 +291,7 @@ const es = {
     notProvided: "No indicado",
   },
   smokingPage: {
-    seoTitle: "Programa para dejar de fumar con hipnosis en Valencia y Sueca · María Cabo",
+    seoTitle: "Programa para dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
     seoDescription:
       "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 20 minutos sin compromiso.",
     eyebrow: "PROGRAMA ANTITABACO",
@@ -398,7 +398,7 @@ const es = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María Cabo",
+    seoTitle: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María A. Cabo",
     seoDescription:
       "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
     eyebrow: "SOLUCIÓN NATURAL · HIPNOSIS EN VALENCIA Y RIBERA BAIXA",
@@ -685,7 +685,7 @@ const es = {
   },
   about: {
     title: "Sobre mí",
-    name: "María Cabo",
+    name: "María A. Cabo",
     role: "Facilitadora de hipnosis e hipnoterapia aplicada al desarrollo personal",
     intro:
       "Trabajo con hipnosis e hipnoterapia aplicada al desarrollo personal y profesional. Me he formado en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
@@ -979,15 +979,15 @@ const es = {
   legal: {
     title: "Información legal",
     intro:
-      "Información legal, privacidad y condiciones de reserva de María Cabo. Si necesitas una aclaración adicional, puedes escribir a maria.a.cabo@gmail.com.",
+      "Información legal, privacidad y condiciones de reserva de María A. Cabo. Si necesitas una aclaración adicional, puedes escribir a maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Aviso legal",
-        text: "Titular del sitio: María Cabo. Contacto: maria.a.cabo@gmail.com. Actividad: acompañamiento de desarrollo personal mediante hipnosis, con sesiones presenciales en Sueca dentro de un despacho independiente del Centro Sanar. El contenido publicado en esta web tiene carácter informativo y no constituye asesoramiento sanitario, psicológico, médico ni legal.",
+        text: "Titular del sitio: María A. Cabo. Contacto: maria.a.cabo@gmail.com. Actividad: acompañamiento de desarrollo personal mediante hipnosis, con sesiones presenciales en Sueca dentro de un despacho independiente del Centro Sanar. El contenido publicado en esta web tiene carácter informativo y no constituye asesoramiento sanitario, psicológico, médico ni legal.",
       },
       {
         title: "Datos identificativos",
-        text: "La responsable del tratamiento y titular de la actividad es María Cabo. El NIF, domicilio fiscal y demás datos identificativos completos se facilitarán en la contratación, factura o comunicaciones precontractuales cuando resulten necesarios. Para solicitarlos antes de contratar, escribe a maria.a.cabo@gmail.com.",
+        text: "La responsable del tratamiento y titular de la actividad es María A. Cabo. El NIF, domicilio fiscal y demás datos identificativos completos se facilitarán en la contratación, factura o comunicaciones precontractuales cuando resulten necesarios. Para solicitarlos antes de contratar, escribe a maria.a.cabo@gmail.com.",
       },
       {
         title: "Privacidad y finalidad",
@@ -1011,14 +1011,14 @@ const es = {
       },
       {
         title: "Condiciones de reserva, cancelación y reembolso",
-        text: "El servicio se dirige a personas mayores de 18 años. La sesión individual tiene una duración aproximada de una hora y el programa para dejar de fumar incluye tres sesiones. Si necesitas cambiar o cancelar una cita, avisa con al menos 24 horas de antelación para poder reprogramarla sin coste. Las sesiones ya realizadas no son reembolsables. Los importes abonados por sesiones no realizadas podrán reprogramarse o reembolsarse si la cancelación se comunica dentro del plazo indicado o si la sesión no pudiera prestarse por causa imputable a María Cabo.",
+        text: "El servicio se dirige a personas mayores de 18 años. La sesión individual tiene una duración aproximada de una hora y el programa para dejar de fumar incluye tres sesiones. Si necesitas cambiar o cancelar una cita, avisa con al menos 24 horas de antelación para poder reprogramarla sin coste. Las sesiones ya realizadas no son reembolsables. Los importes abonados por sesiones no realizadas podrán reprogramarse o reembolsarse si la cancelación se comunica dentro del plazo indicado o si la sesión no pudiera prestarse por causa imputable a María A. Cabo.",
       },
     ],
   },
   footer: {
     rights: "Todos los derechos reservados.",
     disclaimer:
-      "María Cabo ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
+      "María A. Cabo ofrece acompañamiento de desarrollo personal. No es un servicio sanitario y no sustituye la atención médica o psicológica.",
     legal: "Información legal",
   },
   common: {
@@ -1084,7 +1084,7 @@ const es = {
 export type Dict = typeof es;
 
 const va: Dict = {
-  brand: "María Cabo",
+  brand: "María A. Cabo",
   tagline: "Hipnosi i hipnoteràpia per al desenvolupament personal",
   nav: {
     home: "Inici",
@@ -1216,7 +1216,7 @@ const va: Dict = {
     aboutText:
       "El meu treball partix d'una idea senzilla: moltes vegades sabem perfectament què volem fer, però continuem reaccionant d'una altra manera. Formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, utilitze la hipnosi i la hipnoteràpia per a treballar amb eixa part automàtica de la nostra experiència, mantenint sempre la consciència, la participació i el control.",
     aboutLink: "CONÉIXER-ME",
-    aboutImageAlt: "María Cabo",
+    aboutImageAlt: "María A. Cabo",
     eventsTitle: "TROBADES",
     eventsLink: "VEURE ESDEVENIMENTS",
     eventsEmpty: "Pròximes dates en preparació.",
@@ -1230,7 +1230,7 @@ const va: Dict = {
     ctaCompanies: "Representes una empresa? Veure solucions per a organitzacions →",
   },
   companiesPage: {
-    seoTitle: "Programes de desenvolupament professional per a empreses · María Cabo",
+    seoTitle: "Programes de desenvolupament professional per a empreses · María A. Cabo",
     seoDescription:
       "Tallers i programes per a treballar atenció, confiança, aprenentatge, hàbits i preparació davant situacions professionals exigents.",
     heroTitle: "DESENVOLUPAMENT PROFESSIONAL",
@@ -1327,9 +1327,9 @@ const va: Dict = {
     aboutLink: "CONÉIXER MÉS SOBRE MARÍA",
   },
   companiesContact: {
-    seoTitle: "Parlar sobre un programa per a empreses · María Cabo",
+    seoTitle: "Parlar sobre un programa per a empreses · María A. Cabo",
     seoDescription:
-      "Formulari per a empreses interessades en tallers o programes de desenvolupament professional amb María Cabo.",
+      "Formulari per a empreses interessades en tallers o programes de desenvolupament professional amb María A. Cabo.",
     eyebrow: "Empreses",
     title: "Parlar sobre un programa",
     intro:
@@ -1371,7 +1371,7 @@ const va: Dict = {
     notProvided: "No indicat",
   },
   smokingPage: {
-    seoTitle: "Programa per a deixar de fumar amb hipnosi a Sueca · María Cabo",
+    seoTitle: "Programa per a deixar de fumar amb hipnosi a Sueca · María A. Cabo",
     seoDescription:
       "Programa estructurat de tres sessions d'hipnosi per a deixar de fumar a Sueca (València). Entrevista prèvia gratuïta de 20 minuts sense compromís.",
     eyebrow: "PROGRAMA ANTITABAC",
@@ -1477,7 +1477,7 @@ const va: Dict = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hipnosi per a l'Ansietat a València i Sueca · Solució Natural | María Cabo",
+    seoTitle: "Hipnosi per a l'Ansietat a València i Sueca · Solució Natural | María A. Cabo",
     seoDescription:
       "Aprén a calmar l'ansietat de manera natural i ensenya al teu cos a desactivar l'estat d'alarma. Hipnosi a Sueca (Ribera Baixa), a domicili a València o en línia. 70 €/sessió.",
     eyebrow: "SOLUCIÓ NATURAL · HIPNOSI A VALÈNCIA I RIBERA BAIXA",
@@ -1754,7 +1754,7 @@ const va: Dict = {
   },
   about: {
     title: "Sobre mi",
-    name: "María Cabo",
+    name: "María A. Cabo",
     role: "Facilitadora d'hipnosi i hipnoteràpia aplicada al desenvolupament personal",
     intro:
       "Treballe amb hipnosi i hipnoteràpia aplicada al desenvolupament personal i professional. M'he format en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
@@ -2047,15 +2047,15 @@ const va: Dict = {
   legal: {
     title: "Informació legal",
     intro:
-      "Informació legal, privacitat i condicions de reserva de María Cabo. Si necessites un aclariment addicional, pots escriure a maria.a.cabo@gmail.com.",
+      "Informació legal, privacitat i condicions de reserva de María A. Cabo. Si necessites un aclariment addicional, pots escriure a maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Avís legal",
-        text: "Titular del lloc: María Cabo. Contacte: maria.a.cabo@gmail.com. Activitat: acompanyament de desenvolupament personal mitjançant hipnosi, amb sessions presencials a Sueca dins d'un despatx independent del Centre Sanar. El contingut publicat en esta web té caràcter informatiu i no constituïx assessorament sanitari, psicològic, mèdic ni legal.",
+        text: "Titular del lloc: María A. Cabo. Contacte: maria.a.cabo@gmail.com. Activitat: acompanyament de desenvolupament personal mitjançant hipnosi, amb sessions presencials a Sueca dins d'un despatx independent del Centre Sanar. El contingut publicat en esta web té caràcter informatiu i no constituïx assessorament sanitari, psicològic, mèdic ni legal.",
       },
       {
         title: "Dades identificatives",
-        text: "La responsable del tractament i titular de l'activitat és María Cabo. El NIF, domicili fiscal i la resta de dades identificatives completes es facilitaran en la contractació, factura o comunicacions precontractuals quan siguen necessàries. Per a sol·licitar-les abans de contractar, escriu a maria.a.cabo@gmail.com.",
+        text: "La responsable del tractament i titular de l'activitat és María A. Cabo. El NIF, domicili fiscal i la resta de dades identificatives completes es facilitaran en la contractació, factura o comunicacions precontractuals quan siguen necessàries. Per a sol·licitar-les abans de contractar, escriu a maria.a.cabo@gmail.com.",
       },
       {
         title: "Privacitat i finalitat",
@@ -2079,14 +2079,14 @@ const va: Dict = {
       },
       {
         title: "Condicions del servici",
-        text: "El servici s'adreça a persones majors de 18 anys. La sessió individual té una duració aproximada d'una hora i el programa per a deixar de fumar inclou tres sessions. Si necessites canviar o cancel·lar una cita, avisa amb almenys 24 hores d'antelació per a poder reprogramar-la sense cost. Les sessions ja realitzades no són reemborsables. Els imports abonats per sessions no realitzades podran reprogramar-se o reemborsar-se si la cancel·lació es comunica dins del termini indicat o si la sessió no poguera prestar-se per causa imputable a María Cabo.",
+        text: "El servici s'adreça a persones majors de 18 anys. La sessió individual té una duració aproximada d'una hora i el programa per a deixar de fumar inclou tres sessions. Si necessites canviar o cancel·lar una cita, avisa amb almenys 24 hores d'antelació per a poder reprogramar-la sense cost. Les sessions ja realitzades no són reemborsables. Els imports abonats per sessions no realitzades podran reprogramar-se o reemborsar-se si la cancel·lació es comunica dins del termini indicat o si la sessió no poguera prestar-se per causa imputable a María A. Cabo.",
       },
     ],
   },
   footer: {
     rights: "Tots els drets reservats.",
     disclaimer:
-      "María Cabo oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
+      "María A. Cabo oferix acompanyament de desenvolupament personal. No és un servici sanitari i no substituïx l'atenció mèdica o psicològica.",
     legal: "Informació legal",
   },
   common: {
@@ -2150,7 +2150,7 @@ const va: Dict = {
 };
 
 const en: Dict = {
-  brand: "María Cabo",
+  brand: "María A. Cabo",
   tagline: "Hypnosis and hypnotherapy for personal development",
   nav: {
     home: "Home",
@@ -2279,7 +2279,7 @@ const en: Dict = {
     aboutText:
       "My work starts from a simple idea: we often know exactly what we want to do, yet still find ourselves responding differently. Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply hypnosis and hypnotherapy to address these automatic responses while keeping full awareness, active participation and control.",
     aboutLink: "ABOUT ME",
-    aboutImageAlt: "María Cabo",
+    aboutImageAlt: "María A. Cabo",
     eventsTitle: "EVENTS",
     eventsLink: "VIEW EVENTS",
     eventsEmpty: "New dates coming soon.",
@@ -2293,7 +2293,7 @@ const en: Dict = {
     ctaCompanies: "Representing an organisation? Explore our solutions →",
   },
   companiesPage: {
-    seoTitle: "Professional Development Programmes for Organisations · María Cabo",
+    seoTitle: "Professional Development Programmes for Organisations · María A. Cabo",
     seoDescription:
       "Workshops and programmes focusing on focus, confidence, learning, habits and mental preparation for high-demand professional environments.",
     heroTitle: "PROFESSIONAL DEVELOPMENT",
@@ -2390,9 +2390,9 @@ const en: Dict = {
     aboutLink: "LEARN MORE ABOUT MARÍA",
   },
   companiesContact: {
-    seoTitle: "Discuss a Corporate Programme · María Cabo",
+    seoTitle: "Discuss a Corporate Programme · María A. Cabo",
     seoDescription:
-      "Contact form for companies interested in professional development programmes and workshops with María Cabo.",
+      "Contact form for companies interested in professional development programmes and workshops with María A. Cabo.",
     eyebrow: "Organisations",
     title: "Discuss a programme",
     intro:
@@ -2434,7 +2434,7 @@ const en: Dict = {
     notProvided: "Not provided",
   },
   smokingPage: {
-    seoTitle: "Quit Smoking with Hypnosis in Sueca · María Cabo",
+    seoTitle: "Quit Smoking with Hypnosis in Sueca · María A. Cabo",
     seoDescription:
       "Structured 3-session hypnosis programme to stop smoking permanently in Sueca (Valencia). Request your free 20-minute consultation.",
     eyebrow: "STOP SMOKING PROGRAMME",
@@ -2540,7 +2540,7 @@ const en: Dict = {
     ],
   },
   anxietyPage: {
-    seoTitle: "Hypnosis for Anxiety in Valencia & Sueca · Natural Relief | María Cabo",
+    seoTitle: "Hypnosis for Anxiety in Valencia & Sueca · Natural Relief | María A. Cabo",
     seoDescription:
       "Learn to ease anxiety naturally and teach your body to deactivate alarm mode. Hypnosis sessions in Sueca (Ribera Baixa), at home in Valencia or online. €70/session.",
     eyebrow: "NATURAL SOLUTION · HYPNOSIS IN VALENCIA & RIBERA BAIXA",
@@ -2817,7 +2817,7 @@ const en: Dict = {
   },
   about: {
     title: "About me",
-    name: "María Cabo",
+    name: "María A. Cabo",
     role: "Facilitator of hypnosis and hypnotherapy for personal development",
     intro:
       "I work with hypnosis and hypnotherapy applied to personal and professional development. I trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, with an approachable, practical and respectful approach.",
@@ -3110,15 +3110,15 @@ const en: Dict = {
   legal: {
     title: "Legal information",
     intro:
-      "Legal information, privacy and booking terms for María Cabo. If you need any further clarification, you can write to maria.a.cabo@gmail.com.",
+      "Legal information, privacy and booking terms for María A. Cabo. If you need any further clarification, you can write to maria.a.cabo@gmail.com.",
     sections: [
       {
         title: "Legal notice",
-        text: "Site owner: María Cabo. Contact: maria.a.cabo@gmail.com. Activity: personal development support through hypnosis, with in-person sessions in Sueca in an independent practice within Centro Sanar. The content published on this website is informational and does not constitute healthcare, psychological, medical or legal advice.",
+        text: "Site owner: María A. Cabo. Contact: maria.a.cabo@gmail.com. Activity: personal development support through hypnosis, with in-person sessions in Sueca in an independent practice within Centro Sanar. The content published on this website is informational and does not constitute healthcare, psychological, medical or legal advice.",
       },
       {
         title: "Identification details",
-        text: "The controller and owner of the activity is María Cabo. Tax ID, fiscal address and full identification details will be provided in the booking process, invoice or pre-contractual communications when required. To request them before booking, write to maria.a.cabo@gmail.com.",
+        text: "The controller and owner of the activity is María A. Cabo. Tax ID, fiscal address and full identification details will be provided in the booking process, invoice or pre-contractual communications when required. To request them before booking, write to maria.a.cabo@gmail.com.",
       },
       {
         title: "Privacy and purpose",
@@ -3142,14 +3142,14 @@ const en: Dict = {
       },
       {
         title: "Terms of service",
-        text: "The service is for adults over 18. Individual sessions last approximately one hour and the stop-smoking programme includes three sessions. If you need to change or cancel an appointment, please give at least 24 hours' notice so it can be rescheduled at no cost. Sessions that have already taken place are non-refundable. Amounts paid for sessions not yet provided may be rescheduled or refunded if cancellation is communicated within the stated notice period or if the session cannot be provided for a reason attributable to María Cabo.",
+        text: "The service is for adults over 18. Individual sessions last approximately one hour and the stop-smoking programme includes three sessions. If you need to change or cancel an appointment, please give at least 24 hours' notice so it can be rescheduled at no cost. Sessions that have already taken place are non-refundable. Amounts paid for sessions not yet provided may be rescheduled or refunded if cancellation is communicated within the stated notice period or if the session cannot be provided for a reason attributable to María A. Cabo.",
       },
     ],
   },
   footer: {
     rights: "All rights reserved.",
     disclaimer:
-      "María Cabo provides personal development support. This is not a healthcare service and does not replace medical or psychological care.",
+      "María A. Cabo provides personal development support. This is not a healthcare service and does not replace medical or psychological care.",
     legal: "Legal information",
   },
   common: {

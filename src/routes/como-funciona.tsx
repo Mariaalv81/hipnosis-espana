@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/como-funciona")({
   head: () =>
     makeSeo({
-      title: "Cómo funciona una sesión de hipnosis · María Cabo",
+      title: "Cómo funciona una sesión de hipnosis · María A. Cabo",
       description:
         "Qué es y qué no es la hipnosis, el recorrido paso a paso de una sesión y los límites del acompañamiento.",
       path: "/como-funciona",

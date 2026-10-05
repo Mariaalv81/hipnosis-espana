@@ -6,7 +6,7 @@ import { JsonLd, makeFaqSchema, makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/faq")({
   head: () =>
     makeSeo({
-      title: "Preguntas frecuentes sobre hipnosis en Sueca · María Cabo",
+      title: "Preguntas frecuentes sobre hipnosis en Sueca · María A. Cabo",
       description:
         "Dudas habituales sobre la hipnosis: control, confidencialidad, número de sesiones, precios y límites del acompañamiento.",
       path: "/faq",

@@ -1,4 +1,4 @@
-# Manual Operativo: Sistema de Gestión de Leads, Agenda y Vida Personal para María Cabo
+# Manual Operativo: Sistema de Gestión de Leads, Agenda y Vida Personal para María A. Cabo
 
 Este manual establece tu **Centro de Control Unificado (Solo CRM)** para gestionar todos tus canales de captación (Web, Google Calendar, Instagram y WhatsApp) con el mínimo esfuerzo, máxima conversión y protegiendo tu tiempo y descanso personal.
 
@@ -91,12 +91,12 @@ Cuando recibes la alerta de un lead o haces clic en **"💬 Abrir WhatsApp"** en
 
 ### Plantilla W-1: Primer contacto tras formulario web (Ansiedad, Peso, Hábitos, Fobias...)
 
-> _"Hola [Nombre], soy María Cabo. He recibido tu mensaje a través de la web sobre [tema: ej. la ansiedad / el control de peso / dejar de morderte las uñas]. Quería agradecerte la confianza al escribirme._  
+> _"Hola [Nombre], soy María A. Cabo. He recibido tu mensaje a través de la web sobre [tema: ej. la ansiedad / el control de peso / dejar de morderte las uñas]. Quería agradecerte la confianza al escribirme._  
 > _Comentabas que te interesaba la modalidad [Presencial en Sueca / Domicilio / Online]. ¿Tienes unos minutos hoy o mañana para que me cuentes brevemente por aquí o en una breve llamada cómo te está afectando y ver si la hipnosis es adecuada para ti? Quedo a tu disposición."_
 
 ### Plantilla W-2: Programa para Dejar de Fumar (Entrevista de 20 min)
 
-> _"Hola [Nombre], soy María Cabo. He recibido tu solicitud para el programa para dejar de fumar con hipnosis._  
+> _"Hola [Nombre], soy María A. Cabo. He recibido tu solicitud para el programa para dejar de fumar con hipnosis._  
 > _Como comentamos en la web, el primer paso es una breve entrevista previa gratuita de 20 minutos (por teléfono o videollamada) para conocer tu historial con el tabaco y asegurarnos de que el programa encaja contigo. ¿Qué horario sueles tener más disponible, por las mañanas o por las tardes? Un abrazo."_
 
 ### Plantilla W-3: Confirmación de Cita Agendada en Google Calendar

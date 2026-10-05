@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/concentracion-y-foco")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para Concentración, Estudio y Oposiciones en Valencia y Sueca · María Cabo",
+      title: "Hipnosis para Concentración, Estudio y Oposiciones en Valencia y Sueca · María A. Cabo",
       description:
         "Maximiza tu rendimiento intelectual, elimina la procrastinación y supera los bloqueos en exámenes u oposiciones. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
       path: "/concentracion-y-foco",

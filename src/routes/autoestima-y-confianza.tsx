@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/autoestima-y-confianza")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para Autoestima y Confianza Personal en Valencia y Sueca · María Cabo",
+      title: "Hipnosis para Autoestima y Confianza Personal en Valencia y Sueca · María A. Cabo",
       description:
         "Supera la inseguridad, el síndrome del impostor y el miedo al juicio ajeno. Aprende a poner límites y valorarte. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
       path: "/autoestima-y-confianza",

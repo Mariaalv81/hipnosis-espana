@@ -7,8 +7,8 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/politica-de-cookies")({
   head: () =>
     makeSeo({
-      title: "Política de cookies · María Cabo",
-      description: "Información sobre cookies, consentimiento y servicios externos de María Cabo.",
+      title: "Política de cookies · María A. Cabo",
+      description: "Información sobre cookies, consentimiento y servicios externos de María A. Cabo.",
       path: "/politica-de-cookies",
     }),
   component: CookiePolicyPage,

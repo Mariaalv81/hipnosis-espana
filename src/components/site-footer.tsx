@@ -53,7 +53,7 @@ export function SiteFooter() {
                 letterSpacing: "0.12em",
               }}
             >
-              MARÍA CABO
+              MARÍA A. CABO
             </p>
           </div>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t.tagline}</p>
@@ -64,7 +64,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/80 px-3.5 py-1.5 text-xs text-foreground transition-all hover:border-pink-500/40 hover:text-pink-600 dark:hover:text-pink-400 hover:shadow-sm"
-              aria-label="Instagram de María Cabo"
+              aria-label="Instagram de María A. Cabo"
             >
               <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
               <span className="font-medium">{siteSettings.instagramHandle}</span>

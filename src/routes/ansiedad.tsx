@@ -21,7 +21,7 @@ import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 export const Route = createFileRoute("/ansiedad")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María Cabo",
+      title: "Hipnosis para la Ansiedad en Valencia y Sueca · Solución Natural | María A. Cabo",
       description:
         "Aprende a calmar la ansiedad de forma natural y enseña a tu cuerpo a desactivar el estado de alarma. Hipnosis en Sueca (Ribera Baixa), a domicilio en Valencia u online. 70 €/sesión.",
       path: "/ansiedad",
@@ -551,7 +551,7 @@ function AnsiedadPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> María Cabo ofrece acompañamiento de desarrollo
+            <strong>Aviso de transparencia:</strong> María A. Cabo ofrece acompañamiento de desarrollo
             personal y bienestar. La hipnosis es una disciplina complementaria y un recurso de
             autorregulación natural. No es un servicio sanitario y no sustituye la evaluación,
             diagnóstico ni tratamiento médico, psiquiátrico o psicológico cuando estos son

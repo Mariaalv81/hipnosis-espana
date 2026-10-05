@@ -6,7 +6,7 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/habitos-nerviosos")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para Dejar de Morderse las Uñas y Hábitos Nerviosos · María Cabo",
+      title: "Hipnosis para Dejar de Morderse las Uñas y Hábitos Nerviosos · María A. Cabo",
       description:
         "Elimina la onicofagia, el bruxismo diurno o los tics por nerviosismo sin luchar contra ti mismo. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
       path: "/habitos-nerviosos",

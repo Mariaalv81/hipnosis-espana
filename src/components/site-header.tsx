@@ -23,7 +23,7 @@ export function SiteHeader() {
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link
           to="/"
-          aria-label="María Cabo — Inicio"
+          aria-label="María A. Cabo — Inicio"
           className="flex shrink-0 items-center gap-3 transition-opacity hover:opacity-90"
         >
           <img
@@ -42,7 +42,7 @@ export function SiteHeader() {
               letterSpacing: "0.12em",
             }}
           >
-            MARÍA CABO
+            MARÍA A. CABO
           </span>
         </Link>
 
