@@ -16,7 +16,6 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import { CalendarButton } from "@/components/calendar-button";
 import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
@@ -54,7 +53,7 @@ function PastLivesPage() {
   const serviceSchema = makeServiceSchema({
     name: pl.title,
     description: pl.seoDescription,
-    price: "85 €",
+    price: "100 €",
     path: "/vidas-pasadas",
     areaServed: [
       { "@type": "City", name: "Sueca" },
@@ -86,6 +85,12 @@ function PastLivesPage() {
       website: String(fd.get("website") ?? "").trim(),
       recaptchaToken: undefined as string | undefined,
     };
+
+    if (!data.phone) {
+      alert("Por favor, introduce tu número de teléfono para que podamos coordinar la sesión.");
+      setSubmitting(false);
+      return;
+    }
 
     const fullMessage = [
       "Solicitud / Consulta sobre Hipnosis para Vidas Pasadas y Registros Akáshicos:",
@@ -189,7 +194,6 @@ function PastLivesPage() {
               >
                 {pl.ctaPrimary}
               </a>
-              <CalendarButton className="w-fit" label={pl.ctaCalendar} />
               <a
                 href="#como-funciona"
                 className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm transition-colors hover:bg-muted"
@@ -356,7 +360,6 @@ function PastLivesPage() {
             >
               {pl.ctaPrimary}
             </a>
-            <CalendarButton label={pl.ctaCalendar} />
           </div>
         </div>
       </section>

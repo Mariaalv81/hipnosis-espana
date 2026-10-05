@@ -271,9 +271,15 @@ async function appendToSheet({
     lead.source.toLowerCase().includes("corporate") ||
     lead.source.toLowerCase().includes("b2b");
 
+  const isPastLivesLead =
+    lead.source === "Web - Vidas Pasadas" ||
+    lead.source.toLowerCase().includes("vidas pasadas") ||
+    lead.source.toLowerCase().includes("akashic");
+
   let tabName = process.env["SHEET_TAB_NAME"] || "";
   let isCollaboratorTab = false;
   let isEmpresasTab = false;
+  let isPastLivesTab = false;
   let sheetTitles: string[] = [];
 
   try {
@@ -289,6 +295,9 @@ async function appendToSheet({
     } else if (isEmpresasLead) {
       tabName = sheetTitles.find((t) => t.toLowerCase().includes("empresa")) || "Empresas";
       isEmpresasTab = true;
+    } else if (isPastLivesLead) {
+      tabName = sheetTitles.find((t) => t.toLowerCase().includes("vidas pasadas")) || "Vidas Pasadas";
+      isPastLivesTab = true;
     } else if (!tabName) {
       // Private client leads (particulares)
       tabName =
@@ -326,6 +335,9 @@ async function appendToSheet({
       } else if (isEmpresasLead) {
         tabName = "Empresas";
         isEmpresasTab = true;
+      } else if (isPastLivesLead) {
+        tabName = "Vidas Pasadas";
+        isPastLivesTab = true;
       } else {
         tabName = "Leads Clientes";
       }
@@ -385,6 +397,21 @@ async function appendToSheet({
         "Objetivo / Formato",
         "Mensaje / Necesidad",
         "Próxima Acción / Notas",
+      ];
+    } else if (isPastLivesLead || isPastLivesTab) {
+      defaultHeaders = [
+        "Fecha y Hora",
+        "Estado",
+        "Nombre",
+        "Teléfono",
+        "WhatsApp Directo",
+        "Email",
+        "Modalidad",
+        "Qué desea explorar",
+        "Tarifa",
+        "Mensaje / Notas",
+        "Próxima Acción",
+        "Historial / Pagos",
       ];
     } else {
       defaultHeaders = [
@@ -499,6 +526,24 @@ async function appendToSheet({
       "Llamada de valoración / Enviar propuesta",
     ];
     endCol = "L";
+  } else if (isPastLivesTab || isPastLivesLead) {
+    // 12-column Vidas Pasadas layout:
+    // Fecha y Hora | Estado | Nombre | Teléfono | WhatsApp Directo | Email | Modalidad | Qué desea explorar | Tarifa | Mensaje / Notas | Próxima Acción | Historial / Pagos
+    rowValues = [
+      dateFormatted,
+      "🟢 1. Nuevo",
+      lead.name,
+      lead.phone,
+      lead.whatsappUrl ? `=HYPERLINK("${lead.whatsappUrl}"; "💬 Abrir WhatsApp")` : "",
+      lead.email,
+      lead.modality,
+      lead.specificDetail || "",
+      "100 € (90 min)",
+      lead.message,
+      "Llamada / WhatsApp para coordinar sesión",
+      "",
+    ];
+    endCol = "L";
   } else if (
     colCount <= 5 &&
     !sheetTitles.some((t) => t.includes("Cliente") || t.includes("Leads"))
@@ -554,6 +599,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (!name || !email || !message) {
       return res.status(400).json({ ok: false, error: "Missing fields" });
+    }
+
+    const rawSource = String(body.source || "");
+    if (rawSource.toLowerCase().includes("vidas pasadas") && !(body.phone || "").trim()) {
+      return res.status(400).json({ ok: false, error: "El número de teléfono es obligatorio" });
     }
 
     // Optional: verify reCAPTCHA if secret provided
@@ -626,6 +676,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           subject = `🩺 NUEVO COLABORADOR: ${lead.name}`;
           badgeText = "Colaborador Profesional";
           badgeColor = "#0f766e"; // Teal
+        } else if (
+          lead.source === "Web - Vidas Pasadas" ||
+          lead.source.toLowerCase().includes("vidas pasadas") ||
+          lead.source.toLowerCase().includes("akashic")
+        ) {
+          subject = `✨ NUEVO LEAD VIDAS PASADAS (100 € · 90 min): ${lead.name}`;
+          badgeText = "Vidas Pasadas / Akáshicos (100 € · 90 min)";
+          badgeColor = "#78350f"; // Warm amber/terracotta
         }
 
         const displayDetail = lead.specificDetail || "No especificado / Consulta general";

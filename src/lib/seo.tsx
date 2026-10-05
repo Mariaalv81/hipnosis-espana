@@ -134,7 +134,7 @@ export function makeLocalBusinessSchema() {
             description:
               "Regresión consciente a vidas pasadas y acceso a Registros Akáshicos en Sueca, a domicilio en Valencia y online para explorar memorias del alma.",
           },
-          price: "85",
+          price: "100",
           priceCurrency: "EUR",
         },
         {

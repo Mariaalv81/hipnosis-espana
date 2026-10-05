@@ -112,7 +112,7 @@ export const pastLivesEs: PastLivesData = {
   trustBadges: [
     "Experiencia 100% consciente y segura",
     "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-    "Sesión ampliada de 80-90 min con integración guiada",
+    "Sesión de 90 min de experiencia e integración guiada",
   ],
   ctaPrimary: "SOLICITAR SESIÓN O CONSULTAR",
   ctaSecondary: "CÓMO FUNCIONA EL VIAJE",
@@ -227,10 +227,10 @@ export const pastLivesEs: PastLivesData = {
   ],
 
   pricingTitle: "TARIFA CLARA Y CONDICIONES TRANSPARENTES",
-  price: "85 €",
-  priceUnit: "por sesión completa (80 - 90 minutos)",
+  price: "100 €",
+  priceUnit: "por sesión completa (90 minutos)",
   pricingFeatures: [
-    "Sesión individual y personalizada de 80 a 90 minutos.",
+    "Sesión individual y personalizada de 90 minutos.",
     "Entrevista previa para acotar la intención y resolver cualquier duda.",
     "Viaje completo de regresión a vida pasada y acceso a Registros Akáshicos.",
     "Espacio dedicado de integración consciente y pautas para tu día a día.",
@@ -323,7 +323,7 @@ export const pastLivesVa: PastLivesData = {
   trustBadges: [
     "Experiència 100% conscient i segura",
     "Sueca (Centre Sanar) · A domicili a València · Online",
-    "Sessió ampliada de 80-90 min amb integració guiada",
+    "Sessió de 90 min d'experiència i integració guiada",
   ],
   ctaPrimary: "SOL·LICITAR SESSIÓ O CONSULTAR",
   ctaSecondary: "COM FUNCIONA EL VIATGE",
@@ -438,10 +438,10 @@ export const pastLivesVa: PastLivesData = {
   ],
 
   pricingTitle: "TARIFA CLARA I CONDICIONS TRANSPARENTS",
-  price: "85 €",
-  priceUnit: "per sessió completa (80 - 90 minuts)",
+  price: "100 €",
+  priceUnit: "per sessió completa (90 minuts)",
   pricingFeatures: [
-    "Sessió individual i personalitzada de 80 a 90 minuts.",
+    "Sessió individual i personalitzada de 90 minuts.",
     "Entrevista prèvia per a acotar la intenció i resoldre qualsevol dubte.",
     "Viatge complet de regressió a vida passada i accés a Registres Akàshics.",
     "Espai dedicat d'integració conscient i pautes per al teu dia a dia.",
@@ -534,7 +534,7 @@ export const pastLivesEn: PastLivesData = {
   trustBadges: [
     "100% conscious, grounded and safe experience",
     "Sueca (Centro Sanar) · In-home in Valencia · Live Online",
-    "Comprehensive 80-90 min session with guided integration",
+    "90-min immersive experience with guided integration",
   ],
   ctaPrimary: "REQUEST A SESSION OR INQUIRE",
   ctaSecondary: "HOW THE JOURNEY WORKS",
@@ -649,10 +649,10 @@ export const pastLivesEn: PastLivesData = {
   ],
 
   pricingTitle: "TRANSPARENT PRICING & CONDITIONS",
-  price: "85 €",
-  priceUnit: "per full session (80 - 90 minutes)",
+  price: "100 €",
+  priceUnit: "per full session (90 minutes)",
   pricingFeatures: [
-    "Individual and fully personalized 80 to 90-minute session.",
+    "Individual and fully personalized 90-minute session.",
     "Preliminary interview to establish intention and address any questions.",
     "Full past life regression journey and Akashic Records exploration.",
     "Dedicated conscious integration and practical grounding recommendations.",
