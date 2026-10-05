@@ -7,7 +7,7 @@ export const Route = createFileRoute("/miedos-y-fobias")({
     makeSeo({
       title: "Hipnosis para la Ansiedad, Miedos y Fobias en Valencia y Sueca · María A. Cabo",
       description:
-        "Calma la ansiedad, desactiva el pánico y supera miedos y fobias (volar, conducir, hablar en público) con psicoterapia e hipnosis en Sueca, Valencia y online. 70 €/sesión.",
+        "Gestiona la ansiedad cotidiana y trabaja miedos concretos (volar, conducir, hablar en público) con hipnosis y psicoterapia ericksoniana en Sueca, Valencia y online. 70 €/sesión.",
       path: "/miedos-y-fobias",
     }),
   component: AnsiedadPage,

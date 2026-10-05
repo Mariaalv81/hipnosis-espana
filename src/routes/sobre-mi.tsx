@@ -12,9 +12,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/sobre-mi")({
   head: () =>
     makeSeo({
-      title: "Sobre María A. Cabo · Psicoterapeuta en Valencia y Sueca",
+      title: "Sobre María A. Cabo · Hipnosis y Psicoterapia Ericksoniana en Valencia y Sueca",
       description:
-        "María A. Cabo es psicoterapeuta. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana. Sesiones en Valencia, Sueca y online.",
+        "María A. Cabo es especialista en hipnosis y psicoterapia ericksoniana formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
       path: "/sobre-mi",
     }),
   component: AboutPage,
@@ -51,7 +51,7 @@ function AboutPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María A. Cabo - Psicoterapeuta"
+                alt="María A. Cabo - Hipnosis y Psicoterapia Ericksoniana"
                 width={1254}
                 height={1254}
                 loading="eager"
@@ -99,12 +99,12 @@ function AboutPage() {
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">Psicoterapia e Hipnosis</p>
+                  <p className="text-sm font-semibold">Hipnosis y Psicoterapia Ericksoniana</p>
                   <p className="text-xs text-muted-foreground">Instituto Erickson Madrid</p>
                 </div>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                Psicoterapeuta formada en hipnosis y psicoterapia ericksoniana. Enfoque riguroso, natural y
+                Formación especializada en Hipnosis y Psicoterapia Ericksoniana en el Instituto Erickson Madrid. Enfoque riguroso, natural y
                 respetuoso centrado en los recursos de la propia persona.
               </p>
             </div>

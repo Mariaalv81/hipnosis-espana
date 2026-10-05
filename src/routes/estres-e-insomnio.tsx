@@ -8,7 +8,7 @@ export const Route = createFileRoute("/estres-e-insomnio")({
     makeSeo({
       title: "Hipnosis para Estrés e Insomnio en Valencia y Sueca · María A. Cabo",
       description:
-        "Desactiva el estado de alarma, frena el insomnio y recupera la calma y el sueño reparador con psicoterapia e hipnosis en Sueca, Valencia y online. 70 €/sesión.",
+        "Desactiva el estado de alarma, frena el insomnio y recupera la calma y el sueño reparador con psicoterapia ericksoniana e hipnosis en Sueca, Valencia y online. 70 €/sesión.",
       path: "/estres-e-insomnio",
     }),
   component: StressAndInsomniaPage,
@@ -21,7 +21,7 @@ function StressAndInsomniaPage() {
     <ServiceLandingPage
       data={t.insomniaPage}
       serviceName="Hipnosis para estrés, insomnio y calma profunda"
-      serviceDescription="Acompañamiento con psicoterapia e hipnosis para desactivar el estado de alerta del sistema nervioso, frenar la rumiación y restaurar el descanso profundo. Sesiones en Sueca, a domicilio en Valencia ciudad y online."
+      serviceDescription="Acompañamiento con hipnosis y psicoterapia ericksoniana para calmar el ritmo interno, favorecer la relajación y facilitar el descanso profundo. Sesiones en Sueca, a domicilio en Valencia ciudad y online."
       path="/estres-e-insomnio"
       formTag="Estrés e Insomnio"
     />

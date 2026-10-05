@@ -603,7 +603,7 @@ function ProfessionalsPage() {
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Si antes de coordinar casos prefieres tener una breve llamada de 15 minutos o tomar
                 un café para conocernos, resolver cualquier cuestión técnica sobre la hipnosis o
-                valorar la posibilidad de que atienda a tus pacientes directamente en vuestro centro
+                valorar la posibilidad de colaborar con vuestros pacientes y clientes directamente en vuestro centro
                 por motivos de movilidad y accesibilidad, puedes reservar un hueco directamente.
               </p>
 

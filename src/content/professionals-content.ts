@@ -110,13 +110,13 @@ export const professionalsEs: ProfessionalsData = {
       description:
         "Planes nutricionales impecables que se ven boicoteados por picoteo inconsciente, hambre emocional, atracones nocturnos por estrés o una relación de culpa con la báscula.",
       benefit:
-        "La hipnosis desvincula la comida de la anestesia emocional y restablece la saciedad biológica, permitiendo que el paciente siga tus pautas con serenidad y sin sensación de lucha interna.",
+        "La hipnosis desvincula la comida de la anestesia emocional y restablece la saciedad biológica, permitiendo que la persona siga tus pautas con serenidad y sin sensación de lucha interna.",
     },
     {
       area: "Fisioterapia y Osteopatía",
       specialties: "Fisioterapeutas, Osteópatas y Readaptadores",
       description:
-        "Tratamientos manuales donde el paciente mantiene una hipertonía muscular refleja por estrés crónico, bruxismo diurno o un miedo paralizante a volver a lesionarse (kinesiofobia).",
+        "Tratamientos manuales donde la persona mantiene una tensión muscular refleja por estrés crónico, bruxismo diurno o temor intenso a volver a lesionarse.",
       benefit:
         "Desactiva la hiperactivación simpática somática, reduce la guardia neuromuscular involuntaria y devuelve la confianza en la movilidad del cuerpo para acelerar la recuperación física.",
     },
@@ -132,9 +132,9 @@ export const professionalsEs: ProfessionalsData = {
       area: "Odontología y Salud Bucal",
       specialties: "Odontólogos y Especialistas en ATM",
       description:
-        "Pacientes con bruxismo diurno severo por tensión inconsciente o personas con fobia incapacitante a las intervenciones dentales y a las agujas que retrasan tratamientos necesarios.",
+        "Personas con bruxismo diurno severo por tensión inconsciente o bloqueo intenso ante las intervenciones dentales y las agujas que retrasan tratamientos necesarios.",
       benefit:
-        "Desprograma el hábito automático de apretar la mandíbula y desensibiliza el miedo al sillón dental para que acudan a tu consulta relajados y cooperativos.",
+        "Desprograma el hábito automático de apretar la mandíbula y calma la respuesta de miedo ante el sillón dental para que acudan a tu despacho relajados y cooperativos.",
     },
   ],
 
@@ -180,7 +180,7 @@ export const professionalsEs: ProfessionalsData = {
     },
     {
       title: "Modalidades flexibles y atención en vuestro propio centro",
-      text: "Atención en despacho independiente dentro de Centro Sanar en Sueca (Ribera Baixa), a domicilio en Valencia ciudad o por videoconferencia. Además, si para tus pacientes es más cómodo por cuestiones de accesibilidad, limitaciones de movilidad o continuidad asistencial, puedo desplazarme directamente a vuestras instalaciones o clínica para realizar las sesiones in situ.",
+      text: "Atención en despacho independiente dentro de Centro Sanar en Sueca (Ribera Baixa), a domicilio en Valencia ciudad o por videoconferencia. Además, si para tus usuarios o clientes es más cómodo por cuestiones de accesibilidad, limitaciones de movilidad o continuidad asistencial, puedo desplazarme directamente a vuestras instalaciones o centro para realizar las sesiones in situ.",
     },
   ],
 
@@ -212,23 +212,23 @@ export const professionalsEs: ProfessionalsData = {
     {
       num: "05",
       title: "Retorno con mayor adherencia",
-      text: "El cliente prosigue tu tratamiento con la mente despejada, libre de autosabotajes y sumamente agradecido por haberle ofrecido un abordaje completo e integrador.",
+      text: "El cliente prosigue tu pauta con la mente despejada, libre de autosabotajes y sumamente agradecido por haberle ofrecido un abordaje completo e integrador.",
     },
   ],
 
   confidentialityTitle: "CONFIDENCIALIDAD Y RIGOR DEONTOLÓGICO",
   confidentialityText:
-    "El respeto a la intimidad del paciente y la lealtad profesional son sagrados. Cumplo rigurosamente con la normativa de protección de datos (RGPD) y el secreto profesional. Toda comunicación interdisciplinar se realiza únicamente bajo autorización expresa del cliente y con el único fin de favorecer su bienestar integral.",
+    "El respeto a la intimidad de las personas y la lealtad profesional son sagrados. Cumplo rigurosamente con la normativa de protección de datos (RGPD) y el secreto profesional. Toda comunicación interdisciplinar se realiza únicamente bajo autorización expresa del cliente y con el único fin de favorecer su bienestar integral.",
 
   aboutEyebrow: "PERFIL PROFESIONAL",
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Trabajo desde una convicción sencilla pero profunda: la inmensa mayoría de las personas saben exactamente lo que deberían hacer, pero su cuerpo y su mente inconsciente siguen respondiendo con automatismos construidos durante años.",
-    "Como psicoterapeuta formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, aplico una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
-    "Utilizo la hipnosis y la hipnoterapia como una vía complementaria, rápida y estructurada para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el poder multiplicador de un equipo multidisciplinar que suma fuerzas en beneficio del paciente.",
+    "Como profesional formada en el Instituto Erickson Madrid en hipnosis ericksoniana, aplico una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
+    "Utilizo la hipnosis como una vía complementaria, estructurada y respetuosa para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el valor de sumar fuerzas para acompañar a las personas hacia sus objetivos de bienestar y cambio de hábitos.",
   ],
   aboutLocation:
-    "Despacho en Sueca (Centro Sanar) · Desplazamiento a vuestro propio centro o clínica · Sesiones a domicilio en Valencia ciudad · Formato Online",
+    "Despacho en Sueca (Centro Sanar) · Desplazamiento a vuestro propio centro · Sesiones a domicilio en Valencia ciudad · Formato Online",
 
   formEyebrow: "INICIAR CONTACTO",
   formTitle: "CONVERSEMOS SOBRE UNA COLABORACIÓN",
@@ -265,8 +265,8 @@ export const professionalsEs: ProfessionalsData = {
   faqSubtitle: "Aspectos prácticos sobre cómo articular las derivaciones y el trabajo conjunto:",
   faqs: [
     {
-      q: "¿Cómo beneficia esta colaboración a mi consulta o clínica?",
-      a: "Tus pacientes consiguen mejores resultados porque eliminan los frenos inconscientes que boicotean tus pautas. Esto se traduce en mayor adherencia, menos abandonos, mejores testimonios y mayor prestigio para tu centro por ofrecer una visión holística y resolutiva.",
+      q: "¿Cómo beneficia esta colaboración a mi consulta o centro?",
+      a: "Tus clientes consiguen mejores resultados porque desactivan los frenos inconscientes que boicotean tus pautas. Esto se traduce en mayor adherencia, menos abandonos, mejores testimonios y mayor prestigio para tu centro por ofrecer una visión interdisciplinar y resolutiva.",
     },
     {
       q: "¿Hay algún tipo de compromiso o exclusividad?",
@@ -281,8 +281,8 @@ export const professionalsEs: ProfessionalsData = {
       a: "En mi despacho presencial de Centro Sanar en Sueca (con conexión directa desde Cullera, Alzira, Algemesí, Sollana y la comarca), a domicilio en Valencia ciudad para su máxima comodidad, o en formato online por videollamada para cualquier ubicación.",
     },
     {
-      q: "¿Puedes desplazarte a atender a los pacientes directamente en nuestra clínica o centro?",
-      a: "Sí, por supuesto. Si para determinados pacientes es más cómodo por accesibilidad física, problemas de movilidad reducida o por la tranquilidad de ser atendidos en un entorno clínico que ya conocen, puedo desplazarme a vuestras instalaciones en los días u horarios que acordemos para realizar las sesiones de hipnosis in situ.",
+      q: "¿Puedes desplazarte a atender a clientes directamente en nuestras instalaciones o centro?",
+      a: "Sí, por supuesto. Si para determinados usuarios o clientes es más cómodo por accesibilidad física, problemas de movilidad reducida o por la tranquilidad de ser atendidos en un entorno que ya conocen, puedo desplazarme a vuestras instalaciones en los días u horarios que acordemos para realizar las sesiones de hipnosis in situ.",
     },
   ],
 };
@@ -297,7 +297,7 @@ export const professionalsVa: ProfessionalsData = {
   manifesto:
     "“Col·labore amb professionals i centres de benestar de la Comunitat Valenciana quan consideren que algun dels seus clients pot beneficiar-se de treballar determinats hàbits, pors, bloquejos o patrons de comportament.”",
   heroText:
-    "En la teua pràctica clínica o de benestar, saps que sovint el major obstacle per a l'èxit del tractament no és la teua prescripció tècnica, sinó la resposta automàtica i involuntària del client: l'angoixa que saboteja la dieta, la tensió muscular sostinguda o la por que frena la recuperació. La hipnosi aplicada actua com una palanca facilitadora: aplana els bloquejos conductuals perquè els teus tractaments aconseguisquen el màxim impacte.",
+    "En la teua pràctica de benestar o acompanyament, saps que sovint el major obstacle per a l'èxit de les teues pautes no és la teua prescripció tècnica, sinó la resposta automàtica i involuntària del client: l'angoixa que saboteja la dieta, la tensió muscular sostinguda o el bloqueig que frena el progrés. La hipnosi aplicada actua com una palanca facilitadora: aplana els bloquejos conductuals perquè les teues pautes aconseguisquen el màxim impacte.",
   ctaPrimary: "PROPONDRE UNA COL·LABORACIÓ",
   ctaSecondary: "COM FUNCIONA UNA DERIVACIÓ",
 
@@ -325,14 +325,14 @@ export const professionalsVa: ProfessionalsData = {
 
   confidentialityTitle: "CONFIDENCIALITAT I RIGOR DEONTOLÒGIC",
   confidentialityText:
-    "El respecte a la intimitat del pacient i la lleialtat professional són sagrats. Complisc rigorosament amb la normativa de protecció de dades (RGPD) i el secret professional. Tota comunicació interdisciplinària es realitza únicament sota autorització expressa del client i per a afavorir el seu benestar integral.",
+    "El respecte a la intimitat de les persones i la lleialtat professional són sagrats. Complisc rigorosament amb la normativa de protecció de dades (RGPD) i el secret professional. Tota comunicació interdisciplinària es realitza únicament sota autorització expressa del client i per a afavorir el seu benestar integral.",
 
   aboutEyebrow: "PERFIL PROFESSIONAL",
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Treballe des d'una convicció senzilla però profunda: la immensa majoria de les persones saben exactament el que haurien de fer, però el seu cos i la seua ment inconscient continuen responent amb automatismes construïts durant anys.",
-    "Com a psicoterapeuta formada en l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, aplique una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
-    "Utilitze la hipnosi i la hipnoteràpia com una via complementària, ràpida i estructurada per a intervindre sobre eixa part automàtica de l'experiència. Col·labore amb professionals de la salut i el benestar de València i la Ribera Baixa perquè crec fermament en el poder multiplicador d'un equip multidisciplinari que suma forces en benefici del pacient.",
+    "Com a professional formada en l'Institut Erickson Madrid en hipnosi ericksoniana, aplique una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
+    "Utilitze la hipnosi com una via complementària, estructurada i respectuosa per a intervindre sobre eixa part automàtica de l'experiència. Col·labore amb professionals de la salut i el benestar de València i la Ribera Baixa perquè crec fermament en el valor de sumar forces per a acompanyar les persones cap als seus objectius de benestar i canvi d'hàbits.",
   ],
 
   formEyebrow: "INICIAR CONTACTE",

@@ -18,9 +18,9 @@ export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
       title:
-        "María A. Cabo · Psicoterapeuta en Valencia y Sueca | Hipnosis Presencial y a Domicilio",
+        "María A. Cabo · Hipnosis y Psicoterapia Ericksoniana en Valencia y Sueca",
       description:
-        "Psicoterapeuta formada en el Instituto Erickson Madrid. Sesiones de hipnosis y psicoterapia ericksoniana en Sueca, Valencia y online para estrés, insomnio, ansiedad y hábitos.",
+        "Especialista en hipnosis y psicoterapia ericksoniana formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
       path: "/",
     }),
   component: HypnosisPage,
@@ -37,26 +37,28 @@ function HypnosisPage() {
         <div className="container-page grid items-center gap-8 py-12 md:py-20 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
             <p className="eyebrow">{t.home.heroEyebrow}</p>
-            <h1 className="mt-4 text-4xl leading-tight md:text-6xl">
+            <h1 className="mt-4 text-4xl leading-tight md:text-6xl font-serif">
               <span className="block text-primary">{t.home.heroTitle1}</span>
-              <span className="block text-muted-foreground">{t.home.heroTitle2}</span>
-              <span className="block text-primary">{t.home.heroTitle3}</span>
+              <span className="block text-foreground">{t.home.heroTitle2}</span>
+              {t.home.heroTitle3 && (
+                <span className="block text-muted-foreground">{t.home.heroTitle3}</span>
+              )}
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               {t.home.heroIntro}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                to="/contacto"
+                to="/reservar"
                 className="rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
               >
                 {t.home.heroPrimary}
               </Link>
               <Link
-                to="/como-funciona"
+                to="/contacto"
                 className="rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
               >
-                {t.home.heroSecondary}
+                Consultar dudas
               </Link>
             </div>
 

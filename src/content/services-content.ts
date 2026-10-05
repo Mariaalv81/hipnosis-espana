@@ -564,8 +564,8 @@ export const servicesEs: ServicesDictionary = {
       mailtoFallback:
         "Si ha habido un problema con el envío automático, puedes escribirme directamente:",
     },
-    faqsTitle: "PREGUNTAS FRECUENTES SOBRE MIEDOS Y FOBIAS",
-    faqsSubtitle: "Respuestas claras a dudas comunes sobre el tratamiento con hipnosis:",
+    faqsTitle: "PREGUNTAS FRECUENTES SOBRE MIEDOS Y BLOQUEOS",
+    faqsSubtitle: "Respuestas claras a dudas comunes sobre las sesiones de hipnosis:",
     faqs: [
       {
         q: "¿Tendré que enfrentarme a lo que me da miedo durante la sesión de forma brusca?",
@@ -878,9 +878,9 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "El insomnio no es una incapacidad para dormir; es tu sistema nervioso interpretando la cama como un lugar de alerta y rumiación en piloto automático.",
     introText:
-      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con hipnosis y psicoterapia ericksoniana no forzamos el sueño (porque forzarlo genera más tensión): reprogramamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cerebro a activar de manera natural las ondas de descanso profundo.",
+      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con hipnosis no forzamos el sueño (porque forzarlo genera más tensión): facilitamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cuerpo a activar de manera natural las respuestas de descanso profundo.",
     trustBadges: [
-      "Solución 100% natural y sin fármacos",
+      "Acompañamiento respetuoso y natural",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
       "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
     ],
@@ -917,7 +917,7 @@ export const servicesEs: ServicesDictionary = {
     ],
     pillarsTitle: "EL RECORRIDO PARA RECUPERAR UN SUEÑO PROFUNDO",
     pillarsIntro:
-      "Un proceso estructurado de psicoterapia e hipnosis enfocado en devolverte el descanso desde la primera sesión.",
+      "Un proceso estructurado de hipnosis enfocado en devolverte el descanso desde la primera sesión.",
     steps: [
       {
         num: "01",
