@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { makeSeo } from "@/lib/seo";
+import { trackLeadSubmission } from "@/lib/analytics";
 
 export const Route = createFileRoute("/empresas/contacto")({
   head: () =>
@@ -92,6 +93,7 @@ function CorporateContactPage() {
       });
 
       if (!res.ok) throw new Error("Error enviando el mensaje");
+      trackLeadSubmission("Web - Empresas");
       setSent(true);
       form.reset();
     } catch (err) {

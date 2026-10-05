@@ -22,6 +22,7 @@ export function SiteFooter() {
   ] as const;
 
   const serviceLinks = [
+    { to: "/insomnio", label: "Insomnio y descanso profundo" },
     { to: "/ansiedad", label: "Hipnosis para la ansiedad" },
     { to: "/dejar-de-fumar", label: "Dejar de fumar" },
     { to: "/control-de-peso", label: "Control de peso" },
@@ -33,7 +34,7 @@ export function SiteFooter() {
   ] as const;
 
   return (
-    <footer className="mt-24 border-t border-border/60 bg-muted/60">
+    <footer className="mt-24 border-t border-border/60 bg-muted/60 pb-16 sm:pb-0">
       <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.7fr_1fr_0.9fr]">
         <div>
           <div className="flex items-center gap-3">

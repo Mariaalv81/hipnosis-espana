@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ExternalLink, Instagram } from "lucide-react";
+import { Check, ExternalLink, Instagram, MapPin, ShieldCheck } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makeFaqSchema, makeLocalBusinessSchema, makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
@@ -45,27 +45,35 @@ function HypnosisPage() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               {t.home.heroIntro}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                to="/reservar"
-                className="rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground"
+                to="/contacto"
+                className="rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
               >
                 {t.home.heroPrimary}
               </Link>
               <Link
-                to="/empresas"
-                className="rounded-full border border-border bg-card px-6 py-3 text-sm"
+                to="/como-funciona"
+                className="rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
               >
                 {t.home.heroSecondary}
               </Link>
             </div>
-            <div className="mt-4">
-              <Link
-                to="/como-funciona"
-                className="text-sm text-primary underline underline-offset-4"
-              >
-                {t.home.heroHow}
-              </Link>
+
+            {/* TRUST BADGES HERO */}
+            <div className="mt-8 flex flex-wrap gap-2.5">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card px-3 py-1 text-xs text-muted-foreground shadow-2xs">
+                <ShieldCheck className="size-3.5 text-primary" />
+                Instituto Erickson Madrid
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card px-3 py-1 text-xs text-muted-foreground shadow-2xs">
+                <Check className="size-3.5 text-primary" />
+                100% Consciente · Control total
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card px-3 py-1 text-xs text-muted-foreground shadow-2xs">
+                <MapPin className="size-3.5 text-primary" />
+                Sueca · A domicilio Valencia · Online
+              </span>
             </div>
           </div>
 
@@ -93,12 +101,41 @@ function HypnosisPage() {
         <p className="eyebrow">{t.home.changeEyebrow}</p>
         <h2 className="mt-3 text-3xl md:text-4xl">{t.home.changeTitle}</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          {t.home.changeCards.map((c) => (
-            <article key={c.title} className="rounded-2xl border border-border/60 bg-card p-6">
-              <h3 className="text-lg">{c.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{c.text}</p>
-            </article>
-          ))}
+          {t.home.changeCards.map((c) => {
+            const cardInner = (
+              <>
+                <div>
+                  <h3 className="text-lg font-medium transition-colors group-hover:text-primary">
+                    {c.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.text}</p>
+                </div>
+                {c.slug && (
+                  <div className="mt-5 flex items-center justify-between border-t border-border/60 pt-3 text-xs font-medium text-primary">
+                    <span>{c.cta || "Ver más"}</span>
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </div>
+                )}
+              </>
+            );
+
+            return c.slug ? (
+              <Link
+                key={c.title}
+                to={c.slug}
+                className="group flex flex-col justify-between rounded-2xl border border-border/70 bg-card p-6 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+              >
+                {cardInner}
+              </Link>
+            ) : (
+              <article
+                key={c.title}
+                className="rounded-2xl border border-border/60 bg-card p-6"
+              >
+                {cardInner}
+              </article>
+            );
+          })}
         </div>
         <div className="mt-6">
           <Link to="/ambitos" className="text-sm text-primary underline underline-offset-4">

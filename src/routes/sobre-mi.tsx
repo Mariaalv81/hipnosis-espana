@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ExternalLink, GraduationCap, Instagram } from "lucide-react";
+import { ExternalLink, GraduationCap, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makePersonSchema, makeSeo } from "@/lib/seo";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import sobreMiMariaCaboJpg from "@/assets/images/sobre-mi-maria-cabo.jpg";
 import sobreMiMariaCaboWebp from "@/assets/images/sobre-mi-maria-cabo.webp";
 import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
@@ -213,12 +214,37 @@ function AboutPage() {
 
             <section className="mt-14 rounded-lg bg-primary px-6 py-8 text-primary-foreground md:mt-16 md:px-8 md:py-10">
               <h2 className="max-w-3xl text-3xl leading-tight md:text-4xl">{about.quote}</h2>
-              <Button
-                asChild
-                className="mt-7 w-fit rounded-full bg-background px-7 py-3 text-sm text-foreground hover:bg-background/90"
-              >
-                <Link to="/reservar">{t.common.bookNow}</Link>
-              </Button>
+              <div className="mt-7 flex flex-wrap items-center gap-4">
+                <Button
+                  asChild
+                  className="rounded-full bg-background px-7 py-3 text-sm font-semibold text-foreground hover:bg-background/90"
+                >
+                  <Link to="/reservar">{t.common.bookNow}</Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm text-primary-foreground hover:bg-primary-foreground/20"
+                >
+                  <Link to="/contacto">Consultar dudas</Link>
+                </Button>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    trackWhatsAppClick("Sobre Mi");
+                    window.open(
+                      getWhatsAppUrl("Hola María, he leído tu trayectoria y me gustaría hacerte una consulta sobre una sesión."),
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }}
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/20 px-5 py-2.5 text-xs font-semibold text-emerald-100 transition-colors hover:bg-emerald-500/30"
+                >
+                  <MessageCircle className="h-4 w-4 text-emerald-300" />
+                  WhatsApp directo
+                </a>
+              </div>
             </section>
           </div>
         </div>

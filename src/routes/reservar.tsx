@@ -33,7 +33,17 @@ function BookPage() {
             <p className="eyebrow mt-1">{item.unit}</p>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             {i === 0 ? (
-              <CalendarButton className="mt-7 w-fit" />
+              <div className="mt-7 flex flex-col gap-3">
+                <CalendarButton className="w-fit" source="reservar_individual" />
+                <div className="pt-2">
+                  <Link
+                    to="/contacto"
+                    className="inline-flex items-center text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+                  >
+                    ¿Prefieres consultar dudas antes de agendar? Escríbeme →
+                  </Link>
+                </div>
+              </div>
             ) : (
               <>
                 <Link

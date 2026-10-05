@@ -13,7 +13,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { CalendarButton } from "@/components/calendar-button";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
+import { trackLeadSubmission, trackWhatsAppClick } from "@/lib/analytics";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
@@ -117,6 +118,7 @@ export function AnsiedadPage() {
 
       if (!res.ok) throw new Error("Error al enviar la solicitud");
 
+      trackLeadSubmission("Web - Ansiedad y Fobias", data.modality);
       setSent(true);
       form.reset();
     } catch (err) {
@@ -505,12 +507,24 @@ export function AnsiedadPage() {
                 sesión en el calendario.
               </p>
 
-              <div className="mt-8 grid gap-4">
-                <CalendarButton className="w-full justify-center" />
+              <div className="mt-8 grid gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackWhatsAppClick("ansiedad_aside");
+                    const url = getWhatsAppUrl("Hola María, te escribo por una consulta sobre hipnosis para la ansiedad y fobias...");
+                    if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+                  }}
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-95"
+                >
+                  <span>Consultar por WhatsApp</span>
+                </button>
+
+                <CalendarButton className="w-full justify-center" source="ansiedad_aside" />
 
                 <a
                   href={`mailto:${siteSettings.contactEmail}?subject=Consulta%20sobre%20hipnosis%20y%20ansiedad`}
-                  className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-3 text-sm transition-colors hover:bg-muted"
+                  className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-2.5 text-xs text-muted-foreground transition-colors hover:bg-muted"
                 >
                   Escribir a {siteSettings.contactEmail}
                 </a>

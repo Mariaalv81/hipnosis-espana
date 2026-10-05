@@ -7,6 +7,9 @@ import { loadRecaptcha } from "@/lib/recaptcha";
 import { makeSeo } from "@/lib/seo";
 import { siteSettings } from "@/content/site-settings";
 
+import { trackLeadSubmission, trackWhatsAppClick } from "@/lib/analytics";
+import { getWhatsAppUrl } from "@/content/site-settings";
+
 export const Route = createFileRoute("/contacto")({
   head: () =>
     makeSeo({
@@ -55,6 +58,7 @@ function ContactPage() {
       });
 
       if (!res.ok) throw new Error("Error enviando el mensaje");
+      trackLeadSubmission("Web - Contacto General");
       setSent(true);
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
@@ -98,15 +102,21 @@ function ContactPage() {
             />
           </div>
           <div className="grid gap-2">
-            <label htmlFor="phone" className="text-sm">
-              {t.contact.phone}
+            <label htmlFor="phone" className="text-sm font-medium">
+              {t.contact.phone} <span className="text-primary">*</span>
             </label>
             <input
               id="phone"
               name="phone"
               type="tel"
+              required
+              autoComplete="tel"
+              placeholder="Ej. 612 345 678"
               className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
             />
+            <p className="text-xs text-muted-foreground">
+              Para poder responderte personalmente por WhatsApp o llamada.
+            </p>
           </div>
           <div className="grid gap-2">
             <label htmlFor="message" className="text-sm">
@@ -130,7 +140,14 @@ function ContactPage() {
           >
             {t.contact.send}
           </button>
-          {sent && <p className="text-sm text-primary">{t.contact.sent}</p>}
+          {sent && (
+            <div className="rounded-xl border border-primary/30 bg-primary/10 p-4 text-sm text-foreground">
+              <p className="font-semibold text-primary">¡Mensaje recibido con éxito!</p>
+              <p className="mt-1 text-xs text-muted-foreground">
+                Gracias por contactar. Te responderé en menos de 24 horas laborables.
+              </p>
+            </div>
+          )}
           {mailtoLink && (
             <p className="mt-3">
               <a
@@ -145,6 +162,26 @@ function ContactPage() {
         </form>
 
         <aside className="h-fit rounded-2xl border border-border bg-card p-7">
+          <div className="mb-6 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 p-5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#25D366]">
+              Atención inmediata por WhatsApp
+            </p>
+            <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+              Si prefieres resolver una duda rápida antes de reservar o consultar disponibilidad:
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                trackWhatsAppClick("contacto_aside");
+                const url = getWhatsAppUrl();
+                if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+              }}
+              className="mt-3.5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+            >
+              <span>Abrir chat de WhatsApp</span>
+            </button>
+          </div>
+
           <h2 className="text-2xl">{t.contact.infoTitle}</h2>
           <ul className="mt-5 grid gap-3 text-sm text-muted-foreground">
             <li>{t.contact.area}</li>

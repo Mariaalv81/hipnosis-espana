@@ -10,7 +10,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { CalendarButton } from "@/components/calendar-button";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
+import { trackLeadSubmission, trackWhatsAppClick } from "@/lib/analytics";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { JsonLd, makeFaqSchema, makeServiceSchema } from "@/lib/seo";
 import {
@@ -173,6 +174,7 @@ export function ServiceLandingPage({
 
       if (!res.ok) throw new Error("Error al enviar la solicitud");
 
+      trackLeadSubmission(formTag, formData.modality);
       setSent(true);
       form.reset();
     } catch (err) {
@@ -583,8 +585,21 @@ export function ServiceLandingPage({
               </div>
 
               <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-center">
-                <p className="text-xs text-muted-foreground">¿Prefieres agendar directamente?</p>
-                <CalendarButton className="mt-3 w-full" />
+                <p className="text-xs text-muted-foreground">¿Prefieres escribir directamente por WhatsApp?</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackWhatsAppClick(`landing_${formTag}`);
+                    const url = getWhatsAppUrl(`Hola María, te escribo desde la página de ${formTag} para consultarte...`);
+                    if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+                  }}
+                  className="mt-2.5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 px-4 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-95"
+                >
+                  <span>Chat directo de WhatsApp</span>
+                </button>
+
+                <p className="mt-4 text-xs text-muted-foreground border-t border-border/60 pt-3">¿O prefieres elegir hueco en mi calendario?</p>
+                <CalendarButton className="mt-2 w-full text-xs py-2.5" source={`landing_${formTag}`} />
               </div>
             </div>
           </div>

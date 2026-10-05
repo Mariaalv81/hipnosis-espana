@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/page-header";
 import { siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
+import { trackLeadSubmission } from "@/lib/analytics";
 import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/dejar-de-fumar")({
@@ -97,6 +98,7 @@ function DejarDeFumarPage() {
 
       if (!res.ok) throw new Error("Error al enviar la solicitud");
 
+      trackLeadSubmission("Web - Antitabaco", data.preferredMethod);
       setSent(true);
       form.reset();
     } catch (err) {

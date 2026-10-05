@@ -17,6 +17,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { siteSettings } from "@/content/site-settings";
+import { trackLeadSubmission } from "@/lib/analytics";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
@@ -136,6 +137,7 @@ function PastLivesPage() {
 
       if (!res.ok) throw new Error("Error al enviar la solicitud");
 
+      trackLeadSubmission("Web - Vidas Pasadas", data.modality);
       setSent(true);
       form.reset();
     } catch (err) {

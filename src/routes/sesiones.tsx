@@ -68,7 +68,17 @@ function SessionsPage() {
               ))}
             </ul>
             {index === 0 ? (
-              <CalendarButton className="mt-8 w-fit" />
+              <div className="mt-8 flex flex-col gap-3">
+                <CalendarButton className="w-fit" source="sesiones_individual" />
+                <div className="pt-1">
+                  <Link
+                    to="/contacto"
+                    className="inline-flex items-center text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+                  >
+                    ¿Prefieres resolver una duda antes de agendar? Escríbeme →
+                  </Link>
+                </div>
+              </div>
             ) : (
               <Link
                 to="/dejar-de-fumar"

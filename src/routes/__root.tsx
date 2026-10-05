@@ -17,6 +17,7 @@ import { I18nProvider } from "@/lib/i18n";
 import { CookieConsent } from "@/components/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { WhatsAppFloatingButton, StickyMobileBar } from "@/components/whatsapp-button";
 
 const preloadReloadKey = "maria-cabo:preload-reload-url";
 
@@ -181,6 +182,8 @@ function RootComponent() {
             <Outlet />
           </main>
           <SiteFooter />
+          <WhatsAppFloatingButton />
+          <StickyMobileBar />
           <CookieConsent />
           <Analytics />
         </div>
