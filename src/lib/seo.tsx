@@ -77,7 +77,7 @@ export function makeLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
-    name: "María A. Cabo · Hipnosis y psicoterapia ericksoniana",
+    name: "María A. Cabo · Hipnosis y desarrollo personal",
     alternateName: [
       "María A. Cabo",
       "María Cabo",
@@ -88,13 +88,13 @@ export function makeLocalBusinessSchema() {
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
     description:
-      "Sesiones de hipnosis clínica y psicoterapia ericksoniana en Sueca y Valencia (despacho en Centro Sanar, a domicilio en Valencia ciudad y online) con María A. Cabo. Formación especializada en Hipnosis y Psicoterapia Ericksoniana en el Instituto Erickson Madrid.",
+      "Sesiones de hipnosis clínica y desarrollo personal en Sueca y Valencia (despacho en Centro Sanar, a domicilio en Valencia ciudad y online) con María A. Cabo. Formación especializada en Hipnosis Ericksoniana en el Instituto Erickson Madrid.",
     sameAs: [siteSettings.instagramUrl],
     founder: {
       "@type": "Person",
       name: "María A. Cabo",
       alternateName: "María Cabo",
-      jobTitle: "Especialista en hipnosis y psicoterapia ericksoniana",
+      jobTitle: "Especialista en hipnosis y desarrollo personal",
       url: `${SITE_URL}/sobre-mi`,
       alumniOf: {
         "@type": "EducationalOrganization",
@@ -105,8 +105,8 @@ export function makeLocalBusinessSchema() {
     knowsAbout: [
       "Hipnosis",
       "Hipnosis clínica",
-      "Psicoterapia ericksoniana",
-      "Hipnosis y psicoterapia ericksoniana",
+      "Hipnosis ericksoniana",
+      "Hipnosis y desarrollo personal",
       "Instituto Erickson Madrid",
       "Hipnosis en Valencia",
       "Hipnosis a domicilio en Valencia",
@@ -326,11 +326,11 @@ export function makePersonSchema() {
     name: "María A. Cabo",
     alternateName: "María Cabo",
     jobTitle: [
-      "Especialista en Hipnosis y Psicoterapia Ericksoniana",
+      "Especialista en Hipnosis y Desarrollo Personal",
       "Profesional de Hipnosis Clínica",
     ],
     description:
-      "Especialista en hipnosis y psicoterapia ericksoniana formada en el Instituto Erickson Madrid. Sesiones en Sueca, Valencia y online.",
+      "Especialista en hipnosis y desarrollo personal formada en el Instituto Erickson Madrid. Sesiones en Sueca, Valencia y online.",
     url: `${SITE_URL}/sobre-mi`,
     image: `${SITE_URL}/sobre-mi-maria-cabo.jpg`,
     sameAs: [siteSettings.instagramUrl],
@@ -342,8 +342,8 @@ export function makePersonSchema() {
     knowsAbout: [
       "Hipnosis",
       "Hipnosis clínica",
-      "Psicoterapia ericksoniana",
-      "Hipnosis y psicoterapia ericksoniana",
+      "Hipnosis ericksoniana",
+      "Hipnosis y desarrollo personal",
       "Instituto Erickson Madrid",
       "Desarrollo personal",
       "Gestión de la ansiedad cotidiana",
@@ -357,7 +357,7 @@ export function makePersonSchema() {
     worksFor: {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#organization`,
-      name: "María A. Cabo · Hipnosis y psicoterapia ericksoniana",
+      name: "María A. Cabo · Hipnosis y desarrollo personal",
       url: SITE_URL,
     },
   };

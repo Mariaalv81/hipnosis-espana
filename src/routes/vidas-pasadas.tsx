@@ -588,7 +588,7 @@ function PastLivesPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María A. Cabo - Hipnosis y Psicoterapia Ericksoniana"
+                alt="María A. Cabo - Hipnosis y Desarrollo Personal"
                 width={1254}
                 height={1254}
                 loading="lazy"

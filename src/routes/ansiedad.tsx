@@ -22,9 +22,9 @@ import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 export const Route = createFileRoute("/ansiedad")({
   head: () =>
     makeSeo({
-      title: "Gestión de la Ansiedad Cotidiana y Miedos en Valencia y Sueca · Hipnosis y Psicoterapia | María A. Cabo",
+      title: "Gestión de la Ansiedad Cotidiana y Miedos en Valencia y Sueca · Hipnosis | María A. Cabo",
       description:
-        "Aprende a gestionar la ansiedad cotidiana, calmar la tensión y trabajar miedos con hipnosis clínica y psicoterapia ericksoniana en Sueca, Valencia y online. 70 €/sesión.",
+        "Aprende a gestionar la ansiedad cotidiana, calmar la tensión y trabajar miedos con hipnosis clínica y desarrollo personal en Sueca, Valencia y online. 70 €/sesión.",
       path: "/ansiedad",
     }),
   component: AnsiedadPage,
@@ -38,9 +38,9 @@ export function AnsiedadPage() {
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const serviceSchema = makeServiceSchema({
-    name: "Hipnosis y psicoterapia ericksoniana para la ansiedad y miedos",
+    name: "Hipnosis y desarrollo personal para la gestión de la ansiedad cotidiana y miedos",
     description:
-      "Acompañamiento estructurado con hipnosis y psicoterapia ericksoniana para gestionar la ansiedad cotidiana, trabajar respuestas de miedo aprendidas y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
+      "Acompañamiento estructurado con hipnosis y desarrollo personal para gestionar la ansiedad cotidiana, trabajar respuestas de miedo aprendidas y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
     price: "70 €",
     path: "/ansiedad",
     areaServed: [
@@ -565,7 +565,7 @@ export function AnsiedadPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> Las sesiones de hipnosis y psicoterapia ericksoniana están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención médica o psiquiátrica ante patologías severas, ni se realizan diagnósticos clínicos de trastornos mentales graves.
+            <strong>Aviso de transparencia:</strong> Las sesiones de hipnosis y desarrollo personal están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención médica o psiquiátrica ante patologías severas, ni se realizan diagnósticos clínicos de trastornos mentales graves.
           </p>
         </div>
       </section>

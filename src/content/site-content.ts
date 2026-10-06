@@ -5,7 +5,7 @@ import { pastLivesEs, pastLivesVa, pastLivesEn } from "./past-lives-content";
 
 const es = {
   brand: "María A. Cabo",
-  tagline: "Hipnosis y psicoterapia ericksoniana",
+  tagline: "Hipnosis y desarrollo personal",
   nav: {
     home: "Inicio",
     how: "Cómo funciona",
@@ -24,14 +24,14 @@ const es = {
     eyebrow: "Valencia y Sueca · Presencial y a domicilio",
     title: "Un espacio para cambiar desde dentro",
     subtitle:
-      "Acompañamiento con hipnosis y psicoterapia ericksoniana para personas que buscan cambios reales: hábitos, calma, descanso profundo y seguridad. Con rigor científico, cercanía y expectativas claras.",
+      "Acompañamiento con hipnosis y desarrollo personal para personas que buscan cambios reales: hábitos, calma, descanso profundo y seguridad. Con rigor científico, cercanía y expectativas claras.",
     pillars: [
       {
         title: "Evidencia y rigor",
         text: "Hipnosis clínica y ericksoniana con base científica y neurobiológica, sin mitos ni falsas promesas.",
       },
       {
-        title: "Psicoterapia ericksoniana",
+        title: "Hipnosis ericksoniana",
         text: "Un acompañamiento respetuoso que activa tus propios recursos inconscientes y se adapta a tu ritmo.",
       },
       {
@@ -59,12 +59,12 @@ const es = {
     finalTitle: "¿Damos el primer paso?",
     finalText: "Puedes reservar directamente o escribir antes si tienes alguna duda.",
     finalSecondary: "Tengo una duda antes de reservar",
-    heroEyebrow: "HIPNOSIS Y PSICOTERAPIA ERICKSONIANA · VALENCIA Y SUECA",
+    heroEyebrow: "HIPNOSIS Y DESARROLLO PERSONAL · VALENCIA Y SUECA",
     heroTitle1: "HIPNOSIS PARA CAMBIAR",
     heroTitle2: "LO QUE YA NO TE SIRVE.",
     heroTitle3: "AVANZA CON SERENIDAD.",
     heroIntro:
-      "Sesiones individuales de hipnosis y psicoterapia ericksoniana orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
+      "Sesiones individuales de hipnosis y desarrollo personal orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
     heroPrimary: "RESERVAR SESIÓN",
     heroSecondary: "CÓMO FUNCIONA LA HIPNOSIS",
     heroHow: "Conocer cómo funciona la hipnosis paso a paso →",
@@ -115,7 +115,7 @@ const es = {
     hypnosisText1:
       "La hipnosis clínica y ericksoniana es un estado de atención focalizada respaldado por la neurociencia moderna. Lejos de los mitos del espectáculo, es un procedimiento estructurado donde permaneces plenamente consciente y en control en todo momento, facilitando cambios profundos en hábitos, respuestas automáticas ante la tensión y patrones de conducta.",
     hypnosisText2:
-      "A través de la psicoterapia ericksoniana no se imponen soluciones externas ni fórmulas mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo. Trabajamos sobre objetivos personales y de bienestar con el máximo rigor ético y profesional, sin realizar diagnósticos psiquiátricos de trastornos mentales graves.",
+      "A través de la hipnosis ericksoniana no se imponen soluciones externas ni fórmulas mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo. Trabajamos sobre objetivos personales y de bienestar con el máximo rigor ético y profesional, sin realizar diagnósticos psiquiátricos de trastornos mentales graves.",
     hypnosisLink: "CÓMO FUNCIONA LA HIPNOSIS",
     hypnosisImageAlt: "Fotografía de sesión tranquila",
     contextsTitle: "DOS CONTEXTOS. UNA MISMA IDEA: CAMBIAR CÓMO RESPONDEMOS.",
@@ -146,7 +146,7 @@ const es = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA FORMA CERCANA Y RIGUROSA DE TRABAJAR CON EL CAMBIO.",
     aboutText:
-      "Mi trabajo parte de una certeza: muchas veces sabemos racionalmente qué queremos hacer, pero nuestro cuerpo y mente automática reaccionan de otra manera. Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, empleo estas disciplinas para intervenir sobre esos patrones profundos, facilitando cambios sólidos y sostenibles con total seguridad, cercanía y rigor profesional.",
+      "Mi trabajo parte de una certeza: muchas veces sabemos racionalmente qué queremos hacer, pero nuestro cuerpo y mente automática reaccionan de otra manera. Formada en el Instituto Erickson Madrid en Hipnosis Ericksoniana, empleo estas disciplinas para intervenir sobre esos patrones profundos, facilitando cambios sólidos y sostenibles con total seguridad, cercanía y rigor profesional.",
     aboutLink: "CONOCERME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "ENCUENTROS",
@@ -415,13 +415,13 @@ const es = {
       "Gestión de la Ansiedad Cotidiana y Miedos en Valencia y Sueca · Hipnosis | María A. Cabo",
     seoDescription:
       "Aprende a gestionar la ansiedad cotidiana, calmar la tensión y trabajar miedos (volar, conducir, hablar en público) con hipnosis en Sueca, Valencia y online. 70 €/sesión.",
-    eyebrow: "HIPNOSIS Y PSICOTERAPIA ERICKSONIANA · VALENCIA Y SUECA",
+    eyebrow: "HIPNOSIS Y DESARROLLO PERSONAL · VALENCIA Y SUECA",
     eyebrowNav: "Gestión de Ansiedad y Miedos",
     title: "GESTIONAR LA ANSIEDAD COTIDIANA, CALMAR LA TENSIÓN Y TRABAJAR MIEDOS",
     subtitle:
       "Aprende a responder de otra manera ante situaciones que generan tensión, preocupación o bloqueo, enseñando a tu cuerpo a recuperar la calma.",
     introText:
-      "Opresión en el pecho, respiración corta, mente que anticipa preocupaciones o bloqueo ante situaciones como volar, conducir o hablar en público. Cuando el estrés y la preocupación se repiten, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis clínica y psicoterapia ericksoniana trabajamos en ese nivel de respuestas automáticas: facilitamos recursos para que tu cuerpo recuerde la calma, aprendas a responder con serenidad ante los disparadores de tensión y recuperes tu tranquilidad cotidiana de forma respetuosa y natural.",
+      "Opresión en el pecho, respiración corta, mente que anticipa preocupaciones o bloqueo ante situaciones como volar, conducir o hablar en público. Cuando el estrés y la preocupación se repiten, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis clínica y desarrollo personal trabajamos en ese nivel de respuestas automáticas: facilitamos recursos para que tu cuerpo recuerde la calma, aprendas a responder con serenidad ante los disparadores de tensión y recuperes tu tranquilidad cotidiana de forma respetuosa y natural.",
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
     trustBadges: [
@@ -558,7 +558,7 @@ const es = {
       },
       {
         q: "¿Es compatible si ya tomo medicación ansiolítica o voy al psicólogo?",
-        a: "Sí, es compatible. La hipnosis clínica y la psicoterapia ericksoniana son herramientas rigurosas orientadas a potenciar tus propios recursos de autorregulación. No realizamos diagnósticos clínicos de trastornos mentales graves ni sustituimos los tratamientos médicos o psiquiátricos, colaborando o respetando siempre las indicaciones de tus facultativos.",
+        a: "Sí, es compatible. La hipnosis clínica y el desarrollo personal son herramientas rigurosas orientadas a potenciar tus propios recursos de autorregulación. No realizamos diagnósticos clínicos de trastornos mentales graves ni sustituimos los tratamientos médicos o psiquiátricos, colaborando o respetando siempre las indicaciones de tus facultativos.",
       },
       {
         q: "¿Realizas sesiones en Sueca, la Ribera Baixa y Valencia?",
@@ -603,10 +603,10 @@ const es = {
   areas: {
     title: "Ámbitos de acompañamiento",
     intro:
-      "Ocho áreas principales donde la hipnosis y la psicoterapia ericksoniana ayudan a reorganizar respuestas automáticas, hábitos y formas de afrontar la vida con serenidad y aplomo.",
+      "Ocho áreas principales donde la hipnosis y el desarrollo personal ayudan a reorganizar respuestas automáticas, hábitos y formas de afrontar la vida con serenidad y aplomo.",
     noticeTitle: "Rigor profesional y límites éticos",
     notice:
-      "Las sesiones de hipnosis y psicoterapia ericksoniana están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención médica, psicológica o psiquiátrica ante patologías severas, ni realizamos diagnósticos clínicos de trastornos mentales graves. Si tu caso requiere atención médica o psiquiátrica especializada, te orientaremos con total transparencia.",
+      "Las sesiones de hipnosis y desarrollo personal están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención médica, psicológica o psiquiátrica ante patologías severas, ni realizamos diagnósticos clínicos de trastornos mentales graves. Si tu caso requiere atención médica o psiquiátrica especializada, te orientaremos con total transparencia.",
     items: [
       {
         title: "Estrés, calma e insomnio",
@@ -670,7 +670,7 @@ const es = {
         name: "Sesión individual",
         price: "70 €",
         unit: "por hora",
-        text: "Una hora de acompañamiento con hipnosis y psicoterapia ericksoniana para trabajar descanso, estrés, gestión de la ansiedad cotidiana, miedos, hábitos o el objetivo que definamos.",
+        text: "Una hora de acompañamiento con hipnosis y desarrollo personal para trabajar descanso, estrés, gestión de la ansiedad cotidiana, miedos, hábitos o el objetivo que definamos.",
         points: [
           "Duración de 60 minutos",
           "Sueca, a domicilio en Valencia u online",
@@ -700,14 +700,14 @@ const es = {
   about: {
     title: "Sobre mí",
     name: "María A. Cabo",
-    role: "Especialista en hipnosis y psicoterapia ericksoniana",
+    role: "Profesional especializada en hipnosis y desarrollo personal",
     intro:
-      "Soy María Cabo, especialista en hipnosis y psicoterapia ericksoniana. Acompaño a personas que quieren cambiar hábitos, regular el estrés y la ansiedad cotidiana, superar determinados miedos o ganar confianza y bienestar emocional utilizando la hipnosis como una herramienta rigurosa de cambio. Cuento con formación especializada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
+      "Soy María Cabo, profesional especializada en hipnosis y desarrollo personal. Acompaño a personas adultas que quieren cambiar hábitos, regular el estrés y la ansiedad cotidiana, superar determinados miedos o ganar confianza y bienestar emocional utilizando la hipnosis como una herramienta rigurosa de cambio. Cuento con formación especializada en el Instituto Erickson Madrid en Hipnosis Ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
     traits: ["Cercanía", "Formación Ericksoniana", "Recursos útiles"],
     highlights: [
       {
         title: "Instituto Erickson Madrid",
-        text: "Formación especializada en Hipnosis y Psicoterapia Ericksoniana en el Instituto Erickson Madrid.",
+        text: "Formación especializada en Hipnosis Ericksoniana en el Instituto Erickson Madrid.",
       },
       {
         title: "Experiencia internacional",
@@ -764,7 +764,7 @@ const es = {
     cities: ["Los Ángeles", "Londres", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "A lo largo de mi trayectoria he trabajado en entornos corporativos e internacionales y he vivido en ciudades como Los Ángeles, Londres, Barcelona, Valencia y Madrid.",
-      "Formada en el Instituto Erickson Madrid en hipnosis y psicoterapia ericksoniana, una de las instituciones de referencia en España, empleo un modelo que pone el foco en los recursos inconscientes y aprendizajes previos de la propia persona para generar respuestas más adaptativas y duraderas.",
+      "Formada en el Instituto Erickson Madrid en Hipnosis Ericksoniana, una de las instituciones de referencia en España, empleo un modelo que pone el foco en los recursos inconscientes y aprendizajes previos de la propia persona para generar respuestas más adaptativas y duraderas.",
       "Esa combinación entre formación técnica especializada en hipnosis y experiencia vital en entornos de alta exigencia me ayuda a entender que detrás de cada objetivo hay una historia, una forma de responder y unas circunstancias diferentes.",
     ],
     pathExtra:
@@ -957,7 +957,7 @@ const es = {
       },
       {
         q: "¿En qué se diferencia de un tratamiento o diagnóstico psiquiátrico?",
-        a: "La hipnosis y la psicoterapia ericksoniana son herramientas serias enfocadas en procesos de cambio personal, bienestar emocional y superación de bloqueos. No realizamos diagnósticos clínicos de trastornos mentales graves ni sustituimos la atención médica o psiquiátrica cuando esta es necesaria.",
+        a: "La hipnosis clínica y el desarrollo personal son herramientas serias enfocadas en procesos de cambio personal, bienestar emocional y superación de bloqueos. No realizamos diagnósticos clínicos de trastornos mentales graves ni sustituimos la atención médica o psiquiátrica cuando esta es necesaria.",
       },
       {
         q: "¿Cuántas sesiones necesito?",
@@ -1036,7 +1036,7 @@ const es = {
   footer: {
     rights: "Todos los derechos reservados.",
     disclaimer:
-      "María A. Cabo · Hipnosis y psicoterapia ericksoniana. Acompañamiento orientado al cambio personal y bienestar emocional. No sustituye la atención médica o psiquiátrica ante patologías severas.",
+      "María A. Cabo · Hipnosis y desarrollo personal. Acompañamiento orientado al cambio personal y bienestar emocional. No sustituye la atención médica o psiquiátrica ante patologías severas.",
     legal: "Información legal",
   },
   common: {
@@ -1104,7 +1104,7 @@ export type Dict = typeof es;
 
 const va: Dict = {
   brand: "María A. Cabo",
-  tagline: "Hipnosi i psicoteràpia ericksoniana",
+  tagline: "Hipnosi i desenvolupament personal",
   nav: {
     home: "Inici",
     how: "Com funciona",
@@ -1123,14 +1123,14 @@ const va: Dict = {
     eyebrow: "València i Sueca · Presencial i a domicili",
     title: "Un espai per a canviar des de dins",
     subtitle:
-      "Acompanyament amb hipnosi i psicoteràpia ericksoniana per a persones que busquen canvis reals: hàbits, calma, descans profund i seguretat. Amb rigor científic, proximitat i expectatives clares.",
+      "Acompanyament amb hipnosi i desenvolupament personal per a persones que busquen canvis reals: hàbits, calma, descans profund i seguretat. Amb rigor científic, proximitat i expectatives clares.",
     pillars: [
       {
         title: "Evidència i rigor",
         text: "Hipnosi clínica i ericksoniana amb base científica i neurobiològica, sense mites ni falses promeses.",
       },
       {
-        title: "Psicoteràpia ericksoniana",
+        title: "Hipnosi ericksoniana",
         text: "Un acompanyament respectuós que activa els teus propis recursos inconscients i s'adapta al teu ritme.",
       },
       {
@@ -1158,12 +1158,12 @@ const va: Dict = {
     finalTitle: "Fem el primer pas?",
     finalText: "Pots reservar directament o escriure abans si tens algun dubte.",
     finalSecondary: "Tinc un dubte abans de reservar",
-    heroEyebrow: "HIPNOSI I PSICOTERÀPIA ERICKSONIANA · VALÈNCIA I SUECA",
+    heroEyebrow: "HIPNOSI I DESENVOLUPAMENT PERSONAL · VALÈNCIA I SUECA",
     heroTitle1: "HIPNOSI PER A CANVIAR",
     heroTitle2: "EL QUE JA NO ET SERVIX.",
     heroTitle3: "AVANÇA AMB SERENITAT.",
     heroIntro:
-      "Sessions individuals d'hipnosi i psicoteràpia ericksoniana orientades al canvi d'hàbits, la gestió de l'estrès i l'ansietat quotidiana, l'insomni i la seguretat personal. Despatx a Sueca (Centre Sanar), a domicili a València ciutat i en línia.",
+      "Sessions individuals d'hipnosi i desenvolupament personal orientades al canvi d'hàbits, la gestió de l'estrès i l'ansietat quotidiana, l'insomni i la seguretat personal. Despatx a Sueca (Centre Sanar), a domicili a València ciutat i en línia.",
     heroPrimary: "RESERVAR SESSIÓ",
     heroSecondary: "COM FUNCIONA LA HIPNOSI",
     heroHow: "Conéixer com funciona la hipnosi pas a pas →",
@@ -1214,7 +1214,7 @@ const va: Dict = {
     hypnosisText1:
       "La hipnosi clínica i ericksoniana és un estat d'atenció focalitzada recolzat per la neurociència moderna. Lluny dels mites de l'espectacle, és un procediment estructurat on romanen plenament conscient i amb el control en tot moment, facilitant canvis profunds en hàbits, respostes automàtiques davant la tensió i patrons de conducta.",
     hypnosisText2:
-      "A través de la psicoteràpia ericksoniana no s'imposen solucions externes ni fórmules màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig. Treballem sobre objectius personals i de benestar amb el màxim rigor ètic i professional, sense realitzar diagnòstics psiquiàtrics de trastorns mentals greus.",
+      "A través de l'acompanyament amb hipnosi no s'imposen solucions externes ni fórmules màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig. Treballem sobre objectius personals i de benestar amb el màxim rigor ètic i professional, sense realitzar diagnòstics psiquiàtrics de trastorns mentals greus.",
     hypnosisLink: "COM FUNCIONA LA HIPNOSI",
     hypnosisImageAlt: "Fotografia de sessió tranquil·la",
     contextsTitle: "DOS CONTEXTOS. UNA MATEIXA IDEA: CANVIAR COM RESPONEM.",
@@ -1245,7 +1245,7 @@ const va: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "UNA MANERA PROPERA I RIGUROSA DE TREBALLAR AMB EL CANVI.",
     aboutText:
-      "El meu treball partix d'una certesa: moltes vegades sabem racionalment què volem fer, però el nostre cos i ment automàtica reaccionen d'una altra manera. Formada a l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, empri aquestes eines per a intervindre sobre eixos patrons profunds, facilitant canvis sòlids i sostenibles amb total seguretat, proximitat i rigor professional.",
+      "El meu treball partix d'una certesa: moltes vegades sabem racionalment què volem fer, però el nostre cos i ment automàtica reaccionen d'una altra manera. Formada a l'Institut Erickson Madrid en Hipnosi Ericksoniana, empri aquestes eines per a intervindre sobre eixos patrons profunds, facilitant canvis sòlids i sostenibles amb total seguretat, proximitat i rigor professional.",
     aboutLink: "CONÉIXER-ME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "TROBADES",
@@ -1512,13 +1512,13 @@ const va: Dict = {
       "Gestió de l'Ansietat Quotidiana i Pors a València i Sueca · Hipnosi | María A. Cabo",
     seoDescription:
       "Aprén a gestionar l'ansietat quotidiana, calmar la tensió i treballar pors (volar, conduir, parlar en públic) amb hipnosi a Sueca, València i en línia. 70 €/sessió.",
-    eyebrow: "HIPNOSI I PSICOTERÀPIA ERICKSONIANA · VALÈNCIA I SUECA",
+    eyebrow: "HIPNOSI I DESENVOLUPAMENT PERSONAL · VALÈNCIA I SUECA",
     eyebrowNav: "Gestió d'Ansietat i Pors",
     title: "GESTIONAR L'ANSIETAT QUOTIDIANA, CALMAR LA TENSIÓ I TREBALLAR PORS",
     subtitle:
       "Aprén a respondre d'una altra manera davant de situacions que generen tensió, preocupació o bloqueig, ensenyant al teu cos a recuperar la calma.",
     introText:
-      "Opressió al pit, respiració curta, ment que anticipa preocupacions o bloqueig davant de situacions com volar, conduir o parlar en públic. Quan l'estrés i la preocupació es repetixen, el cos reacciona de forma reflexa abans que la raó intervinga. Amb hipnosi clínica i psicoteràpia ericksoniana treballem en eixe nivell de respostes automàtiques: facilitem recursos perquè el teu cos recorde la calma, aprengues a respondre amb serenitat davant dels disparadors de tensió i recuperes la teua tranquil·litat quotidiana de forma respectuosa i natural.",
+      "Opressió al pit, respiració curta, ment que anticipa preocupacions o bloqueig davant de situacions com volar, conduir o parlar en públic. Quan l'estrés i la preocupació es repetixen, el cos reacciona de forma reflexa abans que la raó intervinga. Amb hipnosi clínica i recursos de desenvolupament personal treballem en eixe nivell de respostes automàtiques: facilitem recursos perquè el teu cos recorde la calma, aprengues a respondre amb serenitat davant dels disparadors de tensió i recuperes la teua tranquil·litat quotidiana de forma respectuosa i natural.",
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
     trustBadges: [
@@ -1654,7 +1654,7 @@ const va: Dict = {
       },
       {
         q: "És compatible si ja prenc medicació ansiolítica o vaig al psicòleg?",
-        a: "Sí, és compatible. La hipnosi clínica i la psicoteràpia ericksoniana són ferramentes rigoroses orientades a potenciar els teus propis recursos d'autoregulació. No realitzem diagnòstics clínics de trastorns mentals greus ni substituïm els tractaments mèdics o psiquiàtrics, col·laborant o respectant sempre les indicacions dels teus facultatius.",
+        a: "Sí, és compatible com a suport d'autoregulació. La hipnosi clínica i l'acompanyament personal t'ajuden a connectar amb els teus recursos interns naturals. No realitzem diagnòstics clínics de trastorns mentals greus ni substituïm els tractaments mèdics o psiquiàtrics pautats per facultatius especialistes.",
       },
       {
         q: "Realitzes sessions a Sueca, la Ribera Baixa i València?",
@@ -1699,10 +1699,10 @@ const va: Dict = {
   areas: {
     title: "Àmbits d'acompanyament",
     intro:
-      "Huit àrees principals on la hipnosi i la psicoteràpia ericksoniana ajuden a reorganitzar respostes automàtiques, hàbits i formes d'afrontar la vida amb serenitat i aplom.",
+      "Huit àrees principals on la hipnosi i el desenvolupament personal ajuden a reorganitzar respostes automàtiques, hàbits i formes d'afrontar la vida amb serenitat i aplom.",
     noticeTitle: "Rigor professional i límits ètics",
     notice:
-      "Les sessions d'hipnosi i psicoteràpia ericksoniana estan orientades al canvi personal i el benestar emocional. No substituïxen l'atenció mèdica, psicològica o psiquiàtrica davant patologies severes, ni realitzem diagnòstics clínics de trastorns mentals greus. Si el teu cas requerix atenció mèdica o psiquiàtrica especialitzada, t'orientarem amb total transparència.",
+      "Les sessions d'hipnosi i desenvolupament personal estan orientades al canvi personal i el benestar emocional. No substituïxen l'atenció mèdica o psiquiàtrica davant patologies severes, ni realitzem diagnòstics clínics de trastorns mentals greus. Si el teu cas requerix atenció mèdica o psiquiàtrica especialitzada, t'orientarem amb total transparència.",
     items: [
       {
         title: "Estrés, calma i insomni",
@@ -1765,7 +1765,7 @@ const va: Dict = {
         name: "Sessió individual",
         price: "70 €",
         unit: "per hora",
-        text: "Una hora d'acompanyament amb hipnosi i psicoteràpia ericksoniana per a treballar descans, estrès, gestió de l'ansietat quotidiana, pors, hàbits o l'objectiu que definim.",
+        text: "Una hora d'acompanyament amb hipnosi i desenvolupament personal per a treballar descans, estrès, gestió de l'ansietat quotidiana, pors, hàbits o l'objectiu que definim.",
         points: ["Duració de 60 minuts", "Presencial", "Al teu propi ritme"],
       },
       {
@@ -1787,14 +1787,14 @@ const va: Dict = {
   about: {
     title: "Sobre mi",
     name: "María A. Cabo",
-    role: "Especialista en hipnosi i psicoteràpia ericksoniana",
+    role: "Especialista en hipnosi i desenvolupament personal",
     intro:
-      "Sóc María Cabo, especialista en hipnosi i psicoteràpia ericksoniana. Acompanye a persones adultes que volen canviar hàbits, regular l'estrès i l'ansietat quotidiana, superar determinades pors o guanyar confiança i benestar emocional utilitzant la hipnosi com una ferramenta rigorosa de canvi. Compte amb formació especialitzada a l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
+      "Sóc María Cabo, especialista en hipnosi i desenvolupament personal. Acompanye a persones adultes que volen canviar hàbits, regular l'estrès i l'ansietat quotidiana, superar determinades pors o guanyar confiança i benestar emocional utilitzant la hipnosi com una ferramenta rigorosa de canvi. Compte amb formació especialitzada a l'Institut Erickson Madrid en Hipnosi Ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
     traits: ["Proximitat", "Formació Ericksoniana", "Recursos útils"],
     highlights: [
       {
         title: "Institut Erickson Madrid",
-        text: "Formació especialitzada en Hipnosi i Psicoteràpia Ericksoniana en l'Institut Erickson Madrid.",
+        text: "Formació especialitzada en Hipnosi Ericksoniana en l'Institut Erickson Madrid.",
       },
       {
         title: "Experiència internacional",
@@ -1851,7 +1851,7 @@ const va: Dict = {
     cities: ["Los Angeles", "Londres", "Barcelona", "Madrid", "València"],
     pathParagraphs: [
       "Al llarg de la meua trajectòria he treballat en entorns corporatius i internacionals i he viscut en ciutats com Los Angeles, Londres, Barcelona, València i Madrid.",
-      "Formada a l'Institut Erickson Madrid en hipnosi i psicoteràpia ericksoniana, una de les institucions de referència a Espanya, treballe amb un model que emfatitza els recursos inconscients i els aprenentatges previs de la pròpia persona per a desenvolupar respostes més adaptatives i duradores.",
+      "Formada a l'Institut Erickson Madrid en Hipnosi Ericksoniana, una de les institucions de referència a Espanya, treballe amb un model que emfatitza els recursos inconscients i els aprenentatges previs de la pròpia persona per a desenvolupar respostes més adaptatives i duradores.",
       "Eixa combinació entre formació tècnica especialitzada en hipnosi i experiència vital en entorns d'alta exigència m'ajuda a entendre que darrere de cada objectiu hi ha una història, una manera de respondre i unes circumstàncies diferents.",
     ],
     pathExtra:
@@ -2043,7 +2043,7 @@ const va: Dict = {
       },
       {
         q: "En què es diferencia d'un diagnòstic o tractament psiquiàtric?",
-        a: "La hipnosi i la psicoteràpia ericksoniana són ferramentes serioses enfocades en processos de canvi personal, benestar emocional i superació de bloquejos. No realitzem diagnòstics clínics de trastorns mentals greus ni substituïm l'atenció mèdica o psiquiàtrica quan esta siga necessària.",
+        a: "La hipnosi clínica i el desenvolupament personal són ferramentes serioses enfocades en processos de canvi personal, benestar emocional i superació de bloquejos. No realitzem diagnòstics clínics de trastorns mentals greus ni substituïm l'atenció mèdica o psiquiàtrica quan esta siga necessària.",
       },
       {
         q: "Quantes sessions necessite?",
@@ -2122,7 +2122,7 @@ const va: Dict = {
   footer: {
     rights: "Tots els drets reservats.",
     disclaimer:
-      "María A. Cabo · Hipnosi i psicoteràpia ericksoniana. Acompanyament orientat al canvi personal i benestar emocional. No substituïx l'atenció mèdica o psiquiàtrica davant patologies severes.",
+      "María A. Cabo · Hipnosi i desenvolupament personal. Acompanyament orientat al canvi personal i benestar emocional. No substituïx l'atenció mèdica o psiquiàtrica davant patologies severes.",
     legal: "Informació legal",
   },
   common: {
@@ -2188,7 +2188,7 @@ const va: Dict = {
 
 const en: Dict = {
   brand: "María A. Cabo",
-  tagline: "Hypnosis and Ericksonian psychotherapy",
+  tagline: "Hypnosis and personal development",
   nav: {
     home: "Home",
     how: "How it works",
@@ -2207,14 +2207,14 @@ const en: Dict = {
     eyebrow: "Valencia & Sueca · In-person & Home visits",
     title: "A space to change from within",
     subtitle:
-      "Hypnosis and Ericksonian psychotherapy for adults seeking real change: habits, calm, deep restorative sleep and confidence. With scientific grounding, warmth and clear expectations.",
+      "Hypnosis and personal development for adults seeking real change: habits, calm, deep restorative sleep and confidence. With scientific grounding, warmth and clear expectations.",
     pillars: [
       {
         title: "Evidence and rigor",
         text: "Clinical and Ericksonian hypnosis with scientific and neurobiological grounding, without myths or false claims.",
       },
       {
-        title: "Ericksonian psychotherapy",
+        title: "Ericksonian hypnosis",
         text: "A respectful approach activating your own unconscious resources, tailored to your pace and goals.",
       },
       {
@@ -2242,12 +2242,12 @@ const en: Dict = {
     finalTitle: "Shall we take the first step?",
     finalText: "You can book directly, or write first if something is unclear.",
     finalSecondary: "I have a question before booking",
-    heroEyebrow: "HYPNOSIS & ERICKSONIAN PSYCHOTHERAPY · VALENCIA & SUECA",
+    heroEyebrow: "HYPNOSIS & PERSONAL DEVELOPMENT · VALENCIA & SUECA",
     heroTitle1: "HYPNOSIS TO CHANGE",
     heroTitle2: "WHAT NO LONGER SERVES YOU.",
     heroTitle3: "MOVE FORWARD WITH CALM.",
     heroIntro:
-      "Individual sessions of hypnosis and Ericksonian psychotherapy focused on habit change, managing everyday stress and anxiety, insomnia and personal confidence. In-person room in Sueca (Centro Sanar), home visits in Valencia city, and online.",
+      "Individual sessions of hypnosis and personal development focused on habit change, managing everyday stress and anxiety, insomnia and personal confidence. In-person room in Sueca (Centro Sanar), home visits in Valencia city, and online.",
     heroPrimary: "BOOK A SESSION",
     heroSecondary: "HOW HYPNOSIS WORKS",
     heroHow: "Learn how hypnosis works step-by-step →",
@@ -2298,7 +2298,7 @@ const en: Dict = {
     hypnosisText1:
       "Clinical and Ericksonian hypnosis is a state of focused attention supported by modern neuroscience. Far from stage myths, it is a structured procedure where you remain fully conscious and in control at all times, facilitating deep shifts in habits, automatic responses to tension, and behavioural patterns.",
     hypnosisText2:
-      "Through Ericksonian psychotherapy, no external solutions are forced: we activate your own internal resources to learn to respond with poise in stressful or blocked situations. We focus on personal goals and emotional well-being with complete professional rigor, without diagnosing severe psychiatric disorders.",
+      "Through hypnosis and personal development support, no external solutions are forced: we activate your own internal resources to learn to respond with poise in stressful or blocked situations. We focus on personal goals and emotional well-being with complete professional rigor, without diagnosing severe psychiatric disorders.",
     hypnosisLink: "HOW HYPNOSIS WORKS",
     hypnosisImageAlt: "Photograph of a calm session",
     contextsTitle: "TWO CONTEXTS. ONE IDEA: CHANGING HOW WE RESPOND.",
@@ -2329,7 +2329,7 @@ const en: Dict = {
     aboutEyebrow: "MARÍA CABO",
     aboutTitle: "A GROUNDED, RIGOROUS APPROACH TO FACILITATING CHANGE.",
     aboutText:
-      "My work stems from a simple reality: often we know rationally what we want to do, yet our body and automatic mind react otherwise. Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I use these tools to address those deeper automatic patterns, enabling lasting, reliable change with safety, warmth, and professional rigor.",
+      "My work stems from a simple reality: often we know rationally what we want to do, yet our body and automatic mind react otherwise. Trained at the Instituto Erickson Madrid in Ericksonian Hypnosis, I use these tools to address those deeper automatic patterns, enabling lasting, reliable change with safety, warmth, and professional rigor.",
     aboutLink: "ABOUT ME",
     aboutImageAlt: "María A. Cabo",
     eventsTitle: "EVENTS",
@@ -2596,13 +2596,13 @@ const en: Dict = {
       "Everyday Anxiety Management and Fears in Valencia & Sueca · Hypnosis | María A. Cabo",
     seoDescription:
       "Learn to manage everyday anxiety, ease tension and work through fears (flying, driving, public speaking) with hypnosis in Sueca, Valencia and online. €70/session.",
-    eyebrow: "HYPNOSIS & ERICKSONIAN PSYCHOTHERAPY · VALENCIA & SUECA",
+    eyebrow: "HYPNOSIS & PERSONAL DEVELOPMENT · VALENCIA & SUECA",
     eyebrowNav: "Anxiety Management & Fears",
     title: "MANAGE EVERYDAY ANXIETY, EASE TENSION AND WORK THROUGH FEARS",
     subtitle:
       "Learn to respond differently to situations that bring tension, worry or hesitation, helping your body return to calm.",
     introText:
-      "Chest tightness, shallow breathing, a mind anticipating worries, or hesitation around flying, driving or public speaking. When stress and worry recur, the body reacts automatically before logic can intervene. Through clinical hypnosis and Ericksonian psychotherapy, we work at that involuntary level of automatic responses: providing resources so your body remembers calm, you learn to respond with poise to tension triggers, and you regain everyday peace in a respectful, natural way.",
+      "Chest tightness, shallow breathing, a mind anticipating worries, or hesitation around flying, driving or public speaking. When stress and worry recur, the body reacts automatically before logic can intervene. Through clinical hypnosis and personal development tools, we work at that involuntary level of automatic responses: providing resources so your body remembers calm, you learn to respond with poise to tension triggers, and you regain everyday peace in a respectful, natural way.",
     ctaPrimary: "BOOK A SESSION OR ENQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
     trustBadges: [
@@ -2736,8 +2736,8 @@ const en: Dict = {
         a: "Many clients experience a profound sense of lightness and physical relief from the very first session. Because there are no mandatory commitments, we evaluate progress together after each session, moving at your natural rhythm.",
       },
       {
-        q: "Is it compatible with medication or psychotherapy?",
-        a: "Yes, it is entirely compatible as a supportive self-regulation discipline. Clinical hypnosis and Ericksonian psychotherapy help you tap into natural internal resources. We do not perform clinical diagnoses of severe mental disorders, nor do we replace medical or psychiatric treatments prescribed by healthcare specialists.",
+        q: "Is it compatible with medication or medical care?",
+        a: "Yes, it is entirely compatible as a supportive self-regulation discipline. Clinical hypnosis and personal development support help you tap into natural internal resources. We do not perform clinical diagnoses of severe mental disorders, nor do we replace medical or psychiatric treatments prescribed by healthcare specialists.",
       },
       {
         q: "Do you offer sessions in Sueca, the Ribera Baixa and Valencia?",
@@ -2782,10 +2782,10 @@ const en: Dict = {
   areas: {
     title: "Focus areas",
     intro:
-      "Eight core areas where hypnosis and Ericksonian psychotherapy help reorganize automatic responses, habits, and ways of approaching life with calm and poise.",
+      "Eight core areas where hypnosis and personal development help reorganize automatic responses, habits, and ways of approaching life with calm and poise.",
     noticeTitle: "Professional rigor and ethical boundaries",
     notice:
-      "Hypnosis and Ericksonian psychotherapy sessions focus on personal change and emotional well-being. They do not replace medical, psychological, or psychiatric care for severe pathologies, nor do we perform clinical diagnoses of severe mental disorders. If your situation requires specialized medical or psychiatric care, we will guide you with complete transparency.",
+      "Hypnosis and personal development sessions focus on personal change and emotional well-being. They do not replace medical, psychological, or psychiatric care for severe pathologies, nor do we perform clinical diagnoses of severe mental disorders. If your situation requires specialized medical or psychiatric care, we will guide you with complete transparency.",
     items: [
       {
         title: "Stress, calm and insomnia",
@@ -2849,7 +2849,7 @@ const en: Dict = {
         name: "Individual session",
         price: "€70",
         unit: "per hour",
-        text: "One hour of support with hypnosis and Ericksonian psychotherapy to work on rest, stress, everyday anxiety, habits, or the specific goal we define together.",
+        text: "One hour of support with hypnosis and personal development to work on rest, stress, everyday anxiety, habits, or the specific goal we define together.",
         points: ["60 minutes", "In person", "At your own pace"],
       },
       {
@@ -2871,14 +2871,14 @@ const en: Dict = {
   about: {
     title: "About me",
     name: "María A. Cabo",
-    role: "Specialist in hypnosis and Ericksonian psychotherapy",
+    role: "Specialist in hypnosis and personal development",
     intro:
-      "I am María Cabo, specialist in hypnosis and Ericksonian psychotherapy. I support adults who want to transform habits, regulate everyday stress and anxiety, work through fears, or build grounded confidence using hypnosis as a rigorous tool for change. I completed specialized training in hypnosis and Ericksonian psychotherapy at the Instituto Erickson Madrid, with an approachable, practical, and evidence-based approach.",
+      "I am María Cabo, specialist in hypnosis and personal development. I support adults who want to transform habits, regulate everyday stress and anxiety, work through fears, or build grounded confidence using hypnosis as a rigorous tool for change. I completed specialized training in Ericksonian Hypnosis at the Instituto Erickson Madrid, with an approachable, practical, and evidence-based approach.",
     traits: ["Warmth", "Ericksonian Training", "Practical tools"],
     highlights: [
       {
         title: "Instituto Erickson Madrid",
-        text: "Specialized training in Hypnosis and Ericksonian Psychotherapy at the Instituto Erickson Madrid.",
+        text: "Specialized training in Ericksonian Hypnosis at the Instituto Erickson Madrid.",
       },
       {
         title: "International experience",
@@ -2934,7 +2934,7 @@ const en: Dict = {
     cities: ["Los Angeles", "London", "Barcelona", "Madrid", "Valencia"],
     pathParagraphs: [
       "Throughout my career I have worked in corporate and international environments and lived in cities such as Los Angeles, London, Barcelona, Valencia and Madrid.",
-      "Trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, one of Spain's leading reference institutions, I work with a model emphasizing each person's unconscious resources and prior learnings to develop more adaptive and lasting responses.",
+      "Trained at the Instituto Erickson Madrid in Ericksonian Hypnosis, one of Spain's leading reference institutions, I work with a model emphasizing each person's unconscious resources and prior learnings to develop more adaptive and lasting responses.",
       "Combining specialized training in hypnosis with international experience helps me understand that behind every goal lies a unique story, way of responding, and set of circumstances.",
     ],
     pathExtra:
@@ -3127,7 +3127,7 @@ const en: Dict = {
       },
       {
         q: "How does it differ from psychiatric treatment or diagnosis?",
-        a: "Hypnosis and Ericksonian psychotherapy are serious tools focused on personal change, emotional well-being, and overcoming blocks. We do not perform clinical diagnoses of severe mental disorders, nor do we replace medical or psychiatric care when required.",
+        a: "Clinical hypnosis and personal development are serious tools focused on personal change, emotional well-being, and overcoming blocks. We do not perform clinical diagnoses of severe mental disorders, nor do we replace medical or psychiatric care when required.",
       },
       {
         q: "How many sessions will I need?",
@@ -3206,7 +3206,7 @@ const en: Dict = {
   footer: {
     rights: "All rights reserved.",
     disclaimer:
-      "María A. Cabo · Hypnosis and Ericksonian psychotherapy. Support focused on personal change and emotional well-being. Does not replace medical or psychiatric care for severe conditions.",
+      "María A. Cabo · Hypnosis and personal development. Support focused on personal change and emotional well-being. Does not replace medical or psychiatric care for severe conditions.",
     legal: "Legal information",
   },
   common: {

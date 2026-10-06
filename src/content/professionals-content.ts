@@ -387,7 +387,7 @@ export const professionalsEn: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "My work is grounded in a simple yet profound premise: most people know intellectually what they need to do, but their nervous system and subconscious mind continue reacting with automatic habits formed over years.",
-    "As a psychotherapist trained at the Instituto Erickson Madrid in hypnosis and Ericksonian psychotherapy, I apply a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
+    "Trained at the Instituto Erickson Madrid in Ericksonian hypnosis, I apply a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
     "I utilize hypnosis and hypnotherapy as a structured complementary tool to address automatic responses. I collaborate with healthcare and wellness practitioners across Valencia and Ribera Baixa, firmly believing in the synergistic value of an interdisciplinary network that enhances client outcomes.",
   ],
 

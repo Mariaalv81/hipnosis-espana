@@ -300,7 +300,7 @@ export const pastLivesEs: PastLivesData = {
   bridgeTitle: "CONOCE EL ENFOQUE PROFESIONAL DE MARÍA A. CABO",
   bridgeSubtitle: "Rigor técnico, empatía y respeto escrupuloso por tu proceso personal.",
   bridgeText:
-    "Como psicoterapeuta formada en hipnosis y psicoterapia ericksoniana en el Instituto Erickson Madrid, María A. Cabo garantiza que cada viaje de regresión y exploración de la conciencia se sostenga sobre bases éticas sólidas, un cuidado impecable del bienestar emocional y técnicas depuradas de integración práctica en tu vida actual.",
+    "Como profesional especializada en hipnosis y desarrollo personal, formada en Hipnosis Ericksoniana en el Instituto Erickson Madrid, María A. Cabo garantiza que cada viaje de regresión y exploración de la conciencia se sostenga sobre bases éticas sólidas, un cuidado impecable del bienestar emocional y técnicas depuradas de integración práctica en tu vida actual.",
   bridgeCta: "Conocer más sobre María A. Cabo y su trayectoria",
 
   disclaimerText:
@@ -511,7 +511,7 @@ export const pastLivesVa: PastLivesData = {
   bridgeTitle: "CONEIX L'ENFOCAMENT PROFESSIONAL DE MARÍA A. CABO",
   bridgeSubtitle: "Rigor tècnic, empatia i respecte escrupolós pel teu procés personal.",
   bridgeText:
-    "Com a psicoterapeuta formada en hipnosi i psicoteràpia ericksoniana a l'Institut Erickson Madrid, María A. Cabo garantix que cada viatge de regressió i exploració de la consciència se sostinga sobre bases ètiques sòlides, una cura impecable del benestar emocional i tècniques depurades d'integració pràctica en la teua vida actual.",
+    "Com a professional especialitzada en hipnosi i desenvolupament personal, formada en Hipnosi Ericksoniana a l'Institut Erickson Madrid, María A. Cabo garantix que cada viatge de regressió i exploració de la consciència se sostinga sobre bases ètiques sòlides, una cura impecable del benestar emocional i tècniques depurades d'integració pràctica en la teua vida actual.",
   bridgeCta: "Conéixer més sobre María A. Cabo i la seua trajectòria",
 
   disclaimerText:
@@ -722,7 +722,7 @@ export const pastLivesEn: PastLivesData = {
   bridgeTitle: "LEARN ABOUT MARÍA A. CABO'S PROFESSIONAL BACKGROUND",
   bridgeSubtitle: "Grounded methodology, genuine empathy and deep respect for your journey.",
   bridgeText:
-    "As a psychotherapist trained in Ericksonian hypnosis and psychotherapy at the Instituto Erickson Madrid, María A. Cabo ensures that every regression journey and exploration of consciousness is held within strict ethical standards, emotional safety and practical integration into your everyday life.",
+    "As a professional specializing in hypnosis and personal development, trained in Ericksonian Hypnosis at the Instituto Erickson Madrid, María A. Cabo ensures that every regression journey and exploration of consciousness is held within strict ethical standards, emotional safety and practical integration into your everyday life.",
   bridgeCta: "Learn more about María A. Cabo and her qualifications",
 
   disclaimerText:

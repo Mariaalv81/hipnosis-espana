@@ -18,9 +18,9 @@ export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
       title:
-        "María A. Cabo · Hipnosis y Psicoterapia Ericksoniana en Valencia y Sueca",
+        "María A. Cabo · Hipnosis y Desarrollo Personal en Valencia y Sueca",
       description:
-        "Especialista en hipnosis y psicoterapia ericksoniana formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
+        "Especialista en hipnosis clínica y desarrollo personal formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
       path: "/",
     }),
   component: HypnosisPage,

@@ -1174,7 +1174,7 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "L'insomni no és una incapacitat per a dormir; és el teu sistema nerviós interpretant el llit com un lloc d'alerta i rumiació en pilot automàtic.",
     introText:
-      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb hipnosi i psicoteràpia ericksoniana no forcem el son: reprogramem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cervell a activar de manera natural les ones de descans profund.",
+      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb hipnosi no forcem el son (perquè forçar-lo genera més tensió): facilitem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cos a activar de manera natural les respostes de descans profund.",
     trustBadges: [
       "Solució 100% natural i sense fàrmacs",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
@@ -1343,7 +1343,7 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Insomnia is not an inability to sleep; it is your nervous system interpreting bedtime as an alert state of rumination on autopilot.",
     introText:
-      "You go to bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. With hypnosis and Ericksonian psychotherapy, we do not force sleep: we reprogram the somatic relaxation reflex, silence nighttime internal chatter, and teach your brain to access deep restorative brainwaves naturally.",
+      "You go to bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. With hypnosis and personal development support, we do not force sleep: we reprogram the somatic relaxation reflex, silence nighttime internal chatter, and teach your brain to access deep restorative brainwaves naturally.",
     trustBadges: [
       "100% natural, medication-free approach",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
