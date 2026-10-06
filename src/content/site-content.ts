@@ -315,6 +315,11 @@ const es = {
       "Fumar no suele ser una decisión consciente: funciona a través de patrones automáticos construidos durante años. Con hipnosis trabajamos precisamente con esa parte involuntaria, para que soltar el tabaco no sea una batalla agotadora contra ti mismo.",
     ctaPrimary: "SOLICITAR ENTREVISTA PREVIA",
     ctaSecondary: "CÓMO ES EL PROGRAMA",
+    trustBadges: [
+      "Entrevista previa de 20 min sin coste ni compromiso",
+      "Sueca (Centro Sanar) y a domicilio en Valencia ciudad",
+      "Programa estructurado de 3 sesiones · 300 € (todo incluido)",
+    ],
     whyTitle: '¿POR QUÉ LA "FUERZA DE VOLUNTAD" NO SUELE SER SUFICIENTE?',
     whyParagraphs: [
       "La mayoría de las personas que quieren dejar de fumar saben perfectamente por qué deberían hacerlo: salud, dinero, libertad, olor. Sin embargo, en cuanto aparece el estrés, el café de la mañana o una sobremesa con amigos, el cuerpo y la mente activan la respuesta automática antes de que la razón intervenga.",
@@ -394,7 +399,7 @@ const es = {
     faqs: [
       {
         q: "¿Dejaré de fumar desde la primera sesión?",
-        a: "El objetivo es que dejes de fumar en la primera sesión presencial. La entrevista previa nos permite preparar ese momento para que llegues decidido, y las sesiones 2 y 3 sirven para consolidar el cambio y asegurar que te mantienes sin fumar sin sufrimiento.",
+        a: "El objetivo del programa es que el cambio de hábito se produzca desde la primera sesión presencial de trabajo. En la entrevista previa preparamos el terreno para que llegues con total claridad y determinación, mientras que las sesiones 2 y 3 se centran en consolidar los nuevos patrones, gestionar disparadores cotidianos y afianzar la calma a largo plazo.",
       },
       {
         q: "¿Tendré ansiedad o ganas incontrolables de fumar?",
@@ -407,6 +412,10 @@ const es = {
       {
         q: "¿Dónde se realizan las sesiones?",
         a: "Las sesiones presenciales se realizan en mi despacho dentro del Centro Sanar en Sueca (Valencia) o a domicilio en casas de particulares en Valencia ciudad (consultar suplemento por desplazamiento según zona). La entrevista previa de 20 minutos se realiza cómodamente por teléfono o videollamada.",
+      },
+      {
+        q: "¿Por qué un programa de 3 sesiones en lugar de prometer una sola sesión milagrosa?",
+        a: "Desconfiamos de las falsas promesas de soluciones mágicas en una sola hora. Fumar es un hábito complejo vinculado a múltiples disparadores cotidianos (el café, el estrés laboral, los momentos sociales). La primera sesión marca el punto de inflexión y corte con el tabaco, pero las sesiones posteriores aseguran la consolidación somática, previenen recaídas ante situaciones de estrés imprevisto y te dotan de herramientas de respiración y autohipnosis para mantener tu calma y autonomía definitiva.",
       },
     ],
   },
@@ -1413,6 +1422,11 @@ const va: Dict = {
       "Fumar no sol ser una decisió conscient: funciona a través de patrons automàtics construïts durant anys. Amb hipnosi treballem precisament amb eixa part involuntària, perquè soltar el tabac no siga una batalla esgotadora contra tu mateix.",
     ctaPrimary: "SOL·LICITAR ENTREVISTA PRÈVIA",
     ctaSecondary: "COM ÉS EL PROGRAMA",
+    trustBadges: [
+      "Entrevista prèvia de 20 min sense cost ni compromís",
+      "Sueca (Centre Sanar) i a domicili a València ciutat",
+      "Programa estructurat de 3 sessions · 300 € (tot inclòs)",
+    ],
     whyTitle: 'PER QUÈ LA "FORÇA DE VOLUNTAT" NO SOL SER SUFICIENT?',
     whyParagraphs: [
       "La majoria de les persones que volen deixar de fumar saben perfectament per què haurien de fer-ho: salut, diners, llibertat, olor. No obstant això, en quant apareix l'estrés, el cafè del matí o una sobretaula amb amics, el cos i la ment activen la resposta automàtica abans que la raó intervinga.",
@@ -1432,26 +1446,26 @@ const va: Dict = {
       {
         num: "02",
         title: "SESSIÓ 1 · EL DIA DEL CANVI",
-        badge: "Presencial a Sueca (75 min)",
+        badge: "Sueca o a domicili (75 min)",
         text: "Treballem en profunditat els teus motius personals, desactivem els disparadors quotidians i anclem el nou estat de no fumador.",
       },
       {
         num: "03",
         title: "SESSIÓ 2 · CONSOLIDACIÓ I CALMA",
-        badge: "Presencial a Sueca (60 min)",
+        badge: "Sueca o a domicili (60 min)",
         text: "Avaluem els primers dies sense fumar, reforcem la sensació de benestar, gestionem possibles pics de tensió i afermem noves respostes.",
       },
       {
         num: "04",
         title: "SESSIÓ 3 · AUTONOMIA I PREVENCIÓ",
-        badge: "Presencial a Sueca (60 min)",
+        badge: "Sueca o a domicili (60 min)",
         text: "Projecció a llarg termini, ferramentes per a situacions socials o d'estrés imprevist i tancament del procés amb total independència.",
       },
     ],
     includedTitle: "QUÈ INCLOU EL PROGRAMA",
     includedItems: [
       "Entrevista prèvia de valoració de 20 minuts sense cost.",
-      "3 sessions presencials individuals i intensives a Sueca.",
+      "3 sessions individuals i intensives (a Sueca o a domicili a València).",
       "Gravació d'àudio de reforç personalitzada per a escoltar a casa.",
       "Seguiment i suport proper entre sessions.",
       "Pautes de respiració i autohipnosi per a moments puntuals de tensió.",
@@ -1491,7 +1505,7 @@ const va: Dict = {
     faqs: [
       {
         q: "Deixaré de fumar des de la primera sessió?",
-        a: "L'objectiu és que deixes de fumar en la primera sessió presencial. L'entrevista prèvia ens permet preparar eixe moment perquè arribes decidit, i les sessions 2 i 3 servixen per a consolidar el canvi i assegurar que et mantens sense fumar sense patiment.",
+        a: "L'objectiu del programa és que el canvi d'hàbit es produïsca des de la primera sessió presencial de treball. En l'entrevista prèvia preparem el terreny perquè arribes amb total claredat i determinació, mentre que les sessions 2 i 3 se centren a consolidar els nous patrons, gestionar disparadors quotidians i afermar la calma a llarg termini.",
       },
       {
         q: "Tindré ansietat o ganes incontrolables de fumar?",
@@ -1503,7 +1517,11 @@ const va: Dict = {
       },
       {
         q: "On es realitzen les sessions?",
-        a: "Les 3 sessions presencials es realitzen en el meu despatx independent dins del Centre Sanar a Sueca (València). L'entrevista prèvia de 20 minuts es realitza còmodament per telèfon o videotelefonada.",
+        a: "Les sessions presencials es realitzen en el meu despatx independent dins del Centre Sanar a Sueca (València) o a domicili en cases de particulars a València ciutat (consultar suplement per desplaçament). L'entrevista prèvia de 20 minuts es realitza còmodament per telèfon o videotelefonada.",
+      },
+      {
+        q: "Per què un programa de 3 sessions en lloc de prometre una sola sessió miraculosa?",
+        a: "Desconfiem de les falses promeses de solucions màgiques en una sola hora. Fumar és un hàbit complex vinculat a múltiples disparadors quotidians (el café, l'estrés laboral, els moments socials). La primera sessió marca el punt d'inflexió i tall amb el tabac, però les sessions posteriors asseguren la consolidació somàtica, prevenen recaigudes davant situacions d'estrés imprevist i et doten de ferramentes de respiració i autohipnosi per a mantindre la teua calma i autonomia.",
       },
     ],
   },
@@ -2497,6 +2515,11 @@ const en: Dict = {
       "Smoking is rarely a conscious choice: it operates through automatic patterns built over years. With hypnosis, we work directly on that involuntary mechanism, so that quitting does not feel like an exhausting battle against yourself.",
     ctaPrimary: "REQUEST INITIAL CONSULTATION",
     ctaSecondary: "HOW THE PROGRAMME WORKS",
+    trustBadges: [
+      "Free 20-minute preliminary assessment consultation",
+      "Sueca (Centro Sanar) & home visits in Valencia city",
+      "Structured 3-session programme · €300 (all-inclusive)",
+    ],
     whyTitle: 'WHY "WILLPOWER" ALONE IS RARELY ENOUGH',
     whyParagraphs: [
       "Most people who want to quit smoking know exactly why they should: health, finances, freedom, smell. However, the moment stress strikes, morning coffee arrives, or friends gather around a table, the subconscious triggers the automatic urge before rational thinking intervenes.",
@@ -2516,26 +2539,26 @@ const en: Dict = {
       {
         num: "02",
         title: "SESSION 1 · THE TURNING POINT",
-        badge: "In-person in Sueca (75 min)",
+        badge: "Sueca or home visit (75 min)",
         text: "We address your personal drivers in depth, neutralise everyday triggers and establish your new identity as a non-smoker.",
       },
       {
         num: "03",
-        title: "SESSION 2 · CONSOLIDATION & CALM",
-        badge: "In-person in Sueca (60 min)",
+        title: "SESSION 2 · CONSOLIDATION & CALMA",
+        badge: "Sueca or home visit (60 min)",
         text: "We review your first smoke-free days, reinforce positive sensations, navigate potential tension spikes and anchor new habits.",
       },
       {
         num: "04",
         title: "SESSION 3 · LONG-TERM RESILIENCE",
-        badge: "In-person in Sueca (60 min)",
+        badge: "Sueca or home visit (60 min)",
         text: "Future-pacing for social events or unforeseen stress, prevention tools and concluding the process with complete autonomy.",
       },
     ],
     includedTitle: "WHAT IS INCLUDED",
     includedItems: [
       "Free 20-minute preliminary assessment consultation.",
-      "3 intensive individual in-person sessions in Sueca.",
+      "3 intensive individual sessions (in Sueca or home visits in Valencia).",
       "Personalised audio reinforcement recording to listen to at home.",
       "Support and follow-up between sessions.",
       "Breathing and self-hypnosis tools for situational stress.",
@@ -2575,7 +2598,7 @@ const en: Dict = {
     faqs: [
       {
         q: "Will I quit smoking right after the first session?",
-        a: "The goal is for you to stop smoking during the first in-person session. The preliminary consultation ensures you arrive prepared and committed, while sessions 2 and 3 consolidate the shift so you remain smoke-free comfortably.",
+        a: "The programme is designed for the shift in habit to occur in the first in-person working session. The preliminary consultation ensures you arrive prepared and committed, while sessions 2 and 3 focus on consolidating the new patterns, defusing daily triggers, and anchoring long-term calm without a constant struggle.",
       },
       {
         q: "Will I experience intense cravings or anxiety?",
@@ -2587,7 +2610,11 @@ const en: Dict = {
       },
       {
         q: "Where do sessions take place?",
-        a: "All 3 in-person sessions take place at my independent practice within Centro Sanar in Sueca (Valencia). The 20-minute initial consultation is conducted comfortably by phone or video call.",
+        a: "In-person sessions take place at my private consultation room inside Centro Sanar in Sueca (Valencia) or at private homes in Valencia city (travel supplement applies depending on area). The 20-minute preliminary consultation is conducted comfortably by phone or video call.",
+      },
+      {
+        q: "Why a 3-session programme instead of promising a miracle in a single hour?",
+        a: "We do not believe in unrealistic one-hour miracle promises. Smoking is a multifaceted habit linked to varied daily triggers (coffee, workplace stress, social settings). The first session creates the clear turning point and disconnection from tobacco, while subsequent sessions consolidate somatic stability, prevent relapse during unexpected stress, and equip you with self-hypnosis and breathing tools for lasting independence.",
       },
     ],
   },

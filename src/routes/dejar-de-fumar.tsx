@@ -1,12 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { Check, Clock, Instagram, Phone, Sparkles } from "lucide-react";
-import { PageHeader } from "@/components/page-header";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
-import { trackLeadSubmission } from "@/lib/analytics";
-import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
+import { trackLeadSubmission, trackWhatsAppClick } from "@/lib/analytics";
+import {
+  JsonLd,
+  makeFaqSchema,
+  makeLocalBusinessSchema,
+  makeSeo,
+  makeServiceSchema,
+} from "@/lib/seo";
 
 export const Route = createFileRoute("/dejar-de-fumar")({
   head: () =>
@@ -29,9 +34,19 @@ function DejarDeFumarPage() {
   const serviceSchema = makeServiceSchema({
     name: "Programa para dejar de fumar con hipnosis",
     description:
-      "Acompañamiento estructurado de tres sesiones de hipnosis para dejar de fumar de forma definitiva en Sueca (Valencia). Incluye entrevista previa gratuita de 20 minutos.",
+      "Acompañamiento estructurado de tres sesiones de hipnosis y desarrollo personal para cambiar automatismos con el tabaco y afianzar la calma en Sueca y Valencia ciudad. Incluye entrevista previa gratuita de 20 minutos.",
     price: "300 €",
     path: "/dejar-de-fumar",
+    areaServed: [
+      { "@type": "City", name: "Sueca" },
+      { "@type": "City", name: "Valencia" },
+      { "@type": "City", name: "Cullera" },
+      { "@type": "City", name: "Alzira" },
+      { "@type": "City", name: "Algemesí" },
+      { "@type": "City", name: "Carcaixent" },
+      { "@type": "City", name: "Sollana" },
+      { "@type": "AdministrativeArea", name: "Ribera Baixa" },
+    ],
   });
   const faqSchema = makeFaqSchema(sp.faqs);
 
@@ -113,7 +128,7 @@ function DejarDeFumarPage() {
 
   return (
     <>
-      <JsonLd schema={[serviceSchema, faqSchema]} />
+      <JsonLd schema={[makeLocalBusinessSchema(), serviceSchema, faqSchema]} />
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-sand/30 to-background">
         <div className="container-page py-16 md:py-24">
@@ -141,6 +156,17 @@ function DejarDeFumarPage() {
                 {sp.ctaSecondary}
               </a>
             </div>
+
+            {sp.trustBadges && (
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground">
+                {sp.trustBadges.map((badge) => (
+                  <span key={badge} className="inline-flex items-center gap-1.5 font-medium">
+                    <Check className="size-3.5 text-primary shrink-0" />
+                    <span>{badge}</span>
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -379,7 +405,7 @@ function DejarDeFumarPage() {
             </form>
           </div>
 
-          <aside className="rounded-3xl border border-border bg-card p-8 md:p-10 lg:sticky lg:top-28">
+            <aside className="rounded-3xl border border-border bg-card p-8 md:p-10 lg:sticky lg:top-28">
             <h3 className="text-xl font-medium">¿Cómo es la entrevista de 20 minutos?</h3>
             <ul className="mt-6 grid gap-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
@@ -405,7 +431,27 @@ function DejarDeFumarPage() {
               </li>
             </ul>
 
-            <div className="mt-8 border-t border-border pt-6 text-xs text-muted-foreground">
+            {/* OPCIÓN WHATSAPP DIRECTO */}
+            <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-center">
+              <p className="text-xs text-muted-foreground">
+                ¿Prefieres consultar primero por WhatsApp?
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  trackWhatsAppClick("dejar_fumar_aside");
+                  const url = getWhatsAppUrl(
+                    "Hola María, te escribo para consultar sobre el programa de hipnosis para dejar de fumar..."
+                  );
+                  if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+                }}
+                className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-95"
+              >
+                <span>Chat directo de WhatsApp</span>
+              </button>
+            </div>
+
+            <div className="mt-6 border-t border-border pt-6 text-xs text-muted-foreground">
               <a
                 href={siteSettings.instagramUrl}
                 target="_blank"
@@ -416,7 +462,7 @@ function DejarDeFumarPage() {
                 <span>Vídeos y reflexiones en {siteSettings.instagramHandle}</span>
               </a>
               <p className="mt-4">
-                Despacho en Sueca (Valencia) dentro del Centro Sanar. Para cualquier otra consulta,
+                Despacho en Sueca (Valencia) dentro del Centro Sanar y a domicilio en Valencia ciudad. Para cualquier otra consulta,
                 también puedes usar el{" "}
                 <Link to="/contacto" className="text-primary underline">
                   formulario de contacto general
@@ -444,6 +490,15 @@ function DejarDeFumarPage() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* AVISO DE TRANSPARENCIA Y MARCO LEGAL */}
+      <section className="border-t border-border/60 bg-muted/30 py-10">
+        <div className="container-page text-center">
+          <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
+            <strong>Aviso de transparencia:</strong> Este programa de hipnosis y desarrollo personal está orientado a la modificación de hábitos, desensibilización de respuestas automáticas y apoyo motivacional para abandonar el consumo de tabaco. No constituye un acto médico, farmacológico ni sanitario, ni sustituye los tratamientos prescritos por profesionales de la salud.
+          </p>
         </div>
       </section>
     </>
