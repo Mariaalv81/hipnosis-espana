@@ -5,8 +5,15 @@ export const SITE_NAME = "María A. Cabo";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 export function absoluteUrl(path = "/") {
+  if (!path || path === "/" || path === "") {
+    return `${SITE_URL}/`;
+  }
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  return `${SITE_URL}${normalizedPath === "/" ? "" : normalizedPath}`;
+  const cleanPath =
+    normalizedPath.endsWith("/") && normalizedPath !== "/"
+      ? normalizedPath.slice(0, -1)
+      : normalizedPath;
+  return `${SITE_URL}${cleanPath}`;
 }
 
 export function makeSeo({
@@ -84,7 +91,7 @@ export function makeLocalBusinessSchema() {
       "María Cabo Hipnosis",
       "Hipnosis María A. Cabo",
     ],
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     logo: `${SITE_URL}/favicon-192x192.png`,
     image: DEFAULT_OG_IMAGE,
     description:

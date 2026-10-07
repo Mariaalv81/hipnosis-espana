@@ -23,14 +23,14 @@ export function SiteFooter() {
 
   const serviceLinks = [
     { to: "/insomnio", label: "Insomnio y descanso profundo" },
-    { to: "/ansiedad", label: "Hipnosis para la ansiedad" },
+    { to: "/ansiedad", label: "Ansiedad y miedos" },
     { to: "/dejar-de-fumar", label: "Dejar de fumar" },
     { to: "/control-de-peso", label: "Control de peso" },
     { to: "/habitos-nerviosos", label: "Hábitos nerviosos y uñas" },
-    { to: "/miedos-y-fobias", label: "Miedos y fobias" },
     { to: "/autoestima-y-confianza", label: "Autoestima y confianza" },
     { to: "/concentracion-y-foco", label: "Concentración y estudio" },
     { to: "/deporte-y-motivacion", label: "Deporte y motivación" },
+    { to: "/vidas-pasadas", label: "Vidas pasadas" },
   ] as const;
 
   return (

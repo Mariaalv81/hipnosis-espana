@@ -1,5 +1,22 @@
 {
   "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/miedos-y-fobias",
+      "destination": "/ansiedad",
+      "permanent": true
+    },
+    {
+      "source": "/estres-e-insomnio",
+      "destination": "/insomnio",
+      "permanent": true
+    },
+    {
+      "source": "/hipnosis-vidas-pasadas",
+      "destination": "/vidas-pasadas",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",

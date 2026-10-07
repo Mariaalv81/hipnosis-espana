@@ -4,13 +4,13 @@ import path from "path";
 const SITE_URL = "https://mariacabo.com";
 
 const staticRoutes = [
-  { path: "", changefreq: "weekly", priority: "1.0" },
+  { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/ansiedad", changefreq: "weekly", priority: "0.9" },
+  { path: "/insomnio", changefreq: "monthly", priority: "0.9" },
   { path: "/dejar-de-fumar", changefreq: "monthly", priority: "0.9" },
   { path: "/control-de-peso", changefreq: "monthly", priority: "0.9" },
   { path: "/habitos-nerviosos", changefreq: "monthly", priority: "0.9" },
   { path: "/deporte-y-motivacion", changefreq: "monthly", priority: "0.9" },
-  { path: "/miedos-y-fobias", changefreq: "monthly", priority: "0.9" },
   { path: "/autoestima-y-confianza", changefreq: "monthly", priority: "0.9" },
   { path: "/concentracion-y-foco", changefreq: "monthly", priority: "0.9" },
   { path: "/vidas-pasadas", changefreq: "weekly", priority: "0.9" },
@@ -45,7 +45,7 @@ function generateSitemap() {
   const urls = [
     ...staticRoutes.map(
       (r) => `  <url>
-    <loc>${SITE_URL}${r.path}</loc>
+    <loc>${r.path === "/" ? `${SITE_URL}/` : `${SITE_URL}${r.path}`}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
