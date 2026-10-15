@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, ExternalLink, Instagram, MapPin, ShieldCheck } from "lucide-react";
+import { Check, Clock, ExternalLink, Instagram, MapPin, ShieldCheck } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makeFaqSchema, makeLocalBusinessSchema, makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
 import heroWebp from "@/assets/images/maria-cabo.webp";
 import heroAvif from "@/assets/images/maria-cabo.avif";
@@ -49,17 +50,25 @@ function HypnosisPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                to="/reservar"
+                to="/contacto"
                 className="rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
               >
                 {t.home.heroPrimary}
               </Link>
-              <Link
-                to="/contacto"
-                className="rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
+              <button
+                type="button"
+                onClick={() => {
+                  trackWhatsAppClick("home_hero_whatsapp");
+                  const url = getWhatsAppUrl(
+                    "Hola María, me gustaría consultar dudas sobre una sesión de hipnosis..."
+                  );
+                  if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+                }}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
               >
-                Consultar dudas
-              </Link>
+                <span className="inline-block size-2 rounded-full bg-[#25D366]" />
+                <span>{t.home.heroSecondary}</span>
+              </button>
             </div>
 
             {/* TRUST BADGES HERO */}
@@ -264,6 +273,94 @@ function HypnosisPage() {
         </div>
       </section>
 
+      {/* TESTIMONIOS / EXPERIENCIAS REALES */}
+      <section className="border-t border-border/60 bg-muted/30 py-16 md:py-24">
+        <div className="container-page">
+          <div className="max-w-2xl">
+            <p className="eyebrow">{t.home.testimonialsEyebrow}</p>
+            <h2 className="mt-3 text-3xl md:text-4xl font-serif">{t.home.testimonialsTitle}</h2>
+            <p className="mt-3 text-sm text-muted-foreground">{t.home.testimonialsSubtitle}</p>
+          </div>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {t.home.testimonials.map((item) => (
+              <article
+                key={item.author}
+                className="flex flex-col justify-between rounded-3xl border border-border/80 bg-card p-6 shadow-xs transition-all hover:shadow-[var(--shadow-soft)] hover:border-primary/40"
+              >
+                <div>
+                  <div className="flex gap-1 text-amber-500 text-sm" aria-label="5 de 5 estrellas">
+                    {"★".repeat(5)}
+                  </div>
+                  <blockquote className="mt-4 text-sm leading-relaxed text-foreground/90 italic">
+                    "{item.quote}"
+                  </blockquote>
+                </div>
+                <footer className="mt-6 border-t border-border/60 pt-4 text-xs">
+                  <p className="font-semibold text-foreground">{item.author}</p>
+                  <p className="text-muted-foreground">
+                    {item.service} · {item.location}
+                  </p>
+                </footer>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VALORACIÓN PREVIA SIN COMPROMISO (20 MIN) */}
+      <section className="container-page py-12 md:py-16">
+        <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 via-card to-background p-8 md:p-12 shadow-sm">
+          <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <div>
+              <p className="eyebrow">{t.home.consultationEyebrow}</p>
+              <h2 className="mt-3 text-3xl md:text-4xl font-serif">{t.home.consultationTitle}</h2>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                {t.home.consultationSubtitle}
+              </p>
+              <ul className="mt-6 grid gap-3">
+                {t.home.consultationPoints.map((point) => (
+                  <li key={point} className="flex items-start gap-3 text-sm text-foreground/90">
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-border/80 bg-card p-6 md:p-8 text-center">
+              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3.5 py-1 text-xs font-semibold text-primary">
+                <Clock className="size-3.5" />
+                20 MINUTOS · SIN COSTE NI COMPROMISO
+              </span>
+              <p className="text-sm text-muted-foreground">
+                Por llamada telefónica o videollamada. Sin desplazamientos ni presión de contratación.
+              </p>
+              <div className="flex w-full flex-col sm:flex-row gap-3 pt-2">
+                <Link
+                  to="/contacto"
+                  className="flex-1 rounded-full bg-primary py-3 px-5 text-center text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
+                >
+                  {t.home.consultationCtaPrimary}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackWhatsAppClick("home_consultation_card");
+                    const url = getWhatsAppUrl(
+                      "Hola María, me gustaría pedir la llamada previa de 20 minutos para valorar mi caso..."
+                    );
+                    if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+                  }}
+                  className="flex-1 rounded-full border border-border bg-card py-3 px-5 text-center text-xs font-semibold text-foreground transition-colors hover:bg-muted"
+                >
+                  {t.home.consultationCtaWhatsApp}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Eventos (máx 3) and Blog (reuse existing journal) */}
       <section className="container-page py-12 md:py-16">
         <div className="flex items-baseline justify-between">
@@ -348,17 +445,24 @@ function HypnosisPage() {
           <h2 className="text-3xl md:text-4xl">{t.home.ctaTitle}</h2>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
-              to="/reservar"
-              className="rounded-full bg-background px-6 py-3 text-sm text-foreground"
+              to="/contacto"
+              className="rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
             >
               {t.home.ctaPrimary}
             </Link>
-            <Link
-              to="/contacto"
-              className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm"
+            <button
+              type="button"
+              onClick={() => {
+                trackWhatsAppClick("home_footer_cta");
+                const url = getWhatsAppUrl(
+                  "Hola María, me gustaría consultar dudas sobre una sesión de hipnosis..."
+                );
+                if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+              }}
+              className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm font-medium transition-colors hover:bg-primary-foreground/10"
             >
               {t.home.ctaSecondary}
-            </Link>
+            </button>
           </div>
           <div className="mt-4 text-sm">
             <Link

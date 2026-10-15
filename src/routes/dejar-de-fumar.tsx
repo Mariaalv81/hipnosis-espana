@@ -239,6 +239,63 @@ function DejarDeFumarPage() {
               </a>
             </div>
           </div>
+
+          {/* CÁLCULO DE AHORRO Y AMORTIZACIÓN */}
+          <div className="mt-12 rounded-3xl border border-emerald-600/30 bg-emerald-50/50 p-8 md:p-12 dark:border-emerald-500/20 dark:bg-emerald-950/20">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600/10 px-3 py-1 text-xs font-semibold text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-300">
+                RENTABILIDAD DE TU DECISIÓN
+              </span>
+              <h3 className="mt-3 text-2xl font-serif md:text-3xl text-foreground">
+                {sp.savingsTitle}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {sp.savingsSubtitle}
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-5 sm:grid-cols-3">
+              {sp.savingsCards.map((card) => (
+                <div
+                  key={card.consumption}
+                  className="relative flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-xs"
+                >
+                  <div>
+                    {card.badge && (
+                      <span className="mb-2 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[0.7rem] font-semibold text-primary">
+                        {card.badge}
+                      </span>
+                    )}
+                    <h4 className="font-medium text-base text-foreground">{card.consumption}</h4>
+                    <p className="text-xs text-muted-foreground">{card.cigs}</p>
+
+                    <div className="mt-4 border-t border-border/60 pt-3">
+                      <p className="text-xs text-muted-foreground">Gasto estimado en tabaco:</p>
+                      <p className="text-lg font-semibold text-foreground">{card.monthlyCost}</p>
+                      <p className="text-xs text-muted-foreground">{card.yearlyCost}</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 rounded-xl bg-emerald-100/70 p-3.5 text-xs text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-200">
+                    <p className="font-semibold text-sm">{card.amortization}</p>
+                    <p className="mt-1 text-xs font-medium text-emerald-800 dark:text-emerald-300">
+                      {card.netYearOne}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-emerald-600/20 pt-4">
+              <p className="text-xs text-muted-foreground">{sp.savingsNote}</p>
+              <a
+                href="#formulario"
+                className="inline-flex items-center text-xs font-semibold text-primary underline underline-offset-4 hover:opacity-85"
+              >
+                Solicitar valoración gratuita para dejar de fumar →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -471,6 +528,54 @@ function DejarDeFumarPage() {
               </p>
             </div>
           </aside>
+        </div>
+      </section>
+
+      {/* TESTIMONIOS Y EXPERIENCIAS REALES */}
+      <section className="border-t border-border/60 bg-muted/40 py-16 md:py-24">
+        <div className="container-page max-w-5xl">
+          <div className="max-w-2xl">
+            <p className="eyebrow">HISTORIAS REALES</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">{sp.testimonialsTitle}</h2>
+            <p className="mt-3 text-sm text-muted-foreground">{sp.testimonialsSubtitle}</p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {sp.testimonials.map((item) => (
+              <article
+                key={item.author}
+                className="flex flex-col justify-between rounded-3xl border border-border/80 bg-card p-7 shadow-xs transition-all hover:shadow-[var(--shadow-soft)] hover:border-primary/40"
+              >
+                <div>
+                  <div className="flex gap-1 text-amber-500 text-sm" aria-label="5 de 5 estrellas">
+                    {"★".repeat(5)}
+                  </div>
+                  <blockquote className="mt-4 text-sm leading-relaxed text-foreground/90 italic">
+                    "{item.quote}"
+                  </blockquote>
+                </div>
+                <footer className="mt-6 border-t border-border/60 pt-4 text-xs">
+                  <p className="font-semibold text-foreground">{item.author}</p>
+                  <p className="text-muted-foreground">{item.detail} · {item.location}</p>
+                </footer>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-border/80 bg-background/80 p-6 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+            <div>
+              <h4 className="font-medium text-foreground">¿Quieres valorar si este proceso es para ti?</h4>
+              <p className="text-xs text-muted-foreground mt-1">
+                La entrevista previa de 20 minutos es gratuita, sin compromiso y por teléfono o videollamada.
+              </p>
+            </div>
+            <a
+              href="#formulario"
+              className="mt-4 inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-6 py-2.5 text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 sm:mt-0"
+            >
+              Pedir llamada previa (20 min)
+            </a>
+          </div>
         </div>
       </section>
 

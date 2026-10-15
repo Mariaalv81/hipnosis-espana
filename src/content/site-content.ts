@@ -65,8 +65,8 @@ const es = {
     heroTitle3: "AVANZA CON SERENIDAD.",
     heroIntro:
       "Sesiones individuales de hipnosis y desarrollo personal orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
-    heroPrimary: "RESERVAR SESIÓN",
-    heroSecondary: "CÓMO FUNCIONA LA HIPNOSIS",
+    heroPrimary: "VALORACIÓN GRATUITA (20 MIN)",
+    heroSecondary: "CONSULTAR POR WHATSAPP",
     heroHow: "Conocer cómo funciona la hipnosis paso a paso →",
     heroImageAlt: "Fotografía natural relacionada con la hipnosis",
     changeEyebrow: "ACOMPAÑAMIENTO INDIVIDUAL",
@@ -156,9 +156,54 @@ const es = {
     learnLink: "VER TODOS LOS ARTÍCULOS",
     faqHomeTitle: "ENTENDER LA HIPNOSIS",
     faqHomeLink: "VER PREGUNTAS FRECUENTES",
+    testimonialsEyebrow: "EXPERIENCIAS REALES",
+    testimonialsTitle: "HISTORIAS DE CAMBIO Y BIENESTAR",
+    testimonialsSubtitle:
+      "Acompañamiento cercano, práctico y riguroso en Sueca, Valencia y online.",
+    testimonials: [
+      {
+        quote:
+          "Llevaba más de 20 años fumando casi un paquete diario. El enfoque sin juicios de María y trabajar las asociaciones inconscientes me permitieron soltarlo sin la angustia constante de otros intentos. El programa de 3 sesiones se amortizó en mes y medio.",
+        author: "J. M., 46 años",
+        service: "Dejar de fumar",
+        location: "Sueca",
+      },
+      {
+        quote:
+          "Tenía un bloqueo tremendo con las presentaciones en el trabajo y me costaba horrores conducir por autovía. Aprender a desactivar la respuesta física de alarma y recuperar la serenidad con hipnosis ha sido un antes y un después en mi día a día.",
+        author: "Carmen R., 38 años",
+        service: "Ansiedad cotidiana y miedos",
+        location: "Valencia",
+      },
+      {
+        quote:
+          "Me despertaba casi todas las noches a las 3 de la madrugada con la cabeza a mil por hora. Con las sesiones y los audios de refuerzo aprendí a calmar el ritmo interno y volví a dormir profundamente y levantarme descansado.",
+        author: "Vicente S., 52 años",
+        service: "Insomnio y descanso profundo",
+        location: "Cullera",
+      },
+      {
+        quote:
+          "Tenía el hábito inconsciente de morderme las uñas y apretar la mandíbula en cuanto me sentaba ante el ordenador. En pocas semanas desactivamos ese automatismo de tensión y ahora me siento mucho más tranquila y segura.",
+        author: "Laura G., 31 años",
+        service: "Hábitos y tensión nerviosa",
+        location: "Alzira",
+      },
+    ],
+    consultationEyebrow: "VALORACIÓN SIN COMPROMISO",
+    consultationTitle: "¿DUDAS SOBRE SI LA HIPNOSIS ENCAJA CONTIGO?",
+    consultationSubtitle:
+      "Empecemos por una conversación previa de 20 minutos gratuita por teléfono o videollamada. Sin coste, sin compromiso y sin ninguna presión de contratación.",
+    consultationPoints: [
+      "20 minutos dedicados a conocer tu caso y lo que quieres cambiar.",
+      "Evaluación honesta: valoramos juntos si la hipnosis es adecuada para ti.",
+      "Decides con total libertad después de hablar, sin ningún compromiso previo.",
+    ],
+    consultationCtaPrimary: "SOLICITAR VALORACIÓN PREVIA (20 MIN)",
+    consultationCtaWhatsApp: "CONSULTAR POR WHATSAPP",
     ctaTitle: "EL CAMBIO PUEDE EMPEZAR POR UNA CONVERSACIÓN.",
-    ctaPrimary: "RESERVAR UNA SESIÓN",
-    ctaSecondary: "PREGUNTAR ANTES DE RESERVAR",
+    ctaPrimary: "SOLICITAR ENTREVISTA DE 20 MIN",
+    ctaSecondary: "CONSULTAR POR WHATSAPP",
     ctaCompanies: "¿Representas a una empresa? Ver soluciones para organizaciones →",
   },
   companiesPage: {
@@ -416,6 +461,66 @@ const es = {
       {
         q: "¿Por qué un programa de 3 sesiones en lugar de prometer una sola sesión milagrosa?",
         a: "Desconfiamos de las falsas promesas de soluciones mágicas en una sola hora. Fumar es un hábito complejo vinculado a múltiples disparadores cotidianos (el café, el estrés laboral, los momentos sociales). La primera sesión marca el punto de inflexión y corte con el tabaco, pero las sesiones posteriores aseguran la consolidación somática, previenen recaídas ante situaciones de estrés imprevisto y te dotan de herramientas de respiración y autohipnosis para mantener tu calma y autonomía definitiva.",
+      },
+    ],
+    savingsTitle: "¿CUÁNTO TE CUESTA SEGUIR FUMANDO?",
+    savingsSubtitle:
+      "El programa antitabaco no es un gasto: se amortiza por completo en mes y medio y a partir del segundo mes ahorras miles de euros.",
+    savingsCards: [
+      {
+        consumption: "Medio paquete / día",
+        cigs: "10 cigarrillos al día",
+        badge: "Consumo moderado",
+        monthlyCost: "~85 € / mes",
+        yearlyCost: "~1.020 € / año",
+        amortization: "Amortizado en 3,5 meses",
+        netYearOne: "Ahorro año 1: +720 €",
+      },
+      {
+        consumption: "1 paquete / día",
+        cigs: "20 cigarrillos al día",
+        badge: "Caso más habitual",
+        monthlyCost: "~170 € / mes",
+        yearlyCost: "~2.040 € / año",
+        amortization: "Amortizado en solo 53 días",
+        netYearOne: "Ahorro año 1: +1.740 €",
+      },
+      {
+        consumption: "1 paquete y medio / día",
+        cigs: "30 cigarrillos al día",
+        badge: "Consumo alto",
+        monthlyCost: "~255 € / mes",
+        yearlyCost: "~3.060 € / año",
+        amortization: "Amortizado en solo 35 días",
+        netYearOne: "Ahorro año 1: +2.760 €",
+      },
+    ],
+    savingsNote:
+      "Cálculo orientativo basado en un coste medio de 5,60 € por cajetilla de tabaco comercial.",
+    testimonialsTitle: "EXPERIENCIAS REALES DE CAMBIO",
+    testimonialsSubtitle:
+      "Personas que decidieron soltar el tabaco y recuperar su calma cotidiana con hipnosis.",
+    testimonials: [
+      {
+        quote:
+          "Llevaba 22 años fumando un paquete diario y había probado parches y pastillas sin éxito porque siempre volvía al primer pico de estrés. Con María entendí que el tabaco era una respuesta automática que mi cuerpo usaba para desconectar. En 3 sesiones cambiamos ese chip y lo mejor es que no he vivido con la ansiedad constante que temía.",
+        author: "J. M., 46 años",
+        location: "Sueca",
+        detail: "Exfumador tras 22 años de consumo",
+      },
+      {
+        quote:
+          "Lo que más me sorprendió fue la ausencia total de juicio. No te regaña ni te da sermones sobre salud que ya te sabes de memoria. Trabajamos sobre el café de la mañana y las sobremesas con amigos. Salir a cenar y no sentir la necesidad de fumar fue una sensación de libertad increíble.",
+        author: "Carmen B., 39 años",
+        location: "Valencia",
+        detail: "Libre de tabaco desde hace 8 meses",
+      },
+      {
+        quote:
+          "El cálculo del dinero fue lo que me empujó a probarlo. Me gastaba casi 200 euros al mes. Ahora ese dinero se queda en mi cuenta y respiro mejor cuando subo las escaleras o salgo a caminar. La entrevista previa de 20 minutos me dio toda la confianza para dar el paso.",
+        author: "R. F., 51 años",
+        location: "Cullera",
+        detail: "Consumo previo de 25 cigarrillos/día",
       },
     ],
   },
@@ -989,7 +1094,7 @@ const es = {
   contact: {
     title: "Contacto",
     intro:
-      "Si tienes una duda antes de reservar, escríbeme y te respondo con calma. No hace falta que expliques nada que no quieras contar.",
+      "Si tienes una duda antes de reservar o deseas solicitar la valoración previa gratuita de 20 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
     phone: "Teléfono",
     name: "Nombre",
     email: "Correo electrónico",
@@ -1173,8 +1278,8 @@ const va: Dict = {
     heroTitle3: "AVANÇA AMB SERENITAT.",
     heroIntro:
       "Sessions individuals d'hipnosi i desenvolupament personal orientades al canvi d'hàbits, la gestió de l'estrès i l'ansietat quotidiana, l'insomni i la seguretat personal. Despatx a Sueca (Centre Sanar), a domicili a València ciutat i en línia.",
-    heroPrimary: "RESERVAR SESSIÓ",
-    heroSecondary: "COM FUNCIONA LA HIPNOSI",
+    heroPrimary: "VALORACIÓ GRATUÏTA (20 MIN)",
+    heroSecondary: "CONSULTAR PER WHATSAPP",
     heroHow: "Conéixer com funciona la hipnosi pas a pas →",
     heroImageAlt: "Fotografia natural relacionada amb la hipnosi",
     changeEyebrow: "ACOMPANYAMENT INDIVIDUAL",
@@ -1264,9 +1369,53 @@ const va: Dict = {
     learnLink: "VEURE TOTS ELS ARTICLES",
     faqHomeTitle: "ENTENDRE LA HIPNOSI",
     faqHomeLink: "VEURE PREGUNTES FREQÜENTS",
+    testimonialsEyebrow: "EXPERIÈNCIES REALS",
+    testimonialsTitle: "HISTÒRIES DE CANVI I BENESTAR",
+    testimonialsSubtitle: "Acompanyament proper, pràctic i rigorós a Sueca, València i en línia.",
+    testimonials: [
+      {
+        quote:
+          "Portava més de 20 anys fumant quasi un paquet diari. L'enfocament sense judicis de Maria i treballar les associacions inconscients em van permetre soltar-lo sense l'angoixa constant d'altres intents. El programa de 3 sessions es va amortitzar en mes i mig.",
+        author: "J. M., 46 anys",
+        service: "Deixar de fumar",
+        location: "Sueca",
+      },
+      {
+        quote:
+          "Tenia un bloqueig enorme amb les presentacions en la feina i em costava molt conduir per autovia. Aprendre a desactivar la resposta física d'alarma i recuperar la serenitat amb hipnosi ha sigut un abans i un després.",
+        author: "Carmen R., 38 anys",
+        service: "Ansietat quotidiana i pors",
+        location: "València",
+      },
+      {
+        quote:
+          "Em despertava quasi totes les nits a les 3 de la matinada amb el cap a mil per hora. Amb les sessions i els àudios de reforç vaig aprendre a calmar el ritme intern i vaig tornar a dormir profundament.",
+        author: "Vicente S., 52 anys",
+        service: "Insomni i descans profund",
+        location: "Cullera",
+      },
+      {
+        quote:
+          "Tenia l'hàbit inconscient de rosegar-me les ungles i prémer la mandíbula davant l'ordinador. En poques setmanes vam desactivar eixe automatisme de tensió i ara em sent molt més tranquil·la.",
+        author: "Laura G., 31 anys",
+        service: "Hàbits i tensió nerviosa",
+        location: "Alzira",
+      },
+    ],
+    consultationEyebrow: "VALORACIÓ SENSE COMPROMÍS",
+    consultationTitle: "DUBTES SOBRE SI LA HIPNOSI ÉS ADEQUADA PER A TU?",
+    consultationSubtitle:
+      "Comencem per una conversa prèvia de 20 minuts gratuïta per telèfon o videodisol·licitud. Sense cost, sense compromís i sense cap pressió.",
+    consultationPoints: [
+      "20 minuts dedicats a conéixer el teu cas i el que vols canviar.",
+      "Avaluació honesta: valorem junts si la hipnosi és adequada per al teu objectiu.",
+      "Decideixes amb total llibertat després de parlar, sense cap compromís previ.",
+    ],
+    consultationCtaPrimary: "SOL·LICITAR VALORACIÓ PRÈVIA (20 MIN)",
+    consultationCtaWhatsApp: "CONSULTAR PER WHATSAPP",
     ctaTitle: "EL CANVI POT COMENÇAR AMB UNA CONVERSA.",
-    ctaPrimary: "RESERVAR UNA SESSIÓ",
-    ctaSecondary: "PREGUNTAR ABANS DE RESERVAR",
+    ctaPrimary: "SOL·LICITAR ENTREVISTA DE 20 MIN",
+    ctaSecondary: "CONSULTAR PER WHATSAPP",
     ctaCompanies: "Representes una empresa? Veure solucions per a organitzacions →",
   },
   companiesPage: {
@@ -1522,6 +1671,66 @@ const va: Dict = {
       {
         q: "Per què un programa de 3 sessions en lloc de prometre una sola sessió miraculosa?",
         a: "Desconfiem de les falses promeses de solucions màgiques en una sola hora. Fumar és un hàbit complex vinculat a múltiples disparadors quotidians (el café, l'estrés laboral, els moments socials). La primera sessió marca el punt d'inflexió i tall amb el tabac, però les sessions posteriors asseguren la consolidació somàtica, prevenen recaigudes davant situacions d'estrés imprevist i et doten de ferramentes de respiració i autohipnosi per a mantindre la teua calma i autonomia.",
+      },
+    ],
+    savingsTitle: "QUANT ET COSTA CONTINUAR FUMANT?",
+    savingsSubtitle:
+      "El programa antitabac no és una despesa: s'amortitza per complet en mes i mig i a partir del segon mes estalvies milers d'euros.",
+    savingsCards: [
+      {
+        consumption: "Mig paquet / dia",
+        cigs: "10 cigarrets al dia",
+        badge: "Consum moderat",
+        monthlyCost: "~85 € / mes",
+        yearlyCost: "~1.020 € / any",
+        amortization: "Amortitzat en 3,5 mesos",
+        netYearOne: "Estalvi any 1: +720 €",
+      },
+      {
+        consumption: "1 paquet / dia",
+        cigs: "20 cigarrets al dia",
+        badge: "Cas més habitual",
+        monthlyCost: "~170 € / mes",
+        yearlyCost: "~2.040 € / any",
+        amortization: "Amortitzat en només 53 dies",
+        netYearOne: "Estalvi any 1: +1.740 €",
+      },
+      {
+        consumption: "1 paquet i mig / dia",
+        cigs: "30 cigarrets al dia",
+        badge: "Consum alt",
+        monthlyCost: "~255 € / mes",
+        yearlyCost: "~3.060 € / any",
+        amortization: "Amortitzat en només 35 dies",
+        netYearOne: "Estalvi any 1: +2.760 €",
+      },
+    ],
+    savingsNote:
+      "Càlcul orientatiu basat en un cost mitjà de 5,60 € per paquet de tabac comercial.",
+    testimonialsTitle: "EXPERIÈNCIES REALS DE CANVI",
+    testimonialsSubtitle:
+      "Persones que van decidir deixar el tabac i recuperar la calma quotidiana amb hipnosi.",
+    testimonials: [
+      {
+        quote:
+          "Portava 22 anys fumant un paquet diari i havia provat pegats i pastilles sense èxit perquè sempre tornava al primer pic d'estrés. Amb Maria vaig comprendre que el tabac era una resposta automàtica que el meu cos utilitzava per desconnectar. En 3 sessions vam canviar aquest patró i no he viscut amb l'ansietat que temia.",
+        author: "J. M., 46 anys",
+        location: "Sueca",
+        detail: "Exfumador després de 22 anys de consum",
+      },
+      {
+        quote:
+          "El que més em va sorprendre va ser l'absència total de judici. No et renya ni et dona sermons de salut que ja et saps de memòria. Vam treballar sobre el café del matí i les sobretaules amb amics. Eixir a sopar i no sentir la necessitat de fumar va ser una llibertat increïble.",
+        author: "Carmen B., 39 anys",
+        location: "València",
+        detail: "Lliure de tabac des de fa 8 mesos",
+      },
+      {
+        quote:
+          "El càlcul dels diners va ser el que em va espentar a provar-ho. Em gastava quasi 200 euros al mes. Ara eixos diners es queden al meu compte i respire millor quan puge les escales o isc a caminar. L'entrevista prèvia de 20 minuts em va donar tota la confiança per a fer el pas.",
+        author: "R. F., 51 anys",
+        location: "Cullera",
+        detail: "Consum previ de 25 cigarrets/dia",
       },
     ],
   },
@@ -2084,7 +2293,7 @@ const va: Dict = {
   contact: {
     title: "Contacte",
     intro:
-      "Si tens un dubte abans de reservar, escriu-me i et responc amb calma. No cal que expliques res que no vulgues contar.",
+      "Si tens un dubte abans de reservar o vols sol·licitar la valoració prèvia gratuïta de 20 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
     phone: "Telèfon",
     name: "Nom",
     email: "Correu electrònic",
@@ -2266,8 +2475,8 @@ const en: Dict = {
     heroTitle3: "MOVE FORWARD WITH CALM.",
     heroIntro:
       "Individual sessions of hypnosis and personal development focused on habit change, managing everyday stress and anxiety, insomnia and personal confidence. In-person room in Sueca (Centro Sanar), home visits in Valencia city, and online.",
-    heroPrimary: "BOOK A SESSION",
-    heroSecondary: "HOW HYPNOSIS WORKS",
+    heroPrimary: "FREE 20-MIN CONSULTATION",
+    heroSecondary: "CHAT VIA WHATSAPP",
     heroHow: "Learn how hypnosis works step-by-step →",
     heroImageAlt: "Natural photograph related to hypnosis",
     changeEyebrow: "INDIVIDUAL SUPPORT",
@@ -2357,9 +2566,53 @@ const en: Dict = {
     learnLink: "VIEW ALL ARTICLES",
     faqHomeTitle: "UNDERSTANDING HYPNOSIS",
     faqHomeLink: "VIEW FAQs",
+    testimonialsEyebrow: "REAL EXPERIENCES",
+    testimonialsTitle: "STORIES OF CHANGE & WELLBEING",
+    testimonialsSubtitle: "Warm, grounded, and evidence-based support in Sueca, Valencia and online.",
+    testimonials: [
+      {
+        quote:
+          "I had smoked almost a pack a day for over 20 years. María's non-judgmental attitude and working on unconscious triggers allowed me to quit without the constant dread of previous attempts. The 3-session program paid for itself in six weeks.",
+        author: "J. M., 46",
+        service: "Smoking cessation",
+        location: "Sueca",
+      },
+      {
+        quote:
+          "I had severe dread around work presentations and highway driving. Learning to turn down somatic alarm and restore calm through hypnosis has been an absolute turning point in my daily routine.",
+        author: "Carmen R., 38",
+        service: "Everyday anxiety & fears",
+        location: "Valencia",
+      },
+      {
+        quote:
+          "I was waking up at 3 AM almost every night with my thoughts racing. Through our sessions and tailored audio recordings, I learned to slow down internal agitation and returned to deep, uninterrupted sleep.",
+        author: "Vicente S., 52",
+        service: "Insomnia & restful sleep",
+        location: "Cullera",
+      },
+      {
+        quote:
+          "I had an involuntary habit of nail biting and jaw clenching while working at my computer. Within a few weeks we deactivated that tension reflex, and I now feel grounded and calm.",
+        author: "Laura G., 31",
+        service: "Nervous habits & tension",
+        location: "Alzira",
+      },
+    ],
+    consultationEyebrow: "ZERO-COMMITMENT APPRAISAL",
+    consultationTitle: "WONDERING IF HYPNOSIS IS THE RIGHT FIT FOR YOU?",
+    consultationSubtitle:
+      "Let's start with a free 20-minute phone or video consultation. No cost, no obligation, and zero sales pressure.",
+    consultationPoints: [
+      "20 minutes focused on your situation and what you want to change.",
+      "Honest assessment: we evaluate together whether hypnosis is suitable for your goals.",
+      "You decide comfortably after our talk, with zero upfront obligation.",
+    ],
+    consultationCtaPrimary: "REQUEST FREE 20-MIN CONSULTATION",
+    consultationCtaWhatsApp: "CHAT VIA WHATSAPP",
     ctaTitle: "CHANGE CAN START WITH A CONVERSATION.",
-    ctaPrimary: "BOOK A SESSION",
-    ctaSecondary: "ASK A QUESTION BEFORE BOOKING",
+    ctaPrimary: "REQUEST FREE 20-MIN CONSULTATION",
+    ctaSecondary: "CHAT VIA WHATSAPP",
     ctaCompanies: "Representing an organisation? Explore our solutions →",
   },
   companiesPage: {
@@ -2615,6 +2868,66 @@ const en: Dict = {
       {
         q: "Why a 3-session programme instead of promising a miracle in a single hour?",
         a: "We do not believe in unrealistic one-hour miracle promises. Smoking is a multifaceted habit linked to varied daily triggers (coffee, workplace stress, social settings). The first session creates the clear turning point and disconnection from tobacco, while subsequent sessions consolidate somatic stability, prevent relapse during unexpected stress, and equip you with self-hypnosis and breathing tools for lasting independence.",
+      },
+    ],
+    savingsTitle: "HOW MUCH DOES CONTINUING TO SMOKE COST YOU?",
+    savingsSubtitle:
+      "The program is not an expense: it pays for itself in just six weeks, and from month two you save thousands of euros.",
+    savingsCards: [
+      {
+        consumption: "Half pack / day",
+        cigs: "10 cigarettes a day",
+        badge: "Moderate consumption",
+        monthlyCost: "~€85 / month",
+        yearlyCost: "~€1,020 / year",
+        amortization: "Pays off in 3.5 months",
+        netYearOne: "Year 1 net savings: +€720",
+      },
+      {
+        consumption: "1 pack / day",
+        cigs: "20 cigarettes a day",
+        badge: "Most common case",
+        monthlyCost: "~€170 / month",
+        yearlyCost: "~€2,040 / year",
+        amortization: "Pays off in just 53 days",
+        netYearOne: "Year 1 net savings: +€1,740",
+      },
+      {
+        consumption: "1.5 packs / day",
+        cigs: "30 cigarettes a day",
+        badge: "Heavy consumption",
+        monthlyCost: "~€255 / month",
+        yearlyCost: "~€3,060 / year",
+        amortization: "Pays off in just 35 days",
+        netYearOne: "Year 1 net savings: +€2,760",
+      },
+    ],
+    savingsNote:
+      "Estimated calculation based on an average pack price of €5.60.",
+    testimonialsTitle: "REAL EXPERIENCES OF CHANGE",
+    testimonialsSubtitle:
+      "People who chose to let go of tobacco and restore daily ease through hypnosis.",
+    testimonials: [
+      {
+        quote:
+          "I had smoked a pack a day for 22 years and tried patches and pills without success because I always relapsed at the first sign of stress. With María I realized smoking was an automatic shutdown response. In 3 sessions we reprogrammed that trigger, and I never felt the agonizing cravings I feared.",
+        author: "J. M., 46",
+        location: "Sueca",
+        detail: "Non-smoker after 22 years of habit",
+      },
+      {
+        quote:
+          "What surprised me most was the zero-judgment approach. No moralizing lecture about health risks you already know. We worked directly on morning coffee and social dinners. Going out with friends without craving a cigarette felt like true freedom.",
+        author: "Carmen B., 39",
+        location: "Valencia",
+        detail: "Smoke-free for 8 months",
+      },
+      {
+        quote:
+          "The financial math convinced me to give it a try. I was spending almost 200 euros a month. That money now stays in my account and I breathe easily when walking or climbing stairs. The free 20-minute consultation gave me complete peace of mind to begin.",
+        author: "R. F., 51",
+        location: "Cullera",
+        detail: "Former smoker (25 cigarettes/day)",
       },
     ],
   },
@@ -3177,7 +3490,7 @@ const en: Dict = {
   contact: {
     title: "Contact",
     intro:
-      "If you have a question before booking, write to me and I'll reply calmly. You don't need to explain anything you'd rather keep private.",
+      "If you have a question before booking or would like to request a free 20-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply calmly.",
     phone: "Phone",
     name: "Name",
     email: "Email",

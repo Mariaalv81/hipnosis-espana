@@ -96,7 +96,7 @@ export function StickyMobileBar() {
           href="/contacto"
           className="flex-1 flex items-center justify-center rounded-full bg-primary py-2.5 px-4 text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-95 text-center"
         >
-          Consultar / Pedir Cita
+          20 min gratis · Pedir cita
         </a>
       </div>
     </div>
