@@ -308,7 +308,7 @@ function HypnosisPage() {
         </div>
       </section>
 
-      {/* VALORACIÓN PREVIA SIN COMPROMISO (20 MIN) */}
+      {/* VALORACIÓN PREVIA SIN COMPROMISO (15 MIN) */}
       <section className="container-page py-12 md:py-16">
         <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 via-card to-background p-8 md:p-12 shadow-sm">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
@@ -330,7 +330,7 @@ function HypnosisPage() {
             <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-border/80 bg-card p-6 md:p-8 text-center">
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3.5 py-1 text-xs font-semibold text-primary">
                 <Clock className="size-3.5" />
-                20 MINUTOS · SIN COSTE NI COMPROMISO
+                15 MINUTOS · SIN COSTE NI COMPROMISO
               </span>
               <p className="text-sm text-muted-foreground">
                 Por llamada telefónica o videollamada. Sin desplazamientos ni presión de contratación.
@@ -347,7 +347,7 @@ function HypnosisPage() {
                   onClick={() => {
                     trackWhatsAppClick("home_consultation_card");
                     const url = getWhatsAppUrl(
-                      "Hola María, me gustaría pedir la llamada previa de 20 minutos para valorar mi caso..."
+                      "Hola María, me gustaría pedir la llamada previa de 15 minutos para valorar mi caso..."
                     );
                     if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                   }}

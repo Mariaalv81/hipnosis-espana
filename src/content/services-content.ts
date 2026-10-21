@@ -22,7 +22,7 @@ export const servicesEs: ServicesDictionary = {
       "Sin dietas restrictivas ni efecto rebote",
       "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -113,12 +113,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Ejercicios prácticos y audios de apoyo entre sesiones.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "DA EL PRIMER PASO HACIA UNA ALIMENTACIÓN EN PAZ",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu situación sin ningún compromiso.",
+      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp para conocer tu situación sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -167,7 +167,7 @@ export const servicesEs: ServicesDictionary = {
       "Eficaz donde la fuerza de voluntad ha fallado",
       "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -258,12 +258,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Ejercicios de anclaje neuromuscular entre sesiones.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "LIBÉRATE DEL HÁBITO Y RECUPERA TUS MANOS",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o pedir cita. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp sin ningún compromiso.",
+      "Rellena este formulario para consultar tu caso o pedir cita. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -312,7 +312,7 @@ export const servicesEs: ServicesDictionary = {
       "Utilizado por deportistas de élite y populares",
       "Visualización neuromuscular y foco mental",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -403,12 +403,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Audios de visualización y autohipnosis pre-competición.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA TU RENDIMIENTO Y FORTALEZA MENTAL",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso deportivo o concertar una cita. Si lo prefieres, podemos comentar tu objetivo en una valoración previa de 20 minutos sin ningún compromiso.",
+      "Rellena este formulario para consultar tu caso deportivo o concertar una cita. Si lo prefieres, podemos comentar tu objetivo en una valoración previa de 15 minutos sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -457,7 +457,7 @@ export const servicesEs: ServicesDictionary = {
       "Proceso respetuoso, sin exposiciones traumáticas",
       "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -547,12 +547,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Herramientas de autogestión somática entre sesiones.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA TU TRANQUILIDAD Y LIBERTAD",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o solicitar cita. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu situación sin compromiso.",
+      "Rellena este formulario para consultar tu caso o solicitar cita. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp para conocer tu situación sin compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -601,7 +601,7 @@ export const servicesEs: ServicesDictionary = {
       "Cambio profundo de narrativa interna",
       "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -691,12 +691,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Pautas de asertividad y anclajes de seguridad.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "EMPIEZA A CREER EN TI CON TOTAL NATURALIDAD",
     formSubtitle:
-      "Rellena este formulario para consultar tus dudas o concertar tu sesión. Si lo prefieres, podemos comentar tus dudas en una valoración previa de 20 minutos sin ningún compromiso.",
+      "Rellena este formulario para consultar tus dudas o concertar tu sesión. Si lo prefieres, podemos comentar tus dudas en una valoración previa de 15 minutos sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -746,7 +746,7 @@ export const servicesEs: ServicesDictionary = {
       "Ideal para opositores y estudiantes universitarios",
       "Psicoterapia y desarrollo personal con hipnosis",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -835,12 +835,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Audios de inducción al estudio profundo y descanso reparador.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ENTRENA TU MENTE PARA RENDIR AL MÁXIMO",
     formSubtitle:
-      "Rellena este formulario para consultar tu situación u oposiciones. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp sin ningún compromiso.",
+      "Rellena este formulario para consultar tu situación u oposiciones. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -889,7 +889,7 @@ export const servicesEs: ServicesDictionary = {
       "Descanso 100% natural sin fármacos",
       "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
+      "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -979,14 +979,14 @@ export const servicesEs: ServicesDictionary = {
       "Sesión individual y personalizada de 60 minutos.",
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
       "Pautas prácticas de neurobiología del sueño e higiene del descanso.",
       "Técnicas de autohipnosis aplicables cada noche desde tu cama.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA TU SUEÑO Y TU CALMA NOCTURNA",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o pedir tu sesión. Si lo prefieres, podemos comentar tu descanso en una valoración previa de 20 minutos por teléfono o WhatsApp.",
+      "Rellena este breve formulario para consultar tus dudas o pedir tu sesión. Si lo prefieres, podemos comentar tu descanso en una valoración previa de 15 minutos por teléfono o WhatsApp.",
     formFields: {
       name: "Tu nombre",
       email: "Tu correo electrónico",
@@ -1046,7 +1046,7 @@ export const servicesVa: ServicesDictionary = {
       "Sense dietes restrictives ni efecte rebot",
       "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1058,7 +1058,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "FES EL PRIMER PAS CAP A UNA ALIMENTACIÓ EN PAU",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   nervousHabitsPage: {
@@ -1073,7 +1073,7 @@ export const servicesVa: ServicesDictionary = {
       "Eficaç on la força de voluntat ha fallat",
       "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1082,7 +1082,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ALLIBERA'T DE L'HÀBIT I RECUPERA LES TEUES MANS",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   sportsPage: {
@@ -1097,7 +1097,7 @@ export const servicesVa: ServicesDictionary = {
       "Utilitzat per esportistes d'elit i populars",
       "Visualització neuromuscular i focus mental",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1106,7 +1106,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA EL TEU RENDIMENT I FORTALESA MENTAL",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu repte esportiu o concertar una cita. Si ho preferixes, podem valorar el teu cas en una crida prèvia de 20 minuts sense compromís.",
+      "Emplena este formulari per a consultar el teu repte esportiu o concertar una cita. Si ho preferixes, podem valorar el teu cas en una crida prèvia de 15 minuts sense compromís.",
   },
 
   fearsPage: {
@@ -1121,7 +1121,7 @@ export const servicesVa: ServicesDictionary = {
       "Procés respectuós, sense exposicions traumàtiques",
       "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1130,7 +1130,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA LA TEUA TRANQUIL·LITAT I LLIBERTAT",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   confidencePage: {
@@ -1146,7 +1146,7 @@ export const servicesVa: ServicesDictionary = {
       "Canvi profund de narrativa interna",
       "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1155,7 +1155,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "COMENÇA A CONFIAR EN TU AMB TOTAL NATURALITAT",
     formSubtitle:
-      "Emplena este formulari per a consultar els teus dubtes o demanar sessió. Si ho preferixes, podem comentar la teua situació en una valoració prèvia de 20 minuts sense cap compromís.",
+      "Emplena este formulari per a consultar els teus dubtes o demanar sessió. Si ho preferixes, podem comentar la teua situació en una valoració prèvia de 15 minuts sense cap compromís.",
   },
 
   focusPage: {
@@ -1170,7 +1170,7 @@ export const servicesVa: ServicesDictionary = {
       "Ideal per a opositors i estudiants universitaris",
       "Psicoteràpia i desenvolupament personal amb hipnosi",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1179,7 +1179,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ENTRENA LA TEUA MENT PER A RENDIR AL MÀXIM",
     formSubtitle:
-      "Emplena este formulari per a consultar la teua situació o oposició. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este formulari per a consultar la teua situació o oposició. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   insomniaPage: {
@@ -1194,7 +1194,7 @@ export const servicesVa: ServicesDictionary = {
       "Descans 100% natural sense fàrmacs",
       "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
+      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1206,7 +1206,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA EL TEU SON I LA CALMA NOCTURNA",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem comentar el teu descans en una valoració prèvia de 20 minuts per telèfon o WhatsApp.",
+      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem comentar el teu descans en una valoració prèvia de 15 minuts per telèfon o WhatsApp.",
   },
 };
 
@@ -1223,7 +1223,7 @@ export const servicesEn: ServicesDictionary = {
       "No restrictive diets or rebound effect",
       "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1235,7 +1235,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "TAKE THE FIRST STEP TOWARDS PEACEFUL EATING",
     formSubtitle:
-      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
+      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 15-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   nervousHabitsPage: {
@@ -1250,7 +1250,7 @@ export const servicesEn: ServicesDictionary = {
       "Effective where willpower has failed",
       "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1259,7 +1259,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "FREE YOURSELF FROM THE HABIT AND RECLAIM YOUR HANDS",
     formSubtitle:
-      "Fill out this form to inquire about your case or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
+      "Fill out this form to inquire about your case or book a session. If you prefer, we can hold a free 15-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   sportsPage: {
@@ -1274,7 +1274,7 @@ export const servicesEn: ServicesDictionary = {
       "Used by competitive and recreational athletes",
       "Neuromuscular imagery & mental focus",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1283,7 +1283,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "BOOST YOUR ATHLETIC PERFORMANCE & MENTAL FOCUS",
     formSubtitle:
-      "Fill out this form to discuss your sports goals or book a session. If you prefer, we can discuss your goals in a free 20-minute preliminary phone consultation without commitment.",
+      "Fill out this form to discuss your sports goals or book a session. If you prefer, we can discuss your goals in a free 15-minute preliminary phone consultation without commitment.",
   },
 
   fearsPage: {
@@ -1298,7 +1298,7 @@ export const servicesEn: ServicesDictionary = {
       "Gentle process, zero traumatic exposure",
       "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1307,7 +1307,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "RESTORE YOUR PEACE OF MIND AND FREEDOM",
     formSubtitle:
-      "Fill out this form to inquire about your situation or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
+      "Fill out this form to inquire about your situation or book a session. If you prefer, we can hold a free 15-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   confidencePage: {
@@ -1322,7 +1322,7 @@ export const servicesEn: ServicesDictionary = {
       "Deep shift in internal narrative",
       "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1331,7 +1331,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "START TRUSTING YOURSELF NATURALLY",
     formSubtitle:
-      "Fill out this form to ask any questions or arrange a session. If you prefer, we can discuss your situation in a free 20-minute preliminary phone consultation without commitment.",
+      "Fill out this form to ask any questions or arrange a session. If you prefer, we can discuss your situation in a free 15-minute preliminary phone consultation without commitment.",
   },
 
   focusPage: {
@@ -1346,7 +1346,7 @@ export const servicesEn: ServicesDictionary = {
       "Ideal for competitive exams & university students",
       "Psychotherapy & personal development with hypnosis",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1355,7 +1355,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "TRAIN YOUR MIND TO PERFORM AT ITS PEAK",
     formSubtitle:
-      "Fill out this form to inquire about your studies or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
+      "Fill out this form to inquire about your studies or book a session. If you prefer, we can hold a free 15-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   insomniaPage: {
@@ -1370,7 +1370,7 @@ export const servicesEn: ServicesDictionary = {
       "100% natural, medication-free approach",
       "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min preliminary consultation · 70 €/session",
+      "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1382,6 +1382,6 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "RECLAIM RESTFUL SLEEP & NIGHTTIME CALM",
     formSubtitle:
-      "Fill out this brief form to discuss your sleep situation or book a session. If you prefer, we can hold a free 20-minute preliminary phone consultation without commitment.",
+      "Fill out this brief form to discuss your sleep situation or book a session. If you prefer, we can hold a free 15-minute preliminary phone consultation without commitment.",
   },
 };

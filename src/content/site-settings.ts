@@ -7,7 +7,7 @@ export const siteSettings = {
   centerAddress: "Sueca (Centro Sanar) · Sesiones presenciales y online",
   smokingProgramEmail: "maria.a.cabo@gmail.com",
   smokingProgramEmailBody:
-    "Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nModalidad (Sueca / A domicilio en Valencia / Online): \nMejor horario para la entrevista de 20 minutos: ",
+    "Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nModalidad (Sueca / A domicilio en Valencia / Online): \nMejor horario para la entrevista de 15 minutos: ",
   instagramUrl: "https://www.instagram.com/mariacabo_hipnosis/",
   instagramHandle: "@mariacabo_hipnosis",
   whatsappDefaultMessage:

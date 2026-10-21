@@ -185,7 +185,7 @@ export function makeLocalBusinessSchema() {
             "@type": "Service",
             name: "Programa para dejar de fumar con hipnosis",
             description:
-              "Programa estructurado de tres sesiones de hipnosis (en Sueca o a domicilio en Valencia) con entrevista previa de 20 minutos sin compromiso.",
+              "Programa estructurado de tres sesiones de hipnosis (en Sueca o a domicilio en Valencia) con entrevista previa de 15 minutos sin compromiso.",
           },
           price: "300",
           priceCurrency: "EUR",

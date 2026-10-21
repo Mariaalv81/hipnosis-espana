@@ -56,7 +56,7 @@ function FaqPage() {
               onClick={() => {
                 trackWhatsAppClick("faq_cta");
                 const url = getWhatsAppUrl(
-                  "Hola María, he leído las preguntas frecuentes y me gustaría hacer una valoración de 20 minutos sin compromiso."
+                  "Hola María, he leído las preguntas frecuentes y me gustaría hacer una valoración de 15 minutos sin compromiso."
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

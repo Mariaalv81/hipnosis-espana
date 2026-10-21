@@ -18,7 +18,7 @@ export const Route = createFileRoute("/dejar-de-fumar")({
     makeSeo({
       title: "Dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
       description:
-        "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 20 minutos sin compromiso.",
+        "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 15 minutos sin compromiso.",
       path: "/dejar-de-fumar",
     }),
   component: DejarDeFumarPage,
@@ -34,7 +34,7 @@ function DejarDeFumarPage() {
   const serviceSchema = makeServiceSchema({
     name: "Programa para dejar de fumar con hipnosis",
     description:
-      "Acompañamiento estructurado de tres sesiones de hipnosis y desarrollo personal para cambiar automatismos con el tabaco y afianzar la calma en Sueca y Valencia ciudad. Incluye entrevista previa gratuita de 20 minutos.",
+      "Acompañamiento estructurado de tres sesiones de hipnosis y desarrollo personal para cambiar automatismos con el tabaco y afianzar la calma en Sueca y Valencia ciudad. Incluye entrevista previa gratuita de 15 minutos.",
     price: "300 €",
     path: "/dejar-de-fumar",
     areaServed: [
@@ -69,7 +69,7 @@ function DejarDeFumarPage() {
     };
 
     const fullMessage = [
-      "Solicitud de entrevista previa de 20 min (Programa Antitabaco):",
+      "Solicitud de entrevista previa de 15 min (Programa Antitabaco):",
       "",
       `Nombre: ${data.name}`,
       `Email: ${data.email}`,
@@ -463,12 +463,12 @@ function DejarDeFumarPage() {
           </div>
 
             <aside className="rounded-3xl border border-border bg-card p-8 md:p-10 lg:sticky lg:top-28">
-            <h3 className="text-xl font-medium">¿Cómo es la entrevista de 20 minutos?</h3>
+            <h3 className="text-xl font-medium">¿Cómo es la entrevista de 15 minutos?</h3>
             <ul className="mt-6 grid gap-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 size-4 shrink-0 text-primary" />
                 <span>
-                  <strong>20 minutos:</strong> tiempo suficiente para conocernos y valorar si el
+                  <strong>15 minutos:</strong> tiempo suficiente para conocernos y valorar si el
                   enfoque encaja contigo.
                 </span>
               </li>
@@ -566,14 +566,14 @@ function DejarDeFumarPage() {
             <div>
               <h4 className="font-medium text-foreground">¿Quieres valorar si este proceso es para ti?</h4>
               <p className="text-xs text-muted-foreground mt-1">
-                La entrevista previa de 20 minutos es gratuita, sin compromiso y por teléfono o videollamada.
+                La entrevista previa de 15 minutos es gratuita, sin compromiso y por teléfono o videollamada.
               </p>
             </div>
             <a
               href="#formulario"
               className="mt-4 inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-6 py-2.5 text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 sm:mt-0"
             >
-              Pedir llamada previa (20 min)
+              Pedir llamada previa (15 min)
             </a>
           </div>
         </div>

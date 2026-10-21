@@ -64,7 +64,7 @@ const es = {
     heroTitle2: "LO QUE YA NO TE SIRVE.",
     heroIntro:
       "Sesiones individuales de hipnosis y desarrollo personal orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
-    heroPrimary: "VALORACIÓN GRATUITA (20 MIN)",
+    heroPrimary: "VALORACIÓN GRATUITA (15 MIN)",
     heroSecondary: "CONSULTAR POR WHATSAPP",
     heroHow: "Conocer cómo funciona la hipnosis paso a paso →",
     heroImageAlt: "Fotografía natural relacionada con la hipnosis",
@@ -192,16 +192,16 @@ const es = {
     consultationEyebrow: "VALORACIÓN SIN COMPROMISO",
     consultationTitle: "¿DUDAS SOBRE SI LA HIPNOSIS ENCAJA CONTIGO?",
     consultationSubtitle:
-      "Empecemos por una conversación previa de 20 minutos gratuita por teléfono o videollamada. Sin coste, sin compromiso y sin ninguna presión de contratación.",
+      "Empecemos por una conversación previa de 15 minutos gratuita por teléfono o videollamada. Sin coste, sin compromiso y sin ninguna presión de contratación.",
     consultationPoints: [
-      "20 minutos dedicados a conocer tu caso y lo que quieres cambiar.",
+      "15 minutos dedicados a conocer tu caso y lo que quieres cambiar.",
       "Evaluación honesta: valoramos juntos si la hipnosis es adecuada para ti.",
       "Decides con total libertad después de hablar, sin ningún compromiso previo.",
     ],
-    consultationCtaPrimary: "SOLICITAR VALORACIÓN PREVIA (20 MIN)",
+    consultationCtaPrimary: "SOLICITAR VALORACIÓN PREVIA (15 MIN)",
     consultationCtaWhatsApp: "CONSULTAR POR WHATSAPP",
     ctaTitle: "EL CAMBIO PUEDE EMPEZAR POR UNA CONVERSACIÓN.",
-    ctaPrimary: "SOLICITAR ENTREVISTA DE 20 MIN",
+    ctaPrimary: "SOLICITAR ENTREVISTA DE 15 MIN",
     ctaSecondary: "CONSULTAR POR WHATSAPP",
     ctaCompanies: "¿Representas a una empresa? Ver soluciones para organizaciones →",
   },
@@ -350,7 +350,7 @@ const es = {
   smokingPage: {
     seoTitle: "Programa para dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
     seoDescription:
-      "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 20 minutos sin compromiso.",
+      "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 15 minutos sin compromiso.",
     eyebrow: "PROGRAMA ANTITABACO",
     title: "DEJAR DE FUMAR CON HIPNOSIS",
     subtitle:
@@ -360,7 +360,7 @@ const es = {
     ctaPrimary: "SOLICITAR ENTREVISTA PREVIA",
     ctaSecondary: "CÓMO ES EL PROGRAMA",
     trustBadges: [
-      "Entrevista previa de 20 min sin coste ni compromiso",
+      "Entrevista previa de 15 min sin coste ni compromiso",
       "Sueca (Centro Sanar) y a domicilio en Valencia ciudad",
       "Programa estructurado de 3 sesiones · 300 € (todo incluido)",
     ],
@@ -376,7 +376,7 @@ const es = {
     steps: [
       {
         num: "01",
-        title: "ENTREVISTA PREVIA DE 20 MINUTOS",
+        title: "ENTREVISTA PREVIA DE 15 MINUTOS",
         badge: "Gratuita y sin compromiso",
         text: "Hablamos por teléfono o videollamada para conocer tu relación con el tabaco, tus motivaciones personales y resolver todas tus dudas antes de empezar.",
       },
@@ -401,7 +401,7 @@ const es = {
     ],
     includedTitle: "QUÉ INCLUYE EL PROGRAMA",
     includedItems: [
-      "Entrevista previa de valoración de 20 minutos sin coste.",
+      "Entrevista previa de valoración de 15 minutos sin coste.",
       "3 sesiones individuales e intensivas (en Sueca o a domicilio en Valencia).",
       "Grabación de audio de refuerzo personalizada para escuchar en casa.",
       "Seguimiento y apoyo cercano entre sesiones.",
@@ -411,7 +411,7 @@ const es = {
     priceNote:
       "Precio cerrado por el paquete completo de las tres sesiones y todo el material de apoyo.",
     formEyebrow: "ENTREVISTA PREVIA",
-    formTitle: "SOLICITAR ENTREVISTA DE 20 MINUTOS",
+    formTitle: "SOLICITAR ENTREVISTA DE 15 MINUTOS",
     formSubtitle:
       "Rellena este breve formulario y me pondré en contacto contigo para concertar la llamada sin ningún compromiso.",
     formFields: {
@@ -451,11 +451,11 @@ const es = {
       },
       {
         q: "¿Qué pasa si no funciona o tengo dudas?",
-        a: "Por eso realizamos la entrevista previa gratuita de 20 minutos: para evaluar honestamente tu caso. Si consideramos que no es el momento adecuado o que necesitas otro tipo de acompañamiento, te lo diré con total transparencia.",
+        a: "Por eso realizamos la entrevista previa gratuita de 15 minutos: para evaluar honestamente tu caso. Si consideramos que no es el momento adecuado o que necesitas otro tipo de acompañamiento, te lo diré con total transparencia.",
       },
       {
         q: "¿Dónde se realizan las sesiones?",
-        a: "Las sesiones presenciales se realizan en mi despacho dentro del Centro Sanar en Sueca (Valencia) o a domicilio en casas de particulares en Valencia ciudad (consultar suplemento por desplazamiento según zona). La entrevista previa de 20 minutos se realiza cómodamente por teléfono o videollamada.",
+        a: "Las sesiones presenciales se realizan en mi despacho dentro del Centro Sanar en Sueca (Valencia) o a domicilio en casas de particulares en Valencia ciudad (consultar suplemento por desplazamiento según zona). La entrevista previa de 15 minutos se realiza cómodamente por teléfono o videollamada.",
       },
       {
         q: "¿Por qué un programa de 3 sesiones en lugar de prometer una sola sesión milagrosa?",
@@ -516,7 +516,7 @@ const es = {
       },
       {
         quote:
-          "El cálculo del dinero fue lo que me empujó a probarlo. Me gastaba casi 200 euros al mes. Ahora ese dinero se queda en mi cuenta y respiro mejor cuando subo las escaleras o salgo a caminar. La entrevista previa de 20 minutos me dio toda la confianza para dar el paso.",
+          "El cálculo del dinero fue lo que me empujó a probarlo. Me gastaba casi 200 euros al mes. Ahora ese dinero se queda en mi cuenta y respiro mejor cuando subo las escaleras o salgo a caminar. La entrevista previa de 15 minutos me dio toda la confianza para dar el paso.",
         author: "R. F., 51 años",
         location: "Cullera",
         detail: "Consumo previo de 25 cigarrillos/día",
@@ -540,7 +540,7 @@ const es = {
     trustBadges: [
       "Psicoterapia con hipnosis basada en evidencia",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Valoración previa de 20 min sin compromiso",
+      "Valoración previa de 15 min sin compromiso",
       "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
     ],
     symptomsTitle: "CUANDO EL CUERPO VIVE EN ESTADO DE ALERTA CONTINUO",
@@ -627,12 +627,12 @@ const es = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni compromisos cerrados.",
       "Pautas de autohipnosis y ejercicios prácticos entre sesiones.",
-      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
+      "Valoración previa de 15 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "DA EL PRIMER PASO HACIA LA CALMA",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu caso sin compromiso.",
+      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp para conocer tu caso sin compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -687,7 +687,7 @@ const es = {
     stepsTitle: "El recorrido, paso a paso",
     steps: [
       {
-        title: "1 · Conversación inicial o valoración gratuita (20 min)",
+        title: "1 · Conversación inicial o valoración gratuita (15 min)",
         text: "Hablamos de lo que quieres cambiar, resolvemos todas tus dudas y vemos con total honestidad si este acompañamiento de psicoterapia con hipnosis es adecuado para ti.",
       },
       {
@@ -715,8 +715,8 @@ const es = {
       "El servicio se dirige a personas mayores de 18 años. Si tu situación requiere atención médica o psiquiátrica preferente, te lo indicaré con total claridad y honestidad profesional.",
     ctaTitle: "¿Dudas sobre si este acompañamiento es para ti?",
     ctaSubtitle:
-      "Hablemos 20 minutos por teléfono o WhatsApp sin compromiso. Analizamos tu caso, resolvemos cualquier inquietud y te explico cómo enfocaríamos tu proceso.",
-    ctaPrimary: "Solicitar valoración previa de 20 min",
+      "Hablemos 15 minutos por teléfono o WhatsApp sin compromiso. Analizamos tu caso, resolvemos cualquier inquietud y te explico cómo enfocaríamos tu proceso.",
+    ctaPrimary: "Solicitar valoración previa de 15 min",
     ctaWhatsApp: "Consultar por WhatsApp",
   },
   areas: {
@@ -794,7 +794,7 @@ const es = {
           "Duración de 60 minutos",
           "Sueca, a domicilio en Valencia u online",
           "A tu propio ritmo (sin bonos obligatorios)",
-          "Valoración previa de 20 min sin compromiso",
+          "Valoración previa de 15 min sin compromiso",
         ],
       },
       {
@@ -805,14 +805,14 @@ const es = {
         points: [
           "Tres sesiones (Sueca, a domicilio o en línea)",
           "Seguimiento entre sesiones",
-          "Entrevista previa gratuita de 20 min",
+          "Entrevista previa gratuita de 15 min",
         ],
       },
     ],
     policyTitle: "Antes de reservar",
     policy: [
       "Reserva pensada para personas adultas.",
-      "Si tienes dudas sobre si es adecuado para ti, escríbeme antes o pide tu valoración previa de 20 minutos.",
+      "Si tienes dudas sobre si es adecuado para ti, escríbeme antes o pide tu valoración previa de 15 minutos.",
       "Los cambios y cancelaciones se acuerdan con antelación razonable.",
       "Horarios en hora peninsular (Europe/Madrid).",
     ],
@@ -1098,15 +1098,15 @@ const es = {
     ],
     ctaTitle: "¿Tienes alguna otra duda o quieres valorar tu caso?",
     ctaSubtitle:
-      "Puedes solicitar una valoración previa de 20 minutos sin coste ni compromiso o escribirme directamente.",
+      "Puedes solicitar una valoración previa de 15 minutos sin coste ni compromiso o escribirme directamente.",
   },
   contact: {
     title: "Contacto",
     intro:
-      "Si tienes una duda antes de reservar o deseas solicitar la valoración previa gratuita de 20 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
-    calloutTitle: "Valoración previa de 20 minutos sin compromiso",
+      "Si tienes una duda antes de reservar o deseas solicitar la valoración previa gratuita de 15 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
+    calloutTitle: "Valoración previa de 15 minutos sin compromiso",
     calloutText:
-      "Puedes usar este formulario para consultar tus dudas o solicitar una llamada previa de 20 minutos sin coste. Hablaremos con honestidad de tu caso antes de agendar ninguna sesión.",
+      "Puedes usar este formulario para consultar tus dudas o solicitar una llamada previa de 15 minutos sin coste. Hablaremos con honestidad de tu caso antes de agendar ninguna sesión.",
     phone: "Teléfono",
     name: "Nombre",
     email: "Correo electrónico",
@@ -1173,7 +1173,7 @@ const es = {
     draft: "Contenido provisional pendiente de tus datos definitivos.",
     bookCalendar: "Solicitar valoración 15 min",
     smokeEmail: "Quiero dejar de fumar",
-    smokeEmailNote: "Te escribo un email y concertamos una entrevista de 20 minutos.",
+    smokeEmailNote: "Te escribo un email y concertamos una entrevista de 15 minutos.",
     askQuestionLink: "¿Dudas antes de agendar? Escríbeme directamente →",
   },
   cookies: {
@@ -1290,7 +1290,7 @@ const va: Dict = {
     heroTitle2: "EL QUE JA NO ET SERVIX.",
     heroIntro:
       "Sessions individuals d'hipnosi i desenvolupament personal orientades al canvi d'hàbits, la gestió de l'estrès i l'ansietat quotidiana, l'insomni i la seguretat personal. Despatx a Sueca (Centre Sanar), a domicili a València ciutat i en línia.",
-    heroPrimary: "VALORACIÓ GRATUÏTA (20 MIN)",
+    heroPrimary: "VALORACIÓ GRATUÏTA (15 MIN)",
     heroSecondary: "CONSULTAR PER WHATSAPP",
     heroHow: "Conéixer com funciona la hipnosi pas a pas →",
     heroImageAlt: "Fotografia natural relacionada amb la hipnosi",
@@ -1417,16 +1417,16 @@ const va: Dict = {
     consultationEyebrow: "VALORACIÓ SENSE COMPROMÍS",
     consultationTitle: "DUBTES SOBRE SI LA HIPNOSI ÉS ADEQUADA PER A TU?",
     consultationSubtitle:
-      "Comencem per una conversa prèvia de 20 minuts gratuïta per telèfon o videodisol·licitud. Sense cost, sense compromís i sense cap pressió.",
+      "Comencem per una conversa prèvia de 15 minuts gratuïta per telèfon o videodisol·licitud. Sense cost, sense compromís i sense cap pressió.",
     consultationPoints: [
-      "20 minuts dedicats a conéixer el teu cas i el que vols canviar.",
+      "15 minuts dedicats a conéixer el teu cas i el que vols canviar.",
       "Avaluació honesta: valorem junts si la hipnosi és adequada per al teu objectiu.",
       "Decideixes amb total llibertat després de parlar, sense cap compromís previ.",
     ],
-    consultationCtaPrimary: "SOL·LICITAR VALORACIÓ PRÈVIA (20 MIN)",
+    consultationCtaPrimary: "SOL·LICITAR VALORACIÓ PRÈVIA (15 MIN)",
     consultationCtaWhatsApp: "CONSULTAR PER WHATSAPP",
     ctaTitle: "EL CANVI POT COMENÇAR AMB UNA CONVERSA.",
-    ctaPrimary: "SOL·LICITAR ENTREVISTA DE 20 MIN",
+    ctaPrimary: "SOL·LICITAR ENTREVISTA DE 15 MIN",
     ctaSecondary: "CONSULTAR PER WHATSAPP",
     ctaCompanies: "Representes una empresa? Veure solucions per a organitzacions →",
   },
@@ -1574,7 +1574,7 @@ const va: Dict = {
   smokingPage: {
     seoTitle: "Programa per a deixar de fumar amb hipnosi a Sueca · María A. Cabo",
     seoDescription:
-      "Programa estructurat de tres sessions d'hipnosi per a deixar de fumar a Sueca (València). Entrevista prèvia gratuïta de 20 minuts sense compromís.",
+      "Programa estructurat de tres sessions d'hipnosi per a deixar de fumar a Sueca (València). Entrevista prèvia gratuïta de 15 minuts sense compromís.",
     eyebrow: "PROGRAMA ANTITABAC",
     title: "DEIXAR DE FUMAR AMB HIPNOSI",
     subtitle:
@@ -1584,7 +1584,7 @@ const va: Dict = {
     ctaPrimary: "SOL·LICITAR ENTREVISTA PRÈVIA",
     ctaSecondary: "COM ÉS EL PROGRAMA",
     trustBadges: [
-      "Entrevista prèvia de 20 min sense cost ni compromís",
+      "Entrevista prèvia de 15 min sense cost ni compromís",
       "Sueca (Centre Sanar) i a domicili a València ciutat",
       "Programa estructurat de 3 sessions · 300 € (tot inclòs)",
     ],
@@ -1600,7 +1600,7 @@ const va: Dict = {
     steps: [
       {
         num: "01",
-        title: "ENTREVISTA PRÈVIA DE 20 MINUTS",
+        title: "ENTREVISTA PRÈVIA DE 15 MINUTS",
         badge: "Gratuïta i sense compromís",
         text: "Parlem per telèfon o videotelefonada per a conéixer la teua relació amb el tabac, els teus motius personals i resoldre tots els dubtes abans de començar.",
       },
@@ -1625,7 +1625,7 @@ const va: Dict = {
     ],
     includedTitle: "QUÈ INCLOU EL PROGRAMA",
     includedItems: [
-      "Entrevista prèvia de valoració de 20 minuts sense cost.",
+      "Entrevista prèvia de valoració de 15 minuts sense cost.",
       "3 sessions individuals i intensives (a Sueca o a domicili a València).",
       "Gravació d'àudio de reforç personalitzada per a escoltar a casa.",
       "Seguiment i suport proper entre sessions.",
@@ -1634,7 +1634,7 @@ const va: Dict = {
     price: "300 €",
     priceNote: "Preu tancat pel paquet complet de les tres sessions i tot el material de suport.",
     formEyebrow: "ENTREVISTA PRÈVIA",
-    formTitle: "SOL·LICITAR ENTREVISTA DE 20 MINUTOS",
+    formTitle: "SOL·LICITAR ENTREVISTA DE 15 MINUTS",
     formSubtitle:
       "Emplena este breu formulari i em posaré en contacte amb tu per a concertar la telefonada sense cap compromís.",
     formFields: {
@@ -1674,11 +1674,11 @@ const va: Dict = {
       },
       {
         q: "Què passa si no funciona o tinc dubtes?",
-        a: "Per això realitzem l'entrevista prèvia gratuïta de 20 minuts: per a avaluar honestament el teu cas. Si considerem que no és el moment adequat o que necessites un altre tipus d'acompanyament, t'ho diré amb total transparència.",
+        a: "Per això realitzem l'entrevista prèvia gratuïta de 15 minuts: per a avaluar honestament el teu cas. Si considerem que no és el moment adequat o que necessites un altre tipus d'acompanyament, t'ho diré amb total transparència.",
       },
       {
         q: "On es realitzen les sessions?",
-        a: "Les sessions presencials es realitzen en el meu despatx independent dins del Centre Sanar a Sueca (València) o a domicili en cases de particulars a València ciutat (consultar suplement per desplaçament). L'entrevista prèvia de 20 minuts es realitza còmodament per telèfon o videotelefonada.",
+        a: "Les sessions presencials es realitzen en el meu despatx independent dins del Centre Sanar a Sueca (València) o a domicili en cases de particulars a València ciutat (consultar suplement per desplaçament). L'entrevista prèvia de 15 minuts es realitza còmodament per telèfon o videotelefonada.",
       },
       {
         q: "Per què un programa de 3 sessions en lloc de prometre una sola sessió miraculosa?",
@@ -1739,7 +1739,7 @@ const va: Dict = {
       },
       {
         quote:
-          "El càlcul dels diners va ser el que em va espentar a provar-ho. Em gastava quasi 200 euros al mes. Ara eixos diners es queden al meu compte i respire millor quan puge les escales o isc a caminar. L'entrevista prèvia de 20 minuts em va donar tota la confiança per a fer el pas.",
+          "El càlcul dels diners va ser el que em va espentar a provar-ho. Em gastava quasi 200 euros al mes. Ara eixos diners es queden al meu compte i respire millor quan puge les escales o isc a caminar. L'entrevista prèvia de 15 minuts em va donar tota la confiança per a fer el pas.",
         author: "R. F., 51 anys",
         location: "Cullera",
         detail: "Consum previ de 25 cigarrets/dia",
@@ -1763,7 +1763,7 @@ const va: Dict = {
     trustBadges: [
       "Psicoteràpia amb hipnosi basada en evidència",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 20 min sense compromís",
+      "Valoració prèvia de 15 min sense compromís",
       "Sessions individuals d'1h · 70 € (al teu propi ritme)",
     ],
     symptomsTitle: "QUAN EL COS VIU EN ESTAT D'ALERTA CONTINU",
@@ -1850,12 +1850,12 @@ const va: Dict = {
       "Sueca (Centre Sanar), a domicili a València ciutat o en línia.",
       "Al teu propi ritme: sense paquets obligatoris ni compromisos tancats.",
       "Pautes d'autohipnosi i exercicis pràctics entre sessions.",
-      "Valoració prèvia de 20 minuts sense compromís per a orientar el teu cas.",
+      "Valoració prèvia de 15 minuts sense compromís per a orientar el teu cas.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "FES EL PRIMER PAS CAP A LA CALMA",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o sol·licitar la teua sessió. Si ho prefereixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp per a conéixer el teu cas sense compromís.",
+      "Emplena este breu formulari per a consultar els teus dubtes o sol·licitar la teua sessió. Si ho prefereixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp per a conéixer el teu cas sense compromís.",
     formFields: {
       name: "Nom complet",
       email: "Correu electrònic",
@@ -1909,7 +1909,7 @@ const va: Dict = {
     stepsTitle: "El recorregut, pas a pas",
     steps: [
       {
-        title: "1 · Conversa inicial o valoració gratuïta (20 min)",
+        title: "1 · Conversa inicial o valoració gratuïta (15 min)",
         text: "Parlem del que vols canviar, resolem tots els teus dubtes i veiem amb total honestedat si este acompanyament de psicoteràpia amb hipnosi és adequat per a tu.",
       },
       {
@@ -1937,8 +1937,8 @@ const va: Dict = {
       "El servici s'adreça a persones majors de 18 anys. Si la teua situació requerix atenció mèdica o psiquiàtrica preferent, t'ho indicaré amb total claredat i honestedat professional.",
     ctaTitle: "Dubtes sobre si este acompanyament és per a tu?",
     ctaSubtitle:
-      "Parlem 20 minuts per telèfon o WhatsApp sense compromís. Analitzem el teu cas, resolem qualsevol inquietud i t'explique com enfocaríem el teu procés.",
-    ctaPrimary: "Sol·licitar valoració prèvia de 20 min",
+      "Parlem 15 minuts per telèfon o WhatsApp sense compromís. Analitzem el teu cas, resolem qualsevol inquietud i t'explique com enfocaríem el teu procés.",
+    ctaPrimary: "Sol·licitar valoració prèvia de 15 min",
     ctaWhatsApp: "Consultar per WhatsApp",
   },
   areas: {
@@ -2015,7 +2015,7 @@ const va: Dict = {
           "Duració de 60 minuts",
           "Sueca, a domicili a València o en línia",
           "Al teu propi ritme (sense bons obligatoris)",
-          "Valoració prèvia de 20 min sense compromís",
+          "Valoració prèvia de 15 min sense compromís",
         ],
       },
       {
@@ -2026,14 +2026,14 @@ const va: Dict = {
         points: [
           "Tres sessions (Sueca, a domicili o en línia)",
           "Seguiment entre sessions",
-          "Entrevista prèvia gratuïta de 20 min",
+          "Entrevista prèvia gratuïta de 15 min",
         ],
       },
     ],
     policyTitle: "Abans de reservar",
     policy: [
       "Reserva pensada per a persones adultes.",
-      "Si dubtes de si és adequat per a tu, escriu-me abans o demana la teua valoració prèvia de 20 minuts.",
+      "Si dubtes de si és adequat per a tu, escriu-me abans o demana la teua valoració prèvia de 15 minuts.",
       "Els canvis i cancel·lacions s'acorden amb antelació raonable.",
       "Horaris en hora peninsular (Europe/Madrid).",
     ],
@@ -2318,15 +2318,15 @@ const va: Dict = {
     ],
     ctaTitle: "Tens algun altre dubte o vols valorar el teu cas?",
     ctaSubtitle:
-      "Pots sol·licitar una valoració prèvia de 20 minuts sense cost ni compromís o escriure'm directament.",
+      "Pots sol·licitar una valoració prèvia de 15 minuts sense cost ni compromís o escriure'm directament.",
   },
   contact: {
     title: "Contacte",
     intro:
-      "Si tens un dubte abans de reservar o vols sol·licitar la valoració prèvia gratuïta de 20 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
-    calloutTitle: "Valoració prèvia de 20 minuts sense compromís",
+      "Si tens un dubte abans de reservar o vols sol·licitar la valoració prèvia gratuïta de 15 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
+    calloutTitle: "Valoració prèvia de 15 minuts sense compromís",
     calloutText:
-      "Pots utilitzar este formulari per a consultar els teus dubtes o sol·licitar una telefonada prèvia de 20 minuts sense cost. Parlarem amb honestedat del teu cas abans d'agendar cap sessió.",
+      "Pots utilitzar este formulari per a consultar els teus dubtes o sol·licitar una telefonada prèvia de 15 minuts sense cost. Parlarem amb honestedat del teu cas abans d'agendar cap sessió.",
     phone: "Telèfon",
     name: "Nom",
     email: "Correu electrònic",
@@ -2393,7 +2393,7 @@ const va: Dict = {
     draft: "Contingut provisional pendent de les teues dades definitives.",
     bookCalendar: "Sol·licitar valoració 15 min",
     smokeEmail: "Vull deixar de fumar",
-    smokeEmailNote: "M'escrius un email i concertem una entrevista de 20 minuts.",
+    smokeEmailNote: "M'escrius un email i concertem una entrevista de 15 minuts.",
     askQuestionLink: "Dubtes abans d'agendar? Escriu-me directament →",
   },
   cookies: {
@@ -2508,7 +2508,7 @@ const en: Dict = {
     heroTitle2: "WHAT NO LONGER SERVES YOU.",
     heroIntro:
       "Individual sessions of hypnosis and personal development focused on habit change, managing everyday stress and anxiety, insomnia and personal confidence. In-person room in Sueca (Centro Sanar), home visits in Valencia city, and online.",
-    heroPrimary: "FREE 20-MIN CONSULTATION",
+    heroPrimary: "FREE 15-MIN CONSULTATION",
     heroSecondary: "CHAT VIA WHATSAPP",
     heroHow: "Learn how hypnosis works step-by-step →",
     heroImageAlt: "Natural photograph related to hypnosis",
@@ -2635,16 +2635,16 @@ const en: Dict = {
     consultationEyebrow: "ZERO-COMMITMENT APPRAISAL",
     consultationTitle: "WONDERING IF HYPNOSIS IS THE RIGHT FIT FOR YOU?",
     consultationSubtitle:
-      "Let's start with a free 20-minute phone or video consultation. No cost, no obligation, and zero sales pressure.",
+      "Let's start with a free 15-minute phone or video consultation. No cost, no obligation, and zero sales pressure.",
     consultationPoints: [
-      "20 minutes focused on your situation and what you want to change.",
+      "15 minutes focused on your situation and what you want to change.",
       "Honest assessment: we evaluate together whether hypnosis is suitable for your goals.",
       "You decide comfortably after our talk, with zero upfront obligation.",
     ],
-    consultationCtaPrimary: "REQUEST FREE 20-MIN CONSULTATION",
+    consultationCtaPrimary: "REQUEST FREE 15-MIN CONSULTATION",
     consultationCtaWhatsApp: "CHAT VIA WHATSAPP",
     ctaTitle: "CHANGE CAN START WITH A CONVERSATION.",
-    ctaPrimary: "REQUEST FREE 20-MIN CONSULTATION",
+    ctaPrimary: "REQUEST FREE 15-MIN CONSULTATION",
     ctaSecondary: "CHAT VIA WHATSAPP",
     ctaCompanies: "Representing an organisation? Explore our solutions →",
   },
@@ -2792,7 +2792,7 @@ const en: Dict = {
   smokingPage: {
     seoTitle: "Quit Smoking with Hypnosis in Sueca · María A. Cabo",
     seoDescription:
-      "Structured 3-session hypnosis programme to stop smoking permanently in Sueca (Valencia). Request your free 20-minute consultation.",
+      "Structured 3-session hypnosis programme to stop smoking permanently in Sueca (Valencia). Request your free 15-minute consultation.",
     eyebrow: "STOP SMOKING PROGRAMME",
     title: "QUIT SMOKING WITH HYPNOSIS",
     subtitle:
@@ -2802,7 +2802,7 @@ const en: Dict = {
     ctaPrimary: "REQUEST INITIAL CONSULTATION",
     ctaSecondary: "HOW THE PROGRAMME WORKS",
     trustBadges: [
-      "Free 20-minute preliminary assessment consultation",
+      "Free 15-minute preliminary assessment consultation",
       "Sueca (Centro Sanar) & home visits in Valencia city",
       "Structured 3-session programme · €300 (all-inclusive)",
     ],
@@ -2818,7 +2818,7 @@ const en: Dict = {
     steps: [
       {
         num: "01",
-        title: "20-MINUTE INITIAL CONSULTATION",
+        title: "15-MINUTE INITIAL CONSULTATION",
         badge: "Free & no obligation",
         text: "We speak by phone or video call to understand your smoking history, personal motivations and answer any questions before beginning.",
       },
@@ -2843,7 +2843,7 @@ const en: Dict = {
     ],
     includedTitle: "WHAT IS INCLUDED",
     includedItems: [
-      "Free 20-minute preliminary assessment consultation.",
+      "Free 15-minute preliminary assessment consultation.",
       "3 intensive individual sessions (in Sueca or home visits in Valencia).",
       "Personalised audio reinforcement recording to listen to at home.",
       "Support and follow-up between sessions.",
@@ -2852,7 +2852,7 @@ const en: Dict = {
     price: "€300",
     priceNote: "All-inclusive price covering the three sessions and all supplementary materials.",
     formEyebrow: "INITIAL CONSULTATION",
-    formTitle: "REQUEST YOUR FREE 20-MINUTE CALL",
+    formTitle: "REQUEST YOUR FREE 15-MINUTE CALL",
     formSubtitle:
       "Fill out this brief form and I will get in touch with you shortly to schedule our conversation with no obligation.",
     formFields: {
@@ -2892,11 +2892,11 @@ const en: Dict = {
       },
       {
         q: "What if it does not work or I have doubts?",
-        a: "That is precisely why we hold the free 20-minute preliminary interview: to assess your situation honestly. If it is not the right moment or approach, I will tell you with complete transparency.",
+        a: "That is precisely why we hold the free 15-minute preliminary interview: to assess your situation honestly. If it is not the right moment or approach, I will tell you with complete transparency.",
       },
       {
         q: "Where do sessions take place?",
-        a: "In-person sessions take place at my private consultation room inside Centro Sanar in Sueca (Valencia) or at private homes in Valencia city (travel supplement applies depending on area). The 20-minute preliminary consultation is conducted comfortably by phone or video call.",
+        a: "In-person sessions take place at my private consultation room inside Centro Sanar in Sueca (Valencia) or at private homes in Valencia city (travel supplement applies depending on area). The 15-minute preliminary consultation is conducted comfortably by phone or video call.",
       },
       {
         q: "Why a 3-session programme instead of promising a miracle in a single hour?",
@@ -2957,7 +2957,7 @@ const en: Dict = {
       },
       {
         quote:
-          "The financial math convinced me to give it a try. I was spending almost 200 euros a month. That money now stays in my account and I breathe easily when walking or climbing stairs. The free 20-minute consultation gave me complete peace of mind to begin.",
+          "The financial math convinced me to give it a try. I was spending almost 200 euros a month. That money now stays in my account and I breathe easily when walking or climbing stairs. The free 15-minute consultation gave me complete peace of mind to begin.",
         author: "R. F., 51",
         location: "Cullera",
         detail: "Former smoker (25 cigarettes/day)",
@@ -2981,7 +2981,7 @@ const en: Dict = {
     trustBadges: [
       "Evidence-based hypnosis psychotherapy",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "Free 20-min consultation with no obligation",
+      "Free 15-min consultation with no obligation",
       "Individual 1h sessions · €70 (at your own pace)",
     ],
     symptomsTitle: "WHEN THE BODY LIVES IN PERPETUAL ALERT",
@@ -3067,12 +3067,12 @@ const en: Dict = {
       "Sueca (Centro Sanar), home visits in Valencia city or online.",
       "At your own pace: no fixed commitments or mandatory packages.",
       "Self-hypnosis audio and practical daily exercises included.",
-      "Free 20-minute preliminary consultation to assess your case.",
+      "Free 15-minute preliminary consultation to assess your case.",
     ],
     formEyebrow: "ENQUIRY & BOOKING",
     formTitle: "TAKE THE FIRST STEP TOWARDS CALM",
     formSubtitle:
-      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp to understand your situation with zero obligation.",
+      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 15-minute preliminary consultation by phone or WhatsApp to understand your situation with zero obligation.",
     formFields: {
       name: "Full name",
       email: "Email address",
@@ -3126,7 +3126,7 @@ const en: Dict = {
     stepsTitle: "The journey, step by step",
     steps: [
       {
-        title: "1 · Initial conversation or free consultation (20 min)",
+        title: "1 · Initial conversation or free consultation (15 min)",
         text: "We talk about what you want to change, answer all your questions, and honestly explore whether this hypnosis psychotherapy process is right for you.",
       },
       {
@@ -3154,8 +3154,8 @@ const en: Dict = {
       "This service is for adults over 18. If your situation requires specialized medical or psychiatric care, I will tell you with complete clarity and professional honesty.",
     ctaTitle: "Wondering if this support is right for you?",
     ctaSubtitle:
-      "Let's speak for 20 minutes by phone or WhatsApp with zero obligation. We'll explore your situation, answer questions, and discuss how we would approach your care.",
-    ctaPrimary: "Request free 20-min consultation",
+      "Let's speak for 15 minutes by phone or WhatsApp with zero obligation. We'll explore your situation, answer questions, and discuss how we would approach your care.",
+    ctaPrimary: "Request free 15-min consultation",
     ctaWhatsApp: "Message on WhatsApp",
   },
   areas: {
@@ -3233,7 +3233,7 @@ const en: Dict = {
           "60 minutes",
           "Sueca, home visits in Valencia or online",
           "At your own pace (no mandatory packages)",
-          "Free 20-min consultation with no obligation",
+          "Free 15-min consultation with no obligation",
         ],
       },
       {
@@ -3244,14 +3244,14 @@ const en: Dict = {
         points: [
           "Three sessions (Sueca, home visits or online)",
           "Follow-up between sessions",
-          "Free 20-min preliminary consultation",
+          "Free 15-min preliminary consultation",
         ],
       },
     ],
     policyTitle: "Before booking",
     policy: [
       "Bookings are for adults.",
-      "If you're unsure whether this is right for you, write to me first or request a free 20-minute consultation.",
+      "If you're unsure whether this is right for you, write to me first or request a free 15-minute consultation.",
       "Changes and cancellations are agreed with reasonable notice.",
       "Times shown in mainland Spain time (Europe/Madrid).",
     ],
@@ -3536,15 +3536,15 @@ const en: Dict = {
     ],
     ctaTitle: "Have another question or want to assess your situation?",
     ctaSubtitle:
-      "You can request a free 20-minute preliminary consultation with zero obligation or message me directly.",
+      "You can request a free 15-minute preliminary consultation with zero obligation or message me directly.",
   },
   contact: {
     title: "Contact",
     intro:
-      "If you have a question before booking or would like to request a free 20-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply calmly.",
-    calloutTitle: "Free 20-minute preliminary consultation",
+      "If you have a question before booking or would like to request a free 15-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply calmly.",
+    calloutTitle: "Free 15-minute preliminary consultation",
     calloutText:
-      "You can use this form to ask any questions or request a free 20-minute phone call. We will honestly explore your situation before scheduling any session.",
+      "You can use this form to ask any questions or request a free 15-minute phone call. We will honestly explore your situation before scheduling any session.",
     phone: "Phone",
     name: "Name",
     email: "Email",
@@ -3613,7 +3613,7 @@ const en: Dict = {
     draft: "Placeholder content pending your final details.",
     bookCalendar: "Request 15-min call",
     smokeEmail: "I want to quit smoking",
-    smokeEmailNote: "Send an email and we'll arrange a 20-minute interview.",
+    smokeEmailNote: "Send an email and we'll arrange a 15-minute interview.",
     askQuestionLink: "Questions before booking? Write to me directly →",
   },
   cookies: {

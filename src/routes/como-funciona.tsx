@@ -62,7 +62,7 @@ function HowPage() {
         </div>
       </section>
 
-      {/* High-conversion closing banner with 20-min consultation & WhatsApp */}
+      {/* High-conversion closing banner with 15-min consultation & WhatsApp */}
       <section className="container-page py-16 md:py-20">
         <div className="rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/10 via-card to-card p-8 shadow-sm md:p-12 lg:flex lg:items-center lg:justify-between lg:gap-10">
           <div className="max-w-2xl">
@@ -88,7 +88,7 @@ function HowPage() {
               onClick={() => {
                 trackWhatsAppClick("como_funciona_cta");
                 const url = getWhatsAppUrl(
-                  "Hola María, he leído cómo funcionan las sesiones y me gustaría hacer una valoración previa de 20 minutos sin compromiso."
+                  "Hola María, he leído cómo funcionan las sesiones y me gustaría hacer una valoración previa de 15 minutos sin compromiso."
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}
