@@ -190,7 +190,7 @@ function ProfessionalsPage() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5">
                 <MapPin className="size-3.5 text-primary" />
-                Sueca (Centro Sanar) · Valencia a domicilio · Online
+                Sueca (Centro Sanar) · In situ en tu centro · Online
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5">
                 <Clock className="size-3.5 text-primary" />

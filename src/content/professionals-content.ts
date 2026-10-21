@@ -130,11 +130,11 @@ export const professionalsEs: ProfessionalsData = {
     },
     {
       area: "Odontología y Salud Bucal",
-      specialties: "Odontólogos y Especialistas en ATM",
+      specialties: "Odontólogos, Periodoncistas y Cirujanos Bucales",
       description:
-        "Personas con bruxismo diurno severo por tensión inconsciente o bloqueo intenso ante las intervenciones dentales y las agujas que retrasan tratamientos necesarios.",
+        "Pacientes con bruxismo diurno severo por tensión inconsciente, consumo de tabaco que compromete implantes y cirugías periodontales, o fobia intensa al sillón dental y las agujas.",
       benefit:
-        "Desprograma el hábito automático de apretar la mandíbula y calma la respuesta de miedo ante el sillón dental para que acudan a tu despacho relajados y cooperativos.",
+        "Facilita la cesación tabáquica para maximizar la osteointegración y salud de las encías, desprograma la tensión mandibular inconsciente y aporta calma profunda ante las intervenciones.",
     },
   ],
 
@@ -179,8 +179,8 @@ export const professionalsEs: ProfessionalsData = {
       text: "No creo en procesos interminables ni en dependencias. Cada sesión de 60 minutos se diseña en torno a un objetivo concreto pactado con la persona, evaluando avances desde el primer día.",
     },
     {
-      title: "Modalidades flexibles y atención en vuestro propio centro",
-      text: "Atención en despacho independiente dentro de Centro Sanar en Sueca (Ribera Baixa), a domicilio en Valencia ciudad o por videoconferencia. Además, si para tus usuarios o clientes es más cómodo por cuestiones de accesibilidad, limitaciones de movilidad o continuidad asistencial, puedo desplazarme directamente a vuestras instalaciones o centro para realizar las sesiones in situ.",
+      title: "Modalidades flexibles y atención in situ en vuestro propio centro",
+      text: "Atención presencial en despacho independiente en Sueca (Centro Sanar), por videoconferencia online, o desplazándome directamente a vuestras instalaciones o clínica para atender a vuestros pacientes in situ. La intervención terapéutica se realiza siempre en formato estrictamente individual, 100% personalizada a la persona, al problema y a su contexto. Además, podemos organizar charlas o talleres divulgativos para vuestros usuarios (como manejo de la ansiedad o mejora del descanso) para aportar valor y captar pacientes interesados para vuestro centro.",
     },
   ],
 
@@ -228,7 +228,7 @@ export const professionalsEs: ProfessionalsData = {
     "Utilizo la hipnosis como una vía complementaria, estructurada y respetuosa para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el valor de sumar fuerzas para acompañar a las personas hacia sus objetivos de bienestar y cambio de hábitos.",
   ],
   aboutLocation:
-    "Despacho en Sueca (Centro Sanar) · Desplazamiento a vuestro propio centro · Sesiones a domicilio en Valencia ciudad · Formato Online",
+    "Despacho en Sueca (Centro Sanar) · Desplazamiento in situ a vuestro propio centro · Formato Online",
 
   formEyebrow: "INICIAR CONTACTO",
   formTitle: "CONVERSEMOS SOBRE UNA COLABORACIÓN",
@@ -278,7 +278,7 @@ export const professionalsEs: ProfessionalsData = {
     },
     {
       q: "¿Dónde atiendo a los clientes derivados de tu centro?",
-      a: "En mi despacho presencial de Centro Sanar en Sueca (con conexión directa desde Cullera, Alzira, Algemesí, Sollana y la comarca), a domicilio en Valencia ciudad para su máxima comodidad, o en formato online por videollamada para cualquier ubicación.",
+      a: "En mi despacho presencial de Centro Sanar en Sueca (con conexión directa desde Cullera, Alzira, Algemesí, Sollana y la comarca), desplazándome in situ a vuestras instalaciones para atenderlos en vuestras propias cabinas, o en formato online por videollamada.",
     },
     {
       q: "¿Puedes desplazarte a atender a clientes directamente en nuestras instalaciones o centro?",
