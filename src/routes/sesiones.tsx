@@ -75,7 +75,7 @@ function SessionsPage() {
                     to="/contacto"
                     className="inline-flex items-center text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
                   >
-                    ¿Prefieres resolver una duda antes de agendar? Escríbeme →
+                    {t.common.askQuestionLink}
                   </Link>
                 </div>
               </div>

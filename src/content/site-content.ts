@@ -113,9 +113,9 @@ const es = {
     hypnosisEyebrow: "MÉTODO Y EVIDENCIA",
     hypnosisTitle: "HIPNOSIS CLÍNICA: UN PROCESO SERIO, CIENTÍFICAMENTE AVALADO.",
     hypnosisText1:
-      "La hipnosis clínica y ericksoniana es un estado de atención focalizada respaldado por la neurociencia moderna. Lejos de los mitos del espectáculo, es un procedimiento estructurado donde permaneces plenamente consciente y en control en todo momento, facilitando cambios profundos en hábitos, respuestas automáticas ante la tensión y patrones de conducta.",
+      "La hipnosis clínica y ericksoniana es un abordaje de psicoterapia que utiliza el estado hipnótico natural para producir resultados sólidos y duraderos a largo plazo. Respaldada por la neurociencia moderna, permite intervenir de raíz sobre hábitos automáticos, respuestas físicas ante la tensión y patrones de conducta que no se resuelven solo con fuerza de voluntad.",
     hypnosisText2:
-      "A través de la hipnosis ericksoniana no se imponen soluciones externas ni fórmulas mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo. Trabajamos sobre objetivos personales y de bienestar con el máximo rigor ético y profesional, sin realizar diagnósticos psiquiátricos de trastornos mentales graves.",
+      "Lejos de los mitos del espectáculo, permaneces plenamente consciente y en control en todo momento. A través de este proceso de psicoterapia no se imponen fórmulas externas ni soluciones mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo, con el máximo rigor ético y profesional.",
     hypnosisLink: "CÓMO FUNCIONA LA HIPNOSIS",
     hypnosisImageAlt: "Fotografía de sesión tranquila",
     contextsTitle: "DOS CONTEXTOS. UNA MISMA IDEA: CAMBIAR CÓMO RESPONDEMOS.",
@@ -369,7 +369,7 @@ const es = {
     whyParagraphs: [
       "La mayoría de las personas que quieren dejar de fumar saben perfectamente por qué deberían hacerlo: salud, dinero, libertad, olor. Sin embargo, en cuanto aparece el estrés, el café de la mañana o una sobremesa con amigos, el cuerpo y la mente activan la respuesta automática antes de que la razón intervenga.",
       "El problema no es que te falte voluntad o carácter. El problema es que el hábito del tabaco se sostiene en asociaciones neuronales profundas que operan de forma automática. Intentar frenarlo únicamente con fuerza de voluntad constante genera tensión, irritabilidad y desgaste.",
-      "La hipnosis permite intervenir en el nivel donde se originan esos automatismos: ayuda a desconectar las asociaciones que vinculan el tabaco con la calma o el placer, y a sustituirlas por respuestas saludables y tranquilas.",
+      "A través de un enfoque de psicoterapia aplicada que utiliza el estado hipnótico, intervenimos en el nivel donde se originan esos automatismos. Esto permite desconectar las asociaciones que vinculan el tabaco con la calma o el alivio y sustituirlas por respuestas propias de serenidad, logrando resultados sólidos y sostenibles a largo plazo sin batallas constantes contra la fuerza de voluntad.",
     ],
     programTitle: "ESTRUCTURA DEL PROGRAMA (3 SESIONES)",
     programIntro:
@@ -535,12 +535,13 @@ const es = {
     subtitle:
       "Aprende a responder de otra manera ante situaciones que generan tensión, preocupación o bloqueo, enseñando a tu cuerpo a recuperar la calma.",
     introText:
-      "Opresión en el pecho, respiración corta, mente que anticipa preocupaciones o bloqueo ante situaciones como volar, conducir o hablar en público. Cuando el estrés y la preocupación se repiten, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con hipnosis clínica y desarrollo personal trabajamos en ese nivel de respuestas automáticas: facilitamos recursos para que tu cuerpo recuerde la calma, aprendas a responder con serenidad ante los disparadores de tensión y recuperes tu tranquilidad cotidiana de forma respetuosa y natural.",
+      "Opresión en el pecho, respiración corta, mente que anticipa preocupaciones o bloqueo ante situaciones como volar, conducir o hablar en público. Cuando el estrés y la preocupación se repiten, el cuerpo reacciona de forma refleja antes de que la razón intervenga. Con un enfoque de psicoterapia que utiliza el estado hipnótico para producir resultados duraderos a largo plazo, intervenimos en ese nivel de respuestas automáticas: facilitamos recursos para que tu cuerpo recuerde la calma, aprendas a responder con serenidad ante los disparadores de tensión y consolides tu tranquilidad cotidiana con total seguridad y autonomía.",
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
     trustBadges: [
-      "Acompañamiento respetuoso y natural",
+      "Psicoterapia con hipnosis basada en evidencia",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
+      "Valoración previa de 20 min sin compromiso",
       "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
     ],
     symptomsTitle: "CUANDO EL CUERPO VIVE EN ESTADO DE ALERTA CONTINUO",
@@ -568,7 +569,7 @@ const es = {
     whyParagraphs: [
       "La mayoría de las personas con ansiedad ya saben que sus preocupaciones son exageradas. La razón lo entiende, pero el cuerpo no obedece: el corazón se acelera, el aire parece no entrar y los músculos se tensan. ¿Por qué ocurre esto?",
       "Porque la respuesta de ansiedad se origina en el sistema nervioso autónomo (la rama simpática o modo 'lucha o huida'), una red primitiva encargada de tu supervivencia que no responde al lenguaje lógico de los pensamientos conscientes. Intentar frenar la ansiedad obligándote a 'pensar positivo' suele generar más impotencia y frustración.",
-      "La hipnosis funciona porque utiliza el mismo lenguaje que tu sistema nervioso: el de la atención focalizada, las señales sensoriales y la distensión somática. Al inducir un estado de relajación profunda guiada, activamos de manera natural el sistema parasimpático (el freno neurobiológico del estrés), enseñando al cuerpo a apagar la alarma y creando nuevos circuitos neuronales de calma.",
+      "La hipnosis es una técnica de psicoterapia que utiliza el mismo lenguaje que tu sistema nervioso: el de la atención focalizada, las señales sensoriales y la distensión somática. Al inducir un estado de relajación profunda guiada, activamos de manera natural el sistema parasimpático (el freno neurobiológico del estrés), enseñando al cuerpo a apagar la alarma y creando nuevos circuitos neuronales de calma que producen resultados estables y duraderos a largo plazo.",
     ],
     pillarsTitle: "EL PROCESO PARA ENSEÑAR A TU CUERPO A ESTAR EN CALMA",
     pillarsIntro:
@@ -627,12 +628,12 @@ const es = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni compromisos cerrados.",
       "Pautas de autohipnosis y ejercicios prácticos entre sesiones.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "DA EL PRIMER PASO HACIA LA CALMA",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Te responderé personalmente con total cercanía.",
+      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu caso sin compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -683,12 +684,12 @@ const es = {
   how: {
     title: "Cómo funciona",
     intro:
-      "La hipnosis es un estado de atención concentrada y relajación en el que resulta más fácil trabajar con la imaginación, los hábitos y la manera de responder a ciertas situaciones. No pierdes el control, no te duermes y no haces nada que no quieras hacer.",
+      "El trabajo que realizamos es un proceso de psicoterapia que utiliza el estado hipnótico —un estado natural de atención focalizada y relajación profunda respaldado por la neurociencia— para facilitar cambios profundos en hábitos y respuestas emocionales, produciendo resultados estables a largo plazo. No pierdes el control, no te duermes y participas activamente en todo momento.",
     stepsTitle: "El recorrido, paso a paso",
     steps: [
       {
-        title: "1 · Conversación inicial",
-        text: "Hablamos de lo que quieres cambiar, de tu situación y de si este acompañamiento es adecuado para ti.",
+        title: "1 · Conversación inicial o valoración gratuita (20 min)",
+        text: "Hablamos de lo que quieres cambiar, resolvemos todas tus dudas y vemos con total honestidad si este acompañamiento de psicoterapia con hipnosis es adecuado para ti.",
       },
       {
         title: "2 · Objetivo concreto",
@@ -713,6 +714,11 @@ const es = {
     safetyTitle: "Seguridad y límites claros",
     safetyText:
       "El servicio se dirige a personas mayores de 18 años. Si tu situación requiere atención médica o psiquiátrica preferente, te lo indicaré con total claridad y honestidad profesional.",
+    ctaTitle: "¿Dudas sobre si este acompañamiento es para ti?",
+    ctaSubtitle:
+      "Hablemos 20 minutos por teléfono o WhatsApp sin compromiso. Analizamos tu caso, resolvemos cualquier inquietud y te explico cómo enfocaríamos tu proceso.",
+    ctaPrimary: "Solicitar valoración previa de 20 min",
+    ctaWhatsApp: "Consultar por WhatsApp",
   },
   areas: {
     title: "Ámbitos de acompañamiento",
@@ -784,11 +790,12 @@ const es = {
         name: "Sesión individual",
         price: "70 €",
         unit: "por hora",
-        text: "Una hora de acompañamiento con hipnosis y desarrollo personal para trabajar descanso, estrés, gestión de la ansiedad cotidiana, miedos, hábitos o el objetivo que definamos.",
+        text: "Una hora de psicoterapia y desarrollo personal utilizando el estado hipnótico para producir resultados duraderos a largo plazo en descanso, estrés, ansiedad cotidiana, miedos, hábitos o el objetivo que definamos.",
         points: [
           "Duración de 60 minutos",
           "Sueca, a domicilio en Valencia u online",
-          "A tu propio ritmo",
+          "A tu propio ritmo (sin bonos obligatorios)",
+          "Valoración previa de 20 min sin compromiso",
         ],
       },
       {
@@ -806,7 +813,7 @@ const es = {
     policyTitle: "Antes de reservar",
     policy: [
       "Reserva pensada para personas adultas.",
-      "Si tienes dudas sobre si es adecuado para ti, escríbeme antes.",
+      "Si tienes dudas sobre si es adecuado para ti, escríbeme antes o pide tu valoración previa de 20 minutos.",
       "Los cambios y cancelaciones se acuerdan con antelación razonable.",
       "Horarios en hora peninsular (Europe/Madrid).",
     ],
@@ -816,7 +823,7 @@ const es = {
     name: "María A. Cabo",
     role: "Profesional especializada en hipnosis y desarrollo personal",
     intro:
-      "Soy María Cabo, profesional especializada en hipnosis y desarrollo personal. Acompaño a personas adultas que quieren cambiar hábitos, regular el estrés y la ansiedad cotidiana, superar determinados miedos o ganar confianza y bienestar emocional utilizando la hipnosis como una herramienta rigurosa de cambio. Cuento con formación especializada en el Instituto Erickson Madrid en Hipnosis Ericksoniana, desde un enfoque cercano, práctico y respetuoso con el ritmo de cada persona.",
+      "Soy María Cabo, profesional especializada en hipnosis y desarrollo personal. Acompaño a personas adultas mediante un enfoque de psicoterapia que utiliza el estado hipnótico para producir resultados duraderos a largo plazo en el cambio de hábitos, la regulación del estrés y la ansiedad cotidiana, la superación de miedos y la seguridad personal. Cuento con formación especializada en el Instituto Erickson Madrid en Hipnosis Ericksoniana, con un método cercano, riguroso y respetuoso con el ritmo de cada persona.",
     traits: ["Cercanía", "Formación Ericksoniana", "Recursos útiles"],
     highlights: [
       {
@@ -855,9 +862,9 @@ const es = {
     statement:
       "Mi trabajo consiste en acompañar a cada persona a explorar sus patrones y ofrecerle herramientas para responder de una manera más útil para ella.",
     workEyebrow: "Mi forma de trabajar",
-    workTitle: "La hipnosis como herramienta, no como fórmula mágica.",
+    workTitle: "Psicoterapia con hipnosis: una herramienta rigurosa, no una fórmula mágica.",
     workText:
-      "Entiendo la hipnosis como un recurso para facilitar procesos de cambio, observar respuestas automáticas y entrenar nuevas formas de afrontar situaciones concretas con más calma, seguridad y capacidad de elección.",
+      "Entiendo este trabajo como un proceso de psicoterapia que utiliza el estado hipnótico para facilitar cambios profundos y sostenibles: observar respuestas automáticas, activar los recursos propios de la persona y consolidar nuevas formas de afrontar situaciones cotidianas con resultados sólidos a largo plazo.",
     focusAreas: [
       {
         title: "Cambio práctico",
@@ -1067,7 +1074,7 @@ const es = {
       },
       {
         q: "¿Qué es la hipnosis clínica y cuál es su aval científico?",
-        a: "La hipnosis clínica es un procedimiento estructurado avalado por la neurociencia y la medicina. Consiste en un estado de atención focalizada y relajación profunda que modula la actividad cerebral y permite intervenir sobre automatismos, el estrés, los hábitos y las respuestas emocionales aprendidas.",
+        a: "La hipnosis clínica es un procedimiento estructurado de psicoterapia avalado por la neurociencia y la medicina. Utiliza el estado hipnótico natural —una atención focalizada y relajación profunda que modula la actividad cerebral— para intervenir sobre automatismos, el estrés y los hábitos aprendidos, produciendo resultados eficaces y sostenibles a largo plazo.",
       },
       {
         q: "¿En qué se diferencia de un tratamiento o diagnóstico psiquiátrico?",
@@ -1090,11 +1097,17 @@ const es = {
         a: "La sesión individual son 70 € la hora. El programa específico para dejar de fumar son 300 € e incluye tres sesiones completas.",
       },
     ],
+    ctaTitle: "¿Tienes alguna otra duda o quieres valorar tu caso?",
+    ctaSubtitle:
+      "Puedes solicitar una valoración previa de 20 minutos sin coste ni compromiso o escribirme directamente.",
   },
   contact: {
     title: "Contacto",
     intro:
       "Si tienes una duda antes de reservar o deseas solicitar la valoración previa gratuita de 20 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
+    calloutTitle: "Valoración previa de 20 minutos sin compromiso",
+    calloutText:
+      "Puedes usar este formulario para consultar tus dudas o solicitar una llamada previa de 20 minutos sin coste. Hablaremos con honestidad de tu caso antes de agendar ninguna sesión.",
     phone: "Teléfono",
     name: "Nombre",
     email: "Correo electrónico",
@@ -1162,6 +1175,7 @@ const es = {
     bookCalendar: "Reservar en el calendario",
     smokeEmail: "Quiero dejar de fumar",
     smokeEmailNote: "Te escribo un email y concertamos una entrevista de 20 minutos.",
+    askQuestionLink: "¿Dudas antes de agendar? Escríbeme o pide tu valoración de 20 min →",
   },
   cookies: {
     bannerAriaLabel: "Aviso de cookies",
@@ -1326,9 +1340,9 @@ const va: Dict = {
     hypnosisEyebrow: "MÈTODE I EVIDÈNCIA",
     hypnosisTitle: "HIPNOSI CLÍNICA: UN PROCÉS SERIÓS, CIENTÍFICAMENT AVALAT.",
     hypnosisText1:
-      "La hipnosi clínica i ericksoniana és un estat d'atenció focalitzada recolzat per la neurociència moderna. Lluny dels mites de l'espectacle, és un procediment estructurat on romanen plenament conscient i amb el control en tot moment, facilitant canvis profunds en hàbits, respostes automàtiques davant la tensió i patrons de conducta.",
+      "La hipnosi clínica i ericksoniana és un abordatge de psicoteràpia que utilitza l'estat hipnòtic natural per a produir resultats sòlids i duradors a llarg termini. Recolzada per la neurociència moderna, permet intervindre d'arrel sobre hàbits automàtics, respostes físiques davant la tensió i patrons de conducta que no es resolen només amb força de voluntat.",
     hypnosisText2:
-      "A través de l'acompanyament amb hipnosi no s'imposen solucions externes ni fórmules màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig. Treballem sobre objectius personals i de benestar amb el màxim rigor ètic i professional, sense realitzar diagnòstics psiquiàtrics de trastorns mentals greus.",
+      "Lluny dels mites de l'espectacle, romanen plenament conscient i amb el control en tot moment. A través d'este procés de psicoteràpia no s'imposen fórmules externes ni solucions màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig, amb el màxim rigor ètic i professional.",
     hypnosisLink: "COM FUNCIONA LA HIPNOSI",
     hypnosisImageAlt: "Fotografia de sessió tranquil·la",
     contextsTitle: "DOS CONTEXTOS. UNA MATEIXA IDEA: CANVIAR COM RESPONEM.",
@@ -1580,7 +1594,7 @@ const va: Dict = {
     whyParagraphs: [
       "La majoria de les persones que volen deixar de fumar saben perfectament per què haurien de fer-ho: salut, diners, llibertat, olor. No obstant això, en quant apareix l'estrés, el cafè del matí o una sobretaula amb amics, el cos i la ment activen la resposta automàtica abans que la raó intervinga.",
       "El problema no és que et falte voluntat o caràcter. El problema és que l'hàbit del tabac se sosté en associacions neuronals profundes que operen de forma automàtica. Intentar frenar-lo únicament amb força de voluntat constant genera tensió, irritabilitat i desgast.",
-      "La hipnosi permet intervindre en el nivell on s'originen eixos automatismes: ajuda a desconnectar les associacions que vinculen el tabac amb la calma o el plaer, i a substituir-les per respostes saludables i tranquil·les.",
+      "A través d'un enfocament de psicoteràpia aplicada que utilitza l'estat hipnòtic, intervenim en el nivell on s'originen eixos automatismes. Això permet desconnectar les associacions que vinculen el tabac amb la calma o el plaer i substituir-les per respostes pròpies de serenitat, aconseguint resultats sòlids i sostenibles a llarg termini sense batalles constants contra la força de voluntat.",
     ],
     programTitle: "ESTRUCTURA DEL PROGRAMA (3 SESSIONS)",
     programIntro:
@@ -1745,12 +1759,13 @@ const va: Dict = {
     subtitle:
       "Aprén a respondre d'una altra manera davant de situacions que generen tensió, preocupació o bloqueig, ensenyant al teu cos a recuperar la calma.",
     introText:
-      "Opressió al pit, respiració curta, ment que anticipa preocupacions o bloqueig davant de situacions com volar, conduir o parlar en públic. Quan l'estrés i la preocupació es repetixen, el cos reacciona de forma reflexa abans que la raó intervinga. Amb hipnosi clínica i recursos de desenvolupament personal treballem en eixe nivell de respostes automàtiques: facilitem recursos perquè el teu cos recorde la calma, aprengues a respondre amb serenitat davant dels disparadors de tensió i recuperes la teua tranquil·litat quotidiana de forma respectuosa i natural.",
+      "Opressió al pit, respiració curta, ment que anticipa preocupacions o bloqueig davant de situacions com volar, conduir o parlar en públic. Quan l'estrés i la preocupació es repetixen, el cos reacciona de forma reflexa abans que la raó intervinga. Amb un enfocament de psicoteràpia que utilitza l'estat hipnòtic per a produir resultats duradors a llarg termini, intervenim en eixe nivell de respostes automàtiques: facilitem recursos perquè el teu cos recorde la calma, aprengues a respondre amb serenitat davant dels disparadors de tensió i consolides la teua tranquil·litat quotidiana amb total seguretat i autonomia.",
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
     trustBadges: [
-      "Acompanyament respectuós i natural",
+      "Psicoteràpia amb hipnosi basada en evidència",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
+      "Valoració prèvia de 20 min sense compromís",
       "Sessions individuals d'1h · 70 € (al teu propi ritme)",
     ],
     symptomsTitle: "QUAN EL COS VIU EN ESTAT D'ALERTA CONTINU",
@@ -1778,7 +1793,7 @@ const va: Dict = {
     whyParagraphs: [
       "La majoria de les persones amb ansietat ja saben que les seues preocupacions són exagerades. La raó ho entén, però el cos no obeïx: el cor s'accelera, l'aire sembla no entrar i els músculs es tensen. Per què passa açò?",
       "Perquè la resposta d'ansietat s'origina en el sistema nerviós autònom (la branca simpàtica o mode 'lluita o fugida'), una xarxa primitiva encarregada de la teua supervivència que no respon al llenguatge lògic dels pensaments conscients. Intentar frenar l'ansietat obligant-te a 'pensar en positiu' sol generar més impotència i frustració.",
-      "La hipnosi funciona perquè utilitza el mateix llenguatge que el teu sistema nerviós: el de l'atenció focalitzada, els senyals sensorials i la distensió somàtica. En induir un estat de relaxació profunda guiada, activem de manera natural el sistema parasimpàtic (el fre neurobiològic de l'estrès), ensenyant al cos a apagar l'alarma i creant nous circuits neuronals de calma.",
+      "La hipnosi és una tècnica de psicoteràpia que utilitza el mateix llenguatge que el teu sistema nerviós: el de l'atenció focalitzada, els senyals sensorials i la distensió somàtica. En induir un estat de relaxació profunda guiada, activem de manera natural el sistema parasimpàtic (el fre neurobiològic de l'estrès), ensenyant al cos a apagar l'alarma i creant nous circuits neuronals de calma que produïxen resultats estables i duradors a llarg termini.",
     ],
     pillarsTitle: "EL PROCÉS PER A ENSENYAR AL TEU COS A ESTAR EN CALMA",
     pillarsIntro:
@@ -1837,12 +1852,12 @@ const va: Dict = {
       "Sueca (Centre Sanar), a domicili a València ciutat o en línia.",
       "Al teu propi ritme: sense paquets obligatoris ni compromisos tancats.",
       "Pautes d'autohipnosi i exercicis pràctics entre sessions.",
-      "Resolució de dubtes prèvia sense compromís.",
+      "Valoració prèvia de 20 minuts sense compromís per a orientar el teu cas.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "FES EL PRIMER PAS CAP A LA CALMA",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o sol·licitar la teua sessió. Et respondré personalment amb total proximitat.",
+      "Emplena este breu formulari per a consultar els teus dubtes o sol·licitar la teua sessió. Si ho prefereixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp per a conéixer el teu cas sense compromís.",
     formFields: {
       name: "Nom complet",
       email: "Correu electrònic",
@@ -1892,12 +1907,12 @@ const va: Dict = {
   how: {
     title: "Com funciona",
     intro:
-      "La hipnosi és un estat d'atenció concentrada i relaxació en què resulta més fàcil treballar amb la imaginació, els hàbits i la manera de respondre a certes situacions. No perds el control, no t'adorms i no fas res que no vulgues fer.",
+      "El treball que realitzem és un procés de psicoteràpia que utilitza l'estat hipnòtic —un estat natural d'atenció focalitzada i relaxació profunda recolzat per la neurociència— per a facilitar canvis profunds en hàbits i respostes emocionals, produint resultats estables a llarg termini. No perds el control, no t'adorms i participes activament en tot moment.",
     stepsTitle: "El recorregut, pas a pas",
     steps: [
       {
-        title: "1 · Conversa inicial",
-        text: "Parlem del que vols canviar, de la teua situació i de si este acompanyament és adequat per a tu.",
+        title: "1 · Conversa inicial o valoració gratuïta (20 min)",
+        text: "Parlem del que vols canviar, resolem tots els teus dubtes i veiem amb total honestedat si este acompanyament de psicoteràpia amb hipnosi és adequat per a tu.",
       },
       {
         title: "2 · Objectiu concret",
@@ -1922,6 +1937,11 @@ const va: Dict = {
     safetyTitle: "Seguretat i límits clars",
     safetyText:
       "El servici s'adreça a persones majors de 18 anys. Si la teua situació requerix atenció mèdica o psiquiàtrica preferent, t'ho indicaré amb total claredat i honestedat professional.",
+    ctaTitle: "Dubtes sobre si este acompanyament és per a tu?",
+    ctaSubtitle:
+      "Parlem 20 minuts per telèfon o WhatsApp sense compromís. Analitzem el teu cas, resolem qualsevol inquietud i t'explique com enfocaríem el teu procés.",
+    ctaPrimary: "Sol·licitar valoració prèvia de 20 min",
+    ctaWhatsApp: "Consultar per WhatsApp",
   },
   areas: {
     title: "Àmbits d'acompanyament",
@@ -1986,27 +2006,36 @@ const va: Dict = {
   sessions: {
     title: "Sessions",
     intro:
-      "Sessions individuals presencials a Sueca, en un despatx independent dins de Centro Sanar. Preus clars i amb política de canvis transparent.",
+      "Sessions individuals presencials a Sueca (Centre Sanar), a domicili en cases de particulars a València ciutat, o en línia per videoconferència. Preus clars i amb política de canvis transparent.",
     items: [
       {
         name: "Sessió individual",
         price: "70 €",
         unit: "per hora",
-        text: "Una hora d'acompanyament amb hipnosi i desenvolupament personal per a treballar descans, estrès, gestió de l'ansietat quotidiana, pors, hàbits o l'objectiu que definim.",
-        points: ["Duració de 60 minuts", "Presencial", "Al teu propi ritme"],
+        text: "Una hora de psicoteràpia i desenvolupament personal utilitzant l'estat hipnòtic per a produir resultats duradors a llarg termini en descans, estrès, ansietat quotidiana, pors, hàbits o l'objectiu que definim.",
+        points: [
+          "Duració de 60 minuts",
+          "Sueca, a domicili a València o en línia",
+          "Al teu propi ritme (sense bons obligatoris)",
+          "Valoració prèvia de 20 min sense compromís",
+        ],
       },
       {
         name: "Programa per a deixar de fumar",
         price: "300 €",
         unit: "paquet de tres sessions",
         text: "Un recorregut estructurat en tres sessions per a acompanyar la decisió de deixar de fumar i sostindre-la.",
-        points: ["Tres sessions", "Seguiment entre sessions", "Pagament del paquet complet"],
+        points: [
+          "Tres sessions (Sueca, a domicili o en línia)",
+          "Seguiment entre sessions",
+          "Entrevista prèvia gratuïta de 20 min",
+        ],
       },
     ],
     policyTitle: "Abans de reservar",
     policy: [
       "Reserva pensada per a persones adultes.",
-      "Si dubtes de si és adequat per a tu, escriu-me abans.",
+      "Si dubtes de si és adequat per a tu, escriu-me abans o demana la teua valoració prèvia de 20 minuts.",
       "Els canvis i cancel·lacions s'acorden amb antelació raonable.",
       "Horaris en hora peninsular (Europe/Madrid).",
     ],
@@ -2016,7 +2045,7 @@ const va: Dict = {
     name: "María A. Cabo",
     role: "Especialista en hipnosi i desenvolupament personal",
     intro:
-      "Sóc María Cabo, especialista en hipnosi i desenvolupament personal. Acompanye a persones adultes que volen canviar hàbits, regular l'estrès i l'ansietat quotidiana, superar determinades pors o guanyar confiança i benestar emocional utilitzant la hipnosi com una ferramenta rigorosa de canvi. Compte amb formació especialitzada a l'Institut Erickson Madrid en Hipnosi Ericksoniana, des d'un enfocament pròxim, pràctic i respectuós amb el ritme de cada persona.",
+      "Sóc María Cabo, especialista en hipnosi i desenvolupament personal. Acompanye a persones adultes mitjançant un enfocament de psicoteràpia que utilitza l'estat hipnòtic per a produir resultats duradors a llarg termini en el canvi d'hàbits, la regulació de l'estrès i l'ansietat quotidiana, la superació de pors i la seguretat personal. Compte amb formació especialitzada a l'Institut Erickson Madrid en Hipnosi Ericksoniana, des d'un mètode pròxim, rigorós i respectuós amb el ritme de cada persona.",
     traits: ["Proximitat", "Formació Ericksoniana", "Recursos útils"],
     highlights: [
       {
@@ -2055,9 +2084,9 @@ const va: Dict = {
     statement:
       "El meu treball consistix a acompanyar cada persona a explorar els seus patrons i oferir-li ferramentes per a respondre d'una manera més útil per a ella.",
     workEyebrow: "La meua manera de treballar",
-    workTitle: "La hipnosi com a eina, no com a fórmula màgica.",
+    workTitle: "Psicoteràpia amb hipnosi: una eina rigorosa, no una fórmula màgica.",
     workText:
-      "Entenc la hipnosi com un recurs per a facilitar processos de canvi, observar respostes automàtiques i entrenar noves formes d'afrontar situacions concretes amb més calma, seguretat i capacitat d'elecció.",
+      "Entenc este treball com un procés de psicoteràpia que utilitza l'estat hipnòtic per a facilitar canvis profunds i sostenibles: observar respostes automàtiques, activar els recursos propis de la persona i consolidar noves formes d'afrontar situacions quotidianes amb resultats sòlids a llarg termini.",
     focusAreas: [
       {
         title: "Canvi pràctic",
@@ -2266,7 +2295,7 @@ const va: Dict = {
       },
       {
         q: "Què és la hipnosi clínica i quin és el seu aval científic?",
-        a: "La hipnosi clínica és un procediment estructurat avalat per la neurociència i la medicina. Consistix en un estat d'atenció focalitzada i relaxació profunda que modula l'activitat cerebral i permet intervindre sobre automatismes, l'estrès, els hàbits i les respostes emocionals apreses.",
+        a: "La hipnosi clínica és un procediment estructurat de psicoteràpia avalat per la neurociència i la medicina. Utilitza l'estat hipnòtic natural —una atenció focalitzada i relaxació profunda que modula l'activitat cerebral— per a intervindre sobre automatismes, l'estrès i els hàbits apresos, produint resultats eficaços i sostenibles a llarg termini.",
       },
       {
         q: "En què es diferencia d'un diagnòstic o tractament psiquiàtric?",
@@ -2289,11 +2318,17 @@ const va: Dict = {
         a: "La sessió individual són 70 € l'hora. El programa específic per a deixar de fumar són 300 € i inclou tres sessions completes.",
       },
     ],
+    ctaTitle: "Tens algun altre dubte o vols valorar el teu cas?",
+    ctaSubtitle:
+      "Pots sol·licitar una valoració prèvia de 20 minuts sense cost ni compromís o escriure'm directament.",
   },
   contact: {
     title: "Contacte",
     intro:
       "Si tens un dubte abans de reservar o vols sol·licitar la valoració prèvia gratuïta de 20 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
+    calloutTitle: "Valoració prèvia de 20 minuts sense compromís",
+    calloutText:
+      "Pots utilitzar este formulari per a consultar els teus dubtes o sol·licitar una telefonada prèvia de 20 minuts sense cost. Parlarem amb honestedat del teu cas abans d'agendar cap sessió.",
     phone: "Telèfon",
     name: "Nom",
     email: "Correu electrònic",
@@ -2361,6 +2396,7 @@ const va: Dict = {
     bookCalendar: "Reservar en el calendari",
     smokeEmail: "Vull deixar de fumar",
     smokeEmailNote: "M'escrius un email i concertem una entrevista de 20 minuts.",
+    askQuestionLink: "Dubtes abans d'agendar? Escriu-me o demana la teua valoració de 20 min →",
   },
   cookies: {
     bannerAriaLabel: "Avís de galetes",
@@ -2523,9 +2559,9 @@ const en: Dict = {
     hypnosisEyebrow: "METHOD & EVIDENCE",
     hypnosisTitle: "CLINICAL HYPNOSIS: A RIGOROUS, SCIENTIFICALLY SUPPORTED PROCESS.",
     hypnosisText1:
-      "Clinical and Ericksonian hypnosis is a state of focused attention supported by modern neuroscience. Far from stage myths, it is a structured procedure where you remain fully conscious and in control at all times, facilitating deep shifts in habits, automatic responses to tension, and behavioural patterns.",
+      "Clinical and Ericksonian hypnosis is an evidence-based psychotherapeutic approach that uses the natural hypnotic state to produce solid, lasting results over the long term. Supported by modern neuroscience, it addresses the root of automatic habits, physical stress responses, and behavioral patterns that willpower alone cannot resolve.",
     hypnosisText2:
-      "Through hypnosis and personal development support, no external solutions are forced: we activate your own internal resources to learn to respond with poise in stressful or blocked situations. We focus on personal goals and emotional well-being with complete professional rigor, without diagnosing severe psychiatric disorders.",
+      "Far from stage myths, you remain fully conscious and in complete control at all times. Through this psychotherapeutic process, no external formulas or quick fixes are imposed: we activate your own internal resources to learn to respond with calm in stressful or blocked situations, with complete professional rigor.",
     hypnosisLink: "HOW HYPNOSIS WORKS",
     hypnosisImageAlt: "Photograph of a calm session",
     contextsTitle: "TWO CONTEXTS. ONE IDEA: CHANGING HOW WE RESPOND.",
@@ -2777,7 +2813,7 @@ const en: Dict = {
     whyParagraphs: [
       "Most people who want to quit smoking know exactly why they should: health, finances, freedom, smell. However, the moment stress strikes, morning coffee arrives, or friends gather around a table, the subconscious triggers the automatic urge before rational thinking intervenes.",
       "The problem is not a lack of willpower or character. The problem is that the smoking habit is sustained by deep neural associations that fire automatically. Relying solely on constant willpower creates tension, irritability and fatigue.",
-      "Hypnosis allows us to intervene where those automatisms originate: disconnecting the links between smoking and calmness or reward, and replacing them with healthy, calm responses.",
+      "Through an applied psychotherapeutic approach using the hypnotic state, we intervene at the subconscious level where those automatisms originate. This disconnects the associations linking smoking to calm or reward and replaces them with your own natural states of ease, achieving solid, long-term results without constant battles of willpower.",
     ],
     programTitle: "PROGRAMME STRUCTURE (3 SESSIONS)",
     programIntro:
@@ -2942,12 +2978,13 @@ const en: Dict = {
     subtitle:
       "Learn to respond differently to situations that bring tension, worry or hesitation, helping your body return to calm.",
     introText:
-      "Chest tightness, shallow breathing, a mind anticipating worries, or hesitation around flying, driving or public speaking. When stress and worry recur, the body reacts automatically before logic can intervene. Through clinical hypnosis and personal development tools, we work at that involuntary level of automatic responses: providing resources so your body remembers calm, you learn to respond with poise to tension triggers, and you regain everyday peace in a respectful, natural way.",
+      "Chest tightness, shallow breathing, a mind anticipating worries, or hesitation around flying, driving or public speaking. When stress and worry recur, the body reacts automatically before logic can intervene. Through a psychotherapy approach utilizing the hypnotic state to produce solid long-term results, we intervene at that level of automatic responses: providing resources so your body remembers calm, you learn to respond with poise to tension triggers, and you establish your everyday peace with complete safety and autonomy.",
     ctaPrimary: "BOOK A SESSION OR ENQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
     trustBadges: [
-      "Respectful, natural approach",
+      "Evidence-based hypnosis psychotherapy",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
+      "Free 20-min consultation with no obligation",
       "Individual 1h sessions · €70 (at your own pace)",
     ],
     symptomsTitle: "WHEN THE BODY LIVES IN PERPETUAL ALERT",
@@ -2975,7 +3012,7 @@ const en: Dict = {
     whyParagraphs: [
       "Most people experiencing anxiety already know rationally that their worries are magnified. The intellect understands, but the physiology doesn't obey: the heart races, breathing stays shallow, and muscles brace. Why?",
       "Because the anxiety response is generated by the autonomic nervous system (the sympathetic 'fight or flight' branch) — an ancient survival circuit that does not answer to logical self-talk. Trying to stop anxiety through sheer conscious willpower often leads to greater frustration and exhaustion.",
-      "Hypnosis works because it speaks the nervous system's native language: focused sensory attention and neuromuscular relaxation. By guiding you into deep stillness, we engage the parasympathetic nervous system (the physiological brake on stress), teaching the body to quiet the alarm and building lasting neural pathways of composure.",
+      "Hypnosis is a psychotherapy technique that speaks the nervous system's native language: focused sensory attention and neuromuscular relaxation. By guiding you into deep stillness, we naturally engage the parasympathetic nervous system (the physiological brake on stress), teaching the body to quiet the alarm and building lasting neural pathways of composure that produce stable, long-term results.",
     ],
     pillarsTitle: "THE PROCESS: TEACHING YOUR BODY TO REST IN CALM",
     pillarsIntro:
@@ -3033,12 +3070,12 @@ const en: Dict = {
       "Sueca (Centro Sanar), home visits in Valencia city or online.",
       "At your own pace: no fixed commitments or mandatory packages.",
       "Self-hypnosis audio and practical daily exercises included.",
-      "Pre-session questions answered with zero obligation.",
+      "Free 20-minute preliminary consultation to assess your case.",
     ],
     formEyebrow: "ENQUIRY & BOOKING",
     formTitle: "TAKE THE FIRST STEP TOWARDS CALM",
     formSubtitle:
-      "Fill out this brief form to ask any questions or request an appointment. I will respond to you personally.",
+      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp to understand your situation with zero obligation.",
     formFields: {
       name: "Full name",
       email: "Email address",
@@ -3088,12 +3125,12 @@ const en: Dict = {
   how: {
     title: "How it works",
     intro:
-      "Hypnosis is a state of focused attention and relaxation in which it becomes easier to work with imagination, habits and the way you respond to certain situations. You don't lose control, you don't fall asleep, and you never do anything you don't want to do.",
+      "Our work is a psychotherapeutic process that utilizes the natural hypnotic state — a state of focused attention and deep relaxation supported by neuroscience — to facilitate shifts in habits and emotional responses, producing stable, long-term results. You never lose control, you do not fall asleep, and you actively participate throughout.",
     stepsTitle: "The journey, step by step",
     steps: [
       {
-        title: "1 · First conversation",
-        text: "We talk about what you want to change, your situation, and whether this support is right for you.",
+        title: "1 · Initial conversation or free consultation (20 min)",
+        text: "We talk about what you want to change, answer all your questions, and honestly explore whether this hypnosis psychotherapy process is right for you.",
       },
       {
         title: "2 · A concrete goal",
@@ -3118,6 +3155,11 @@ const en: Dict = {
     safetyTitle: "Safety and clear boundaries",
     safetyText:
       "This service is for adults over 18. If your situation requires specialized medical or psychiatric care, I will tell you with complete clarity and professional honesty.",
+    ctaTitle: "Wondering if this support is right for you?",
+    ctaSubtitle:
+      "Let's speak for 20 minutes by phone or WhatsApp with zero obligation. We'll explore your situation, answer questions, and discuss how we would approach your care.",
+    ctaPrimary: "Request free 20-min consultation",
+    ctaWhatsApp: "Message on WhatsApp",
   },
   areas: {
     title: "Focus areas",
@@ -3183,27 +3225,36 @@ const en: Dict = {
   sessions: {
     title: "Sessions",
     intro:
-      "One-to-one in-person sessions in Sueca, in an independent consultation room at Centro Sanar. Clear prices and a transparent change policy.",
+      "One-to-one in-person sessions in Sueca (Centro Sanar), home visits in Valencia city, or online via live video call. Clear prices and a transparent change policy.",
     items: [
       {
         name: "Individual session",
         price: "€70",
         unit: "per hour",
-        text: "One hour of support with hypnosis and personal development to work on rest, stress, everyday anxiety, habits, or the specific goal we define together.",
-        points: ["60 minutes", "In person", "At your own pace"],
+        text: "One hour of psychotherapy and personal development utilizing the hypnotic state to produce lasting results over the long term in rest, stress, everyday anxiety, fears, habits or your chosen personal goal.",
+        points: [
+          "60 minutes",
+          "Sueca, home visits in Valencia or online",
+          "At your own pace (no mandatory packages)",
+          "Free 20-min consultation with no obligation",
+        ],
       },
       {
         name: "Stop-smoking programme",
         price: "€300",
         unit: "package of three sessions",
         text: "A structured three-session journey to support the decision to stop smoking and to sustain it.",
-        points: ["Three sessions", "Follow-up between sessions", "Full package payment"],
+        points: [
+          "Three sessions (Sueca, home visits or online)",
+          "Follow-up between sessions",
+          "Free 20-min preliminary consultation",
+        ],
       },
     ],
     policyTitle: "Before booking",
     policy: [
       "Bookings are for adults.",
-      "If you're unsure whether this is right for you, write to me first.",
+      "If you're unsure whether this is right for you, write to me first or request a free 20-minute consultation.",
       "Changes and cancellations are agreed with reasonable notice.",
       "Times shown in mainland Spain time (Europe/Madrid).",
     ],
@@ -3213,7 +3264,7 @@ const en: Dict = {
     name: "María A. Cabo",
     role: "Specialist in hypnosis and personal development",
     intro:
-      "I am María Cabo, specialist in hypnosis and personal development. I support adults who want to transform habits, regulate everyday stress and anxiety, work through fears, or build grounded confidence using hypnosis as a rigorous tool for change. I completed specialized training in Ericksonian Hypnosis at the Instituto Erickson Madrid, with an approachable, practical, and evidence-based approach.",
+      "I am María Cabo, specialist in hypnosis and personal development. I support adults through a psychotherapeutic approach that uses the hypnotic state to produce lasting results over the long term in habit change, stress and everyday anxiety regulation, overcoming fears, and building grounded confidence. I completed specialized training in Ericksonian Hypnosis at the Instituto Erickson Madrid, with an approachable, rigorous, and respectful method.",
     traits: ["Warmth", "Ericksonian Training", "Practical tools"],
     highlights: [
       {
@@ -3251,9 +3302,9 @@ const en: Dict = {
     statement:
       "My work is about supporting each person as they explore their patterns and offering tools to respond in ways that are more useful for them.",
     workEyebrow: "My way of working",
-    workTitle: "Hypnosis as a tool, not a magic formula.",
+    workTitle: "Psychotherapy with hypnosis: a rigorous tool, not a magic formula.",
     workText:
-      "I understand hypnosis as a resource that supports change, helps observe automatic responses, and trains new ways of facing specific situations with more calm, confidence, and choice.",
+      "I understand this work as a psychotherapeutic process that utilizes the hypnotic state to facilitate deep, sustainable change: observing automatic responses, activating the person's own inner resources, and consolidating new ways of responding to everyday situations with long-term, lasting results.",
     focusAreas: [
       {
         title: "Practical change",
@@ -3463,7 +3514,7 @@ const en: Dict = {
       },
       {
         q: "What is clinical hypnosis and what is its scientific backing?",
-        a: "Clinical hypnosis is a structured procedure supported by neuroscience and medicine. It consists of a state of focused attention and deep relaxation that modulates brain activity, allowing intervention in automatic reactions, stress, habits, and learned emotional patterns.",
+        a: "Clinical hypnosis is a structured psychotherapeutic procedure backed by neuroscience and medicine. It utilizes the natural hypnotic state — a state of focused attention and deep relaxation that modulates brain activity — to intervene in automatic reactions, stress, and learned habits, producing effective, lasting results over the long term.",
       },
       {
         q: "How does it differ from psychiatric treatment or diagnosis?",
@@ -3486,11 +3537,17 @@ const en: Dict = {
         a: "An individual session is €70 per hour. The stop-smoking programme is €300 and includes three full sessions.",
       },
     ],
+    ctaTitle: "Have another question or want to assess your situation?",
+    ctaSubtitle:
+      "You can request a free 20-minute preliminary consultation with zero obligation or message me directly.",
   },
   contact: {
     title: "Contact",
     intro:
       "If you have a question before booking or would like to request a free 20-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply calmly.",
+    calloutTitle: "Free 20-minute preliminary consultation",
+    calloutText:
+      "You can use this form to ask any questions or request a free 20-minute phone call. We will honestly explore your situation before scheduling any session.",
     phone: "Phone",
     name: "Name",
     email: "Email",
@@ -3560,6 +3617,7 @@ const en: Dict = {
     bookCalendar: "Book in the calendar",
     smokeEmail: "I want to quit smoking",
     smokeEmailNote: "Send an email and we'll arrange a 20-minute interview.",
+    askQuestionLink: "Questions before booking? Message me or request a free 20-min chat →",
   },
   cookies: {
     bannerAriaLabel: "Cookie notice",

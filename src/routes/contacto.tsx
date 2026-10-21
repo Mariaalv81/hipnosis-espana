@@ -78,6 +78,14 @@ function ContactPage() {
         <form onSubmit={onSubmit} className="grid gap-5">
           {/* Honeypot field to trap bots - keep it hidden */}
           <input type="text" name="website" style={{ display: "none" }} aria-hidden />
+
+          <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 text-sm text-foreground">
+            <p className="font-semibold text-primary">{t.contact.calloutTitle}</p>
+            <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
+              {t.contact.calloutText}
+            </p>
+          </div>
+
           <div className="grid gap-2">
             <label htmlFor="name" className="text-sm">
               {t.contact.name}
@@ -173,7 +181,9 @@ function ContactPage() {
               type="button"
               onClick={() => {
                 trackWhatsAppClick("contacto_aside");
-                const url = getWhatsAppUrl();
+                const url = getWhatsAppUrl(
+                  "Hola María, me gustaría hacer una consulta previa antes de reservar una sesión."
+                );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}
               className="mt-3.5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-90"

@@ -17,11 +17,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "Comer compulsivamente no es falta de voluntad; es una respuesta automática del sistema nervioso ante el estrés, el aburrimiento o el vacío emocional.",
     introText:
-      "¿Cuántas veces has empezado una dieta estricta prometiéndote que esta vez sería diferente, solo para terminar picoteando por la noche con una enorme sensación de culpa? Cuando la comida se convierte en el anestésico contra el cansancio o la tensión diaria, forzarte a no comer solo genera más obsesión. Con hipnosis trabajamos en el origen automático del impulso: desactivamos el ansia por dulces o ultraprocesados, restauramos la señal biológica de saciedad y te ayudamos a construir una relación tranquila, libre y sostenible con tu cuerpo.",
+      "¿Cuántas veces has empezado una dieta estricta prometiéndote que esta vez sería diferente, solo para terminar picoteando por la noche con una enorme sensación de culpa? Cuando la comida se convierte en la única válvula de escape contra la tensión diaria, forzarte a no comer solo genera obsesión. Mediante un proceso de psicoterapia que utiliza el estado hipnótico para producir resultados duraderos a largo plazo, intervenimos en el origen automático del impulso: calmamos el ansia por dulces o ultraprocesados, restauramos la señal biológica de saciedad y te ayudamos a construir una relación tranquila, libre y definitiva con tu cuerpo.",
     trustBadges: [
       "Sin dietas restrictivas ni efecto rebote",
+      "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -52,7 +53,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "Las dietas se centran exclusivamente en qué y cuánto pones en el plato, pero ignoran por qué abres la nevera en primer lugar. Si utilizas la comida para calmar el estrés, la soledad o el agotamiento, retirar la comida por la fuerza deja a tu sistema nervioso sin su mecanismo habitual de consuelo, provocando que tarde o temprano aparezca el desbordamiento.",
       "La comida rica en azúcares y grasas estimula intensamente los circuitos de recompensa y dopamina del cerebro. Cuando repites esa asociación durante meses o años, se crea un carril neuronal automático que se activa antes de que tu mente racional pueda intervenir.",
-      "La hipnosis actúa sobre esos patrones subcorticales. Te permite sentir saciedad antes, disfrutar de porciones adecuadas sin esfuerzo, saborear conscientemente y desvincular el alivio emocional del acto de comer, logrando una regulación natural y duradera.",
+      "La hipnosis es una herramienta rigurosa de psicoterapia que actúa sobre esos patrones subcorticales automáticos. Te permite sentir saciedad antes, disfrutar de porciones adecuadas sin esfuerzo, saborear conscientemente y desvincular el alivio emocional del acto de comer, logrando una regulación natural, saludable y duradera a largo plazo.",
     ],
     pillarsTitle: "CÓMO TRABAJAMOS EL CONTROL DE PESO",
     pillarsIntro:
@@ -112,12 +113,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Ejercicios prácticos y audios de apoyo entre sesiones.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "DA EL PRIMER PASO HACIA UNA ALIMENTACIÓN EN PAZ",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Te responderé personalmente con total cercanía.",
+      "Rellena este breve formulario para consultar tus dudas o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu situación sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -161,11 +162,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "La onicofagia y los gestos compulsivos no son 'malas costumbres': son válvulas de escape automáticas ante la tensión involuntaria.",
     introText:
-      "Llevarte las manos a la boca mientras conduces, morderte las uñas y padrastros frente a la pantalla del ordenador, apretar los dientes o arrancarte pellejitos sin darte cuenta. Has probado esmaltes de sabor amargo, tiritas y propósitos de año nuevo, pero en cuanto tu atención se distrae, el cuerpo vuelve al mismo gesto. Con hipnosis aplicada no forzamos la contención: enseñamos al cerebro a descargar la microtensión de forma fisiológica y reprogramamos el reflejo involuntario para que tus manos descansen tranquilas.",
+      "Llevarte las manos a la boca mientras conduces, morderte las uñas y padrastros frente a la pantalla del ordenador, apretar los dientes o arrancarte pellejitos sin darte cuenta. Has probado esmaltes de sabor amargo, tiritas y propósitos conscientes, pero en cuanto tu atención se distrae, el cuerpo vuelve al mismo gesto. A través de la psicoterapia utilizando el estado hipnótico para producir resultados duraderos a largo plazo, no forzamos la contención: enseñamos al cerebro a descargar la microtensión de forma fisiológica y reprogramamos el reflejo involuntario para que tus manos descansen tranquilas sin esfuerzo.",
     trustBadges: [
       "Eficaz donde la fuerza de voluntad ha fallado",
+      "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -196,7 +198,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "Los esmaltes amargos o el esfuerzo consciente intentan corregir el problema en el último eslabón de la cadena: cuando la mano ya está en la boca. Pero el disparador ocurrió segundos antes en forma de micro-ansiedad, aburrimiento o necesidad de concentración profunda.",
       "Al frenar conscientemente el gesto, la tensión interna no se disuelve; de hecho, suele aumentar la inquietud, haciendo que el impulso regrese con más fuerza en cuanto baja la guardia racional.",
-      "En hipnosis intervenimos en la fase de anticipación subconsciente: enseñamos al cuerpo a reconocer el impulso antes de que se ejecute la acción física y reentrenamos una respuesta refleja de serenidad y soltura motora.",
+      "En hipnosis intervenimos en la fase de anticipación subconsciente mediante psicoterapia aplicada: enseñamos al cuerpo a reconocer el impulso antes de que se ejecute la acción física y reentrenamos una respuesta refleja de serenidad y soltura motora con resultados estables a largo plazo.",
     ],
     pillarsTitle: "CÓMO ELIMINAMOS EL HÁBITO NERVIOSO",
     pillarsIntro:
@@ -256,12 +258,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Ejercicios de anclaje neuromuscular entre sesiones.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "LIBÉRATE DEL HÁBITO Y RECUPERA TUS MANOS",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o pedir cita. Te responderé personalmente con total cercanía.",
+      "Rellena este formulario para consultar tu caso o pedir cita. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -305,11 +307,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "En el deporte, el cuerpo llega hasta donde la mente le permite. Entrena tu diálogo interno y compite en estado de flujo.",
     introText:
-      "Entrenas duro, cumples con la preparación física y conoces la técnica al detalle. Sin embargo, cuando llega el día de la competición o un momento decisivo, los nervios te atenazan, la respiración se acelera y tu cuerpo no responde con la soltura de los entrenamientos. O quizá te cuesta encontrar la constancia diaria para calzarte las zapatillas tras un parón o una lesión. Con hipnosis aplicada al rendimiento deportivo alineamos tu mente inconsciente con tus objetivos físicos: visualización motora de alta precisión, gestión del dolor y la fatiga, y un estado mental inquebrantable de confianza.",
+      "Entrenas duro, cumples con la preparación física y conoces la técnica al detalle. Sin embargo, cuando llega el día de la competición o un momento decisivo, los nervios te atenazan, la respiración se acelera y tu cuerpo no responde con la soltura de los entrenamientos. O quizá te cuesta encontrar la constancia diaria tras un parón o una lesión. A través de un enfoque de psicoterapia aplicada al rendimiento que utiliza el estado hipnótico para producir resultados sólidos a largo plazo, alineamos tu mente inconsciente con tus objetivos físicos: visualización motora de alta precisión, gestión del dolor y la fatiga, y un estado inquebrantable de seguridad y concentración.",
     trustBadges: [
       "Utilizado por deportistas de élite y populares",
+      "Visualización neuromuscular y foco mental",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -340,7 +343,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "En los momentos de máxima exigencia deportiva, pensar demasiado es el peor enemigo del rendimiento. Cuando el córtex prefrontal intenta controlar cada movimiento en lugar de dejar actuar a la memoria motora automatizada, el cuerpo se vuelve rígido y lento.",
       "La hipnosis permite entrar voluntariamente en lo que la psicología deportiva denomina 'estado de flujo' (in the zone): un estado de absorción profunda donde la atención se estrecha al momento presente, desaparece el miedo al fallo y la ejecución técnica fluye con máxima eficacia.",
-      "Además, mediante sugestiones posthipnóticas y anclajes propioceptivos, aprendes a activar de forma instantánea estados de potencia, calma o foco en el calentamiento previo a cualquier reto deportivo.",
+      "Además, mediante sugestiones posthipnóticas y anclajes propioceptivos, aprendes a activar de forma instantánea estados de potencia, calma o foco en el calentamiento previo a cualquier reto deportivo, consolidando tu rendimiento a largo plazo.",
     ],
     pillarsTitle: "PLAN DE ENTRENAMIENTO MENTAL CON HIPNOSIS",
     pillarsIntro:
@@ -400,12 +403,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Audios de visualización y autohipnosis pre-competición.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA TU RENDIMIENTO Y FORTALEZA MENTAL",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso deportivo o concertar una cita. Te responderé personalmente.",
+      "Rellena este formulario para consultar tu caso deportivo o concertar una cita. Si lo prefieres, podemos comentar tu objetivo en una valoración previa de 20 minutos sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -449,11 +452,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "Sabes racionalmente que no hay peligro real, pero tu cuerpo reacciona como si tu vida estuviera en juego.",
     introText:
-      "Miedo a subirte a un avión, pánico a conducir por autopistas o túneles (amaxofobia), terror a las agujas, claustrofobia en ascensores o bloqueo paralizante al exponerte ante un grupo. Cuando un miedo se consolida como fobia, la lógica no sirve de nada: la amígdala cerebral secuestra tu fisiología disparando palpitaciones, mareo, sudores y una necesidad desesperada de huir. Con hipnosis aplicada realizamos una desensibilización sistemática profunda en un estado de seguridad absoluta: enseñamos a tu cerebro a desaprender la asociación de amenaza para que recuperes tu tranquilidad y tu libertad de movimiento.",
+      "Miedo a subirte a un avión, pánico a conducir por autopistas o túneles (amaxofobia), terror a las agujas, claustrofobia en ascensores o bloqueo paralizante al exponerte ante un grupo. Cuando un miedo se consolida como fobia, la lógica no sirve de nada: la amígdala cerebral secuestra tu fisiología disparando palpitaciones, mareo, sudores y una necesidad desesperada de huir. Con un enfoque de psicoterapia que utiliza el estado hipnótico para producir resultados duraderos a largo plazo, realizamos una desensibilización sistemática profunda en un estado de seguridad absoluta: enseñamos a tu cerebro a desaprender la asociación de amenaza para que recuperes tu tranquilidad y tu libertad de movimiento con total serenidad.",
     trustBadges: [
       "Proceso respetuoso, sin exposiciones traumáticas",
+      "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -484,7 +488,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "El miedo fóbico se almacena en la memoria implícita e involuntaria. Cuando te encuentras frente al estímulo, la información llega a la amígdala antes de que pase por la corteza cerebral reflexiva, desencadenando la respuesta refleja de 'lucha o huida'.",
       "Las terapias de choque o exposición forzada pueden resultar abrumadoras e incluso retraumatizantes si el cuerpo no dispone de un anclaje sólido de seguridad fisiológica.",
-      "En hipnosis, colocamos a tu cuerpo en un estado parasimpático de profunda calma y relajación muscular. Desde ese espacio de total seguridad, exponemos a la mente a la situación de forma disociada y gradual, 'desacoplando' el estímulo del reflejo de alarma y reprogramando una respuesta neutra o tranquila.",
+      "En hipnosis, colocamos a tu cuerpo en un estado parasimpático de profunda calma y relajación muscular. Desde ese espacio de total seguridad, exponemos a la mente a la situación de forma disociada y gradual, 'desacoplando' el estímulo del reflejo de alarma y reprogramando una respuesta neutra o tranquila con resultados consolidados a largo plazo.",
     ],
     pillarsTitle: "RECORRIDO PASO A PASO FRENTE AL MIEDO",
     pillarsIntro:
@@ -543,12 +547,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Herramientas de autogestión somática entre sesiones.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA TU TRANQUILIDAD Y LIBERTAD",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o solicitar cita. Te responderé personalmente con total cercanía.",
+      "Rellena este formulario para consultar tu caso o solicitar cita. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp para conocer tu situación sin compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -592,11 +596,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "La verdadera seguridad personal no consiste en fingir que todo está bajo control, sino en sentirte legítimo/a tal y como eres.",
     introText:
-      "Dudar constantemente de tus capacidades, sentirte como un fraude a punto de ser descubierto (síndrome del impostor), quedarte callado/a en reuniones para no equivocarte o ser incapaz de decir 'no' a las peticiones de los demás por miedo a decepcionar. La falta de confianza no se arregla repitiendo frases vacías en el espejo: se transforma cambiando el diálogo interno automático que aprendiste en el pasado. Con hipnosis trabajamos en el sustrato emocional profundo de tu identidad: liberamos viejas etiquetas limitantes, reforzamos tu asertividad y anclamos una sensación corporal sólida de presencia y serenidad.",
+      "Dudar constantemente de tus capacidades, sentirte como un fraude a punto de ser descubierto (síndrome del impostor), quedarte callado/a en reuniones para no equivocarte o ser incapaz de decir 'no' a las peticiones de los demás por miedo a decepcionar. La falta de confianza no se arregla repitiendo frases vacías en el espejo: se transforma cambiando el diálogo interno automático que aprendiste en el pasado. Mediante psicoterapia utilizando el estado hipnótico para producir resultados sólidos a largo plazo, trabajamos en el sustrato emocional profundo de tu identidad: liberamos viejas etiquetas limitantes, reforzamos tu asertividad y anclamos una sensación corporal sólida de presencia, dignidad y serenidad.",
     trustBadges: [
       "Cambio profundo de narrativa interna",
+      "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -627,7 +632,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "La confianza no es un concepto puramente intelectual, es una experiencia física. Cuando te sientes seguro/a, tu postura corporal se abre, tu voz es firme y tu respiración es amplia. Cuando domina la inseguridad, el cuerpo se contrae como si estuviera ante una amenaza inminente.",
       "Gran parte de nuestras dudas proceden de experiencias pasadas donde internalizamos juicios o comparaciones. Aunque hoy seamos personas adultas capaces, el cerebro emocional sigue reaccionando con viejos patrones automáticos de indefensión.",
-      "En hipnosis accedemos a ese nivel profundo de autoconcepto, desactivamos las voces críticas heredadas y anclamos sensaciones somáticas de solidez, dignidad y merecimiento que se integran naturalmente en tu vida cotidiana.",
+      "En hipnosis accedemos a ese nivel profundo de autoconcepto mediante psicoterapia aplicada, desactivamos las voces críticas heredadas y anclamos sensaciones somáticas de solidez, dignidad y merecimiento que se integran naturalmente en tu vida cotidiana a largo plazo.",
     ],
     pillarsTitle: "EL CAMINO HACIA UNA CONFIANZA AUTÉNTICA",
     pillarsIntro:
@@ -686,12 +691,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Pautas de asertividad y anclajes de seguridad.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "EMPIEZA A CREER EN TI CON TOTAL NATURALIDAD",
     formSubtitle:
-      "Rellena este formulario para consultar tus dudas o concertar tu sesión. Te responderé personalmente con total cercanía.",
+      "Rellena este formulario para consultar tus dudas o concertar tu sesión. Si lo prefieres, podemos comentar tus dudas en una valoración previa de 20 minutos sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -736,11 +741,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "Estudiar con ansiedad bloquea la memoria. Entrena a tu cerebro para asimilar conocimientos con claridad y rendir al máximo bajo presión.",
     introText:
-      "Pasar horas frente a los apuntes leyendo el mismo párrafo sin retener nada, dispersarte con el móvil cada diez minutos, sentir que el tiempo se agota antes de tu examen u oposición y sufrir el temido 'bloqueo en blanco' durante las pruebas. La capacidad de concentración no depende de pasar más horas sufriendo en la silla, sino del estado neurobiológico en el que estudias. Con hipnosis aplicada entrenamos estados de atención focalizada profunda (ondas alfa y theta), optimizamos la retención mnémica y te enseñamos a gestionar la presión para que demuestres en el examen todo lo que has trabajado.",
+      "Pasar horas frente a los apuntes leyendo el mismo párrafo sin retener nada, dispersarte con el móvil cada diez minutos, sentir que el tiempo se agota antes de tu examen u oposición y sufrir el temido 'bloqueo en blanco' durante las pruebas. La capacidad de concentración no depende de pasar más horas sufriendo en la silla, sino del estado neurobiológico en el que estudias. Con psicoterapia y desarrollo personal utilizando el estado hipnótico para producir resultados duraderos a largo plazo, entrenamos estados de atención focalizada profunda (ondas alfa y theta), optimizamos la retención mnémica y te enseñamos a gestionar la presión para que demuestres en el examen todo lo que has trabajado.",
     trustBadges: [
       "Ideal para opositores y estudiantes universitarios",
+      "Psicoterapia y desarrollo personal con hipnosis",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -770,7 +776,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "La concentración no es una cuestión de forzar los ojos sobre el papel; es un estado de calma atenta. En hipnosis inducimos de forma voluntaria ondas cerebrales alfa, las mismas que se producen en los momentos de inspiración y aprendizaje acelerado.",
       "Además de mejorar el foco durante el estudio, la hipnosis es la herramienta más eficaz contra el pánico a los exámenes: desensibiliza la situación de evaluación y reprograma las respuestas de alarma del cuerpo ante tribunales u hojas de examen.",
-      "Mediante anclajes de memoria y sugestiones de claridad, el estudiante aprende a asociar el momento de la prueba con lucidez, tranquilidad y confianza en su preparación previa.",
+      "Mediante anclajes de memoria y sugestiones de claridad, el estudiante aprende a asociar el momento de la prueba con lucidez, tranquilidad y confianza en su preparación previa, manteniendo los resultados estables a largo plazo.",
     ],
     pillarsTitle: "ESTRATEGIA DE RENDIMIENTO Y FOCO COGNITIVO",
     pillarsIntro:
@@ -829,12 +835,12 @@ export const servicesEs: ServicesDictionary = {
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
       "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
       "Audios de inducción al estudio profundo y descanso reparador.",
-      "Resolución de dudas previa sin compromiso.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ENTRENA TU MENTE PARA RENDIR AL MÁXIMO",
     formSubtitle:
-      "Rellena este formulario para consultar tu situación u oposiciones. Te responderé personalmente con total cercanía.",
+      "Rellena este formulario para consultar tu situación u oposiciones. Si lo prefieres, podemos tener una valoración previa de 20 minutos por teléfono o WhatsApp sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -878,11 +884,12 @@ export const servicesEs: ServicesDictionary = {
     subtitle:
       "El insomnio no es una incapacidad para dormir; es tu sistema nervioso interpretando la cama como un lugar de alerta y rumiación en piloto automático.",
     introText:
-      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con hipnosis no forzamos el sueño (porque forzarlo genera más tensión): facilitamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cuerpo a activar de manera natural las respuestas de descanso profundo.",
+      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con un abordaje de psicoterapia que utiliza el estado hipnótico para producir resultados sólidos a largo plazo, no forzamos el sueño (porque forzarlo genera más tensión): facilitamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cuerpo a activar de manera natural las respuestas de descanso profundo.",
     trustBadges: [
-      "Acompañamiento respetuoso y natural",
+      "Descanso 100% natural sin fármacos",
+      "Psicoterapia con hipnosis para resultados a largo plazo",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
-      "Sesiones individuales de 1h · 70 € (a tu propio ritmo)",
+      "Valoración previa de 20 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA HIPNOSIS",
@@ -913,7 +920,7 @@ export const servicesEs: ServicesDictionary = {
     whyParagraphs: [
       "El insomnio psicofisiológico surge de un condicionamiento involuntario: tu cerebro ha asociado el acto de acostarse no con la desconexión, sino con el esfuerzo por dormir y la preocupación. Esta tensión refleja activa el sistema nervioso simpático ('lucha o huida'), manteniendo los niveles de alerta corporal elevados justo cuando deberían descender.",
       "Los fármacos inductores del sueño suelen actuar como un anestésico químico que suprime la conciencia pero altera las fases de sueño REM y delta profundo, generando tolerancia sin resolver la causa subyacente.",
-      "En sesión de hipnosis entrenamos a tu sistema nervioso para transitar conscientemente de las ondas beta (vigilia activa) a las frecuencias alfa y theta (relajación profunda previa al sueño). Al asociar la cama con seguridad somática y silencio mental, reactivamos el automatismo natural del sueño reparador.",
+      "En sesión de hipnosis entrenamos a tu sistema nervioso para transitar conscientemente de las ondas beta (vigilia activa) a las frecuencias alfa y theta (relajación profunda previa al sueño). Al asociar la cama con seguridad somática y silencio mental mediante psicoterapia aplicada, reactivamos el automatismo natural del sueño reparador con resultados duraderos noche tras noche.",
     ],
     pillarsTitle: "EL RECORRIDO PARA RECUPERAR UN SUEÑO PROFUNDO",
     pillarsIntro:
@@ -971,13 +978,15 @@ export const servicesEs: ServicesDictionary = {
     pricingFeatures: [
       "Sesión individual y personalizada de 60 minutos.",
       "Sueca (Centro Sanar), a domicilio en Valencia ciudad u online.",
+      "A tu propio ritmo: sin paquetes obligatorios ni ataduras.",
+      "Valoración previa de 20 minutos sin compromiso para orientar tu caso.",
       "Pautas prácticas de neurobiología del sueño e higiene del descanso.",
       "Técnicas de autohipnosis aplicables cada noche desde tu cama.",
     ],
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA TU SUEÑO Y TU CALMA NOCTURNA",
     formSubtitle:
-      "Rellena este breve formulario para consultar tus dudas o pedir tu sesión. Te responderé personalmente con total cercanía.",
+      "Rellena este breve formulario para consultar tus dudas o pedir tu sesión. Si lo prefieres, podemos comentar tu descanso en una valoración previa de 20 minutos por teléfono o WhatsApp.",
     formFields: {
       name: "Tu nombre",
       email: "Tu correo electrónico",
@@ -1032,11 +1041,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "Menjar de manera compulsiva no és falta de voluntat; és una resposta automàtica del sistema nerviós davant l'estrés, l'avorriment o el buit emocional.",
     introText:
-      "Quantes vegades has començat una dieta estricta prometent-te que esta vegada seria diferent, només per acabar picant a la nit amb una enorme sensació de culpa? Quan el menjar es convertix en l'anestèsic contra el cansament o la tensió diària, forçar-te a no menjar només genera més obsessió. Amb hipnosi treballem en l'origen automàtic de l'impuls: desactivam l'ànsia per dolços o ultraprocessats, restaurem el senyal biològic de sacietat i t'ajudem a construir una relació tranquil·la, lliure i sostenible amb el teu cos.",
+      "Quantes vegades has començat una dieta estricta prometent-te que esta vegada seria diferent, només per acabar picant a la nit amb una enorme sensació de culpa? Quan el menjar es convertix en l'única vàlvula d'escapament contra la tensió diària, forçar-te a no menjar només genera més obsessió. Mitjançant un procés de psicoteràpia que utilitza l'estat hipnòtic per a produir resultats duradors a llarg termini, intervenim en l'origen automàtic de l'impuls: calmam l'ànsia per dolços o ultraprocessats, restaurem el senyal biològic de sacietat i t'ajudem a construir una relació tranquil·la, lliure i definitiva amb el teu cos.",
     trustBadges: [
       "Sense dietes restrictives ni efecte rebot",
+      "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1048,7 +1058,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "FES EL PRIMER PAS CAP A UNA ALIMENTACIÓ EN PAU",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Et respondré personalment amb total proximitat.",
+      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   nervousHabitsPage: {
@@ -1058,11 +1068,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "L'onicofàgia i els gestos compulsius no són 'males costums': són vàlvules d'escapament automàtiques davant la tensió involuntària.",
     introText:
-      "Portar-te les mans a la boca mentre condueixes, rostegar-te les ungles davant de la pantalla de l'ordinador, prémer les dents o arrancar-te pellenets sense adonar-te'n. Amb hipnosi aplicada no forcem la contenció: ensenyem al cervell a descarregar la microtensió de forma fisiològica i reprogramem el reflex involuntari perquè les teues mans descansen tranquil·les.",
+      "Portar-te les mans a la boca mentre condueixes, rostegar-te les ungles davant de la pantalla de l'ordinador, prémer les dents o arrancar-te pellenets sense adonar-te'n. A través de la psicoteràpia utilitzant l'estat hipnòtic per a produir resultats duradors a llarg termini, no forcem la contenció: ensenyem al cervell a descarregar la microtensió de forma fisiològica i reprogramem el reflex involuntari perquè les teues mans descansen tranquil·les sense esforç.",
     trustBadges: [
       "Eficaç on la força de voluntat ha fallat",
+      "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1071,7 +1082,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ALLIBERA'T DE L'HÀBIT I RECUPERA LES TEUES MANS",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Et respondré personalment amb total proximitat.",
+      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   sportsPage: {
@@ -1081,11 +1092,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "En l'esport, el cos arriba fins on la ment li permet. Entrena el teu diàleg intern i competix en estat de flux.",
     introText:
-      "Entrenes de valent, complixes amb la preparació física i coneixes la tècnica al detall. Tanmateix, quan arriba el dia de la competició o un moment decisiu, els nervis t'atenallen i el cos no respon amb la soltesa habitual. Amb hipnosi aplicada al rendiment esportiu alineem la teua ment inconscient amb els teus objectius físics: visualització motora d'alta precisió, gestió de la fatiga i confiança incondicional.",
+      "Entrenes de valent, complixes amb la preparació física i coneixes la tècnica al detall. Tanmateix, quan arriba el dia de la competició o un moment decisiu, els nervis t'atenallen i el cos no respon amb la soltesa habitual. A través d'un enfocament de psicoteràpia aplicada al rendiment que utilitza l'estat hipnòtic per a produir resultats sòlids a llarg termini, alineem la teua ment inconscient amb els teus objectius físics: visualització motora d'alta precisió, gestió de la fatiga i confiança incondicional.",
     trustBadges: [
       "Utilitzat per esportistes d'elit i populars",
+      "Visualització neuromuscular i focus mental",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1094,7 +1106,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA EL TEU RENDIMENT I FORTALESA MENTAL",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu repte esportiu. Et respondré personalment.",
+      "Emplena este formulari per a consultar el teu repte esportiu o concertar una cita. Si ho preferixes, podem valorar el teu cas en una crida prèvia de 20 minuts sense compromís.",
   },
 
   fearsPage: {
@@ -1104,11 +1116,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "Saps racionalment que no hi ha perill real, però el teu cos reacciona com si la teua vida estiguera en joc.",
     introText:
-      "Por a volar en avió, pànic a conduir per autopistes o túnels, terror a les agulles, claustrofòbia o bloqueig paralitzant en exposar-te davant d'un grup. Amb hipnosi aplicada realitzem una desensibilització sistemàtica profunda en un estat de seguretat absoluta: ensenyem al teu cervell a desaprendre l'associació d'amenaça perquè recuperes la teua tranquil·litat.",
+      "Por a volar en avió, pànic a conduir per autopistes o túnels, terror a les agulles, claustrofòbia o bloqueig paralitzant en exposar-te davant d'un grup. Amb un enfocament de psicoteràpia que utilitza l'estat hipnòtic per a produir resultats duradors a llarg termini, realitzem una desensibilització sistemàtica profunda en un estat de seguretat absoluta: ensenyem al teu cervell a desaprendre l'associació d'amenaça perquè recuperes la teua tranquil·litat i llibertat de moviment.",
     trustBadges: [
       "Procés respectuós, sense exposicions traumàtiques",
+      "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1117,7 +1130,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA LA TEUA TRANQUIL·LITAT I LLIBERTAT",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Et respondré personalment amb total proximitat.",
+      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   confidencePage: {
@@ -1128,11 +1141,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "La vertadera seguretat personal no consistix a fingir que tot està sota control, sinó a sentir-te legítim/a tal com eres.",
     introText:
-      "Dubtar constantment de les teues capacitats, sentir-te com un frau (síndrome de l'impostor), callar en reunions o ser incapaç de dir 'no'. Amb hipnosi treballem en el substrat emocional profund de la teua identitat: alliberem velles etiquetes limitants, reforcem la teua assertivitat i ancorem una sensació corporal sòlida de presència i serenitat.",
+      "Dubtar constantment de les teues capacitats, sentir-te com un frau (síndrome de l'impostor), callar en reunions o ser incapaç de dir 'no'. Mitjançant psicoteràpia utilitzant l'estat hipnòtic per a produir resultats sòlids a llarg termini, treballem en el substrat emocional profund de la teua identitat: alliberem velles etiquetes limitants, reforcem la teua assertivitat i ancorem una sensació corporal sòlida de presència, dignitat i serenitat.",
     trustBadges: [
       "Canvi profund de narrativa interna",
+      "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1141,7 +1155,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "COMENÇA A CONFIAR EN TU AMB TOTAL NATURALITAT",
     formSubtitle:
-      "Emplena este formulari per a consultar els teus dubtes o demanar sessió. Et respondré personalment.",
+      "Emplena este formulari per a consultar els teus dubtes o demanar sessió. Si ho preferixes, podem comentar la teua situació en una valoració prèvia de 20 minuts sense cap compromís.",
   },
 
   focusPage: {
@@ -1151,11 +1165,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "Estudiar amb angoixa bloqueja la memòria. Entrena el teu cervell per assimilar coneixements amb claredat i rendir al màxim sota pressió.",
     introText:
-      "Passar hores davant dels apunts sense retindre res, dispersar-te amb el mòbil, patir pel temps abans d'un examen o oposició i patir el temut 'bloqueig en blanc'. Amb hipnosi aplicada entrenem estats d'atenció focalitzada profunda, optimitzem la retenció mnèmica i t'ensenyem a gestionar la pressió perquè demostres tot el que has treballat.",
+      "Passar hores davant dels apunts sense retindre res, dispersar-te amb el mòbil, patir pel temps abans d'un examen o oposició i patir el temut 'bloqueig en blanc'. Amb psicoteràpia i desenvolupament personal utilitzant l'estat hipnòtic per a produir resultats a llarg termini, entrenem estats d'atenció focalitzada profunda, optimitzem la retenció mnèmica i t'ensenyem a gestionar la pressió perquè demostres tot el que has treballat.",
     trustBadges: [
       "Ideal per a opositors i estudiants universitaris",
+      "Psicoteràpia i desenvolupament personal amb hipnosi",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1164,7 +1179,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ENTRENA LA TEUA MENT PER A RENDIR AL MÀXIM",
     formSubtitle:
-      "Emplena este formulari per a consultar la teua situació o oposició. Et respondré personalment.",
+      "Emplena este formulari per a consultar la teua situació o oposició. Si ho preferixes, podem tindre una valoració prèvia de 20 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   insomniaPage: {
@@ -1174,11 +1189,12 @@ export const servicesVa: ServicesDictionary = {
     subtitle:
       "L'insomni no és una incapacitat per a dormir; és el teu sistema nerviós interpretant el llit com un lloc d'alerta i rumiació en pilot automàtic.",
     introText:
-      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb hipnosi no forcem el son (perquè forçar-lo genera més tensió): facilitem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cos a activar de manera natural les respostes de descans profund.",
+      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb un abordatge de psicoteràpia que utilitza l'estat hipnòtic per a produir resultats sòlids a llarg termini, no forcem el son (perquè forçar-lo genera més tensió): facilitem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cos a activar de manera natural les respostes de descans profund.",
     trustBadges: [
-      "Solució 100% natural i sense fàrmacs",
+      "Descans 100% natural sense fàrmacs",
+      "Psicoteràpia amb hipnosi per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Sessions individuals d'1h · 70 € (al teu propi ritme)",
+      "Valoració prèvia de 20 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA HIPNOSI",
@@ -1190,7 +1206,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA EL TEU SON I LA CALMA NOCTURNA",
     formSubtitle:
-      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Et respondré personalment amb total proximitat.",
+      "Emplena este breu formulari per a consultar els teus dubtes o demanar la teua sessió. Si ho preferixes, podem comentar el teu descans en una valoració prèvia de 20 minuts per telèfon o WhatsApp.",
   },
 };
 
@@ -1202,11 +1218,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Compulsive eating is not a lack of willpower; it is an automatic nervous system response to stress, boredom or emotional emptiness.",
     introText:
-      "How many times have you started a strict diet promising yourself that this time would be different, only to end up late-night snacking accompanied by deep guilt? When food becomes an emotional anesthetic against daily exhaustion, forcing yourself not to eat only breeds more obsession. With hypnosis, we address the automatic root: disabling cravings for sugar and processed foods, restoring biological satiety signals, and helping you build a peaceful, lasting relationship with food and your body.",
+      "How many times have you started a strict diet promising yourself that this time would be different, only to end up late-night snacking accompanied by deep guilt? When food becomes an emotional anesthetic against daily exhaustion, forcing yourself not to eat only breeds more obsession. Through a psychotherapeutic approach utilizing the hypnotic state to produce solid long-term results, we address the automatic root of the impulse: calming cravings for sugar and processed foods, restoring biological satiety signals, and helping you build a peaceful, lasting relationship with food and your body.",
     trustBadges: [
       "No restrictive diets or rebound effect",
+      "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1218,7 +1235,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "TAKE THE FIRST STEP TOWARDS PEACEFUL EATING",
     formSubtitle:
-      "Fill out this brief form to ask any questions or request your session. I will reply to you personally.",
+      "Fill out this brief form to ask any questions or request your session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   nervousHabitsPage: {
@@ -1228,11 +1245,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Nail biting and compulsive gestures are not 'bad manners': they are automatic release valves for subconscious tension.",
     introText:
-      "Reaching for your nails while driving, biting cuticles in front of your computer screen, clenching your jaw, or picking at skin without realizing it. You have tried bitter nail polishes, bandages and New Year's resolutions, but the moment your conscious attention wanders, the body repeats the gesture. With hypnosis, we do not rely on exhausting self-restraint: we teach your nervous system to release tension physiologically and retrain the motor reflex so your hands remain calm.",
+      "Reaching for your nails while driving, biting cuticles in front of your computer screen, clenching your jaw, or picking at skin without realizing it. You have tried bitter nail polishes, bandages and conscious resolutions, but the moment your attention wanders, the body repeats the gesture. Through psychotherapy utilizing the hypnotic state for lasting long-term results, we do not rely on exhausting self-restraint: we teach your nervous system to release tension physiologically and retrain the motor reflex so your hands remain calm without struggle.",
     trustBadges: [
       "Effective where willpower has failed",
+      "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1241,7 +1259,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "FREE YOURSELF FROM THE HABIT AND RECLAIM YOUR HANDS",
     formSubtitle:
-      "Fill out this form to inquire about your case or book a session. I will reply to you personally.",
+      "Fill out this form to inquire about your case or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   sportsPage: {
@@ -1251,11 +1269,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "In sports, the body only reaches where the mind permits. Train your inner dialogue and compete in flow state.",
     introText:
-      "You train hard, follow physical conditioning, and master the technique. Yet, when race day or competition pressure arrives, nervousness tightens your muscles and your body does not respond with its usual fluidity. Or perhaps you struggle with consistency to lace up your running shoes after an injury or hiatus. With sports hypnosis, we align your subconscious with your physical goals: motor imagery precision, fatigue management, and unshakeable confidence.",
+      "You train hard, follow physical conditioning, and master the technique. Yet, when race day or competition pressure arrives, nervousness tightens your muscles and your body does not respond with its usual fluidity. Or perhaps you struggle with consistency after an injury. Through a performance-oriented psychotherapeutic approach utilizing the hypnotic state for solid long-term results, we align your subconscious with your physical goals: motor imagery precision, fatigue management, and unshakeable confidence.",
     trustBadges: [
       "Used by competitive and recreational athletes",
+      "Neuromuscular imagery & mental focus",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1264,7 +1283,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "BOOST YOUR ATHLETIC PERFORMANCE & MENTAL FOCUS",
     formSubtitle:
-      "Fill out this form to discuss your sports goals or book a session. I will reply to you personally.",
+      "Fill out this form to discuss your sports goals or book a session. If you prefer, we can discuss your goals in a free 20-minute preliminary phone consultation without commitment.",
   },
 
   fearsPage: {
@@ -1274,11 +1293,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "You know rationally there is no actual threat, but your body reacts as if survival were at stake.",
     introText:
-      "Fear of flying, motorway driving phobia, fear of needles, claustrophobia or debilitating stage fright before speaking. When a fear becomes a phobia, logic is powerless: the amygdala triggers racing heartbeats, dizziness, and a desperate urge to flee. With hypnosis, we conduct deep, gentle desensitization in a state of absolute bodily safety, decoupling the trigger from panic so you reclaim ease and freedom of movement.",
+      "Fear of flying, motorway driving phobia, fear of needles, claustrophobia or debilitating stage fright before speaking. When a fear becomes a phobia, logic is powerless. With a psychotherapeutic approach utilizing the hypnotic state to produce lasting long-term results, we conduct gentle, deep systematic desensitization in complete physiological safety: teaching your brain to unlearn the threat association so you reclaim your peace and freedom of movement.",
     trustBadges: [
       "Gentle process, zero traumatic exposure",
+      "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1287,7 +1307,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "RESTORE YOUR PEACE OF MIND AND FREEDOM",
     formSubtitle:
-      "Fill out this form to inquire about your situation or book a session. I will reply to you personally.",
+      "Fill out this form to inquire about your situation or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   confidencePage: {
@@ -1297,11 +1317,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Genuine confidence is not about pretending everything is under control, but feeling grounded and legitimate as you are.",
     introText:
-      "Constantly doubting your abilities, feeling like an impostor waiting to be exposed, staying silent in meetings or struggling to say 'no' to others for fear of letting them down. Confidence is not rebuilt through empty mirror affirmations: it changes by transforming the automatic internal dialogue learned in the past. With hypnosis, we release old limiting beliefs and anchor somatic sensations of presence, dignity, and calm assertiveness.",
+      "Constantly doubting your abilities, feeling like an impostor waiting to be exposed, staying silent in meetings or struggling to say 'no' to others for fear of letting them down. Confidence changes by transforming the automatic internal dialogue learned in the past. Through psychotherapy utilizing the hypnotic state to produce solid long-term results, we work on the deep emotional foundation of your identity: releasing limiting labels, reinforcing assertiveness, and anchoring a grounded physical sense of presence, dignity, and calm.",
     trustBadges: [
       "Deep shift in internal narrative",
+      "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1310,7 +1331,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "START TRUSTING YOURSELF NATURALLY",
     formSubtitle:
-      "Fill out this form to ask any questions or arrange a session. I will reply to you personally.",
+      "Fill out this form to ask any questions or arrange a session. If you prefer, we can discuss your situation in a free 20-minute preliminary phone consultation without commitment.",
   },
 
   focusPage: {
@@ -1320,11 +1341,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Studying under anxiety blocks memory retrieval. Train your mind to absorb knowledge with clarity and perform at your best.",
     introText:
-      "Staring at the same page without retaining anything, getting distracted by your phone every ten minutes, feeling panic as exam dates approach, and dreading going blank during the test. Concentration is not about suffering longer hours at your desk; it depends on your neurobiological state while studying. With hypnosis, we train alpha-wave deep focus, enhance retention, and teach you to stay composed under test pressure.",
+      "Staring at the same page without retaining anything, getting distracted by your phone every ten minutes, feeling panic as exam dates approach, and dreading going blank during the test. Through personal development and psychotherapy utilizing the hypnotic state for long-term results, we train deep focused attention states (alpha and theta brainwaves), optimize retention, and teach you to handle exam pressure with calm clarity.",
     trustBadges: [
       "Ideal for competitive exams & university students",
+      "Psychotherapy & personal development with hypnosis",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1333,7 +1355,7 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "TRAIN YOUR MIND TO PERFORM AT ITS PEAK",
     formSubtitle:
-      "Fill out this form to inquire about your studies or book a session. I will reply to you personally.",
+      "Fill out this form to inquire about your studies or book a session. If you prefer, we can hold a free 20-minute preliminary consultation by phone or WhatsApp without commitment.",
   },
 
   insomniaPage: {
@@ -1343,11 +1365,12 @@ export const servicesEn: ServicesDictionary = {
     subtitle:
       "Insomnia is not an inability to sleep; it is your nervous system interpreting bedtime as an alert state of rumination on autopilot.",
     introText:
-      "You go to bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. With hypnosis and personal development support, we do not force sleep: we reprogram the somatic relaxation reflex, silence nighttime internal chatter, and teach your brain to access deep restorative brainwaves naturally.",
+      "You get into bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. Through a psychotherapeutic approach utilizing the hypnotic state to produce solid long-term results, we do not force sleep: we trigger the somatic relaxation reflex, silence nighttime mental loops, and teach your body to naturally access deep, restorative rest.",
     trustBadges: [
       "100% natural, medication-free approach",
+      "Psychotherapy with hypnosis for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
-      "1-hour individual sessions · 70 € (at your own pace)",
+      "Free 20-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW HYPNOSIS HELPS YOU",
@@ -1359,6 +1382,6 @@ export const servicesEn: ServicesDictionary = {
     formEyebrow: "INQUIRY OR BOOKING",
     formTitle: "RECLAIM RESTFUL SLEEP & NIGHTTIME CALM",
     formSubtitle:
-      "Fill out this brief form to discuss your sleep situation or book a session. I will get back to you personally.",
+      "Fill out this brief form to discuss your sleep situation or book a session. If you prefer, we can hold a free 20-minute preliminary phone consultation without commitment.",
   },
 };
