@@ -69,9 +69,9 @@ function SessionsPage() {
             </ul>
             {index === 0 ? (
               <div className="mt-8 flex flex-col gap-3">
-                <CalendarButton className="w-fit" source="sesiones_individual" label="Solicitar valoración de 15 min" />
+                <CalendarButton className="w-fit" source="sesiones_individual" label={t.common.bookCalendar} />
                 <p className="text-[0.75rem] text-muted-foreground">
-                  * Solicitud de valoración previa de 15 minutos sin coste ni compromiso. Hablamos primero para conocer tu caso y coordinar tu cita presencial en Sueca u online.
+                  {t.common.bookIntro}
                 </p>
                 <div className="pt-1">
                   <Link

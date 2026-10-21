@@ -1,8 +1,27 @@
 import { useState, useEffect } from "react";
 import { getWhatsAppUrl } from "@/content/site-settings";
 import { trackWhatsAppClick } from "@/lib/analytics";
+import { useI18n } from "@/lib/i18n";
+import { ValuationModal } from "@/components/valuation-modal";
+
+const floatingTexts = {
+  es: {
+    tooltip: "¿Dudas? Escríbeme por WhatsApp",
+    mobileCta: "15 min gratis · Pedir cita",
+  },
+  va: {
+    tooltip: "Dubtes? Escriu-me per WhatsApp",
+    mobileCta: "15 min gratis · Demanar cita",
+  },
+  en: {
+    tooltip: "Questions? Chat on WhatsApp",
+    mobileCta: "Free 15 min · Book call",
+  },
+};
 
 export function WhatsAppFloatingButton() {
+  const { lang } = useI18n();
+  const f = floatingTexts[lang in floatingTexts ? lang : "es"];
   const [mounted, setMounted] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -32,7 +51,7 @@ export function WhatsAppFloatingButton() {
           showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2 pointer-events-none"
         }`}
       >
-        <span>¿Dudas? Escríbeme por WhatsApp</span>
+        <span>{f.tooltip}</span>
         <button
           onClick={() => setShowTooltip(false)}
           className="ml-2 text-muted-foreground hover:text-foreground text-xs"
@@ -65,6 +84,9 @@ export function WhatsAppFloatingButton() {
 }
 
 export function StickyMobileBar() {
+  const { lang } = useI18n();
+  const f = floatingTexts[lang in floatingTexts ? lang : "es"];
+
   const handleClickWhatsApp = (e: React.MouseEvent) => {
     e.preventDefault();
     trackWhatsAppClick("sticky_mobile_bar");
@@ -92,12 +114,11 @@ export function StickyMobileBar() {
           <span>WhatsApp</span>
         </button>
 
-        <a
-          href="/contacto"
-          className="flex-1 flex items-center justify-center rounded-full bg-primary py-2.5 px-4 text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-95 text-center"
-        >
-          15 min gratis · Pedir cita
-        </a>
+        <ValuationModal
+          source="sticky_mobile_bar"
+          triggerClassName="flex-1 flex items-center justify-center rounded-full bg-primary py-2.5 px-4 text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-95 text-center cursor-pointer"
+          triggerLabel={f.mobileCta}
+        />
       </div>
     </div>
   );

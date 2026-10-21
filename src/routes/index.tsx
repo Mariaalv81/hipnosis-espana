@@ -3,6 +3,7 @@ import { Check, Clock, ExternalLink, Instagram, MapPin, ShieldCheck } from "luci
 import { useI18n } from "@/lib/i18n";
 import { JsonLd, makeFaqSchema, makeLocalBusinessSchema, makeSeo } from "@/lib/seo";
 import { EventCards } from "@/components/event-cards";
+import { ValuationModal } from "@/components/valuation-modal";
 import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import heroJpg from "@/assets/images/maria-cabo.jpg";
@@ -49,12 +50,11 @@ function HypnosisPage() {
               {t.home.heroIntro}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                to="/contacto"
-                className="rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
-              >
-                {t.home.heroPrimary}
-              </Link>
+              <ValuationModal
+                source="home_hero"
+                triggerClassName="rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90 cursor-pointer"
+                triggerLabel={t.home.heroPrimary}
+              />
               <button
                 type="button"
                 onClick={() => {
@@ -336,12 +336,11 @@ function HypnosisPage() {
                 Por llamada telefónica o videollamada. Sin desplazamientos ni presión de contratación.
               </p>
               <div className="flex w-full flex-col sm:flex-row gap-3 pt-2">
-                <Link
-                  to="/contacto"
-                  className="flex-1 rounded-full bg-primary py-3 px-5 text-center text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
-                >
-                  {t.home.consultationCtaPrimary}
-                </Link>
+                <ValuationModal
+                  source="home_consultation_card"
+                  triggerClassName="flex-1 rounded-full bg-primary py-3 px-5 text-center text-xs font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 cursor-pointer"
+                  triggerLabel={t.home.consultationCtaPrimary}
+                />
                 <button
                   type="button"
                   onClick={() => {
@@ -444,12 +443,11 @@ function HypnosisPage() {
         <div className="rounded-3xl bg-primary px-8 py-14 text-center text-primary-foreground">
           <h2 className="text-3xl md:text-4xl">{t.home.ctaTitle}</h2>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link
-              to="/contacto"
-              className="rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
-            >
-              {t.home.ctaPrimary}
-            </Link>
+            <ValuationModal
+              source="home_final_cta"
+              triggerClassName="rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90 cursor-pointer"
+              triggerLabel={t.home.ctaPrimary}
+            />
             <button
               type="button"
               onClick={() => {

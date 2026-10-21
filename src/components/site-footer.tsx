@@ -15,7 +15,7 @@ export function SiteFooter() {
     { to: "/sobre-mi", label: t.nav.about },
     { to: "/blog", label: t.nav.journal },
     { to: "/empresas", label: t.nav.companies },
-    { to: "/profesionales", label: "Colaboradores" },
+    { to: "/profesionales", label: t.nav.professionals },
     { to: "/eventos", label: t.nav.events },
     { to: "/faq", label: t.nav.faq },
     { to: "/contacto", label: t.nav.contact },
@@ -71,14 +71,14 @@ export function SiteFooter() {
               <span className="font-medium">{siteSettings.instagramHandle}</span>
             </a>
             <p className="mt-1.5 text-[0.72rem] text-muted-foreground">
-              Divulgación, reflexiones y día a día
+              {t.footer.socialSubtitle}
             </p>
           </div>
         </div>
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-foreground/70">
-            Navegación
+            {t.footer.navigation}
           </p>
           <nav className="mt-3 grid gap-2 text-sm">
             {primaryLinks.map((link) => (
@@ -95,7 +95,7 @@ export function SiteFooter() {
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-foreground/70">
-            Ámbitos de hipnosis
+            {t.footer.services}
           </p>
           <nav className="mt-3 grid gap-2 text-sm">
             {serviceLinks.map((link) => (

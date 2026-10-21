@@ -34,16 +34,16 @@ function BookPage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             {i === 0 ? (
               <div className="mt-7 flex flex-col gap-3">
-                <CalendarButton className="w-fit" source="reservar_individual" label="Solicitar valoración de 15 min" />
+                <CalendarButton className="w-fit" source="reservar_individual" label={t.common.bookCalendar} />
                 <p className="text-[0.75rem] text-muted-foreground">
-                  * Solicitud de valoración previa de 15 minutos sin coste ni compromiso. Hablamos primero para conocer tu caso y coordinar tu cita presencial en Sueca u online.
+                  {t.common.bookIntro}
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/contacto"
                     className="inline-flex items-center text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
                   >
-                    ¿Prefieres escribir un mensaje detallado? Formulario de contacto →
+                    {t.common.askQuestionLink}
                   </Link>
                 </div>
               </div>

@@ -226,23 +226,17 @@ function AboutPage() {
                   variant="outline"
                   className="rounded-full border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm text-primary-foreground hover:bg-primary-foreground/20"
                 >
-                  <Link to="/contacto">Consultar dudas</Link>
+                  <Link to="/contacto">{t.common.contactMe}</Link>
                 </Button>
                 <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    trackWhatsAppClick("Sobre Mi");
-                    window.open(
-                      getWhatsAppUrl("Hola María, he leído tu trayectoria y me gustaría hacerte una consulta sobre una sesión."),
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }}
+                  href={getWhatsAppUrl("Hola María, he leído tu trayectoria y me gustaría hacerte una consulta sobre una sesión.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("Sobre Mi")}
                   className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/20 px-5 py-2.5 text-xs font-semibold text-emerald-100 transition-colors hover:bg-emerald-500/30"
                 >
                   <MessageCircle className="h-4 w-4 text-emerald-300" />
-                  WhatsApp directo
+                  WhatsApp
                 </a>
               </div>
             </section>

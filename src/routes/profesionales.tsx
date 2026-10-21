@@ -178,7 +178,7 @@ function ProfessionalsPage() {
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
               >
                 <MessageSquare className="size-4 text-[#25D366]" />
-                <span>Contactar por WhatsApp</span>
+                <span>{p.directContactWhatsApp}</span>
               </a>
             </div>
 
@@ -600,14 +600,12 @@ function ProfessionalsPage() {
 
             {/* CAJA LATERAL: CONTACTO DIRECTO */}
             <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-              <span className="eyebrow">CONTACTO DIRECTO</span>
+              <span className="eyebrow">{p.directContactEyebrow}</span>
               <h3 className="mt-2 font-serif text-2xl font-normal">
-                Hablemos de cómo sumar fuerzas
+                {p.directContactTitle}
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Si antes de coordinar casos prefieres comentar cualquier duda sobre cómo articular la
-                colaboración en vuestro centro, resolver cuestiones técnicas sobre la hipnosis o valorar la
-                atención in situ para vuestros pacientes, escríbeme directamente por WhatsApp o a través del formulario.
+                {p.directContactText}
               </p>
 
               <div className="mt-8 space-y-4">
@@ -618,7 +616,7 @@ function ProfessionalsPage() {
                   className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
                 >
                   <MessageSquare className="size-4" />
-                  <span>Escribir por WhatsApp</span>
+                  <span>{p.directContactWhatsApp}</span>
                 </a>
 
                 <a
@@ -633,7 +631,7 @@ function ProfessionalsPage() {
               <div className="mt-8 border-t border-border/60 pt-6">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="size-4 text-primary" />
-                  <span>Respuesta habitual en menos de 24 horas laborables.</span>
+                  <span>{p.directContactResponseTime}</span>
                 </div>
               </div>
             </div>

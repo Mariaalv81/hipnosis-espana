@@ -79,6 +79,12 @@ export interface ProfessionalsData {
   };
   formSpecialtyOptions: string[];
 
+  directContactEyebrow: string;
+  directContactTitle: string;
+  directContactText: string;
+  directContactWhatsApp: string;
+  directContactResponseTime: string;
+
   faqEyebrow: string;
   faqTitle: string;
   faqSubtitle: string;
@@ -260,6 +266,13 @@ export const professionalsEs: ProfessionalsData = {
     "Otra disciplina",
   ],
 
+  directContactEyebrow: "CONTACTO DIRECTO",
+  directContactTitle: "Hablemos de cómo sumar fuerzas",
+  directContactText:
+    "Si antes de coordinar casos prefieres comentar cualquier duda sobre cómo articular la colaboración en vuestro centro, resolver cuestiones técnicas sobre la hipnosis o valorar la atención in situ para vuestros pacientes, escríbeme directamente por WhatsApp o a través del formulario.",
+  directContactWhatsApp: "Escribir por WhatsApp",
+  directContactResponseTime: "Respuesta habitual en menos de 24 horas laborables.",
+
   faqEyebrow: "DUDAS COMUNES DE PROFESIONALES",
   faqTitle: "PREGUNTAS FRECUENTES SOBRE LA COLABORACIÓN",
   faqSubtitle: "Aspectos prácticos sobre cómo articular las derivaciones y el trabajo conjunto:",
@@ -342,6 +355,13 @@ export const professionalsVa: ProfessionalsData = {
 
   faqEyebrow: "DUBTES COMUNS DE PROFESSIONALS",
   faqTitle: "PREGUNTES FREQÜENTS SOBRE LA COL·LABORACIÓ",
+
+  directContactEyebrow: "CONTACTE DIRECTE",
+  directContactTitle: "Parlem de com sumar forces",
+  directContactText:
+    "Si abans de coordinar casos preferixes comentar qualsevol dubte sobre com articular la col·laboració en el vostre centre, resoldre qüestions tècniques sobre la hipnosi o valorar l'atenció in situ per als vostres pacients, escriu-me directament per WhatsApp o a través del formulari.",
+  directContactWhatsApp: "Escriure per WhatsApp",
+  directContactResponseTime: "Resposta habitual en menys de 24 hores laborables.",
 };
 
 export const professionalsEn: ProfessionalsData = {
@@ -395,6 +415,13 @@ export const professionalsEn: ProfessionalsData = {
   formTitle: "LET'S DISCUSS A COLLABORATION",
   formSubtitle:
     "Fill out this brief form or message me directly to explore how we can complement your clinic's offerings or schedule an informal 15-minute call.",
+
+  directContactEyebrow: "DIRECT CONTACT",
+  directContactTitle: "Let's discuss how we can work together",
+  directContactText:
+    "If you would like to discuss how a collaboration could work in your clinic, ask technical questions about hypnosis or explore on-site sessions for your patients before referring cases, message me directly on WhatsApp or via the form.",
+  directContactWhatsApp: "Message via WhatsApp",
+  directContactResponseTime: "Typical response within 24 business hours.",
 
   faqEyebrow: "PRACTITIONER FAQS",
   faqTitle: "FREQUENTLY ASKED QUESTIONS ABOUT COLLABORATION",

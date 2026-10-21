@@ -1,10 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
+import { MessageCircle, CheckCircle2 } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
-import { siteSettings } from "@/content/site-settings";
+import { siteSettings, getWhatsAppUrl } from "@/content/site-settings";
+import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { makeSeo } from "@/lib/seo";
-import { trackLeadSubmission } from "@/lib/analytics";
+import { trackLeadSubmission, trackWhatsAppClick } from "@/lib/analytics";
 
 export const Route = createFileRoute("/empresas/contacto")({
   head: () =>
@@ -17,49 +19,45 @@ export const Route = createFileRoute("/empresas/contacto")({
   component: CorporateContactPage,
 });
 
-const formats = [
-  "Sesión introductoria",
-  "Taller",
-  "Programa de varias sesiones",
-  "Sesiones individuales dentro de empresa",
-  "No lo tengo claro",
-];
-
 function CorporateContactPage() {
+  const { t } = useI18n();
+  const c = t.companiesContact;
+  const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setSubmitting(true);
     const form = event.currentTarget;
     const fd = new FormData(form);
     const data = {
-      contactName: String(fd.get("contactName") ?? ""),
-      email: String(fd.get("email") ?? ""),
-      phone: String(fd.get("phone") ?? ""),
-      company: String(fd.get("company") ?? ""),
-      role: String(fd.get("role") ?? ""),
-      employees: String(fd.get("employees") ?? ""),
-      objective: String(fd.get("objective") ?? ""),
-      format: String(fd.get("format") ?? ""),
-      participants: String(fd.get("participants") ?? ""),
-      message: String(fd.get("message") ?? ""),
-      website: String(fd.get("website") ?? ""),
+      contactName: String(fd.get("contactName") ?? "").trim(),
+      email: String(fd.get("email") ?? "").trim(),
+      phone: String(fd.get("phone") ?? "").trim(),
+      company: String(fd.get("company") ?? "").trim(),
+      role: String(fd.get("role") ?? "").trim(),
+      employees: String(fd.get("employees") ?? "").trim(),
+      objective: String(fd.get("objective") ?? "").trim(),
+      format: String(fd.get("format") ?? "").trim(),
+      participants: String(fd.get("participants") ?? "").trim(),
+      message: String(fd.get("message") ?? "").trim(),
+      website: String(fd.get("website") ?? "").trim(),
       recaptchaToken: undefined as string | undefined,
     };
 
     const fullMessage = [
-      "Consulta B2B desde la web",
+      c.emailSummary || "Consulta B2B desde la web",
       "",
       `Empresa: ${data.company}`,
       `Persona de contacto: ${data.contactName}`,
-      `Cargo: ${data.role}`,
+      `Cargo: ${data.role || "No indicado"}`,
       `Correo: ${data.email}`,
-      `Teléfono: ${data.phone || "No indicado"}`,
+      `Teléfono: ${data.phone || c.notProvided || "No indicado"}`,
       `Nº de empleados: ${data.employees}`,
       `Objetivo: ${data.objective}`,
-      `Formato de interés: ${data.format}`,
-      `Participantes previstos: ${data.participants}`,
+      `Formato de interés: ${data.format || "No indicado"}`,
+      `Participantes previstos: ${data.participants || "No indicado"}`,
       "",
       "Mensaje:",
       data.message,
@@ -98,129 +96,176 @@ function CorporateContactPage() {
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`Programa para empresas · ${data.company}`);
+      const subject = encodeURIComponent(`${c.emailSubject || "Programa para empresas"} · ${data.company}`);
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
+    } finally {
+      setSubmitting(false);
     }
   };
 
   return (
     <>
       <PageHeader
-        eyebrow="Empresas"
-        title="Hablar sobre un programa"
-        intro="Cuéntame el contexto de la organización para valorar si un taller o programa puede encajar con vuestro objetivo."
+        eyebrow={c.eyebrow}
+        title={c.title}
+        intro={c.intro}
       />
 
       <section className="container-page grid gap-12 py-16 md:py-20 lg:grid-cols-[3fr_2fr]">
-        <form onSubmit={onSubmit} className="grid gap-5">
-          <input type="text" name="website" style={{ display: "none" }} aria-hidden />
+        <div>
+          {!sent ? (
+            <form onSubmit={onSubmit} className="grid gap-5">
+              <input type="text" name="website" style={{ display: "none" }} aria-hidden />
 
-          <div className="grid gap-5 md:grid-cols-2">
-            <Field label="Empresa" id="company" required />
-            <Field label="Persona de contacto" id="contactName" required />
-            <Field label="Cargo" id="role" required />
-            <Field label="Email" id="email" type="email" required />
-            <Field label="Teléfono" id="phone" type="tel" />
-            <Field label="Nº de empleados" id="employees" type="number" min="1" required />
-          </div>
+              <div className="grid gap-5 md:grid-cols-2">
+                <Field label={c.fields.company} id="company" required />
+                <Field label={c.fields.contactName} id="contactName" required />
+                <Field label={c.fields.role} id="role" required />
+                <Field label={c.fields.email} id="email" type="email" required />
+                <Field label={c.fields.phone} id="phone" type="tel" />
+                <Field label={c.fields.employees} id="employees" type="number" min="1" required />
+              </div>
 
-          <div className="grid gap-2">
-            <label htmlFor="objective" className="text-sm">
-              Objetivo del programa
-            </label>
-            <input
-              id="objective"
-              name="objective"
-              required
-              placeholder="Ej. mejorar foco, preparar presentaciones, gestionar presión..."
-              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
-            />
-          </div>
+              <div className="grid gap-2">
+                <label htmlFor="objective" className="text-sm font-medium">
+                  {c.fields.objective} *
+                </label>
+                <input
+                  id="objective"
+                  name="objective"
+                  required
+                  placeholder={c.objectivePlaceholder}
+                  className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
+                />
+              </div>
 
-          <div className="grid gap-5 md:grid-cols-2">
-            <div className="grid gap-2">
-              <label htmlFor="format" className="text-sm">
-                Formato de interés
+              <div className="grid gap-5 md:grid-cols-2">
+                <div className="grid gap-2">
+                  <label htmlFor="format" className="text-sm font-medium">
+                    {c.fields.format}
+                  </label>
+                  <select
+                    id="format"
+                    name="format"
+                    required
+                    className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
+                  >
+                    <option value="">{c.formatPlaceholder}</option>
+                    {c.formats.map((format) => (
+                      <option key={format} value={format}>
+                        {format}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <Field
+                  label={c.fields.participants}
+                  id="participants"
+                  type="number"
+                  min="1"
+                  required
+                />
+              </div>
+
+              <div className="grid gap-2">
+                <label htmlFor="message" className="text-sm font-medium">
+                  {c.fields.message} *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  required
+                  placeholder="Detalla brevemente las necesidades de tu equipo o proyecto..."
+                  className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
+                />
+              </div>
+
+              <label className="flex items-start gap-3 text-xs sm:text-sm text-muted-foreground cursor-pointer">
+                <input type="checkbox" required className="mt-1 accent-[var(--primary)]" />
+                <span>{c.consent}</span>
               </label>
-              <select
-                id="format"
-                name="format"
-                required
-                className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+
+              <button
+                type="submit"
+                disabled={submitting}
+                className="w-fit rounded-full bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90 disabled:opacity-50"
               >
-                <option value="">Selecciona una opción</option>
-                {formats.map((format) => (
-                  <option key={format} value={format}>
-                    {format}
-                  </option>
-                ))}
-              </select>
+                {submitting ? "Enviando consulta..." : c.send}
+              </button>
+
+              {mailtoLink && (
+                <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-xs text-destructive">
+                  <p>{c.serverError}</p>
+                  <a
+                    href={mailtoLink}
+                    className="mt-2 inline-block font-semibold underline underline-offset-2"
+                  >
+                    {c.mailto} →
+                  </a>
+                </div>
+              )}
+            </form>
+          ) : (
+            <div className="rounded-2xl border border-primary/30 bg-primary/10 p-8 text-center space-y-4">
+              <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+                <CheckCircle2 className="size-6" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">{c.successTitle}</h3>
+              <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+                {c.sent}
+              </p>
+              <button
+                type="button"
+                onClick={() => setSent(false)}
+                className="mt-4 text-xs text-primary underline underline-offset-4"
+              >
+                {c.sendAnother}
+              </button>
             </div>
-            <Field
-              label="Participantes previstos"
-              id="participants"
-              type="number"
-              min="1"
-              required
-            />
+          )}
+        </div>
+
+        <aside className="h-fit rounded-2xl border border-border bg-card p-7 shadow-xs space-y-6">
+          <div>
+            <h2 className="text-xl font-serif font-medium">{c.asideTitle}</h2>
+            <ul className="mt-4 grid gap-3 text-sm text-muted-foreground leading-relaxed">
+              {c.asideItems.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2.5">
+                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="grid gap-2">
-            <label htmlFor="message" className="text-sm">
-              Mensaje
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={6}
-              required
-              className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
-            />
+          <div className="border-t border-border/80 pt-6">
+            <p className="text-xs text-muted-foreground">{c.asideDirectHelp}</p>
+            <button
+              type="button"
+              onClick={() => {
+                trackWhatsAppClick("empresas_contacto_aside");
+                const url = getWhatsAppUrl(
+                  "Hola María, represento a una organización y me gustaría consultar sobre talleres y programas de desarrollo profesional..."
+                );
+                if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
+              }}
+              className="mt-2.5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#25D366]/40 bg-[#25D366]/10 py-2.5 px-4 text-xs font-semibold text-[#25D366] transition-colors hover:bg-[#25D366]/20"
+            >
+              <MessageCircle className="size-4" />
+              <span>{c.asideWhatsApp}</span>
+            </button>
           </div>
 
-          <label className="flex items-start gap-3 text-sm text-muted-foreground">
-            <input type="checkbox" required className="mt-1 accent-[var(--primary)]" />
-            He leído y acepto la política de privacidad.
-          </label>
-
-          <button
-            type="submit"
-            className="w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Enviar consulta de empresa
-          </button>
-
-          {sent && (
-            <p className="text-sm text-primary">
-              Gracias, he recibido la consulta. Te responderé para valorar el encaje.
-            </p>
-          )}
-          {mailtoLink && (
-            <p className="mt-3">
-              <a
-                href={mailtoLink}
-                className="inline-block rounded-full border border-border bg-card px-4 py-2 text-sm transition-colors hover:bg-muted"
-              >
-                Enviar por correo
-              </a>
-            </p>
-          )}
-        </form>
-
-        <aside className="h-fit rounded-2xl border border-border bg-card p-7">
-          <h2 className="text-2xl">Para preparar la conversación</h2>
-          <ul className="mt-5 grid gap-3 text-sm text-muted-foreground">
-            <li>El objetivo puede ser individual, grupal o de equipo.</li>
-            <li>El formato se ajusta al tamaño del grupo y al contexto de trabajo.</li>
-            <li>No se comparten contenidos privados de sesiones individuales con la empresa.</li>
-          </ul>
-          <Link
-            to="/empresas"
-            className="mt-7 inline-flex text-sm text-primary underline underline-offset-4"
-          >
-            Volver a empresas
-          </Link>
+          <div className="border-t border-border/80 pt-4">
+            <Link
+              to="/empresas"
+              className="inline-flex text-xs font-medium text-primary underline underline-offset-4 hover:opacity-80"
+            >
+              ← {c.back}
+            </Link>
+          </div>
         </aside>
       </section>
     </>
@@ -242,8 +287,8 @@ function Field({
 }) {
   return (
     <div className="grid gap-2">
-      <label htmlFor={id} className="text-sm">
-        {label}
+      <label htmlFor={id} className="text-sm font-medium">
+        {label} {required ? "*" : ""}
       </label>
       <input
         id={id}
@@ -251,7 +296,7 @@ function Field({
         type={type}
         required={required}
         min={min}
-        className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+        className="rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
       />
     </div>
   );

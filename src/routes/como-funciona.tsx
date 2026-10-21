@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
+import { ValuationModal } from "@/components/valuation-modal";
 import { PageHeader } from "@/components/page-header";
 import { useI18n } from "@/lib/i18n";
 import { makeSeo } from "@/lib/seo";
@@ -77,12 +78,11 @@ function HowPage() {
             </p>
           </div>
           <div className="mt-6 flex flex-col gap-3 shrink-0 sm:flex-row lg:flex-col">
-            <Link
-              to="/contacto"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 text-center"
-            >
-              {t.how.ctaPrimary}
-            </Link>
+            <ValuationModal
+              source="como_funciona_cta"
+              triggerClassName="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 text-center cursor-pointer"
+              triggerLabel={t.how.ctaPrimary}
+            />
             <button
               type="button"
               onClick={() => {

@@ -8,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useI18n, type Lang } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { trackLeadSubmission } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
@@ -21,14 +22,126 @@ interface ValuationModalProps {
   onOpenChange?: (open: boolean) => void;
 }
 
+const modalTranslations = {
+  es: {
+    badge: "15 minutos sin coste ni compromiso",
+    title: "Solicitar valoración de 15 minutos",
+    desc: "Una breve llamada conmigo para conocer qué te gustaría mejorar, resolver tus dudas sobre la hipnosis y valorar si este acompañamiento es adecuado para ti.",
+    nameLabel: "Nombre y apellidos *",
+    namePlaceholder: "Tu nombre completo",
+    phoneLabel: "Teléfono / WhatsApp *",
+    phonePlaceholder: "600 000 000",
+    emailLabel: "Email *",
+    emailPlaceholder: "tu@email.com",
+    modalityLabel: "Modalidad preferida",
+    modalityOptions: [
+      { value: "Presencial en Sueca (Centro Sanar)", label: "Presencial en Sueca (Centro Sanar)" },
+      { value: "Online (por videollamada)", label: "Online (por videollamada)" },
+      { value: "Colaboración profesional / Clínica", label: "Colaboración profesional / Clínica" },
+      { value: "A domicilio en Valencia ciudad", label: "A domicilio en Valencia ciudad" },
+    ],
+    timeLabel: "Horario para llamarte",
+    timeOptions: [
+      { value: "Mañanas (10:00 - 14:00)", label: "Mañanas (10:00 - 14:00)" },
+      { value: "Tardes (16:00 - 20:00)", label: "Tardes (16:00 - 20:00)" },
+      { value: "Indiferente / Por WhatsApp", label: "Indiferente / Por WhatsApp" },
+    ],
+    messageLabel: "¿Qué te gustaría trabajar o consultar?",
+    messagePlaceholder: "Ej. Siento ansiedad por el trabajo, me cuesta dormir, o me gustaría saber si la hipnosis puede ayudarme con...",
+    consent: "Acepto el tratamiento de mis datos de contacto para coordinar la llamada de valoración de 15 minutos.",
+    submitting: "Enviando solicitud...",
+    submit: "Solicitar llamada de 15 min (sin coste)",
+    note: "Te responderé personalmente en menos de 24 horas para fijar la hora exacta de la llamada.",
+    successTitle: "¡Solicitud recibida correctamente!",
+    successText: "Muchas gracias por tu confianza. He recibido tus datos y te escribiré por WhatsApp o te llamaré en el horario indicado para coordinar con calma el día y la hora de nuestra conversación.",
+    understood: "Entendido",
+    error: "Ha habido un error al enviar tu solicitud. Por favor inténtalo de nuevo o contáctame por WhatsApp.",
+    defaultTrigger: "Solicitar valoración de 15 min",
+  },
+  va: {
+    badge: "15 minuts sense cost ni compromís",
+    title: "Sol·licitar valoració de 15 minuts",
+    desc: "Una breu telefonada amb mi per a conéixer què t'agradaria millorar, resoldre els teus dubtes sobre la hipnosi i valorar si este acompanyament és adequat per a tu.",
+    nameLabel: "Nom i cognoms *",
+    namePlaceholder: "El teu nom complet",
+    phoneLabel: "Telèfon / WhatsApp *",
+    phonePlaceholder: "600 000 000",
+    emailLabel: "Email *",
+    emailPlaceholder: "el_teu@email.com",
+    modalityLabel: "Modalitat preferida",
+    modalityOptions: [
+      { value: "Presencial en Sueca (Centro Sanar)", label: "Despatx a Sueca (Centre Sanar)" },
+      { value: "Online (por videollamada)", label: "En línia (per videotrucada)" },
+      { value: "Colaboración profesional / Clínica", label: "Col·laboració professional / Clínica" },
+      { value: "A domicilio en Valencia ciudad", label: "A domicili a València ciutat" },
+    ],
+    timeLabel: "Horari per a telefonar-te",
+    timeOptions: [
+      { value: "Mañanas (10:00 - 14:00)", label: "Matins (10:00 - 14:00)" },
+      { value: "Tardes (16:00 - 20:00)", label: "Vesprades (16:00 - 20:00)" },
+      { value: "Indiferente / Por WhatsApp", label: "Indiferent / Per WhatsApp" },
+    ],
+    messageLabel: "Què t'agradaria treballar o consultar?",
+    messagePlaceholder: "Ex. Sente angoixa per la feina, em costa dormir, o voldria saber si la hipnosi pot ajudar-me amb...",
+    consent: "Accepte el tractament de les meues dades de contacte per a coordinar la telefonada de valoració de 15 minuts.",
+    submitting: "Enviant sol·licitud...",
+    submit: "Sol·licitar telefonada de 15 min (sense cost)",
+    note: "Et respondré personalment en menys de 24 hores per a fixar l'hora exacta de la telefonada.",
+    successTitle: "Sol·licitud rebuda correctament!",
+    successText: "Moltes gràcies per la teua confiança. He rebut les teues dades i t'escriuré per WhatsApp o et telefonaré en l'horari indicat per a coordinar amb calma el dia i l'hora de la conversa.",
+    understood: "Entés",
+    error: "Hi ha hagut un error en enviar la teua sol·licitud. Torna a intentar-ho o contacta'm per WhatsApp.",
+    defaultTrigger: "Sol·licitar valoració de 15 min",
+  },
+  en: {
+    badge: "15 minutes free & no obligation",
+    title: "Request free 15-minute consultation",
+    desc: "A brief phone or video call with me to explore what you'd like to improve, answer your questions about hypnosis, and assess whether this process is the right fit for you.",
+    nameLabel: "Full name *",
+    namePlaceholder: "Your full name",
+    phoneLabel: "Phone / WhatsApp *",
+    phonePlaceholder: "+34 600 000 000",
+    emailLabel: "Email *",
+    emailPlaceholder: "your@email.com",
+    modalityLabel: "Preferred format",
+    modalityOptions: [
+      { value: "Presencial en Sueca (Centro Sanar)", label: "In-person in Sueca (Centro Sanar)" },
+      { value: "Online (por videollamada)", label: "Online (live video call)" },
+      { value: "Colaboración profesional / Clínica", label: "Professional partnership / Clinic" },
+      { value: "A domicilio en Valencia ciudad", label: "Home visit in Valencia city" },
+    ],
+    timeLabel: "Best time to call you",
+    timeOptions: [
+      { value: "Mañanas (10:00 - 14:00)", label: "Mornings (10:00 - 14:00)" },
+      { value: "Tardes (16:00 - 20:00)", label: "Afternoons (16:00 - 20:00)" },
+      { value: "Indiferente / Por WhatsApp", label: "Anytime / Via WhatsApp" },
+    ],
+    messageLabel: "What would you like to explore or ask?",
+    messagePlaceholder: "e.g. I feel stressed at work, trouble sleeping, or would like to know if hypnosis can help with...",
+    consent: "I consent to the processing of my contact details to arrange the 15-minute consultation.",
+    submitting: "Sending request...",
+    submit: "Request 15-min call (free)",
+    note: "I will reply to you personally within 24 hours to schedule the exact time for our call.",
+    successTitle: "Request received successfully!",
+    successText: "Thank you for reaching out. I have received your details and will message you on WhatsApp or call you during your preferred time window to calmly set a date and time.",
+    understood: "Understood",
+    error: "An error occurred while sending your request. Please try again or reach out directly via WhatsApp.",
+    defaultTrigger: "Request 15-min consultation",
+  },
+};
+
 export function ValuationModal({
   children,
-  triggerLabel = "Solicitar valoración de 15 min",
+  triggerLabel,
   triggerClassName = "",
   source = "Web - Solicitud Valoración 15 min",
   defaultModality = "Presencial en Sueca (Centro Sanar)",
   onOpenChange,
 }: ValuationModalProps) {
+  const { lang } = useI18n();
+  const m = modalTranslations[(lang as Lang) in modalTranslations ? (lang as Lang) : "es"];
+  const resolvedTrigger = triggerLabel ?? m.defaultTrigger;
+
   const [open, setOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -37,7 +150,6 @@ export function ValuationModal({
   const handleOpenChange = (nextOpen: boolean) => {
     setOpen(nextOpen);
     if (!nextOpen) {
-      // Reset state after close
       setTimeout(() => {
         setSubmitted(false);
         setError(null);
@@ -111,7 +223,7 @@ export function ValuationModal({
       setSubmitted(true);
     } catch (err) {
       console.error("Valuation request error:", err);
-      setError("Ha habido un error al enviar tu solicitud. Por favor inténtalo de nuevo o contáctame por WhatsApp.");
+      setError(m.error);
     } finally {
       setSubmitting(false);
     }
@@ -129,7 +241,7 @@ export function ValuationModal({
             )}
           >
             <Clock className="size-4 shrink-0" />
-            <span>{triggerLabel}</span>
+            <span>{resolvedTrigger}</span>
           </button>
         )}
       </DialogTrigger>
@@ -140,13 +252,13 @@ export function ValuationModal({
             <DialogHeader className="text-left space-y-2">
               <div className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary w-fit">
                 <Sparkles className="size-3.5" />
-                <span>15 minutos sin coste ni compromiso</span>
+                <span>{m.badge}</span>
               </div>
               <DialogTitle className="font-serif text-2xl font-normal text-foreground">
-                Solicitar valoración de 15 minutos
+                {m.title}
               </DialogTitle>
               <DialogDescription className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                Una breve llamada conmigo para conocer qué te gustaría mejorar, resolver tus dudas sobre la hipnosis y valorar si este acompañamiento es adecuado para ti.
+                {m.desc}
               </DialogDescription>
             </DialogHeader>
 
@@ -156,13 +268,13 @@ export function ValuationModal({
 
               <div className="grid gap-1.5">
                 <label htmlFor="val-name" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Nombre y apellidos *
+                  {m.nameLabel}
                 </label>
                 <input
                   id="val-name"
                   name="name"
                   required
-                  placeholder="Tu nombre completo"
+                  placeholder={m.namePlaceholder}
                   className="rounded-xl border border-input bg-card px-4 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                 />
               </div>
@@ -170,28 +282,28 @@ export function ValuationModal({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="grid gap-1.5">
                   <label htmlFor="val-phone" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Teléfono / WhatsApp *
+                    {m.phoneLabel}
                   </label>
                   <input
                     id="val-phone"
                     name="phone"
                     type="tel"
                     required
-                    placeholder="600 000 000"
+                    placeholder={m.phonePlaceholder}
                     className="rounded-xl border border-input bg-card px-4 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                   />
                 </div>
 
                 <div className="grid gap-1.5">
                   <label htmlFor="val-email" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Email *
+                    {m.emailLabel}
                   </label>
                   <input
                     id="val-email"
                     name="email"
                     type="email"
                     required
-                    placeholder="tu@email.com"
+                    placeholder={m.emailPlaceholder}
                     className="rounded-xl border border-input bg-card px-4 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                   />
                 </div>
@@ -200,7 +312,7 @@ export function ValuationModal({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="grid gap-1.5">
                   <label htmlFor="val-modality" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Modalidad preferida
+                    {m.modalityLabel}
                   </label>
                   <select
                     id="val-modality"
@@ -208,16 +320,17 @@ export function ValuationModal({
                     defaultValue={defaultModality}
                     className="rounded-xl border border-input bg-card px-3.5 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring cursor-pointer"
                   >
-                    <option value="Presencial en Sueca (Centro Sanar)">Presencial en Sueca</option>
-                    <option value="Online (por videollamada)">Online (Videollamada)</option>
-                    <option value="Colaboración profesional / Clínica">Colaboración profesional</option>
-                    <option value="A domicilio en Valencia ciudad">A domicilio en Valencia</option>
+                    {m.modalityOptions.map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
+                    ))}
                   </select>
                 </div>
 
                 <div className="grid gap-1.5">
                   <label htmlFor="val-time" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Horario para llamarte
+                    {m.timeLabel}
                   </label>
                   <select
                     id="val-time"
@@ -225,31 +338,31 @@ export function ValuationModal({
                     defaultValue="Mañanas (10:00 - 14:00)"
                     className="rounded-xl border border-input bg-card px-3.5 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring cursor-pointer"
                   >
-                    <option value="Mañanas (10:00 - 14:00)">Mañanas (10:00 - 14:00)</option>
-                    <option value="Tardes (16:00 - 20:00)">Tardes (16:00 - 20:00)</option>
-                    <option value="Indiferente / Por WhatsApp">Indiferente / WhatsApp</option>
+                    {m.timeOptions.map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>
 
               <div className="grid gap-1.5">
                 <label htmlFor="val-message" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  ¿Qué te gustaría trabajar o consultar?
+                  {m.messageLabel}
                 </label>
                 <textarea
                   id="val-message"
                   name="message"
                   rows={3}
-                  placeholder="Ej. Siento ansiedad por el trabajo, me cuesta dormir, o me gustaría saber si la hipnosis puede ayudarme con..."
+                  placeholder={m.messagePlaceholder}
                   className="rounded-xl border border-input bg-card px-4 py-2.5 text-sm outline-none transition-colors focus:ring-2 focus:ring-ring"
                 />
               </div>
 
               <label className="flex items-start gap-2.5 text-xs text-muted-foreground cursor-pointer pt-1">
                 <input type="checkbox" required className="mt-0.5 rounded border-input" />
-                <span>
-                  Acepto el tratamiento de mis datos de contacto para coordinar la llamada de valoración de 15 minutos.
-                </span>
+                <span>{m.consent}</span>
               </label>
 
               {error && (
@@ -264,11 +377,11 @@ export function ValuationModal({
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90 disabled:opacity-50"
               >
                 <Phone className="size-4" />
-                <span>{submitting ? "Enviando solicitud..." : "Solicitar llamada de 15 min (sin coste)"}</span>
+                <span>{submitting ? m.submitting : m.submit}</span>
               </button>
 
               <p className="text-center text-[0.72rem] text-muted-foreground">
-                Te responderé personalmente en menos de 24 horas para fijar la hora exacta de la llamada.
+                {m.note}
               </p>
             </form>
           </>
@@ -278,17 +391,17 @@ export function ValuationModal({
               <CheckCircle2 className="size-8" />
             </div>
             <h3 className="font-serif text-2xl font-normal text-foreground">
-              ¡Solicitud recibida correctamente!
+              {m.successTitle}
             </h3>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto leading-relaxed">
-              Muchas gracias por tu confianza. He recibido tus datos y te escribiré por WhatsApp o te llamaré en el horario indicado para coordinar con calma el día y la hora de nuestra conversación.
+              {m.successText}
             </p>
             <button
               type="button"
               onClick={() => handleOpenChange(false)}
               className="mt-6 inline-flex rounded-full bg-primary px-8 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
             >
-              Entendido
+              {m.understood}
             </button>
           </div>
         )}

@@ -37,6 +37,7 @@ import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as VidasPasadasRouteImport } from './routes/vidas-pasadas'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as EmpresasIndexRouteImport } from './routes/empresas.index'
 import { Route as EmpresasContactoRouteImport } from './routes/empresas.contacto'
 
 const IndexRoute = IndexRouteImport.update({
@@ -179,6 +180,11 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const EmpresasIndexRoute = EmpresasIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EmpresasRoute,
+} as any)
 const EmpresasContactoRoute = EmpresasContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
@@ -215,6 +221,7 @@ export interface FileRoutesByFullPath {
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
+  '/empresas/': typeof EmpresasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -227,7 +234,6 @@ export interface FileRoutesByTo {
   '/control-de-peso': typeof ControlDePesoRoute
   '/dejar-de-fumar': typeof DejarDeFumarRoute
   '/deporte-y-motivacion': typeof DeporteYMotivacionRoute
-  '/empresas': typeof EmpresasRouteWithChildren
   '/estres-e-insomnio': typeof EstresEInsomnioRoute
   '/eventos': typeof EventosRoute
   '/faq': typeof FaqRoute
@@ -245,6 +251,7 @@ export interface FileRoutesByTo {
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog': typeof BlogIndexRoute
+  '/empresas': typeof EmpresasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -277,6 +284,7 @@ export interface FileRoutesById {
   '/blog/$slug': typeof BlogSlugRoute
   '/empresas/contacto': typeof EmpresasContactoRoute
   '/blog/': typeof BlogIndexRoute
+  '/empresas/': typeof EmpresasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -310,6 +318,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog/'
+    | '/empresas/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -322,7 +331,6 @@ export interface FileRouteTypes {
     | '/control-de-peso'
     | '/dejar-de-fumar'
     | '/deporte-y-motivacion'
-    | '/empresas'
     | '/estres-e-insomnio'
     | '/eventos'
     | '/faq'
@@ -340,6 +348,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog'
+    | '/empresas'
   id:
     | '__root__'
     | '/'
@@ -371,6 +380,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/empresas/contacto'
     | '/blog/'
+    | '/empresas/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -600,6 +610,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/empresas/': {
+      id: '/empresas/'
+      path: '/'
+      fullPath: '/empresas/'
+      preLoaderRoute: typeof EmpresasIndexRouteImport
+      parentRoute: typeof EmpresasRoute
+    }
     '/empresas/contacto': {
       id: '/empresas/contacto'
       path: '/contacto'
@@ -624,10 +641,12 @@ const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 interface EmpresasRouteChildren {
   EmpresasContactoRoute: typeof EmpresasContactoRoute
+  EmpresasIndexRoute: typeof EmpresasIndexRoute
 }
 
 const EmpresasRouteChildren: EmpresasRouteChildren = {
   EmpresasContactoRoute: EmpresasContactoRoute,
+  EmpresasIndexRoute: EmpresasIndexRoute,
 }
 
 const EmpresasRouteWithChildren = EmpresasRoute._addFileChildren(

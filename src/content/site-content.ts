@@ -346,6 +346,11 @@ const es = {
     emailSubject: "Programa para empresas",
     emailSummary: "Consulta B2B desde la web",
     notProvided: "No indicado",
+    successTitle: "¡Consulta recibida!",
+    sendAnother: "Enviar otra consulta",
+    serverError: "No se pudo conectar con el servidor. Puedes enviarlo directamente por correo:",
+    asideDirectHelp: "¿Prefieres una consulta ágil directa?",
+    asideWhatsApp: "Consultar por WhatsApp",
   },
   smokingPage: {
     seoTitle: "Programa para dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
@@ -1164,6 +1169,9 @@ const es = {
     disclaimer:
       "María A. Cabo · Hipnosis y desarrollo personal. Acompañamiento orientado al cambio personal y bienestar emocional. No sustituye la atención médica o psiquiátrica ante patologías severas.",
     legal: "Información legal",
+    navigation: "Navegación",
+    services: "Ámbitos de hipnosis",
+    socialSubtitle: "Divulgación, reflexiones y día a día",
   },
   common: {
     bookNow: "Solicitar una sesión",
@@ -1570,6 +1578,11 @@ const va: Dict = {
     emailSubject: "Programa per a empreses",
     emailSummary: "Consulta B2B des de la web",
     notProvided: "No indicat",
+    successTitle: "¡Consulta rebuda!",
+    sendAnother: "Enviar una altra consulta",
+    serverError: "No s'ha pogut connectar amb el servidor. Pots enviar-ho directament per correu:",
+    asideDirectHelp: "Preferixes una consulta àgil directa?",
+    asideWhatsApp: "Consultar per WhatsApp",
   },
   smokingPage: {
     seoTitle: "Programa per a deixar de fumar amb hipnosi a Sueca · María A. Cabo",
@@ -2384,6 +2397,9 @@ const va: Dict = {
     disclaimer:
       "María A. Cabo · Hipnosi i desenvolupament personal. Acompanyament orientat al canvi personal i benestar emocional. No substituïx l'atenció mèdica o psiquiàtrica davant patologies severes.",
     legal: "Informació legal",
+    navigation: "Navegació",
+    services: "Àmbits d'hipnosi",
+    socialSubtitle: "Divulgació, reflexions i dia a dia",
   },
   common: {
     bookNow: "Sol·licitar una sessió",
@@ -2788,6 +2804,11 @@ const en: Dict = {
     emailSubject: "Programme for organisations",
     emailSummary: "B2B web enquiry",
     notProvided: "Not provided",
+    successTitle: "Inquiry received!",
+    sendAnother: "Send another inquiry",
+    serverError: "Could not connect to server. You can send it directly by email:",
+    asideDirectHelp: "Prefer a direct, informal conversation?",
+    asideWhatsApp: "Enquire via WhatsApp",
   },
   smokingPage: {
     seoTitle: "Quit Smoking with Hypnosis in Sueca · María A. Cabo",
@@ -3602,6 +3623,9 @@ const en: Dict = {
     disclaimer:
       "María A. Cabo · Hypnosis and personal development. Support focused on personal change and emotional well-being. Does not replace medical or psychiatric care for severe conditions.",
     legal: "Legal information",
+    navigation: "Navigation",
+    services: "Hypnosis areas",
+    socialSubtitle: "Insights, mindset and daily practice",
   },
   common: {
     bookNow: "Request a session",
