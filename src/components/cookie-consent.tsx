@@ -81,46 +81,53 @@ export function CookieConsent() {
       {showBanner && (
         <section
           aria-label={t.cookies.bannerAriaLabel}
-          className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 px-4 py-4 backdrop-blur md:px-6"
+          className="fixed bottom-4 inset-x-4 sm:inset-x-auto sm:left-6 sm:bottom-6 sm:max-w-md z-50"
         >
-          <div className="mx-auto flex max-w-6xl flex-col gap-5 rounded-2xl border border-border/60 bg-card p-5 text-card-foreground md:flex-row md:items-end md:justify-between md:p-6">
-            <div className="max-w-3xl">
-              <h2 className="text-xl">{t.cookies.bannerTitle}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {t.cookies.bannerText}
-              </p>
-              <Link
-                to="/politica-de-cookies"
-                className="mt-3 inline-flex text-sm text-primary underline underline-offset-4"
-              >
-                {t.cookies.policyLink}
-              </Link>
+          <div className="rounded-3xl border border-border/80 bg-background/98 p-6 text-card-foreground shadow-2xl backdrop-blur-md ring-1 ring-black/5 dark:ring-white/10 transition-all">
+            <div className="flex items-center gap-2.5">
+              <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-base">
+                🍪
+              </span>
+              <h2 className="text-lg font-medium">{t.cookies.bannerTitle}</h2>
             </div>
-            <div className="grid gap-2 sm:grid-cols-3 md:min-w-[28rem]">
+            <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-muted-foreground">
+              {t.cookies.bannerText}
+            </p>
+
+            <div className="mt-5 flex flex-col sm:flex-row gap-2.5">
               <button
                 type="button"
                 onClick={acceptAll}
-                className="rounded-full bg-primary px-5 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-ring"
+                className="flex-1 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-ring"
               >
                 {t.cookies.acceptAll}
               </button>
               <button
                 type="button"
                 onClick={rejectAll}
-                className="rounded-full border border-border bg-card px-5 py-3 text-sm transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
+                className="flex-1 rounded-full border border-border/80 bg-card px-5 py-2.5 text-center text-sm font-medium transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
               >
                 {t.cookies.reject}
               </button>
+            </div>
+
+            <div className="mt-3.5 flex items-center justify-between text-xs text-muted-foreground">
               <button
                 type="button"
                 onClick={() => {
                   setShowBanner(false);
                   setShowPanel(true);
                 }}
-                className="rounded-full border border-border bg-card px-5 py-3 text-sm transition-colors hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
+                className="underline underline-offset-4 hover:text-foreground transition-colors"
               >
                 {t.cookies.configure}
               </button>
+              <Link
+                to="/politica-de-cookies"
+                className="underline underline-offset-4 hover:text-foreground transition-colors"
+              >
+                {t.cookies.policyLink}
+              </Link>
             </div>
           </div>
         </section>
