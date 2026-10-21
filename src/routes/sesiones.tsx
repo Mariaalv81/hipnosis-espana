@@ -35,8 +35,8 @@ function SessionsPage() {
             <div className="rounded-2xl border border-border bg-card p-5">
               <h3 className="text-base font-medium">A domicilio en Valencia</h3>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                En casas de particulares en Valencia capital y alrededores. Comodidad y privacidad
-                en tu propio entorno.
+                En casas de particulares en Valencia capital y alrededores. Solicitar y coordinar
+                directamente por formulario de contacto o WhatsApp.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-5">
@@ -69,7 +69,10 @@ function SessionsPage() {
             </ul>
             {index === 0 ? (
               <div className="mt-8 flex flex-col gap-3">
-                <CalendarButton className="w-fit" source="sesiones_individual" />
+                <CalendarButton className="w-fit" source="sesiones_individual" label="Solicitar valoración de 15 min" />
+                <p className="text-[0.75rem] text-muted-foreground">
+                  * Solicitud de valoración previa de 15 minutos sin coste ni compromiso. Hablamos primero para conocer tu caso y coordinar tu cita presencial en Sueca u online.
+                </p>
                 <div className="pt-1">
                   <Link
                     to="/contacto"

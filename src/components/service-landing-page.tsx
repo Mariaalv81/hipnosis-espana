@@ -598,7 +598,7 @@ export function ServiceLandingPage({
                   <span>Chat directo de WhatsApp</span>
                 </button>
 
-                <p className="mt-4 text-xs text-muted-foreground border-t border-border/60 pt-3">¿O prefieres elegir hueco en mi calendario?</p>
+                <p className="mt-4 text-xs text-muted-foreground border-t border-border/60 pt-3">¿O prefieres una llamada previa de 15 min?</p>
                 <CalendarButton className="mt-2 w-full text-xs py-2.5" source={`landing_${formTag}`} />
               </div>
             </div>
@@ -633,8 +633,8 @@ export function ServiceLandingPage({
         <div className="rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl font-normal md:text-4xl">¿Empezamos a cambiar ese patrón?</h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/90 leading-relaxed">
-            Puedes reservar tu primera sesión directamente o escribirme a través del formulario para
-            valorar tu caso antes de dar el paso.
+            Puedes solicitar una valoración previa de 15 minutos sin compromiso o escribirme a través del formulario para
+            conocer tu caso antes de dar el paso.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a

@@ -62,7 +62,6 @@ const es = {
     heroEyebrow: "HIPNOSIS Y DESARROLLO PERSONAL · VALENCIA Y SUECA",
     heroTitle1: "HIPNOSIS PARA CAMBIAR",
     heroTitle2: "LO QUE YA NO TE SIRVE.",
-    heroTitle3: "AVANZA CON SERENIDAD.",
     heroIntro:
       "Sesiones individuales de hipnosis y desarrollo personal orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
     heroPrimary: "VALORACIÓN GRATUITA (20 MIN)",
@@ -1115,9 +1114,9 @@ const es = {
     consent: "He leído y acepto la política de privacidad.",
     send: "Enviar mensaje",
     sent: "Gracias, he recibido tu mensaje. Te responderé en breve.",
-    note: "Envía tu mensaje y te responderé en breve. Si prefieres, también puedes reservar directamente en el calendario.",
+    note: "Envía tu mensaje y te responderé en breve para coordinar tu cita o responder a tus preguntas.",
     infoTitle: "Datos",
-    area: "Sueca (Centro Sanar) · A domicilio en Valencia ciudad · Sesiones online",
+    area: "Sueca (Centro Sanar) · Sesiones presenciales y online",
     languages: "Sesiones en castellano e inglés",
     hours: "Horario de atención en hora peninsular",
   },
@@ -1144,7 +1143,7 @@ const es = {
       },
       {
         title: "Proveedores",
-        text: "La web puede apoyarse en proveedores técnicos para alojamiento, analítica, calendario, protección antispam, formularios y envío o registro de mensajes: Vercel, Google Calendar, Google Analytics con consentimiento, Google reCAPTCHA cuando esté activo, Google Sheets si se usa como registro interno y SendGrid si se usa para el envío de correos. Estos proveedores tratan datos solo en la medida necesaria para prestar sus servicios.",
+        text: "La web puede apoyarse en proveedores técnicos para alojamiento, analítica, protección antispam, formularios y envío o registro de mensajes: Vercel, Google Analytics con consentimiento, Google reCAPTCHA cuando esté activo, Google Sheets si se usa como registro interno y SendGrid si se usa para el envío de correos. Estos proveedores tratan datos solo en la medida necesaria para prestar sus servicios.",
       },
       {
         title: "Derechos",
@@ -1167,15 +1166,15 @@ const es = {
     legal: "Información legal",
   },
   common: {
-    bookNow: "Reservar una sesión",
-    bookSoon: "Reserva directamente en el calendario o escríbeme si prefieres consultarlo.",
-    bookIntro: "Reserva directamente en el calendario o escríbeme si prefieres consultarlo.",
+    bookNow: "Solicitar una sesión",
+    bookSoon: "Solicita una valoración previa de 15 minutos sin compromiso o escríbeme directamente.",
+    bookIntro: "Solicita una valoración previa de 15 minutos sin compromiso o escríbeme para cualquier consulta.",
     contactMe: "Escríbeme",
     draft: "Contenido provisional pendiente de tus datos definitivos.",
-    bookCalendar: "Reservar en el calendario",
+    bookCalendar: "Solicitar valoración 15 min",
     smokeEmail: "Quiero dejar de fumar",
     smokeEmailNote: "Te escribo un email y concertamos una entrevista de 20 minutos.",
-    askQuestionLink: "¿Dudas antes de agendar? Escríbeme o pide tu valoración de 20 min →",
+    askQuestionLink: "¿Dudas antes de agendar? Escríbeme directamente →",
   },
   cookies: {
     bannerAriaLabel: "Aviso de cookies",
@@ -1215,7 +1214,7 @@ const es = {
       },
       {
         title: "Servicios externos",
-        text: "El botón de reserva abre Google Calendar en una pestaña nueva sin cargar su script dentro de la web. reCAPTCHA solo se solicita al enviar el formulario de contacto si está configurado, como medida de seguridad contra abuso.",
+        text: "Los formularios y solicitudes gestionan la información de manera segura sin cargar scripts externos innecesarios. reCAPTCHA solo se solicita al enviar el formulario si está configurado, como medida de seguridad contra abuso.",
       },
       {
         title: "Cambiar tu elección",
@@ -2336,9 +2335,9 @@ const va: Dict = {
     consent: "He llegit i accepte la política de privacitat.",
     send: "Enviar missatge",
     sent: "Gràcies, he rebut el teu missatge. Et respondré ben aviat.",
-    note: "Envia el teu missatge i et respondré prompte. Si ho preferixes, també pots reservar directament en el calendari.",
+    note: "Envia el teu missatge i et respondré prompte per a coordinar la teua cita o resoldre qualsevol dubte.",
     infoTitle: "Dades",
-    area: "Sueca (Centre Sanar) · A domicili a València ciutat · Sessions online",
+    area: "Sueca (Centre Sanar) · Sessions presencials i online",
     languages: "Sessions en castellà i anglés",
     hours: "Horari d'atenció en hora peninsular",
   },
@@ -2365,7 +2364,7 @@ const va: Dict = {
       },
       {
         title: "Proveïdors",
-        text: "La web pot recolzar-se en proveïdors tècnics per a allotjament, analítica, calendari, protecció antispam, formularis i enviament o registre de missatges: Vercel, Google Calendar, Google Analytics amb consentiment, Google reCAPTCHA quan estiga actiu, Google Sheets si s'utilitza com a registre intern i SendGrid si s'utilitza per a l'enviament de correus. Estos proveïdors tracten dades només en la mesura necessària per a prestar els seus servicis.",
+        text: "La web pot recolzar-se en proveïdors tècnics per a allotjament, analítica, protecció antispam, formularis i enviament o registre de missatges: Vercel, Google Analytics amb consentiment, Google reCAPTCHA quan estiga actiu, Google Sheets si s'utilitza com a registre intern i SendGrid si s'utilitza per a l'enviament de correus. Estos proveïdors tracten dades només en la mesura necessària per a prestar els seus servicis.",
       },
       {
         title: "Drets",
@@ -2388,15 +2387,15 @@ const va: Dict = {
     legal: "Informació legal",
   },
   common: {
-    bookNow: "Reservar una sessió",
-    bookSoon: "Reserva directament en el calendari o escriu-me si preferixes consultar-ho.",
-    bookIntro: "Reserva directament en el calendari o escriu-me si preferixes consultar-ho.",
+    bookNow: "Sol·licitar una sessió",
+    bookSoon: "Sol·licita una valoració prèvia de 15 minuts sense compromís o escriu-me directament.",
+    bookIntro: "Sol·licita una valoració prèvia de 15 minuts sense compromís o escriu-me per a qualsevol consulta.",
     contactMe: "Escriu-me",
     draft: "Contingut provisional pendent de les teues dades definitives.",
-    bookCalendar: "Reservar en el calendari",
+    bookCalendar: "Sol·licitar valoració 15 min",
     smokeEmail: "Vull deixar de fumar",
     smokeEmailNote: "M'escrius un email i concertem una entrevista de 20 minuts.",
-    askQuestionLink: "Dubtes abans d'agendar? Escriu-me o demana la teua valoració de 20 min →",
+    askQuestionLink: "Dubtes abans d'agendar? Escriu-me directament →",
   },
   cookies: {
     bannerAriaLabel: "Avís de galetes",
@@ -2436,7 +2435,7 @@ const va: Dict = {
       },
       {
         title: "Servicis externs",
-        text: "El botó de reserva obri Google Calendar en una pestanya nova sense carregar el seu script dins de la web. reCAPTCHA només se sol·licita en enviar el formulari de contacte si està configurat, com a mesura de seguretat contra abús.",
+        text: "Els formularis i sol·licituds gestionen la informació de manera segura sense carregar scripts externs innecessaris. reCAPTCHA només se sol·licita en enviar el formulari si està configurat, com a mesura de seguretat contra abús.",
       },
       {
         title: "Canviar la teua elecció",
@@ -3555,9 +3554,9 @@ const en: Dict = {
     consent: "I have read and accept the privacy policy.",
     send: "Send message",
     sent: "Thank you, your message has been received. I'll reply shortly.",
-    note: "Send your message and I'll reply shortly. If you prefer, you can also book directly in the calendar.",
+    note: "Send your message and I'll reply shortly to coordinate your session or answer your questions.",
     infoTitle: "Details",
-    area: "Sueca (Centro Sanar) · Home visits in Valencia city · Online sessions",
+    area: "Sueca (Centro Sanar) · In-person & online sessions",
     languages: "Sessions available in Spanish and English",
     hours: "Opening hours in mainland Spain time",
   },
@@ -3584,7 +3583,7 @@ const en: Dict = {
       },
       {
         title: "Providers",
-        text: "The website may rely on technical providers for hosting, analytics, calendar booking, anti-spam protection, forms and message delivery or logging: Vercel, Google Calendar, Google Analytics with consent, Google reCAPTCHA when active, Google Sheets if used as an internal record and SendGrid if used for email delivery. These providers process data only to the extent necessary to provide their services.",
+        text: "The website may rely on technical providers for hosting, analytics, anti-spam protection, forms and message delivery or logging: Vercel, Google Analytics with consent, Google reCAPTCHA when active, Google Sheets if used as an internal record and SendGrid if used for email delivery. These providers process data only to the extent necessary to provide their services.",
       },
       {
         title: "Rights",
@@ -3607,17 +3606,17 @@ const en: Dict = {
     legal: "Legal information",
   },
   common: {
-    bookNow: "Book a session",
+    bookNow: "Request a session",
     bookSoon:
-      "Book directly in the calendar, or write to me first if you prefer to ask a question.",
+      "Request a free 15-minute introductory call or write to me if you prefer to ask a question.",
     bookIntro:
-      "Book directly in the calendar, or write to me first if you prefer to ask a question.",
+      "Request a free 15-minute introductory call or write to me if you prefer to ask a question.",
     contactMe: "Write to me",
     draft: "Placeholder content pending your final details.",
-    bookCalendar: "Book in the calendar",
+    bookCalendar: "Request 15-min call",
     smokeEmail: "I want to quit smoking",
     smokeEmailNote: "Send an email and we'll arrange a 20-minute interview.",
-    askQuestionLink: "Questions before booking? Message me or request a free 20-min chat →",
+    askQuestionLink: "Questions before booking? Write to me directly →",
   },
   cookies: {
     bannerAriaLabel: "Cookie notice",
@@ -3657,7 +3656,7 @@ const en: Dict = {
       },
       {
         title: "External services",
-        text: "The booking button opens Google Calendar in a new tab without loading its script inside the website. reCAPTCHA is only requested when the contact form is submitted, if configured, as a security measure against abuse.",
+        text: "Forms and requests handle information securely without loading unnecessary external scripts. reCAPTCHA is only requested when submitting a form, if configured, as a security measure against abuse.",
       },
       {
         title: "Change your choice",

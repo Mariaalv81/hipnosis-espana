@@ -81,7 +81,7 @@ export function CookieConsent() {
       {showBanner && (
         <section
           aria-label={t.cookies.bannerAriaLabel}
-          className="fixed bottom-4 inset-x-4 sm:inset-x-auto sm:left-6 sm:bottom-6 sm:max-w-md z-50"
+          className="fixed bottom-20 sm:bottom-6 inset-x-4 sm:inset-x-auto sm:left-6 sm:max-w-md z-50"
         >
           <div className="rounded-3xl border border-border/80 bg-background/98 p-6 text-card-foreground shadow-2xl backdrop-blur-md ring-1 ring-black/5 dark:ring-white/10 transition-all">
             <div className="flex items-center gap-2.5">

@@ -72,10 +72,10 @@ La confianza entre profesionales se basa en límites nítidos:
 
 ---
 
-## 6. Próximo Paso: Café de Presentación o Llamada de 15 Minutos
+## 6. Próximo Paso: Contacto y Propuesta de Colaboración
 
 Para valorar sin ningún compromiso cómo articular esta colaboración en vuestro centro:
 - **Teléfono / WhatsApp profesional**: 654 86 52 53
 - **Email**: maria.a.cabo@gmail.com
-- **Web profesional para clínicas**: [mariacabo.com/profesionales](https://mariacabo.com/profesionales)
-- **Agendamiento directo**: [Reserva de llamada de 15 min en Google Calendar](https://mariacabo.com/profesionales#contacto-profesionales)
+- **Web y formulario para profesionales**: [mariacabo.com/profesionales](https://mariacabo.com/profesionales)
+

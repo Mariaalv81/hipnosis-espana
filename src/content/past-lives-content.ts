@@ -116,7 +116,7 @@ export const pastLivesEs: PastLivesData = {
   ],
   ctaPrimary: "SOLICITAR SESIÓN O CONSULTAR",
   ctaSecondary: "CÓMO FUNCIONA EL VIAJE",
-  ctaCalendar: "Reservar en calendario",
+  ctaCalendar: "Solicitar valoración 15 min",
 
   reasonsEyebrow: "LLAMADAS DEL ALMA",
   reasonsTitle: "¿QUÉ TE IMPULSA A EXPLORAR UNA VIDA PASADA?",
@@ -327,7 +327,7 @@ export const pastLivesVa: PastLivesData = {
   ],
   ctaPrimary: "SOL·LICITAR SESSIÓ O CONSULTAR",
   ctaSecondary: "COM FUNCIONA EL VIATGE",
-  ctaCalendar: "Reservar en calendari",
+  ctaCalendar: "Sol·licitar valoració 15 min",
 
   reasonsEyebrow: "CRIDES DE L'ÀNIMA",
   reasonsTitle: "QUÈ T'IMPULSA A EXPLORAR UNA VIDA PASSADA?",
@@ -538,7 +538,7 @@ export const pastLivesEn: PastLivesData = {
   ],
   ctaPrimary: "REQUEST A SESSION OR INQUIRE",
   ctaSecondary: "HOW THE JOURNEY WORKS",
-  ctaCalendar: "Book via calendar",
+  ctaCalendar: "Request 15-min call",
 
   reasonsEyebrow: "CALLS OF THE SOUL",
   reasonsTitle: "WHAT PROMPTS A PAST LIFE REGRESSION?",

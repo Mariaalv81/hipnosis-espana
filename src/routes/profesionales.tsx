@@ -18,8 +18,7 @@ import {
   Utensils,
   XCircle,
 } from "lucide-react";
-import { CalendarButton } from "@/components/calendar-button";
-import { siteSettings } from "@/content/site-settings";
+import { getWhatsAppUrl, siteSettings } from "@/content/site-settings";
 import { useI18n } from "@/lib/i18n";
 import { loadRecaptcha } from "@/lib/recaptcha";
 import { JsonLd, makeFaqSchema, makeSeo } from "@/lib/seo";
@@ -172,10 +171,15 @@ function ProfessionalsPage() {
               >
                 {p.ctaSecondary}
               </a>
-              <CalendarButton
-                className="rounded-full px-6 py-3.5 text-sm"
-                label="Llamada informativa (15 min)"
-              />
+              <a
+                href={getWhatsAppUrl("Hola María, soy profesional de la salud y me gustaría consultar una posible colaboración con mi centro...")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
+              >
+                <MessageSquare className="size-4 text-[#25D366]" />
+                <span>Contactar por WhatsApp</span>
+              </a>
             </div>
 
             {/* BADGES */}
@@ -594,24 +598,28 @@ function ProfessionalsPage() {
               </form>
             </div>
 
-            {/* CAJA LATERAL: LLAMADA O CAFÉ DE 15 MIN */}
+            {/* CAJA LATERAL: CONTACTO DIRECTO */}
             <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
               <span className="eyebrow">CONTACTO DIRECTO</span>
               <h3 className="mt-2 font-serif text-2xl font-normal">
                 Hablemos de cómo sumar fuerzas
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Si antes de coordinar casos prefieres tener una breve llamada de 15 minutos o tomar
-                un café para conocernos, resolver cualquier cuestión técnica sobre la hipnosis o
-                valorar la posibilidad de colaborar con vuestros pacientes y clientes directamente en vuestro centro
-                por motivos de movilidad y accesibilidad, puedes reservar un hueco directamente.
+                Si antes de coordinar casos prefieres comentar cualquier duda sobre cómo articular la
+                colaboración en vuestro centro, resolver cuestiones técnicas sobre la hipnosis o valorar la
+                atención in situ para vuestros pacientes, escríbeme directamente por WhatsApp o a través del formulario.
               </p>
 
               <div className="mt-8 space-y-4">
-                <CalendarButton
-                  className="w-full justify-center"
-                  label="Reservar llamada de 15 min"
-                />
+                <a
+                  href={getWhatsAppUrl("Hola María, me gustaría comentar una posible colaboración profesional con mi centro...")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+                >
+                  <MessageSquare className="size-4" />
+                  <span>Escribir por WhatsApp</span>
+                </a>
 
                 <a
                   href={`mailto:${siteSettings.contactEmail}?subject=Colaboración%20profesional%20con%20María%20A.%20Cabo`}

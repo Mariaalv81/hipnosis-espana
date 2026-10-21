@@ -503,8 +503,8 @@ export function AnsiedadPage() {
               <h3 className="text-2xl font-serif">Atención cercana y personalizada</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Si prefieres consultar directamente sin rellenar el formulario o tienes dudas sobre
-                si la hipnosis es adecuada para tu caso particular, puedes escribirme o agendar tu
-                sesión en el calendario.
+                si la hipnosis es adecuada para tu caso particular, puedes escribirme o solicitar una
+                llamada previa de 15 minutos sin compromiso.
               </p>
 
               <div className="mt-8 grid gap-3">

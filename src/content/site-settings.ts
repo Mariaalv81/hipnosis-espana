@@ -2,10 +2,9 @@
 export const OBFUSCATED_WHATSAPP_PHONE = "MzQ2NTQ4NjUyNTM=";
 
 export const siteSettings = {
-  calendarScheduleUrl:
-    "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QapkMqcpGMND3W8pdGkUjG-QYMfHYue-CgTFVCy50llHRrsr4TZ8i0M_ZzfMRZTqoy1QvtLQJ?gv=true",
+  calendarScheduleUrl: "",
   contactEmail: "maria.a.cabo@gmail.com",
-  centerAddress: "Sueca (Centro Sanar) · A domicilio en Valencia ciudad · Sesiones online",
+  centerAddress: "Sueca (Centro Sanar) · Sesiones presenciales y online",
   smokingProgramEmail: "maria.a.cabo@gmail.com",
   smokingProgramEmailBody:
     "Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nModalidad (Sueca / A domicilio en Valencia / Online): \nMejor horario para la entrevista de 20 minutos: ",

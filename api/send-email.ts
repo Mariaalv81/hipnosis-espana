@@ -571,7 +571,10 @@ async function appendToSheet({
       lead.modality,
       lead.specificDetail || "", // Motivo / Síntomas: blank if unknown
       lead.message,
-      "Contactar por WhatsApp / Email",
+      (lead.source && (lead.source.toLowerCase().includes("15 min") || lead.source.toLowerCase().includes("valoraci"))) ||
+      (lead.message && (lead.message.toLowerCase().includes("15 minuto") || lead.message.toLowerCase().includes("valoración previa")))
+        ? "Llamada de 15 min / Contactar por WhatsApp"
+        : "Contactar por WhatsApp / Email",
       "",
     ];
     endCol = "L";
