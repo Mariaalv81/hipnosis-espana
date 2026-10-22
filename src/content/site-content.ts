@@ -2,6 +2,7 @@ import type { Lang } from "@/lib/i18n";
 import { servicesEs, servicesVa, servicesEn } from "./services-content";
 import { professionalsEs, professionalsVa, professionalsEn } from "./professionals-content";
 import { pastLivesEs, pastLivesVa, pastLivesEn } from "./past-lives-content";
+import { qrContentEs, qrContentVa, qrContentEn } from "./qr-content";
 
 const es = {
   brand: "María A. Cabo",
@@ -1232,6 +1233,7 @@ const es = {
   },
   professionalsPage: professionalsEs,
   pastLivesPage: pastLivesEs,
+  qrPage: qrContentEs,
   ...servicesEs,
 };
 
@@ -2460,6 +2462,7 @@ const va: Dict = {
   },
   professionalsPage: professionalsVa,
   pastLivesPage: pastLivesVa,
+  qrPage: qrContentVa,
   ...servicesVa,
 };
 
@@ -3688,6 +3691,7 @@ const en: Dict = {
   },
   professionalsPage: professionalsEn,
   pastLivesPage: pastLivesEn,
+  qrPage: qrContentEn,
   ...servicesEn,
 };
 

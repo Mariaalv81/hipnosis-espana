@@ -31,6 +31,7 @@ import { Route as LegalRouteImport } from './routes/legal'
 import { Route as MiedosYFobiasRouteImport } from './routes/miedos-y-fobias'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as ProfesionalesRouteImport } from './routes/profesionales'
+import { Route as QrRouteImport } from './routes/qr'
 import { Route as ReservarRouteImport } from './routes/reservar'
 import { Route as SesionesRouteImport } from './routes/sesiones'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
@@ -150,6 +151,11 @@ const ProfesionalesRoute = ProfesionalesRouteImport.update({
   path: '/profesionales',
   getParentRoute: () => rootRouteImport,
 } as any)
+const QrRoute = QrRouteImport.update({
+  id: '/qr',
+  path: '/qr',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReservarRoute = ReservarRouteImport.update({
   id: '/reservar',
   path: '/reservar',
@@ -214,6 +220,7 @@ export interface FileRoutesByFullPath {
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/profesionales': typeof ProfesionalesRoute
+  '/qr': typeof QrRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -244,6 +251,7 @@ export interface FileRoutesByTo {
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/profesionales': typeof ProfesionalesRoute
+  '/qr': typeof QrRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -277,6 +285,7 @@ export interface FileRoutesById {
   '/miedos-y-fobias': typeof MiedosYFobiasRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/profesionales': typeof ProfesionalesRoute
+  '/qr': typeof QrRoute
   '/reservar': typeof ReservarRoute
   '/sesiones': typeof SesionesRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -311,6 +320,7 @@ export interface FileRouteTypes {
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/profesionales'
+    | '/qr'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -341,6 +351,7 @@ export interface FileRouteTypes {
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/profesionales'
+    | '/qr'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -373,6 +384,7 @@ export interface FileRouteTypes {
     | '/miedos-y-fobias'
     | '/politica-de-cookies'
     | '/profesionales'
+    | '/qr'
     | '/reservar'
     | '/sesiones'
     | '/sobre-mi'
@@ -406,6 +418,7 @@ export interface RootRouteChildren {
   MiedosYFobiasRoute: typeof MiedosYFobiasRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   ProfesionalesRoute: typeof ProfesionalesRoute
+  QrRoute: typeof QrRoute
   ReservarRoute: typeof ReservarRoute
   SesionesRoute: typeof SesionesRoute
   SobreMiRoute: typeof SobreMiRoute
@@ -568,6 +581,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProfesionalesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/qr': {
+      id: '/qr'
+      path: '/qr'
+      fullPath: '/qr'
+      preLoaderRoute: typeof QrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/reservar': {
       id: '/reservar'
       path: '/reservar'
@@ -676,6 +696,7 @@ const rootRouteChildren: RootRouteChildren = {
   MiedosYFobiasRoute: MiedosYFobiasRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   ProfesionalesRoute: ProfesionalesRoute,
+  QrRoute: QrRoute,
   ReservarRoute: ReservarRoute,
   SesionesRoute: SesionesRoute,
   SobreMiRoute: SobreMiRoute,

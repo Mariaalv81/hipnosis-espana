@@ -15,6 +15,16 @@
       "source": "/hipnosis-vidas-pasadas",
       "destination": "/vidas-pasadas",
       "permanent": true
+    },
+    {
+      "source": "/QR",
+      "destination": "/qr",
+      "permanent": false
+    },
+    {
+      "source": "/Qr",
+      "destination": "/qr",
+      "permanent": false
     }
   ],
   "headers": [
