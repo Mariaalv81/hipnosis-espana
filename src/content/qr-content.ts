@@ -118,7 +118,7 @@ export const qrContentEs: QrPageData = {
   servicesEyebrow: "¿QUÉ DESEAS CAMBIAR?",
   servicesTitle: "ÁREAS DE ACOMPAÑAMIENTO CON HIPNOSIS",
   servicesSubtitle:
-    "La hipnosis clínica y ericksoniana actúa directamente sobre los hábitos, automatismos y respuestas reflejas del sistema nervioso:",
+    "La hipnosis clínica ericksoniana actúa directamente sobre los hábitos, automatismos y respuestas reflejas del sistema nervioso:",
   services: [
     {
       title: "Dejar de Fumar",
@@ -136,7 +136,7 @@ export const qrContentEs: QrPageData = {
     },
     {
       title: "Ansiedad y Estrés Cotidiano",
-      badge: "Sesiones Individuales (1 h · 70 €)",
+      badge: "Sesiones Individuales",
       description:
         "Enseña a tu cuerpo y a tu mente a desactivar la respuesta física de alarma y el miedo anticipatorio.",
       points: [
@@ -150,7 +150,7 @@ export const qrContentEs: QrPageData = {
     },
     {
       title: "Insomnio y Descanso Profundo",
-      badge: "Sesiones Individuales (1 h · 70 €)",
+      badge: "Sesiones Individuales",
       description:
         "Apaga la rumiación nocturna y recupera el sueño continuo, natural y reparador sin recurrir a fármacos.",
       points: [
@@ -164,7 +164,7 @@ export const qrContentEs: QrPageData = {
     },
     {
       title: "Hábitos, Autoestima y Rendimiento",
-      badge: "Procesos Personalizados (70 €/sesión)",
+      badge: "Procesos Personalizados",
       description:
         "Intervención focalizada sobre automatismos inconscientes que boicotean tu bienestar diario.",
       points: [
@@ -269,19 +269,19 @@ export const qrContentEs: QrPageData = {
   ],
   formSuccessTitle: "¡Mensaje recibido con éxito!",
   formSuccessText:
-    "Muchas gracias por escribir. He recibido tus datos y te responderé con total tranquilidad en menos de 24 horas laborables.",
+    "Muchas gracias por escribir. He recibido tus datos y te responderé en menos de 24 horas laborables.",
   formMailtoFallback:
-    "Si tienes problemas técnicos al enviar, puedes escribirme directamente por email a:",
+    "Si tienes problemas técnicos al enviar, puedes escribirme directamente por email a: maria.a.cabo@gmail.com",
 
   locationTitle: "DÓNDE ATENDERTE",
   locations: [
     {
       title: "Despacho en Sueca (Valencia)",
-      text: "Gabinete privado dentro del Centro Sanar (C/ Sequial). Espacio tranquilo, accesible y confidencial, muy bien comunicado desde Cullera, Alzira, Algemesí, Sollana y la comarca.",
+      text: "Gabinete privado dentro del Centro Sanar (C/ Cullera 17). Espacio tranquilo, accesible y confidencial, muy bien comunicado desde Cullera, Alzira, Algemesí, Sollana y la comarca.",
     },
     {
       title: "A domicilio en Valencia ciudad",
-      text: "Para tu máxima comodidad e intimidad, realizo sesiones individuales en domicilios particulares de Valencia capital (consultar suplemento por desplazamiento según zona).",
+      text: "Para tu máxima comodidad e intimidad, realizo sesiones individuales en domicilios particulares de Valencia capital.",
     },
     {
       title: "Formato Online por Videollamada",
@@ -321,7 +321,7 @@ export const qrContentVa: QrPageData = {
   servicesEyebrow: "QUÈ VOLS CANVIAR?",
   servicesTitle: "ÀREES D'ACOMPANYAMENT AMB HIPNOSI",
   servicesSubtitle:
-    "La hipnosi clínica i ericksoniana actua directament sobre els hàbits, automatismes i respostes reflexes del sistema nerviós:",
+    "La hipnosi clínica ericksoniana actua directament sobre els hàbits, automatismes i respostes reflexes del sistema nerviós:",
   services: [
     {
       title: "Deixar de Fumar",
@@ -339,7 +339,7 @@ export const qrContentVa: QrPageData = {
     },
     {
       title: "Ansietat i Estrés Quotidià",
-      badge: "Sessions Individuals (1 h · 70 €)",
+      badge: "Sessions Individuals",
       description:
         "Ensenya al teu cos i a la teua ment a desactivar la resposta física d'alarma i la por anticipatòria.",
       points: [
@@ -353,7 +353,7 @@ export const qrContentVa: QrPageData = {
     },
     {
       title: "Insomni i Descans Profund",
-      badge: "Sessions Individuals (1 h · 70 €)",
+      badge: "Sessions Individuals",
       description:
         "Apaga la rumiació nocturna i recupera el son continu, natural i reparador sense recórrer a fàrmacs.",
       points: [
@@ -367,7 +367,7 @@ export const qrContentVa: QrPageData = {
     },
     {
       title: "Hàbits, Autoestima i Rendiment",
-      badge: "Processos Personalitzats (70 €/sessió)",
+      badge: "Processos Personalitzats",
       description:
         "Intervenció focalitzada sobre automatismes inconscients que boicotegen el teu benestar diari.",
       points: [
@@ -472,19 +472,19 @@ export const qrContentVa: QrPageData = {
   ],
   formSuccessTitle: "¡Missatge rebut correctament!",
   formSuccessText:
-    "Moltes gràcies per escriure. He rebut les teues dades i et respondré amb tranquil·litat en menys de 24 hores laborables.",
+    "Moltes gràcies per escriure. He rebut les teues dades i et respondré en menys de 24 hores laborables.",
   formMailtoFallback:
-    "Si tens problemes tècnics en enviar, pots escriure'm directament per email a:",
+    "Si tens problemes tècnics en enviar, pots escriure'm directament per email a: maria.a.cabo@gmail.com",
 
   locationTitle: "ON ATENDRE'T",
   locations: [
     {
       title: "Despatx a Sueca (València)",
-      text: "Gabinete privat dins del Centre Sanar (C/ Sequial). Espai tranquil, accessible i confidencial, molt ben comunicat des de Cullera, Alzira, Algemesí, Sollana i la comarca.",
+      text: "Gabinete privat dins del Centre Sanar (C/ Cullera 17). Espai tranquil, accessible i confidencial, molt ben comunicat des de Cullera, Alzira, Algemesí, Sollana i la comarca.",
     },
     {
       title: "A domicili a València ciutat",
-      text: "Per a la teua màxima comoditat i intimitat, realitze sessions individuals en domicilis particulars de València ciutat (consultar suplement segons zona).",
+      text: "Per a la teua màxima comoditat i intimitat, realitze sessions individuals en domicilis particulars de València ciutat.",
     },
     {
       title: "Format Online per Videotrucada",
@@ -524,7 +524,7 @@ export const qrContentEn: QrPageData = {
   servicesEyebrow: "WHAT WOULD YOU LIKE TO CHANGE?",
   servicesTitle: "HYPNOSIS PRACTICE AREAS",
   servicesSubtitle:
-    "Clinical and Ericksonian hypnosis works directly on automatic habits, unconscious triggers and nervous system responses:",
+    "Clinical Ericksonian hypnosis works directly on automatic habits, unconscious triggers and nervous system responses:",
   services: [
     {
       title: "Quit Smoking",
@@ -542,7 +542,7 @@ export const qrContentEn: QrPageData = {
     },
     {
       title: "Anxiety & Everyday Stress",
-      badge: "Individual Sessions (1 h · 70 €)",
+      badge: "Individual Sessions",
       description:
         "Train your body and mind to deactivate physical alarm reactions, hyperarousal and anticipatory fear.",
       points: [
@@ -556,7 +556,7 @@ export const qrContentEn: QrPageData = {
     },
     {
       title: "Insomnia & Deep Rest",
-      badge: "Individual Sessions (1 h · 70 €)",
+      badge: "Individual Sessions",
       description:
         "Silence late-night overthinking and restore deep, continuous, restorative sleep without medication.",
       points: [
@@ -570,7 +570,7 @@ export const qrContentEn: QrPageData = {
     },
     {
       title: "Habits, Confidence & Performance",
-      badge: "Tailored Processes (70 €/session)",
+      badge: "Tailored Processes",
       description:
         "Targeted intervention on subconscious automatisms that compromise your daily well-being.",
       points: [
@@ -675,19 +675,19 @@ export const qrContentEn: QrPageData = {
   ],
   formSuccessTitle: "Inquiry received successfully!",
   formSuccessText:
-    "Thank you for reaching out. I have received your details and will get back to you with complete peace of mind within 24 business hours.",
+    "Thank you for reaching out. I have received your details and will get back to you within 24 business hours.",
   formMailtoFallback:
-    "If you encounter technical issues submitting, you can write directly via email to:",
+    "If you encounter technical issues submitting, you can write directly via email to: maria.a.cabo@gmail.com",
 
   locationTitle: "WHERE SESSIONS TAKE PLACE",
   locations: [
     {
       title: "Consulting Room in Sueca (Valencia)",
-      text: "Private, welcoming space inside Centro Sanar (C/ Sequial). Accessible, serene and confidential, easily reachable from Cullera, Alzira, Algemesí, Sollana and surrounding areas.",
+      text: "Private, welcoming space inside Centro Sanar (C/ Cullera 17). Accessible, serene and confidential, easily reachable from Cullera, Alzira, Algemesí, Sollana and surrounding areas.",
     },
     {
       title: "Home Visits in Valencia City",
-      text: "For maximum convenience and privacy, individual sessions are available at private residences within Valencia city (travel supplement applies depending on zone).",
+      text: "For maximum convenience and privacy, individual sessions are available at private residences within Valencia city.",
     },
     {
       title: "Online via Video Call",

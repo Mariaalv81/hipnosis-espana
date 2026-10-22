@@ -58,8 +58,9 @@ const es = {
     faqTitle: "Dudas frecuentes",
     faqLink: "Ver todas las preguntas",
     finalTitle: "¿Damos el primer paso?",
-    finalText: "Puedes reservar directamente o escribir antes si tienes alguna duda.",
-    finalSecondary: "Tengo una duda antes de reservar",
+    finalText:
+      "Solicita tu valoración previa gratuita de 15 minutos o escríbeme para comentar tu caso sin compromiso.",
+    finalSecondary: "Tengo una duda antes de comenzar",
     heroEyebrow: "HIPNOSIS Y DESARROLLO PERSONAL · VALENCIA Y SUECA",
     heroTitle1: "HIPNOSIS PARA CAMBIAR",
     heroTitle2: "LO QUE YA NO TE SIRVE.",
@@ -783,7 +784,7 @@ const es = {
       },
     ],
     closing:
-      "Si tienes dudas sobre si este acompañamiento encaja contigo, escríbeme antes de reservar.",
+      "Si tienes dudas sobre si este acompañamiento encaja contigo, escríbeme antes de solicitar tu sesión o pide tu valoración previa de 15 minutos.",
     cta: "Resolver una duda",
   },
   sessions: {
@@ -815,9 +816,9 @@ const es = {
         ],
       },
     ],
-    policyTitle: "Antes de reservar",
+    policyTitle: "Antes de solicitar tu sesión",
     policy: [
-      "Reserva pensada para personas adultas.",
+      "Acompañamiento pensado para personas adultas.",
       "Si tienes dudas sobre si es adecuado para ti, escríbeme antes o pide tu valoración previa de 15 minutos.",
       "Los cambios y cancelaciones se acuerdan con antelación razonable.",
       "Horarios en hora peninsular (Europe/Madrid).",
@@ -1109,7 +1110,7 @@ const es = {
   contact: {
     title: "Contacto",
     intro:
-      "Si tienes una duda antes de reservar o deseas solicitar la valoración previa gratuita de 15 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
+      "Si tienes una duda antes de solicitar tu sesión o deseas solicitar la valoración previa gratuita de 15 minutos (por teléfono o videollamada, sin compromiso), escríbeme y te responderé con calma.",
     calloutTitle: "Valoración previa de 15 minutos sin compromiso",
     calloutText:
       "Puedes usar este formulario para consultar tus dudas o solicitar una llamada previa de 15 minutos sin coste. Hablaremos con honestidad de tu caso antes de agendar ninguna sesión.",
@@ -1293,8 +1294,9 @@ const va: Dict = {
     faqTitle: "Dubtes freqüents",
     faqLink: "Veure totes les preguntes",
     finalTitle: "Fem el primer pas?",
-    finalText: "Pots reservar directament o escriure abans si tens algun dubte.",
-    finalSecondary: "Tinc un dubte abans de reservar",
+    finalText:
+      "Sol·licita la teua valoració prèvia gratuïta de 15 minuts o escriu-me per a comentar el teu cas sense compromís.",
+    finalSecondary: "Tinc un dubte abans de començar",
     heroEyebrow: "HIPNOSI I DESENVOLUPAMENT PERSONAL · VALÈNCIA I SUECA",
     heroTitle1: "HIPNOSI PER A CANVIAR",
     heroTitle2: "EL QUE JA NO ET SERVIX.",
@@ -2013,7 +2015,8 @@ const va: Dict = {
         cta: "Veure esport i motivació",
       },
     ],
-    closing: "Si dubtes de si este acompanyament encaixa amb tu, escriu-me abans de reservar.",
+    closing:
+      "Si dubtes de si este acompanyament encaixa amb tu, escriu-me abans de sol·licitar la teua sessió o demana la teua valoració prèvia de 15 minuts.",
     cta: "Resoldre un dubte",
   },
   sessions: {
@@ -2045,9 +2048,9 @@ const va: Dict = {
         ],
       },
     ],
-    policyTitle: "Abans de reservar",
+    policyTitle: "Abans de sol·licitar la teua sessió",
     policy: [
-      "Reserva pensada per a persones adultes.",
+      "Acompanyament pensat per a persones adultes.",
       "Si dubtes de si és adequat per a tu, escriu-me abans o demana la teua valoració prèvia de 15 minuts.",
       "Els canvis i cancel·lacions s'acorden amb antelació raonable.",
       "Horaris en hora peninsular (Europe/Madrid).",
@@ -2338,7 +2341,7 @@ const va: Dict = {
   contact: {
     title: "Contacte",
     intro:
-      "Si tens un dubte abans de reservar o vols sol·licitar la valoració prèvia gratuïta de 15 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
+      "Si tens un dubte abans de sol·licitar la teua sessió o vols sol·licitar la valoració prèvia gratuïta de 15 minuts (per telèfon o videotrucada, sense compromís), escriu-me i et respondré amb calma.",
     calloutTitle: "Valoració prèvia de 15 minuts sense compromís",
     calloutText:
       "Pots utilitzar este formulari per a consultar els teus dubtes o sol·licitar una telefonada prèvia de 15 minuts sense cost. Parlarem amb honestedat del teu cas abans d'agendar cap sessió.",
@@ -2520,8 +2523,9 @@ const en: Dict = {
     faqTitle: "Common questions",
     faqLink: "See all questions",
     finalTitle: "Shall we take the first step?",
-    finalText: "You can book directly, or write first if something is unclear.",
-    finalSecondary: "I have a question before booking",
+    finalText:
+      "Request your free 15-minute consultation or send me a message to discuss your situation with no obligation.",
+    finalSecondary: "I have a question before getting started",
     heroEyebrow: "HYPNOSIS & PERSONAL DEVELOPMENT · VALENCIA & SUECA",
     heroTitle1: "HYPNOSIS TO CHANGE",
     heroTitle2: "WHAT NO LONGER SERVES YOU.",
@@ -3240,7 +3244,7 @@ const en: Dict = {
       },
     ],
     closing:
-      "If you are unsure whether this support is a good fit for you, write to me before booking.",
+      "If you are unsure whether this support is a good fit for you, write to me before requesting your session or book a free 15-minute consultation.",
     cta: "Ask a question",
   },
   sessions: {
@@ -3272,9 +3276,9 @@ const en: Dict = {
         ],
       },
     ],
-    policyTitle: "Before booking",
+    policyTitle: "Before requesting your session",
     policy: [
-      "Bookings are for adults.",
+      "Support designed for adults.",
       "If you're unsure whether this is right for you, write to me first or request a free 15-minute consultation.",
       "Changes and cancellations are agreed with reasonable notice.",
       "Times shown in mainland Spain time (Europe/Madrid).",
@@ -3565,7 +3569,7 @@ const en: Dict = {
   contact: {
     title: "Contact",
     intro:
-      "If you have a question before booking or would like to request a free 15-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply calmly.",
+      "If you have a question before requesting a session or would like to request a free 15-minute preliminary consultation (by phone or video call, with no obligation), drop me a line and I will reply promptly.",
     calloutTitle: "Free 15-minute preliminary consultation",
     calloutText:
       "You can use this form to ask any questions or request a free 15-minute phone call. We will honestly explore your situation before scheduling any session.",
@@ -3641,7 +3645,7 @@ const en: Dict = {
     bookCalendar: "Request 15-min call",
     smokeEmail: "I want to quit smoking",
     smokeEmailNote: "Send an email and we'll arrange a 15-minute interview.",
-    askQuestionLink: "Questions before booking? Write to me directly →",
+    askQuestionLink: "Questions before scheduling? Write to me directly →",
   },
   cookies: {
     bannerAriaLabel: "Cookie notice",

@@ -175,14 +175,14 @@ function ContactPage() {
               Atención inmediata por WhatsApp
             </p>
             <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-              Si prefieres resolver una duda rápida antes de reservar o consultar disponibilidad:
+              Si prefieres resolver una duda rápida antes de solicitar una sesión o consultar disponibilidad:
             </p>
             <button
               type="button"
               onClick={() => {
                 trackWhatsAppClick("contacto_aside");
                 const url = getWhatsAppUrl(
-                  "Hola María, me gustaría hacer una consulta previa antes de reservar una sesión."
+                  "Hola María, me gustaría hacer una consulta previa antes de solicitar una sesión."
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

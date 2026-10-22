@@ -263,7 +263,7 @@ export const servicesEs: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "LIBÉRATE DEL HÁBITO Y RECUPERA TUS MANOS",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o pedir cita. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp sin ningún compromiso.",
+      "Rellena este formulario para consultar tu caso o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -408,7 +408,7 @@ export const servicesEs: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA TU RENDIMIENTO Y FORTALEZA MENTAL",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso deportivo o concertar una cita. Si lo prefieres, podemos comentar tu objetivo en una valoración previa de 15 minutos sin ningún compromiso.",
+      "Rellena este formulario para consultar tu caso deportivo o solicitar tu sesión. Si lo prefieres, podemos comentar tu objetivo en una valoración previa de 15 minutos sin ningún compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -552,7 +552,7 @@ export const servicesEs: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA TU TRANQUILIDAD Y LIBERTAD",
     formSubtitle:
-      "Rellena este formulario para consultar tu caso o solicitar cita. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp para conocer tu situación sin compromiso.",
+      "Rellena este formulario para consultar tu caso o solicitar tu sesión. Si lo prefieres, podemos tener una valoración previa de 15 minutos por teléfono o WhatsApp para conocer tu situación sin compromiso.",
     formFields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -1082,7 +1082,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "ALLIBERA'T DE L'HÀBIT I RECUPERA LES TEUES MANS",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este formulari per a consultar el teu cas o sol·licitar la teua sessió. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   sportsPage: {
@@ -1106,7 +1106,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "IMPULSA EL TEU RENDIMENT I FORTALESA MENTAL",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu repte esportiu o concertar una cita. Si ho preferixes, podem valorar el teu cas en una crida prèvia de 15 minuts sense compromís.",
+      "Emplena este formulari per a consultar el teu repte esportiu o sol·licitar la teua sessió. Si ho preferixes, podem valorar el teu cas en una crida prèvia de 15 minuts sense compromís.",
   },
 
   fearsPage: {
@@ -1130,7 +1130,7 @@ export const servicesVa: ServicesDictionary = {
     formEyebrow: "CONSULTA O RESERVA",
     formTitle: "RECUPERA LA TEUA TRANQUIL·LITAT I LLIBERTAT",
     formSubtitle:
-      "Emplena este formulari per a consultar el teu cas o demanar cita. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
+      "Emplena este formulari per a consultar el teu cas o sol·licitar la teua sessió. Si ho preferixes, podem tindre una valoració prèvia de 15 minuts per telèfon o WhatsApp sense cap compromís.",
   },
 
   confidencePage: {

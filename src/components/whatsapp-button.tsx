@@ -7,15 +7,15 @@ import { ValuationModal } from "@/components/valuation-modal";
 const floatingTexts = {
   es: {
     tooltip: "¿Dudas? Escríbeme por WhatsApp",
-    mobileCta: "15 min gratis · Pedir cita",
+    mobileCta: "15 min gratis · Valoración",
   },
   va: {
     tooltip: "Dubtes? Escriu-me per WhatsApp",
-    mobileCta: "15 min gratis · Demanar cita",
+    mobileCta: "15 min gratis · Valoració",
   },
   en: {
     tooltip: "Questions? Chat on WhatsApp",
-    mobileCta: "Free 15 min · Book call",
+    mobileCta: "Free 15 min · Consultation",
   },
 };
 
