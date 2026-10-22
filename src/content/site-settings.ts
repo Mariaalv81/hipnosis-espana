@@ -1,5 +1,5 @@
 // Anti-spam protection: phone number encoded in base64 to protect from automated crawlers and harvesters
-export const OBFUSCATED_WHATSAPP_PHONE = "MzQ2NTQ4NjUyNTM=";
+export const OBFUSCATED_WHATSAPP_PHONE = "MzQ3MTEyNzI4NTM=";
 
 export const siteSettings = {
   calendarScheduleUrl: "",
