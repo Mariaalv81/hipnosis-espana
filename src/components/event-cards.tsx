@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Apple, BookOpen, Brain, CigaretteOff, Clock, MapPin } from "lucide-react";
+import { Apple, BookOpen, Brain, CigaretteOff, Clock, MapPin, Sparkles, Sun } from "lucide-react";
 
 import { useI18n } from "@/lib/i18n";
+import { getWhatsAppUrl } from "@/content/site-settings";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 type EventCardsProps = {
   limit?: number;
@@ -44,7 +46,7 @@ export function EventCards({
   showHeadings = status === "all",
 }: EventCardsProps) {
   const { t } = useI18n();
-  const icons = [CigaretteOff, Brain, BookOpen, Apple];
+  const icons = [CigaretteOff, Brain, BookOpen, Apple, Sparkles, Sun];
   const { upcoming, past } = splitEvents(t.events.items);
   const eventsByStatus =
     status === "upcoming" ? upcoming : status === "past" ? past : [...upcoming, ...past];
@@ -69,15 +71,32 @@ export function EventCards({
     );
   }
 
-  const renderBadge = (eventStatus: EventStatus) =>
-    eventStatus === "past" ? t.events.pastBadge : t.events.badge;
+  const renderBadge = (event: EventItem, eventStatus: EventStatus) =>
+    eventStatus === "past" ? t.events.pastBadge : (event.badge ?? t.events.badge);
 
-  const renderCta = (eventStatus: EventStatus, className: string) =>
-    eventStatus === "upcoming" ? (
+  const renderCta = (event: EventItem, eventStatus: EventStatus, className: string) => {
+    if (eventStatus !== "upcoming") return null;
+
+    if (event.whatsappMessage) {
+      return (
+        <a
+          href={getWhatsAppUrl(event.whatsappMessage)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick(`event_${event.dateISO}`)}
+          className={className}
+        >
+          {event.ctaText ?? t.events.cta}
+        </a>
+      );
+    }
+
+    return (
       <Link to="/contacto" className={className}>
-        {t.events.cta}
+        {event.ctaText ?? t.events.cta}
       </Link>
-    ) : null;
+    );
+  };
 
   const getStatus = (event: EventItem): EventStatus =>
     eventTime(event) < todayStart() ? "past" : "upcoming";
@@ -93,7 +112,7 @@ export function EventCards({
             className="flex min-h-full flex-col rounded-3xl border border-border/60 bg-card p-6"
           >
             <div>
-              <p className="eyebrow">{renderBadge(eventStatus)}</p>
+              <p className="eyebrow">{renderBadge(event, eventStatus)}</p>
               <div className="mt-4 flex flex-wrap items-end gap-x-3 gap-y-2">
                 <p className="font-serif text-4xl leading-none text-primary">{event.date}</p>
                 <p className="mb-1 flex items-center gap-1.5 text-sm text-muted-foreground">
@@ -107,10 +126,11 @@ export function EventCards({
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{event.text}</p>
             <p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="size-4 shrink-0 text-primary" />
-              {t.events.place}
+              {event.place ?? t.events.place}
             </p>
 
             {renderCta(
+              event,
               eventStatus,
               "mt-6 inline-flex w-fit rounded-full bg-primary px-5 py-2.5 text-sm text-primary-foreground transition-opacity hover:opacity-90",
             )}
@@ -132,7 +152,7 @@ export function EventCards({
             className="grid gap-6 rounded-3xl border border-border/60 bg-card p-8 transition-shadow hover:shadow-[var(--shadow-soft)] sm:grid-cols-[8rem_1fr]"
           >
             <div className="flex h-full flex-col justify-between rounded-2xl bg-secondary/60 p-5">
-              <p className="eyebrow">{renderBadge(eventStatus)}</p>
+              <p className="eyebrow">{renderBadge(event, eventStatus)}</p>
               <div className="mt-8">
                 <p className="font-serif text-4xl leading-none text-primary">{event.date}</p>
                 <p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
@@ -153,10 +173,11 @@ export function EventCards({
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{event.text}</p>
               <p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="size-4 shrink-0 text-primary" />
-                {t.events.place}
+                {event.place ?? t.events.place}
               </p>
 
               {renderCta(
+                event,
                 eventStatus,
                 "mt-7 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90",
               )}

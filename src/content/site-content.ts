@@ -946,7 +946,38 @@ const es = {
         title: "Hábitos y control del peso",
         text: "Un espacio para hablar de motivación, repetición y relación con las rutinas cotidianas desde un enfoque no clínico.",
       },
-    ],
+      {
+        dateISO: "2026-10-24",
+        date: "24 oct",
+        time: "10:00–11:30",
+        title: "Calma práctica · Taller experiencial",
+        badge: "Taller en grupo · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "¿Y si aprendieras a vivir en calma? Ven a experimentarlo. Un taller experiencial en grupo para explorar, jugar y sorprenderte con recursos prácticos de serenidad. Plazas limitadas.",
+      },
+      {
+        dateISO: "2026-11-22",
+        date: "22 nov",
+        time: "10:00–11:30",
+        title: "Calma práctica · Taller práctico",
+        badge: "Taller en grupo · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "¿Y si aprendieras a vivir en calma? Ven a experimentarlo. Un taller práctico en grupo para explorar, comprender y experimentar herramientas para gestionar el estrés y cultivar calma. Plazas limitadas.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría reservar mi plaza para el taller Calma Práctica del domingo 22 de noviembre en Cullera (Sat Nam Yoga).",
+      },
+    ] as Array<{
+      dateISO: string;
+      date: string;
+      time: string;
+      title: string;
+      text: string;
+      badge?: string;
+      place?: string;
+      ctaText?: string;
+      whatsappMessage?: string;
+    }>,
     empty: "Ahora mismo no hay fechas abiertas.",
     emptyText:
       "Estoy preparando el calendario de talleres. Si quieres que te avise cuando se publiquen, escríbeme y te lo cuento.",
@@ -2178,6 +2209,27 @@ const va: Dict = {
         title: "Hàbits i control del pes",
         text: "Un espai per a parlar de motivació, repetició i relació amb les rutines quotidianes des d'un enfocament no clínic.",
       },
+      {
+        dateISO: "2026-10-24",
+        date: "24 oct",
+        time: "10:00–11:30",
+        title: "Calma pràctica · Taller experiencial",
+        badge: "Taller en grup · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "I si aprengueres a viure en calma? Vine a experimentar-ho. Un taller experiencial en grup per a explorar, jugar i sorprendre't amb recursos pràctics de serenitat. Places limitades.",
+      },
+      {
+        dateISO: "2026-11-22",
+        date: "22 nov",
+        time: "10:00–11:30",
+        title: "Calma pràctica · Taller pràctic",
+        badge: "Taller en grup · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "I si aprengueres a viure en calma? Vine a experimentar-ho. Un taller pràctic en grup per a explorar, comprendre i experimentar ferramentes per a gestionar l'estrés i cultivar la calma. Places limitades.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria reservar la meua plaça per al taller Calma Pràctica del diumenge 22 de novembre a Cullera (Sat Nam Yoga).",
+      },
     ],
     empty: "Ara mateix no hi ha dates obertes.",
     emptyText:
@@ -3404,6 +3456,27 @@ const en: Dict = {
         time: "18:00",
         title: "Habits and weight management",
         text: "A space to talk about motivation, repetition and everyday routines from a non-clinical perspective.",
+      },
+      {
+        dateISO: "2026-10-24",
+        date: "24 Oct",
+        time: "10:00–11:30",
+        title: "Practical Calm · Experiential workshop",
+        badge: "Group workshop · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "What if you learned to live in calm? Come and experience it. An experiential group workshop to explore, play and discover practical resources for serenity. Limited spots.",
+      },
+      {
+        dateISO: "2026-11-22",
+        date: "22 Nov",
+        time: "10:00–11:30",
+        title: "Practical Calm · Practical workshop",
+        badge: "Group workshop · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "What if you learned to live in calm? Come and experience it. A hands-on group workshop to explore, understand and experience tools to manage stress and cultivate calm. Limited spots.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to reserve a spot for the Practical Calm workshop on Sunday, November 22nd in Cullera (Sat Nam Yoga).",
       },
     ],
     empty: "There are no open dates right now.",
