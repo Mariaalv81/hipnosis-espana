@@ -62,7 +62,7 @@ const es = {
       "Solicita tu valoración previa gratuita de 15 minutos o escríbeme para comentar tu caso sin compromiso.",
     finalSecondary: "Tengo una duda antes de comenzar",
     heroEyebrow: "HIPNOSIS Y DESARROLLO PERSONAL · VALENCIA Y SUECA",
-    heroTitle1: "HIPNOSIS PARA CAMBIAR",
+    heroTitle1: "CAMBIA",
     heroTitle2: "LO QUE YA NO TE SIRVE.",
     heroIntro:
       "Sesiones individuales de hipnosis y desarrollo personal orientadas al cambio de hábitos, la gestión del estrés y la ansiedad cotidiana, el insomnio y la seguridad personal. Despacho en Sueca (Centro Sanar), a domicilio en Valencia ciudad y formato online.",
@@ -1329,7 +1329,7 @@ const va: Dict = {
       "Sol·licita la teua valoració prèvia gratuïta de 15 minuts o escriu-me per a comentar el teu cas sense compromís.",
     finalSecondary: "Tinc un dubte abans de començar",
     heroEyebrow: "HIPNOSI I DESENVOLUPAMENT PERSONAL · VALÈNCIA I SUECA",
-    heroTitle1: "HIPNOSI PER A CANVIAR",
+    heroTitle1: "CANVIA",
     heroTitle2: "EL QUE JA NO ET SERVIX.",
     heroIntro:
       "Sessions individuals d'hipnosi i desenvolupament personal orientades al canvi d'hàbits, la gestió de l'estrès i l'ansietat quotidiana, l'insomni i la seguretat personal. Despatx a Sueca (Centre Sanar), a domicili a València ciutat i en línia.",
@@ -2579,7 +2579,7 @@ const en: Dict = {
       "Request your free 15-minute consultation or send me a message to discuss your situation with no obligation.",
     finalSecondary: "I have a question before getting started",
     heroEyebrow: "HYPNOSIS & PERSONAL DEVELOPMENT · VALENCIA & SUECA",
-    heroTitle1: "HYPNOSIS TO CHANGE",
+    heroTitle1: "CHANGE",
     heroTitle2: "WHAT NO LONGER SERVES YOU.",
     heroIntro:
       "Individual sessions of hypnosis and personal development focused on habit change, managing everyday stress and anxiety, insomnia and personal confidence. In-person room in Sueca (Centro Sanar), home visits in Valencia city, and online.",
