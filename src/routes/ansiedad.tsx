@@ -22,9 +22,10 @@ import { JsonLd, makeFaqSchema, makeSeo, makeServiceSchema } from "@/lib/seo";
 export const Route = createFileRoute("/ansiedad")({
   head: () =>
     makeSeo({
-      title: "Gestión de la Ansiedad Cotidiana y Miedos en Valencia y Sueca · Hipnosis | María A. Cabo",
+      title:
+        "Gestión de la Ansiedad Cotidiana y Miedos en Valencia y Sueca · Terapia | María A. Cabo",
       description:
-        "Aprende a gestionar la ansiedad cotidiana, calmar la tensión y trabajar miedos con hipnosis clínica y desarrollo personal en Sueca, Valencia y online. 70 €/sesión.",
+        "Aprende a gestionar la ansiedad cotidiana, calmar la tensión y trabajar miedos con terapia focalizada y desarrollo personal en Sueca, Valencia y online. 70 €/sesión.",
       path: "/ansiedad",
     }),
   component: AnsiedadPage,
@@ -38,9 +39,9 @@ export function AnsiedadPage() {
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const serviceSchema = makeServiceSchema({
-    name: "Hipnosis y desarrollo personal para la gestión de la ansiedad cotidiana y miedos",
+    name: "Terapia y desarrollo personal para la gestión de la ansiedad cotidiana y miedos",
     description:
-      "Acompañamiento estructurado con hipnosis y desarrollo personal para gestionar la ansiedad cotidiana, trabajar respuestas de miedo aprendidas y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
+      "Acompañamiento estructurado de terapia y desarrollo personal para gestionar la ansiedad cotidiana, desactivar respuestas de alarma aprendidas y enseñar al cuerpo a recuperar la serenidad. Sesiones individuales en Sueca (Centro Sanar), a domicilio en casas de particulares en Valencia ciudad y formato online.",
     price: "70 €",
     path: "/ansiedad",
     areaServed: [
@@ -75,7 +76,7 @@ export function AnsiedadPage() {
     };
 
     const fullMessage = [
-      "Consulta / Solicitud sobre Hipnosis para Ansiedad, Miedos o Fobias:",
+      "Consulta / Solicitud sobre Acompañamiento para Ansiedad, Miedos o Fobias:",
       "",
       `Nombre: ${data.name}`,
       `Email: ${data.email}`,
@@ -123,7 +124,7 @@ export function AnsiedadPage() {
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`Consulta hipnosis ansiedad · ${data.name}`);
+      const subject = encodeURIComponent(`Consulta terapia ansiedad · ${data.name}`);
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
     } finally {
@@ -221,7 +222,7 @@ export function AnsiedadPage() {
         </div>
       </section>
 
-      {/* POR QUÉ LA HIPNOSIS: CIENCIA Y ENFOQUE NATURAL */}
+      {/* CIENCIA, REGULACIÓN DEL SISTEMA NERVIOSO Y ENFOQUE NATURAL */}
       <section className="border-y border-border/60 bg-muted/30 py-16 md:py-24">
         <div className="container-page">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
@@ -503,8 +504,8 @@ export function AnsiedadPage() {
               <h3 className="text-2xl font-serif">Atención cercana y personalizada</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Si prefieres consultar directamente sin rellenar el formulario o tienes dudas sobre
-                si la hipnosis es adecuada para tu caso particular, puedes escribirme o solicitar una
-                llamada previa de 15 minutos sin compromiso.
+                si este acompañamiento terapéutico es adecuado para tu caso particular, puedes
+                escribirme o solicitar una llamada previa de 15 minutos sin compromiso.
               </p>
 
               <div className="mt-8 grid gap-3">
@@ -512,7 +513,9 @@ export function AnsiedadPage() {
                   type="button"
                   onClick={() => {
                     trackWhatsAppClick("ansiedad_aside");
-                    const url = getWhatsAppUrl("Hola María, te escribo por una consulta sobre hipnosis para la ansiedad y fobias...");
+                    const url = getWhatsAppUrl(
+                      "Hola María, te escribo por una consulta sobre terapia para la ansiedad...",
+                    );
                     if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                   }}
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-95"
@@ -523,7 +526,7 @@ export function AnsiedadPage() {
                 <CalendarButton className="w-full justify-center" source="ansiedad_aside" />
 
                 <a
-                  href={`mailto:${siteSettings.contactEmail}?subject=Consulta%20sobre%20hipnosis%20y%20ansiedad`}
+                  href={`mailto:${siteSettings.contactEmail}?subject=Consulta%20sobre%20terapia%20y%20ansiedad`}
                   className="inline-flex items-center justify-center rounded-full border border-border bg-background px-6 py-2.5 text-xs text-muted-foreground transition-colors hover:bg-muted"
                 >
                   Escribir a {siteSettings.contactEmail}
@@ -565,7 +568,10 @@ export function AnsiedadPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> Las sesiones de hipnosis y desarrollo personal están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención médica o psiquiátrica ante patologías severas, ni se realizan diagnósticos clínicos de trastornos mentales graves.
+            <strong>Aviso de transparencia:</strong> Las sesiones de terapia y desarrollo personal
+            están orientadas al cambio personal y el bienestar emocional. No sustituyen la atención
+            médica o psiquiátrica ante patologías severas, ni se realizan diagnósticos clínicos de
+            trastornos mentales graves.
           </p>
         </div>
       </section>

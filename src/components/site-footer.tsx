@@ -70,9 +70,7 @@ export function SiteFooter() {
               <Instagram className="h-4 w-4 text-pink-600 dark:text-pink-400" />
               <span className="font-medium">{siteSettings.instagramHandle}</span>
             </a>
-            <p className="mt-1.5 text-[0.72rem] text-muted-foreground">
-              {t.footer.socialSubtitle}
-            </p>
+            <p className="mt-1.5 text-[0.72rem] text-muted-foreground">{t.footer.socialSubtitle}</p>
           </div>
         </div>
 

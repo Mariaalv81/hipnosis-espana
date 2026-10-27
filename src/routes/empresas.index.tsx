@@ -27,12 +27,8 @@ function EmpresasPage() {
         <div className="container-page grid items-center gap-8 py-12 md:py-20 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
             <h1 className="text-3xl md:text-4xl font-serif">{c.heroTitle}</h1>
-            <p className="mt-4 text-base text-muted-foreground md:text-lg">
-              {c.heroLead}
-            </p>
-            <p className="mt-6 text-sm text-muted-foreground leading-relaxed">
-              {c.heroText}
-            </p>
+            <p className="mt-4 text-base text-muted-foreground md:text-lg">{c.heroLead}</p>
+            <p className="mt-6 text-sm text-muted-foreground leading-relaxed">{c.heroText}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 to="/empresas/contacto"
@@ -72,9 +68,7 @@ function EmpresasPage() {
       {/* Lead intro */}
       <section className="container-page py-12 md:py-16">
         <h2 className="text-2xl md:text-3xl font-serif">{c.leadTitle}</h2>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground max-w-3xl">
-          {c.leadText}
-        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground max-w-3xl">{c.leadText}</p>
       </section>
 
       {/* Áreas de trabajo */}
@@ -83,11 +77,12 @@ function EmpresasPage() {
           <h3 className="eyebrow">{c.areasEyebrow}</h3>
           <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {c.areas.map((area) => (
-              <article key={area.title} className="rounded-2xl border border-border/60 bg-card p-6 shadow-xs">
+              <article
+                key={area.title}
+                className="rounded-2xl border border-border/60 bg-card p-6 shadow-xs"
+              >
                 <h4 className="text-base font-semibold">{area.title}</h4>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {area.text}
-                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{area.text}</p>
               </article>
             ))}
           </div>
@@ -99,11 +94,12 @@ function EmpresasPage() {
         <h2 className="text-3xl md:text-4xl font-serif">{c.formatsTitle}</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {c.formats.map((fmt) => (
-            <div key={fmt.title} className="rounded-2xl border border-border/60 bg-card p-6 shadow-xs">
+            <div
+              key={fmt.title}
+              className="rounded-2xl border border-border/60 bg-card p-6 shadow-xs"
+            >
               <h4 className="text-lg font-semibold">{fmt.title}</h4>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {fmt.text}
-              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{fmt.text}</p>
             </div>
           ))}
         </div>
@@ -111,9 +107,7 @@ function EmpresasPage() {
 
       {/* Confidencialidad y consentimiento */}
       <section className="container-page py-12 md:py-16">
-        <h2 className="text-3xl md:text-4xl font-serif">
-          {c.confidentialityTitle}
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-serif">{c.confidentialityTitle}</h2>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2 items-start">
           {/* Cuadro principal: caja de confidencialidad */}
@@ -147,9 +141,7 @@ function EmpresasPage() {
                   {String(index + 1).padStart(2, "0")}
                 </div>
                 <h4 className="mt-2 text-sm font-semibold">{step.title}</h4>
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                  {step.text}
-                </p>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{step.text}</p>
               </article>
             ))}
           </div>
@@ -160,9 +152,7 @@ function EmpresasPage() {
       <section className="container-page py-12 md:py-20">
         <div className="rounded-3xl bg-primary px-8 py-14 text-center text-primary-foreground shadow-sm">
           <h2 className="text-3xl md:text-4xl font-serif">{c.finalTitle}</h2>
-          <p className="mt-4 text-sm opacity-90 max-w-xl mx-auto leading-relaxed">
-            {c.finalText}
-          </p>
+          <p className="mt-4 text-sm opacity-90 max-w-xl mx-auto leading-relaxed">{c.finalText}</p>
           <div className="mt-6">
             <Link
               to="/empresas/contacto"
@@ -172,7 +162,10 @@ function EmpresasPage() {
             </Link>
           </div>
           <div className="mt-4 text-sm">
-            <Link to="/sobre-mi" className="text-primary-foreground/90 underline underline-offset-4 hover:text-primary-foreground">
+            <Link
+              to="/sobre-mi"
+              className="text-primary-foreground/90 underline underline-offset-4 hover:text-primary-foreground"
+            >
               {c.aboutLink}
             </Link>
           </div>

@@ -7,9 +7,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/sesiones")({
   head: () =>
     makeSeo({
-      title: "Sesiones de Hipnosis y Desarrollo Personal en Valencia y Sueca · María A. Cabo",
+      title: "Sesiones de Terapia y Desarrollo Personal en Valencia y Sueca · María A. Cabo",
       description:
-        "Sesiones individuales de hipnosis y desarrollo personal en Sueca, a domicilio en Valencia ciudad u online. Formada en el Instituto Erickson Madrid.",
+        "Sesiones individuales de terapia y desarrollo personal en Sueca, a domicilio en Valencia ciudad u online. Formada en el Instituto Erickson Madrid.",
       path: "/sesiones",
     }),
   component: SessionsPage,
@@ -69,10 +69,12 @@ function SessionsPage() {
             </ul>
             {index === 0 ? (
               <div className="mt-8 flex flex-col gap-3">
-                <CalendarButton className="w-fit" source="sesiones_individual" label={t.common.bookCalendar} />
-                <p className="text-[0.75rem] text-muted-foreground">
-                  {t.common.bookIntro}
-                </p>
+                <CalendarButton
+                  className="w-fit"
+                  source="sesiones_individual"
+                  label={t.common.bookCalendar}
+                />
+                <p className="text-[0.75rem] text-muted-foreground">{t.common.bookIntro}</p>
                 <div className="pt-1">
                   <Link
                     to="/contacto"

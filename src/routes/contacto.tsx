@@ -13,7 +13,7 @@ import { getWhatsAppUrl } from "@/content/site-settings";
 export const Route = createFileRoute("/contacto")({
   head: () =>
     makeSeo({
-      title: "Contacto · Hipnosis en Valencia y Sueca · María A. Cabo",
+      title: "Contacto · Terapia y Desarrollo Personal en Valencia y Sueca · María A. Cabo",
       description:
         "Contacta con María A. Cabo para sesiones presenciales en Sueca, a domicilio en casas de particulares en Valencia ciudad u online.",
       path: "/contacto",
@@ -175,14 +175,15 @@ function ContactPage() {
               Atención inmediata por WhatsApp
             </p>
             <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-              Si prefieres resolver una duda rápida antes de solicitar una sesión o consultar disponibilidad:
+              Si prefieres resolver una duda rápida antes de solicitar una sesión o consultar
+              disponibilidad:
             </p>
             <button
               type="button"
               onClick={() => {
                 trackWhatsAppClick("contacto_aside");
                 const url = getWhatsAppUrl(
-                  "Hola María, me gustaría hacer una consulta previa antes de solicitar una sesión."
+                  "Hola María, me gustaría hacer una consulta previa antes de solicitar una sesión.",
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

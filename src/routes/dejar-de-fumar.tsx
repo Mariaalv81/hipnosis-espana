@@ -16,9 +16,9 @@ import {
 export const Route = createFileRoute("/dejar-de-fumar")({
   head: () =>
     makeSeo({
-      title: "Dejar de fumar con hipnosis en Valencia y Sueca · María A. Cabo",
+      title: "Programa para Dejar de Fumar en Valencia y Sueca · María A. Cabo",
       description:
-        "Programa estructurado de tres sesiones de hipnosis para dejar de fumar en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 15 minutos sin compromiso.",
+        "Programa estructurado de tres sesiones con técnicas de hipnosis y reentrenamiento de hábitos en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 15 minutos sin compromiso.",
       path: "/dejar-de-fumar",
     }),
   component: DejarDeFumarPage,
@@ -32,9 +32,9 @@ function DejarDeFumarPage() {
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const serviceSchema = makeServiceSchema({
-    name: "Programa para dejar de fumar con hipnosis",
+    name: "Programa intensivo para dejar de fumar",
     description:
-      "Acompañamiento estructurado de tres sesiones de hipnosis y desarrollo personal para cambiar automatismos con el tabaco y afianzar la calma en Sueca y Valencia ciudad. Incluye entrevista previa gratuita de 15 minutos.",
+      "Acompañamiento estructurado de tres sesiones con técnicas de hipnosis clínica y desarrollo personal para cambiar automatismos con el tabaco y afianzar la calma en Sueca y Valencia ciudad. Incluye entrevista previa gratuita de 15 minutos.",
     price: "300 €",
     path: "/dejar-de-fumar",
     areaServed: [
@@ -462,7 +462,7 @@ function DejarDeFumarPage() {
             </form>
           </div>
 
-            <aside className="rounded-3xl border border-border bg-card p-8 md:p-10 lg:sticky lg:top-28">
+          <aside className="rounded-3xl border border-border bg-card p-8 md:p-10 lg:sticky lg:top-28">
             <h3 className="text-xl font-medium">¿Cómo es la entrevista de 15 minutos?</h3>
             <ul className="mt-6 grid gap-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
@@ -498,7 +498,7 @@ function DejarDeFumarPage() {
                 onClick={() => {
                   trackWhatsAppClick("dejar_fumar_aside");
                   const url = getWhatsAppUrl(
-                    "Hola María, te escribo para consultar sobre el programa de hipnosis para dejar de fumar..."
+                    "Hola María, te escribo para consultar sobre el programa para dejar de fumar...",
                   );
                   if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                 }}
@@ -519,8 +519,8 @@ function DejarDeFumarPage() {
                 <span>Vídeos y reflexiones en {siteSettings.instagramHandle}</span>
               </a>
               <p className="mt-4">
-                Despacho en Sueca (Valencia) dentro del Centro Sanar y a domicilio en Valencia ciudad. Para cualquier otra consulta,
-                también puedes usar el{" "}
+                Despacho en Sueca (Valencia) dentro del Centro Sanar y a domicilio en Valencia
+                ciudad. Para cualquier otra consulta, también puedes usar el{" "}
                 <Link to="/contacto" className="text-primary underline">
                   formulario de contacto general
                 </Link>
@@ -556,7 +556,9 @@ function DejarDeFumarPage() {
                 </div>
                 <footer className="mt-6 border-t border-border/60 pt-4 text-xs">
                   <p className="font-semibold text-foreground">{item.author}</p>
-                  <p className="text-muted-foreground">{item.detail} · {item.location}</p>
+                  <p className="text-muted-foreground">
+                    {item.detail} · {item.location}
+                  </p>
                 </footer>
               </article>
             ))}
@@ -564,9 +566,12 @@ function DejarDeFumarPage() {
 
           <div className="mt-10 rounded-2xl border border-border/80 bg-background/80 p-6 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
             <div>
-              <h4 className="font-medium text-foreground">¿Quieres valorar si este proceso es para ti?</h4>
+              <h4 className="font-medium text-foreground">
+                ¿Quieres valorar si este proceso es para ti?
+              </h4>
               <p className="text-xs text-muted-foreground mt-1">
-                La entrevista previa de 15 minutos es gratuita, sin compromiso y por teléfono o videollamada.
+                La entrevista previa de 15 minutos es gratuita, sin compromiso y por teléfono o
+                videollamada.
               </p>
             </div>
             <a
@@ -602,7 +607,11 @@ function DejarDeFumarPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de transparencia:</strong> Este programa de hipnosis y desarrollo personal está orientado a la modificación de hábitos, desensibilización de respuestas automáticas y apoyo motivacional para abandonar el consumo de tabaco. No constituye un acto médico, farmacológico ni sanitario, ni sustituye los tratamientos prescritos por profesionales de la salud.
+            <strong>Aviso de transparencia:</strong> Este programa de desarrollo personal y
+            deshabituación tabáquica combina técnicas de hipnosis clínica y modificación de hábitos
+            para abandonar el consumo de tabaco con serenidad. No constituye un acto médico,
+            farmacológico ni sanitario, ni sustituye los tratamientos prescritos por profesionales
+            de la salud.
           </p>
         </div>
       </section>

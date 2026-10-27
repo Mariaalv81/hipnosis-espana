@@ -9,7 +9,7 @@ export const Route = createFileRoute("/reservar")({
     makeSeo({
       title: "Solicitar una sesión · María A. Cabo",
       description:
-        "Solicita tu sesión de hipnosis o valoración previa gratuita de 15 minutos con María A. Cabo en Sueca, Valencia u online: 70 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
+        "Solicita tu sesión de terapia o valoración previa gratuita de 15 minutos con María A. Cabo en Sueca, Valencia u online: 70 € la hora o programa para dejar de fumar de tres sesiones por 300 €.",
       path: "/reservar",
     }),
   component: BookPage,
@@ -34,10 +34,12 @@ function BookPage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             {i === 0 ? (
               <div className="mt-7 flex flex-col gap-3">
-                <CalendarButton className="w-fit" source="reservar_individual" label={t.common.bookCalendar} />
-                <p className="text-[0.75rem] text-muted-foreground">
-                  {t.common.bookIntro}
-                </p>
+                <CalendarButton
+                  className="w-fit"
+                  source="reservar_individual"
+                  label={t.common.bookCalendar}
+                />
+                <p className="text-[0.75rem] text-muted-foreground">{t.common.bookIntro}</p>
                 <div className="pt-2">
                   <Link
                     to="/contacto"

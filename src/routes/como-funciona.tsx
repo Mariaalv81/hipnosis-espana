@@ -10,9 +10,9 @@ import { trackWhatsAppClick } from "@/lib/analytics";
 export const Route = createFileRoute("/como-funciona")({
   head: () =>
     makeSeo({
-      title: "Cómo funciona una sesión de hipnosis · María A. Cabo",
+      title: "Cómo funciona el proceso terapéutico · María A. Cabo",
       description:
-        "Qué es y qué no es la hipnosis, el recorrido paso a paso de una sesión y los límites del acompañamiento.",
+        "En qué consiste el acompañamiento, el recorrido paso a paso de una sesión y las claves para lograr cambios duraderos.",
       path: "/como-funciona",
     }),
   component: HowPage,
@@ -70,9 +70,7 @@ function HowPage() {
             <span className="inline-block rounded-full bg-primary/15 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
               Sin compromiso
             </span>
-            <h2 className="mt-3 text-2xl font-serif md:text-3xl">
-              {t.how.ctaTitle}
-            </h2>
+            <h2 className="mt-3 text-2xl font-serif md:text-3xl">{t.how.ctaTitle}</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
               {t.how.ctaSubtitle}
             </p>
@@ -88,7 +86,7 @@ function HowPage() {
               onClick={() => {
                 trackWhatsAppClick("como_funciona_cta");
                 const url = getWhatsAppUrl(
-                  "Hola María, he leído cómo funcionan las sesiones y me gustaría hacer una valoración previa de 15 minutos sin compromiso."
+                  "Hola María, he leído cómo funcionan las sesiones y me gustaría hacer una valoración previa de 15 minutos sin compromiso.",
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

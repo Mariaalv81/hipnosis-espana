@@ -11,7 +11,7 @@ export const siteSettings = {
   instagramUrl: "https://www.instagram.com/mariacabo_hipnosis/",
   instagramHandle: "@mariacabo_hipnosis",
   whatsappDefaultMessage:
-    "Hola María, he visto tu web y me gustaría consultarte sobre una sesión de hipnosis...",
+    "Hola María, he visto tu web y me gustaría consultarte sobre una sesión de terapia...",
 };
 
 /**
@@ -27,4 +27,3 @@ export function getWhatsAppUrl(customText?: string): string {
     return "#";
   }
 }
-

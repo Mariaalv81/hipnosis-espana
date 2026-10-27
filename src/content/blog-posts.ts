@@ -15,22 +15,22 @@ export type BlogPostContent = {
 
 const es: BlogPostContent = {
   slug: "que-es-la-hipnosis",
-  title: "¿Qué es realmente la hipnosis?",
+  title: "¿Qué es realmente este enfoque de atención focalizada?",
   excerpt:
-    "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención.",
+    "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención y regular el sistema nervioso.",
   date: "2026-09-10",
   blocks: [
     {
       type: "lead",
-      text: "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención.",
+      text: "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención y regular el sistema nervioso.",
     },
     {
       type: "p",
-      text: "Cuando escuchamos la palabra hipnosis, es fácil imaginar un péndulo, una persona dormida o alguien haciendo cosas que no haría normalmente. La realidad es bastante menos misteriosa y mucho más interesante.",
+      text: "Cuando se habla de procesos de cambio y estados profundos, es fácil imaginar mitos, péndulos o pérdidas de control. La realidad es bastante menos misteriosa y mucho más interesante.",
     },
     {
       type: "p",
-      text: "La hipnosis es un estado de atención focalizada en el que podemos concentrarnos profundamente en una experiencia interna, como una imagen, una sensación o una idea, mientras los estímulos externos pasan a un segundo plano.",
+      text: "Este abordaje se basa en la atención focalizada: un estado en el que podemos concentrarnos profundamente en una experiencia interna, como una imagen, una sensación o una idea, mientras los estímulos externos pasan a un segundo plano.",
     },
     { type: "h2", text: "Un estado más cotidiano de lo que parece" },
     {
@@ -39,25 +39,25 @@ const es: BlogPostContent = {
     },
     {
       type: "p",
-      text: "No son exactamente lo mismo que una sesión de hipnosis, pero nos ayudan a entender que nuestra atención puede cambiar de forma natural. A veces estamos pendientes de todo lo que ocurre fuera; otras, nuestra mente se concentra intensamente en una experiencia.",
+      text: "No son exactamente lo mismo que una sesión terapéutica, pero nos ayudan a entender que nuestra atención puede cambiar de forma natural. A veces estamos pendientes de todo lo que ocurre fuera; otras, nuestra mente se concentra intensamente en una experiencia.",
     },
     {
       type: "p",
-      text: "Durante la hipnosis se utiliza esa capacidad de concentración de manera intencionada y guiada.",
+      text: "Durante las sesiones se utiliza esa capacidad de concentración de manera intencionada y guiada.",
     },
     { type: "h2", text: "¿Pierdes el control?" },
     {
       type: "p",
-      text: "No. La hipnosis no consiste en que otra persona controle tu mente. Puedes escuchar, pensar, moverte y comunicar lo que necesitas. Tampoco estás obligado a aceptar sugerencias que no deseas.",
+      text: "No. Este proceso no consiste en que otra persona controle tu mente. Puedes escuchar, pensar, moverte y comunicar lo que necesitas. Tampoco estás obligado a aceptar sugerencias que no deseas.",
     },
     {
       type: "p",
-      text: "La experiencia varía de una persona a otra. Algunas sienten una relajación profunda; otras se mantienen muy conscientes de todo lo que ocurre. No existe una única manera correcta de experimentar la hipnosis.",
+      text: "La experiencia varía de una persona a otra. Algunas sienten una relajación profunda; otras se mantienen muy conscientes de todo lo que ocurre. No existe una única manera correcta de experimentar estos estados de calma y enfoque.",
     },
     { type: "h2", text: "¿Y para qué sirve?" },
     {
       type: "p",
-      text: "La hipnosis puede utilizarse para explorar hábitos, trabajar con determinadas respuestas automáticas, practicar nuevas formas de afrontar situaciones o favorecer experiencias de calma y concentración.",
+      text: "Este enfoque puede utilizarse para explorar hábitos, trabajar con determinadas respuestas automáticas, practicar nuevas formas de afrontar situaciones o favorecer experiencias de calma y concentración.",
     },
     {
       type: "p",
@@ -69,18 +69,18 @@ const es: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "La hipnosis no consiste en dejar de ser tú, sino en descubrir otras maneras de experimentar y responder.",
+      text: "El proceso no consiste en dejar de ser tú, sino en descubrir otras maneras de experimentar y responder.",
     },
     {
       type: "note",
-      text: "Contenido divulgativo. La hipnosis no sustituye la atención médica o psicológica cuando esta es necesaria.",
+      text: "Contenido divulgativo. Este acompañamiento terapéutico no sustituye la atención médica o psicológica cuando esta es necesaria.",
     },
   ],
 };
 
 const esBrain: BlogPostContent = {
   slug: "que-ocurre-en-el-cerebro-durante-la-hipnosis",
-  title: "¿Qué ocurre en el cerebro durante la hipnosis?",
+  title: "¿Qué ocurre en el cerebro durante los estados de focalización?",
   excerpt:
     "La ciencia ha observado cambios en la atención y la comunicación entre redes cerebrales, sin apagar la mente racional.",
   date: "2026-09-11",
@@ -91,11 +91,11 @@ const esBrain: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La hipnosis puede parecer una experiencia muy subjetiva: cerrar los ojos, escuchar una voz y concentrarse en imágenes o sensaciones. Sin embargo, la investigación científica lleva décadas estudiando qué sucede en el cerebro durante este estado.",
+      text: "La atención focalizada puede parecer una experiencia puramente subjetiva: cerrar los ojos, escuchar una voz y concentrarse en imágenes o sensaciones. Sin embargo, la investigación científica lleva décadas estudiando qué sucede en el cerebro durante estos procesos.",
     },
     {
       type: "p",
-      text: "Los estudios de neuroimagen muestran que la hipnosis se asocia con cambios en la actividad y la comunicación de distintas redes cerebrales. Estos cambios no son idénticos en todas las personas ni significan que una parte del cerebro se desconecte.",
+      text: "Los estudios de neuroimagen muestran que los estados de atención focalizada y relajación somática se asocian con cambios en la actividad y la comunicación de distintas redes cerebrales. Estos cambios no son idénticos en todas las personas ni significan que una parte del cerebro se desconecte.",
     },
     { type: "h2", text: "La atención cambia de dirección" },
     {
@@ -104,7 +104,7 @@ const esBrain: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Durante la hipnosis, la atención puede concentrarse con mayor intensidad en una experiencia interna. Algunas investigaciones han observado modificaciones en redes relacionadas con la selección de estímulos relevantes, el pensamiento sobre uno mismo y el control de la atención.",
+      text: "Durante estos estados, la atención puede concentrarse con mayor intensidad en una experiencia interna. Algunas investigaciones han observado modificaciones en redes relacionadas con la selección de estímulos relevantes, el pensamiento sobre uno mismo y el control de la atención.",
     },
     {
       type: "p",
@@ -117,7 +117,7 @@ const esBrain: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La imaginación puede activar procesos cerebrales y respuestas corporales relacionados con experiencias reales. Durante la hipnosis, las sugestiones y las imágenes mentales pueden adquirir una especial intensidad, lo que ayuda a explicar por qué algunas personas experimentan cambios en sus sensaciones, percepciones o respuestas emocionales.",
+      text: "La imaginación puede activar procesos cerebrales y respuestas corporales relacionados con experiencias reales. En un estado de calma profunda, las imágenes mentales y las pautas guiadas pueden adquirir una especial intensidad, lo que ayuda a explicar por qué experimentamos cambios en nuestras sensaciones, percepciones o respuestas emocionales.",
     },
     {
       type: "p",
@@ -130,7 +130,7 @@ const esBrain: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La hipnosis puede facilitar experiencias de aprendizaje y ensayo mental que contribuyan a un proceso de cambio. Sin embargo, no es correcto afirmar que una sesión reprograma el cerebro o crea automáticamente nuevas conexiones permanentes.",
+      text: "El trabajo terapéutico focalizado puede facilitar experiencias de aprendizaje y ensayo mental que contribuyan a un proceso de cambio. Sin embargo, no es correcto afirmar que una sesión reprograma el cerebro o crea automáticamente nuevas conexiones permanentes.",
     },
     {
       type: "p",
@@ -138,11 +138,11 @@ const esBrain: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "La hipnosis no activa poderes ocultos del cerebro. Utiliza capacidades humanas reales, como la atención, la imaginación y el aprendizaje, de una manera particular.",
+      text: "Este método no activa poderes ocultos del cerebro. Utiliza capacidades humanas reales, como la atención, la imaginación y el aprendizaje, de una manera particular.",
     },
     {
       type: "note",
-      text: "La investigación sobre los mecanismos neuronales de la hipnosis continúa evolucionando. Este artículo ofrece una explicación divulgativa y no constituye asesoramiento sanitario.",
+      text: "La investigación sobre los mecanismos neuronales de la atención focalizada y la regulación somática continúa evolucionando. Este artículo ofrece una explicación divulgativa y no constituye asesoramiento sanitario.",
     },
   ],
 };
@@ -202,7 +202,7 @@ const esHabit: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La hipnosis puede complementar este proceso ayudando a explorar los desencadenantes, ensayar mentalmente alternativas y reforzar objetivos personales. Pero el aprendizaje continúa fuera de la sesión.",
+      text: "La terapia focalizada puede complementar este proceso ayudando a explorar los desencadenantes, ensayar mentalmente alternativas y reforzar objetivos personales. Pero el aprendizaje continúa fuera de la sesión.",
     },
     {
       type: "quote",
@@ -213,22 +213,22 @@ const esHabit: BlogPostContent = {
 
 const esHypnosisHabits: BlogPostContent = {
   slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
-  title: "Hipnosis y cambio de hábitos: ¿cómo puede ayudar?",
+  title: "Terapia y cambio de hábitos: ¿cómo puede ayudar?",
   excerpt:
-    "La hipnosis no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
+    "La terapia no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
   date: "2026-09-12",
   blocks: [
     {
       type: "lead",
-      text: "La hipnosis no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
+      text: "La terapia no borra un hábito. Puede ayudarnos a ensayar y fortalecer nuevas maneras de responder.",
     },
     {
       type: "p",
-      text: "Muchas personas llegan a la hipnosis buscando cambiar algo que llevan tiempo intentando modificar. A veces han comprendido perfectamente el problema, pero sienten que una parte de su comportamiento sigue funcionando en automático.",
+      text: "Muchas personas inician un proceso terapéutico buscando cambiar algo que llevan tiempo intentando modificar. A veces han comprendido perfectamente el problema, pero sienten que una parte de su comportamiento sigue funcionando en automático.",
     },
     {
       type: "p",
-      text: "La hipnosis puede ofrecer un espacio de atención concentrada para explorar esos patrones y trabajar con nuevas posibilidades.",
+      text: "La terapia focalizada puede ofrecer un espacio de atención concentrada para explorar esos patrones y trabajar con nuevas posibilidades.",
     },
     { type: "h2", text: "Observar lo que ocurre antes del hábito" },
     {
@@ -237,7 +237,7 @@ const esHypnosisHabits: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Durante el trabajo con hipnosis se pueden explorar esas asociaciones y prestar atención a lo que sucede antes de la conducta. Comprender su función ayuda a plantear alternativas más ajustadas a la persona.",
+      text: "Durante las sesiones se pueden explorar esas asociaciones y prestar atención a lo que sucede antes de la conducta. Comprender su función ayuda a plantear alternativas más ajustadas a la persona.",
     },
     { type: "h2", text: "Ensayar una respuesta diferente" },
     {
@@ -246,7 +246,7 @@ const esHypnosisHabits: BlogPostContent = {
     },
     {
       type: "p",
-      text: "El ensayo mental no sustituye la experiencia real, pero puede formar parte del aprendizaje. La hipnosis puede facilitar que esa práctica sea más absorbente y significativa.",
+      text: "El ensayo mental no sustituye la experiencia real, pero puede formar parte del aprendizaje. El acompañamiento terapéutico facilita que esa práctica sea más absorbente y significativa.",
     },
     { type: "h2", text: "Las sugestiones y el cambio" },
     {
@@ -260,11 +260,11 @@ const esHypnosisHabits: BlogPostContent = {
     { type: "h2", text: "Lo importante sucede también fuera de la sesión" },
     {
       type: "p",
-      text: "Los hábitos se construyen en la vida cotidiana, por lo que los cambios duraderos suelen necesitar práctica. La hipnosis puede acompañar ese proceso, pero no reemplaza las acciones concretas, la repetición ni el apoyo profesional adecuado cuando sea necesario.",
+      text: "Los hábitos se construyen en la vida cotidiana, por lo que los cambios duraderos suelen necesitar práctica. El acompañamiento terapéutico puede sostener ese proceso, pero no reemplaza las acciones concretas, la repetición ni el apoyo profesional adecuado cuando sea necesario.",
     },
     {
       type: "p",
-      text: "La evidencia sobre hipnosis y hábitos es variable según el objetivo. No existe una garantía de resultados ni un número de sesiones válido para todo el mundo.",
+      text: "La evidencia sobre procesos de reentrenamiento de hábitos es variable según el objetivo. No existe una garantía de resultados ni un número de sesiones válido para todo el mundo.",
     },
     {
       type: "quote",
@@ -279,7 +279,7 @@ const esHypnosisHabits: BlogPostContent = {
 
 const esHypnosisSession: BlogPostContent = {
   slug: "como-es-una-sesion-de-hipnosis",
-  title: "¿Cómo es una sesión de hipnosis?",
+  title: "¿Cómo es una sesión de cambio y acompañamiento?",
   excerpt:
     "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
   date: "2026-09-12",
@@ -290,7 +290,7 @@ const esHypnosisSession: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Si nunca has probado la hipnosis, es normal preguntarte qué sucede exactamente. ¿Tendré que cerrar los ojos? ¿Me quedaré dormido? ¿Recordaré lo que ha pasado?",
+      text: "Si nunca has realizado una sesión de este tipo, es normal preguntarte qué sucede exactamente. ¿Tendré que cerrar los ojos? ¿Me quedaré dormido? ¿Recordaré lo que ha pasado?",
     },
     {
       type: "p",
@@ -305,14 +305,14 @@ const esHypnosisSession: BlogPostContent = {
       type: "p",
       text: "Esta conversación permite adaptar el acompañamiento a tu experiencia y resolver cualquier duda. No se trata de aplicar el mismo ejercicio a todas las personas.",
     },
-    { type: "h2", text: "Después, la experiencia de hipnosis" },
+    { type: "h2", text: "Después, la experiencia de atención focalizada" },
     {
       type: "p",
       text: "El profesional puede guiarte mediante la voz, ejercicios de atención, imágenes mentales, metáforas o sugestiones. Puedes estar sentado cómodamente y, si lo deseas, cerrar los ojos.",
     },
     {
       type: "p",
-      text: "Algunas personas sienten una relajación profunda; otras experimentan mayor concentración sin sentirse especialmente relajadas. Ambas experiencias pueden ser compatibles con la hipnosis.",
+      text: "Algunas personas sienten una relajación profunda; otras experimentan mayor concentración sin sentirse especialmente relajadas. Ambas experiencias son perfectamente válidas y productivas.",
     },
     {
       type: "p",
@@ -321,7 +321,7 @@ const esHypnosisSession: BlogPostContent = {
     { type: "h2", text: "¿Recordaré lo que ha ocurrido?" },
     {
       type: "p",
-      text: "Habitualmente, las personas recuerdan la sesión o buena parte de ella. La experiencia puede variar, pero la hipnosis no implica necesariamente amnesia ni pérdida de conciencia.",
+      text: "Habitualmente, las personas recuerdan la sesión o buena parte de ella. La experiencia puede variar, pero el proceso no implica en absoluto amnesia ni pérdida de conciencia.",
     },
     {
       type: "p",
@@ -338,11 +338,11 @@ const esHypnosisSession: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "La hipnosis es una experiencia en la que participas activamente. El proceso se construye contigo, no sobre ti.",
+      text: "La terapia es una experiencia en la que participas activamente. El proceso se construye contigo, no sobre ti.",
     },
     {
       type: "note",
-      text: "La hipnosis no sustituye la atención médica, psicológica o psiquiátrica cuando esta es necesaria.",
+      text: "Este acompañamiento no sustituye la atención médica, psicológica o psiquiátrica cuando esta es necesaria.",
     },
   ],
 };
@@ -538,14 +538,14 @@ const esBodyAlert: BlogPostContent = {
 
 const esHypnosisAnxiety: BlogPostContent = {
   slug: "hipnosis-y-ansiedad-aprender-una-respuesta-diferente",
-  title: "Hipnosis y ansiedad: aprender una respuesta diferente",
+  title: "Terapia y ansiedad: aprender una respuesta diferente",
   excerpt:
-    "La hipnosis puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y respuestas aprendidas.",
+    "La terapia puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y respuestas aprendidas.",
   date: "2026-09-29",
   blocks: [
     {
       type: "lead",
-      text: "La hipnosis no consiste en eliminar la ansiedad con una orden. Puede ofrecer un contexto diferente para trabajar con la atención, la imaginación y determinadas respuestas aprendidas.",
+      text: "La terapia no consiste en eliminar la ansiedad con una orden mágica. Ofrece un contexto estructurado para trabajar con la atención, la imaginación y determinadas respuestas aprendidas.",
     },
     {
       type: "p",
@@ -559,10 +559,10 @@ const esHypnosisAnxiety: BlogPostContent = {
       type: "p",
       text: "Por eso el trabajo con la ansiedad no siempre consiste únicamente en comprenderla racionalmente. También puede implicar experimentar una respuesta diferente.",
     },
-    { type: "h2", text: "¿Dónde entra la hipnosis?" },
+    { type: "h2", text: "¿Dónde entra el trabajo terapéutico?" },
     {
       type: "p",
-      text: "Durante la hipnosis se utiliza un estado de atención focalizada. La persona no pierde el control ni queda inconsciente. Por el contrario, se dirige intencionadamente la atención hacia determinadas sensaciones, imágenes, ideas o experiencias.",
+      text: "Durante las sesiones se utiliza un estado de atención focalizada y calma somática. La persona no pierde el control ni queda inconsciente. Por el contrario, se dirige intencionadamente la atención hacia determinadas sensaciones, imágenes, ideas o experiencias.",
     },
     {
       type: "p",
@@ -579,7 +579,7 @@ const esHypnosisAnxiety: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La imaginación tiene efectos reales sobre nuestra experiencia. En hipnosis podemos utilizar deliberadamente esa capacidad para practicar respuestas diferentes.",
+      text: "La imaginación tiene efectos reales sobre nuestra experiencia. En sesión podemos utilizar deliberadamente esa capacidad para practicar respuestas diferentes.",
     },
     {
       type: "p",
@@ -592,11 +592,11 @@ const esHypnosisAnxiety: BlogPostContent = {
     { type: "h2", text: "¿Qué dice la investigación?" },
     {
       type: "p",
-      text: "La hipnosis se investiga científicamente desde hace décadas y existen ensayos clínicos y revisiones sistemáticas sobre su utilización en distintas situaciones.",
+      text: "Estas técnicas de intervención mente-cuerpo se investigan científicamente desde hace décadas y existen ensayos clínicos y revisiones sistemáticas sobre su utilización en distintas situaciones.",
     },
     {
       type: "p",
-      text: "Una revisión y metaanálisis publicada en 2025 analizó 20 ensayos controlados aleatorizados con 1.250 participantes sometidos a procedimientos médicos invasivos. En conjunto, la hipnosis estuvo asociada con una reducción de la ansiedad frente a la atención habitual.",
+      text: "Una revisión y metaanálisis publicada en 2025 analizó 20 ensayos controlados aleatorizados con 1.250 participantes sometidos a procedimientos médicos invasivos. En conjunto, estas intervenciones estuvieron asociadas con una reducción significativa de la ansiedad frente a la atención habitual.",
     },
     {
       type: "p",
@@ -604,7 +604,7 @@ const esHypnosisAnxiety: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La investigación no demuestra que la hipnosis cure cualquier forma de ansiedad, ni que todas las personas respondan igual. Sí aporta evidencia de que puede ser una herramienta útil para reducir ansiedad en determinados contextos y justifica seguir investigando sus aplicaciones.",
+      text: "La investigación no demuestra que ninguna técnica resuelva cualquier forma de ansiedad por sí sola, ni que todas las personas respondan igual. Sí aporta evidencia de que puede ser una herramienta útil para reducir ansiedad en determinados contextos y justifica seguir investigando sus aplicaciones.",
     },
     { type: "h2", text: "No se trata de controlar la mente" },
     {
@@ -617,12 +617,12 @@ const esHypnosisAnxiety: BlogPostContent = {
     },
     {
       type: "p",
-      text: "En un contexto de desarrollo personal, la hipnosis puede utilizarse para trabajar con aspectos como la anticipación, la focalización de la atención, determinadas respuestas automáticas, el ensayo mental de situaciones futuras y la conexión con recursos personales.",
+      text: "En un contexto de desarrollo personal y terapia, este abordaje puede utilizarse para trabajar con aspectos como la anticipación, la focalización de la atención, determinadas respuestas automáticas, el ensayo mental de situaciones futuras y la conexión con recursos personales.",
     },
     { type: "h2", text: "Una herramienta, no una solución universal" },
     {
       type: "p",
-      text: "La hipnosis puede formar parte de un proceso de cambio, pero no sustituye los tratamientos médicos o psicológicos cuando existe un trastorno de ansiedad.",
+      text: "El acompañamiento terapéutico puede formar parte de un proceso de cambio, pero no sustituye los tratamientos médicos o psicológicos cuando existe un trastorno de ansiedad.",
     },
     {
       type: "p",
@@ -634,7 +634,7 @@ const esHypnosisAnxiety: BlogPostContent = {
     },
     {
       type: "note",
-      text: "Contenido divulgativo orientado al desarrollo personal. La hipnosis no sustituye la atención psicológica, psiquiátrica o médica cuando esta es necesaria.",
+      text: "Contenido divulgativo orientado al desarrollo personal. Este acompañamiento no sustituye la atención psicológica, psiquiátrica o médica cuando esta es necesaria.",
     },
   ],
 };
@@ -843,14 +843,14 @@ const esAvoidanceFear: BlogPostContent = {
 
 const esHypnosisPhobias: BlogPostContent = {
   slug: "hipnosis-y-fobias-aprender-una-respuesta-diferente",
-  title: "Hipnosis y fobias: aprender una respuesta diferente",
+  title: "Terapia y fobias: aprender una respuesta diferente",
   excerpt:
-    "Una fobia puede sentirse como una reacción automática. La hipnosis permite trabajar con esa parte más automática de la experiencia.",
+    "Una fobia puede sentirse como una reacción automática. La terapia permite trabajar con esa parte más automática de la experiencia.",
   date: "2026-09-29",
   blocks: [
     {
       type: "lead",
-      text: "Una fobia puede sentirse como una reacción automática: sabemos que algo no representa un peligro real y, sin embargo, nuestro cuerpo responde como si lo fuera. La hipnosis permite trabajar precisamente con esa parte más automática de la experiencia.",
+      text: "Una fobia puede sentirse como una reacción automática: sabemos que algo no representa un peligro real y, sin embargo, nuestro cuerpo responde como si lo fuera. La terapia permite trabajar precisamente con esa parte más automática de la experiencia.",
     },
     {
       type: "p",
@@ -862,7 +862,7 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Cuando existe una fobia, determinadas imágenes, sensaciones o situaciones pueden haber quedado asociadas a una respuesta intensa de alarma. La hipnosis ofrece una forma de trabajar con esas asociaciones desde un estado de atención especialmente focalizada.",
+      text: "Cuando existe una fobia, determinadas imágenes, sensaciones o situaciones pueden haber quedado asociadas a una respuesta intensa de alarma. El abordaje terapéutico ofrece una forma de trabajar con esas asociaciones desde un estado de atención especialmente focalizada.",
     },
     { type: "h2", text: "Trabajar con aquello que imaginamos" },
     {
@@ -875,7 +875,7 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Durante la hipnosis podemos utilizar esa misma capacidad de imaginación en otra dirección. En lugar de repetir una y otra vez el escenario que genera miedo, podemos ensayar mentalmente una experiencia diferente.",
+      text: "Durante las sesiones podemos utilizar esa misma capacidad de imaginación en otra dirección. En lugar de repetir una y otra vez el escenario que genera miedo, podemos ensayar mentalmente una experiencia diferente.",
     },
     {
       type: "p",
@@ -888,7 +888,7 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "La hipnosis permite trabajar con imágenes, sensaciones, recuerdos, expectativas y respuestas internas para explorar asociaciones diferentes. No consiste simplemente en decir: a partir de ahora ya no tienes miedo.",
+      text: "El trabajo terapéutico permite trabajar con imágenes, sensaciones, recuerdos, expectativas y respuestas internas para explorar asociaciones diferentes. No consiste simplemente en decir: a partir de ahora ya no tienes miedo.",
     },
     {
       type: "p",
@@ -909,45 +909,45 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Durante la hipnosis, la atención y la imaginación pueden adquirir una intensidad especial. Esto permite trabajar con experiencias simuladas de una forma mucho más absorbente que simplemente hablando sobre ellas.",
+      text: "En sesión, la atención y la imaginación pueden adquirir una intensidad especial. Esto permite trabajar con experiencias simuladas de una forma mucho más absorbente que simplemente hablando sobre ellas.",
     },
     {
       type: "p",
       text: "Y esa capacidad resulta especialmente interesante cuando aquello que queremos modificar está muy relacionado con la anticipación y las respuestas automáticas.",
     },
-    { type: "h2", text: "¿Qué sabemos sobre hipnosis y miedo?" },
+    { type: "h2", text: "¿Qué sabemos sobre la regulación del miedo?" },
     {
       type: "p",
-      text: "La hipnosis se ha investigado en numerosos contextos relacionados con la ansiedad y el miedo.",
+      text: "El entrenamiento somático y la atención focalizada se han investigado en numerosos contextos relacionados con la ansiedad y el miedo.",
     },
     {
       type: "p",
-      text: "Un metaanálisis que reunió 17 ensayos encontró que, al terminar las intervenciones, las personas que habían recibido hipnosis mostraban una reducción de la ansiedad significativamente superior a las condiciones de control. Los autores observaron además que los resultados eran especialmente favorables cuando la hipnosis se integraba con otras intervenciones psicológicas.",
+      text: "Diversos metaanálisis encuentran que, al terminar las intervenciones con atención focalizada y relajación, las personas muestran reducciones de la ansiedad significativamente superiores a las condiciones de control, especialmente cuando se integran con otras intervenciones psicológicas.",
     },
     {
       type: "p",
-      text: "También existen investigaciones en miedos específicos. La ansiedad y la fobia dental, por ejemplo, han sido objeto de distintos ensayos clínicos con hipnosis. Una revisión sistemática de 19 estudios describió los resultados como prometedores, aunque señaló que la gran variedad de métodos utilizados dificulta comparar directamente los estudios entre sí.",
+      text: "También existen investigaciones en miedos específicos. La ansiedad y la fobia dental, por ejemplo, han sido objeto de distintos ensayos clínicos con técnicas de relajación profunda y desensibilización somática. Una revisión sistemática de 19 estudios describió los resultados como prometedores, aunque señaló que la gran variedad de métodos utilizados dificulta comparar directamente los estudios entre sí.",
     },
     {
       type: "p",
-      text: "Investigaciones más recientes continúan estudiando la hipnosis dentro de las intervenciones no farmacológicas para reducir miedo y ansiedad, encontrando efectos sobre distintas medidas psicológicas y fisiológicas, aunque todavía se necesitan estudios más amplios y homogéneos.",
+      text: "Investigaciones más recientes continúan estudiando estas técnicas dentro de las intervenciones no farmacológicas para reducir miedo y ansiedad, encontrando efectos sobre distintas medidas psicológicas y fisiológicas, aunque todavía se necesitan estudios más amplios y homogéneos.",
     },
     {
       type: "p",
-      text: "Esto también ayuda a entender una diferencia importante entre investigación y experiencia clínica. En la práctica profesional existen terapeutas que utilizan desde hace años la hipnosis para trabajar con miedos y fobias y observan cambios relevantes en muchas personas.",
+      text: "Esto también ayuda a entender una diferencia importante entre investigación y experiencia clínica. En la práctica profesional existen terapeutas que utilizan desde hace años la atención focalizada para trabajar con miedos y fobias y observan cambios relevantes en muchas personas.",
     },
     {
       type: "p",
       text: "La investigación científica intenta estudiar esos resultados bajo condiciones controladas, comparar métodos y determinar en qué personas y circunstancias funcionan mejor. Que todavía exista investigación por hacer no significa que una herramienta carezca de utilidad. Significa que seguimos intentando comprender mejor cómo funciona, para quién funciona y cómo utilizarla de la manera más eficaz.",
     },
-    { type: "h2", text: "Hipnosis y exposición no tienen por qué ser opuestas" },
+    { type: "h2", text: "Ensayo mental y exposición en el mundo real" },
     {
       type: "p",
       text: "También podemos alejarnos de la idea de que hay que elegir entre una técnica u otra.",
     },
     {
       type: "p",
-      text: "Una persona puede utilizar la hipnosis para prepararse mentalmente, trabajar la anticipación y practicar una respuesta diferente, y posteriormente trasladar ese aprendizaje a situaciones reales.",
+      text: "Una persona puede utilizar el ensayo mental en sesión para prepararse, trabajar la anticipación y practicar una respuesta diferente, y posteriormente trasladar ese aprendizaje a situaciones reales.",
     },
     {
       type: "p",
@@ -976,7 +976,7 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Dentro del desarrollo personal, la hipnosis puede ser una herramienta especialmente interesante para explorar estos patrones, trabajar con la anticipación y practicar nuevas formas de responder.",
+      text: "Dentro del desarrollo personal, el acompañamiento terapéutico es una herramienta especialmente interesante para explorar estos patrones, trabajar con la anticipación y practicar nuevas formas de responder.",
     },
     {
       type: "quote",
@@ -984,14 +984,14 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "note",
-      text: "Contenido divulgativo orientado al desarrollo personal. Cuando una fobia es intensa, provoca ataques de pánico, genera una evitación importante o limita significativamente la vida cotidiana, es recomendable contar con la valoración de un profesional sanitario cualificado. La hipnosis puede utilizarse de forma complementaria dentro de un proceso adecuado a cada persona.",
+      text: "Contenido divulgativo orientado al desarrollo personal. Cuando una fobia es intensa, provoca ataques de pánico, genera una evitación importante o limita significativamente la vida cotidiana, es recomendable contar con la valoración de un profesional sanitario cualificado. Este abordaje puede utilizarse de forma complementaria dentro de un proceso adecuado a cada persona.",
     },
   ],
 };
 
 const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
-  title: "Què és realment la hipnosi?",
+  title: "Què és realment este enfocament d'atenció focalitzada?",
   excerpt:
     "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
   date: "2026-09-10",
@@ -1002,11 +1002,11 @@ const va: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Quan escoltem la paraula hipnosi, és fàcil imaginar un pèndol, una persona adormida o algú fent coses que no faria normalment. La realitat és bastant menys misteriosa i molt més interessant.",
+      text: "Quan es parla de processos de canvi i estats profunds, és fàcil imaginar mites o pèrdues de control. La realitat és bastant menys misteriosa i molt més interessant.",
     },
     {
       type: "p",
-      text: "La hipnosi és un estat d'atenció focalitzada en què podem concentrar-nos profundament en una experiència interna, com una imatge, una sensació o una idea, mentre els estímuls externs passen a un segon pla.",
+      text: "Este abordatge es basa en l'atenció focalitzada: un estat en què podem concentrar-nos profundament en una experiència interna, com una imatge, una sensació o una idea, mentre els estímuls externs passen a un segon pla.",
     },
     { type: "h2", text: "Un estat més quotidià del que sembla" },
     {
@@ -1015,25 +1015,25 @@ const va: BlogPostContent = {
     },
     {
       type: "p",
-      text: "No són exactament el mateix que una sessió d'hipnosi, però ens ajuden a entendre que la nostra atenció pot canviar de forma natural. De vegades estem pendents de tot el que ocorre fora; altres, la ment es concentra intensament en una experiència.",
+      text: "No són exactament el mateix que una sessió terapèutica, però ens ajuden a entendre que la nostra atenció pot canviar de forma natural. De vegades estem pendents de tot el que ocorre fora; altres, la ment es concentra intensament en una experiència.",
     },
     {
       type: "p",
-      text: "Durant la hipnosi s'utilitza eixa capacitat de concentració de manera intencionada i guiada.",
+      text: "Durant les sessions s'utilitza eixa capacitat de concentració de manera intencionada i guiada.",
     },
     { type: "h2", text: "Perds el control?" },
     {
       type: "p",
-      text: "No. La hipnosi no consistix en què una altra persona controle la teua ment. Pots escoltar, pensar, moure't i comunicar el que necessites. Tampoc estàs obligat a acceptar suggeriments que no desitges.",
+      text: "No. Este procés no consistix en què una altra persona controle la teua ment. Pots escoltar, pensar, moure't i comunicar el que necessites. Tampoc estàs obligat a acceptar suggeriments que no desitges.",
     },
     {
       type: "p",
-      text: "L'experiència varia d'una persona a una altra. Algunes senten una relaxació profunda; altres es mantenen molt conscients de tot el que ocorre. No existix una única manera correcta d'experimentar la hipnosi.",
+      text: "L'experiència varia d'una persona a una altra. Algunes senten una relaxació profunda; altres es mantenen molt conscients de tot el que ocorre. No existix una única manera correcta d'experimentar estos estats de calma i enfocament.",
     },
     { type: "h2", text: "I per a què servix?" },
     {
       type: "p",
-      text: "La hipnosi pot utilitzar-se per a explorar hàbits, treballar amb determinades respostes automàtiques, practicar noves formes d'afrontar situacions o afavorir experiències de calma i concentració.",
+      text: "Este enfocament pot utilitzar-se per a explorar hàbits, treballar amb determinades respostes automàtiques, practicar noves formes d'afrontar situacions o afavorir experiències de calma i concentració.",
     },
     {
       type: "p",
@@ -1045,18 +1045,18 @@ const va: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "La hipnosi no consistix a deixar de ser tu, sinó a descobrir altres maneres d'experimentar i respondre.",
+      text: "El procés no consistix a deixar de ser tu, sinó a descobrir altres maneres d'experimentar i respondre.",
     },
     {
       type: "note",
-      text: "Contingut divulgatiu. La hipnosi no substituïx l'atenció mèdica o psicològica quan esta és necessària.",
+      text: "Contingut divulgatiu. Este acompanyament terapèutic no substituïx l'atenció mèdica o psicològica quan esta és necessària.",
     },
   ],
 };
 
 const en: BlogPostContent = {
   slug: "que-es-la-hipnosis",
-  title: "What is hypnosis, really?",
+  title: "What is this focused attention approach, really?",
   excerpt:
     "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
   date: "2026-09-10",
@@ -1067,11 +1067,11 @@ const en: BlogPostContent = {
     },
     {
       type: "p",
-      text: "When we hear the word hypnosis, it's easy to picture a pendulum, someone asleep, or a person doing things they would never normally do. Reality is far less mysterious — and much more interesting.",
+      text: "When discussing deeper change processes, it is easy to picture stage myths, pendulums, or losing control. Reality is far less mysterious — and much more interesting.",
     },
     {
       type: "p",
-      text: "Hypnosis is a state of focused attention in which we can concentrate deeply on an inner experience — an image, a sensation or an idea — while external stimuli fade into the background.",
+      text: "This approach is based on focused attention: a state in which we can concentrate deeply on an inner experience — an image, a sensation or an idea — while external stimuli fade into the background.",
     },
     { type: "h2", text: "More everyday than it seems" },
     {
@@ -1080,25 +1080,25 @@ const en: BlogPostContent = {
     },
     {
       type: "p",
-      text: "These are not exactly the same as a hypnosis session, but they help us understand that our attention can shift naturally. Sometimes we track everything happening outside; other times, the mind concentrates intensely on a single experience.",
+      text: "These are not exactly the same as a therapeutic session, but they help us understand that our attention can shift naturally. Sometimes we track everything happening outside; other times, the mind concentrates intensely on a single experience.",
     },
     {
       type: "p",
-      text: "During hypnosis, that capacity for concentration is used intentionally and with guidance.",
+      text: "During sessions, that capacity for concentration is used intentionally and with guidance.",
     },
     { type: "h2", text: "Do you lose control?" },
     {
       type: "p",
-      text: "No. Hypnosis does not mean someone else controls your mind. You can listen, think, move and say whatever you need. You are never obliged to accept suggestions you don't want.",
+      text: "No. This process does not mean someone else controls your mind. You can listen, think, move and say whatever you need. You are never obliged to accept suggestions you don't want.",
     },
     {
       type: "p",
-      text: "The experience varies from person to person. Some feel deep relaxation; others stay very aware of everything that happens. There is no single right way to experience hypnosis.",
+      text: "The experience varies from person to person. Some feel deep relaxation; others stay very aware of everything that happens. There is no single right way to experience these states of calm and focused attention.",
     },
     { type: "h2", text: "And what is it for?" },
     {
       type: "p",
-      text: "Hypnosis can be used to explore habits, work with certain automatic responses, practise new ways of facing situations, or encourage experiences of calm and concentration.",
+      text: "This approach can be used to explore habits, work with certain automatic responses, practise new ways of facing situations, or encourage experiences of calm and concentration.",
     },
     {
       type: "p",
@@ -1110,11 +1110,11 @@ const en: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "Hypnosis is not about stopping being yourself, but about discovering other ways of experiencing and responding.",
+      text: "The process is not about stopping being yourself, but about discovering other ways of experiencing and responding.",
     },
     {
       type: "note",
-      text: "Informative content. Hypnosis does not replace medical or psychological care when that is needed.",
+      text: "Informative content. This therapeutic approach does not replace medical or psychological care when that is needed.",
     },
   ],
 };

@@ -19,16 +19,15 @@ import sessionMariaAvif from "@/assets/images/sesion_maria_cabo.avif";
 export const Route = createFileRoute("/")({
   head: () =>
     makeSeo({
-      title:
-        "María A. Cabo · Hipnosis y Desarrollo Personal en Valencia y Sueca",
+      title: "María A. Cabo · Terapia y Desarrollo Personal en Valencia y Sueca",
       description:
-        "Especialista en hipnosis clínica y desarrollo personal formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
+        "Acompañamiento terapéutico focalizado en procesos neurobiológicos y cambio de hábitos. Formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
       path: "/",
     }),
-  component: HypnosisPage,
+  component: HomePage,
 });
 
-function HypnosisPage() {
+function HomePage() {
   const { t } = useI18n();
 
   return (
@@ -60,7 +59,7 @@ function HypnosisPage() {
                 onClick={() => {
                   trackWhatsAppClick("home_hero_whatsapp");
                   const url = getWhatsAppUrl(
-                    "Hola María, me gustaría consultar dudas sobre una sesión de hipnosis..."
+                    "Hola María, me gustaría consultar dudas sobre una sesión de terapia...",
                   );
                   if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                 }}
@@ -139,10 +138,7 @@ function HypnosisPage() {
                 {cardInner}
               </Link>
             ) : (
-              <article
-                key={c.title}
-                className="rounded-2xl border border-border/60 bg-card p-6"
-              >
+              <article key={c.title} className="rounded-2xl border border-border/60 bg-card p-6">
                 {cardInner}
               </article>
             );
@@ -333,7 +329,8 @@ function HypnosisPage() {
                 15 MINUTOS · SIN COSTE NI COMPROMISO
               </span>
               <p className="text-sm text-muted-foreground">
-                Por llamada telefónica o videollamada. Sin desplazamientos ni presión de contratación.
+                Por llamada telefónica o videollamada. Sin desplazamientos ni presión de
+                contratación.
               </p>
               <div className="flex w-full flex-col sm:flex-row gap-3 pt-2">
                 <ValuationModal
@@ -346,7 +343,7 @@ function HypnosisPage() {
                   onClick={() => {
                     trackWhatsAppClick("home_consultation_card");
                     const url = getWhatsAppUrl(
-                      "Hola María, me gustaría pedir la llamada previa de 15 minutos para valorar mi caso..."
+                      "Hola María, me gustaría pedir la llamada previa de 15 minutos para valorar mi caso...",
                     );
                     if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                   }}
@@ -401,7 +398,7 @@ function HypnosisPage() {
                 Conoce el enfoque en Instagram
               </h3>
               <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                Vídeos cortos, reflexiones sobre hipnosis sin mitos y hábitos para el cambio en
+                Vídeos cortos, reflexiones sobre desarrollo personal y hábitos para el cambio en
                 Sueca y online.
               </p>
             </div>
@@ -453,7 +450,7 @@ function HypnosisPage() {
               onClick={() => {
                 trackWhatsAppClick("home_footer_cta");
                 const url = getWhatsAppUrl(
-                  "Hola María, me gustaría consultar dudas sobre una sesión de hipnosis..."
+                  "Hola María, me gustaría consultar dudas sobre una sesión de terapia...",
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

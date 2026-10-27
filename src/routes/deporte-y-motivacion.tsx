@@ -6,10 +6,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/deporte-y-motivacion")({
   head: () =>
     makeSeo({
-      title:
-        "Hipnosis para el Rendimiento Deportivo y Motivación en Valencia y Sueca · María A. Cabo",
+      title: "Rendimiento Deportivo y Motivación en Valencia y Sueca · Terapia | María A. Cabo",
       description:
-        "Supera bloqueos mentales, gestiona la presión competitiva y activa tu máximo foco en el deporte. Hipnosis en Sueca, Valencia u online. 70 €/sesión.",
+        "Supera bloqueos mentales, gestiona la presión competitiva y activa tu máximo foco en el deporte. Terapia y preparación mental en Sueca, Valencia u online. 70 €/sesión.",
       path: "/deporte-y-motivacion",
     }),
   component: SportsPage,
@@ -21,8 +20,8 @@ function SportsPage() {
   return (
     <ServiceLandingPage
       data={t.sportsPage}
-      serviceName="Hipnosis deportiva: rendimiento, motivación y foco competitivo"
-      serviceDescription="Entrenamiento mental y visualización hipnótica para deportistas: estado de flujo, superación de bloqueos y constancia en entrenamientos. Sesiones en Sueca (Centro Sanar), a domicilio en Valencia ciudad y online."
+      serviceName="Preparación mental deportiva: rendimiento, motivación y foco competitivo"
+      serviceDescription="Entrenamiento mental y regulación de la atención para deportistas: estado de flujo, superación de bloqueos y constancia en entrenamientos. Sesiones en Sueca (Centro Sanar), a domicilio en Valencia ciudad y online."
       path="/deporte-y-motivacion"
       formTag="Deporte y Motivación"
     />

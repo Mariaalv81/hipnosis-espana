@@ -92,21 +92,21 @@ export interface ProfessionalsData {
 }
 
 export const professionalsEs: ProfessionalsData = {
-  seoTitle:
-    "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
+  seoTitle: "Colaboraciones Profesionales · Terapia Complementaria para la Salud | María A. Cabo",
   seoDescription:
-    "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Hipnosis para potenciar la adherencia y respuesta de tus clientes.",
-  eyebrow: "HIPNOSIS COMO HERRAMIENTA COMPLEMENTARIA",
+    "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Regulación neurobiológica para potenciar la adherencia y respuesta de tus pacientes.",
+  eyebrow: "ACOMPAÑAMIENTO TERAPÉUTICO COMPLEMENTARIO",
   title: "COLABORACIÓN CON PROFESIONALES DE LA SALUD Y EL BIENESTAR",
   manifesto:
     "“Colaboro con profesionales y centros de bienestar de la Comunidad Valenciana cuando consideran que alguno de sus clientes puede beneficiarse de trabajar determinados hábitos, miedos, bloqueos o patrones de comportamiento.”",
   heroText:
-    "En tu práctica clínica o de bienestar, sabes que con frecuencia el mayor obstáculo para el éxito del tratamiento no es tu prescripción técnica, sino la respuesta automática e involuntaria del cliente: la ansiedad que sabotea la dieta, la tensión muscular sostenida que perpetúa el dolor, o el miedo que frena la rehabilitación. La hipnosis aplicada actúa como una palanca facilitadora: allana los bloqueos conductuales para que tus tratamientos alcancen su máximo impacto.",
+    "En tu práctica clínica o de bienestar, sabes que con frecuencia el mayor obstáculo para el éxito del tratamiento no es tu prescripción técnica, sino la respuesta automática e involuntaria del cliente: la ansiedad que sabotea la dieta, la tensión muscular sostenida que perpetúa el dolor, o el miedo que frena la rehabilitación. El acompañamiento terapéutico y la regulación neurobiológica actúan como una palanca facilitadora: allanan los bloqueos conductuales para que tus tratamientos alcancen su máximo impacto.",
   ctaPrimary: "PROPONER UNA COLABORACIÓN",
   ctaSecondary: "CÓMO FUNCIONA UNA DERIVACIÓN",
 
   synergyEyebrow: "SINERGIA INTERDISCIPLINAR",
-  synergyTitle: "¿CÓMO POTENCIA LA HIPNOSIS LA RESPUESTA A TUS TRATAMIENTOS?",
+  synergyTitle:
+    "¿CÓMO POTENCIA LA TERAPIA Y LA REGULACIÓN NEUROBIOLÓGICA LA RESPUESTA A TUS TRATAMIENTOS?",
   synergyIntro:
     "Áreas donde la intervención sobre los automatismos subconscientes complementa de forma natural la labor de otros profesionales:",
   synergies: [
@@ -116,7 +116,7 @@ export const professionalsEs: ProfessionalsData = {
       description:
         "Planes nutricionales impecables que se ven boicoteados por picoteo inconsciente, hambre emocional, atracones nocturnos por estrés o una relación de culpa con la báscula.",
       benefit:
-        "La hipnosis desvincula la comida de la anestesia emocional y restablece la saciedad biológica, permitiendo que la persona siga tus pautas con serenidad y sin sensación de lucha interna.",
+        "La terapia desvincula la comida de la anestesia emocional y restablece la saciedad biológica, permitiendo que la persona siga tus pautas con serenidad y sin sensación de lucha interna.",
     },
     {
       area: "Fisioterapia y Osteopatía",
@@ -148,7 +148,7 @@ export const professionalsEs: ProfessionalsData = {
   scopeTitle: "LÍMITES ÉTICOS Y ALCANCE DE LA INTERVENCIÓN",
   scopeIntro:
     "La colaboración interdisciplinar solo funciona cuando los límites de competencia son nítidos y respetados:",
-  whatIWorkTitle: "QUÉ TRABAJO CON HIPNOSIS",
+  whatIWorkTitle: "QUÉ TRABAJO EN TERAPIA",
   whatIWork: [
     "Automatismos y hábitos involuntarios que boicotean el tratamiento (picoteo, tabaco, tics, apretar mandíbula).",
     "Desactivación de la respuesta física de alarma, hipervigilancia y estrés crónico sostenido.",
@@ -165,16 +165,15 @@ export const professionalsEs: ProfessionalsData = {
     "No diseño dietas ni programas de entrenamiento físico (estricto respeto a vuestro criterio profesional).",
   ],
   ethicalNote:
-    "Mi enfoque parte estrictamente del desarrollo personal y el cambio de patrones automáticos. Tú lideras y supervisas el tratamiento de tu especialidad; la hipnosis actúa como una herramienta facilitadora que optimiza la receptividad y el compromiso del cliente.",
+    "Mi enfoque parte estrictamente del desarrollo personal y el cambio de patrones automáticos. Tú lideras y supervisas el tratamiento de tu especialidad; el acompañamiento terapéutico actúa como una herramienta facilitadora que optimiza la receptividad y el compromiso del cliente.",
 
   sessionEyebrow: "MÉTODO DE TRABAJO",
   sessionTitle: "¿CÓMO ES UNA SESIÓN CON MARÍA A. CABO?",
-  sessionIntro:
-    "Rigor, naturalidad y desmitificación absoluta de los tópicos televisivos sobre la hipnosis:",
+  sessionIntro: "Rigor, naturalidad y un proceso centrado en la evidencia y el bienestar:",
   sessionPoints: [
     {
       title: "Atención focalizada y neuroplasticidad",
-      text: "La hipnosis es un estado natural de concentración profunda y relajación somática. Aprovecha la capacidad plástica del sistema nervioso para actualizar asociaciones y respuestas reflejas.",
+      text: "Un estado natural de concentración profunda y relajación somática. Aprovecha la capacidad plástica del sistema nervioso para actualizar asociaciones y respuestas reflejas.",
     },
     {
       title: "Control y lucidez total del cliente",
@@ -193,7 +192,7 @@ export const professionalsEs: ProfessionalsData = {
   referralEyebrow: "COORDINACIÓN FÁCIL",
   referralTitle: "¿CÓMO FUNCIONA UNA DERIVACIÓN?",
   referralIntro:
-    "Un protocolo ágil, transparente y sin burocracia para que recomendar la hipnosis sea cómodo y seguro:",
+    "Un protocolo ágil, transparente y sin burocracia para que recomendar el acompañamiento sea cómodo y seguro:",
   referralSteps: [
     {
       num: "01",
@@ -208,7 +207,7 @@ export const professionalsEs: ProfessionalsData = {
     {
       num: "03",
       title: "Intervención focalizada",
-      text: "Trabajamos el objetivo conductual acordado en sesiones individuales de 1 hora (70 €), con pautas prácticas de autohipnosis y descanso somático entre sesiones.",
+      text: "Trabajamos el objetivo conductual acordado en sesiones individuales de 1 hora (70 €), con pautas prácticas de autorregulación y descanso somático entre sesiones.",
     },
     {
       num: "04",
@@ -230,8 +229,8 @@ export const professionalsEs: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Trabajo desde una convicción sencilla pero profunda: la inmensa mayoría de las personas saben exactamente lo que deberían hacer, pero su cuerpo y su mente inconsciente siguen respondiendo con automatismos construidos durante años.",
-    "Como profesional formada en el Instituto Erickson Madrid en hipnosis ericksoniana, aplico una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
-    "Utilizo la hipnosis como una vía complementaria, estructurada y respetuosa para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el valor de sumar fuerzas para acompañar a las personas hacia sus objetivos de bienestar y cambio de hábitos.",
+    "Como profesional formada en el Instituto Erickson Madrid, aplico una metodología rigurosa, no invasiva y basada en la evidencia que activa los recursos y aprendizajes de la propia persona.",
+    "Utilizo el acompañamiento terapéutico como una vía estructurada y respetuosa para intervenir sobre esa parte automática de la experiencia. Colaboro con profesionales de la salud y el bienestar de Valencia y la Ribera Baixa porque creo firmemente en el valor de sumar fuerzas para acompañar a las personas hacia sus logros de bienestar y cambio de hábitos.",
   ],
   aboutLocation:
     "Despacho en Sueca (Centro Sanar) · Desplazamiento in situ a vuestro propio centro · Formato Online",
@@ -269,7 +268,7 @@ export const professionalsEs: ProfessionalsData = {
   directContactEyebrow: "CONTACTO DIRECTO",
   directContactTitle: "Hablemos de cómo sumar fuerzas",
   directContactText:
-    "Si antes de coordinar casos prefieres comentar cualquier duda sobre cómo articular la colaboración en vuestro centro, resolver cuestiones técnicas sobre la hipnosis o valorar la atención in situ para vuestros pacientes, escríbeme directamente por WhatsApp o a través del formulario.",
+    "Si antes de coordinar casos prefieres comentar cualquier duda sobre cómo articular la colaboración en vuestro centro, resolver dudas sobre el enfoque o valorar la atención in situ para vuestros pacientes, escríbeme directamente por WhatsApp o a través del formulario.",
   directContactWhatsApp: "Escribir por WhatsApp",
   directContactResponseTime: "Respuesta habitual en menos de 24 horas laborables.",
 
@@ -283,7 +282,7 @@ export const professionalsEs: ProfessionalsData = {
     },
     {
       q: "¿Hay algún tipo de compromiso o exclusividad?",
-      a: "No, en absoluto. Es una relación de confianza flexible y libre. Recomiendas o derivas únicamente cuando tú consideres que un cliente específico puede beneficiarse de destrabar un patrón automático con hipnosis.",
+      a: "No, en absoluto. Es una relación de confianza flexible y libre. Recomiendas o derivas únicamente cuando tú consideres que un cliente específico puede beneficiarse de destrabar un patrón automático con este acompañamiento.",
     },
     {
       q: "¿Cómo se gestiona el feedback entre nosotros sin sobrecargarnos de tiempo?",
@@ -295,27 +294,28 @@ export const professionalsEs: ProfessionalsData = {
     },
     {
       q: "¿Puedes desplazarte a atender a clientes directamente en nuestras instalaciones o centro?",
-      a: "Sí, por supuesto. Si para determinados usuarios o clientes es más cómodo por accesibilidad física, problemas de movilidad reducida o por la tranquilidad de ser atendidos en un entorno que ya conocen, puedo desplazarme a vuestras instalaciones en los días u horarios que acordemos para realizar las sesiones de hipnosis in situ.",
+      a: "Sí, por supuesto. Si para determinados usuarios o clientes es más cómodo por accesibilidad física, problemas de movilidad reducida o por la tranquilidad de ser atendidos en un entorno que ya conocen, puedo desplazarme a vuestras instalaciones en los días u horarios que acordemos para realizar las sesiones de terapia in situ.",
     },
   ],
 };
 
 export const professionalsVa: ProfessionalsData = {
   ...professionalsEs,
-  seoTitle: "Col·laboracions Professionals · Hipnosi com a Eina Complementària | María A. Cabo",
+  seoTitle: "Col·laboracions Professionals · Teràpia Complementària per a la Salut | María A. Cabo",
   seoDescription:
-    "Col·laboració interdisciplinària amb nutricionistes, fisioterapeutes, osteòpates i centres de salut a València i Ribera Baixa. Hipnosi per a potenciar l'adherència i resposta dels teus clients.",
-  eyebrow: "HIPNOSI COM A EINA COMPLEMENTÀRIA",
+    "Col·laboració interdisciplinària amb nutricionistes, fisioterapeutes, osteòpates i centres de salut a València i Ribera Baixa. Regulació neurobiològica per a potenciar l'adherència i resposta dels teus pacients.",
+  eyebrow: "ACOMPANYAMENT TERAPÈUTIC COMPLEMENTARI",
   title: "COL·LABORACIÓ AMB PROFESSIONALS DE LA SALUT I EL BENESTAR",
   manifesto:
     "“Col·labore amb professionals i centres de benestar de la Comunitat Valenciana quan consideren que algun dels seus clients pot beneficiar-se de treballar determinats hàbits, pors, bloquejos o patrons de comportament.”",
   heroText:
-    "En la teua pràctica de benestar o acompanyament, saps que sovint el major obstacle per a l'èxit de les teues pautes no és la teua prescripció tècnica, sinó la resposta automàtica i involuntària del client: l'angoixa que saboteja la dieta, la tensió muscular sostinguda o el bloqueig que frena el progrés. La hipnosi aplicada actua com una palanca facilitadora: aplana els bloquejos conductuals perquè les teues pautes aconseguisquen el màxim impacte.",
+    "En la teua pràctica de benestar o acompanyament, saps que sovint el major obstacle per a l'èxit de les teues pautes no és la teua prescripció tècnica, sinó la resposta automàtica i involuntària del client: l'angoixa que saboteja la dieta, la tensió muscular sostinguda o el bloqueig que frena el progrés. L'acompanyament terapèutic i la regulació neurobiològica actuen com una palanca facilitadora: aplanen els bloquejos conductuals perquè les teues pautes aconseguisquen el màxim impacte.",
   ctaPrimary: "PROPONDRE UNA COL·LABORACIÓ",
   ctaSecondary: "COM FUNCIONA UNA DERIVACIÓ",
 
   synergyEyebrow: "SINERGIA INTERDISCIPLINÀRIA",
-  synergyTitle: "COM POTENCIA LA HIPNOSI LA RESPOSTA ALS TEUS TRACTAMENTS?",
+  synergyTitle:
+    "COM POTENCIA LA TERÀPIA I LA REGULACIÓ NEUROBIOLÒGICA LA RESPOSTA ALS TEUS TRACTAMENTS?",
   synergyIntro:
     "Àrees on la intervenció sobre els automatismes subconscients complementa de manera natural la tasca d'altres professionals:",
 
@@ -323,18 +323,17 @@ export const professionalsVa: ProfessionalsData = {
   scopeTitle: "LÍMITS ÈTICS I ABAST DE LA INTERVENCIÓ",
   scopeIntro:
     "La col·laboració interdisciplinària només funciona quan els límits de competència són nítids i respectats:",
-  whatIWorkTitle: "QUÈ TREBALLE AMB HIPNOSI",
+  whatIWorkTitle: "QUÈ TREBALLE EN TERÀPIA",
   whatIDoNotWorkTitle: "QUÈ NO TREBALLE (ZERO INTRUSISME)",
 
   sessionEyebrow: "MÈTODE DE TREBALL",
   sessionTitle: "COM ÉS UNA SESSIÓ AMB MARÍA A. CABO?",
-  sessionIntro:
-    "Rigor, naturalitat i desmitificació absoluta dels tòpics televisius sobre la hipnosi:",
+  sessionIntro: "Rigor, naturalitat i un procés centrat en l'evidència i el benestar:",
 
   referralEyebrow: "COORDINACIÓ FÀCIL",
   referralTitle: "COM FUNCIONA UNA DERIVACIÓ?",
   referralIntro:
-    "Un protocol àgil, transparent i sense burocràcia perquè recomanar la hipnosi siga còmode i segur:",
+    "Un protocol àgil, transparent i sense burocràcia perquè recomanar l'acompanyament siga còmode i segur:",
 
   confidentialityTitle: "CONFIDENCIALITAT I RIGOR DEONTOLÒGIC",
   confidentialityText:
@@ -344,8 +343,8 @@ export const professionalsVa: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "Treballe des d'una convicció senzilla però profunda: la immensa majoria de les persones saben exactament el que haurien de fer, però el seu cos i la seua ment inconscient continuen responent amb automatismes construïts durant anys.",
-    "Com a professional formada en l'Institut Erickson Madrid en hipnosi ericksoniana, aplique una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
-    "Utilitze la hipnosi com una via complementària, estructurada i respectuosa per a intervindre sobre eixa part automàtica de l'experiència. Col·labore amb professionals de la salut i el benestar de València i la Ribera Baixa perquè crec fermament en el valor de sumar forces per a acompanyar les persones cap als seus objectius de benestar i canvi d'hàbits.",
+    "Com a professional formada en l'Institut Erickson Madrid, aplique una metodologia rigorosa, no invasiva i basada en l'evidència que activa els recursos i aprenentatges de la pròpia persona.",
+    "Utilitze l'acompanyament terapèutic com una via estructurada i respectuosa per a intervindre sobre eixa part automàtica de l'experiència. Col·labore amb professionals de la salut i el benestar de València i la Ribera Baixa perquè crec fermament en el valor de sumar forces per a acompanyar les persones cap als seus assoliments de benestar i canvi d'hàbits.",
   ],
 
   formEyebrow: "INICIAR CONTACTE",
@@ -359,27 +358,27 @@ export const professionalsVa: ProfessionalsData = {
   directContactEyebrow: "CONTACTE DIRECTE",
   directContactTitle: "Parlem de com sumar forces",
   directContactText:
-    "Si abans de coordinar casos preferixes comentar qualsevol dubte sobre com articular la col·laboració en el vostre centre, resoldre qüestions tècniques sobre la hipnosi o valorar l'atenció in situ per als vostres pacients, escriu-me directament per WhatsApp o a través del formulari.",
+    "Si abans de coordinar casos preferixes comentar qualsevol dubte sobre com articular la col·laboració en el vostre centre, resoldre dubtes sobre l'enfocament o valorar l'atenció in situ per als vostres pacients, escriu-me directament per WhatsApp o a través del formulari.",
   directContactWhatsApp: "Escriure per WhatsApp",
   directContactResponseTime: "Resposta habitual en menys de 24 hores laborables.",
 };
 
 export const professionalsEn: ProfessionalsData = {
   ...professionalsEs,
-  seoTitle: "Professional Partnerships · Hypnosis as a Complementary Tool | María A. Cabo",
+  seoTitle: "Professional Partnerships · Complementary Therapy for Healthcare | María A. Cabo",
   seoDescription:
-    "Interdisciplinary collaboration with nutritionists, physiotherapists, osteopaths and wellness clinics in Valencia and Ribera Baixa. Enhancing client adherence and clinical outcomes.",
-  eyebrow: "HYPNOSIS AS A COMPLEMENTARY TOOL",
+    "Interdisciplinary collaboration with nutritionists, physiotherapists, osteopaths and wellness clinics in Valencia and Ribera Baixa. Enhancing client adherence and clinical outcomes through neurobiological regulation.",
+  eyebrow: "COMPLEMENTARY THERAPEUTIC ACCOMPANIMENT",
   title: "PARTNERING WITH HEALTHCARE & WELLNESS PROFESSIONALS",
   manifesto:
-    "“I collaborate with health and wellness practitioners across the Valencian Community when they consider that their clients could benefit from addressing subconscious habits, fears, tension or behavioral blocks.”",
+    "“I collaborate with health and wellness practitioners across the Valencian Community when they consider that their clients could benefit from addressing automatic habits, fears, tension or behavioral blocks.”",
   heroText:
-    "In your clinical or wellness practice, you frequently encounter cases where the biggest hurdle is not technical expertise, but the client's automatic responses: emotional eating sabotaging a nutritional plan, chronic somatic tension perpetuating pain, or fear delaying rehabilitation. Hypnosis acts as a behavioral catalyst: resolving subconscious friction so that your treatments achieve their full potential.",
+    "In your clinical or wellness practice, you frequently encounter cases where the biggest hurdle is not technical expertise, but the client's automatic responses: emotional eating sabotaging a nutritional plan, chronic somatic tension perpetuating pain, or fear delaying rehabilitation. Therapeutic accompaniment and neurobiological regulation act as a behavioral catalyst: resolving unconscious friction so that your treatments achieve their full potential.",
   ctaPrimary: "PROPOSE A PARTNERSHIP",
   ctaSecondary: "HOW REFERRALS WORK",
 
   synergyEyebrow: "INTERDISCIPLINARY SYNERGY",
-  synergyTitle: "HOW DOES HYPNOSIS COMPLEMENT YOUR PRACTICE?",
+  synergyTitle: "HOW DOES THERAPY COMPLEMENT YOUR CLINICAL PRACTICE?",
   synergyIntro:
     "Key areas where addressing subconscious automatisms naturally reinforces the work of healthcare and wellness practitioners:",
 
@@ -387,17 +386,17 @@ export const professionalsEn: ProfessionalsData = {
   scopeTitle: "ETHICAL BOUNDARIES & SCOPE OF PRACTICE",
   scopeIntro:
     "Effective interdisciplinary collaboration relies on clear, respected professional boundaries:",
-  whatIWorkTitle: "WHAT I ADDRESS WITH HYPNOSIS",
+  whatIWorkTitle: "WHAT I ADDRESS IN THERAPY",
   whatIDoNotWorkTitle: "WHAT I DO NOT ADDRESS (ZERO ENCROACHMENT)",
 
   sessionEyebrow: "SESSION METHODOLOGY",
-  sessionTitle: "WHAT IS A HYPNOSIS SESSION LIKE WITH MARÍA A. CABO?",
-  sessionIntro: "Grounded, scientific and completely stripped of stage-hypnosis myths:",
+  sessionTitle: "WHAT IS A SESSION LIKE WITH MARÍA A. CABO?",
+  sessionIntro: "Grounded, scientific and focused on evidence-based wellbeing:",
 
   referralEyebrow: "SMOOTH COORDINATION",
   referralTitle: "HOW DO REFERRALS WORK?",
   referralIntro:
-    "A straightforward, transparent process designed to make client referrals effortless and secure:",
+    "A straightforward, transparent process designed to make client accompaniment effortless and secure:",
 
   confidentialityTitle: "CONFIDENTIALITY & ETHICAL RIGOR",
   confidentialityText:
@@ -407,8 +406,8 @@ export const professionalsEn: ProfessionalsData = {
   aboutTitle: "MARÍA A. CABO",
   aboutText: [
     "My work is grounded in a simple yet profound premise: most people know intellectually what they need to do, but their nervous system and subconscious mind continue reacting with automatic habits formed over years.",
-    "Trained at the Instituto Erickson Madrid in Ericksonian hypnosis, I apply a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
-    "I utilize hypnosis and hypnotherapy as a structured complementary tool to address automatic responses. I collaborate with healthcare and wellness practitioners across Valencia and Ribera Baixa, firmly believing in the synergistic value of an interdisciplinary network that enhances client outcomes.",
+    "Trained at the Instituto Erickson Madrid, I apply a rigorous, non-invasive and evidence-based approach that activates the client's own internal resources and adaptive patterns.",
+    "I utilize structured therapeutic accompaniment as a respectful tool to address automatic responses. I collaborate with healthcare and wellness practitioners across Valencia and Ribera Baixa, firmly believing in the synergistic value of an interdisciplinary network that enhances client outcomes.",
   ],
 
   formEyebrow: "START THE CONVERSATION",
@@ -419,7 +418,7 @@ export const professionalsEn: ProfessionalsData = {
   directContactEyebrow: "DIRECT CONTACT",
   directContactTitle: "Let's discuss how we can work together",
   directContactText:
-    "If you would like to discuss how a collaboration could work in your clinic, ask technical questions about hypnosis or explore on-site sessions for your patients before referring cases, message me directly on WhatsApp or via the form.",
+    "If you would like to discuss how a collaboration could work in your clinic, ask questions about the methodology or explore on-site sessions for your patients before referring cases, message me directly on WhatsApp or via the form.",
   directContactWhatsApp: "Message via WhatsApp",
   directContactResponseTime: "Typical response within 24 business hours.",
 

@@ -6,9 +6,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/ambitos")({
   head: () =>
     makeSeo({
-      title: "Ámbitos de Hipnosis y Desarrollo Personal · María A. Cabo",
+      title: "Ámbitos de Intervención Terapéutica y Desarrollo Personal · María A. Cabo",
       description:
-        "Insomnio y estrés, ansiedad, miedos y fobias, dejar de fumar, control de peso, hábitos nerviosos, autoestima, foco y deporte: áreas de desarrollo personal con hipnosis en Sueca y Valencia.",
+        "Insomnio y estrés, ansiedad, miedos y fobias, dejar de fumar, control de peso, hábitos nerviosos, autoestima, foco y deporte: áreas de acompañamiento terapéutico en Sueca y Valencia.",
       path: "/ambitos",
     }),
   component: AreasPage,

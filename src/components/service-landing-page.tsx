@@ -179,7 +179,7 @@ export function ServiceLandingPage({
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`Consulta hipnosis ${formTag} · ${formData.name}`);
+      const subject = encodeURIComponent(`Consulta ${formTag} · ${formData.name}`);
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
     } finally {
@@ -275,7 +275,7 @@ export function ServiceLandingPage({
         </div>
       </section>
 
-      {/* POR QUÉ LA HIPNOSIS: CIENCIA Y ENFOQUE SUBCONSCIENTE */}
+      {/* POR QUÉ ESTE ENFOQUE: CIENCIA Y REGULACIÓN NEUROBIOLÓGICA */}
       <section className="border-y border-border/60 bg-muted/30 py-16 md:py-24">
         <div className="container-page">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
@@ -558,8 +558,8 @@ export function ServiceLandingPage({
               <h3 className="font-serif text-2xl">¿Cómo te respondo?</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Leo tu mensaje personalmente y te respondo por WhatsApp o correo en menos de 24-48
-                horas laborables. Te daré una valoración honesta sobre si la hipnosis es adecuada
-                para lo que te ocurre o si conviene orientarte de otra manera.
+                horas laborables. Te daré una valoración honesta sobre si este enfoque terapéutico
+                es adecuado para lo que te ocurre o si conviene orientarte de otra manera.
               </p>
 
               <div className="mt-6 border-t border-border pt-6">
@@ -585,12 +585,16 @@ export function ServiceLandingPage({
               </div>
 
               <div className="mt-8 rounded-2xl bg-muted/60 p-5 text-center">
-                <p className="text-xs text-muted-foreground">¿Prefieres escribir directamente por WhatsApp?</p>
+                <p className="text-xs text-muted-foreground">
+                  ¿Prefieres escribir directamente por WhatsApp?
+                </p>
                 <button
                   type="button"
                   onClick={() => {
                     trackWhatsAppClick(`landing_${formTag}`);
-                    const url = getWhatsAppUrl(`Hola María, te escribo desde la página de ${formTag} para consultarte...`);
+                    const url = getWhatsAppUrl(
+                      `Hola María, te escribo desde la página de ${formTag} para consultarte...`,
+                    );
                     if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
                   }}
                   className="mt-2.5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 px-4 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-95"
@@ -598,8 +602,13 @@ export function ServiceLandingPage({
                   <span>Chat directo de WhatsApp</span>
                 </button>
 
-                <p className="mt-4 text-xs text-muted-foreground border-t border-border/60 pt-3">¿O prefieres una llamada previa de 15 min?</p>
-                <CalendarButton className="mt-2 w-full text-xs py-2.5" source={`landing_${formTag}`} />
+                <p className="mt-4 text-xs text-muted-foreground border-t border-border/60 pt-3">
+                  ¿O prefieres una llamada previa de 15 min?
+                </p>
+                <CalendarButton
+                  className="mt-2 w-full text-xs py-2.5"
+                  source={`landing_${formTag}`}
+                />
               </div>
             </div>
           </div>
@@ -633,8 +642,8 @@ export function ServiceLandingPage({
         <div className="rounded-3xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl font-normal md:text-4xl">¿Empezamos a cambiar ese patrón?</h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/90 leading-relaxed">
-            Puedes solicitar una valoración previa de 15 minutos sin compromiso o escribirme a través del formulario para
-            conocer tu caso antes de dar el paso.
+            Puedes solicitar una valoración previa de 15 minutos sin compromiso o escribirme a
+            través del formulario para conocer tu caso antes de dar el paso.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a

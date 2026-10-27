@@ -29,10 +29,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/profesionales")({
   head: () =>
     makeSeo({
-      title:
-        "Colaboraciones Profesionales · Hipnosis como Herramienta Complementaria | María A. Cabo",
+      title: "Colaboraciones Profesionales · Terapia Complementaria para la Salud | María A. Cabo",
       description:
-        "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Hipnosis para potenciar la adherencia y respuesta de tus clientes.",
+        "Colaboración interdisciplinar con nutricionistas, fisioterapeutas, osteópatas y centros de salud en Valencia y Ribera Baixa. Regulación neurobiológica para potenciar la adherencia y respuesta de tus pacientes.",
       path: "/profesionales",
     }),
   component: ProfessionalsPage,
@@ -172,7 +171,9 @@ function ProfessionalsPage() {
                 {p.ctaSecondary}
               </a>
               <a
-                href={getWhatsAppUrl("Hola María, soy profesional de la salud y me gustaría consultar una posible colaboración con mi centro...")}
+                href={getWhatsAppUrl(
+                  "Hola María, soy profesional de la salud y me gustaría consultar una posible colaboración con mi centro...",
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium transition-colors hover:bg-muted"
@@ -245,7 +246,7 @@ function ProfessionalsPage() {
 
                 <div className="mt-6 border-t border-border/60 pt-4">
                   <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-                    Aporte de la hipnosis:
+                    Aporte del acompañamiento terapéutico:
                   </p>
                   <p className="mt-1.5 text-sm leading-relaxed text-foreground">{item.benefit}</p>
                 </div>
@@ -430,7 +431,7 @@ function ProfessionalsPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María A. Cabo - Hipnosis en Valencia y Sueca"
+                alt="María A. Cabo - Acompañamiento Terapéutico en Valencia y Sueca"
                 width={1254}
                 height={1254}
                 loading="lazy"
@@ -601,16 +602,16 @@ function ProfessionalsPage() {
             {/* CAJA LATERAL: CONTACTO DIRECTO */}
             <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
               <span className="eyebrow">{p.directContactEyebrow}</span>
-              <h3 className="mt-2 font-serif text-2xl font-normal">
-                {p.directContactTitle}
-              </h3>
+              <h3 className="mt-2 font-serif text-2xl font-normal">{p.directContactTitle}</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 {p.directContactText}
               </p>
 
               <div className="mt-8 space-y-4">
                 <a
-                  href={getWhatsAppUrl("Hola María, me gustaría comentar una posible colaboración profesional con mi centro...")}
+                  href={getWhatsAppUrl(
+                    "Hola María, me gustaría comentar una posible colaboración profesional con mi centro...",
+                  )}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
@@ -664,12 +665,12 @@ function ProfessionalsPage() {
       <section className="border-t border-border/60 bg-muted/30 py-10">
         <div className="container-page text-center">
           <p className="mx-auto max-w-3xl text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso de rigor ético y deontológico:</strong> El acompañamiento con hipnosis
-            ofrecido por María A. Cabo se enmarca en el desarrollo personal, la gestión emocional y
-            la modificación de automatismos y hábitos. No constituye un servicio sanitario ni
-            sustituye tratamientos médicos, farmacológicos o de psicología clínica reglada. La
-            colaboración se establece desde la complementariedad y el respeto escrupuloso a las
-            competencias de cada profesional de la salud.
+            <strong>Aviso de rigor ético y deontológico:</strong> El acompañamiento terapéutico y de
+            desarrollo personal ofrecido por María A. Cabo se enmarca en la regulación somática, el
+            bienestar emocional y la modificación de automatismos y hábitos. No constituye un
+            servicio sanitario ni sustituye tratamientos médicos, farmacológicos o de psicología
+            clínica reglada. La colaboración se establece desde la complementariedad y el respeto
+            escrupuloso a las competencias de cada profesional de la salud.
           </p>
         </div>
       </section>

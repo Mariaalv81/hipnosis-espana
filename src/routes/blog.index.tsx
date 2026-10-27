@@ -9,7 +9,7 @@ export const Route = createFileRoute("/blog/")({
     makeSeo({
       title: "Blog · María A. Cabo",
       description:
-        "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.",
+        "Textos breves sobre el funcionamiento de la mente, hábitos y cambio personal, con tono sereno y sin diagnósticos.",
       path: "/blog",
     }),
   component: BlogIndexPage,

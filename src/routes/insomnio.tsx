@@ -6,9 +6,9 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/insomnio")({
   head: () =>
     makeSeo({
-      title: "Hipnosis para el Insomnio en Valencia y Sueca · Dormir Mejor | María A. Cabo",
+      title: "Terapia para el Insomnio en Valencia y Sueca · Dormir Mejor | María A. Cabo",
       description:
-        "Calma la mente, frena la rumiación nocturna y recupera un descanso reparador y natural con hipnosis clínica y desarrollo personal en Sueca, Valencia y online. 70 €/sesión.",
+        "Calma la mente, frena la rumiación nocturna y recupera un descanso reparador y natural con terapia focalizada y regulación somática en Sueca, Valencia y online. 70 €/sesión.",
       path: "/insomnio",
     }),
   component: InsomniaPage,
@@ -20,8 +20,8 @@ function InsomniaPage() {
   return (
     <ServiceLandingPage
       data={t.insomniaPage}
-      serviceName="Hipnosis para el insomnio, descanso profundo y regulación del sueño"
-      serviceDescription="Acompañamiento con hipnosis clínica y desarrollo personal para desactivar la tensión nocturna, calmar la rumiación mental y favorecer un sueño profundo y reparador. Sesiones en Sueca (Centro Sanar), a domicilio en Valencia ciudad y online."
+      serviceName="Terapia para el insomnio, descanso profundo y regulación del sueño"
+      serviceDescription="Acompañamiento terapéutico para desactivar la tensión nocturna, calmar la rumiación mental y recuperar un sueño profundo y reparador. Sesiones en Sueca (Centro Sanar), a domicilio en Valencia ciudad y online."
       path="/insomnio"
       formTag="Insomnio y Sueño"
     />

@@ -9,9 +9,9 @@ import { trackWhatsAppClick } from "@/lib/analytics";
 export const Route = createFileRoute("/faq")({
   head: () =>
     makeSeo({
-      title: "Preguntas frecuentes sobre hipnosis en Sueca · María A. Cabo",
+      title: "Preguntas frecuentes sobre la terapia en Sueca y Valencia · María A. Cabo",
       description:
-        "Dudas habituales sobre la hipnosis: control, confidencialidad, número de sesiones, precios y límites del acompañamiento.",
+        "Dudas habituales sobre el acompañamiento terapéutico: control, confidencialidad, número de sesiones, precios y cómo alcanzar tus objetivos.",
       path: "/faq",
     }),
   component: FaqPage,
@@ -56,7 +56,7 @@ function FaqPage() {
               onClick={() => {
                 trackWhatsAppClick("faq_cta");
                 const url = getWhatsAppUrl(
-                  "Hola María, he leído las preguntas frecuentes y me gustaría hacer una valoración de 15 minutos sin compromiso."
+                  "Hola María, he leído las preguntas frecuentes y me gustaría hacer una valoración de 15 minutos sin compromiso.",
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}

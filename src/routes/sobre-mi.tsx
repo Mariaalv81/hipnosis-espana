@@ -12,9 +12,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/sobre-mi")({
   head: () =>
     makeSeo({
-      title: "Sobre María A. Cabo · Hipnosis y Desarrollo Personal en Valencia y Sueca",
+      title: "Sobre María A. Cabo · Terapia y Desarrollo Personal en Valencia y Sueca",
       description:
-        "María A. Cabo es especialista en hipnosis y desarrollo personal formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
+        "María A. Cabo es terapeuta y especialista en desarrollo personal formada en el Instituto Erickson Madrid. Sesiones en Sueca, a domicilio en Valencia y online.",
       path: "/sobre-mi",
     }),
   component: AboutPage,
@@ -51,7 +51,7 @@ function AboutPage() {
               <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
               <img
                 src={sobreMiMariaCaboJpg}
-                alt="María A. Cabo - Hipnosis y Desarrollo Personal"
+                alt="María A. Cabo - Acompañamiento Terapéutico y Desarrollo Personal"
                 width={1254}
                 height={1254}
                 loading="eager"
@@ -99,13 +99,14 @@ function AboutPage() {
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">Hipnosis Ericksoniana</p>
+                  <p className="text-sm font-semibold">Formación Especializada</p>
                   <p className="text-xs text-muted-foreground">Instituto Erickson Madrid</p>
                 </div>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                Formación especializada en Hipnosis Ericksoniana en el Instituto Erickson Madrid. Enfoque riguroso, natural y
-                respetuoso centrado en los recursos de la propia persona.
+                Formación especializada en procesos de cambio y comunicación terapéutica en el
+                Instituto Erickson Madrid. Enfoque riguroso, natural y respetuoso centrado en los
+                recursos de la propia persona.
               </p>
             </div>
 
@@ -120,8 +121,8 @@ function AboutPage() {
                 </div>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                Comparto reflexiones, desmitificación de la hipnosis, casos y consejos prácticos
-                casi a diario.
+                Comparto reflexiones sobre bienestar, regulación del sistema nervioso, casos y
+                consejos prácticos casi a diario.
               </p>
               <a
                 href={siteSettings.instagramUrl}
@@ -229,7 +230,9 @@ function AboutPage() {
                   <Link to="/contacto">{t.common.contactMe}</Link>
                 </Button>
                 <a
-                  href={getWhatsAppUrl("Hola María, he leído tu trayectoria y me gustaría hacerte una consulta sobre una sesión.")}
+                  href={getWhatsAppUrl(
+                    "Hola María, he leído tu trayectoria y me gustaría hacerte una consulta sobre una sesión.",
+                  )}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackWhatsAppClick("Sobre Mi")}

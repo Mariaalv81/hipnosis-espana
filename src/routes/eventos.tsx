@@ -9,7 +9,7 @@ export const Route = createFileRoute("/eventos")({
     makeSeo({
       title: "Eventos y talleres · María A. Cabo",
       description:
-        "Encuentros introductorios y talleres de grupo sobre hipnosis y cambio personal en Sueca.",
+        "Encuentros introductorios y talleres de grupo sobre regulación, bienestar y cambio personal en Sueca.",
       path: "/eventos",
     }),
   component: EventsPage,

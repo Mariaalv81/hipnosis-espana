@@ -11,7 +11,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const title = post?.title ?? "Blog";
     const description =
       post?.excerpt ??
-      "Textos breves sobre hipnosis, hábitos y cambio personal, con tono sereno y sin diagnósticos.";
+      "Textos breves sobre el funcionamiento de la mente, hábitos y cambio personal, con tono sereno y sin diagnósticos.";
 
     return makeSeo({
       title: `${title} · María A. Cabo`,
@@ -122,7 +122,7 @@ function BlogPostPage() {
             <p className="text-xs uppercase tracking-wider text-muted-foreground">Escrito por</p>
             <h3 className="text-lg font-medium">María A. Cabo</h3>
             <p className="mt-0.5 text-xs text-muted-foreground">
-              Hipnosis y desarrollo personal en Sueca (Valencia) y online.
+              Terapia y desarrollo personal en Sueca (Valencia) y online.
             </p>
           </div>
           <a

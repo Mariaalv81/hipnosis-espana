@@ -96,7 +96,9 @@ function CorporateContactPage() {
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`${c.emailSubject || "Programa para empresas"} · ${data.company}`);
+      const subject = encodeURIComponent(
+        `${c.emailSubject || "Programa para empresas"} · ${data.company}`,
+      );
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
     } finally {
@@ -106,11 +108,7 @@ function CorporateContactPage() {
 
   return (
     <>
-      <PageHeader
-        eyebrow={c.eyebrow}
-        title={c.title}
-        intro={c.intro}
-      />
+      <PageHeader eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
 
       <section className="container-page grid gap-12 py-16 md:py-20 lg:grid-cols-[3fr_2fr]">
         <div>
@@ -247,7 +245,7 @@ function CorporateContactPage() {
               onClick={() => {
                 trackWhatsAppClick("empresas_contacto_aside");
                 const url = getWhatsAppUrl(
-                  "Hola María, represento a una organización y me gustaría consultar sobre talleres y programas de desarrollo profesional..."
+                  "Hola María, represento a una organización y me gustaría consultar sobre talleres y programas de desarrollo profesional...",
                 );
                 if (url && url !== "#") window.open(url, "_blank", "noopener,noreferrer");
               }}
