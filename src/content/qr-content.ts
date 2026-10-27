@@ -94,16 +94,16 @@ export interface QrPageData {
 }
 
 export const qrContentEs: QrPageData = {
-  seoTitle: "María A. Cabo · Hipnosis y Desarrollo Personal | Tarjeta de Visita",
+  seoTitle: "María A. Cabo · Acompañamiento Terapéutico y Desarrollo Personal | Tarjeta de Visita",
   seoDescription:
-    "Portal de bienvenida para contactos de tarjeta de visita. Especialista en Hipnosis Ericksoniana en Sueca, Valencia y online. Solicita tu valoración gratuita de 15 min o habla conmigo por WhatsApp.",
+    "Portal de bienvenida para contactos de tarjeta de visita. Terapia focalizada en procesos neurobiológicos, regulación del sistema nervioso y cambio de patrones en Sueca, Valencia y online.",
   pill: "TARJETA DE VISITA DIGITAL · BIENVENIDA/O",
   title: "MARÍA A. CABO",
-  subtitle: "Especialista en Hipnosis Ericksoniana y Desarrollo Personal",
+  subtitle: "Terapia Focalizada, Regulación Neurobiológica y Procesos de Cambio",
   intro:
     "Si estás aquí es porque nos hemos conocido en persona o tienes mi tarjeta en tus manos. He diseñado esta página para que tengas en un vistazo directo qué problemas resuelvo, cómo trabajamos y las formas más directas de consultarme sin compromiso.",
   trustCredentials: [
-    "Psicoterapia integrada con hipnosis",
+    "Terapia orientada a procesos neurobiológicos y cambio de patrones",
     "Formada en el Instituto Erickson Madrid",
     "Despacho presencial en Sueca (Centro Sanar)",
     "A domicilio en Valencia ciudad y formato Online",
@@ -116,9 +116,9 @@ export const qrContentEs: QrPageData = {
   valuationSubtext: "Gratuita y sin compromiso · Por teléfono o videollamada",
 
   servicesEyebrow: "¿QUÉ DESEAS CAMBIAR?",
-  servicesTitle: "ÁREAS DE ACOMPAÑAMIENTO CON HIPNOSIS",
+  servicesTitle: "ÁREAS DE INTERVENCIÓN Y ACOMPAÑAMIENTO TERAPÉUTICO",
   servicesSubtitle:
-    "La hipnosis clínica ericksoniana actúa directamente sobre los hábitos, automatismos y respuestas reflejas del sistema nervioso:",
+    "Un abordaje terapéutico que actúa directamente sobre las conexiones neuronales, los automatismos aprendidos y las respuestas reflejas del sistema nervioso:",
   services: [
     {
       title: "Dejar de Fumar",
@@ -197,15 +197,15 @@ export const qrContentEs: QrPageData = {
   howEyebrow: "RIGOR Y NATURALIDAD",
   howTitle: "¿CÓMO ES UNA SESIÓN CONMIGO?",
   howSubtitle:
-    "La hipnosis ericksoniana no tiene nada que ver con el espectáculo televisivo ni con la pérdida de control:",
+    "Un proceso terapéutico basado en la neurociencia y en la activación de tus recursos internos, sin pérdidas de control ni métodos invasivos:",
   howPoints: [
     {
       title: "Control y lucidez total en todo momento",
       text: "Nadie pierde la conciencia ni se duerme. Escuchas mi voz, recuerdas todo lo sucedido, puedes hablar y decides en todo momento qué recursos adoptar. Es un trabajo en equipo.",
     },
     {
-      title: "Metodología basada en evidencia",
-      text: "Formada en el Instituto Erickson Madrid. Aprovechamos la neuroplasticidad del cerebro para actualizar respuestas reflejas automáticas de forma segura, respetuosa y eficaz.",
+      title: "Metodología basada en neurobiología y evidencia",
+      text: "Formada en el Instituto Erickson Madrid. Trabajamos con la neuroplasticidad cerebral y estados de atención focalizada para actualizar respuestas automáticas, desactivar circuitos de alarma y consolidar nuevos patrones de bienestar.",
     },
     {
       title: "Procesos acotados a objetivos medibles",
@@ -230,7 +230,7 @@ export const qrContentEs: QrPageData = {
     },
     {
       quote:
-        "Como nutricionista, derivo a pacientes que sufren de hambre emocional severa o atracones nocturnos por estrés. El cambio en su adherencia al tratamiento es notable desde las primeras sesiones de hipnosis.",
+        "Como nutricionista, derivo a pacientes que sufren de hambre emocional severa o atracones nocturnos por estrés. El cambio en su adherencia al tratamiento y en su autorregulación es notable desde las primeras sesiones.",
       author: "Elena R.",
       detail: "Dietista-Nutricionista colaboradora",
     },
@@ -285,7 +285,7 @@ export const qrContentEs: QrPageData = {
     },
     {
       title: "Formato Online por Videollamada",
-      text: "La hipnosis ericksoniana funciona con la misma eficacia por videoconferencia en la tranquilidad de tu propia casa, requiriendo únicamente una conexión estable y un lugar cómodo.",
+      text: "El trabajo terapéutico y de regulación neurobiológica funciona con la misma eficacia por videoconferencia en la tranquilidad de tu propia casa, requiriendo únicamente una conexión estable y un lugar cómodo.",
     },
   ],
 
@@ -297,16 +297,17 @@ export const qrContentEs: QrPageData = {
 
 export const qrContentVa: QrPageData = {
   ...qrContentEs,
-  seoTitle: "María A. Cabo · Hipnosi i Desenvolupament Personal | Targeta de Visita",
+  seoTitle:
+    "María A. Cabo · Acompanyament Terapèutic i Desenvolupament Personal | Targeta de Visita",
   seoDescription:
-    "Portal de benvinguda per a contactes de targeta de visita. Especialista en Hipnosi Ericksoniana a Sueca, València i online. Sol·licita la teua valoració gratuïta de 15 min o parla amb mi per WhatsApp.",
+    "Portal de benvinguda per a contactes de targeta de visita. Teràpia focalitzada en processos neurobiològics, regulació del sistema nerviós i canvi de patrons a Sueca, València i online.",
   pill: "TARGETA DE VISITA DIGITAL · BENVINGUDA/T",
   title: "MARÍA A. CABO",
-  subtitle: "Especialista en Hipnosi Ericksoniana i Desenvolupament Personal",
+  subtitle: "Teràpia Focalitzada, Regulació Neurobiològica i Processos de Canvi",
   intro:
     "Si estàs ací és perquè ens hem conegut en persona o tens la meua targeta en les teues mans. He dissenyat este espai perquè conegues en una ullada directa quins problemes treballe, com funciona el mètode i les formes més àgils de consultar-me sense compromís.",
   trustCredentials: [
-    "Psicoteràpia integrada amb hipnosi",
+    "Teràpia orientada a processos neurobiològics i canvi de patrons",
     "Formada en l'Institut Erickson Madrid",
     "Despatx presencial a Sueca (Centre Sanar)",
     "A domicili a València ciutat i format Online",
@@ -319,9 +320,9 @@ export const qrContentVa: QrPageData = {
   valuationSubtext: "Gratuïta i sense compromís · Per telèfon o videotrucada",
 
   servicesEyebrow: "QUÈ VOLS CANVIAR?",
-  servicesTitle: "ÀREES D'ACOMPANYAMENT AMB HIPNOSI",
+  servicesTitle: "ÀREES D'INTERVENCIÓ I ACOMPANYAMENT TERAPÈUTIC",
   servicesSubtitle:
-    "La hipnosi clínica ericksoniana actua directament sobre els hàbits, automatismes i respostes reflexes del sistema nerviós:",
+    "Un abordatge terapèutic que actua directament sobre les connexions neuronals, els automatismes apresos i les respostes reflexes del sistema nerviós:",
   services: [
     {
       title: "Deixar de Fumar",
@@ -400,15 +401,15 @@ export const qrContentVa: QrPageData = {
   howEyebrow: "RIGOR I NATURALITAT",
   howTitle: "COM ÉS UNA SESSIÓ AMB MI?",
   howSubtitle:
-    "La hipnosi ericksoniana no té res a veure amb l'espectacle ni amb la pèrdua de control:",
+    "Un procés terapèutic basat en la neurociència i en l'activació dels teus recursos interns, sense pèrdues de control ni mètodes invasius:",
   howPoints: [
     {
       title: "Control i lucidesa total en tot moment",
       text: "Ningú perd la consciència ni es dorm. Sents la meua veu, recordes tot el procés, pots parlar i decidixes en tot moment quins recursos adoptar. És un treball en equip.",
     },
     {
-      title: "Metodologia basada en l'evidència",
-      text: "Formada en l'Institut Erickson Madrid. Aprofitem la neuroplasticitat per a actualitzar patrons reflexes de forma respectuosa i segura.",
+      title: "Metodologia basada en neurobiologia i evidència",
+      text: "Formada en l'Institut Erickson Madrid. Treballem amb la neuroplasticitat cerebral i estats d'atenció focalitzada per a actualitzar respostes automàtiques, desactivar circuits d'alarma i consolidar nous patrons de benestar.",
     },
     {
       title: "Processos acotats a objectius mesurables",
@@ -433,7 +434,7 @@ export const qrContentVa: QrPageData = {
     },
     {
       quote:
-        "Com a nutricionista, derive a pacients que patixen fam emocional o afartaments per estrés. El canvi en l'adherència al tractament és notable des de les primeres sessions d'hipnosi.",
+        "Com a nutricionista, derive a pacients que patixen fam emocional o afartaments per estrés. El canvi en l'adherència al tractament i en la seua autoregulació és notable des de les primeres sessions.",
       author: "Elena R.",
       detail: "Dietista-Nutricionista col·laboradora",
     },
@@ -488,7 +489,7 @@ export const qrContentVa: QrPageData = {
     },
     {
       title: "Format Online per Videotrucada",
-      text: "La hipnosi funciona amb la mateixa eficàcia per videoconferència en la tranquil·litat de ta casa, necessitant únicament una connexió estable i un lloc còmode.",
+      text: "El treball terapèutic i de regulació neurobiològica funciona amb la mateixa eficàcia per videoconferència en la tranquil·litat de ta casa, necessitant únicament una connexió estable i un lloc còmode.",
     },
   ],
 
@@ -500,16 +501,16 @@ export const qrContentVa: QrPageData = {
 
 export const qrContentEn: QrPageData = {
   ...qrContentEs,
-  seoTitle: "María A. Cabo · Hypnosis & Personal Development | Business Card",
+  seoTitle: "María A. Cabo · Therapeutic Accompaniment & Personal Growth | Business Card",
   seoDescription:
-    "Welcome portal for business card contacts. Certified Ericksonian Hypnosis practitioner in Sueca, Valencia and online. Book your free 15-minute consultation or message me directly on WhatsApp.",
+    "Welcome portal for business card contacts. Therapy focused on neurobiological processes, nervous system regulation and pattern change in Sueca, Valencia and online.",
   pill: "DIGITAL BUSINESS CARD · WELCOME",
   title: "MARÍA A. CABO",
-  subtitle: "Specialist in Ericksonian Hypnosis & Personal Development",
+  subtitle: "Focused Therapy, Neurobiological Regulation & Change Processes",
   intro:
     "If you are here, it's because we met in person or you have my business card in your hands. I created this page to give you a clear, direct overview of the challenges I help resolve, how my approach works, and the fastest ways to reach out with zero pressure.",
   trustCredentials: [
-    "Psychotherapy integrated with hypnosis",
+    "Therapy focused on neurobiological processes and pattern change",
     "Trained at the Instituto Erickson Madrid",
     "Private practice in Sueca (Centro Sanar)",
     "Home visits in Valencia city & Online via video call",
@@ -522,9 +523,9 @@ export const qrContentEn: QrPageData = {
   valuationSubtext: "Free & confidential · Via phone or video call",
 
   servicesEyebrow: "WHAT WOULD YOU LIKE TO CHANGE?",
-  servicesTitle: "HYPNOSIS PRACTICE AREAS",
+  servicesTitle: "AREAS OF INTERVENTION & THERAPEUTIC ACCOMPANIMENT",
   servicesSubtitle:
-    "Clinical Ericksonian hypnosis works directly on automatic habits, unconscious triggers and nervous system responses:",
+    "A therapeutic approach that acts directly on neural pathways, learned automated habits, and nervous system responses:",
   services: [
     {
       title: "Quit Smoking",
@@ -589,7 +590,7 @@ export const qrContentEn: QrPageData = {
   proSubtitle:
     "Interdisciplinary collaboration with nutritionists, physiotherapists, osteopaths, dentists and doctors.",
   proText:
-    "In clinical practice, the primary obstacle is often not your technical prescription, but the client's automatic responses: emotional eating that sabotages nutritional plans, chronic muscle guarding that delays rehabilitation, or smoking that compromises dental surgeries. Hypnosis acts as a complementary catalyst with zero encroachment on your professional authority.",
+    "In clinical practice, the primary obstacle is often not your technical prescription, but the client's automatic responses: emotional eating that sabotages nutritional plans, chronic muscle guarding that delays rehabilitation, or smoking that compromises dental surgeries. I collaborate as a complementary catalyst with zero encroachment on your professional authority.",
   proHighlights: [
     "In-person at my Sueca office, online or on-site at your clinic facilities.",
     "Streamlined referral protocol with ethical feedback under client consent.",
@@ -603,15 +604,15 @@ export const qrContentEn: QrPageData = {
   howEyebrow: "SCIENTIFIC RIGOUR & EASE",
   howTitle: "WHAT IS A SESSION LIKE WITH ME?",
   howSubtitle:
-    "Ericksonian hypnosis has nothing in common with stage hypnosis or loss of personal control:",
+    "A therapeutic process grounded in neuroscience and internal resource activation, free from stage spectacle or loss of control:",
   howPoints: [
     {
       title: "Full lucidity and complete control throughout",
       text: "You never lose consciousness or fall asleep. You hear my voice, remember everything that happens, can speak, and decide at every step which resources to integrate. It is collaborative teamwork.",
     },
     {
-      title: "Evidence-based methodology",
-      text: "Trained at the Instituto Erickson Madrid. We leverage neuroplasticity to update automatic conditioned responses safely, respectfully, and effectively.",
+      title: "Methodology grounded in neurobiology and evidence",
+      text: "Trained at the Instituto Erickson Madrid. We leverage cerebral neuroplasticity and focused attention states to update automatic responses, quiet alarm circuits, and consolidate lasting wellbeing.",
     },
     {
       title: "Processes bounded to measurable goals",
@@ -636,7 +637,7 @@ export const qrContentEn: QrPageData = {
     },
     {
       quote:
-        "As a nutritionist, I refer patients who struggle with severe emotional eating or midnight snacking under stress. Their adherence to dietary guidance improves noticeably from the very first hypnosis sessions.",
+        "As a nutritionist, I refer patients who struggle with severe emotional eating or midnight snacking under stress. Their adherence to dietary guidance and self-regulation improves noticeably from the very first sessions.",
       author: "Elena R.",
       detail: "Partner Dietitian-Nutritionist",
     },
@@ -691,7 +692,7 @@ export const qrContentEn: QrPageData = {
     },
     {
       title: "Online via Video Call",
-      text: "Ericksonian hypnosis works with identical efficacy over secure video call from the comfort of your own home, requiring only a stable connection and a comfortable space.",
+      text: "Therapeutic and neurobiological regulation work functions with identical efficacy over secure video call from the comfort of your own home, requiring only a stable connection and a comfortable space.",
     },
   ],
 

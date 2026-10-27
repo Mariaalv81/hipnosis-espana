@@ -30,9 +30,9 @@ import sobreMiMariaCaboAvif from "@/assets/images/sobre-mi-maria-cabo.avif";
 export const Route = createFileRoute("/qr")({
   head: () =>
     makeSeo({
-      title: "María A. Cabo · Hipnosis y Desarrollo Personal | Tarjeta de Visita",
+      title: "María A. Cabo · Acompañamiento Terapéutico y Desarrollo Personal | Tarjeta de Visita",
       description:
-        "Portal de contacto directo para tarjetas de visita. Especialista en Hipnosis Ericksoniana en Sueca, Valencia y online. Solicita tu valoración gratuita de 15 min o habla conmigo por WhatsApp.",
+        "Portal de contacto directo para tarjetas de visita. Terapia focalizada en procesos neurobiológicos, regulación del sistema nervioso y cambio de patrones en Sueca, Valencia y online.",
       path: "/qr",
     }),
   component: QrLandingPage,
@@ -49,8 +49,7 @@ function QrLandingPage() {
   const [mailtoLink, setMailtoLink] = useState<string | null>(null);
 
   const handleWhatsAppClick =
-    (text: string, trackingSource: string) =>
-    (e: React.MouseEvent<HTMLAnchorElement>) => {
+    (text: string, trackingSource: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
       trackWhatsAppClick(trackingSource);
       const url = getWhatsAppUrl(text);
       if (url && url !== "#") {
@@ -78,7 +77,9 @@ function QrLandingPage() {
       recaptchaToken: undefined as string | undefined,
     };
 
-    const isCollaborator = data.reason.toLowerCase().includes("colabora") || data.reason.toLowerCase().includes("centro");
+    const isCollaborator =
+      data.reason.toLowerCase().includes("colabora") ||
+      data.reason.toLowerCase().includes("centro");
 
     const fullMessage = [
       "Consulta recibida desde Tarjeta de Visita (QR):",
@@ -129,7 +130,9 @@ function QrLandingPage() {
       form.reset();
     } catch (err) {
       console.error("send-email failed, falling back to mailto", err);
-      const subject = encodeURIComponent(`Consulta tarjeta de visita · ${data.name} (${data.reason})`);
+      const subject = encodeURIComponent(
+        `Consulta tarjeta de visita · ${data.name} (${data.reason})`,
+      );
       const body = encodeURIComponent(fullMessage);
       setMailtoLink(`mailto:${siteSettings.contactEmail}?subject=${subject}&body=${body}`);
     } finally {
@@ -154,9 +157,7 @@ function QrLandingPage() {
               <h1 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl md:text-5xl">
                 {q.title}
               </h1>
-              <p className="mt-2 text-base font-medium text-primary sm:text-lg">
-                {q.subtitle}
-              </p>
+              <p className="mt-2 text-base font-medium text-primary sm:text-lg">{q.subtitle}</p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {q.intro}
               </p>
@@ -187,7 +188,7 @@ function QrLandingPage() {
                   <source srcSet={sobreMiMariaCaboWebp} type="image/webp" />
                   <img
                     src={sobreMiMariaCaboJpg}
-                    alt="María A. Cabo - Psicoterapia con Hipnosis en Sueca y Valencia"
+                    alt="María A. Cabo - Acompañamiento Terapéutico en Sueca y Valencia"
                     width={400}
                     height={400}
                     className="aspect-square w-full rounded-2xl object-cover object-center"
@@ -197,7 +198,9 @@ function QrLandingPage() {
                 </picture>
                 <div className="p-3 text-center">
                   <p className="font-serif text-sm font-medium text-foreground">María A. Cabo</p>
-                  <p className="text-xs text-muted-foreground">Psicoterapia con Hipnosis · Instituto Erickson</p>
+                  <p className="text-xs text-muted-foreground">
+                    Acompañamiento Terapéutico · Instituto Erickson
+                  </p>
                 </div>
               </div>
             </div>
@@ -246,7 +249,9 @@ function QrLandingPage() {
                       <span className="block text-base font-semibold text-foreground group-hover:text-primary">
                         {q.valuationCta}
                       </span>
-                      <span className="block text-xs text-muted-foreground">{q.valuationSubtext}</span>
+                      <span className="block text-xs text-muted-foreground">
+                        {q.valuationSubtext}
+                      </span>
                     </div>
                   </div>
                   <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
@@ -257,7 +262,7 @@ function QrLandingPage() {
         </div>
       </section>
 
-      {/* ÁREAS DE ACOMPAÑAMIENTO CON HIPNOSIS (LOS 4 GRANDES PILARES) */}
+      {/* ÁREAS DE INTERVENCIÓN Y ACOMPAÑAMIENTO TERAPÉUTICO (LOS 4 GRANDES PILARES) */}
       <section className="container-page max-w-4xl py-14 md:py-20">
         <div className="text-center">
           <p className="eyebrow justify-center">{q.servicesEyebrow}</p>
@@ -296,7 +301,10 @@ function QrLandingPage() {
 
                   <ul className="mt-5 space-y-2.5 border-t border-border/60 pt-4">
                     {service.points.map((pt, pIdx) => (
-                      <li key={pIdx} className="flex items-start gap-2.5 text-xs text-foreground/90 leading-relaxed">
+                      <li
+                        key={pIdx}
+                        className="flex items-start gap-2.5 text-xs text-foreground/90 leading-relaxed"
+                      >
                         <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-primary" />
                         <span>{pt}</span>
                       </li>
@@ -315,7 +323,9 @@ function QrLandingPage() {
 
                   <ValuationModal
                     source={`Web - QR Servicio: ${service.ctaMotive}`}
-                    defaultModality={service.title.includes("Fumar") ? "Programa 3 sesiones" : "Sesión individual"}
+                    defaultModality={
+                      service.title.includes("Fumar") ? "Programa 3 sesiones" : "Sesión individual"
+                    }
                     triggerClassName="rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground cursor-pointer"
                     triggerLabel="Pedir 15 min"
                   />
@@ -341,9 +351,7 @@ function QrLandingPage() {
             <h2 className="mt-3 font-serif text-2xl font-normal md:text-3xl text-foreground">
               {q.proTitle}
             </h2>
-            <p className="mt-1 font-medium text-primary text-sm sm:text-base">
-              {q.proSubtitle}
-            </p>
+            <p className="mt-1 font-medium text-primary text-sm sm:text-base">{q.proSubtitle}</p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
               {q.proText}
             </p>
@@ -381,7 +389,7 @@ function QrLandingPage() {
         </div>
       </section>
 
-      {/* CÓMO ES UNA SESIÓN Y FILOSOFÍA (DESMITIFICANDO LA HIPNOSIS) */}
+      {/* CÓMO ES UNA SESIÓN Y FILOSOFÍA (NEUROBIOLOGÍA Y REGULACIÓN) */}
       <section className="container-page max-w-4xl py-14 md:py-20">
         <div className="text-center">
           <p className="eyebrow justify-center">{q.howEyebrow}</p>
@@ -402,12 +410,8 @@ function QrLandingPage() {
               <span className="font-serif text-3xl font-light text-primary/70">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-3 font-medium text-foreground text-base">
-                {point.title}
-              </h3>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                {point.text}
-              </p>
+              <h3 className="mt-3 font-medium text-foreground text-base">{point.title}</h3>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{point.text}</p>
             </div>
           ))}
         </div>
@@ -450,9 +454,7 @@ function QrLandingPage() {
         <div className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-xs">
           <div className="flex items-center gap-2">
             <MapPin className="size-5 text-primary" />
-            <h2 className="font-serif text-2xl font-normal text-foreground">
-              {q.locationTitle}
-            </h2>
+            <h2 className="font-serif text-2xl font-normal text-foreground">{q.locationTitle}</h2>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -467,7 +469,10 @@ function QrLandingPage() {
       </section>
 
       {/* FORMULARIO DE CONSULTA DIRECTO (CONECTADO A GOOGLE SHEETS) */}
-      <section id="formulario-contacto" className="border-t border-border/60 bg-muted/30 py-14 md:py-20">
+      <section
+        id="formulario-contacto"
+        className="border-t border-border/60 bg-muted/30 py-14 md:py-20"
+      >
         <div className="container-page max-w-3xl">
           <div className="text-center">
             <p className="eyebrow justify-center">{q.formEyebrow}</p>
@@ -483,11 +488,20 @@ function QrLandingPage() {
             {!sent ? (
               <form onSubmit={onSubmit} className="space-y-5">
                 {/* Honeypot trap anti-spam */}
-                <input type="text" name="website" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+                <input
+                  type="text"
+                  name="website"
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="grid gap-2">
-                    <label htmlFor="qr-name" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    <label
+                      htmlFor="qr-name"
+                      className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                    >
                       {q.formLabels.name} *
                     </label>
                     <input
@@ -501,7 +515,10 @@ function QrLandingPage() {
                   </div>
 
                   <div className="grid gap-2">
-                    <label htmlFor="qr-phone" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    <label
+                      htmlFor="qr-phone"
+                      className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                    >
                       {q.formLabels.phone} *
                     </label>
                     <input
@@ -517,7 +534,10 @@ function QrLandingPage() {
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="grid gap-2">
-                    <label htmlFor="qr-email" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    <label
+                      htmlFor="qr-email"
+                      className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                    >
                       {q.formLabels.email} *
                     </label>
                     <input
@@ -531,7 +551,10 @@ function QrLandingPage() {
                   </div>
 
                   <div className="grid gap-2">
-                    <label htmlFor="qr-reason" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    <label
+                      htmlFor="qr-reason"
+                      className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                    >
                       {q.formLabels.reason} *
                     </label>
                     <select
@@ -550,7 +573,10 @@ function QrLandingPage() {
                 </div>
 
                 <div className="grid gap-2">
-                  <label htmlFor="qr-modality" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  <label
+                    htmlFor="qr-modality"
+                    className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
                     {q.formLabels.modality}
                   </label>
                   <select
@@ -567,7 +593,10 @@ function QrLandingPage() {
                 </div>
 
                 <div className="grid gap-2">
-                  <label htmlFor="qr-message" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  <label
+                    htmlFor="qr-message"
+                    className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
                     {q.formLabels.message}
                   </label>
                   <textarea
