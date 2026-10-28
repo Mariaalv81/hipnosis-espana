@@ -1,3 +1,5 @@
+import { getStoredConsent } from "./cookie-consent";
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
@@ -8,6 +10,23 @@ export function trackEvent(action: string, params?: Record<string, unknown>) {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
     try {
       window.gtag("event", action, params);
+    } catch (err) {
+      console.warn("Analytics tracking warning:", err);
+    }
+  }
+}
+
+export function trackPageView(path: string, title?: string) {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    try {
+      const consent = getStoredConsent();
+      if (consent?.analytics) {
+        window.gtag("event", "page_view", {
+          page_path: path,
+          page_title: title || document.title,
+          page_location: window.location.href,
+        });
+      }
     } catch (err) {
       console.warn("Analytics tracking warning:", err);
     }

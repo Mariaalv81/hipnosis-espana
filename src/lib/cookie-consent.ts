@@ -1,4 +1,4 @@
-export const CONSENT_VERSION = "1.0";
+export const CONSENT_VERSION = "2.0";
 export const CONSENT_STORAGE_KEY = "maria-cabo-cookie-consent";
 export const CONSENT_OPEN_EVENT = "maria-cabo:open-cookie-preferences";
 export const GA_MEASUREMENT_ID = "G-HEF4PZK50X";
@@ -78,7 +78,13 @@ export function loadGoogleAnalytics(): void {
     ad_user_data: "denied",
     ad_personalization: "denied",
   });
-  window.gtag?.("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
+
+  window.gtag?.("config", GA_MEASUREMENT_ID, {
+    send_page_view: true,
+    page_path: window.location.pathname + window.location.search,
+    page_title: document.title,
+    anonymize_ip: true,
+  });
 }
 
 export function disableGoogleAnalytics(): void {
@@ -99,11 +105,24 @@ export function ensureGoogleTag(): void {
   if (typeof window === "undefined") return;
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag =
-    window.gtag ||
-    function gtag(...args: unknown[]) {
+  if (!window.gtag) {
+    window.gtag = function gtag(...args: unknown[]) {
       window.dataLayer?.push(args);
     };
+  }
+
+  const hasJsInit = window.dataLayer.some((item) => Array.isArray(item) && item[0] === "js");
+  if (!hasJsInit) {
+    window.gtag("js", new Date());
+  }
+
+  if (!document.getElementById("google-analytics-gtag")) {
+    const script = document.createElement("script");
+    script.id = "google-analytics-gtag";
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+  }
 }
 
 export function deleteGoogleAnalyticsCookies(): void {

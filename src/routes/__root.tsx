@@ -6,6 +6,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
   type ErrorComponentProps,
@@ -14,6 +15,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?inline";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { trackPageView } from "../lib/analytics";
 import { I18nProvider } from "@/lib/i18n";
 import { CookieConsent } from "@/components/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
@@ -144,6 +146,7 @@ function RootShell({ children }: { children: ReactNode }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               window.gtag = window.gtag || gtag;
+              gtag('js', new Date());
               gtag('consent', 'default', {
                 analytics_storage: 'denied',
                 ad_storage: 'denied',
@@ -172,6 +175,16 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const fullPath = location.pathname + (window.location.search || "");
+      trackPageView(fullPath, document.title);
+    }, 120);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname, location.search]);
 
   return (
     <QueryClientProvider client={queryClient}>
