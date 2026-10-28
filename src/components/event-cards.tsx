@@ -1,5 +1,15 @@
 import { Link } from "@tanstack/react-router";
-import { Apple, BookOpen, Brain, CigaretteOff, Clock, MapPin, Sparkles, Sun } from "lucide-react";
+import {
+  Apple,
+  BookOpen,
+  Brain,
+  CigaretteOff,
+  Clock,
+  Heart,
+  MapPin,
+  Sparkles,
+  Sun,
+} from "lucide-react";
 
 import { useI18n } from "@/lib/i18n";
 import { getWhatsAppUrl } from "@/content/site-settings";
@@ -15,6 +25,43 @@ type EventCardsProps = {
 
 type EventItem = ReturnType<typeof useI18n>["t"]["events"]["items"][number];
 type EventStatus = "upcoming" | "past";
+
+function getEventIcon(title: string, index: number) {
+  const lower = title.toLowerCase();
+  if (lower.includes("tabac") || lower.includes("fumar")) return CigaretteOff;
+  if (
+    lower.includes("querer") ||
+    lower.includes("voler") ||
+    lower.includes("love") ||
+    lower.includes("perderte") ||
+    lower.includes("perdre't")
+  ) {
+    return Heart;
+  }
+  if (lower.includes("calma") || lower.includes("seren")) return Sparkles;
+  if (lower.includes("estudio") || lower.includes("estudi") || lower.includes("examen"))
+    return BookOpen;
+  if (
+    lower.includes("peso") ||
+    lower.includes("pes") ||
+    lower.includes("hábito") ||
+    lower.includes("habit") ||
+    lower.includes("weight")
+  ) {
+    return Apple;
+  }
+  if (
+    lower.includes("ansiedad") ||
+    lower.includes("ansietat") ||
+    lower.includes("miedo") ||
+    lower.includes("por") ||
+    lower.includes("fear")
+  ) {
+    return Brain;
+  }
+  const defaults = [Sparkles, Heart, Sun, Brain, BookOpen];
+  return defaults[index % defaults.length];
+}
 
 function todayStart() {
   const now = new Date();
@@ -46,7 +93,6 @@ export function EventCards({
   showHeadings = status === "all",
 }: EventCardsProps) {
   const { t } = useI18n();
-  const icons = [CigaretteOff, Brain, BookOpen, Apple, Sparkles, Sun];
   const { upcoming, past } = splitEvents(t.events.items);
   const eventsByStatus =
     status === "upcoming" ? upcoming : status === "past" ? past : [...upcoming, ...past];
@@ -143,7 +189,7 @@ export function EventCards({
   const renderFullCards = (cards: EventItem[]) => (
     <div className="grid gap-5 md:grid-cols-2">
       {cards.map((event, index) => {
-        const Icon = icons[index] ?? Brain;
+        const Icon = getEventIcon(event.title, index);
         const eventStatus = getStatus(event);
 
         return (

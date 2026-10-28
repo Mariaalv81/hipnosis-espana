@@ -955,6 +955,18 @@ const es = {
         text: "¿Y si aprendieras a vivir en calma? Ven a experimentarlo. Un taller experiencial en grupo para explorar, jugar y sorprenderte con recursos prácticos de serenidad. Plazas limitadas.",
       },
       {
+        dateISO: "2026-11-08",
+        date: "8 nov",
+        time: "10:00–11:30",
+        title: "Aprende a querer sin perderte · Taller práctico",
+        badge: "Taller en grupo · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "Comprende y experimenta cómo vincularte y relacionarte sin perder tu propio centro, espacio y bienestar. Un taller práctico en grupo para cultivar relaciones sanas y conscientes. Plazas limitadas.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría reservar mi plaza para el taller 'Aprende a querer sin perderte' del domingo 8 de noviembre en Cullera (Sat Nam Yoga).",
+      },
+      {
         dateISO: "2026-11-22",
         date: "22 nov",
         time: "10:00–11:30",
@@ -2222,6 +2234,18 @@ const va: Dict = {
         text: "I si aprengueres a viure en calma? Vine a experimentar-ho. Un taller experiencial en grup per a explorar, jugar i sorprendre't amb recursos pràctics de serenitat. Places limitades.",
       },
       {
+        dateISO: "2026-11-08",
+        date: "8 nov",
+        time: "10:00–11:30",
+        title: "Aprén a voler sense perdre't · Taller pràctic",
+        badge: "Taller en grup · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "Comprén i experimenta com vincular-te i relacionar-te sense perdre el teu propi centre, espai i benestar. Un taller pràctic en grup per a cultivar relacions sanes i conscients. Places limitades.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria reservar la meua plaça per al taller 'Aprén a voler sense perdre't' del diumenge 8 de novembre a Cullera (Sat Nam Yoga).",
+      },
+      {
         dateISO: "2026-11-22",
         date: "22 nov",
         time: "10:00–11:30",
@@ -3472,6 +3496,18 @@ const en: Dict = {
         badge: "Group workshop · 15 €",
         place: "Cullera · Sat Nam Yoga",
         text: "What if you learned to live in calm? Come and experience it. An experiential group workshop to explore, play and discover practical resources for serenity. Limited spots.",
+      },
+      {
+        dateISO: "2026-11-08",
+        date: "8 Nov",
+        time: "10:00–11:30",
+        title: "Learn to love without losing yourself · Practical workshop",
+        badge: "Group workshop · 15 €",
+        place: "Cullera · Sat Nam Yoga",
+        text: "Understand and experience how to connect and relate without losing your own center, space and well-being. A hands-on group workshop to cultivate healthy, mindful relationships. Limited spots.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to reserve a spot for the 'Learn to love without losing yourself' workshop on Sunday, November 8th in Cullera (Sat Nam Yoga).",
       },
       {
         dateISO: "2026-11-22",
