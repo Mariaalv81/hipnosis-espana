@@ -78,7 +78,7 @@ function HomePage() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card px-3 py-1 text-xs text-muted-foreground shadow-2xs">
                 <Check className="size-3.5 text-primary" />
-                100% Consciente · Control total
+                100% Consciente · Relajación profunda
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card px-3 py-1 text-xs text-muted-foreground shadow-2xs">
                 <MapPin className="size-3.5 text-primary" />
@@ -409,7 +409,7 @@ function HomePage() {
             rel="noopener noreferrer"
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background shadow-sm transition-opacity hover:opacity-90"
           >
-            <span>Seguir @mariacabo_hipnosis</span>
+            <span>Seguir {siteSettings.instagramHandle}</span>
             <ExternalLink className="h-4 w-4" />
           </a>
         </div>

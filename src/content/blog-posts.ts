@@ -17,16 +17,16 @@ const es: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "¿Qué es realmente este enfoque de atención focalizada?",
   excerpt:
-    "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención y regular el sistema nervioso.",
+    "Un estado de atención focalizada y relajación profunda que ayuda a tu sistema nervioso a integrar los avances alcanzados en la sesión.",
   date: "2026-09-10",
   blocks: [
     {
       type: "lead",
-      text: "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención y regular el sistema nervioso.",
+      text: "Un estado de atención focalizada y relajación profunda que ayuda a tu sistema nervioso a integrar los avances alcanzados en la sesión.",
     },
     {
       type: "p",
-      text: "Cuando se habla de procesos de cambio y estados profundos, es fácil imaginar mitos, péndulos o pérdidas de control. La realidad es bastante menos misteriosa y mucho más interesante.",
+      text: "Cuando se habla de procesos de cambio y estados profundos, la realidad científica es clara: un trabajo guiado que facilita que el cuerpo y la mente alcancen una calma reparadora.",
     },
     {
       type: "p",
@@ -45,14 +45,14 @@ const es: BlogPostContent = {
       type: "p",
       text: "Durante las sesiones se utiliza esa capacidad de concentración de manera intencionada y guiada.",
     },
-    { type: "h2", text: "¿Pierdes el control?" },
+    { type: "h2", text: "Relajación profunda para integrar avances" },
     {
       type: "p",
-      text: "No. Este proceso no consiste en que otra persona controle tu mente. Puedes escuchar, pensar, moverte y comunicar lo que necesitas. Tampoco estás obligado a aceptar sugerencias que no deseas.",
+      text: "Durante la sesión guiamos un estado de relajación profunda que permite al sistema nervioso salir del estado de alerta e internalizar de forma orgánica los cambios trabajados. En todo momento permaneces plenamente consciente, escuchando, pensando y participando activamente según lo que necesitas.",
     },
     {
       type: "p",
-      text: "La experiencia varía de una persona a otra. Algunas sienten una relajación profunda; otras se mantienen muy conscientes de todo lo que ocurre. No existe una única manera correcta de experimentar estos estados de calma y enfoque.",
+      text: "La experiencia varía de una persona a otra. Algunas sienten una relajación muy profunda en el cuerpo; otras perciben una gran serenidad mental con total nitidez. No existe una única manera de experimentar estos estados de calma y enfoque.",
     },
     { type: "h2", text: "¿Y para qué sirve?" },
     {
@@ -281,12 +281,12 @@ const esHypnosisSession: BlogPostContent = {
   slug: "como-es-una-sesion-de-hipnosis",
   title: "¿Cómo es una sesión de cambio y acompañamiento?",
   excerpt:
-    "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+    "Una sesión es un espacio de colaboración donde facilitamos una relajación profunda para que el sistema nervioso integre los avances de forma natural.",
   date: "2026-09-12",
   blocks: [
     {
       type: "lead",
-      text: "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+      text: "Una sesión es un espacio de colaboración donde facilitamos una relajación profunda para que el sistema nervioso integre los avances de forma natural.",
     },
     {
       type: "p",
@@ -316,7 +316,7 @@ const esHypnosisSession: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Puedes escuchar, moverte, hablar y comunicar lo que necesites. No pierdes tu voluntad ni estás obligado a seguir una sugerencia.",
+      text: "Puedes escuchar, moverte, hablar y comunicar lo que necesites mientras el cuerpo asimila la relajación y los nuevos recursos de forma natural.",
     },
     { type: "h2", text: "¿Recordaré lo que ha ocurrido?" },
     {
@@ -562,7 +562,7 @@ const esHypnosisAnxiety: BlogPostContent = {
     { type: "h2", text: "¿Dónde entra el trabajo terapéutico?" },
     {
       type: "p",
-      text: "Durante las sesiones se utiliza un estado de atención focalizada y calma somática. La persona no pierde el control ni queda inconsciente. Por el contrario, se dirige intencionadamente la atención hacia determinadas sensaciones, imágenes, ideas o experiencias.",
+      text: "Durante las sesiones facilitamos una relajación profunda y atención focalizada que ayuda al sistema nervioso a calmarse e internalizar los avances alcanzados. Se dirige intencionadamente la atención hacia sensaciones, imágenes y recursos que desactivan la respuesta de alerta.",
     },
     {
       type: "p",
@@ -606,7 +606,7 @@ const esHypnosisAnxiety: BlogPostContent = {
       type: "p",
       text: "La investigación no demuestra que ninguna técnica resuelva cualquier forma de ansiedad por sí sola, ni que todas las personas respondan igual. Sí aporta evidencia de que puede ser una herramienta útil para reducir ansiedad en determinados contextos y justifica seguir investigando sus aplicaciones.",
     },
-    { type: "h2", text: "No se trata de controlar la mente" },
+    { type: "h2", text: "Aprender a relacionarnos con lo que sentimos" },
     {
       type: "p",
       text: "La idea no es convencernos de que nunca volveremos a sentir nervios. La ansiedad también puede ser útil. Nos prepara para situaciones importantes y nos ayuda a detectar posibles problemas.",
@@ -630,7 +630,7 @@ const esHypnosisAnxiety: BlogPostContent = {
     },
     {
       type: "quote",
-      text: "Quizá no podamos controlar todo lo que sentimos. Pero podemos aprender nuevas maneras de relacionarnos con ello.",
+      text: "Quizá no podamos evitar todo lo que sentimos, pero sí aprender a regular nuestra respuesta y recuperar la serenidad.",
     },
     {
       type: "note",
@@ -871,7 +871,7 @@ const esHypnosisPhobias: BlogPostContent = {
     },
     {
       type: "p",
-      text: "Pensamos en el vuelo de la semana siguiente. Imaginamos que el ascensor se queda parado. Anticipamos que perderemos el control. Nuestro organismo puede empezar a reaccionar ante algo que todavía no ha sucedido.",
+      text: "Pensamos en el vuelo de la semana siguiente. Imaginamos que el ascensor se queda parado. Anticipamos que nos desbordaremos. Nuestro organismo puede empezar a reaccionar ante algo que todavía no ha sucedido.",
     },
     {
       type: "p",
@@ -993,16 +993,16 @@ const va: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "Què és realment este enfocament d'atenció focalitzada?",
   excerpt:
-    "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
+    "Un estat d'atenció focalitzada i relaxació profunda que ajuda al teu sistema nerviós a integrar els avanços aconseguits en la sessió.",
   date: "2026-09-10",
   blocks: [
     {
       type: "lead",
-      text: "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
+      text: "Un estat d'atenció focalitzada i relaxació profunda que ajuda al teu sistema nerviós a integrar els avanços aconseguits en la sessió.",
     },
     {
       type: "p",
-      text: "Quan es parla de processos de canvi i estats profunds, és fàcil imaginar mites o pèrdues de control. La realitat és bastant menys misteriosa i molt més interessant.",
+      text: "Quan es parla de processos de canvi i estats profunds, la realitat científica és clara: un treball guiat que facilita que el cos i la ment aconseguisquen una calma reparadora.",
     },
     {
       type: "p",
@@ -1021,14 +1021,14 @@ const va: BlogPostContent = {
       type: "p",
       text: "Durant les sessions s'utilitza eixa capacitat de concentració de manera intencionada i guiada.",
     },
-    { type: "h2", text: "Perds el control?" },
+    { type: "h2", text: "Relaxació profunda per a integrar avanços" },
     {
       type: "p",
-      text: "No. Este procés no consistix en què una altra persona controle la teua ment. Pots escoltar, pensar, moure't i comunicar el que necessites. Tampoc estàs obligat a acceptar suggeriments que no desitges.",
+      text: "Durant la sessió guiem un estat de relaxació profunda que permet al sistema nerviós eixir de l'estat d'alerta i assimilar de manera orgànica els canvis treballats. En tot moment romanen plenament conscient, escoltant, pensant i participant activament segons el que necessites.",
     },
     {
       type: "p",
-      text: "L'experiència varia d'una persona a una altra. Algunes senten una relaxació profunda; altres es mantenen molt conscients de tot el que ocorre. No existix una única manera correcta d'experimentar estos estats de calma i enfocament.",
+      text: "L'experiència varia d'una persona a una altra. Algunes senten una relaxació molt profunda en el cos; altres perceben una gran serenitat mental amb total nitidesa. No existix una única manera d'experimentar estos estats de calma i enfocament.",
     },
     { type: "h2", text: "I per a què servix?" },
     {
@@ -1058,16 +1058,16 @@ const en: BlogPostContent = {
   slug: "que-es-la-hipnosis",
   title: "What is this focused attention approach, really?",
   excerpt:
-    "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
+    "A state of focused attention and deep relaxation that enables the nervous system to assimilate and internalize new patterns of well-being.",
   date: "2026-09-10",
   blocks: [
     {
       type: "lead",
-      text: "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
+      text: "A state of focused attention and deep relaxation that enables the nervous system to assimilate and internalize new patterns of well-being.",
     },
     {
       type: "p",
-      text: "When discussing deeper change processes, it is easy to picture stage myths, pendulums, or losing control. Reality is far less mysterious — and much more interesting.",
+      text: "When discussing deeper personal change, scientific reality is grounded: structured guidance that helps both body and mind enter a state of restorative calm.",
     },
     {
       type: "p",
@@ -1086,14 +1086,14 @@ const en: BlogPostContent = {
       type: "p",
       text: "During sessions, that capacity for concentration is used intentionally and with guidance.",
     },
-    { type: "h2", text: "Do you lose control?" },
+    { type: "h2", text: "Deep relaxation to internalize progress" },
     {
       type: "p",
-      text: "No. This process does not mean someone else controls your mind. You can listen, think, move and say whatever you need. You are never obliged to accept suggestions you don't want.",
+      text: "During each session, we guide you into a state of deep relaxation that allows your nervous system to disengage alert patterns and organically internalize the progress achieved. You remain fully conscious throughout, listening, thinking, and participating actively according to your needs.",
     },
     {
       type: "p",
-      text: "The experience varies from person to person. Some feel deep relaxation; others stay very aware of everything that happens. There is no single right way to experience these states of calm and focused attention.",
+      text: "The experience varies from person to person. Some feel profound somatic relaxation; others perceive crystal-clear mental stillness. There is no single right way to experience these states of calm and focused attention.",
     },
     { type: "h2", text: "And what is it for?" },
     {

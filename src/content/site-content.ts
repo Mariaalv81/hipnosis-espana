@@ -116,7 +116,7 @@ const es = {
     hypnosisText1:
       "El abordaje ericksoniano es un proceso estructurado que utiliza la atención focalizada y la relajación somática para producir resultados sólidos y duraderos a largo plazo. Respaldado por la neurociencia moderna, permite intervenir de raíz sobre hábitos automáticos, respuestas físicas ante la tensión y patrones de conducta que no se resuelven solo con fuerza de voluntad.",
     hypnosisText2:
-      "Lejos de los mitos del espectáculo, permaneces plenamente consciente y en control en todo momento. A través de este proceso de psicoterapia no se imponen fórmulas externas ni soluciones mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo, con el máximo rigor ético y profesional.",
+      "Durante la sesión facilitamos una relajación profunda que ayuda a tu sistema nervioso a calmarse e internalizar los avances que alcanzamos. A través de este proceso de psicoterapia no se imponen fórmulas externas ni soluciones mágicas: activamos tus propios recursos internos para aprender a responder con serenidad ante situaciones de estrés o bloqueo, con el máximo rigor ético y profesional.",
     hypnosisLink: "CÓMO FUNCIONA EL PROCESO",
     hypnosisImageAlt: "Fotografía de sesión tranquila",
     contextsTitle: "DOS CONTEXTOS. UNA MISMA IDEA: CAMBIAR CÓMO RESPONDEMOS.",
@@ -271,7 +271,7 @@ const es = {
     confidentialityTitle: "CONFIDENCIALIDAD, CONSENTIMIENTO Y OBJETIVOS COMPARTIDOS",
     confidentialityParagraphs: [
       "Las sesiones individuales son un espacio privado y confidencial entre el profesional y el empleado. La empresa puede participar en la definición del objetivo general del programa, pero el contenido de las conversaciones y de las sesiones no se comparte con la organización.",
-      "El trabajo parte siempre del consentimiento del empleado. Estas sesiones no se utilizan para modificar sus valores, su personalidad, sus opiniones ni para inducir comportamientos que no desea. Al contrario: es una herramienta orientada a ayudar a la persona a desarrollar un mayor control sobre determinadas respuestas automáticas, emociones o hábitos que ella misma quiere cambiar.",
+      "El trabajo parte siempre del consentimiento del empleado. Estas sesiones no se utilizan para modificar sus valores, su personalidad, sus opiniones ni para inducir comportamientos que no desea. Al contrario: es una herramienta orientada a ayudar a la persona a responder con mayor serenidad y eficacia ante determinadas respuestas automáticas, emociones o hábitos que ella misma quiere cambiar.",
       "Los objetivos deben, por tanto, tener sentido para ambas partes: pueden favorecer el desarrollo profesional y, al mismo tiempo, representar una mejora real para la persona.",
     ],
     exampleTitle: "Ejemplo",
@@ -567,7 +567,7 @@ const es = {
       },
       {
         title: "Miedo a desbordarse y evitación",
-        text: "Temor a perder el control, crisis de angustia o cancelar planes y viajes para evitar la sensación de agobio.",
+        text: "Crisis de angustia, sensación de saturación física o cancelar planes y viajes para evitar el agobio.",
       },
     ],
     whyTitle: "¿POR QUÉ NO BASTA CON DECIRTE 'CÁLMATE'?",
@@ -666,11 +666,11 @@ const es = {
     faqs: [
       {
         q: "¿Cómo ayuda exactamente la terapia a reducir la ansiedad?",
-        a: "La terapia actúa directamente sobre la respuesta neurobiológica del estrés. Mientras que conscientemente intentas 'tranquilizarte' sin éxito, en sesión accedemos a un estado donde el sistema parasimpático toma el control, permitiendo que el cuerpo desactive la tensión muscular, regule la respiración y desaprenda las asociaciones automáticas de alarma.",
+        a: "La terapia actúa directamente sobre la respuesta neurobiológica del estrés. Mientras que conscientemente intentas 'tranquilizarte' sin éxito, en sesión inducimos una relajación profunda que activa el sistema parasimpático, permitiendo que el cuerpo desactive la tensión muscular, regule la respiración y el sistema nervioso internalice los avances y la calma a nivel fisiológico.",
       },
       {
-        q: "¿Voy a perder el control o quedarme inconsciente durante la sesión?",
-        a: "No, en absoluto. Este proceso no tiene nada que ver con pérdidas de consciencia o mitos de televisión. Estarás plenamente consciente en todo momento, escucharás mi voz, podrás hablar, moverte y decidir qué decir. Se trata de un estado de atención focalizada y profunda relajación voluntaria.",
+        q: "¿Cómo se trabaja durante la sesión y qué se experimenta?",
+        a: "Durante la sesión trabajamos con una relajación profunda y guiada que ayuda al sistema nervioso a calmarse e integrar los avances que alcanzamos. Permanece activa tu consciencia en todo momento: escuchas mi voz, puedes hablar, moverte y participar con total normalidad mientras tu organismo asimila nuevas respuestas de tranquilidad.",
       },
       {
         q: "¿En cuántas sesiones se suele notar el cambio?",
@@ -689,7 +689,7 @@ const es = {
   how: {
     title: "Cómo funciona",
     intro:
-      "El trabajo que realizamos es un proceso de psicoterapia que utiliza el estado hipnótico —un estado natural de atención focalizada y relajación profunda respaldado por la neurociencia— para facilitar cambios profundos en hábitos y respuestas emocionales, produciendo resultados estables a largo plazo. No pierdes el control, no te duermes y participas activamente en todo momento.",
+      "El trabajo que realizamos es un proceso de psicoterapia y desarrollo personal basado en la neurociencia y la atención focalizada. Durante la sesión facilitamos una relajación profunda que ayuda al sistema nervioso a calmarse e internalizar los avances que alcanzamos, logrando cambios sólidos y duraderos en tus hábitos y bienestar emocional.",
     stepsTitle: "El recorrido, paso a paso",
     steps: [
       {
@@ -711,7 +711,7 @@ const es = {
     ],
     mythsTitle: "Mitos y realidades",
     myths: [
-      "No es un espectáculo: nadie pierde la voluntad ni el control.",
+      "La relajación profunda ayuda a tu sistema nervioso a integrar cambios de forma natural y consciente.",
       "No realizamos diagnósticos clínicos de trastornos mentales graves.",
       "No sustituye la atención médica o psiquiátrica ante patologías severas.",
       "Es un proceso serio, activo y respaldado por la evidencia científica.",
@@ -863,13 +863,13 @@ const es = {
       "Herramientas prácticas para el día a día.",
     ],
     controlNote:
-      "La persona mantiene siempre la consciencia, la participación y el control sobre la experiencia.",
+      "Durante la sesión facilitamos una relajación profunda que ayuda a tu sistema nervioso a calmarse e internalizar los avances que alcanzamos.",
     statement:
       "Mi trabajo consiste en acompañar a cada persona a explorar sus patrones y ofrecerle herramientas para responder de una manera más útil para ella.",
     workEyebrow: "Mi forma de trabajar",
     workTitle: "Acompañamiento terapéutico: una herramienta rigurosa, no una fórmula mágica.",
     workText:
-      "Entiendo este trabajo como un proceso de psicoterapia que utiliza el estado hipnótico para facilitar cambios profundos y sostenibles: observar respuestas automáticas, activar los recursos propios de la persona y consolidar nuevas formas de afrontar situaciones cotidianas con resultados sólidos a largo plazo.",
+      "Entiendo este trabajo como un proceso de psicoterapia y desarrollo personal para facilitar cambios profundos y sostenibles: observar respuestas automáticas, activar los recursos propios de la persona y consolidar nuevas formas de responder ante situaciones cotidianas con resultados sólidos a largo plazo.",
     focusAreas: [
       {
         title: "Cambio práctico",
@@ -877,7 +877,7 @@ const es = {
       },
       {
         title: "Proceso consciente",
-        text: "La persona participa activamente, entiende qué estamos haciendo y mantiene siempre el control.",
+        text: "La persona participa activamente mientras la relajación profunda permite al sistema nervioso asimilar e internalizar los avances.",
       },
       {
         title: "Ritmo personal",
@@ -923,6 +923,9 @@ const es = {
         time: "18:00",
         title: "Tabaquismo",
         text: "Un encuentro para comprender cómo se sostienen los automatismos del tabaco y cómo puede acompañarse el cambio hacia una vida libre de humo.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría consultar o reservar plaza para el encuentro de Tabaquismo en Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-09-21",
@@ -930,6 +933,9 @@ const es = {
         time: "18:00",
         title: "Ansiedad, miedos y fobias",
         text: "Una introducción serena a recursos de atención, calma y preparación interna ante situaciones que generan tensión.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría consultar o reservar plaza para el encuentro de Ansiedad, miedos y fobias en Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-09-28",
@@ -937,6 +943,9 @@ const es = {
         time: "18:00",
         title: "Estudio y exámenes",
         text: "Una sesión grupal para explorar foco, confianza y ensayo mental antes de retos académicos o pruebas importantes.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría consultar o reservar plaza para el encuentro de Estudio y exámenes en Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-10-05",
@@ -944,6 +953,9 @@ const es = {
         time: "18:00",
         title: "Hábitos y control del peso",
         text: "Un espacio para hablar de motivación, repetición y relación con las rutinas cotidianas desde un enfoque no clínico.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría consultar o reservar plaza para el encuentro de Hábitos y control del peso en Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-10-24",
@@ -953,6 +965,9 @@ const es = {
         badge: "Taller en grupo · 15 €",
         place: "Cullera · Sat Nam Yoga",
         text: "¿Y si aprendieras a vivir en calma? Ven a experimentarlo. Un taller experiencial en grupo para explorar, jugar y sorprenderte con recursos prácticos de serenidad. Plazas limitadas.",
+        ctaText: "Reservar plaza por WhatsApp",
+        whatsappMessage:
+          "Hola María, me gustaría reservar mi plaza para el taller Calma Práctica en Cullera (Sat Nam Yoga).",
       },
       {
         dateISO: "2026-11-08",
@@ -992,7 +1007,7 @@ const es = {
     empty: "Ahora mismo no hay fechas abiertas.",
     emptyText:
       "Estoy preparando el calendario de talleres. Si quieres que te avise cuando se publiquen, escríbeme y te lo cuento.",
-    cta: "Quiero asistir",
+    cta: "Reservar plaza por WhatsApp",
   },
   journal: {
     title: "Blog",
@@ -1039,7 +1054,7 @@ const es = {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "¿Cómo es una sesión de cambio y acompañamiento?",
         excerpt:
-          "Una sesión es un espacio de colaboración, no una experiencia en la que otra persona toma el control.",
+          "Una sesión es un espacio de colaboración donde facilitamos una relajación profunda para que el sistema nervioso integre los avances de forma natural.",
       },
       {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
@@ -1063,7 +1078,7 @@ const es = {
         slug: "que-es-la-hipnosis",
         title: "¿Qué es realmente este enfoque de atención focalizada?",
         excerpt:
-          "No es dormir, perder el control ni dejar la mente en blanco. Es una forma diferente de prestar atención y regular el sistema nervioso.",
+          "Un estado de atención focalizada y relajación profunda que permite al sistema nervioso asimilar e internalizar nuevos patrones de bienestar.",
       },
       {
         title: "Expectativas realistas: qué depende de cada parte",
@@ -1117,8 +1132,8 @@ const es = {
     title: "Preguntas frecuentes",
     items: [
       {
-        q: "¿Voy a perder el control durante la sesión?",
-        a: "No, en absoluto. En estas sesiones mantienes la consciencia y el control en todo momento. No tiene nada que ver con los espectáculos televisivos: puedes hablar, moverte, recordar lo sucedido y detener la sesión cuando lo desees.",
+        q: "¿Qué se experimenta durante la sesión de terapia?",
+        a: "Durante la sesión guiamos un estado de relajación profunda donde permaneces plenamente consciente. Esta calma permite a tu sistema nervioso bajar el nivel de alerta e internalizar de manera orgánica los avances y recursos trabajados, con total comodidad y tranquilidad.",
       },
       {
         q: "¿Qué base científica y aval tiene este abordaje terapéutico?",
@@ -1399,7 +1414,7 @@ const va: Dict = {
     hypnosisText1:
       "L'abordatge ericksonià és un procés estructurat que utilitza l'atenció focalitzada i la relaxació somàtica per a produir resultats sòlids i duradors a llarg termini. Recolzat per la neurociència moderna, permet intervindre d'arrel sobre hàbits automàtics, respostes físiques davant la tensió i patrons de conducta que no es resolen només amb força de voluntat.",
     hypnosisText2:
-      "Lluny dels mites de l'espectacle, romanen plenament conscient i amb el control en tot moment. A través d'este procés de psicoteràpia no s'imposen fórmules externes ni solucions màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig, amb el màxim rigor ètic i professional.",
+      "Durant la sessió facilitem una relaxació profunda que ajuda al teu sistema nerviós a calmar-se i internalitzar els avanços que aconseguim. A través d'este procés de psicoteràpia no s'imposen fórmules externes ni solucions màgiques: activem els teus propis recursos interns per a aprendre a respondre amb serenitat davant situacions d'estrès o bloqueig, amb el màxim rigor ètic i professional.",
     hypnosisLink: "COM FUNCIONA EL PROCÉS",
     hypnosisImageAlt: "Fotografia de sessió tranquil·la",
     contextsTitle: "DOS CONTEXTOS. UNA MATEIXA IDEA: CANVIAR COM RESPONEM.",
@@ -1552,7 +1567,7 @@ const va: Dict = {
     confidentialityTitle: "CONFIDENCIALITAT, CONSENTIMENT I OBJECTIUS COMPARTITS",
     confidentialityParagraphs: [
       "Les sessions individuals són un espai privat i confidencial entre el professional i l'empleat. L'empresa pot participar en la definició de l'objectiu general del programa, però el contingut de les converses i de les sessions no es compartix amb l'organització.",
-      "El treball partix sempre del consentiment de l'empleat. Estes sessions no s'utilitzen per a modificar els seus valors, la seua personalitat, les seues opinions ni per a induir comportaments que no desitja. Al contrari: és una ferramenta orientada a ajudar la persona a desenvolupar un major control sobre determinades respostes automàtiques, emocions o hàbits que ella mateixa vol canviar.",
+      "El treball partix sempre del consentiment de l'empleat. Estes sessions no s'utilitzen per a modificar els seus valors, la seua personalitat, les seues opinions ni per a induir comportaments que no desitja. Al contrari: és una ferramenta orientada a ajudar la persona a respondre amb major serenitat i eficàcia davant determinades respostes automàtiques, emocions o hàbits que ella mateixa vol canviar.",
       "Els objectius, per tant, han de tindre sentit per a les dos parts: poden afavorir el desenvolupament professional i, al mateix temps, representar una millora real per a la persona.",
     ],
     exampleTitle: "Exemple",
@@ -1847,7 +1862,7 @@ const va: Dict = {
       },
       {
         title: "Por a desbordar-se i evitació",
-        text: "Temor a perdre el control, crisi d'angoixa o cancel·lar plans i viatges per a evitar la sensació de malestar.",
+        text: "Crisi d'angoixa, sensació de saturació física o cancel·lar plans i viatges per a evitar el malestar.",
       },
     ],
     whyTitle: "PER QUÈ NO N'HI HA PROU AMB DIR-TE 'CALMA'T'?",
@@ -1945,11 +1960,11 @@ const va: Dict = {
     faqs: [
       {
         q: "Com ajuda exactament la teràpia a reduir l'ansietat?",
-        a: "La teràpia actua directament sobre la resposta neurobiològica de l'estrés. Mentre que conscientment intentes 'tranquil·litzar-te' sense èxit, en sessió accedim a un estat on el sistema parasimpàtic pren el control, permetent que el cos desactive la tensió muscular, regule la respiració i desaprena les associacions automàtiques d'alarma.",
+        a: "La teràpia actua directament sobre la resposta neurobiològica de l'estrés. Mentre que conscientment intentes 'tranquil·litzar-te' sense èxit, en sessió induïm una relaxació profunda que activa el sistema parasimpàtic, permetent que el cos desactive la tensió muscular, regule la respiració i el sistema nerviós internalitze els avanços i la calma a nivell fisiològic.",
       },
       {
-        q: "Vaig a perdre el control o quedar-me inconscient durant la sessió?",
-        a: "No, en absolut. Este procés no té res a veure amb pèrdues de consciència o mites de televisió. Estaràs plenament conscient en tot moment, escoltaràs la meua veu, podràs parlar, moure't i decidir què dir. Es tracta d'un estat d'atenció focalitzada i profunda relaxació voluntària.",
+        q: "Com es treballa durant la sessió i què s'experimenta?",
+        a: "Durant la sessió treballem amb una relaxació profunda i guiada que ajuda el sistema nerviós a calmar-se i integrar els avanços que aconseguim. La teua consciència roman activa en tot moment: escoltes la meua veu, pots parlar, moure't i participar amb total normalitat mentre el teu organisme assimila noves respostes de tranquil·litat.",
       },
       {
         q: "En quantes sessions se sol notar el canvi?",
@@ -1968,7 +1983,7 @@ const va: Dict = {
   how: {
     title: "Com funciona",
     intro:
-      "El treball que realitzem és un procés de psicoteràpia que utilitza l'estat hipnòtic —un estat natural d'atenció focalitzada i relaxació profunda recolzat per la neurociència— per a facilitar canvis profunds en hàbits i respostes emocionals, produint resultats estables a llarg termini. No perds el control, no t'adorms i participes activament en tot moment.",
+      "El treball que realitzem és un procés de psicoteràpia i desenvolupament personal basat en la neurociència i l'atenció focalitzada. Durant la sessió facilitem una relaxació profunda que ajuda el sistema nerviós a calmar-se i internalitzar els avanços que aconseguim, aconseguint canvis sòlids i duradors en els teus hàbits i benestar emocional.",
     stepsTitle: "El recorregut, pas a pas",
     steps: [
       {
@@ -1990,7 +2005,7 @@ const va: Dict = {
     ],
     mythsTitle: "Mites i realitats",
     myths: [
-      "No és un espectacle: ningú perd la voluntat ni el control.",
+      "La relaxació profunda ajuda el teu sistema nerviós a integrar canvis de manera natural i conscient.",
       "No realitzem diagnòstics clínics de trastorns mentals greus.",
       "No substituïx l'atenció mèdica o psiquiàtrica davant patologies severes.",
       "És un procés seriós, actiu i recolzat per l'evidència científica.",
@@ -2142,13 +2157,13 @@ const va: Dict = {
       "Ferramentes pràctiques per al dia a dia.",
     ],
     controlNote:
-      "La persona manté sempre la consciència, la participació i el control sobre l'experiència.",
+      "Durant la sessió facilitem una relaxació profunda que ajuda al teu sistema nerviós a calmar-se i internalitzar els avanços que aconseguim.",
     statement:
       "El meu treball consistix a acompanyar cada persona a explorar els seus patrons i oferir-li ferramentes per a respondre d'una manera més útil per a ella.",
     workEyebrow: "La meua manera de treballar",
     workTitle: "Acompanyament terapèutic: una eina rigorosa, no una fórmula màgica.",
     workText:
-      "Entenc este treball com un procés de psicoteràpia que utilitza l'estat hipnòtic per a facilitar canvis profunds i sostenibles: observar respostes automàtiques, activar els recursos propis de la persona i consolidar noves formes d'afrontar situacions quotidianes amb resultats sòlids a llarg termini.",
+      "Entenc este treball com un procés de psicoteràpia i desenvolupament personal per a facilitar canvis profunds i sostenibles: observar respostes automàtiques, activar els recursos propis de la persona i consolidar noves formes de respondre davant situacions quotidianes amb resultats sòlids a llarg termini.",
     focusAreas: [
       {
         title: "Canvi pràctic",
@@ -2156,7 +2171,7 @@ const va: Dict = {
       },
       {
         title: "Procés conscient",
-        text: "La persona participa activament, entén què estem fent i manté sempre el control.",
+        text: "La persona participa activament mentre la relaxació profunda permet al sistema nerviós assimilar i internalitzar els avanços.",
       },
       {
         title: "Ritme personal",
@@ -2202,6 +2217,9 @@ const va: Dict = {
         time: "18:00",
         title: "Tabaquisme",
         text: "Una trobada per a comprendre com se sostenen els automatismes del tabac i com pot acompanyar-se el canvi cap a una vida lliure de fum.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria consultar o reservar plaça per a la trobada de Tabaquisme a Sueca (Centre Sanar).",
       },
       {
         dateISO: "2026-09-21",
@@ -2209,6 +2227,9 @@ const va: Dict = {
         time: "18:00",
         title: "Ansietat, pors i fòbies",
         text: "Una introducció serena a recursos d'atenció, calma i preparació interna davant situacions que generen tensió.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria consultar o reservar plaça per a la trobada d'Ansietat, pors i fòbies a Sueca (Centre Sanar).",
       },
       {
         dateISO: "2026-09-28",
@@ -2216,6 +2237,9 @@ const va: Dict = {
         time: "18:00",
         title: "Estudi i exàmens",
         text: "Una sessió grupal per a explorar focus, confiança i assaig mental abans de reptes acadèmics o proves importants.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria consultar o reservar plaça per a la trobada d'Estudi i exàmens a Sueca (Centre Sanar).",
       },
       {
         dateISO: "2026-10-05",
@@ -2223,6 +2247,9 @@ const va: Dict = {
         time: "18:00",
         title: "Hàbits i control del pes",
         text: "Un espai per a parlar de motivació, repetició i relació amb les rutines quotidianes des d'un enfocament no clínic.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria consultar o reservar plaça per a la trobada d'Hàbits i control del pes a Sueca (Centre Sanar).",
       },
       {
         dateISO: "2026-10-24",
@@ -2232,6 +2259,9 @@ const va: Dict = {
         badge: "Taller en grup · 15 €",
         place: "Cullera · Sat Nam Yoga",
         text: "I si aprengueres a viure en calma? Vine a experimentar-ho. Un taller experiencial en grup per a explorar, jugar i sorprendre't amb recursos pràctics de serenitat. Places limitades.",
+        ctaText: "Reservar plaça per WhatsApp",
+        whatsappMessage:
+          "Hola María, m'agradaria reservar la meua plaça per al taller Calma Pràctica a Cullera (Sat Nam Yoga).",
       },
       {
         dateISO: "2026-11-08",
@@ -2261,7 +2291,7 @@ const va: Dict = {
     empty: "Ara mateix no hi ha dates obertes.",
     emptyText:
       "Estic preparant el calendari de tallers. Si vols que t'avise quan es publiquen, escriu-me i t'ho conte.",
-    cta: "Vull assistir",
+    cta: "Reservar plaça per WhatsApp",
   },
   journal: {
     title: "Blog",
@@ -2308,7 +2338,7 @@ const va: Dict = {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "Com és una sessió de canvi i acompanyament?",
         excerpt:
-          "Una sessió és un espai de col·laboració, no una experiència en què una altra persona pren el control.",
+          "Una sessió és un espai de col·laboració on facilitem una relaxació profunda perquè el sistema nerviós integre els avanços de forma natural.",
       },
       {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
@@ -2331,7 +2361,7 @@ const va: Dict = {
         slug: "que-es-la-hipnosis",
         title: "Què és realment este enfocament d'atenció focalitzada?",
         excerpt:
-          "No és dormir, perdre el control ni deixar la ment en blanc. És una forma diferent de parar atenció.",
+          "Un estat d'atenció focalitzada i relaxació profunda que permet al sistema nerviós assimilar i internalitzar nous patrons de benestar.",
       },
       {
         title: "Expectatives realistes: què depén de cada part",
@@ -2385,8 +2415,8 @@ const va: Dict = {
     title: "Preguntes freqüents",
     items: [
       {
-        q: "Perdré el control durant la sessió?",
-        a: "En absolut. En estes sessions mantens la consciència i el control en tot moment. No té res a veure amb l'espectacle de televisió: pots parlar, moure't, recordar tot el que succeïx i detindre la sessió quan vullgues.",
+        q: "Què s'experimenta durant la sessió de teràpia?",
+        a: "Durant la sessió guiem un estat de relaxació profunda on romanen plenament conscient. Esta calma permet al teu sistema nerviós baixar el nivell d'alerta i internalitzar de manera orgànica els avanços i recursos treballats, amb total comoditat i tranquil·litat.",
       },
       {
         q: "Quina base científica i aval té este abordatge terapèutic?",
@@ -2665,7 +2695,7 @@ const en: Dict = {
     hypnosisText1:
       "The Ericksonian approach is an evidence-based therapeutic process that uses focused attention and somatic relaxation to produce solid, lasting results over the long term. Supported by modern neuroscience, it addresses the root of automatic habits, physical stress responses, and behavioral patterns that willpower alone cannot resolve.",
     hypnosisText2:
-      "Far from stage myths, you remain fully conscious and in complete control at all times. Through this psychotherapeutic process, no external formulas or quick fixes are imposed: we activate your own internal resources to learn to respond with calm in stressful or blocked situations, with complete professional rigor.",
+      "During each session, we guide a state of deep relaxation that helps your nervous system settle and internalize the breakthroughs and progress achieved. Through this therapeutic process, no external formulas or quick fixes are imposed: we activate your own internal resources to learn to respond with calm in stressful or blocked situations, with complete professional rigor.",
     hypnosisLink: "HOW THE PROCESS WORKS",
     hypnosisImageAlt: "Photograph of a calm session",
     contextsTitle: "TWO CONTEXTS. ONE IDEA: CHANGING HOW WE RESPOND.",
@@ -2819,7 +2849,7 @@ const en: Dict = {
     confidentialityTitle: "CONFIDENTIALITY, CONSENT AND SHARED OBJECTIVES",
     confidentialityParagraphs: [
       "Individual sessions are a private and confidential space between the practitioner and the employee. While the organisation participates in defining overarching goals, session conversations and contents are never disclosed to the company.",
-      "All work is strictly based on the employee's genuine consent. These sessions are never used to alter someone's values, personality, or opinions, nor to induce unwanted behaviours. On the contrary, it is a tool designed to help individuals regain conscious control over automatic habits or emotional reactions they themselves wish to change.",
+      "All work is strictly based on the employee's genuine consent. These sessions are never used to alter someone's values, personality, or opinions, nor to induce unwanted behaviours. On the contrary, it is a tool designed to help individuals respond with greater calm and effectiveness to automatic reactions, emotions, or habits they themselves wish to change.",
       "Objectives must therefore make sense for both parties: supporting professional development while offering genuine personal growth.",
     ],
     exampleTitle: "Example",
@@ -3113,7 +3143,7 @@ const en: Dict = {
       },
       {
         title: "Fear of being overwhelmed and avoidance",
-        text: "Fear of losing control, panic sensations, or cancelling plans and trips to avoid feeling distressed.",
+        text: "Panic episodes, sensations of physical overwhelm, or cancelling plans and trips to avoid distress.",
       },
     ],
     whyTitle: "WHY TELLING YOURSELF TO 'JUST CALM DOWN' DOESN'T WORK",
@@ -3210,11 +3240,11 @@ const en: Dict = {
     faqs: [
       {
         q: "How exactly does therapy help reduce anxiety and phobias?",
-        a: "Therapy addresses the neurobiology of fear and stress directly. While conscious rationalization often fails to quiet panic, in session we tap into a state where the parasympathetic nervous system takes over, releasing muscle tension, steadying breathing and desensitizing conditioned alarm reactions.",
+        a: "Therapy addresses the neurobiology of fear and stress directly. While conscious rationalization often fails to quiet panic, in session we guide a state of deep relaxation that engages the parasympathetic nervous system, allowing the body to release muscle tension, steady breathing and physiologically internalize calm and new progress.",
       },
       {
-        q: "Will I lose control or be unconscious during the session?",
-        a: "Not at all. This process is grounded and collaborative. You remain fully conscious throughout, you hear everything, can speak, move and decide what to share. It is a state of focused inward attention and deep physical comfort, far removed from stage entertainment.",
+        q: "What is experienced during a therapy session?",
+        a: "During the session, we guide you into a state of deep relaxation that helps your nervous system settle and integrate the progress made. You remain fully conscious throughout: you can hear my voice, speak, move, and participate naturally while your body and mind absorb new, calming patterns.",
       },
       {
         q: "How many sessions are typically needed?",
@@ -3233,7 +3263,7 @@ const en: Dict = {
   how: {
     title: "How it works",
     intro:
-      "Our work is a psychotherapeutic process that utilizes focused attention and deep somatic relaxation — supported by neuroscience — to facilitate shifts in habits and emotional responses, producing stable, long-term results. You never lose control, you do not fall asleep, and you actively participate throughout.",
+      "Our work is a therapeutic and personal development process grounded in neuroscience and focused attention. During each session, we guide deep relaxation that allows your nervous system to calm down and internalize the progress achieved, producing lasting shifts in your habits and emotional well-being.",
     stepsTitle: "The journey, step by step",
     steps: [
       {
@@ -3255,7 +3285,7 @@ const en: Dict = {
     ],
     mythsTitle: "Myths and realities",
     myths: [
-      "It is not a stage show: you never lose your will or control.",
+      "Deep relaxation helps your nervous system integrate change naturally and consciously.",
       "We do not perform clinical diagnoses of severe mental disorders.",
       "It does not replace medical or psychiatric care for severe pathologies.",
       "It is an active, structured process supported by scientific evidence.",
@@ -3406,7 +3436,8 @@ const en: Dict = {
       "Confidentiality.",
       "Practical tools for everyday life.",
     ],
-    controlNote: "You remain aware, involved and in control of the experience at all times.",
+    controlNote:
+      "During each session, we facilitate deep relaxation that helps your nervous system settle and internalize the progress achieved.",
     statement:
       "My work is about supporting each person as they explore their patterns and offering tools to respond in ways that are more useful for them.",
     workEyebrow: "My way of working",
@@ -3420,7 +3451,7 @@ const en: Dict = {
       },
       {
         title: "A conscious process",
-        text: "The person participates actively, understands what we are doing and always remains in control.",
+        text: "You participate actively while deep relaxation allows your nervous system to assimilate and internalize the progress.",
       },
       {
         title: "Personal pace",
@@ -3466,6 +3497,9 @@ const en: Dict = {
         time: "18:00",
         title: "Smoking",
         text: "A gathering to understand how smoking automatisms are maintained and how change can be supported towards smoke-free living.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to inquire or reserve a spot for the Smoking session in Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-09-21",
@@ -3473,6 +3507,9 @@ const en: Dict = {
         time: "18:00",
         title: "Anxiety, fears and phobias",
         text: "A calm introduction to attention, grounding and inner preparation for situations that create tension.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to inquire or reserve a spot for the Anxiety, fears and phobias session in Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-09-28",
@@ -3480,6 +3517,9 @@ const en: Dict = {
         time: "18:00",
         title: "Study and exams",
         text: "A group session to explore focus, confidence and mental rehearsal before academic challenges or important tests.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to inquire or reserve a spot for the Study and exams session in Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-10-05",
@@ -3487,6 +3527,9 @@ const en: Dict = {
         time: "18:00",
         title: "Habits and weight management",
         text: "A space to talk about motivation, repetition and everyday routines from a non-clinical perspective.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to inquire or reserve a spot for the Habits and weight management session in Sueca (Centro Sanar).",
       },
       {
         dateISO: "2026-10-24",
@@ -3496,6 +3539,9 @@ const en: Dict = {
         badge: "Group workshop · 15 €",
         place: "Cullera · Sat Nam Yoga",
         text: "What if you learned to live in calm? Come and experience it. An experiential group workshop to explore, play and discover practical resources for serenity. Limited spots.",
+        ctaText: "Book spot via WhatsApp",
+        whatsappMessage:
+          "Hello Maria, I would like to reserve a spot for the Practical Calm workshop in Cullera (Sat Nam Yoga).",
       },
       {
         dateISO: "2026-11-08",
@@ -3525,7 +3571,7 @@ const en: Dict = {
     empty: "There are no open dates right now.",
     emptyText:
       "The workshop calendar is being prepared. Write to me if you'd like to hear when dates are published.",
-    cta: "I want to attend",
+    cta: "Reserve spot via WhatsApp",
   },
   journal: {
     title: "Blog",
@@ -3572,7 +3618,7 @@ const en: Dict = {
         slug: "como-es-una-sesion-de-hipnosis",
         title: "What is a therapy and coaching session like?",
         excerpt:
-          "A session is a collaborative space, not an experience where someone else takes control.",
+          "A session is a collaborative space where deep relaxation allows your nervous system to integrate progress naturally.",
       },
       {
         slug: "hipnosis-y-cambio-de-habitos-como-puede-ayudar",
@@ -3596,7 +3642,7 @@ const en: Dict = {
         slug: "que-es-la-hipnosis",
         title: "What is this focused attention approach, really?",
         excerpt:
-          "It is not sleeping, losing control or emptying your mind. It is a different way of paying attention.",
+          "A state of focused attention and deep relaxation that enables the nervous system to assimilate and internalize new patterns of well-being.",
       },
       {
         title: "Realistic expectations: who brings what",
@@ -3650,8 +3696,8 @@ const en: Dict = {
     title: "Frequently asked questions",
     items: [
       {
-        q: "Will I lose control during the session?",
-        a: "Not at all. In these sessions, you remain conscious and in control at all times. It has nothing to do with stage shows: you can talk, move, remember everything, and pause the session whenever you choose.",
+        q: "What is experienced during a therapy session?",
+        a: "During each session, we guide you into a state of deep relaxation while you remain fully aware. This calm state allows your nervous system to de-escalate alert responses and organically internalize the progress and tools explored, in total comfort and safety.",
       },
       {
         q: "What is the scientific backing and evidence for this therapeutic approach?",

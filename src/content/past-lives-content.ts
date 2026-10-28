@@ -108,7 +108,7 @@ export const pastLivesEs: PastLivesData = {
   subtitle:
     "Un viaje consciente, sereno y transformador para explorar las memorias profundas de tu alma, sanar bloqueos de raíz y comprender tu propósito vital.",
   introText:
-    "¿Alguna vez has sentido una conexión magnética con una época histórica, un país o una persona sin motivo racional? ¿O un bloqueo recurrente que no proviene de ninguna vivencia de esta vida? La hipnosis para vidas pasadas y el acceso a los Registros Akáshicos te permiten ingresar en un estado de calma lúcida y atención expandida. Guiada paso a paso por María A. Cabo, no pierdes en ningún momento el control: observas, comprendes y traes al presente la sabiduría que tu conciencia necesita para avanzar con ligereza.",
+    "¿Alguna vez has sentido una conexión magnética con una época histórica, un país o una persona sin motivo racional? ¿O un bloqueo recurrente que no proviene de ninguna vivencia de esta vida? La hipnosis para vidas pasadas y el acceso a los Registros Akáshicos te permiten ingresar en un estado de calma lúcida y atención expandida. Guiada paso a paso por María A. Cabo, facilitamos una relajación profunda que ayuda a tu sistema nervioso a serenarse para asimilar e integrar con total lucidez la sabiduría y respuestas que necesitas para avanzar con ligereza.",
   trustBadges: [
     "Experiencia 100% consciente y segura",
     "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
@@ -171,7 +171,7 @@ export const pastLivesEs: PastLivesData = {
   journeyEyebrow: "EL RECORRIDO DE LA SESIÓN",
   journeyTitle: "¿CÓMO ES UNA SESIÓN DE REGRESIÓN PASO A PASO?",
   journeySubtitle:
-    "Un protocolo seguro, respetuoso y estructurado donde siempre mantienes el control y la lucidez.",
+    "Un protocolo seguro, respetuoso y estructurado donde la relajación profunda te acompaña con total lucidez.",
   journeySteps: [
     {
       num: "01",
@@ -272,8 +272,8 @@ export const pastLivesEs: PastLivesData = {
     "Todo lo que necesitas saber para acercarte a la experiencia con serenidad y confianza.",
   faqs: [
     {
-      q: "¿Voy a perder el control o puedo quedarme 'atrapado/a' en una vida anterior?",
-      a: "Rotundamente no. La hipnosis regresiva no es un coma ni un trance televisivo; es un estado de relajación consciente. Escuchas mi voz en todo momento, puedes hablar, abrir los ojos o moverte si lo necesitas. Nunca pierdes el control ni puedes quedarte atrapado/a en ningún plano; el regreso es tan natural como despertarse de un sueño lúcido.",
+      q: "¿Cómo se vive la experiencia y qué se siente durante la sesión?",
+      a: "Es un estado de relajación consciente y profunda donde permaneces lúcido/a en todo momento. Escuchas mi voz, puedes hablar, abrir los ojos o moverte si lo necesitas. Esta relajación ayuda a tu sistema nervioso a serenarse para asimilar e integrar los aprendizajes de la experiencia de forma completamente natural y tranquila.",
     },
     {
       q: "¿Qué sucede si mi mente es muy analítica y creo que no voy a poder ver nada?",
@@ -319,7 +319,7 @@ export const pastLivesVa: PastLivesData = {
   subtitle:
     "Un viatge conscient, seré i transformador per a explorar les memòries profundes de la teua ànima, sanar bloquejos d'arrel i comprendre el teu propòsit vital.",
   introText:
-    "Has sentit alguna vegada una connexió magnètica amb una època històrica, un país o una persona sense motiu racional? O un bloqueig recurrent que no prové de cap vivència d'esta vida? La hipnosi per a vides passades i l'accés als Registres Akàshics et permeten ingressar en un estat de calma lúcida i atenció expandida. Guiada pas a pas per María A. Cabo, no perds en cap moment el control: observes, comprens i portes al present la saviesa que la teua consciència necessita per a avançar amb lleugeresa.",
+    "Has sentit alguna vegada una connexió magnètica amb una època històrica, un país o una persona sense motiu racional? O un bloqueig recurrent que no prové de cap vivència d'esta vida? La hipnosi per a vides passades i l'accés als Registres Akàshics et permeten ingressar en un estat de calma lúcida i atenció expandida. Guiada pas a pas per María A. Cabo, facilitem una relaxació profunda que ajuda al teu sistema nerviós a serenar-se per a assimilar i integrar amb total lucidesa la saviesa i respostes que necessites per a avançar amb lleugeresa.",
   trustBadges: [
     "Experiència 100% conscient i segura",
     "Sueca (Centre Sanar) · A domicili a València · Online",
@@ -382,7 +382,7 @@ export const pastLivesVa: PastLivesData = {
   journeyEyebrow: "EL RECORREGUT DE LA SESSIÓ",
   journeyTitle: "COM ÉS UNA SESSIÓ DE REGRESSIÓ PAS A PAS?",
   journeySubtitle:
-    "Un protocol segur, respectuós i estructurat on sempre mantens el control i la lucidesa.",
+    "Un protocol segur, respectuós i estructurat on la relaxació profunda t'acompanya amb total lucidesa.",
   journeySteps: [
     {
       num: "01",
@@ -483,8 +483,8 @@ export const pastLivesVa: PastLivesData = {
     "Tot el que necessites saber per a acostar-te a l'experiència amb serenitat i confiança.",
   faqs: [
     {
-      q: "Vaig a perdre el control o puc quedar-me 'atrapat/da' en una vida anterior?",
-      a: "Rotundament no. La hipnosi regressiva no és un coma ni un trànsit televisiu; és un estat de relaxació conscient. Escoltes la meua veu en tot moment, pots parlar, obrir els ulls o moure't si ho necessites. Mai perds el control ni pots quedar-te atrapat/da en cap plànol; el retorn és tan natural com despertar-se d'un somni lúcid.",
+      q: "Com es viu l'experiència i què se sent durant la sessió?",
+      a: "És un estat de relaxació conscient i profunda on roman lúcid/a en tot moment. Escoltes la meua veu, pots parlar, obrir els ulls o moure't si ho necessites. Esta relaxació ajuda al teu sistema nerviós a serenar-se per a assimilar i integrar els aprenentatges de l'experiència de manera completament natural i tranquil·la.",
     },
     {
       q: "Què succeïx si la meua ment és molt analítica i crec que no podré veure res?",
@@ -694,8 +694,8 @@ export const pastLivesEn: PastLivesData = {
     "Everything you need to know to approach this experience with confidence, peace of mind and curiosity.",
   faqs: [
     {
-      q: "Will I lose control or could I get 'trapped' in a past lifetime?",
-      a: "Absolutely not. Hypnosis is a state of relaxed conscious awareness, not unconsciousness or loss of volition. You hear my voice at all times, can speak, open your eyes or shift positions whenever you wish. You never lose control and you cannot get stuck; returning is as natural and effortless as waking from a lucid dream.",
+      q: "What is the experience like and what do you feel during the session?",
+      a: "It is a state of deep, conscious relaxation where you remain lucid at all times. You hear my voice, can speak, open your eyes, or move whenever you wish. This deep relaxation helps your nervous system settle to naturally integrate the insights and discoveries from the session in complete peace.",
     },
     {
       q: "What if I am very analytical and fear I won't be able to perceive anything?",

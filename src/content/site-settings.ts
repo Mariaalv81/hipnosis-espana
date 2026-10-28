@@ -8,8 +8,8 @@ export const siteSettings = {
   smokingProgramEmail: "maria.a.cabo@gmail.com",
   smokingProgramEmailBody:
     "Quiero dejar de fumar.\n\nMi nombre: \nMi teléfono: \nModalidad (Sueca / A domicilio en Valencia / Online): \nMejor horario para la entrevista de 15 minutos: ",
-  instagramUrl: "https://www.instagram.com/mariacabo_hipnosis/",
-  instagramHandle: "@mariacabo_hipnosis",
+  instagramUrl: "https://www.instagram.com/mariacabo_terapeuta/",
+  instagramHandle: "@mariacabo_terapeuta",
   whatsappDefaultMessage:
     "Hola María, he visto tu web y me gustaría consultarte sobre una sesión de terapia...",
 };
@@ -18,9 +18,16 @@ export const siteSettings = {
  * Returns the WhatsApp click-to-chat URL safely decoding the obfuscated number at client runtime
  */
 export function getWhatsAppUrl(customText?: string): string {
-  if (typeof window === "undefined") return "#";
   try {
-    const rawDigits = window.atob(OBFUSCATED_WHATSAPP_PHONE);
+    let rawDigits = "";
+    if (typeof window !== "undefined" && typeof window.atob === "function") {
+      rawDigits = window.atob(OBFUSCATED_WHATSAPP_PHONE);
+    } else if (typeof atob === "function") {
+      rawDigits = atob(OBFUSCATED_WHATSAPP_PHONE);
+    } else if (typeof Buffer !== "undefined") {
+      rawDigits = Buffer.from(OBFUSCATED_WHATSAPP_PHONE, "base64").toString("utf-8");
+    }
+    if (!rawDigits) return "#";
     const msg = encodeURIComponent(customText || siteSettings.whatsappDefaultMessage);
     return `https://wa.me/${rawDigits}?text=${msg}`;
   } catch {

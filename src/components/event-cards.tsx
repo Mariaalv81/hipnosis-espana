@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import {
   Apple,
   BookOpen,
@@ -85,6 +84,19 @@ function splitEvents(events: EventItem[]) {
   };
 }
 
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  );
+}
+
 export function EventCards({
   limit,
   variant = "full",
@@ -92,7 +104,7 @@ export function EventCards({
   status = "all",
   showHeadings = status === "all",
 }: EventCardsProps) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const { upcoming, past } = splitEvents(t.events.items);
   const eventsByStatus =
     status === "upcoming" ? upcoming : status === "past" ? past : [...upcoming, ...past];
@@ -101,18 +113,38 @@ export function EventCards({
   if (events.length === 0) {
     if (!showEmpty) return null;
 
+    const emptyMsg =
+      lang === "va"
+        ? "Hola María, m'agradaria que m'avises quan es publiquen noves dates de tallers i esdeveniments..."
+        : lang === "en"
+          ? "Hello Maria, please let me know when new workshop and event dates are published..."
+          : "Hola María, me gustaría que me avisaras cuando publiques nuevas fechas de talleres y eventos...";
+
     return (
       <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
         <h2 className="text-2xl">{t.events.empty}</h2>
         <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
           {t.events.emptyText}
         </p>
-        <Link
-          to="/contacto"
-          className="mt-8 inline-block rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90"
+        <a
+          href={getWhatsAppUrl(emptyMsg)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => {
+            trackWhatsAppClick("event_empty_state");
+            const url = getWhatsAppUrl(emptyMsg);
+            if (url && url !== "#") {
+              if (e.currentTarget.getAttribute("href") === "#") {
+                e.preventDefault();
+                window.open(url, "_blank", "noopener,noreferrer");
+              }
+            }
+          }}
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#20ba59] hover:shadow-md"
         >
-          {t.events.cta}
-        </Link>
+          <WhatsAppIcon className="size-4 shrink-0 fill-current" />
+          <span>{t.events.cta}</span>
+        </a>
       </div>
     );
   }
@@ -120,27 +152,37 @@ export function EventCards({
   const renderBadge = (event: EventItem, eventStatus: EventStatus) =>
     eventStatus === "past" ? t.events.pastBadge : (event.badge ?? t.events.badge);
 
-  const renderCta = (event: EventItem, eventStatus: EventStatus, className: string) => {
-    if (eventStatus !== "upcoming") return null;
+  const renderCta = (event: EventItem, className: string) => {
+    const defaultMsg =
+      lang === "va"
+        ? `Hola María, m'agradaria reservar la meua plaça per al taller "${event.title}" (${event.date} a ${event.place ?? t.events.place}).`
+        : lang === "en"
+          ? `Hello Maria, I would like to reserve a spot for the workshop "${event.title}" (${event.date} at ${event.place ?? t.events.place}).`
+          : `Hola María, me gustaría reservar mi plaza para el taller "${event.title}" (${event.date} en ${event.place ?? t.events.place}).`;
 
-    if (event.whatsappMessage) {
-      return (
-        <a
-          href={getWhatsAppUrl(event.whatsappMessage)}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackWhatsAppClick(`event_${event.dateISO}`)}
-          className={className}
-        >
-          {event.ctaText ?? t.events.cta}
-        </a>
-      );
-    }
+    const message = event.whatsappMessage || defaultMsg;
+    const whatsappUrl = getWhatsAppUrl(message);
 
     return (
-      <Link to="/contacto" className={className}>
-        {event.ctaText ?? t.events.cta}
-      </Link>
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => {
+          trackWhatsAppClick(`event_${event.dateISO}`);
+          const url = getWhatsAppUrl(message);
+          if (url && url !== "#") {
+            if (e.currentTarget.getAttribute("href") === "#") {
+              e.preventDefault();
+              window.open(url, "_blank", "noopener,noreferrer");
+            }
+          }
+        }}
+        className={className}
+      >
+        <WhatsAppIcon className="size-4 shrink-0 fill-current" />
+        <span>{event.ctaText ?? t.events.cta}</span>
+      </a>
     );
   };
 
@@ -177,8 +219,7 @@ export function EventCards({
 
             {renderCta(
               event,
-              eventStatus,
-              "mt-6 inline-flex w-fit rounded-full bg-primary px-5 py-2.5 text-sm text-primary-foreground transition-opacity hover:opacity-90",
+              "mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#20ba59] hover:shadow-md",
             )}
           </article>
         );
@@ -224,8 +265,7 @@ export function EventCards({
 
               {renderCta(
                 event,
-                eventStatus,
-                "mt-7 inline-flex w-fit rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition-opacity hover:opacity-90",
+                "mt-7 inline-flex w-fit items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#20ba59] hover:shadow-md",
               )}
             </div>
           </article>

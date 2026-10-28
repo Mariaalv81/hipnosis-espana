@@ -176,8 +176,8 @@ export const professionalsEs: ProfessionalsData = {
       text: "Un estado natural de concentración profunda y relajación somática. Aprovecha la capacidad plástica del sistema nervioso para actualizar asociaciones y respuestas reflejas.",
     },
     {
-      title: "Control y lucidez total del cliente",
-      text: "Nadie pierde la voluntad ni se duerme. El cliente escucha mi voz en todo momento, recuerda la sesión, puede hablar, moverse e interrumpir el proceso cuando lo desee. Es un trabajo colaborativo.",
+      title: "Relajación profunda y lucidez total",
+      text: "Facilitamos una relajación profunda que ayuda al sistema nervioso a serenarse para asimilar e integrar los avances. El cliente escucha mi voz en todo momento, recuerda la sesión, puede hablar, moverse e intervenir cuando lo desee. Es un trabajo colaborativo.",
     },
     {
       title: "Objetivos observables y procesos acotados",

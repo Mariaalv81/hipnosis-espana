@@ -11,7 +11,7 @@ export const Route = createFileRoute("/faq")({
     makeSeo({
       title: "Preguntas frecuentes sobre la terapia en Sueca y Valencia · María A. Cabo",
       description:
-        "Dudas habituales sobre el acompañamiento terapéutico: control, confidencialidad, número de sesiones, precios y cómo alcanzar tus objetivos.",
+        "Dudas habituales sobre el acompañamiento terapéutico: relajación profunda, método, confidencialidad, número de sesiones, precios y cómo alcanzar tus objetivos.",
       path: "/faq",
     }),
   component: FaqPage,

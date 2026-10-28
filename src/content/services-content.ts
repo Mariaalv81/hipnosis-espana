@@ -574,11 +574,11 @@ export const servicesEs: ServicesDictionary = {
     faqs: [
       {
         q: "¿Tendré que enfrentarme a lo que me da miedo durante la sesión de forma brusca?",
-        a: "No, en absoluto. Todo el trabajo se realiza de manera progresiva, suave y controlada en tu imaginación, manteniendo siempre el control y un estado corporal de descanso y seguridad.",
+        a: "No, en absoluto. Todo el trabajo se realiza de manera progresiva y suave en tu imaginación, facilitando una relajación profunda que ayuda a tu sistema nervioso a asimilar la calma y la seguridad.",
       },
       {
         q: "¿Sirve para el miedo a volar en avión o a conducir por autovía?",
-        a: "Son dos de las consultas más frecuentes y con mejores resultados. El trabajo terapéutico permite desactivar la sensación de encierro o pérdida de control y entrenar a tu mente para viajar o conducir con total tranquilidad.",
+        a: "Son dos de las consultas más frecuentes y con mejores resultados. El trabajo terapéutico permite desactivar la sensación de angustia o desbordamiento y entrenar a tu mente para viajar o conducir con total tranquilidad.",
       },
       {
         q: "¿Cuántas sesiones suelen ser necesarias para una fobia concreta?",

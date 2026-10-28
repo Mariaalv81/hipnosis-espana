@@ -197,11 +197,11 @@ export const qrContentEs: QrPageData = {
   howEyebrow: "RIGOR Y NATURALIDAD",
   howTitle: "¿CÓMO ES UNA SESIÓN CONMIGO?",
   howSubtitle:
-    "Un proceso terapéutico basado en la neurociencia y en la activación de tus recursos internos, sin pérdidas de control ni métodos invasivos:",
+    "Un proceso terapéutico basado en la neurociencia y en la activación de tus recursos internos, con un enfoque natural y colaborativo:",
   howPoints: [
     {
-      title: "Control y lucidez total en todo momento",
-      text: "Nadie pierde la conciencia ni se duerme. Escuchas mi voz, recuerdas todo lo sucedido, puedes hablar y decides en todo momento qué recursos adoptar. Es un trabajo en equipo.",
+      title: "Relajación profunda y lucidez total",
+      text: "Facilitamos una relajación profunda durante la sesión que ayuda al sistema nervioso a serenarse para internalizar los avances alcanzados. Escuchas mi voz, recuerdas todo lo sucedido, puedes hablar y decides en todo momento qué recursos adoptar. Es un trabajo en equipo.",
     },
     {
       title: "Metodología basada en neurobiología y evidencia",
@@ -401,11 +401,11 @@ export const qrContentVa: QrPageData = {
   howEyebrow: "RIGOR I NATURALITAT",
   howTitle: "COM ÉS UNA SESSIÓ AMB MI?",
   howSubtitle:
-    "Un procés terapèutic basat en la neurociència i en l'activació dels teus recursos interns, sense pèrdues de control ni mètodes invasius:",
+    "Un procés terapèutic basat en la neurociència i en l'activació dels teus recursos interns, amb un enfocament natural i col·laboratiu:",
   howPoints: [
     {
-      title: "Control i lucidesa total en tot moment",
-      text: "Ningú perd la consciència ni es dorm. Sents la meua veu, recordes tot el procés, pots parlar i decidixes en tot moment quins recursos adoptar. És un treball en equip.",
+      title: "Relaxació profunda i lucidesa total",
+      text: "Facilitem una relaxació profunda durant la sessió que ajuda al sistema nerviós a serenar-se per a internalitzar els avanços aconseguits. Sents la meua veu, recordes tot el procés, pots parlar i decidixes en tot moment quins recursos adoptar. És un treball en equip.",
     },
     {
       title: "Metodologia basada en neurobiologia i evidència",
@@ -604,11 +604,11 @@ export const qrContentEn: QrPageData = {
   howEyebrow: "SCIENTIFIC RIGOUR & EASE",
   howTitle: "WHAT IS A SESSION LIKE WITH ME?",
   howSubtitle:
-    "A therapeutic process grounded in neuroscience and internal resource activation, free from stage spectacle or loss of control:",
+    "A therapeutic process grounded in neuroscience and internal resource activation, with a natural, collaborative approach:",
   howPoints: [
     {
-      title: "Full lucidity and complete control throughout",
-      text: "You never lose consciousness or fall asleep. You hear my voice, remember everything that happens, can speak, and decide at every step which resources to integrate. It is collaborative teamwork.",
+      title: "Deep relaxation and complete lucidity throughout",
+      text: "We facilitate deep relaxation during the session that helps the nervous system settle and internalize the progress achieved. You hear my voice, remember everything that happens, can speak, and decide at every step which resources to integrate. It is collaborative teamwork.",
     },
     {
       title: "Methodology grounded in neurobiology and evidence",
