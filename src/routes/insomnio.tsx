@@ -6,9 +6,10 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/insomnio")({
   head: () =>
     makeSeo({
-      title: "Terapia para el Insomnio en Valencia y Sueca · Dormir Mejor | María A. Cabo",
+      title:
+        "Terapia para el Insomnio y Ansiedad Nocturna en Valencia y Sueca · Dormir Mejor | María A. Cabo",
       description:
-        "Calma la mente, frena la rumiación nocturna y recupera un descanso reparador y natural con terapia focalizada y regulación somática en Sueca, Valencia y online. 70 €/sesión.",
+        "Supera el insomnio y la ansiedad nocturna en Valencia y Sueca. Calma la rumiación mental, los despertares con angustia y recupera un sueño reparador y natural. 70 €/sesión.",
       path: "/insomnio",
     }),
   component: InsomniaPage,

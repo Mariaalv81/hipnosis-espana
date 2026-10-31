@@ -7,9 +7,10 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/sesiones")({
   head: () =>
     makeSeo({
-      title: "Sesiones de Terapia y Desarrollo Personal en Valencia y Sueca · María A. Cabo",
+      title:
+        "Sesiones de Hipnosis Consciente y Acompañamiento Terapéutico en Valencia y Sueca · María A. Cabo",
       description:
-        "Sesiones individuales de terapia y desarrollo personal en Sueca, a domicilio en Valencia ciudad u online. Formada en el Instituto Erickson Madrid.",
+        "Sesiones individuales de hipnosis ericksoniana consciente y terapia con María A. Cabo en Sueca (Centro Sanar), a domicilio en Valencia ciudad u online. 70 €/sesión.",
       path: "/sesiones",
     }),
   component: SessionsPage,

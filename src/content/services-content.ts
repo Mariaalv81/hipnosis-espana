@@ -303,16 +303,16 @@ export const servicesEs: ServicesDictionary = {
   },
 
   sportsPage: {
-    eyebrow: "FOCO, RENDIMIENTO Y FLUJO · TERAPIA EN SUECA Y VALENCIA",
-    title: "TERAPIA PARA EL DEPORTE: RENDIMIENTO, CONSTANCIA Y FOCO MENTAL",
+    eyebrow: "HIPNOSIS PARA EL DEPORTE · VALENCIA, CASTELLÓN Y SUECA",
+    title: "HIPNOSIS PARA EL DEPORTE: RENDIMIENTO, TEMPLE Y ESTADO DE FLUJO",
     subtitle:
-      "En el deporte, el cuerpo llega hasta donde la mente le permite. Entrena tu diálogo interno y compite en estado de flujo.",
+      "En la competición, el cuerpo llega hasta donde la mente le permite. Con hipnosis para el deporte y visualización neuromuscular, compites con soltura bajo presión.",
     introText:
-      "Entrenas duro, cumples con la preparación física y conoces la técnica al detalle. Sin embargo, cuando llega el día de la competición o un momento decisivo, los nervios te atenazan, la respiración se acelera y tu cuerpo no responde con la soltura de los entrenamientos. O quizá te cuesta encontrar la constancia diaria tras un parón o una lesión. A través de un enfoque terapéutico aplicado al rendimiento para producir resultados sólidos a largo plazo, alineamos tus procesos mentales con tus objetivos físicos: visualización motora de alta precisión, gestión de la fatiga y un estado inquebrantable de seguridad y concentración.",
+      "Entrenas duro, cumples con la preparación física y conoces la técnica al detalle. Sin embargo, cuando llega el día de la competición o un momento decisivo, los nervios atenazan la respiración y tu cuerpo no responde con la fluidez de los entrenamientos. Las sesiones de hipnosis para el deporte en Valencia, Castellón y online permiten entrenar el diálogo interno y activar el estado de flujo (flow). A través de visualización neuromuscular de alta precisión, anclajes propioceptivos y regulación del sistema nervioso, blindamos tu concentración, temple y constancia ante cualquier reto deportivo.",
     trustBadges: [
-      "Utilizado por deportistas de élite y populares",
-      "Visualización neuromuscular y foco mental",
-      "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
+      "Hipnosis para deportistas federados y populares",
+      "Visualización neuromuscular y temple competitivo",
+      "Sueca (Centro Sanar) · A domicilio Valencia · Online Castellón",
       "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
@@ -340,11 +340,11 @@ export const servicesEs: ServicesDictionary = {
     ],
     symptomsNote:
       "La visualización focalizada activa exactamente las mismas redes neuronales y musculares que el entrenamiento físico real. Es el entrenamiento invisible definitivo para afianzar la memoria motora sin fatiga articular.",
-    whyTitle: "CÓMO POTENCIA LA TERAPIA EL RENDIMIENTO DEPORTIVO",
+    whyTitle: "CÓMO POTENCIA LA HIPNOSIS EL RENDIMIENTO DEPORTIVO",
     whyParagraphs: [
       "En los momentos de máxima exigencia deportiva, pensar demasiado es el peor enemigo del rendimiento. Cuando el córtex prefrontal intenta controlar cada movimiento en lugar de dejar actuar a la memoria motora automatizada, el cuerpo se vuelve rígido y lento.",
-      "El trabajo terapéutico permite entrar voluntariamente en lo que la psicología deportiva denomina 'estado de flujo' (in the zone): un estado de absorción profunda donde la atención se estrecha al momento presente, desaparece el miedo al fallo y la ejecución técnica fluye con máxima eficacia.",
-      "Además, mediante pautas de atención focalizada y anclajes propioceptivos, aprendes a activar de forma instantánea estados de potencia, calma o foco en el calentamiento previo a cualquier reto deportivo, consolidando tu rendimiento a largo plazo.",
+      "La hipnosis deportiva permite entrar voluntariamente en lo que la psicología del rendimiento denomina 'estado de flujo' (flow state): un estado de absorción profunda donde la atención se estrecha al presente, desaparece el miedo al fallo y la ejecución técnica fluye con máxima eficacia.",
+      "Además, mediante pautas de atención focalizada y anclajes propioceptivos, aprendes a activar de forma instantánea estados de potencia, calma o foco en el calentamiento previo a cualquier reto competitivo en Valencia, Castellón o a nivel nacional.",
     ],
     pillarsTitle: "PLAN DE ENTRENAMIENTO MENTAL Y FOCO",
     pillarsIntro:
@@ -377,22 +377,22 @@ export const servicesEs: ServicesDictionary = {
     ],
     locationsTitle: "DÓNDE REALIZAMOS LAS SESIONES",
     locationsIntro:
-      "Atención personalizada en Sueca, la comarca de la Ribera Baixa y Valencia ciudad:",
+      "Atención personalizada para deportistas en Sueca, Valencia ciudad, Castellón y online:",
     locations: [
       {
         name: "Despacho en Sueca (Centro Sanar)",
-        area: "Ribera Baixa",
-        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso para personas de Cullera, Alzira, Algemesí, Carcaixent, Sollana, Albalat de la Ribera, Corbera, Favara y El Perelló.",
+        area: "Ribera Baixa y comarcas",
+        desc: "Espacio sereno, independiente y confidencial en Sueca. De muy fácil acceso para deportistas de Cullera, Alzira, Algemesí, Carcaixent y Sollana.",
       },
       {
         name: "A domicilio en Valencia ciudad",
-        area: "Valencia capital y alrededores",
-        desc: "Ideal si prefieres trabajar la preparación mental desde la tranquilidad y comodidad de tu propio hogar.",
+        area: "Valencia capital y área metropolitana",
+        desc: "Ideal si prefieres trabajar la preparación mental desde la intimidad y comodidad de tu propio hogar o entorno de entrenamiento.",
       },
       {
-        name: "Sesiones Online en directo",
-        area: "Cualquier ubicación",
-        desc: "Por videoconferencia individual en directo, con total flexibilidad de horarios para encajar con tu calendario de entrenamientos.",
+        name: "Sesiones Online para Castellón, Valencia y resto de España",
+        area: "Castellón, Valencia y cualquier ubicación",
+        desc: "Por videoconferencia individual en directo, con total flexibilidad de horarios para encajar con tus sesiones de entrenamiento y viajes de competición.",
       },
     ],
     pricingTitle: "PRECIOS CLAROS Y CONDICIONES TRANSPARENTES",
@@ -425,38 +425,38 @@ export const servicesEs: ServicesDictionary = {
       mailtoFallback:
         "Si ha habido un problema con el envío automático, puedes escribirme directamente:",
     },
-    faqsTitle: "PREGUNTAS FRECUENTES SOBRE ENTRENAMIENTO MENTAL Y DEPORTE",
+    faqsTitle: "PREGUNTAS FRECUENTES SOBRE HIPNOSIS PARA EL DEPORTE",
     faqsSubtitle: "Respuestas a dudas habituales sobre el entrenamiento mental y el rendimiento:",
     faqs: [
       {
-        q: "¿Este entrenamiento mental es solo para profesionales o también para aficionados?",
-        a: "Es igualmente eficaz para ambos. Desde corredores populares o ciclistas que quieren superar sus marcas, hasta deportistas federados o de competición que buscan dar un salto cualitativo en su temple y seguridad bajo presión.",
+        q: "¿La hipnosis para el deporte es solo para profesionales o también para aficionados?",
+        a: "Es igualmente eficaz para ambos. Desde corredores populares o ciclistas que quieren superar sus marcas, hasta deportistas federados o de competición en Valencia, Castellón y otras provincias que buscan dar un salto cualitativo en su temple y seguridad bajo presión.",
       },
       {
-        q: "¿Cómo ayuda la terapia con la motivación para entrenar a diario?",
-        a: "La motivación forzada se agota pronto. En terapia conectamos con el placer intrínseco del movimiento y la satisfacción del esfuerzo, haciendo que ponerse en marcha deje de requerir una lucha interna agotadora.",
+        q: "¿Cómo ayuda la hipnosis deportiva con la motivación para entrenar a diario?",
+        a: "La motivación forzada se agota pronto. En sesión conectamos con el placer intrínseco del movimiento y la satisfacción del esfuerzo, haciendo que ponerse en marcha deje de requerir una lucha interna agotadora.",
       },
       {
         q: "¿Se puede trabajar el miedo a recaer tras una lesión física ya curada?",
         a: "Sí, es uno de los campos más agradecidos. Cuando el traumatólogo o fisioterapeuta da el alta médica, el cerebro a menudo mantiene un reflejo de hiperprotección y tensión involuntaria. En sesión le enseñamos al cuerpo que la zona ya es segura y fuerte.",
       },
       {
-        q: "¿Dónde se realizan las sesiones?",
-        a: "En mi despacho de Sueca (Centro Sanar, Ribera Baixa), a domicilio en Valencia ciudad para tu comodidad, o de forma online mediante videollamada.",
+        q: "¿Dónde se realizan las sesiones para deportistas de Castellón y Valencia?",
+        a: "En mi despacho de Sueca (Centro Sanar, Ribera Baixa), a domicilio en Valencia ciudad para tu comodidad, o de forma online mediante videollamada para deportistas de Castellón y toda España.",
       },
     ],
   },
 
   fearsPage: {
-    eyebrow: "RECUPERAR TU LIBERTAD · TERAPIA EN SUECA Y VALENCIA",
-    title: "SUPERAR MIEDOS Y FOBIAS: DESACTIVAR LA RESPUESTA DE PÁNICO",
+    eyebrow: "HIPNOSIS Y TERAPIA EN VALENCIA Y SUECA · RECUPERAR TU LIBERTAD",
+    title: "HIPNOSIS PARA SUPERAR FOBIAS Y MIEDOS EN VALENCIA: DESACTIVAR EL PÁNICO",
     subtitle:
-      "Sabes racionalmente que no hay peligro real, pero tu cuerpo reacciona como si tu vida estuviera en juego.",
+      "Sabes racionalmente que no hay peligro real, pero tu cuerpo reacciona en alerta. Con hipnosis ericksoniana consciente y desensibilización suave, recuperas tu calma.",
     introText:
-      "Miedo a subirte a un avión, pánico a conducir por autopistas o túneles (amaxofobia), terror a las agujas, claustrofobia en ascensores o bloqueo paralizante al exponerte ante un grupo. Cuando un miedo se consolida como fobia, la lógica no sirve de nada: la amígdala cerebral secuestra tu fisiología disparando palpitaciones, mareo, sudores y una necesidad desesperada de huir. Con un enfoque terapéutico focalizado en producir resultados duraderos a largo plazo, realizamos una desensibilización sistemática profunda en un estado de seguridad absoluta: enseñamos a tu cerebro a desaprender la asociación de amenaza para que recuperes tu tranquilidad y tu libertad de movimiento con total serenidad.",
+      "Miedo a volar en avión, pánico a conducir por autopistas o túneles (amaxofobia), fobia a las agujas, claustrofobia en ascensores o bloqueo paralizante al exponerte ante un grupo. Cuando un miedo se consolida como fobia, la lógica no sirve de nada: la amígdala secuestra tu fisiología disparando palpitaciones, mareo, sudores y una necesidad desesperada de huir. Con sesiones de hipnosis para superar fobias en Valencia y Sueca, facilitamos una desensibilización sistemática suave en un estado de profunda seguridad somática: enseñamos a tu cerebro a desaprender la asociación de amenaza para que recuperes tu serenidad y libertad de movimiento con total autonomía.",
     trustBadges: [
-      "Proceso respetuoso, sin exposiciones traumáticas",
-      "Acompañamiento terapéutico para resultados a largo plazo",
+      "Hipnosis ericksoniana consciente y respetuosa",
+      "Desensibilización sistemática sin shock",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
       "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
@@ -484,12 +484,12 @@ export const servicesEs: ServicesDictionary = {
       },
     ],
     symptomsNote:
-      "Las fobias no son defectos de personalidad ni falta de valentía; son aprendizajes ultrarrápidos de supervivencia que quedaron grabados en el sistema nervioso. La terapia focalizada permite reescribir ese archivo de memoria.",
-    whyTitle: "CÓMO DESACTIVA LA TERAPIA LAS ASOCIACIONES DE MIEDO",
+      "Las fobias no son defectos de personalidad ni falta de valentía; son aprendizajes ultrarrápidos de supervivencia que quedaron grabados en el sistema nervioso. La hipnosis clínica y la terapia focalizada permiten reescribir ese archivo de memoria.",
+    whyTitle: "CÓMO DESACTIVA LA HIPNOSIS LAS ASOCIACIONES DE MIEDO Y FOBIA",
     whyParagraphs: [
       "El miedo fóbico se almacena en la memoria implícita e involuntaria. Cuando te encuentras frente al estímulo, la información llega a la amígdala antes de que pase por la corteza cerebral reflexiva, desencadenando la respuesta refleja de 'lucha o huida'.",
       "Las terapias de choque o exposición forzada pueden resultar abrumadoras e incluso retraumatizantes si el cuerpo no dispone de un anclaje sólido de seguridad fisiológica.",
-      "En sesión, facilitamos que tu cuerpo entre en un estado parasimpático de profunda calma y relajación muscular. Desde ese espacio de total seguridad, exponemos a la mente a la situación de forma disociada y gradual, 'desacoplando' el estímulo del reflejo de alarma y reprogramando una respuesta neutra o tranquila con resultados consolidados a largo plazo.",
+      "En sesión de hipnosis ericksoniana en Valencia y Sueca, facilitamos que tu cuerpo entre en un estado parasimpático de profunda calma y distensión. Desde ese espacio de total seguridad, exponemos a la mente a la situación de forma disociada y gradual, 'desacoplando' el estímulo del reflejo de alarma y reprogramando una respuesta neutra o tranquila con resultados consolidados a largo plazo.",
     ],
     pillarsTitle: "RECORRIDO PASO A PASO FRENTE AL MIEDO",
     pillarsIntro:
@@ -592,48 +592,48 @@ export const servicesEs: ServicesDictionary = {
   },
 
   confidencePage: {
-    eyebrow: "SEGURIDAD INTERIOR · TERAPIA EN SUECA Y VALENCIA",
-    title: "AUTOESTIMA Y CONFIANZA: DESACTIVAR LA VOZ AUTOCRÍTICA Y SENTIR TU VALOR",
+    eyebrow: "SUPERAR LA AUTOESTIMA BAJA EN VALENCIA Y SUECA · SEGURIDAD PERSONAL",
+    title: "AUTOESTIMA BAJA Y CONFIANZA EN UNO MISMO: MEJORA DE AUTOCONFIANZA REAL",
     subtitle:
-      "La verdadera seguridad personal no consiste en fingir que todo está bajo control, sino en sentirte legítimo/a tal y como eres.",
+      "Aumentar la confianza en uno mismo no consiste en repetir frases vacías, sino en desactivar la voz autocrítica y sentir tu valor con calma y firmeza.",
     introText:
-      "Dudar constantemente de tus capacidades, sentirte como un fraude a punto de ser descubierto (síndrome del impostor), quedarte callado/a en reuniones para no equivocarte o ser incapaz de decir 'no' a las peticiones de los demás por miedo a decepcionar. La falta de confianza no se arregla repitiendo frases vacías en el espejo: se transforma cambiando el diálogo interno automático que aprendiste en el pasado. Mediante un acompañamiento terapéutico focalizado en producir resultados sólidos a largo plazo, trabajamos en el sustrato emocional profundo de tu identidad: liberamos viejas etiquetas limitantes, reforzamos tu asertividad y anclamos una sensación corporal sólida de presencia, dignidad y serenidad.",
+      "Dudar constantemente de tus capacidades, convivir con la autoestima baja en el trabajo o las relaciones, sentirte como un fraude (síndrome del impostor) o ser incapaz de poner límites por miedo a decepcionar. La mejora de autoconfianza duradera se logra actualizando las respuestas automáticas de tu sistema nervioso. En nuestras sesiones en Sueca, Valencia y online, trabajamos para superar la autoestima baja y aumentar la confianza en uno mismo: transformamos viejas etiquetas limitantes, reforzamos tu asertividad y consolidamos una presencia tranquila, segura y auténtica ante cualquier situación.",
     trustBadges: [
-      "Cambio profundo de narrativa interna",
-      "Acompañamiento terapéutico para resultados a largo plazo",
+      "Mejora de autoconfianza y asertividad",
+      "Aumentar la confianza en uno mismo de forma real",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
       "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA TERAPIA",
-    symptomsTitle: "SEÑALES DE INSEGURIDAD Y FALTA DE CONFIANZA",
+    symptomsTitle: "SEÑALES DE AUTOESTIMA BAJA Y FALTA DE CONFIANZA EN UNO MISMO",
     symptomsSubtitle:
-      "Patrones de diálogo interno y conducta que desgastan tu bienestar y frenan tus decisiones.",
+      "Patrones de diálogo interno y conducta que desgastan tu bienestar y frenan tus decisiones en el día a día.",
     symptoms: [
       {
-        title: "Síndrome del impostor",
+        title: "Síndrome del impostor y comparación",
         text: "Atribuir tus éxitos a la suerte y vivir con el miedo continuo a que los demás descubran que 'no eres suficiente'.",
       },
       {
-        title: "Incapacidad para poner límites",
+        title: "Incapacidad para poner límites y complacencia",
         text: "Aceptar compromisos por complacer o por temor al conflicto, acabando agotado/a, invisible y con resentimiento.",
       },
       {
-        title: "Miedo paralizante al juicio ajeno",
-        text: "Sentir que todas las miradas te juzgan, con nudo en la garganta y palpitaciones al hablar o exponerte en público.",
+        title: "Miedo al juicio ajeno y bloqueo al exponerte",
+        text: "Sentir que todas las miradas te juzgan, con nudo en la garganta y palpitaciones al hablar en público o defender tu postura.",
       },
       {
-        title: "Crítica interna implacable",
+        title: "Crítica interna implacable y autoexigencia",
         text: "Una voz mental exigente que magnifica cada error cometido y minimiza tus cualidades, logros y talentos.",
       },
     ],
     symptomsNote:
-      "La inseguridad no es un rasgo innato con el que tengas que resignarte a vivir; es una creencia aprendida que se repite en piloto automático. A través de la terapia puedes actualizar esa autoimagen y recuperar tu fuerza.",
-    whyTitle: "CÓMO TRANSFORMA LA TERAPIA LA SEGURIDAD PERSONAL",
+      "La autoestima baja no es un rasgo innato con el que tengas que resignarte a vivir; es una creencia aprendida que se repite en piloto automático. A través de la terapia focalizada puedes actualizar esa autoimagen y recuperar tu fuerza personal.",
+    whyTitle: "CÓMO AUMENTAR LA CONFIANZA EN UNO MISMO Y MEJORAR LA AUTOCONFIANZA",
     whyParagraphs: [
-      "La confianza no es un concepto puramente intelectual, es una experiencia física. Cuando te sientes seguro/a, tu postura corporal se abre, tu voz es firme y tu respiración es amplia. Cuando domina la inseguridad, el cuerpo se contrae como si estuviera ante una amenaza inminente.",
-      "Gran parte de nuestras dudas proceden de experiencias pasadas donde internalizamos juicios o comparaciones. Aunque hoy seamos personas adultas capaces, el cerebro emocional sigue reaccionando con viejos patrones automáticos de indefensión.",
-      "En sesión intervenimos en ese nivel profundo de autoconcepto mediante terapia focalizada, desactivamos las voces críticas heredadas y anclamos sensaciones somáticas de solidez, dignidad y merecimiento que se integran naturalmente en tu vida cotidiana a largo plazo.",
+      "La confianza en uno mismo no es un concepto puramente intelectual, es una experiencia física. Cuando te sientes seguro/a, tu postura corporal se abre, tu voz es firme y tu respiración es amplia. Cuando domina la autoestima baja, el cuerpo se contrae como si estuviera ante una amenaza inminente.",
+      "Gran parte de nuestras dudas proceden de experiencias pasadas donde internalizamos juicios, comparaciones o exigencias. Aunque hoy seamos personas adultas capaces, el cerebro emocional sigue reaccionando con viejos patrones automáticos de indefensión.",
+      "En sesión intervenimos en ese nivel profundo de autoconcepto mediante relajación somática y reprogramación de creencias limitantes. Desactivamos las voces críticas heredadas y anclamos sensaciones de solidez, dignidad y merecimiento para lograr una mejora de autoconfianza visible y duradera en Valencia y Sueca.",
     ],
     pillarsTitle: "EL CAMINO HACIA UNA CONFIANZA AUTÉNTICA",
     pillarsIntro:
@@ -880,48 +880,48 @@ export const servicesEs: ServicesDictionary = {
   },
 
   insomniaPage: {
-    eyebrow: "SUEÑO PROFUNDO Y DESCANSO NATURAL · TERAPIA EN SUECA Y VALENCIA",
-    title: "TERAPIA PARA EL INSOMNIO: APAGAR LA MENTE Y RECUPERAR EL SUEÑO REPARADOR",
+    eyebrow: "SUEÑO PROFUNDO Y ANSIEDAD NOCTURNA · TERAPIA EN SUECA Y VALENCIA",
+    title: "TERAPIA PARA EL INSOMNIO Y LA ANSIEDAD NOCTURNA: APAGAR LA MENTE Y DESCANSAR",
     subtitle:
-      "El insomnio no es una incapacidad para dormir; es tu sistema nervioso interpretando la cama como un lugar de alerta y rumiación en piloto automático.",
+      "La ansiedad nocturna y el insomnio no son falta de sueño, sino tu sistema nervioso interpretando la noche como un estado de alerta continua en piloto automático.",
     introText:
-      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, tu mente se acelera: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas a las 3 de la madrugada con el corazón acelerado y no puedes volver a conciliar el sueño. Con un abordaje terapéutico focalizado en producir resultados sólidos a largo plazo, no forzamos el sueño (porque forzarlo genera más tensión): facilitamos el reflejo somático de distensión, frenamos el diálogo interno nocturno y enseñamos a tu cuerpo a activar de manera natural las respuestas de descanso profundo.",
+      "Te metes en la cama con agotamiento físico, pero en cuanto apagas la luz, la ansiedad nocturna acelera tus pensamientos: repasas el día, anticipas problemas de mañana o miras el reloj con angustia viendo cómo pasan las horas. O tal vez te duermes, pero te despiertas sobresaltado/a a las 3 de la madrugada con taquicardia y la mente en alerta sin poder volver a conciliar el sueño. Con un abordaje terapéutico focalizado en regular el sistema nervioso en Sueca y Valencia, calmamos la ansiedad nocturna, frenamos la rumiación mental y enseñamos a tu cuerpo a activar de manera natural el reflejo del descanso profundo y reparador.",
     trustBadges: [
-      "Descanso 100% natural sin fármacos",
-      "Acompañamiento terapéutico para resultados a largo plazo",
+      "Calma para la ansiedad nocturna e insomnio",
+      "Descanso natural sin fármacos ni dependencias",
       "Sueca (Centro Sanar) · A domicilio en Valencia · Online",
       "Valoración previa de 15 min sin compromiso · 70 €/sesión",
     ],
     ctaPrimary: "RESERVAR SESIÓN O CONSULTAR",
     ctaSecondary: "CÓMO TE AYUDA LA TERAPIA",
-    symptomsTitle: "CÓMO SE MANIFIESTAN EL INSOMNIO Y LA HIPERACTIVACIÓN NOCTURNA",
+    symptomsTitle: "CÓMO SE MANIFIESTAN EL INSOMNIO Y LA ANSIEDAD NOCTURNA",
     symptomsSubtitle:
-      "Patrones fisiológicos involuntarios que impiden la transición biológica al sueño profundo.",
+      "Patrones fisiológicos involuntarios de alerta que impiden la transición biológica al sueño profundo.",
     symptoms: [
       {
-        title: "Dificultad para conciliar el sueño",
+        title: "Dificultad para conciliar el sueño y rumiación",
         text: "Pasar más de una hora dando vueltas en la cama con una mente acelerada que no encuentra el botón de apagado.",
       },
       {
-        title: "Despertares nocturnos con alerta",
-        text: "Despertarse a mitad de la noche en estado de guardia o hipervigilancia y sentir angustia al ver que el reloj avanza.",
+        title: "Ansiedad nocturna y despertares con angustia",
+        text: "Despertarse de madrugada con palpitaciones, taquicardia o sobresalto en el pecho y angustia al ver que el reloj avanza.",
       },
       {
-        title: "Rumiación mental en bucle",
+        title: "Bucle de pensamientos anticipatorios",
         text: "Pensar compulsivamente en tareas pendientes, preocupaciones cotidianas o en lo cansado/a que vas a estar al día siguiente.",
       },
       {
-        title: "Fatiga crónica y niebla mental",
+        title: "Fatiga crónica y pesadez diurna",
         text: "Levantarte con pesadez corporal, sensación de no haber descansado, irritabilidad y falta de energía durante la jornada.",
       },
     ],
     symptomsNote:
-      "El sueño es un proceso reflejo: no se puede exigir por la fuerza. Cuanto más intentas obligarte a dormir, más cortisol y adrenalina liberas. La terapia desactiva esa lucha interna y restaura el permiso biológico para soltar el control.",
-    whyTitle: "¿POR QUÉ LA TERAPIA ES TAN EFECTIVA PARA EL INSOMNIO?",
+      "El sueño es un proceso reflejo: no se puede exigir por la fuerza. Cuanto más intentas obligarte a dormir, más cortisol y adrenalina liberas. La terapia desactiva la ansiedad nocturna y restaura el permiso biológico para soltar el control y descansar.",
+    whyTitle: "¿POR QUÉ LA TERAPIA ES TAN EFECTIVA CONTRA EL INSOMNIO Y LA ANSIEDAD NOCTURNA?",
     whyParagraphs: [
-      "El insomnio psicofisiológico surge de un condicionamiento involuntario: tu cerebro ha asociado el acto de acostarse no con la desconexión, sino con el esfuerzo por dormir y la preocupación. Esta tensión refleja activa el sistema nervioso simpático ('lucha o huida'), manteniendo los niveles de alerta corporal elevados justo cuando deberían descender.",
+      "El insomnio psicofisiológico y la ansiedad nocturna surgen de un condicionamiento involuntario: tu cerebro ha asociado el acto de acostarse no con la desconexión, sino con el esfuerzo por dormir y la hipervigilancia. Esta tensión refleja activa el sistema simpático ('lucha o huida'), manteniendo los niveles de alerta corporal elevados justo de noche.",
       "Los fármacos inductores del sueño suelen actuar como un anestésico químico que suprime la conciencia pero altera las fases de sueño REM y delta profundo, generando tolerancia sin resolver la causa subyacente.",
-      "En sesión entrenamos a tu sistema nervioso para transitar conscientemente de las ondas beta (vigilia activa) a las frecuencias alfa y theta (relajación profunda previa al sueño). Al asociar la cama con seguridad somática y silencio mental mediante terapia focalizada, reactivamos el automatismo natural del sueño reparador con resultados duraderos noche tras noche.",
+      "En sesión en Valencia y Sueca entrenamos a tu sistema nervioso para transitar conscientemente de las ondas beta de alerta a las frecuencias alfa y theta de relajación profunda. Al asociar la cama con seguridad somática y silencio mental mediante terapia focalizada, disolvemos la ansiedad nocturna y reactivamos el automatismo natural del sueño reparador con resultados duraderos.",
     ],
     pillarsTitle: "EL RECORRIDO PARA RECUPERAR UN SUEÑO PROFUNDO",
     pillarsIntro:
@@ -1089,16 +1089,16 @@ export const servicesVa: ServicesDictionary = {
 
   sportsPage: {
     ...servicesEs.sportsPage,
-    eyebrow: "FOCUS, RENDIMENT I FLUX · TERÀPIA A SUECA I VALÈNCIA",
-    title: "TERÀPIA PER A L'ESPORT: RENDIMENT, CONSTÀNCIA I FOCUS MENTAL",
+    eyebrow: "HIPNOSI PER A L'ESPORT · VALÈNCIA, CASTELLÓ I SUECA",
+    title: "HIPNOSI PER A L'ESPORT: RENDIMENT, TEMPLE I ESTAT DE FLUX",
     subtitle:
-      "En l'esport, el cos arriba fins on la ment li permet. Entrena el teu diàleg intern i competix en estat de flux.",
+      "En l'esport, el cos arriba fins on la ment li permet. Amb hipnosi per a l'esport i visualització neuromuscular, competixes amb soltesa sota pressió.",
     introText:
-      "Entrenes de valent, complixes amb la preparació física i coneixes la tècnica al detall. Tanmateix, quan arriba el dia de la competició o un moment decisiu, els nervis t'atenallen i el cos no respon amb la soltesa habitual. A través d'un enfocament terapèutic aplicat al rendiment per a produir resultats sòlids a llarg termini, alineem els teus processos mentals amb els teus objectius físics: visualització motora d'alta precisió, gestió de la fatiga i confiança incondicional.",
+      "Entrenes de valent, complixes amb la preparació física i coneixes la tècnica al detall. Tanmateix, quan arriba el dia de la competició o un moment decisiu, els nervis atenallen la respiració i el cos no respon amb la soltesa dels entrenaments. Les sessions d'hipnosi per a l'esport a València, Castelló i en línia permeten entrenar el diàleg intern i activar l'estat de flux (flow). Mitjançant visualització neuromuscular d'alta precisió, ancoratges propioceptius i regulació del sistema nerviós, blindem la teua concentració, temple i constància davant qualsevol repte esportiu.",
     trustBadges: [
-      "Utilitzat per esportistes d'elit i populars",
-      "Visualització neuromuscular i focus mental",
-      "Sueca (Centre Sanar) · A domicili a València · En línia",
+      "Hipnosi per a esportistes federats i populars",
+      "Visualització neuromuscular i temple competitiu",
+      "Sueca (Centre Sanar) · A domicili València · En línia Castelló",
       "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
@@ -1113,15 +1113,15 @@ export const servicesVa: ServicesDictionary = {
 
   fearsPage: {
     ...servicesEs.fearsPage,
-    eyebrow: "RECUPERAR LA TEUA LLIBERTAT · TERÀPIA A SUECA I VALÈNCIA",
-    title: "SUPERAR PORS I FÒBIES: DESACTIVAR LA RESPOSTA DE PÀNIC",
+    eyebrow: "HIPNOSI I TERÀPIA A VALÈNCIA I SUECA · RECUPERAR LA TEUA LLIBERTAT",
+    title: "HIPNOSI PER A SUPERAR PORS I FÒBIES A VALÈNCIA: DESACTIVAR EL PÀNIC",
     subtitle:
-      "Saps racionalment que no hi ha perill real, però el teu cos reacciona com si la teua vida estiguera en joc.",
+      "Saps racionalment que no hi ha perill real, però el teu cos reacciona en alerta. Amb hipnosi ericksoniana conscient i desensibilització suau, recuperes la teua calma.",
     introText:
-      "Por a volar en avió, pànic a conduir per autopistes o túnels, terror a les agulles, claustrofòbia o bloqueig paralitzant en exposar-te davant d'un grup. Amb un enfocament terapèutic focalitzat a produir resultats duradors a llarg termini, realitzem una desensibilització sistemàtica profunda en un estat de seguretat absoluta: ensenyem al teu cervell a desaprendre l'associació d'amenaça perquè recuperes la teua tranquil·litat i llibertat de moviment.",
+      "Por a volar en avió, pànic a conduir per autopistes o túnels (amaxofòbia), terror a les agulles, claustrofòbia en ascensors o bloqueig paralitzant en exposar-te davant d'un grup. Amb sessions d'hipnosi per a superar fòbies a València i Sueca, realitzem una desensibilització sistemàtica suau en un estat de seguretat absoluta: ensenyem al teu cervell a desaprendre l'associació d'amenaça perquè recuperes la teua tranquil·litat i llibertat de moviment amb total autonomia.",
     trustBadges: [
-      "Procés respectuós, sense exposicions traumàtiques",
-      "Acompanyament terapèutic per a resultats a llarg termini",
+      "Hipnosi ericksoniana conscient i respectuosa",
+      "Desensibilització sistemàtica sense xoc",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
       "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
@@ -1137,17 +1137,17 @@ export const servicesVa: ServicesDictionary = {
 
   confidencePage: {
     ...servicesEs.confidencePage,
-    eyebrow: "SEGURETAT INTERIOR · TERÀPIA A SUECA I VALÈNCIA",
-    title: "AUTOESTIMA I CONFIANÇA: DESACTIVAR LA VEU AUTOCRÍTICA I SENTIR EL TEU VALOR",
+    eyebrow: "SUPERAR L'AUTOESTIMA BAIXA A VALÈNCIA I SUECA · SEGURETAT PERSONAL",
+    title: "AUTOESTIMA BAIXA I CONFIANÇA EN UN MATEIX: MILLORA D'AUTOCONFIANÇA REAL",
     subtitle:
-      "La vertadera seguretat personal no consistix a fingir que tot està sota control, sinó a sentir-te legítim/a tal com eres.",
+      "Augmentar la confiança en un mateix no consistix a repetir frases buides, sinó a desactivar la veu autocrítica i sentir el teu valor amb calma i fermesa.",
     introText:
-      "Dubtar constantment de les teues capacitats, sentir-te com un frau (síndrome de l'impostor), callar en reunions o ser incapaç de dir 'no'. Mitjançant un acompanyament terapèutic focalitzat a produir resultats sòlids a llarg termini, treballem en el substrat emocional profund de la teua identitat: alliberem velles etiquetes limitants, reforcem la teua assertivitat i ancorem una sensació corporal sòlida de presència, dignitat i serenitat.",
+      "Dubtar constantment de les teues capacitats, conviure amb l'autoestima baixa en la feina o relacions, sentir-te com un frau (síndrome de l'impostor) o ser incapaç de posar límits per por a decebre. La millora d'autoconfiança duradora s'aconseguix actualitzant les respostes del sistema nerviós. En les nostres sessions a Sueca, València i en línia, treballem per a superar l'autoestima baixa i augmentar la confiança en un mateix: alliberem velles etiquetes limitants, reforcem la teua assertivitat i ancorem una presència tranquil·la, segura i autèntica.",
     trustBadges: [
-      "Canvi profund de narrativa interna",
-      "Acompanyament terapèutic per a resultats a llarg termini",
+      "Millora d'autoconfiança i assertivitat",
+      "Augmentar la confiança en un mateix de manera real",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
-      "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
+      "Valoración prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA TERÀPIA",
@@ -1185,23 +1185,23 @@ export const servicesVa: ServicesDictionary = {
 
   insomniaPage: {
     ...servicesEs.insomniaPage,
-    eyebrow: "SON PROFUND I DESCANS NATURAL · TERÀPIA A SUECA I VALÈNCIA",
-    title: "TERÀPIA PER A L'INSOMNI: APAGAR LA MENT I RECUPERAR EL SON REPARADOR",
+    eyebrow: "SON PROFUND I ANSIETAT NOCTURNA · TERÀPIA A SUECA I VALÈNCIA",
+    title: "TERÀPIA PER A L'INSOMNI I L'ANSIETAT NOCTURNA: APAGAR LA MENT I DESCANSAR",
     subtitle:
-      "L'insomni no és una incapacitat per a dormir; és el teu sistema nerviós interpretant el llit com un lloc d'alerta i rumiació en pilot automàtic.",
+      "L'ansietat nocturna i l'insomni no són falta de son; és el teu sistema nerviós interpretant la nit com un estat d'alerta contínua en pilot automàtic.",
     introText:
-      "Et fiques al llit amb esgotament físic, però en apagar la llum el teu cap s'accelera: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb el cor accelerat i no pots tornar a agafar el son. Amb un abordatge terapèutic focalitzat a produir resultats sòlids a llarg termini, no forcem el son (perquè forçar-lo genera més tensió): facilitem el reflex somàtic de distensió, frenem el diàleg intern nocturn i ensenyem al teu cos a activar de manera natural les respostes de descans profund.",
+      "Et fiques al llit amb esgotament físic, però en apagar la llum l'ansietat nocturna accelera els teus pensaments: repasses el dia, anticipes problemes o mires el rellotge amb angoixa veient com passen les hores. O tal vegada t'adorms, però et despertes a les 3 de la matinada amb taquicàrdia i no pots tornar a agafar el son. Amb un abordatge terapèutic a Sueca i València, calmem l'ansietat nocturna, frenem la rumiació mental i ensenyem al teu cos a activar de manera natural les respostes de descans profund.",
     trustBadges: [
+      "Calma per a l'ansietat nocturna i insomni",
       "Descans 100% natural sense fàrmacs",
-      "Acompanyament terapèutic per a resultats a llarg termini",
       "Sueca (Centre Sanar) · A domicili a València · En línia",
       "Valoració prèvia de 15 min sense compromís · 70 €/sessió",
     ],
     ctaPrimary: "RESERVAR SESSIÓ O CONSULTAR",
     ctaSecondary: "COM T'AJUDA LA TERÀPIA",
-    symptomsTitle: "COM ES MANIFESTA L'INSOMNI I LA HIPERACTIVACIÓ NOCTURNA",
+    symptomsTitle: "COM ES MANIFESTA L'INSOMNI I L'ANSIETAT NOCTURNA",
     symptomsSubtitle:
-      "Patrons fisiològics involuntaris que impedixen la transició biològica al son profund.",
+      "Patrons fisiològics involuntaris d'alerta que impedixen la transició biològica al son profund.",
     pricingTitle: "PREUS CLARS I CONDICIONS TRANSPARENTS",
     priceNote: "Al teu propi ritme · Sense compromisos obligatoris",
     formEyebrow: "CONSULTA O RESERVA",
@@ -1266,16 +1266,16 @@ export const servicesEn: ServicesDictionary = {
 
   sportsPage: {
     ...servicesEs.sportsPage,
-    eyebrow: "FOCUS, PERFORMANCE & FLOW · THERAPY IN SUECA & VALENCIA",
-    title: "SPORTS THERAPY & MENTAL TRAINING: PERFORMANCE, CONSISTENCY & FLOW",
+    eyebrow: "SPORTS HYPNOSIS · VALENCIA, CASTELLÓN & SUECA",
+    title: "SPORTS HYPNOSIS & MENTAL TRAINING: PERFORMANCE, CONSISTENCY & FLOW",
     subtitle:
-      "In sports, the body only reaches where the mind permits. Train your inner dialogue and compete in flow state.",
+      "In sports, the body reaches where the mind permits. With sports hypnosis and neuromuscular imagery, compete with poise under pressure.",
     introText:
-      "You train hard, follow physical conditioning, and master the technique. Yet, when race day or competition pressure arrives, nervousness tightens your muscles and your body does not respond with its usual fluidity. Or perhaps you struggle with consistency after an injury. Through a performance-oriented therapeutic approach for solid long-term results, we align your mental processes with your physical goals: motor imagery precision, fatigue management, and unshakeable confidence.",
+      "You train hard, follow physical conditioning, and master the technique. Yet, when competition arrives, nervousness tightens your muscles and your body does not respond with its usual fluidity. Sessions of sports hypnosis in Valencia, Castellón and online train your inner dialogue and trigger the flow state. Through precision neuromuscular visualization, proprioceptive anchors, and nervous system regulation, we solidify your focus, composure, and athletic consistency.",
     trustBadges: [
-      "Used by competitive and recreational athletes",
-      "Neuromuscular imagery & mental focus",
-      "Sueca (Centro Sanar) · Home visits in Valencia · Online",
+      "Hypnosis for competitive and recreational athletes",
+      "Neuromuscular imagery & mental composure",
+      "Sueca (Centro Sanar) · Home visits Valencia · Online Castellón",
       "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
@@ -1290,15 +1290,15 @@ export const servicesEn: ServicesDictionary = {
 
   fearsPage: {
     ...servicesEs.fearsPage,
-    eyebrow: "RECLAIM YOUR FREEDOM · THERAPY IN SUECA & VALENCIA",
-    title: "OVERCOMING FEARS & PHOBIAS: TURNING OFF THE PANIC ALARM",
+    eyebrow: "HYPNOSIS & THERAPY IN VALENCIA & SUECA · RECLAIM YOUR FREEDOM",
+    title: "HYPNOSIS FOR PHOBIAS & FEARS IN VALENCIA: DISARMING THE PANIC ALARM",
     subtitle:
-      "You know rationally there is no actual threat, but your body reacts as if survival were at stake.",
+      "You know rationally there is no actual threat, but your body reacts in panic. With conscious Ericksonian hypnosis and gentle desensitization, reclaim your calm.",
     introText:
-      "Fear of flying, motorway driving phobia, fear of needles, claustrophobia or debilitating stage fright before speaking. When a fear becomes a phobia, logic is powerless. With a focused therapeutic approach producing lasting long-term results, we conduct gentle, deep systematic desensitization in complete physiological safety: teaching your brain to unlearn the threat association so you reclaim your peace and freedom of movement.",
+      "Fear of flying, motorway driving phobia (amaxophobia), fear of needles, claustrophobia or debilitating stage fright before speaking. When a fear becomes a phobia, logic is powerless. With hypnosis sessions to overcome phobias in Valencia and Sueca, we conduct gentle, deep systematic desensitization in complete physiological safety: teaching your brain to unlearn the threat association so you reclaim your peace and freedom of movement.",
     trustBadges: [
-      "Gentle process, zero traumatic exposure",
-      "Therapeutic guidance for long-term results",
+      "Conscious, respectful Ericksonian hypnosis",
+      "Systematic desensitization without shock",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
       "Free 15-min preliminary consultation · 70 €/session",
     ],
@@ -1314,15 +1314,15 @@ export const servicesEn: ServicesDictionary = {
 
   confidencePage: {
     ...servicesEs.confidencePage,
-    eyebrow: "INNER SECURITY · THERAPY IN SUECA & VALENCIA",
-    title: "SELF-ESTEEM & CONFIDENCE: SILENCING THE INNER CRITIC & OWNING YOUR WORTH",
+    eyebrow: "OVERCOME LOW SELF-ESTEEM IN VALENCIA & SUECA · INNER SECURITY",
+    title: "LOW SELF-ESTEEM & SELF-CONFIDENCE: GENUINE SELF-TRUST ENHANCEMENT",
     subtitle:
-      "Genuine confidence is not about pretending everything is under control, but feeling grounded and legitimate as you are.",
+      "Boosting self-confidence is not about repeating empty affirmations, but quieting the inner critic and feeling grounded in your inherent worth.",
     introText:
-      "Constantly doubting your abilities, feeling like an impostor waiting to be exposed, staying silent in meetings or struggling to say 'no' to others for fear of letting them down. Confidence changes by transforming the automatic internal dialogue learned in the past. Through focused therapeutic guidance producing solid long-term results, we work on the deep emotional foundation of your identity: releasing limiting labels, reinforcing assertiveness, and anchoring a grounded physical sense of presence, dignity, and calm.",
+      "Constantly doubting your abilities, struggling with low self-esteem at work or in relationships, feeling like an impostor or being unable to set boundaries for fear of letting others down. Long-lasting confidence enhancement is achieved by updating your nervous system's automatic responses. In our sessions in Sueca, Valencia, and online, we work to overcome low self-esteem and build genuine self-trust: releasing limiting labels, reinforcing assertiveness, and establishing an authentic, grounded calm.",
     trustBadges: [
-      "Deep shift in internal narrative",
-      "Therapeutic guidance for long-term results",
+      "Self-trust enhancement & assertiveness",
+      "Genuine increase in self-confidence",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
       "Free 15-min preliminary consultation · 70 €/session",
     ],
@@ -1362,23 +1362,23 @@ export const servicesEn: ServicesDictionary = {
 
   insomniaPage: {
     ...servicesEs.insomniaPage,
-    eyebrow: "DEEP SLEEP & NATURAL REST · THERAPY IN SUECA & VALENCIA",
-    title: "THERAPY FOR INSOMNIA: QUIET THE MIND & REGAIN RESTFUL SLEEP",
+    eyebrow: "DEEP SLEEP & NOCTURNAL ANXIETY · THERAPY IN SUECA & VALENCIA",
+    title: "THERAPY FOR INSOMNIA & NOCTURNAL ANXIETY: QUIET THE MIND & REST",
     subtitle:
-      "Insomnia is not an inability to sleep; it is your nervous system interpreting bedtime as an alert state of rumination on autopilot.",
+      "Nocturnal anxiety and insomnia are not an inability to sleep; they are your nervous system interpreting bedtime as an alert state on autopilot.",
     introText:
-      "You get into bed physically exhausted, yet the moment you turn off the light, your thoughts race: reviewing the day, anticipating tomorrow's challenges, or anxiously watching the clock as hours slip by. Or perhaps you drift off, only to wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. Through a focused therapeutic approach producing solid long-term results, we do not force sleep: we trigger the somatic relaxation reflex, silence nighttime mental loops, and teach your body to naturally access deep, restorative rest.",
+      "You get into bed physically exhausted, yet the moment you turn off the light, nocturnal anxiety accelerates your thoughts: reviewing the day, anticipating problems, or anxiously watching the clock. Or perhaps you wake up startled at 3 AM with a racing heartbeat and unable to fall back asleep. Through a focused therapeutic approach in Sueca and Valencia, we calm nighttime anxiety, silence mental loops, and teach your body to naturally access deep, restorative sleep.",
     trustBadges: [
+      "Calm for nocturnal anxiety & insomnia",
       "100% natural, medication-free approach",
-      "Therapeutic guidance for long-term results",
       "Sueca (Centro Sanar) · Home visits in Valencia · Online",
       "Free 15-min preliminary consultation · 70 €/session",
     ],
     ctaPrimary: "BOOK A SESSION OR INQUIRE",
     ctaSecondary: "HOW THERAPY HELPS YOU",
-    symptomsTitle: "SIGNS OF INSOMNIA & NOCTURNAL HYPERAROUSAL",
+    symptomsTitle: "SIGNS OF INSOMNIA & NOCTURNAL ANXIETY",
     symptomsSubtitle:
-      "Involuntary physiological patterns that interrupt the natural transition to deep sleep.",
+      "Involuntary physiological alert patterns that interrupt the natural transition to deep sleep.",
     pricingTitle: "CLEAR PRICING & HONEST CONDITIONS",
     priceNote: "At your own pace · No mandatory commitments",
     formEyebrow: "INQUIRY OR BOOKING",

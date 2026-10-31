@@ -22,7 +22,7 @@ function AreasPage() {
       <PageHeader eyebrow={t.tagline} title={t.areas.title} intro={t.areas.intro} />
 
       <section className="container-page py-16 md:py-20">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {t.areas.items.map((item, index) => (
             <article
               key={item.title}

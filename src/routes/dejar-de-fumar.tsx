@@ -16,9 +16,10 @@ import {
 export const Route = createFileRoute("/dejar-de-fumar")({
   head: () =>
     makeSeo({
-      title: "Programa para Dejar de Fumar en Valencia y Sueca · María A. Cabo",
+      title:
+        "Dejar de Fumar en Valencia y Sueca · Supera la Abstinencia y Ansiedad por Nicotina · María A. Cabo",
       description:
-        "Programa estructurado de tres sesiones con técnicas de hipnosis y reentrenamiento de hábitos en Sueca o a domicilio en Valencia ciudad. Entrevista previa gratuita de 15 minutos sin compromiso.",
+        "Supera el síndrome de abstinencia del tabaco y la ansiedad por nicotina en Valencia y Sueca. Programa de 3 sesiones con hipnosis y reentrenamiento neurobiológico. Sin recaídas.",
       path: "/dejar-de-fumar",
     }),
   component: DejarDeFumarPage,

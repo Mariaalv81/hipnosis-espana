@@ -6,9 +6,10 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/autoestima-y-confianza")({
   head: () =>
     makeSeo({
-      title: "Terapia para Autoestima y Confianza Personal en Valencia y Sueca · María A. Cabo",
+      title:
+        "Terapia para la Autoestima Baja y Confianza en Uno Mismo en Valencia y Sueca · María A. Cabo",
       description:
-        "Supera la inseguridad, el síndrome del impostor y el miedo al juicio ajeno. Aprende a poner límites y valorarte. Terapia focalizada en Sueca, Valencia u online. 70 €/sesión.",
+        "Supera la autoestima baja en Valencia y aprende a aumentar la confianza en uno mismo. Mejora de autoconfianza, asertividad y seguridad personal en Sueca, Valencia u online. 70 €/sesión.",
       path: "/autoestima-y-confianza",
     }),
   component: ConfidencePage,

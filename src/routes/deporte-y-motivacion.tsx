@@ -6,9 +6,10 @@ import { makeSeo } from "@/lib/seo";
 export const Route = createFileRoute("/deporte-y-motivacion")({
   head: () =>
     makeSeo({
-      title: "Rendimiento Deportivo y Motivación en Valencia y Sueca · Terapia | María A. Cabo",
+      title:
+        "Hipnosis para el Deporte y Rendimiento Mental en Valencia y Castellón · María A. Cabo",
       description:
-        "Supera bloqueos mentales, gestiona la presión competitiva y activa tu máximo foco en el deporte. Terapia y preparación mental en Sueca, Valencia u online. 70 €/sesión.",
+        "Hipnosis para el deporte en Valencia, Castellón y online. Supera bloqueos bajo presión, rinde en competición y activa tu estado de flujo con María A. Cabo. 70 €/sesión.",
       path: "/deporte-y-motivacion",
     }),
   component: SportsPage,

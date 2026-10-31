@@ -186,31 +186,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Diferenciador: Particular / Empresa */}
-      <section className="container-page py-12 md:py-16">
-        <h2 className="text-3xl md:text-4xl">{t.home.contextsTitle}</h2>
-        <div className="mt-8 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-2xl border border-border/60 bg-card p-6">
-            <h3 className="text-xl">{t.home.individualTitle}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{t.home.individualText}</p>
-            <div className="mt-4">
-              <Link to="/sesiones" className="text-sm text-primary underline">
-                {t.home.individualLink}
-              </Link>
-            </div>
-          </div>
-          <div className="rounded-2xl border border-border/60 bg-card p-6">
-            <h3 className="text-xl">{t.home.companiesTitle}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{t.home.companiesText}</p>
-            <div className="mt-4">
-              <Link to="/empresas" className="text-sm text-primary underline">
-                {t.home.companiesLink}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Proceso */}
       <section className="bg-muted/10 py-12 md:py-16">
         <div className="container-page">
@@ -352,6 +327,31 @@ function HomePage() {
                   {t.home.consultationCtaWhatsApp}
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Modalidades de atención: Individuales / Empresas */}
+      <section className="container-page py-12 md:py-16">
+        <h2 className="text-3xl md:text-4xl">{t.home.contextsTitle}</h2>
+        <div className="mt-8 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-2xl border border-border/60 bg-card p-6">
+            <h3 className="text-xl">{t.home.individualTitle}</h3>
+            <p className="mt-2 text-sm text-muted-foreground">{t.home.individualText}</p>
+            <div className="mt-4">
+              <Link to="/sesiones" className="text-sm text-primary underline">
+                {t.home.individualLink}
+              </Link>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-border/60 bg-card p-6">
+            <h3 className="text-xl">{t.home.companiesTitle}</h3>
+            <p className="mt-2 text-sm text-muted-foreground">{t.home.companiesText}</p>
+            <div className="mt-4">
+              <Link to="/empresas" className="text-sm text-primary underline">
+                {t.home.companiesLink}
+              </Link>
             </div>
           </div>
         </div>
